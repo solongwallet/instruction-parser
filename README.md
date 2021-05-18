@@ -26,3 +26,53 @@ JSON格式为：
 
 ## 示例
 
+### 1. System.createAccount
+先来看其定义：
+
+    /**
+    * Create account system transaction params
+    * @typedef {Object} CreateAccountParams
+    * @property {PublicKey} fromPubkey
+    * @property {PublicKey} newAccountPubkey
+    * @property {number} lamports
+    * @property {number} space
+    * @property {PublicKey} programId
+    */
+    export type CreateAccountParams = {|
+        fromPubkey: PublicKey,
+        newAccountPubkey: PublicKey,
+        lamports: number,
+        space: number,
+        programId: PublicKey,
+    |};
+
+这里可以定义成这样：
+
+    {
+        "type": "instruction", 
+        "name": "CreateAccount", 
+        "program": "11111111111111111111111111111111", 
+        "inputs": [
+            {
+                "name": "fromPubkey", 
+                "type": "string", 
+                "value": "EBA5RN8pZuGnTGfUiKcLoU7Vzf8kyXurmpRTu5k7jb7x"
+            }, 
+            {
+                "name": "newAccountPubkey", 
+                "type": "string", 
+                "value": "EBA5RN8pZuGnTGfUiKcLoU7Vzf8kyXurmpRTu5k7jb7x"
+            }, 
+            {
+                "name": "lamports", 
+                "type": "u64", 
+                "value": 128
+            }, 
+            {
+                "name": "space", 
+                "type": "u64", 
+                "value": 128
+            }
+        ]
+    }
+
