@@ -1,5 +1,7 @@
 
-class IParserManager{
+import { IParserPlugin } from './iparserPlugin';
+
+class IParserManager {
 
     private plugins: Map<string, IParserPlugin>
 
@@ -13,7 +15,7 @@ class IParserManager{
         if (!IParserManager._instance) {
             IParserManager._instance = new IParserManager();
         }
-    
+
         return IParserManager._instance;
     }
 
@@ -25,8 +27,8 @@ class IParserManager{
 
     }
 
-    public parseInstruction(programID:string, data:string): Object {
+    public parseInstruction(programID: string, data: string): Object {
         return null
     }
-    
+
 }
