@@ -20,9 +20,15 @@ JSON格式为：
 * program: 合约地址
 * inputs: 一个对象数组，表示参数，包含了:
     * name: 参数名
-    * type: 参数类型
-    * value: 具体值
-    * components:  嵌套对象
+    * value: 具体值,以string来表示
+    * components:  嵌套对象，如果值不是简单类型，而是类似Array/Map等其他嵌套JSON
+    则以Object类型返回，在展示的时候，通过JSON序列化成字符串进行展示
+
+这里的初衷只是为了在展示给用户看的时候，尽量人为可读一些，不同于传统的ABI策略，类似[anchor](https://github.com/project-serum/anchor) 虽然提供了类似abi的机制，但是在解析成人为可读方面，一个实现较为繁琐，二个
+从IDL定义的变量名未必普通非程序猿用户易懂。
+
+这里的定义通过name表示哪个指令，然后拼接K-V对来表示调用了哪些参数，也就是这里的name和value，name可以尽量定义
+的人为可读一些，这样用户更容易理解，而不是ABI中定义的，程序猿更容易理解。
 
 ## 示例
 
@@ -55,23 +61,19 @@ JSON格式为：
         "inputs": [
             {
                 "name": "fromPubkey", 
-                "type": "string", 
                 "value": "EBA5RN8pZuGnTGfUiKcLoU7Vzf8kyXurmpRTu5k7jb7x"
             }, 
             {
                 "name": "newAccountPubkey", 
-                "type": "string", 
                 "value": "EBA5RN8pZuGnTGfUiKcLoU7Vzf8kyXurmpRTu5k7jb7x"
             }, 
             {
                 "name": "lamports", 
-                "type": "u64", 
-                "value": 128
+                "value": "128"
             }, 
             {
                 "name": "space", 
-                "type": "u64", 
-                "value": 128
+                "value": "128"
             }
         ]
     }
