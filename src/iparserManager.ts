@@ -1,7 +1,8 @@
 
-import { IParserPlugin } from './iparserPlugin';
+import { IParserPlugin, Message } from './iparserPlugin';
+import {configPlugins} from './config';
 
-class IParserManager {
+export class IParserManager {
 
     private plugins: Map<string, IParserPlugin>
 
@@ -20,15 +21,17 @@ class IParserManager {
     }
 
     public loadPlugins() {
-
+        for (const p of configPlugins) {
+            this.plugins.set(p.programID, p);
+        } 
     }
 
-    public registPlugin() {
-
-    }
-
-    public parseInstruction(programID: string, data: string): Object {
-        return null
+    public parseInstruction(programID: string, data: string): Message {
+        if (!this.plugins.has(programID)) {
+            throw("no such program's instruction paster");
+        }
+        let plugin = this.plugins.get(programID);
+        return plugin.parseInstruction(data);
     }
 
 }
