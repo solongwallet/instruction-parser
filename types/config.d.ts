@@ -1,0 +1,1 @@
+export declare const configPlugins: (import("src/plugins/11111111111111111111111111111111/plugin").SystemProgram | import("src/plugins/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA/plugin").TokenProgram)[];
