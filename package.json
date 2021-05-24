@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "start": "NODE_ENV=development rollup --config rollup.config.dev.js -w",
-    "build": "npm run clean-all && python scripts/gen_config.py && NODE_ENV=production rollup --config",
+    "build": "npm run clean-all && ./scripts/gen_config.py && NODE_ENV=production rollup --config",
     "stats": "webpack --env production --profile --json > stats.json",
     "clean-dist": "rimraf ./dist && mkdirp dist",
     "clean-es": "rimraf ./es && mkdirp es",

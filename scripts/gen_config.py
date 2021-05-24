@@ -12,8 +12,11 @@ ctxt  = '''
 
 '''
 
+
+pwd = os.path.abspath(os.path.dirname(__file__))
+print("pwd:",pwd)
 plugins = []
-p = pathlib.Path('../src/plugins')
+p = pathlib.Path(os.path.join(pwd,'../src/plugins'))
 import_fmt = '''import {{ plugin as p_{0} }}  from "./plugins/{0}/plugin"\n'''
 for d in p.iterdir():
     p = d.name
@@ -21,12 +24,13 @@ for d in p.iterdir():
     plugins.append(p)
     ctxt += import_code
 print("plugins:", plugins)
+ctxt += "\n\n"
 ctxt += '''export const configPlugins = [ \n'''
 for p in plugins:
-    ctxt +="    " + p + '\n'
+    ctxt +="    p_" + p + ',\n'
 ctxt += ''']'''
 
-f = open("../src/config.ts", "w")
+f = open(os.path.join(pwd,"../src/config.ts"), "w")
 f.write(ctxt)
 f.close()
 
