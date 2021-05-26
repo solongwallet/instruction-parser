@@ -1,14 +1,14 @@
-import {TransactionInstruction} from '@solana/web3.js'
+import { TransactionInstruction } from '@solana/web3.js';
 
 export class Message {
-    type: string;
-    name: string;
-    program: string;
-    inputs: Map<string, string>;
+  type: string;
+  name: string;
+  program: string;
+  inputs: Map<string, string>;
 }
 
 export interface IParserPlugin {
-    readonly programID: string
+  readonly programID: string;
 
-    parseInstruction(instruct:TransactionInstruction) : Message 
+  parseInstruction(instruction: TransactionInstruction): Message;
 }
