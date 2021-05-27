@@ -24,9 +24,9 @@ export const rustString = (property: string = 'string') => {
     [
       BufferLayout.u32('length'),
       BufferLayout.u32('lengthPadding'),
-      BufferLayout.blob(BufferLayout.offset(BufferLayout.u32(), -8), 'chars'),
+      BufferLayout.blob(BufferLayout.offset(BufferLayout.u32(), -8), 'chars')
     ],
-    property,
+    property
   );
   const _decode = rsl.decode.bind(rsl);
   const _encode = rsl.encode.bind(rsl);
@@ -38,7 +38,7 @@ export const rustString = (property: string = 'string') => {
 
   rsl.encode = (str, buffer, offset) => {
     const data = {
-      chars: Buffer.from(str, 'utf8'),
+      chars: Buffer.from(str, 'utf8')
     };
     return _encode(data, buffer, offset);
   };
@@ -60,7 +60,7 @@ export const rustString = (property: string = 'string') => {
 export const authorized = (property: string = 'authorized') => {
   return BufferLayout.struct(
     [publicKey('staker'), publicKey('withdrawer')],
-    property,
+    property
   );
 };
 
@@ -72,10 +72,8 @@ export const lockup = (property: string = 'lockup') => {
     [
       BufferLayout.ns64('unixTimestamp'),
       BufferLayout.ns64('epoch'),
-      publicKey('custodian'),
+      publicKey('custodian')
     ],
-    property,
+    property
   );
 };
-
-
