@@ -1,3 +1,4 @@
+import { TransactionInstruction } from '@solana/web3.js';
 import { Message } from './iparserPlugin';
 export declare class IParserManager {
     private plugins;
@@ -5,5 +6,5 @@ export declare class IParserManager {
     private constructor();
     static instance(): IParserManager;
     loadPlugins(): void;
-    parseInstruction(programID: string, data: string): Message;
+    parseInstruction(programID: string, instruction: TransactionInstruction): Message;
 }

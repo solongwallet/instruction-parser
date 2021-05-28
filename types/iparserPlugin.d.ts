@@ -1,3 +1,4 @@
+import { TransactionInstruction } from '@solana/web3.js';
 export declare class Message {
     type: string;
     name: string;
@@ -6,5 +7,5 @@ export declare class Message {
 }
 export interface IParserPlugin {
     readonly programID: string;
-    parseInstruction(data: string): Message;
+    parseInstruction(instruction: TransactionInstruction): Message;
 }

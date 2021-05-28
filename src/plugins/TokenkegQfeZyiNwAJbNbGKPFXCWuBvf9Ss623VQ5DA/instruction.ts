@@ -1,91 +1,92 @@
 import * as BufferLayout from 'buffer-layout';
 import * as Layout from './layout';
-import {TransactionInstruction,
-    PublicKey} from "@solana/web3.js"
+import { TransactionInstruction, PublicKey } from '@solana/web3.js';
 
 export class TokenInstructionLayout {
-    name: string;
-    index : number;
-    layout: BufferLayout.struct;
-
+  name: string;
+  index: number;
+  layout: BufferLayout.struct;
 }
 
-
-export function deocdeTokenInstructionType(instruction: TransactionInstruction): string {
-    let layout =  BufferLayout.struct([
-        BufferLayout.u8('cmd'),
-    ]);
-    let data : Object;
-    try {
-        data = layout.decode(instruction.data);
-    } catch (err) {
-        throw new Error('invalid instruction; ' + err);
-    }
-    const {cmd} = data;
-    switch (cmd) {
-        case 0: return "InitMint";
-        case 1: return "InitAccount";
-
-    }
-    return "";
+export function deocdeTokenInstructionType(
+  instruction: TransactionInstruction
+): string {
+  let layout = BufferLayout.struct([BufferLayout.u8('cmd')]);
+  let data: Object;
+  try {
+    data = layout.decode(instruction.data);
+  } catch (err) {
+    throw new Error('invalid instruction; ' + err);
+  }
+  const { cmd } = data;
+  switch (cmd) {
+    case 0:
+      return 'InitMint';
+    case 1:
+      return 'InitAccount';
+  }
+  return '';
 }
 
 export class InitMintParams {
-    constructor(
-    mint : PublicKey,
+  constructor(
+    mint: PublicKey,
     rent: PublicKey,
     decimals: number,
     mintAuthority: PublicKey,
     option: number,
-    freezeAuthority: PublicKey,
-    ){}
+    freezeAuthority: PublicKey
+  ) {}
 }
 
-
-export function  decodeInitMint( instruction: TransactionInstruction): InitMintParams {
-    let layout =  BufferLayout.struct([
-      BufferLayout.u8('instruction'),
-      BufferLayout.u8('decimals'),
-      Layout.publicKey('mintAuthority'),
-      BufferLayout.u8('option'),
-      Layout.publicKey('freezeAuthority')
-    ]);
-    let data : Object;
-    try {
-        data = layout.decode(instruction.data);
-    } catch (err) {
-        throw new Error('invalid instruction; ' + err);
-    }
-    const {decimals, mintAuthority, option, freezeAuthority} = data;
-    return new InitMintParams(
-        instruction.keys[0].pubkey,
-        instruction.keys[1].pubkey,
-        decimals,
-        new PublicKey(mintAuthority),
-        option,
-        new PublicKey(freezeAuthority),
-    );
+export function decodeInitMint(
+  instruction: TransactionInstruction
+): InitMintParams {
+  let layout = BufferLayout.struct([
+    BufferLayout.u8('instruction'),
+    BufferLayout.u8('decimals'),
+    Layout.publicKey('mintAuthority'),
+    BufferLayout.u8('option'),
+    Layout.publicKey('freezeAuthority')
+  ]);
+  let data: Object;
+  try {
+    data = layout.decode(instruction.data);
+  } catch (err) {
+    throw new Error('invalid instruction; ' + err);
+  }
+  const { decimals, mintAuthority, option, freezeAuthority } = data;
+  return new InitMintParams(
+    instruction.keys[0].pubkey,
+    instruction.keys[1].pubkey,
+    decimals,
+    new PublicKey(mintAuthority),
+    option,
+    new PublicKey(freezeAuthority)
+  );
 }
 
 export class InitAccountParmas {
-    constructor(
-        account: PublicKey,
-        mint: PublicKey,
-        owner: PublicKey,
-        rent:PublicKey,
-    ){}
+  constructor(
+    account: PublicKey,
+    mint: PublicKey,
+    owner: PublicKey,
+    rent: PublicKey
+  ) {}
 }
 
-export function  decodeInitAccount( instruction: TransactionInstruction): InitAccountParmas {
-    return new InitAccountParmas(
-        instruction.keys[0].pubkey,
-        instruction.keys[1].pubkey,
-        instruction.keys[2].pubkey,
-        instruction.keys[3].pubkey,
-    );
+export function decodeInitAccount(
+  instruction: TransactionInstruction
+): InitAccountParmas {
+  return new InitAccountParmas(
+    instruction.keys[0].pubkey,
+    instruction.keys[1].pubkey,
+    instruction.keys[2].pubkey,
+    instruction.keys[3].pubkey
+  );
 }
 
-// export const TOKEN_INSTRUCTION_LAYOUTS : Map<string, TokenInstructionLayout> = 
+// export const TOKEN_INSTRUCTION_LAYOUTS : Map<string, TokenInstructionLayout> =
 // {
 //   "InitMint":TokenInstructionLayout(
 //     index: 0,
