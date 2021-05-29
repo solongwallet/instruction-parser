@@ -9,6 +9,7 @@ export class IParserManager {
 
   private constructor() {
     this.plugins = new Map();
+
   }
 
   public static instance() {
@@ -21,6 +22,7 @@ export class IParserManager {
 
   public loadPlugins() {
     for (const p of configPlugins) {
+      //console.log("IPaser load plugin for ", p.programID)
       this.plugins.set(p.programID, p);
     }
   }
@@ -33,6 +35,7 @@ export class IParserManager {
       throw Error("no such program's instruction paster");
     }
     const plugin = this.plugins.get(programID);
+    console.log("plugin:", plugin);
     return plugin.parseInstruction(instruction);
   }
 }

@@ -24,7 +24,8 @@
     "clean-es": "rimraf ./es && mkdirp es",
     "clean-types": "rimraf ./types && mkdirp types",
     "clean-all": "npm run clean-dist && npm run clean-es && npm run clean-types",
-    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+    "test": "jest"
   },
   "keywords": [
     "Scratch"
@@ -80,6 +81,7 @@
   "dependencies": {
     "@solana/spl-token": "^0.1.5",
     "@solana/web3.js": "^1.15.0",
+    "buffer-layout": "^1.2.1",
     "utf8": "^3.0.0"
   },
   "husky": {

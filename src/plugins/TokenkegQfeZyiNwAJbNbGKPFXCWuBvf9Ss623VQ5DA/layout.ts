@@ -1,5 +1,5 @@
 // @flow
-
+// @ts-ignore
 import BufferLayout from 'buffer-layout';
 
 type TodoObject = {
@@ -23,40 +23,40 @@ export const uint64 = (property = 'uint64'): TodoObject => {
 /**
  * Layout for a Rust String type
  */
-export const rustString = (property = 'string') => {
-  const rsl = BufferLayout.struct(
-    [
-      BufferLayout.u32('length'),
-      BufferLayout.u32('lengthPadding'),
-      BufferLayout.blob(BufferLayout.offset(BufferLayout.u32(), -8), 'chars')
-    ],
-    property
-  );
-  const _decode = rsl.decode.bind(rsl);
-  const _encode = rsl.encode.bind(rsl);
+// export const rustString = (property = 'string') => {
+//   const rsl = BufferLayout.struct(
+//     [
+//       BufferLayout.u32('length'),
+//       BufferLayout.u32('lengthPadding'),
+//       BufferLayout.blob(BufferLayout.offset(BufferLayout.u32(), -8), 'chars')
+//     ],
+//     property
+//   );
+//   const _decode = rsl.decode.bind(rsl);
+//   const _encode = rsl.encode.bind(rsl);
 
-  rsl.decode = (buffer, offset) => {
-    const data = _decode(buffer, offset);
-    return data.chars.toString('utf8');
-  };
+//   rsl.decode = (buffer, offset) => {
+//     const data = _decode(buffer, offset);
+//     return data.chars.toString('utf8');
+//   };
 
-  rsl.encode = (str, buffer, offset) => {
-    const data = {
-      chars: Buffer.from(str, 'utf8')
-    };
-    return _encode(data, buffer, offset);
-  };
+//   rsl.encode = (str, buffer, offset) => {
+//     const data = {
+//       chars: Buffer.from(str, 'utf8')
+//     };
+//     return _encode(data, buffer, offset);
+//   };
 
-  rsl.alloc = str => {
-    return (
-      BufferLayout.u32().span +
-      BufferLayout.u32().span +
-      Buffer.from(str, 'utf8').length
-    );
-  };
+//   rsl.alloc = str => {
+//     return (
+//       BufferLayout.u32().span +
+//       BufferLayout.u32().span +
+//       Buffer.from(str, 'utf8').length
+//     );
+//   };
 
-  return rsl;
-};
+//   return rsl;
+// };
 
 /**
  * Layout for an Authorized object

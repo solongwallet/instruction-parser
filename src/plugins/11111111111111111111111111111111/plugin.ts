@@ -8,6 +8,7 @@ export class SystemProgram implements IParserPlugin {
     const it = SystemInstruction.decodeInstructionType(instruction);
     msg.program = this.programID;
     msg.type = 'instruction';
+    msg.inputs = new Map<string, string>();
     switch (it) {
       case 'AdvanceNonceAccount': {
         msg.name = 'AdvanceNonceAccount';
