@@ -20,11 +20,11 @@ describe('IParserManager Class', () => {
         ipm.loadPlugins(); // load 3 plugins
         const programID = new PublicKey("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA");
         const mint = new PublicKey("SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt");
-        const account = new Account();
         const owner = new Account();
 
         // test parseInstruction not implemented.
-        const trxi = Token.createInitAccountInstruction(programID, mint, account.publicKey, owner.publicKey);
+        //const trxi = Token.createInitAccountInstruction(programID, mint, account.publicKey, owner.publicKey);
+        const trxi = Token.createInitMintInstruction(programID,mint,10,owner.publicKey,owner.publicKey);
         try{
             const msg = ipm.parseInstruction("TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA", trxi);
             console.log("msg is :", msg)

@@ -1,16 +1,16 @@
 (function (global, factory) {
-typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('crypto'), require('buffer'), require('@babel/runtime/helpers/defineProperty'), require('crypto-hash'), require('text-encoding-utf-8'), require('assert'), require('url'), require('stream'), require('http'), require('https'), require('zlib'), require('@babel/runtime/helpers/interopRequireDefault'), require('@babel/runtime/helpers/classCallCheck'), require('@babel/runtime/helpers/inherits'), require('@babel/runtime/helpers/possibleConstructorReturn'), require('@babel/runtime/helpers/getPrototypeOf'), require('events'), require('net'), require('tls'), require('fs'), require('path'), require('os'), require('@babel/runtime/regenerator'), require('@babel/runtime/helpers/asyncToGenerator'), require('@babel/runtime/helpers/typeof'), require('@babel/runtime/helpers/createClass'), require('@babel/runtime/helpers/interopRequireWildcard'), require('@babel/runtime/helpers/toConsumableArray'), require('jayson/lib/client/browser'), require('util')) :
-typeof define === 'function' && define.amd ? define(['exports', 'crypto', 'buffer', '@babel/runtime/helpers/defineProperty', 'crypto-hash', 'text-encoding-utf-8', 'assert', 'url', 'stream', 'http', 'https', 'zlib', '@babel/runtime/helpers/interopRequireDefault', '@babel/runtime/helpers/classCallCheck', '@babel/runtime/helpers/inherits', '@babel/runtime/helpers/possibleConstructorReturn', '@babel/runtime/helpers/getPrototypeOf', 'events', 'net', 'tls', 'fs', 'path', 'os', '@babel/runtime/regenerator', '@babel/runtime/helpers/asyncToGenerator', '@babel/runtime/helpers/typeof', '@babel/runtime/helpers/createClass', '@babel/runtime/helpers/interopRequireWildcard', '@babel/runtime/helpers/toConsumableArray', 'jayson/lib/client/browser', 'util'], factory) :
-(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.AssertEngine = {}, global.crypto$1, global.buffer, global._defineProperty, global.cryptoHash, global.textEncodingUtf8, global.invariant, global.Url, global.Stream, global.http, global.https, global.zlib, global.interopRequireDefault, global.classCallCheck, global.inherits$1, global.possibleConstructorReturn, global.getPrototypeOf, global.events, global.net, global.tls, global.fs, global.path, global.os, global.regenerator, global.asyncToGenerator, global._typeof, global.createClass, global.interopRequireWildcard, global.toConsumableArray, null, global.util));
-}(this, (function (exports, crypto$1, buffer, _defineProperty, cryptoHash, textEncodingUtf8, invariant, Url, Stream, http, https, zlib, interopRequireDefault, classCallCheck, inherits$1, possibleConstructorReturn, getPrototypeOf, events, net, tls, fs, path, os, regenerator, asyncToGenerator, _typeof, createClass, interopRequireWildcard, toConsumableArray, RpcClient, util) { 'use strict';
+typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('assert'), require('crypto'), require('buffer'), require('@babel/runtime/helpers/defineProperty'), require('crypto-hash'), require('text-encoding-utf-8'), require('url'), require('stream'), require('http'), require('https'), require('zlib'), require('@babel/runtime/helpers/interopRequireDefault'), require('@babel/runtime/helpers/classCallCheck'), require('@babel/runtime/helpers/inherits'), require('@babel/runtime/helpers/possibleConstructorReturn'), require('@babel/runtime/helpers/getPrototypeOf'), require('events'), require('net'), require('tls'), require('fs'), require('path'), require('os'), require('@babel/runtime/regenerator'), require('@babel/runtime/helpers/asyncToGenerator'), require('@babel/runtime/helpers/typeof'), require('@babel/runtime/helpers/createClass'), require('@babel/runtime/helpers/interopRequireWildcard'), require('@babel/runtime/helpers/toConsumableArray'), require('jayson/lib/client/browser'), require('util')) :
+typeof define === 'function' && define.amd ? define(['exports', 'assert', 'crypto', 'buffer', '@babel/runtime/helpers/defineProperty', 'crypto-hash', 'text-encoding-utf-8', 'url', 'stream', 'http', 'https', 'zlib', '@babel/runtime/helpers/interopRequireDefault', '@babel/runtime/helpers/classCallCheck', '@babel/runtime/helpers/inherits', '@babel/runtime/helpers/possibleConstructorReturn', '@babel/runtime/helpers/getPrototypeOf', 'events', 'net', 'tls', 'fs', 'path', 'os', '@babel/runtime/regenerator', '@babel/runtime/helpers/asyncToGenerator', '@babel/runtime/helpers/typeof', '@babel/runtime/helpers/createClass', '@babel/runtime/helpers/interopRequireWildcard', '@babel/runtime/helpers/toConsumableArray', 'jayson/lib/client/browser', 'util'], factory) :
+(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.AssertEngine = {}, global.invariant, global.crypto$1, global.buffer, global._defineProperty, global.cryptoHash, global.textEncodingUtf8, global.Url, global.Stream, global.http, global.https, global.zlib, global.interopRequireDefault, global.classCallCheck, global.inherits$1, global.possibleConstructorReturn, global.getPrototypeOf, global.events, global.net, global.tls, global.fs, global.path, global.os, global.regenerator, global.asyncToGenerator, global._typeof, global.createClass, global.interopRequireWildcard, global.toConsumableArray, null, global.util));
+}(this, (function (exports, invariant, crypto$1, buffer, _defineProperty, cryptoHash, textEncodingUtf8, Url, Stream, http, https, zlib, interopRequireDefault, classCallCheck, inherits$1, possibleConstructorReturn, getPrototypeOf, events, net, tls, fs, path, os, regenerator, asyncToGenerator, _typeof, createClass, interopRequireWildcard, toConsumableArray, RpcClient, util) { 'use strict';
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
+var invariant__default = /*#__PURE__*/_interopDefaultLegacy(invariant);
 var crypto__default = /*#__PURE__*/_interopDefaultLegacy(crypto$1);
 var buffer__default = /*#__PURE__*/_interopDefaultLegacy(buffer);
 var _defineProperty__default = /*#__PURE__*/_interopDefaultLegacy(_defineProperty);
 var textEncodingUtf8__default = /*#__PURE__*/_interopDefaultLegacy(textEncodingUtf8);
-var invariant__default = /*#__PURE__*/_interopDefaultLegacy(invariant);
 var Url__default = /*#__PURE__*/_interopDefaultLegacy(Url);
 var Stream__default = /*#__PURE__*/_interopDefaultLegacy(Stream);
 var http__default = /*#__PURE__*/_interopDefaultLegacy(http);
@@ -35,21 +35,6 @@ var interopRequireWildcard__default = /*#__PURE__*/_interopDefaultLegacy(interop
 var toConsumableArray__default = /*#__PURE__*/_interopDefaultLegacy(toConsumableArray);
 var util__default = /*#__PURE__*/_interopDefaultLegacy(util);
 
-var TokenProgram =
-/** @class */
-function () {
-  function TokenProgram() {
-    this.programID = 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA';
-  }
-
-  TokenProgram.prototype.parseInstruction = function (instruction) {
-    throw new Error('Method not implemented.');
-  };
-
-  return TokenProgram;
-}();
-var plugin$2 = new TokenProgram();
-
 var Message$1 =
 /** @class */
 function () {
@@ -57,6 +42,2687 @@ function () {
 
   return Message;
 }();
+
+/**
+ * Base class for layout objects.
+ *
+ * **NOTE** This is an abstract base class; you can create instances
+ * if it amuses you, but they won't support the {@link
+ * Layout#encode|encode} or {@link Layout#decode|decode} functions.
+ *
+ * @param {Number} span - Initializer for {@link Layout#span|span}.  The
+ * parameter must be an integer; a negative value signifies that the
+ * span is {@link Layout#getSpan|value-specific}.
+ *
+ * @param {string} [property] - Initializer for {@link
+ * Layout#property|property}.
+ *
+ * @abstract
+ */
+class Layout {
+  constructor(span, property) {
+    if (!Number.isInteger(span)) {
+      throw new TypeError('span must be an integer');
+    }
+
+    /** The span of the layout in bytes.
+     *
+     * Positive values are generally expected.
+     *
+     * Zero will only appear in {@link Constant}s and in {@link
+     * Sequence}s where the {@link Sequence#count|count} is zero.
+     *
+     * A negative value indicates that the span is value-specific, and
+     * must be obtained using {@link Layout#getSpan|getSpan}. */
+    this.span = span;
+
+    /** The property name used when this layout is represented in an
+     * Object.
+     *
+     * Used only for layouts that {@link Layout#decode|decode} to Object
+     * instances.  If left undefined the span of the unnamed layout will
+     * be treated as padding: it will not be mutated by {@link
+     * Layout#encode|encode} nor represented as a property in the
+     * decoded Object. */
+    this.property = property;
+  }
+
+  /** Function to create an Object into which decoded properties will
+   * be written.
+   *
+   * Used only for layouts that {@link Layout#decode|decode} to Object
+   * instances, which means:
+   * * {@link Structure}
+   * * {@link Union}
+   * * {@link VariantLayout}
+   * * {@link BitStructure}
+   *
+   * If left undefined the JavaScript representation of these layouts
+   * will be Object instances.
+   *
+   * See {@link bindConstructorLayout}.
+   */
+  makeDestinationObject() {
+    return {};
+  }
+
+  /**
+   * Decode from a Buffer into an JavaScript value.
+   *
+   * @param {Buffer} b - the buffer from which encoded data is read.
+   *
+   * @param {Number} [offset] - the offset at which the encoded data
+   * starts.  If absent a zero offset is inferred.
+   *
+   * @returns {(Number|Array|Object)} - the value of the decoded data.
+   *
+   * @abstract
+   */
+  decode(b, offset) {
+    throw new Error('Layout is abstract');
+  }
+
+  /**
+   * Encode a JavaScript value into a Buffer.
+   *
+   * @param {(Number|Array|Object)} src - the value to be encoded into
+   * the buffer.  The type accepted depends on the (sub-)type of {@link
+   * Layout}.
+   *
+   * @param {Buffer} b - the buffer into which encoded data will be
+   * written.
+   *
+   * @param {Number} [offset] - the offset at which the encoded data
+   * starts.  If absent a zero offset is inferred.
+   *
+   * @returns {Number} - the number of bytes encoded, including the
+   * space skipped for internal padding, but excluding data such as
+   * {@link Sequence#count|lengths} when stored {@link
+   * ExternalLayout|externally}.  This is the adjustment to `offset`
+   * producing the offset where data for the next layout would be
+   * written.
+   *
+   * @abstract
+   */
+  encode(src, b, offset) {
+    throw new Error('Layout is abstract');
+  }
+
+  /**
+   * Calculate the span of a specific instance of a layout.
+   *
+   * @param {Buffer} b - the buffer that contains an encoded instance.
+   *
+   * @param {Number} [offset] - the offset at which the encoded instance
+   * starts.  If absent a zero offset is inferred.
+   *
+   * @return {Number} - the number of bytes covered by the layout
+   * instance.  If this method is not overridden in a subclass the
+   * definition-time constant {@link Layout#span|span} will be
+   * returned.
+   *
+   * @throws {RangeError} - if the length of the value cannot be
+   * determined.
+   */
+  getSpan(b, offset) {
+    if (0 > this.span) {
+      throw new RangeError('indeterminate span');
+    }
+    return this.span;
+  }
+
+  /**
+   * Replicate the layout using a new property.
+   *
+   * This function must be used to get a structurally-equivalent layout
+   * with a different name since all {@link Layout} instances are
+   * immutable.
+   *
+   * **NOTE** This is a shallow copy.  All fields except {@link
+   * Layout#property|property} are strictly equal to the origin layout.
+   *
+   * @param {String} property - the value for {@link
+   * Layout#property|property} in the replica.
+   *
+   * @returns {Layout} - the copy with {@link Layout#property|property}
+   * set to `property`.
+   */
+  replicate(property) {
+    const rv = Object.create(this.constructor.prototype);
+    Object.assign(rv, this);
+    rv.property = property;
+    return rv;
+  }
+
+  /**
+   * Create an object from layout properties and an array of values.
+   *
+   * **NOTE** This function returns `undefined` if invoked on a layout
+   * that does not return its value as an Object.  Objects are
+   * returned for things that are a {@link Structure}, which includes
+   * {@link VariantLayout|variant layouts} if they are structures, and
+   * excludes {@link Union}s.  If you want this feature for a union
+   * you must use {@link Union.getVariant|getVariant} to select the
+   * desired layout.
+   *
+   * @param {Array} values - an array of values that correspond to the
+   * default order for properties.  As with {@link Layout#decode|decode}
+   * layout elements that have no property name are skipped when
+   * iterating over the array values.  Only the top-level properties are
+   * assigned; arguments are not assigned to properties of contained
+   * layouts.  Any unused values are ignored.
+   *
+   * @return {(Object|undefined)}
+   */
+  fromArray(values) {
+    return undefined;
+  }
+}
+var Layout_2 = Layout;
+
+/* Provide text that carries a name (such as for a function that will
+ * be throwing an error) annotated with the property of a given layout
+ * (such as one for which the value was unacceptable).
+ *
+ * @ignore */
+function nameWithProperty(name, lo) {
+  if (lo.property) {
+    return name + '[' + lo.property + ']';
+  }
+  return name;
+}
+var nameWithProperty_1 = nameWithProperty;
+
+/**
+ * Augment a class so that instances can be encoded/decoded using a
+ * given layout.
+ *
+ * Calling this function couples `Class` with `layout` in several ways:
+ *
+ * * `Class.layout_` becomes a static member property equal to `layout`;
+ * * `layout.boundConstructor_` becomes a static member property equal
+ *    to `Class`;
+ * * The {@link Layout#makeDestinationObject|makeDestinationObject()}
+ *   property of `layout` is set to a function that returns a `new
+ *   Class()`;
+ * * `Class.decode(b, offset)` becomes a static member function that
+ *   delegates to {@link Layout#decode|layout.decode}.  The
+ *   synthesized function may be captured and extended.
+ * * `Class.prototype.encode(b, offset)` provides an instance member
+ *   function that delegates to {@link Layout#encode|layout.encode}
+ *   with `src` set to `this`.  The synthesized function may be
+ *   captured and extended, but when the extension is invoked `this`
+ *   must be explicitly bound to the instance.
+ *
+ * @param {class} Class - a JavaScript class with a nullary
+ * constructor.
+ *
+ * @param {Layout} layout - the {@link Layout} instance used to encode
+ * instances of `Class`.
+ */
+function bindConstructorLayout(Class, layout) {
+  if ('function' !== typeof Class) {
+    throw new TypeError('Class must be constructor');
+  }
+  if (Class.hasOwnProperty('layout_')) {
+    throw new Error('Class is already bound to a layout');
+  }
+  if (!(layout && (layout instanceof Layout))) {
+    throw new TypeError('layout must be a Layout');
+  }
+  if (layout.hasOwnProperty('boundConstructor_')) {
+    throw new Error('layout is already bound to a constructor');
+  }
+  Class.layout_ = layout;
+  layout.boundConstructor_ = Class;
+  layout.makeDestinationObject = (() => new Class());
+  Object.defineProperty(Class.prototype, 'encode', {
+    value: function(b, offset) {
+      return layout.encode(this, b, offset);
+    },
+    writable: true,
+  });
+  Object.defineProperty(Class, 'decode', {
+    value: function(b, offset) {
+      return layout.decode(b, offset);
+    },
+    writable: true,
+  });
+}
+var bindConstructorLayout_1 = bindConstructorLayout;
+
+/**
+ * An object that behaves like a layout but does not consume space
+ * within its containing layout.
+ *
+ * This is primarily used to obtain metadata about a member, such as a
+ * {@link OffsetLayout} that can provide data about a {@link
+ * Layout#getSpan|value-specific span}.
+ *
+ * **NOTE** This is an abstract base class; you can create instances
+ * if it amuses you, but they won't support {@link
+ * ExternalLayout#isCount|isCount} or other {@link Layout} functions.
+ *
+ * @param {Number} span - initializer for {@link Layout#span|span}.
+ * The parameter can range from 1 through 6.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @abstract
+ * @augments {Layout}
+ */
+class ExternalLayout extends Layout {
+  /**
+   * Return `true` iff the external layout decodes to an unsigned
+   * integer layout.
+   *
+   * In that case it can be used as the source of {@link
+   * Sequence#count|Sequence counts}, {@link Blob#length|Blob lengths},
+   * or as {@link UnionLayoutDiscriminator#layout|external union
+   * discriminators}.
+   *
+   * @abstract
+   */
+  isCount() {
+    throw new Error('ExternalLayout is abstract');
+  }
+}
+
+/**
+ * An {@link ExternalLayout} that determines its {@link
+ * Layout#decode|value} based on offset into and length of the buffer
+ * on which it is invoked.
+ *
+ * *Factory*: {@link module:Layout.greedy|greedy}
+ *
+ * @param {Number} [elementSpan] - initializer for {@link
+ * GreedyCount#elementSpan|elementSpan}.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {ExternalLayout}
+ */
+class GreedyCount extends ExternalLayout {
+  constructor(elementSpan, property) {
+    if (undefined === elementSpan) {
+      elementSpan = 1;
+    }
+    if ((!Number.isInteger(elementSpan)) || (0 >= elementSpan)) {
+      throw new TypeError('elementSpan must be a (positive) integer');
+    }
+    super(-1, property);
+
+    /** The layout for individual elements of the sequence.  The value
+     * must be a positive integer.  If not provided, the value will be
+     * 1. */
+    this.elementSpan = elementSpan;
+  }
+
+  /** @override */
+  isCount() {
+    return true;
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const rem = b.length - offset;
+    return Math.floor(rem / this.elementSpan);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    return 0;
+  }
+}
+
+/**
+ * An {@link ExternalLayout} that supports accessing a {@link Layout}
+ * at a fixed offset from the start of another Layout.  The offset may
+ * be before, within, or after the base layout.
+ *
+ * *Factory*: {@link module:Layout.offset|offset}
+ *
+ * @param {Layout} layout - initializer for {@link
+ * OffsetLayout#layout|layout}, modulo `property`.
+ *
+ * @param {Number} [offset] - Initializes {@link
+ * OffsetLayout#offset|offset}.  Defaults to zero.
+ *
+ * @param {string} [property] - Optional new property name for a
+ * {@link Layout#replicate| replica} of `layout` to be used as {@link
+ * OffsetLayout#layout|layout}.  If not provided the `layout` is used
+ * unchanged.
+ *
+ * @augments {Layout}
+ */
+class OffsetLayout extends ExternalLayout {
+  constructor(layout, offset, property) {
+    if (!(layout instanceof Layout)) {
+      throw new TypeError('layout must be a Layout');
+    }
+
+    if (undefined === offset) {
+      offset = 0;
+    } else if (!Number.isInteger(offset)) {
+      throw new TypeError('offset must be integer or undefined');
+    }
+
+    super(layout.span, property || layout.property);
+
+    /** The subordinated layout. */
+    this.layout = layout;
+
+    /** The location of {@link OffsetLayout#layout} relative to the
+     * start of another layout.
+     *
+     * The value may be positive or negative, but an error will thrown
+     * if at the point of use it goes outside the span of the Buffer
+     * being accessed.  */
+    this.offset = offset;
+  }
+
+  /** @override */
+  isCount() {
+    return ((this.layout instanceof UInt)
+            || (this.layout instanceof UIntBE));
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return this.layout.decode(b, offset + this.offset);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return this.layout.encode(src, b, offset + this.offset);
+  }
+}
+
+/**
+ * Represent an unsigned integer in little-endian format.
+ *
+ * *Factory*: {@link module:Layout.u8|u8}, {@link
+ *  module:Layout.u16|u16}, {@link module:Layout.u24|u24}, {@link
+ *  module:Layout.u32|u32}, {@link module:Layout.u40|u40}, {@link
+ *  module:Layout.u48|u48}
+ *
+ * @param {Number} span - initializer for {@link Layout#span|span}.
+ * The parameter can range from 1 through 6.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class UInt extends Layout {
+  constructor(span, property) {
+    super(span, property);
+    if (6 < this.span) {
+      throw new RangeError('span must not exceed 6 bytes');
+    }
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return b.readUIntLE(offset, this.span);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    b.writeUIntLE(src, offset, this.span);
+    return this.span;
+  }
+}
+
+/**
+ * Represent an unsigned integer in big-endian format.
+ *
+ * *Factory*: {@link module:Layout.u8be|u8be}, {@link
+ * module:Layout.u16be|u16be}, {@link module:Layout.u24be|u24be},
+ * {@link module:Layout.u32be|u32be}, {@link
+ * module:Layout.u40be|u40be}, {@link module:Layout.u48be|u48be}
+ *
+ * @param {Number} span - initializer for {@link Layout#span|span}.
+ * The parameter can range from 1 through 6.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class UIntBE extends Layout {
+  constructor(span, property) {
+    super( span, property);
+    if (6 < this.span) {
+      throw new RangeError('span must not exceed 6 bytes');
+    }
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return b.readUIntBE(offset, this.span);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    b.writeUIntBE(src, offset, this.span);
+    return this.span;
+  }
+}
+
+/**
+ * Represent a signed integer in little-endian format.
+ *
+ * *Factory*: {@link module:Layout.s8|s8}, {@link
+ *  module:Layout.s16|s16}, {@link module:Layout.s24|s24}, {@link
+ *  module:Layout.s32|s32}, {@link module:Layout.s40|s40}, {@link
+ *  module:Layout.s48|s48}
+ *
+ * @param {Number} span - initializer for {@link Layout#span|span}.
+ * The parameter can range from 1 through 6.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class Int extends Layout {
+  constructor(span, property) {
+    super(span, property);
+    if (6 < this.span) {
+      throw new RangeError('span must not exceed 6 bytes');
+    }
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return b.readIntLE(offset, this.span);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    b.writeIntLE(src, offset, this.span);
+    return this.span;
+  }
+}
+
+/**
+ * Represent a signed integer in big-endian format.
+ *
+ * *Factory*: {@link module:Layout.s8be|s8be}, {@link
+ * module:Layout.s16be|s16be}, {@link module:Layout.s24be|s24be},
+ * {@link module:Layout.s32be|s32be}, {@link
+ * module:Layout.s40be|s40be}, {@link module:Layout.s48be|s48be}
+ *
+ * @param {Number} span - initializer for {@link Layout#span|span}.
+ * The parameter can range from 1 through 6.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class IntBE extends Layout {
+  constructor(span, property) {
+    super(span, property);
+    if (6 < this.span) {
+      throw new RangeError('span must not exceed 6 bytes');
+    }
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return b.readIntBE(offset, this.span);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    b.writeIntBE(src, offset, this.span);
+    return this.span;
+  }
+}
+
+const V2E32 = Math.pow(2, 32);
+
+/* True modulus high and low 32-bit words, where low word is always
+ * non-negative. */
+function divmodInt64(src) {
+  const hi32 = Math.floor(src / V2E32);
+  const lo32 = src - (hi32 * V2E32);
+  // assert.equal(roundedInt64(hi32, lo32), src);
+  // assert(0 <= lo32);
+  return {hi32, lo32};
+}
+/* Reconstruct Number from quotient and non-negative remainder */
+function roundedInt64(hi32, lo32) {
+  return hi32 * V2E32 + lo32;
+}
+
+/**
+ * Represent an unsigned 64-bit integer in little-endian format when
+ * encoded and as a near integral JavaScript Number when decoded.
+ *
+ * *Factory*: {@link module:Layout.nu64|nu64}
+ *
+ * **NOTE** Values with magnitude greater than 2^52 may not decode to
+ * the exact value of the encoded representation.
+ *
+ * @augments {Layout}
+ */
+class NearUInt64 extends Layout {
+  constructor(property) {
+    super(8, property);
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const lo32 = b.readUInt32LE(offset);
+    const hi32 = b.readUInt32LE(offset + 4);
+    return roundedInt64(hi32, lo32);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const split = divmodInt64(src);
+    b.writeUInt32LE(split.lo32, offset);
+    b.writeUInt32LE(split.hi32, offset + 4);
+    return 8;
+  }
+}
+
+/**
+ * Represent an unsigned 64-bit integer in big-endian format when
+ * encoded and as a near integral JavaScript Number when decoded.
+ *
+ * *Factory*: {@link module:Layout.nu64be|nu64be}
+ *
+ * **NOTE** Values with magnitude greater than 2^52 may not decode to
+ * the exact value of the encoded representation.
+ *
+ * @augments {Layout}
+ */
+class NearUInt64BE extends Layout {
+  constructor(property) {
+    super(8, property);
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const hi32 = b.readUInt32BE(offset);
+    const lo32 = b.readUInt32BE(offset + 4);
+    return roundedInt64(hi32, lo32);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const split = divmodInt64(src);
+    b.writeUInt32BE(split.hi32, offset);
+    b.writeUInt32BE(split.lo32, offset + 4);
+    return 8;
+  }
+}
+
+/**
+ * Represent a signed 64-bit integer in little-endian format when
+ * encoded and as a near integral JavaScript Number when decoded.
+ *
+ * *Factory*: {@link module:Layout.ns64|ns64}
+ *
+ * **NOTE** Values with magnitude greater than 2^52 may not decode to
+ * the exact value of the encoded representation.
+ *
+ * @augments {Layout}
+ */
+class NearInt64 extends Layout {
+  constructor(property) {
+    super(8, property);
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const lo32 = b.readUInt32LE(offset);
+    const hi32 = b.readInt32LE(offset + 4);
+    return roundedInt64(hi32, lo32);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const split = divmodInt64(src);
+    b.writeUInt32LE(split.lo32, offset);
+    b.writeInt32LE(split.hi32, offset + 4);
+    return 8;
+  }
+}
+
+/**
+ * Represent a signed 64-bit integer in big-endian format when
+ * encoded and as a near integral JavaScript Number when decoded.
+ *
+ * *Factory*: {@link module:Layout.ns64be|ns64be}
+ *
+ * **NOTE** Values with magnitude greater than 2^52 may not decode to
+ * the exact value of the encoded representation.
+ *
+ * @augments {Layout}
+ */
+class NearInt64BE extends Layout {
+  constructor(property) {
+    super(8, property);
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const hi32 = b.readInt32BE(offset);
+    const lo32 = b.readUInt32BE(offset + 4);
+    return roundedInt64(hi32, lo32);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const split = divmodInt64(src);
+    b.writeInt32BE(split.hi32, offset);
+    b.writeUInt32BE(split.lo32, offset + 4);
+    return 8;
+  }
+}
+
+/**
+ * Represent a 32-bit floating point number in little-endian format.
+ *
+ * *Factory*: {@link module:Layout.f32|f32}
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class Float extends Layout {
+  constructor(property) {
+    super(4, property);
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return b.readFloatLE(offset);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    b.writeFloatLE(src, offset);
+    return 4;
+  }
+}
+
+/**
+ * Represent a 32-bit floating point number in big-endian format.
+ *
+ * *Factory*: {@link module:Layout.f32be|f32be}
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class FloatBE extends Layout {
+  constructor(property) {
+    super(4, property);
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return b.readFloatBE(offset);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    b.writeFloatBE(src, offset);
+    return 4;
+  }
+}
+
+/**
+ * Represent a 64-bit floating point number in little-endian format.
+ *
+ * *Factory*: {@link module:Layout.f64|f64}
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class Double extends Layout {
+  constructor(property) {
+    super(8, property);
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return b.readDoubleLE(offset);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    b.writeDoubleLE(src, offset);
+    return 8;
+  }
+}
+
+/**
+ * Represent a 64-bit floating point number in big-endian format.
+ *
+ * *Factory*: {@link module:Layout.f64be|f64be}
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class DoubleBE extends Layout {
+  constructor(property) {
+    super(8, property);
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return b.readDoubleBE(offset);
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    b.writeDoubleBE(src, offset);
+    return 8;
+  }
+}
+
+/**
+ * Represent a contiguous sequence of a specific layout as an Array.
+ *
+ * *Factory*: {@link module:Layout.seq|seq}
+ *
+ * @param {Layout} elementLayout - initializer for {@link
+ * Sequence#elementLayout|elementLayout}.
+ *
+ * @param {(Number|ExternalLayout)} count - initializer for {@link
+ * Sequence#count|count}.  The parameter must be either a positive
+ * integer or an instance of {@link ExternalLayout}.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class Sequence extends Layout {
+  constructor(elementLayout, count, property) {
+    if (!(elementLayout instanceof Layout)) {
+      throw new TypeError('elementLayout must be a Layout');
+    }
+    if (!(((count instanceof ExternalLayout) && count.isCount())
+          || (Number.isInteger(count) && (0 <= count)))) {
+      throw new TypeError('count must be non-negative integer '
+                          + 'or an unsigned integer ExternalLayout');
+    }
+    let span = -1;
+    if ((!(count instanceof ExternalLayout))
+        && (0 < elementLayout.span)) {
+      span = count * elementLayout.span;
+    }
+
+    super(span, property);
+
+    /** The layout for individual elements of the sequence. */
+    this.elementLayout = elementLayout;
+
+    /** The number of elements in the sequence.
+     *
+     * This will be either a non-negative integer or an instance of
+     * {@link ExternalLayout} for which {@link
+     * ExternalLayout#isCount|isCount()} is `true`. */
+    this.count = count;
+  }
+
+  /** @override */
+  getSpan(b, offset) {
+    if (0 <= this.span) {
+      return this.span;
+    }
+    if (undefined === offset) {
+      offset = 0;
+    }
+    let span = 0;
+    let count = this.count;
+    if (count instanceof ExternalLayout) {
+      count = count.decode(b, offset);
+    }
+    if (0 < this.elementLayout.span) {
+      span = count * this.elementLayout.span;
+    } else {
+      let idx = 0;
+      while (idx < count) {
+        span += this.elementLayout.getSpan(b, offset + span);
+        ++idx;
+      }
+    }
+    return span;
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const rv = [];
+    let i = 0;
+    let count = this.count;
+    if (count instanceof ExternalLayout) {
+      count = count.decode(b, offset);
+    }
+    while (i < count) {
+      rv.push(this.elementLayout.decode(b, offset));
+      offset += this.elementLayout.getSpan(b, offset);
+      i += 1;
+    }
+    return rv;
+  }
+
+  /** Implement {@link Layout#encode|encode} for {@link Sequence}.
+   *
+   * **NOTE** If `src` is shorter than {@link Sequence#count|count} then
+   * the unused space in the buffer is left unchanged.  If `src` is
+   * longer than {@link Sequence#count|count} the unneeded elements are
+   * ignored.
+   *
+   * **NOTE** If {@link Layout#count|count} is an instance of {@link
+   * ExternalLayout} then the length of `src` will be encoded as the
+   * count after `src` is encoded. */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const elo = this.elementLayout;
+    const span = src.reduce((span, v) => {
+      return span + elo.encode(v, b, offset + span);
+    }, 0);
+    if (this.count instanceof ExternalLayout) {
+      this.count.encode(src.length, b, offset);
+    }
+    return span;
+  }
+}
+
+/**
+ * Represent a contiguous sequence of arbitrary layout elements as an
+ * Object.
+ *
+ * *Factory*: {@link module:Layout.struct|struct}
+ *
+ * **NOTE** The {@link Layout#span|span} of the structure is variable
+ * if any layout in {@link Structure#fields|fields} has a variable
+ * span.  When {@link Layout#encode|encoding} we must have a value for
+ * all variable-length fields, or we wouldn't be able to figure out
+ * how much space to use for storage.  We can only identify the value
+ * for a field when it has a {@link Layout#property|property}.  As
+ * such, although a structure may contain both unnamed fields and
+ * variable-length fields, it cannot contain an unnamed
+ * variable-length field.
+ *
+ * @param {Layout[]} fields - initializer for {@link
+ * Structure#fields|fields}.  An error is raised if this contains a
+ * variable-length field for which a {@link Layout#property|property}
+ * is not defined.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @param {Boolean} [decodePrefixes] - initializer for {@link
+ * Structure#decodePrefixes|property}.
+ *
+ * @throws {Error} - if `fields` contains an unnamed variable-length
+ * layout.
+ *
+ * @augments {Layout}
+ */
+class Structure extends Layout {
+  constructor(fields, property, decodePrefixes) {
+    if (!(Array.isArray(fields)
+          && fields.reduce((acc, v) => acc && (v instanceof Layout), true))) {
+      throw new TypeError('fields must be array of Layout instances');
+    }
+    if (('boolean' === typeof property)
+        && (undefined === decodePrefixes)) {
+      decodePrefixes = property;
+      property = undefined;
+    }
+
+    /* Verify absence of unnamed variable-length fields. */
+    for (const fd of fields) {
+      if ((0 > fd.span)
+          && (undefined === fd.property)) {
+        throw new Error('fields cannot contain unnamed variable-length layout');
+      }
+    }
+
+    let span = -1;
+    try {
+      span = fields.reduce((span, fd) => span + fd.getSpan(), 0);
+    } catch (e) {
+    }
+    super(span, property);
+
+    /** The sequence of {@link Layout} values that comprise the
+     * structure.
+     *
+     * The individual elements need not be the same type, and may be
+     * either scalar or aggregate layouts.  If a member layout leaves
+     * its {@link Layout#property|property} undefined the
+     * corresponding region of the buffer associated with the element
+     * will not be mutated.
+     *
+     * @type {Layout[]} */
+    this.fields = fields;
+
+    /** Control behavior of {@link Layout#decode|decode()} given short
+     * buffers.
+     *
+     * In some situations a structure many be extended with additional
+     * fields over time, with older installations providing only a
+     * prefix of the full structure.  If this property is `true`
+     * decoding will accept those buffers and leave subsequent fields
+     * undefined, as long as the buffer ends at a field boundary.
+     * Defaults to `false`. */
+    this.decodePrefixes = !!decodePrefixes;
+  }
+
+  /** @override */
+  getSpan(b, offset) {
+    if (0 <= this.span) {
+      return this.span;
+    }
+    if (undefined === offset) {
+      offset = 0;
+    }
+    let span = 0;
+    try {
+      span = this.fields.reduce((span, fd) => {
+        const fsp = fd.getSpan(b, offset);
+        offset += fsp;
+        return span + fsp;
+      }, 0);
+    } catch (e) {
+      throw new RangeError('indeterminate span');
+    }
+    return span;
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const dest = this.makeDestinationObject();
+    for (const fd of this.fields) {
+      if (undefined !== fd.property) {
+        dest[fd.property] = fd.decode(b, offset);
+      }
+      offset += fd.getSpan(b, offset);
+      if (this.decodePrefixes
+          && (b.length === offset)) {
+        break;
+      }
+    }
+    return dest;
+  }
+
+  /** Implement {@link Layout#encode|encode} for {@link Structure}.
+   *
+   * If `src` is missing a property for a member with a defined {@link
+   * Layout#property|property} the corresponding region of the buffer is
+   * left unmodified. */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const firstOffset = offset;
+    let lastOffset = 0;
+    let lastWrote = 0;
+    for (const fd of this.fields) {
+      let span = fd.span;
+      lastWrote = (0 < span) ? span : 0;
+      if (undefined === fd.property) {
+        /* By construction the field must be fixed-length (because
+         * unnamed variable-length fields are disallowed when
+         * encoding).  But check it anyway. */
+        invariant__default['default'](0 < span);
+      } else {
+        const fv = src[fd.property];
+        if (undefined !== fv) {
+          lastWrote = fd.encode(fv, b, offset);
+          if (0 > span) {
+            /* Read the as-encoded span, which is not necessarily the
+             * same as what we wrote. */
+            span = fd.getSpan(b, offset);
+          }
+        }
+      }
+      lastOffset = offset;
+      offset += span;
+    }
+    /* Use (lastOffset + lastWrote) instead of offset because the last
+     * item may have had a dynamic length and we don't want to include
+     * the padding between it and the end of the space reserved for
+     * it. */
+    return (lastOffset + lastWrote) - firstOffset;
+  }
+
+  /** @override */
+  fromArray(values) {
+    const dest = this.makeDestinationObject();
+    for (const fd of this.fields) {
+      if ((undefined !== fd.property)
+          && (0 < values.length)) {
+        dest[fd.property] = values.shift();
+      }
+    }
+    return dest;
+  }
+
+  /**
+   * Get access to the layout of a given property.
+   *
+   * @param {String} property - the structure member of interest.
+   *
+   * @return {Layout} - the layout associated with `property`, or
+   * undefined if there is no such property.
+   */
+  layoutFor(property) {
+    if ('string' !== typeof property) {
+      throw new TypeError('property must be string');
+    }
+    for (const fd of this.fields) {
+      if (fd.property === property) {
+        return fd;
+      }
+    }
+  }
+
+  /**
+   * Get the offset of a structure member.
+   *
+   * @param {String} property - the structure member of interest.
+   *
+   * @return {Number} - the offset in bytes to the start of `property`
+   * within the structure, or undefined if `property` is not a field
+   * within the structure.  If the property is a member but follows a
+   * variable-length structure member a negative number will be
+   * returned.
+   */
+  offsetOf(property) {
+    if ('string' !== typeof property) {
+      throw new TypeError('property must be string');
+    }
+    let offset = 0;
+    for (const fd of this.fields) {
+      if (fd.property === property) {
+        return offset;
+      }
+      if (0 > fd.span) {
+        offset = -1;
+      } else if (0 <= offset) {
+        offset += fd.span;
+      }
+    }
+  }
+}
+
+/**
+ * An object that can provide a {@link
+ * Union#discriminator|discriminator} API for {@link Union}.
+ *
+ * **NOTE** This is an abstract base class; you can create instances
+ * if it amuses you, but they won't support the {@link
+ * UnionDiscriminator#encode|encode} or {@link
+ * UnionDiscriminator#decode|decode} functions.
+ *
+ * @param {string} [property] - Default for {@link
+ * UnionDiscriminator#property|property}.
+ *
+ * @abstract
+ */
+class UnionDiscriminator {
+  constructor(property) {
+    /** The {@link Layout#property|property} to be used when the
+     * discriminator is referenced in isolation (generally when {@link
+     * Union#decode|Union decode} cannot delegate to a specific
+     * variant). */
+    this.property = property;
+  }
+
+  /** Analog to {@link Layout#decode|Layout decode} for union discriminators.
+   *
+   * The implementation of this method need not reference the buffer if
+   * variant information is available through other means. */
+  decode() {
+    throw new Error('UnionDiscriminator is abstract');
+  }
+
+  /** Analog to {@link Layout#decode|Layout encode} for union discriminators.
+   *
+   * The implementation of this method need not store the value if
+   * variant information is maintained through other means. */
+  encode() {
+    throw new Error('UnionDiscriminator is abstract');
+  }
+}
+
+/**
+ * An object that can provide a {@link
+ * UnionDiscriminator|discriminator API} for {@link Union} using an
+ * unsigned integral {@link Layout} instance located either inside or
+ * outside the union.
+ *
+ * @param {ExternalLayout} layout - initializes {@link
+ * UnionLayoutDiscriminator#layout|layout}.  Must satisfy {@link
+ * ExternalLayout#isCount|isCount()}.
+ *
+ * @param {string} [property] - Default for {@link
+ * UnionDiscriminator#property|property}, superseding the property
+ * from `layout`, but defaulting to `variant` if neither `property`
+ * nor layout provide a property name.
+ *
+ * @augments {UnionDiscriminator}
+ */
+class UnionLayoutDiscriminator extends UnionDiscriminator {
+  constructor(layout, property) {
+    if (!((layout instanceof ExternalLayout)
+          && layout.isCount())) {
+      throw new TypeError('layout must be an unsigned integer ExternalLayout');
+    }
+
+    super(property || layout.property || 'variant');
+
+    /** The {@link ExternalLayout} used to access the discriminator
+     * value. */
+    this.layout = layout;
+  }
+
+  /** Delegate decoding to {@link UnionLayoutDiscriminator#layout|layout}. */
+  decode(b, offset) {
+    return this.layout.decode(b, offset);
+  }
+
+  /** Delegate encoding to {@link UnionLayoutDiscriminator#layout|layout}. */
+  encode(src, b, offset) {
+    return this.layout.encode(src, b, offset);
+  }
+}
+
+/**
+ * Represent any number of span-compatible layouts.
+ *
+ * *Factory*: {@link module:Layout.union|union}
+ *
+ * If the union has a {@link Union#defaultLayout|default layout} that
+ * layout must have a non-negative {@link Layout#span|span}.  The span
+ * of a fixed-span union includes its {@link
+ * Union#discriminator|discriminator} if the variant is a {@link
+ * Union#usesPrefixDiscriminator|prefix of the union}, plus the span
+ * of its {@link Union#defaultLayout|default layout}.
+ *
+ * If the union does not have a default layout then the encoded span
+ * of the union depends on the encoded span of its variant (which may
+ * be fixed or variable).
+ *
+ * {@link VariantLayout#layout|Variant layout}s are added through
+ * {@link Union#addVariant|addVariant}.  If the union has a default
+ * layout, the span of the {@link VariantLayout#layout|layout
+ * contained by the variant} must not exceed the span of the {@link
+ * Union#defaultLayout|default layout} (minus the span of a {@link
+ * Union#usesPrefixDiscriminator|prefix disriminator}, if used).  The
+ * span of the variant will equal the span of the union itself.
+ *
+ * The variant for a buffer can only be identified from the {@link
+ * Union#discriminator|discriminator} {@link
+ * UnionDiscriminator#property|property} (in the case of the {@link
+ * Union#defaultLayout|default layout}), or by using {@link
+ * Union#getVariant|getVariant} and examining the resulting {@link
+ * VariantLayout} instance.
+ *
+ * A variant compatible with a JavaScript object can be identified
+ * using {@link Union#getSourceVariant|getSourceVariant}.
+ *
+ * @param {(UnionDiscriminator|ExternalLayout|Layout)} discr - How to
+ * identify the layout used to interpret the union contents.  The
+ * parameter must be an instance of {@link UnionDiscriminator}, an
+ * {@link ExternalLayout} that satisfies {@link
+ * ExternalLayout#isCount|isCount()}, or {@link UInt} (or {@link
+ * UIntBE}).  When a non-external layout element is passed the layout
+ * appears at the start of the union.  In all cases the (synthesized)
+ * {@link UnionDiscriminator} instance is recorded as {@link
+ * Union#discriminator|discriminator}.
+ *
+ * @param {(Layout|null)} defaultLayout - initializer for {@link
+ * Union#defaultLayout|defaultLayout}.  If absent defaults to `null`.
+ * If `null` there is no default layout: the union has data-dependent
+ * length and attempts to decode or encode unrecognized variants will
+ * throw an exception.  A {@link Layout} instance must have a
+ * non-negative {@link Layout#span|span}, and if it lacks a {@link
+ * Layout#property|property} the {@link
+ * Union#defaultLayout|defaultLayout} will be a {@link
+ * Layout#replicate|replica} with property `content`.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class Union extends Layout {
+  constructor(discr, defaultLayout, property) {
+    const upv = ((discr instanceof UInt)
+               || (discr instanceof UIntBE));
+    if (upv) {
+      discr = new UnionLayoutDiscriminator(new OffsetLayout(discr));
+    } else if ((discr instanceof ExternalLayout)
+               && discr.isCount()) {
+      discr = new UnionLayoutDiscriminator(discr);
+    } else if (!(discr instanceof UnionDiscriminator)) {
+      throw new TypeError('discr must be a UnionDiscriminator '
+                          + 'or an unsigned integer layout');
+    }
+    if (undefined === defaultLayout) {
+      defaultLayout = null;
+    }
+    if (!((null === defaultLayout)
+          || (defaultLayout instanceof Layout))) {
+      throw new TypeError('defaultLayout must be null or a Layout');
+    }
+    if (null !== defaultLayout) {
+      if (0 > defaultLayout.span) {
+        throw new Error('defaultLayout must have constant span');
+      }
+      if (undefined === defaultLayout.property) {
+        defaultLayout = defaultLayout.replicate('content');
+      }
+    }
+
+    /* The union span can be estimated only if there's a default
+     * layout.  The union spans its default layout, plus any prefix
+     * variant layout.  By construction both layouts, if present, have
+     * non-negative span. */
+    let span = -1;
+    if (defaultLayout) {
+      span = defaultLayout.span;
+      if ((0 <= span) && upv) {
+        span += discr.layout.span;
+      }
+    }
+    super(span, property);
+
+    /** The interface for the discriminator value in isolation.
+     *
+     * This a {@link UnionDiscriminator} either passed to the
+     * constructor or synthesized from the `discr` constructor
+     * argument.  {@link
+     * Union#usesPrefixDiscriminator|usesPrefixDiscriminator} will be
+     * `true` iff the `discr` parameter was a non-offset {@link
+     * Layout} instance. */
+    this.discriminator = discr;
+
+    /** `true` if the {@link Union#discriminator|discriminator} is the
+     * first field in the union.
+     *
+     * If `false` the discriminator is obtained from somewhere
+     * else. */
+    this.usesPrefixDiscriminator = upv;
+
+    /** The layout for non-discriminator content when the value of the
+     * discriminator is not recognized.
+     *
+     * This is the value passed to the constructor.  It is
+     * structurally equivalent to the second component of {@link
+     * Union#layout|layout} but may have a different property
+     * name. */
+    this.defaultLayout = defaultLayout;
+
+    /** A registry of allowed variants.
+     *
+     * The keys are unsigned integers which should be compatible with
+     * {@link Union.discriminator|discriminator}.  The property value
+     * is the corresponding {@link VariantLayout} instances assigned
+     * to this union by {@link Union#addVariant|addVariant}.
+     *
+     * **NOTE** The registry remains mutable so that variants can be
+     * {@link Union#addVariant|added} at any time.  Users should not
+     * manipulate the content of this property. */
+    this.registry = {};
+
+    /* Private variable used when invoking getSourceVariant */
+    let boundGetSourceVariant = this.defaultGetSourceVariant.bind(this);
+
+    /** Function to infer the variant selected by a source object.
+     *
+     * Defaults to {@link
+     * Union#defaultGetSourceVariant|defaultGetSourceVariant} but may
+     * be overridden using {@link
+     * Union#configGetSourceVariant|configGetSourceVariant}.
+     *
+     * @param {Object} src - as with {@link
+     * Union#defaultGetSourceVariant|defaultGetSourceVariant}.
+     *
+     * @returns {(undefined|VariantLayout)} The default variant
+     * (`undefined`) or first registered variant that uses a property
+     * available in `src`. */
+    this.getSourceVariant = function(src) {
+      return boundGetSourceVariant(src);
+    };
+
+    /** Function to override the implementation of {@link
+     * Union#getSourceVariant|getSourceVariant}.
+     *
+     * Use this if the desired variant cannot be identified using the
+     * algorithm of {@link
+     * Union#defaultGetSourceVariant|defaultGetSourceVariant}.
+     *
+     * **NOTE** The provided function will be invoked bound to this
+     * Union instance, providing local access to {@link
+     * Union#registry|registry}.
+     *
+     * @param {Function} gsv - a function that follows the API of
+     * {@link Union#defaultGetSourceVariant|defaultGetSourceVariant}. */
+    this.configGetSourceVariant = function(gsv) {
+      boundGetSourceVariant = gsv.bind(this);
+    };
+  }
+
+  /** @override */
+  getSpan(b, offset) {
+    if (0 <= this.span) {
+      return this.span;
+    }
+    if (undefined === offset) {
+      offset = 0;
+    }
+    /* Default layouts always have non-negative span, so we don't have
+     * one and we have to recognize the variant which will in turn
+     * determine the span. */
+    const vlo = this.getVariant(b, offset);
+    if (!vlo) {
+      throw new Error('unable to determine span for unrecognized variant');
+    }
+    return vlo.getSpan(b, offset);
+  }
+
+  /**
+   * Method to infer a registered Union variant compatible with `src`.
+   *
+   * The first satisified rule in the following sequence defines the
+   * return value:
+   * * If `src` has properties matching the Union discriminator and
+   *   the default layout, `undefined` is returned regardless of the
+   *   value of the discriminator property (this ensures the default
+   *   layout will be used);
+   * * If `src` has a property matching the Union discriminator, the
+   *   value of the discriminator identifies a registered variant, and
+   *   either (a) the variant has no layout, or (b) `src` has the
+   *   variant's property, then the variant is returned (because the
+   *   source satisfies the constraints of the variant it identifies);
+   * * If `src` does not have a property matching the Union
+   *   discriminator, but does have a property matching a registered
+   *   variant, then the variant is returned (because the source
+   *   matches a variant without an explicit conflict);
+   * * An error is thrown (because we either can't identify a variant,
+   *   or we were explicitly told the variant but can't satisfy it).
+   *
+   * @param {Object} src - an object presumed to be compatible with
+   * the content of the Union.
+   *
+   * @return {(undefined|VariantLayout)} - as described above.
+   *
+   * @throws {Error} - if `src` cannot be associated with a default or
+   * registered variant.
+   */
+  defaultGetSourceVariant(src) {
+    if (src.hasOwnProperty(this.discriminator.property)) {
+      if (this.defaultLayout
+          && src.hasOwnProperty(this.defaultLayout.property)) {
+        return undefined;
+      }
+      const vlo = this.registry[src[this.discriminator.property]];
+      if (vlo
+          && ((!vlo.layout)
+              || src.hasOwnProperty(vlo.property))) {
+        return vlo;
+      }
+    } else {
+      for (const tag in this.registry) {
+        const vlo = this.registry[tag];
+        if (src.hasOwnProperty(vlo.property)) {
+          return vlo;
+        }
+      }
+    }
+    throw new Error('unable to infer src variant');
+  }
+
+  /** Implement {@link Layout#decode|decode} for {@link Union}.
+   *
+   * If the variant is {@link Union#addVariant|registered} the return
+   * value is an instance of that variant, with no explicit
+   * discriminator.  Otherwise the {@link Union#defaultLayout|default
+   * layout} is used to decode the content. */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    let dest;
+    const dlo = this.discriminator;
+    const discr = dlo.decode(b, offset);
+    let clo = this.registry[discr];
+    if (undefined === clo) {
+      let contentOffset = 0;
+      clo = this.defaultLayout;
+      if (this.usesPrefixDiscriminator) {
+        contentOffset = dlo.layout.span;
+      }
+      dest = this.makeDestinationObject();
+      dest[dlo.property] = discr;
+      dest[clo.property] = this.defaultLayout.decode(b, offset + contentOffset);
+    } else {
+      dest = clo.decode(b, offset);
+    }
+    return dest;
+  }
+
+  /** Implement {@link Layout#encode|encode} for {@link Union}.
+   *
+   * This API assumes the `src` object is consistent with the union's
+   * {@link Union#defaultLayout|default layout}.  To encode variants
+   * use the appropriate variant-specific {@link VariantLayout#encode}
+   * method. */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const vlo = this.getSourceVariant(src);
+    if (undefined === vlo) {
+      const dlo = this.discriminator;
+      const clo = this.defaultLayout;
+      let contentOffset = 0;
+      if (this.usesPrefixDiscriminator) {
+        contentOffset = dlo.layout.span;
+      }
+      dlo.encode(src[dlo.property], b, offset);
+      return contentOffset + clo.encode(src[clo.property], b,
+                                        offset + contentOffset);
+    }
+    return vlo.encode(src, b, offset);
+  }
+
+  /** Register a new variant structure within a union.  The newly
+   * created variant is returned.
+   *
+   * @param {Number} variant - initializer for {@link
+   * VariantLayout#variant|variant}.
+   *
+   * @param {Layout} layout - initializer for {@link
+   * VariantLayout#layout|layout}.
+   *
+   * @param {String} property - initializer for {@link
+   * Layout#property|property}.
+   *
+   * @return {VariantLayout} */
+  addVariant(variant, layout, property) {
+    const rv = new VariantLayout(this, variant, layout, property);
+    this.registry[variant] = rv;
+    return rv;
+  }
+
+  /**
+   * Get the layout associated with a registered variant.
+   *
+   * If `vb` does not produce a registered variant the function returns
+   * `undefined`.
+   *
+   * @param {(Number|Buffer)} vb - either the variant number, or a
+   * buffer from which the discriminator is to be read.
+   *
+   * @param {Number} offset - offset into `vb` for the start of the
+   * union.  Used only when `vb` is an instance of {Buffer}.
+   *
+   * @return {({VariantLayout}|undefined)}
+   */
+  getVariant(vb, offset) {
+    let variant = vb;
+    if (Buffer.isBuffer(vb)) {
+      if (undefined === offset) {
+        offset = 0;
+      }
+      variant = this.discriminator.decode(vb, offset);
+    }
+    return this.registry[variant];
+  }
+}
+
+/**
+ * Represent a specific variant within a containing union.
+ *
+ * **NOTE** The {@link Layout#span|span} of the variant may include
+ * the span of the {@link Union#discriminator|discriminator} used to
+ * identify it, but values read and written using the variant strictly
+ * conform to the content of {@link VariantLayout#layout|layout}.
+ *
+ * **NOTE** User code should not invoke this constructor directly.  Use
+ * the union {@link Union#addVariant|addVariant} helper method.
+ *
+ * @param {Union} union - initializer for {@link
+ * VariantLayout#union|union}.
+ *
+ * @param {Number} variant - initializer for {@link
+ * VariantLayout#variant|variant}.
+ *
+ * @param {Layout} [layout] - initializer for {@link
+ * VariantLayout#layout|layout}.  If absent the variant carries no
+ * data.
+ *
+ * @param {String} [property] - initializer for {@link
+ * Layout#property|property}.  Unlike many other layouts, variant
+ * layouts normally include a property name so they can be identified
+ * within their containing {@link Union}.  The property identifier may
+ * be absent only if `layout` is is absent.
+ *
+ * @augments {Layout}
+ */
+class VariantLayout extends Layout {
+  constructor(union, variant, layout, property) {
+    if (!(union instanceof Union)) {
+      throw new TypeError('union must be a Union');
+    }
+    if ((!Number.isInteger(variant)) || (0 > variant)) {
+      throw new TypeError('variant must be a (non-negative) integer');
+    }
+    if (('string' === typeof layout)
+        && (undefined === property)) {
+      property = layout;
+      layout = null;
+    }
+    if (layout) {
+      if (!(layout instanceof Layout)) {
+        throw new TypeError('layout must be a Layout');
+      }
+      if ((null !== union.defaultLayout)
+          && (0 <= layout.span)
+          && (layout.span > union.defaultLayout.span)) {
+        throw new Error('variant span exceeds span of containing union');
+      }
+      if ('string' !== typeof property) {
+        throw new TypeError('variant must have a String property');
+      }
+    }
+    let span = union.span;
+    if (0 > union.span) {
+      span = layout ? layout.span : 0;
+      if ((0 <= span) && union.usesPrefixDiscriminator) {
+        span += union.discriminator.layout.span;
+      }
+    }
+    super(span, property);
+
+    /** The {@link Union} to which this variant belongs. */
+    this.union = union;
+
+    /** The unsigned integral value identifying this variant within
+     * the {@link Union#discriminator|discriminator} of the containing
+     * union. */
+    this.variant = variant;
+
+    /** The {@link Layout} to be used when reading/writing the
+     * non-discriminator part of the {@link
+     * VariantLayout#union|union}.  If `null` the variant carries no
+     * data. */
+    this.layout = layout || null;
+  }
+
+  /** @override */
+  getSpan(b, offset) {
+    if (0 <= this.span) {
+      /* Will be equal to the containing union span if that is not
+       * variable. */
+      return this.span;
+    }
+    if (undefined === offset) {
+      offset = 0;
+    }
+    let contentOffset = 0;
+    if (this.union.usesPrefixDiscriminator) {
+      contentOffset = this.union.discriminator.layout.span;
+    }
+    /* Span is defined solely by the variant (and prefix discriminator) */
+    return contentOffset + this.layout.getSpan(b, offset + contentOffset);
+  }
+
+  /** @override */
+  decode(b, offset) {
+    const dest = this.makeDestinationObject();
+    if (undefined === offset) {
+      offset = 0;
+    }
+    if (this !== this.union.getVariant(b, offset)) {
+      throw new Error('variant mismatch');
+    }
+    let contentOffset = 0;
+    if (this.union.usesPrefixDiscriminator) {
+      contentOffset = this.union.discriminator.layout.span;
+    }
+    if (this.layout) {
+      dest[this.property] = this.layout.decode(b, offset + contentOffset);
+    } else if (this.property) {
+      dest[this.property] = true;
+    } else if (this.union.usesPrefixDiscriminator) {
+      dest[this.union.discriminator.property] = this.variant;
+    }
+    return dest;
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    let contentOffset = 0;
+    if (this.union.usesPrefixDiscriminator) {
+      contentOffset = this.union.discriminator.layout.span;
+    }
+    if (this.layout
+        && (!src.hasOwnProperty(this.property))) {
+      throw new TypeError('variant lacks property ' + this.property);
+    }
+    this.union.discriminator.encode(this.variant, b, offset);
+    let span = contentOffset;
+    if (this.layout) {
+      this.layout.encode(src[this.property], b, offset + contentOffset);
+      span += this.layout.getSpan(b, offset + contentOffset);
+      if ((0 <= this.union.span)
+          && (span > this.union.span)) {
+        throw new Error('encoded variant overruns containing union');
+      }
+    }
+    return span;
+  }
+
+  /** Delegate {@link Layout#fromArray|fromArray} to {@link
+   * VariantLayout#layout|layout}. */
+  fromArray(values) {
+    if (this.layout) {
+      return this.layout.fromArray(values);
+    }
+  }
+}
+
+/** JavaScript chose to define bitwise operations as operating on
+ * signed 32-bit values in 2's complement form, meaning any integer
+ * with bit 31 set is going to look negative.  For right shifts that's
+ * not a problem, because `>>>` is a logical shift, but for every
+ * other bitwise operator we have to compensate for possible negative
+ * results. */
+function fixBitwiseResult(v) {
+  if (0 > v) {
+    v += 0x100000000;
+  }
+  return v;
+}
+
+/**
+ * Contain a sequence of bit fields as an unsigned integer.
+ *
+ * *Factory*: {@link module:Layout.bits|bits}
+ *
+ * This is a container element; within it there are {@link BitField}
+ * instances that provide the extracted properties.  The container
+ * simply defines the aggregate representation and its bit ordering.
+ * The representation is an object containing properties with numeric
+ * or {@link Boolean} values.
+ *
+ * {@link BitField}s are added with the {@link
+ * BitStructure#addField|addField} and {@link
+ * BitStructure#addBoolean|addBoolean} methods.
+
+ * @param {Layout} word - initializer for {@link
+ * BitStructure#word|word}.  The parameter must be an instance of
+ * {@link UInt} (or {@link UIntBE}) that is no more than 4 bytes wide.
+ *
+ * @param {bool} [msb] - `true` if the bit numbering starts at the
+ * most significant bit of the containing word; `false` (default) if
+ * it starts at the least significant bit of the containing word.  If
+ * the parameter at this position is a string and `property` is
+ * `undefined` the value of this argument will instead be used as the
+ * value of `property`.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class BitStructure extends Layout {
+  constructor(word, msb, property) {
+    if (!((word instanceof UInt)
+          || (word instanceof UIntBE))) {
+      throw new TypeError('word must be a UInt or UIntBE layout');
+    }
+    if (('string' === typeof msb)
+        && (undefined === property)) {
+      property = msb;
+      msb = undefined;
+    }
+    if (4 < word.span) {
+      throw new RangeError('word cannot exceed 32 bits');
+    }
+    super(word.span, property);
+
+    /** The layout used for the packed value.  {@link BitField}
+     * instances are packed sequentially depending on {@link
+     * BitStructure#msb|msb}. */
+    this.word = word;
+
+    /** Whether the bit sequences are packed starting at the most
+     * significant bit growing down (`true`), or the least significant
+     * bit growing up (`false`).
+     *
+     * **NOTE** Regardless of this value, the least significant bit of
+     * any {@link BitField} value is the least significant bit of the
+     * corresponding section of the packed value. */
+    this.msb = !!msb;
+
+    /** The sequence of {@link BitField} layouts that comprise the
+     * packed structure.
+     *
+     * **NOTE** The array remains mutable to allow fields to be {@link
+     * BitStructure#addField|added} after construction.  Users should
+     * not manipulate the content of this property.*/
+    this.fields = [];
+
+    /* Storage for the value.  Capture a variable instead of using an
+     * instance property because we don't want anything to change the
+     * value without going through the mutator. */
+    let value = 0;
+    this._packedSetValue = function(v) {
+      value = fixBitwiseResult(v);
+      return this;
+    };
+    this._packedGetValue = function() {
+      return value;
+    };
+  }
+
+  /** @override */
+  decode(b, offset) {
+    const dest = this.makeDestinationObject();
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const value = this.word.decode(b, offset);
+    this._packedSetValue(value);
+    for (const fd of this.fields) {
+      if (undefined !== fd.property) {
+        dest[fd.property] = fd.decode(value);
+      }
+    }
+    return dest;
+  }
+
+  /** Implement {@link Layout#encode|encode} for {@link BitStructure}.
+   *
+   * If `src` is missing a property for a member with a defined {@link
+   * Layout#property|property} the corresponding region of the packed
+   * value is left unmodified.  Unused bits are also left unmodified. */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    const value = this.word.decode(b, offset);
+    this._packedSetValue(value);
+    for (const fd of this.fields) {
+      if (undefined !== fd.property) {
+        const fv = src[fd.property];
+        if (undefined !== fv) {
+          fd.encode(fv);
+        }
+      }
+    }
+    return this.word.encode(this._packedGetValue(), b, offset);
+  }
+
+  /** Register a new bitfield with a containing bit structure.  The
+   * resulting bitfield is returned.
+   *
+   * @param {Number} bits - initializer for {@link BitField#bits|bits}.
+   *
+   * @param {string} property - initializer for {@link
+   * Layout#property|property}.
+   *
+   * @return {BitField} */
+  addField(bits, property) {
+    const bf = new BitField(this, bits, property);
+    this.fields.push(bf);
+    return bf;
+  }
+
+  /** As with {@link BitStructure#addField|addField} for single-bit
+   * fields with `boolean` value representation.
+   *
+   * @param {string} property - initializer for {@link
+   * Layout#property|property}.
+   *
+   * @return {Boolean} */
+  addBoolean(property) {
+    // This is my Boolean, not the Javascript one.
+    // eslint-disable-next-line no-new-wrappers
+    const bf = new Boolean$1(this, property);
+    this.fields.push(bf);
+    return bf;
+  }
+
+  /**
+   * Get access to the bit field for a given property.
+   *
+   * @param {String} property - the bit field of interest.
+   *
+   * @return {BitField} - the field associated with `property`, or
+   * undefined if there is no such property.
+   */
+  fieldFor(property) {
+    if ('string' !== typeof property) {
+      throw new TypeError('property must be string');
+    }
+    for (const fd of this.fields) {
+      if (fd.property === property) {
+        return fd;
+      }
+    }
+  }
+}
+
+/**
+ * Represent a sequence of bits within a {@link BitStructure}.
+ *
+ * All bit field values are represented as unsigned integers.
+ *
+ * **NOTE** User code should not invoke this constructor directly.
+ * Use the container {@link BitStructure#addField|addField} helper
+ * method.
+ *
+ * **NOTE** BitField instances are not instances of {@link Layout}
+ * since {@link Layout#span|span} measures 8-bit units.
+ *
+ * @param {BitStructure} container - initializer for {@link
+ * BitField#container|container}.
+ *
+ * @param {Number} bits - initializer for {@link BitField#bits|bits}.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ */
+class BitField {
+  constructor(container, bits, property) {
+    if (!(container instanceof BitStructure)) {
+      throw new TypeError('container must be a BitStructure');
+    }
+    if ((!Number.isInteger(bits)) || (0 >= bits)) {
+      throw new TypeError('bits must be positive integer');
+    }
+    const totalBits = 8 * container.span;
+    const usedBits = container.fields.reduce((sum, fd) => sum + fd.bits, 0);
+    if ((bits + usedBits) > totalBits) {
+      throw new Error('bits too long for span remainder ('
+                      + (totalBits - usedBits) + ' of '
+                      + totalBits + ' remain)');
+    }
+
+    /** The {@link BitStructure} instance to which this bit field
+     * belongs. */
+    this.container = container;
+
+    /** The span of this value in bits. */
+    this.bits = bits;
+
+    /** A mask of {@link BitField#bits|bits} bits isolating value bits
+     * that fit within the field.
+     *
+     * That is, it masks a value that has not yet been shifted into
+     * position within its containing packed integer. */
+    this.valueMask = (1 << bits) - 1;
+    if (32 === bits) { // shifted value out of range
+      this.valueMask = 0xFFFFFFFF;
+    }
+
+    /** The offset of the value within the containing packed unsigned
+     * integer.  The least significant bit of the packed value is at
+     * offset zero, regardless of bit ordering used. */
+    this.start = usedBits;
+    if (this.container.msb) {
+      this.start = totalBits - usedBits - bits;
+    }
+
+    /** A mask of {@link BitField#bits|bits} isolating the field value
+     * within the containing packed unsigned integer. */
+    this.wordMask = fixBitwiseResult(this.valueMask << this.start);
+
+    /** The property name used when this bitfield is represented in an
+     * Object.
+     *
+     * Intended to be functionally equivalent to {@link
+     * Layout#property}.
+     *
+     * If left undefined the corresponding span of bits will be
+     * treated as padding: it will not be mutated by {@link
+     * Layout#encode|encode} nor represented as a property in the
+     * decoded Object. */
+    this.property = property;
+  }
+
+  /** Store a value into the corresponding subsequence of the containing
+   * bit field. */
+  decode() {
+    const word = this.container._packedGetValue();
+    const wordValue = fixBitwiseResult(word & this.wordMask);
+    const value = wordValue >>> this.start;
+    return value;
+  }
+
+  /** Store a value into the corresponding subsequence of the containing
+   * bit field.
+   *
+   * **NOTE** This is not a specialization of {@link
+   * Layout#encode|Layout.encode} and there is no return value. */
+  encode(value) {
+    if ((!Number.isInteger(value))
+        || (value !== fixBitwiseResult(value & this.valueMask))) {
+      throw new TypeError(nameWithProperty('BitField.encode', this)
+                          + ' value must be integer not exceeding ' + this.valueMask);
+    }
+    const word = this.container._packedGetValue();
+    const wordValue = fixBitwiseResult(value << this.start);
+    this.container._packedSetValue(fixBitwiseResult(word & ~this.wordMask)
+                                   | wordValue);
+  };
+}
+
+/**
+ * Represent a single bit within a {@link BitStructure} as a
+ * JavaScript boolean.
+ *
+ * **NOTE** User code should not invoke this constructor directly.
+ * Use the container {@link BitStructure#addBoolean|addBoolean} helper
+ * method.
+ *
+ * @param {BitStructure} container - initializer for {@link
+ * BitField#container|container}.
+ *
+ * @param {string} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {BitField}
+ */
+/* eslint-disable no-extend-native */
+class Boolean$1 extends BitField {
+  constructor(container, property) {
+    super(container, 1, property);
+  }
+
+  /** Override {@link BitField#decode|decode} for {@link Boolean|Boolean}.
+   *
+   * @returns {boolean} */
+  decode(b, offset) {
+    return !!BitField.prototype.decode.call(this, b, offset);
+  }
+
+  /** @override */
+  encode(value) {
+    if ('boolean' === typeof value) {
+      // BitField requires integer values
+      value = +value;
+    }
+    return BitField.prototype.encode.call(this, value);
+  }
+}
+/* eslint-enable no-extend-native */
+
+/**
+ * Contain a fixed-length block of arbitrary data, represented as a
+ * Buffer.
+ *
+ * *Factory*: {@link module:Layout.blob|blob}
+ *
+ * @param {(Number|ExternalLayout)} length - initializes {@link
+ * Blob#length|length}.
+ *
+ * @param {String} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class Blob$1 extends Layout {
+  constructor(length, property) {
+    if (!(((length instanceof ExternalLayout) && length.isCount())
+          || (Number.isInteger(length) && (0 <= length)))) {
+      throw new TypeError('length must be positive integer '
+                          + 'or an unsigned integer ExternalLayout');
+    }
+
+    let span = -1;
+    if (!(length instanceof ExternalLayout)) {
+      span = length;
+    }
+    super(span, property);
+
+    /** The number of bytes in the blob.
+     *
+     * This may be a non-negative integer, or an instance of {@link
+     * ExternalLayout} that satisfies {@link
+     * ExternalLayout#isCount|isCount()}. */
+    this.length = length;
+  }
+
+  /** @override */
+  getSpan(b, offset) {
+    let span = this.span;
+    if (0 > span) {
+      span = this.length.decode(b, offset);
+    }
+    return span;
+  }
+
+  /** @override */
+  decode(b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    let span = this.span;
+    if (0 > span) {
+      span = this.length.decode(b, offset);
+    }
+    return b.slice(offset, offset + span);
+  }
+
+  /** Implement {@link Layout#encode|encode} for {@link Blob}.
+   *
+   * **NOTE** If {@link Layout#count|count} is an instance of {@link
+   * ExternalLayout} then the length of `src` will be encoded as the
+   * count after `src` is encoded. */
+  encode(src, b, offset) {
+    let span = this.length;
+    if (this.length instanceof ExternalLayout) {
+      span = src.length;
+    }
+    if (!(Buffer.isBuffer(src)
+          && (span === src.length))) {
+      throw new TypeError(nameWithProperty('Blob.encode', this)
+                          + ' requires (length ' + span + ') Buffer as src');
+    }
+    if ((offset + span) > b.length) {
+      throw new RangeError('encoding overruns Buffer');
+    }
+    b.write(src.toString('hex'), offset, span, 'hex');
+    if (this.length instanceof ExternalLayout) {
+      this.length.encode(span, b, offset);
+    }
+    return span;
+  }
+}
+
+/**
+ * Contain a `NUL`-terminated UTF8 string.
+ *
+ * *Factory*: {@link module:Layout.cstr|cstr}
+ *
+ * **NOTE** Any UTF8 string that incorporates a zero-valued byte will
+ * not be correctly decoded by this layout.
+ *
+ * @param {String} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class CString extends Layout {
+  constructor(property) {
+    super(-1, property);
+  }
+
+  /** @override */
+  getSpan(b, offset) {
+    if (!Buffer.isBuffer(b)) {
+      throw new TypeError('b must be a Buffer');
+    }
+    if (undefined === offset) {
+      offset = 0;
+    }
+    let idx = offset;
+    while ((idx < b.length) && (0 !== b[idx])) {
+      idx += 1;
+    }
+    return 1 + idx - offset;
+  }
+
+  /** @override */
+  decode(b, offset, dest) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    let span = this.getSpan(b, offset);
+    return b.slice(offset, offset + span - 1).toString('utf-8');
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    /* Must force this to a string, lest it be a number and the
+     * "utf8-encoding" below actually allocate a buffer of length
+     * src */
+    if ('string' !== typeof src) {
+      src = src.toString();
+    }
+    const srcb = new Buffer(src, 'utf8');
+    const span = srcb.length;
+    if ((offset + span) > b.length) {
+      throw new RangeError('encoding overruns Buffer');
+    }
+    srcb.copy(b, offset);
+    b[offset + span] = 0;
+    return span + 1;
+  }
+}
+
+/**
+ * Contain a UTF8 string with implicit length.
+ *
+ * *Factory*: {@link module:Layout.utf8|utf8}
+ *
+ * **NOTE** Because the length is implicit in the size of the buffer
+ * this layout should be used only in isolation, or in a situation
+ * where the length can be expressed by operating on a slice of the
+ * containing buffer.
+ *
+ * @param {Number} [maxSpan] - the maximum length allowed for encoded
+ * string content.  If not provided there is no bound on the allowed
+ * content.
+ *
+ * @param {String} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class UTF8 extends Layout {
+  constructor(maxSpan, property) {
+    if (('string' === typeof maxSpan)
+        && (undefined === property)) {
+      property = maxSpan;
+      maxSpan = undefined;
+    }
+    if (undefined === maxSpan) {
+      maxSpan = -1;
+    } else if (!Number.isInteger(maxSpan)) {
+      throw new TypeError('maxSpan must be an integer');
+    }
+
+    super(-1, property);
+
+    /** The maximum span of the layout in bytes.
+     *
+     * Positive values are generally expected.  Zero is abnormal.
+     * Attempts to encode or decode a value that exceeds this length
+     * will throw a `RangeError`.
+     *
+     * A negative value indicates that there is no bound on the length
+     * of the content. */
+    this.maxSpan = maxSpan;
+  }
+
+  /** @override */
+  getSpan(b, offset) {
+    if (!Buffer.isBuffer(b)) {
+      throw new TypeError('b must be a Buffer');
+    }
+    if (undefined === offset) {
+      offset = 0;
+    }
+    return b.length - offset;
+  }
+
+  /** @override */
+  decode(b, offset, dest) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    let span = this.getSpan(b, offset);
+    if ((0 <= this.maxSpan)
+        && (this.maxSpan < span)) {
+      throw new RangeError('text length exceeds maxSpan');
+    }
+    return b.slice(offset, offset + span).toString('utf-8');
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    if (undefined === offset) {
+      offset = 0;
+    }
+    /* Must force this to a string, lest it be a number and the
+     * "utf8-encoding" below actually allocate a buffer of length
+     * src */
+    if ('string' !== typeof src) {
+      src = src.toString();
+    }
+    const srcb = new Buffer(src, 'utf8');
+    const span = srcb.length;
+    if ((0 <= this.maxSpan)
+        && (this.maxSpan < span)) {
+      throw new RangeError('text length exceeds maxSpan');
+    }
+    if ((offset + span) > b.length) {
+      throw new RangeError('encoding overruns Buffer');
+    }
+    srcb.copy(b, offset);
+    return span;
+  }
+}
+
+/**
+ * Contain a constant value.
+ *
+ * This layout may be used in cases where a JavaScript value can be
+ * inferred without an expression in the binary encoding.  An example
+ * would be a {@link VariantLayout|variant layout} where the content
+ * is implied by the union {@link Union#discriminator|discriminator}.
+ *
+ * @param {Object|Number|String} value - initializer for {@link
+ * Constant#value|value}.  If the value is an object (or array) and
+ * the application intends the object to remain unchanged regardless
+ * of what is done to values decoded by this layout, the value should
+ * be frozen prior passing it to this constructor.
+ *
+ * @param {String} [property] - initializer for {@link
+ * Layout#property|property}.
+ *
+ * @augments {Layout}
+ */
+class Constant extends Layout {
+  constructor(value, property) {
+    super(0, property);
+
+    /** The value produced by this constant when the layout is {@link
+     * Constant#decode|decoded}.
+     *
+     * Any JavaScript value including `null` and `undefined` is
+     * permitted.
+     *
+     * **WARNING** If `value` passed in the constructor was not
+     * frozen, it is possible for users of decoded values to change
+     * the content of the value. */
+    this.value = value;
+  }
+
+  /** @override */
+  decode(b, offset, dest) {
+    return this.value;
+  }
+
+  /** @override */
+  encode(src, b, offset) {
+    /* Constants take no space */
+    return 0;
+  }
+}
+
+var ExternalLayout_1 = ExternalLayout;
+var GreedyCount_1 = GreedyCount;
+var OffsetLayout_1 = OffsetLayout;
+var UInt_1 = UInt;
+var UIntBE_1 = UIntBE;
+var Int_1 = Int;
+var IntBE_1 = IntBE;
+var Float_1 = Float;
+var FloatBE_1 = FloatBE;
+var Double_1 = Double;
+var DoubleBE_1 = DoubleBE;
+var Sequence_1 = Sequence;
+var Structure_1 = Structure;
+var UnionDiscriminator_1 = UnionDiscriminator;
+var UnionLayoutDiscriminator_1 = UnionLayoutDiscriminator;
+var Union_1 = Union;
+var VariantLayout_1 = VariantLayout;
+var BitStructure_1 = BitStructure;
+var BitField_1 = BitField;
+var _Boolean = Boolean$1;
+var Blob_1 = Blob$1;
+var CString_1 = CString;
+var UTF8_1 = UTF8;
+var Constant_1 = Constant;
+
+/** Factory for {@link GreedyCount}. */
+var greedy = ((elementSpan, property) => new GreedyCount(elementSpan, property));
+
+/** Factory for {@link OffsetLayout}. */
+var offset = ((layout, offset, property) => new OffsetLayout(layout, offset, property));
+
+/** Factory for {@link UInt|unsigned int layouts} spanning one
+ * byte. */
+var u8 = (property => new UInt(1, property));
+
+/** Factory for {@link UInt|little-endian unsigned int layouts}
+ * spanning two bytes. */
+var u16 = (property => new UInt(2, property));
+
+/** Factory for {@link UInt|little-endian unsigned int layouts}
+ * spanning three bytes. */
+var u24 = (property => new UInt(3, property));
+
+/** Factory for {@link UInt|little-endian unsigned int layouts}
+ * spanning four bytes. */
+var u32 = (property => new UInt(4, property));
+
+/** Factory for {@link UInt|little-endian unsigned int layouts}
+ * spanning five bytes. */
+var u40 = (property => new UInt(5, property));
+
+/** Factory for {@link UInt|little-endian unsigned int layouts}
+ * spanning six bytes. */
+var u48 = (property => new UInt(6, property));
+
+/** Factory for {@link NearUInt64|little-endian unsigned int
+ * layouts} interpreted as Numbers. */
+var nu64 = (property => new NearUInt64(property));
+
+/** Factory for {@link UInt|big-endian unsigned int layouts}
+ * spanning two bytes. */
+var u16be = (property => new UIntBE(2, property));
+
+/** Factory for {@link UInt|big-endian unsigned int layouts}
+ * spanning three bytes. */
+var u24be = (property => new UIntBE(3, property));
+
+/** Factory for {@link UInt|big-endian unsigned int layouts}
+ * spanning four bytes. */
+var u32be = (property => new UIntBE(4, property));
+
+/** Factory for {@link UInt|big-endian unsigned int layouts}
+ * spanning five bytes. */
+var u40be = (property => new UIntBE(5, property));
+
+/** Factory for {@link UInt|big-endian unsigned int layouts}
+ * spanning six bytes. */
+var u48be = (property => new UIntBE(6, property));
+
+/** Factory for {@link NearUInt64BE|big-endian unsigned int
+ * layouts} interpreted as Numbers. */
+var nu64be = (property => new NearUInt64BE(property));
+
+/** Factory for {@link Int|signed int layouts} spanning one
+ * byte. */
+var s8 = (property => new Int(1, property));
+
+/** Factory for {@link Int|little-endian signed int layouts}
+ * spanning two bytes. */
+var s16 = (property => new Int(2, property));
+
+/** Factory for {@link Int|little-endian signed int layouts}
+ * spanning three bytes. */
+var s24 = (property => new Int(3, property));
+
+/** Factory for {@link Int|little-endian signed int layouts}
+ * spanning four bytes. */
+var s32 = (property => new Int(4, property));
+
+/** Factory for {@link Int|little-endian signed int layouts}
+ * spanning five bytes. */
+var s40 = (property => new Int(5, property));
+
+/** Factory for {@link Int|little-endian signed int layouts}
+ * spanning six bytes. */
+var s48 = (property => new Int(6, property));
+
+/** Factory for {@link NearInt64|little-endian signed int layouts}
+ * interpreted as Numbers. */
+var ns64 = (property => new NearInt64(property));
+
+/** Factory for {@link Int|big-endian signed int layouts}
+ * spanning two bytes. */
+var s16be = (property => new IntBE(2, property));
+
+/** Factory for {@link Int|big-endian signed int layouts}
+ * spanning three bytes. */
+var s24be = (property => new IntBE(3, property));
+
+/** Factory for {@link Int|big-endian signed int layouts}
+ * spanning four bytes. */
+var s32be = (property => new IntBE(4, property));
+
+/** Factory for {@link Int|big-endian signed int layouts}
+ * spanning five bytes. */
+var s40be = (property => new IntBE(5, property));
+
+/** Factory for {@link Int|big-endian signed int layouts}
+ * spanning six bytes. */
+var s48be = (property => new IntBE(6, property));
+
+/** Factory for {@link NearInt64BE|big-endian signed int layouts}
+ * interpreted as Numbers. */
+var ns64be = (property => new NearInt64BE(property));
+
+/** Factory for {@link Float|little-endian 32-bit floating point} values. */
+var f32 = (property => new Float(property));
+
+/** Factory for {@link FloatBE|big-endian 32-bit floating point} values. */
+var f32be = (property => new FloatBE(property));
+
+/** Factory for {@link Double|little-endian 64-bit floating point} values. */
+var f64 = (property => new Double(property));
+
+/** Factory for {@link DoubleBE|big-endian 64-bit floating point} values. */
+var f64be = (property => new DoubleBE(property));
+
+/** Factory for {@link Structure} values. */
+var struct = ((fields, property, decodePrefixes) => new Structure(fields, property, decodePrefixes));
+
+/** Factory for {@link BitStructure} values. */
+var bits = ((word, msb, property) => new BitStructure(word, msb, property));
+
+/** Factory for {@link Sequence} values. */
+var seq = ((elementLayout, count, property) => new Sequence(elementLayout, count, property));
+
+/** Factory for {@link Union} values. */
+var union$1 = ((discr, defaultLayout, property) => new Union(discr, defaultLayout, property));
+
+/** Factory for {@link UnionLayoutDiscriminator} values. */
+var unionLayoutDiscriminator = ((layout, property) => new UnionLayoutDiscriminator(layout, property));
+
+/** Factory for {@link Blob} values. */
+var blob = ((length, property) => new Blob$1(length, property));
+
+/** Factory for {@link CString} values. */
+var cstr = (property => new CString(property));
+
+/** Factory for {@link UTF8} values. */
+var utf8 = ((maxSpan, property) => new UTF8(maxSpan, property));
+
+/** Factory for {@link Constant} values. */
+var _const = ((value, property) => new Constant(value, property));
+
+var Layout_1 = {
+	Layout: Layout_2,
+	nameWithProperty: nameWithProperty_1,
+	bindConstructorLayout: bindConstructorLayout_1,
+	ExternalLayout: ExternalLayout_1,
+	GreedyCount: GreedyCount_1,
+	OffsetLayout: OffsetLayout_1,
+	UInt: UInt_1,
+	UIntBE: UIntBE_1,
+	Int: Int_1,
+	IntBE: IntBE_1,
+	Float: Float_1,
+	FloatBE: FloatBE_1,
+	Double: Double_1,
+	DoubleBE: DoubleBE_1,
+	Sequence: Sequence_1,
+	Structure: Structure_1,
+	UnionDiscriminator: UnionDiscriminator_1,
+	UnionLayoutDiscriminator: UnionLayoutDiscriminator_1,
+	Union: Union_1,
+	VariantLayout: VariantLayout_1,
+	BitStructure: BitStructure_1,
+	BitField: BitField_1,
+	Boolean: _Boolean,
+	Blob: Blob_1,
+	CString: CString_1,
+	UTF8: UTF8_1,
+	Constant: Constant_1,
+	greedy: greedy,
+	offset: offset,
+	u8: u8,
+	u16: u16,
+	u24: u24,
+	u32: u32,
+	u40: u40,
+	u48: u48,
+	nu64: nu64,
+	u16be: u16be,
+	u24be: u24be,
+	u32be: u32be,
+	u40be: u40be,
+	u48be: u48be,
+	nu64be: nu64be,
+	s8: s8,
+	s16: s16,
+	s24: s24,
+	s32: s32,
+	s40: s40,
+	s48: s48,
+	ns64: ns64,
+	s16be: s16be,
+	s24be: s24be,
+	s32be: s32be,
+	s40be: s40be,
+	s48be: s48be,
+	ns64be: ns64be,
+	f32: f32,
+	f32be: f32be,
+	f64: f64,
+	f64be: f64be,
+	struct: struct,
+	bits: bits,
+	seq: seq,
+	union: union$1,
+	unionLayoutDiscriminator: unionLayoutDiscriminator,
+	blob: blob,
+	cstr: cstr,
+	utf8: utf8,
+	const: _const
+};
+
+// @flow
+/**
+ * Layout for a public key
+ */
+
+var publicKey$1 = function (property) {
+  if (property === void 0) {
+    property = 'publicKey';
+  }
+
+  return Layout_1.blob(32, property);
+};
+/**
+ * Layout for a 64bit unsigned value
+ */
+
+var uint64 = function (property) {
+  if (property === void 0) {
+    property = 'uint64';
+  }
+
+  return Layout_1.blob(8, property);
+};
 
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -6409,932 +9075,6 @@ function deserializeUnchecked(schema, classType, buffer) {
 }
 exports.deserializeUnchecked = deserializeUnchecked;
 });
-
-/**
- * Base class for layout objects.
- *
- * **NOTE** This is an abstract base class; you can create instances
- * if it amuses you, but they won't support the {@link
- * Layout#encode|encode} or {@link Layout#decode|decode} functions.
- *
- * @param {Number} span - Initializer for {@link Layout#span|span}.  The
- * parameter must be an integer; a negative value signifies that the
- * span is {@link Layout#getSpan|value-specific}.
- *
- * @param {string} [property] - Initializer for {@link
- * Layout#property|property}.
- *
- * @abstract
- */
-class Layout {
-  constructor(span, property) {
-    if (!Number.isInteger(span)) {
-      throw new TypeError('span must be an integer');
-    }
-
-    /** The span of the layout in bytes.
-     *
-     * Positive values are generally expected.
-     *
-     * Zero will only appear in {@link Constant}s and in {@link
-     * Sequence}s where the {@link Sequence#count|count} is zero.
-     *
-     * A negative value indicates that the span is value-specific, and
-     * must be obtained using {@link Layout#getSpan|getSpan}. */
-    this.span = span;
-
-    /** The property name used when this layout is represented in an
-     * Object.
-     *
-     * Used only for layouts that {@link Layout#decode|decode} to Object
-     * instances.  If left undefined the span of the unnamed layout will
-     * be treated as padding: it will not be mutated by {@link
-     * Layout#encode|encode} nor represented as a property in the
-     * decoded Object. */
-    this.property = property;
-  }
-
-  /** Function to create an Object into which decoded properties will
-   * be written.
-   *
-   * Used only for layouts that {@link Layout#decode|decode} to Object
-   * instances, which means:
-   * * {@link Structure}
-   * * {@link Union}
-   * * {@link VariantLayout}
-   * * {@link BitStructure}
-   *
-   * If left undefined the JavaScript representation of these layouts
-   * will be Object instances.
-   *
-   * See {@link bindConstructorLayout}.
-   */
-  makeDestinationObject() {
-    return {};
-  }
-
-  /**
-   * Decode from a Buffer into an JavaScript value.
-   *
-   * @param {Buffer} b - the buffer from which encoded data is read.
-   *
-   * @param {Number} [offset] - the offset at which the encoded data
-   * starts.  If absent a zero offset is inferred.
-   *
-   * @returns {(Number|Array|Object)} - the value of the decoded data.
-   *
-   * @abstract
-   */
-  decode(b, offset) {
-    throw new Error('Layout is abstract');
-  }
-
-  /**
-   * Encode a JavaScript value into a Buffer.
-   *
-   * @param {(Number|Array|Object)} src - the value to be encoded into
-   * the buffer.  The type accepted depends on the (sub-)type of {@link
-   * Layout}.
-   *
-   * @param {Buffer} b - the buffer into which encoded data will be
-   * written.
-   *
-   * @param {Number} [offset] - the offset at which the encoded data
-   * starts.  If absent a zero offset is inferred.
-   *
-   * @returns {Number} - the number of bytes encoded, including the
-   * space skipped for internal padding, but excluding data such as
-   * {@link Sequence#count|lengths} when stored {@link
-   * ExternalLayout|externally}.  This is the adjustment to `offset`
-   * producing the offset where data for the next layout would be
-   * written.
-   *
-   * @abstract
-   */
-  encode(src, b, offset) {
-    throw new Error('Layout is abstract');
-  }
-
-  /**
-   * Calculate the span of a specific instance of a layout.
-   *
-   * @param {Buffer} b - the buffer that contains an encoded instance.
-   *
-   * @param {Number} [offset] - the offset at which the encoded instance
-   * starts.  If absent a zero offset is inferred.
-   *
-   * @return {Number} - the number of bytes covered by the layout
-   * instance.  If this method is not overridden in a subclass the
-   * definition-time constant {@link Layout#span|span} will be
-   * returned.
-   *
-   * @throws {RangeError} - if the length of the value cannot be
-   * determined.
-   */
-  getSpan(b, offset) {
-    if (0 > this.span) {
-      throw new RangeError('indeterminate span');
-    }
-    return this.span;
-  }
-
-  /**
-   * Replicate the layout using a new property.
-   *
-   * This function must be used to get a structurally-equivalent layout
-   * with a different name since all {@link Layout} instances are
-   * immutable.
-   *
-   * **NOTE** This is a shallow copy.  All fields except {@link
-   * Layout#property|property} are strictly equal to the origin layout.
-   *
-   * @param {String} property - the value for {@link
-   * Layout#property|property} in the replica.
-   *
-   * @returns {Layout} - the copy with {@link Layout#property|property}
-   * set to `property`.
-   */
-  replicate(property) {
-    const rv = Object.create(this.constructor.prototype);
-    Object.assign(rv, this);
-    rv.property = property;
-    return rv;
-  }
-
-  /**
-   * Create an object from layout properties and an array of values.
-   *
-   * **NOTE** This function returns `undefined` if invoked on a layout
-   * that does not return its value as an Object.  Objects are
-   * returned for things that are a {@link Structure}, which includes
-   * {@link VariantLayout|variant layouts} if they are structures, and
-   * excludes {@link Union}s.  If you want this feature for a union
-   * you must use {@link Union.getVariant|getVariant} to select the
-   * desired layout.
-   *
-   * @param {Array} values - an array of values that correspond to the
-   * default order for properties.  As with {@link Layout#decode|decode}
-   * layout elements that have no property name are skipped when
-   * iterating over the array values.  Only the top-level properties are
-   * assigned; arguments are not assigned to properties of contained
-   * layouts.  Any unused values are ignored.
-   *
-   * @return {(Object|undefined)}
-   */
-  fromArray(values) {
-    return undefined;
-  }
-}
-
-/* Provide text that carries a name (such as for a function that will
- * be throwing an error) annotated with the property of a given layout
- * (such as one for which the value was unacceptable).
- *
- * @ignore */
-function nameWithProperty(name, lo) {
-  if (lo.property) {
-    return name + '[' + lo.property + ']';
-  }
-  return name;
-}
-
-/**
- * An object that behaves like a layout but does not consume space
- * within its containing layout.
- *
- * This is primarily used to obtain metadata about a member, such as a
- * {@link OffsetLayout} that can provide data about a {@link
- * Layout#getSpan|value-specific span}.
- *
- * **NOTE** This is an abstract base class; you can create instances
- * if it amuses you, but they won't support {@link
- * ExternalLayout#isCount|isCount} or other {@link Layout} functions.
- *
- * @param {Number} span - initializer for {@link Layout#span|span}.
- * The parameter can range from 1 through 6.
- *
- * @param {string} [property] - initializer for {@link
- * Layout#property|property}.
- *
- * @abstract
- * @augments {Layout}
- */
-class ExternalLayout extends Layout {
-  /**
-   * Return `true` iff the external layout decodes to an unsigned
-   * integer layout.
-   *
-   * In that case it can be used as the source of {@link
-   * Sequence#count|Sequence counts}, {@link Blob#length|Blob lengths},
-   * or as {@link UnionLayoutDiscriminator#layout|external union
-   * discriminators}.
-   *
-   * @abstract
-   */
-  isCount() {
-    throw new Error('ExternalLayout is abstract');
-  }
-}
-
-/**
- * An {@link ExternalLayout} that supports accessing a {@link Layout}
- * at a fixed offset from the start of another Layout.  The offset may
- * be before, within, or after the base layout.
- *
- * *Factory*: {@link module:Layout.offset|offset}
- *
- * @param {Layout} layout - initializer for {@link
- * OffsetLayout#layout|layout}, modulo `property`.
- *
- * @param {Number} [offset] - Initializes {@link
- * OffsetLayout#offset|offset}.  Defaults to zero.
- *
- * @param {string} [property] - Optional new property name for a
- * {@link Layout#replicate| replica} of `layout` to be used as {@link
- * OffsetLayout#layout|layout}.  If not provided the `layout` is used
- * unchanged.
- *
- * @augments {Layout}
- */
-class OffsetLayout extends ExternalLayout {
-  constructor(layout, offset, property) {
-    if (!(layout instanceof Layout)) {
-      throw new TypeError('layout must be a Layout');
-    }
-
-    if (undefined === offset) {
-      offset = 0;
-    } else if (!Number.isInteger(offset)) {
-      throw new TypeError('offset must be integer or undefined');
-    }
-
-    super(layout.span, property || layout.property);
-
-    /** The subordinated layout. */
-    this.layout = layout;
-
-    /** The location of {@link OffsetLayout#layout} relative to the
-     * start of another layout.
-     *
-     * The value may be positive or negative, but an error will thrown
-     * if at the point of use it goes outside the span of the Buffer
-     * being accessed.  */
-    this.offset = offset;
-  }
-
-  /** @override */
-  isCount() {
-    return ((this.layout instanceof UInt)
-            || (this.layout instanceof UIntBE));
-  }
-
-  /** @override */
-  decode(b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    return this.layout.decode(b, offset + this.offset);
-  }
-
-  /** @override */
-  encode(src, b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    return this.layout.encode(src, b, offset + this.offset);
-  }
-}
-
-/**
- * Represent an unsigned integer in little-endian format.
- *
- * *Factory*: {@link module:Layout.u8|u8}, {@link
- *  module:Layout.u16|u16}, {@link module:Layout.u24|u24}, {@link
- *  module:Layout.u32|u32}, {@link module:Layout.u40|u40}, {@link
- *  module:Layout.u48|u48}
- *
- * @param {Number} span - initializer for {@link Layout#span|span}.
- * The parameter can range from 1 through 6.
- *
- * @param {string} [property] - initializer for {@link
- * Layout#property|property}.
- *
- * @augments {Layout}
- */
-class UInt extends Layout {
-  constructor(span, property) {
-    super(span, property);
-    if (6 < this.span) {
-      throw new RangeError('span must not exceed 6 bytes');
-    }
-  }
-
-  /** @override */
-  decode(b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    return b.readUIntLE(offset, this.span);
-  }
-
-  /** @override */
-  encode(src, b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    b.writeUIntLE(src, offset, this.span);
-    return this.span;
-  }
-}
-
-/**
- * Represent an unsigned integer in big-endian format.
- *
- * *Factory*: {@link module:Layout.u8be|u8be}, {@link
- * module:Layout.u16be|u16be}, {@link module:Layout.u24be|u24be},
- * {@link module:Layout.u32be|u32be}, {@link
- * module:Layout.u40be|u40be}, {@link module:Layout.u48be|u48be}
- *
- * @param {Number} span - initializer for {@link Layout#span|span}.
- * The parameter can range from 1 through 6.
- *
- * @param {string} [property] - initializer for {@link
- * Layout#property|property}.
- *
- * @augments {Layout}
- */
-class UIntBE extends Layout {
-  constructor(span, property) {
-    super( span, property);
-    if (6 < this.span) {
-      throw new RangeError('span must not exceed 6 bytes');
-    }
-  }
-
-  /** @override */
-  decode(b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    return b.readUIntBE(offset, this.span);
-  }
-
-  /** @override */
-  encode(src, b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    b.writeUIntBE(src, offset, this.span);
-    return this.span;
-  }
-}
-
-const V2E32 = Math.pow(2, 32);
-
-/* True modulus high and low 32-bit words, where low word is always
- * non-negative. */
-function divmodInt64(src) {
-  const hi32 = Math.floor(src / V2E32);
-  const lo32 = src - (hi32 * V2E32);
-  // assert.equal(roundedInt64(hi32, lo32), src);
-  // assert(0 <= lo32);
-  return {hi32, lo32};
-}
-/* Reconstruct Number from quotient and non-negative remainder */
-function roundedInt64(hi32, lo32) {
-  return hi32 * V2E32 + lo32;
-}
-
-/**
- * Represent an unsigned 64-bit integer in little-endian format when
- * encoded and as a near integral JavaScript Number when decoded.
- *
- * *Factory*: {@link module:Layout.nu64|nu64}
- *
- * **NOTE** Values with magnitude greater than 2^52 may not decode to
- * the exact value of the encoded representation.
- *
- * @augments {Layout}
- */
-class NearUInt64 extends Layout {
-  constructor(property) {
-    super(8, property);
-  }
-
-  /** @override */
-  decode(b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    const lo32 = b.readUInt32LE(offset);
-    const hi32 = b.readUInt32LE(offset + 4);
-    return roundedInt64(hi32, lo32);
-  }
-
-  /** @override */
-  encode(src, b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    const split = divmodInt64(src);
-    b.writeUInt32LE(split.lo32, offset);
-    b.writeUInt32LE(split.hi32, offset + 4);
-    return 8;
-  }
-}
-
-/**
- * Represent a signed 64-bit integer in little-endian format when
- * encoded and as a near integral JavaScript Number when decoded.
- *
- * *Factory*: {@link module:Layout.ns64|ns64}
- *
- * **NOTE** Values with magnitude greater than 2^52 may not decode to
- * the exact value of the encoded representation.
- *
- * @augments {Layout}
- */
-class NearInt64 extends Layout {
-  constructor(property) {
-    super(8, property);
-  }
-
-  /** @override */
-  decode(b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    const lo32 = b.readUInt32LE(offset);
-    const hi32 = b.readInt32LE(offset + 4);
-    return roundedInt64(hi32, lo32);
-  }
-
-  /** @override */
-  encode(src, b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    const split = divmodInt64(src);
-    b.writeUInt32LE(split.lo32, offset);
-    b.writeInt32LE(split.hi32, offset + 4);
-    return 8;
-  }
-}
-
-/**
- * Represent a contiguous sequence of a specific layout as an Array.
- *
- * *Factory*: {@link module:Layout.seq|seq}
- *
- * @param {Layout} elementLayout - initializer for {@link
- * Sequence#elementLayout|elementLayout}.
- *
- * @param {(Number|ExternalLayout)} count - initializer for {@link
- * Sequence#count|count}.  The parameter must be either a positive
- * integer or an instance of {@link ExternalLayout}.
- *
- * @param {string} [property] - initializer for {@link
- * Layout#property|property}.
- *
- * @augments {Layout}
- */
-class Sequence extends Layout {
-  constructor(elementLayout, count, property) {
-    if (!(elementLayout instanceof Layout)) {
-      throw new TypeError('elementLayout must be a Layout');
-    }
-    if (!(((count instanceof ExternalLayout) && count.isCount())
-          || (Number.isInteger(count) && (0 <= count)))) {
-      throw new TypeError('count must be non-negative integer '
-                          + 'or an unsigned integer ExternalLayout');
-    }
-    let span = -1;
-    if ((!(count instanceof ExternalLayout))
-        && (0 < elementLayout.span)) {
-      span = count * elementLayout.span;
-    }
-
-    super(span, property);
-
-    /** The layout for individual elements of the sequence. */
-    this.elementLayout = elementLayout;
-
-    /** The number of elements in the sequence.
-     *
-     * This will be either a non-negative integer or an instance of
-     * {@link ExternalLayout} for which {@link
-     * ExternalLayout#isCount|isCount()} is `true`. */
-    this.count = count;
-  }
-
-  /** @override */
-  getSpan(b, offset) {
-    if (0 <= this.span) {
-      return this.span;
-    }
-    if (undefined === offset) {
-      offset = 0;
-    }
-    let span = 0;
-    let count = this.count;
-    if (count instanceof ExternalLayout) {
-      count = count.decode(b, offset);
-    }
-    if (0 < this.elementLayout.span) {
-      span = count * this.elementLayout.span;
-    } else {
-      let idx = 0;
-      while (idx < count) {
-        span += this.elementLayout.getSpan(b, offset + span);
-        ++idx;
-      }
-    }
-    return span;
-  }
-
-  /** @override */
-  decode(b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    const rv = [];
-    let i = 0;
-    let count = this.count;
-    if (count instanceof ExternalLayout) {
-      count = count.decode(b, offset);
-    }
-    while (i < count) {
-      rv.push(this.elementLayout.decode(b, offset));
-      offset += this.elementLayout.getSpan(b, offset);
-      i += 1;
-    }
-    return rv;
-  }
-
-  /** Implement {@link Layout#encode|encode} for {@link Sequence}.
-   *
-   * **NOTE** If `src` is shorter than {@link Sequence#count|count} then
-   * the unused space in the buffer is left unchanged.  If `src` is
-   * longer than {@link Sequence#count|count} the unneeded elements are
-   * ignored.
-   *
-   * **NOTE** If {@link Layout#count|count} is an instance of {@link
-   * ExternalLayout} then the length of `src` will be encoded as the
-   * count after `src` is encoded. */
-  encode(src, b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    const elo = this.elementLayout;
-    const span = src.reduce((span, v) => {
-      return span + elo.encode(v, b, offset + span);
-    }, 0);
-    if (this.count instanceof ExternalLayout) {
-      this.count.encode(src.length, b, offset);
-    }
-    return span;
-  }
-}
-
-/**
- * Represent a contiguous sequence of arbitrary layout elements as an
- * Object.
- *
- * *Factory*: {@link module:Layout.struct|struct}
- *
- * **NOTE** The {@link Layout#span|span} of the structure is variable
- * if any layout in {@link Structure#fields|fields} has a variable
- * span.  When {@link Layout#encode|encoding} we must have a value for
- * all variable-length fields, or we wouldn't be able to figure out
- * how much space to use for storage.  We can only identify the value
- * for a field when it has a {@link Layout#property|property}.  As
- * such, although a structure may contain both unnamed fields and
- * variable-length fields, it cannot contain an unnamed
- * variable-length field.
- *
- * @param {Layout[]} fields - initializer for {@link
- * Structure#fields|fields}.  An error is raised if this contains a
- * variable-length field for which a {@link Layout#property|property}
- * is not defined.
- *
- * @param {string} [property] - initializer for {@link
- * Layout#property|property}.
- *
- * @param {Boolean} [decodePrefixes] - initializer for {@link
- * Structure#decodePrefixes|property}.
- *
- * @throws {Error} - if `fields` contains an unnamed variable-length
- * layout.
- *
- * @augments {Layout}
- */
-class Structure extends Layout {
-  constructor(fields, property, decodePrefixes) {
-    if (!(Array.isArray(fields)
-          && fields.reduce((acc, v) => acc && (v instanceof Layout), true))) {
-      throw new TypeError('fields must be array of Layout instances');
-    }
-    if (('boolean' === typeof property)
-        && (undefined === decodePrefixes)) {
-      decodePrefixes = property;
-      property = undefined;
-    }
-
-    /* Verify absence of unnamed variable-length fields. */
-    for (const fd of fields) {
-      if ((0 > fd.span)
-          && (undefined === fd.property)) {
-        throw new Error('fields cannot contain unnamed variable-length layout');
-      }
-    }
-
-    let span = -1;
-    try {
-      span = fields.reduce((span, fd) => span + fd.getSpan(), 0);
-    } catch (e) {
-    }
-    super(span, property);
-
-    /** The sequence of {@link Layout} values that comprise the
-     * structure.
-     *
-     * The individual elements need not be the same type, and may be
-     * either scalar or aggregate layouts.  If a member layout leaves
-     * its {@link Layout#property|property} undefined the
-     * corresponding region of the buffer associated with the element
-     * will not be mutated.
-     *
-     * @type {Layout[]} */
-    this.fields = fields;
-
-    /** Control behavior of {@link Layout#decode|decode()} given short
-     * buffers.
-     *
-     * In some situations a structure many be extended with additional
-     * fields over time, with older installations providing only a
-     * prefix of the full structure.  If this property is `true`
-     * decoding will accept those buffers and leave subsequent fields
-     * undefined, as long as the buffer ends at a field boundary.
-     * Defaults to `false`. */
-    this.decodePrefixes = !!decodePrefixes;
-  }
-
-  /** @override */
-  getSpan(b, offset) {
-    if (0 <= this.span) {
-      return this.span;
-    }
-    if (undefined === offset) {
-      offset = 0;
-    }
-    let span = 0;
-    try {
-      span = this.fields.reduce((span, fd) => {
-        const fsp = fd.getSpan(b, offset);
-        offset += fsp;
-        return span + fsp;
-      }, 0);
-    } catch (e) {
-      throw new RangeError('indeterminate span');
-    }
-    return span;
-  }
-
-  /** @override */
-  decode(b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    const dest = this.makeDestinationObject();
-    for (const fd of this.fields) {
-      if (undefined !== fd.property) {
-        dest[fd.property] = fd.decode(b, offset);
-      }
-      offset += fd.getSpan(b, offset);
-      if (this.decodePrefixes
-          && (b.length === offset)) {
-        break;
-      }
-    }
-    return dest;
-  }
-
-  /** Implement {@link Layout#encode|encode} for {@link Structure}.
-   *
-   * If `src` is missing a property for a member with a defined {@link
-   * Layout#property|property} the corresponding region of the buffer is
-   * left unmodified. */
-  encode(src, b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    const firstOffset = offset;
-    let lastOffset = 0;
-    let lastWrote = 0;
-    for (const fd of this.fields) {
-      let span = fd.span;
-      lastWrote = (0 < span) ? span : 0;
-      if (undefined === fd.property) {
-        /* By construction the field must be fixed-length (because
-         * unnamed variable-length fields are disallowed when
-         * encoding).  But check it anyway. */
-        invariant__default['default'](0 < span);
-      } else {
-        const fv = src[fd.property];
-        if (undefined !== fv) {
-          lastWrote = fd.encode(fv, b, offset);
-          if (0 > span) {
-            /* Read the as-encoded span, which is not necessarily the
-             * same as what we wrote. */
-            span = fd.getSpan(b, offset);
-          }
-        }
-      }
-      lastOffset = offset;
-      offset += span;
-    }
-    /* Use (lastOffset + lastWrote) instead of offset because the last
-     * item may have had a dynamic length and we don't want to include
-     * the padding between it and the end of the space reserved for
-     * it. */
-    return (lastOffset + lastWrote) - firstOffset;
-  }
-
-  /** @override */
-  fromArray(values) {
-    const dest = this.makeDestinationObject();
-    for (const fd of this.fields) {
-      if ((undefined !== fd.property)
-          && (0 < values.length)) {
-        dest[fd.property] = values.shift();
-      }
-    }
-    return dest;
-  }
-
-  /**
-   * Get access to the layout of a given property.
-   *
-   * @param {String} property - the structure member of interest.
-   *
-   * @return {Layout} - the layout associated with `property`, or
-   * undefined if there is no such property.
-   */
-  layoutFor(property) {
-    if ('string' !== typeof property) {
-      throw new TypeError('property must be string');
-    }
-    for (const fd of this.fields) {
-      if (fd.property === property) {
-        return fd;
-      }
-    }
-  }
-
-  /**
-   * Get the offset of a structure member.
-   *
-   * @param {String} property - the structure member of interest.
-   *
-   * @return {Number} - the offset in bytes to the start of `property`
-   * within the structure, or undefined if `property` is not a field
-   * within the structure.  If the property is a member but follows a
-   * variable-length structure member a negative number will be
-   * returned.
-   */
-  offsetOf(property) {
-    if ('string' !== typeof property) {
-      throw new TypeError('property must be string');
-    }
-    let offset = 0;
-    for (const fd of this.fields) {
-      if (fd.property === property) {
-        return offset;
-      }
-      if (0 > fd.span) {
-        offset = -1;
-      } else if (0 <= offset) {
-        offset += fd.span;
-      }
-    }
-  }
-}
-/* eslint-enable no-extend-native */
-
-/**
- * Contain a fixed-length block of arbitrary data, represented as a
- * Buffer.
- *
- * *Factory*: {@link module:Layout.blob|blob}
- *
- * @param {(Number|ExternalLayout)} length - initializes {@link
- * Blob#length|length}.
- *
- * @param {String} [property] - initializer for {@link
- * Layout#property|property}.
- *
- * @augments {Layout}
- */
-class Blob$1 extends Layout {
-  constructor(length, property) {
-    if (!(((length instanceof ExternalLayout) && length.isCount())
-          || (Number.isInteger(length) && (0 <= length)))) {
-      throw new TypeError('length must be positive integer '
-                          + 'or an unsigned integer ExternalLayout');
-    }
-
-    let span = -1;
-    if (!(length instanceof ExternalLayout)) {
-      span = length;
-    }
-    super(span, property);
-
-    /** The number of bytes in the blob.
-     *
-     * This may be a non-negative integer, or an instance of {@link
-     * ExternalLayout} that satisfies {@link
-     * ExternalLayout#isCount|isCount()}. */
-    this.length = length;
-  }
-
-  /** @override */
-  getSpan(b, offset) {
-    let span = this.span;
-    if (0 > span) {
-      span = this.length.decode(b, offset);
-    }
-    return span;
-  }
-
-  /** @override */
-  decode(b, offset) {
-    if (undefined === offset) {
-      offset = 0;
-    }
-    let span = this.span;
-    if (0 > span) {
-      span = this.length.decode(b, offset);
-    }
-    return b.slice(offset, offset + span);
-  }
-
-  /** Implement {@link Layout#encode|encode} for {@link Blob}.
-   *
-   * **NOTE** If {@link Layout#count|count} is an instance of {@link
-   * ExternalLayout} then the length of `src` will be encoded as the
-   * count after `src` is encoded. */
-  encode(src, b, offset) {
-    let span = this.length;
-    if (this.length instanceof ExternalLayout) {
-      span = src.length;
-    }
-    if (!(Buffer.isBuffer(src)
-          && (span === src.length))) {
-      throw new TypeError(nameWithProperty('Blob.encode', this)
-                          + ' requires (length ' + span + ') Buffer as src');
-    }
-    if ((offset + span) > b.length) {
-      throw new RangeError('encoding overruns Buffer');
-    }
-    b.write(src.toString('hex'), offset, span, 'hex');
-    if (this.length instanceof ExternalLayout) {
-      this.length.encode(span, b, offset);
-    }
-    return span;
-  }
-}
-
-/** Factory for {@link OffsetLayout}. */
-var offset = ((layout, offset, property) => new OffsetLayout(layout, offset, property));
-
-/** Factory for {@link UInt|unsigned int layouts} spanning one
- * byte. */
-var u8 = (property => new UInt(1, property));
-
-/** Factory for {@link UInt|little-endian unsigned int layouts}
- * spanning two bytes. */
-var u16 = (property => new UInt(2, property));
-
-/** Factory for {@link UInt|little-endian unsigned int layouts}
- * spanning four bytes. */
-var u32 = (property => new UInt(4, property));
-
-/** Factory for {@link NearUInt64|little-endian unsigned int
- * layouts} interpreted as Numbers. */
-var nu64 = (property => new NearUInt64(property));
-
-/** Factory for {@link NearInt64|little-endian signed int layouts}
- * interpreted as Numbers. */
-var ns64 = (property => new NearInt64(property));
-
-/** Factory for {@link Structure} values. */
-var struct = ((fields, property, decodePrefixes) => new Structure(fields, property, decodePrefixes));
-
-/** Factory for {@link Sequence} values. */
-var seq = ((elementLayout, count, property) => new Sequence(elementLayout, count, property));
-
-/** Factory for {@link Blob} values. */
-var blob = ((length, property) => new Blob$1(length, property));
 
 // Based on https://github.com/tmpvar/jsdom/blob/aa85b2abf07766ff7bf5c1f6daafb3726f2f2db5/lib/jsdom/living/blob.js
 
@@ -29265,6 +31005,655 @@ struct([publicKey('nodePubkey'), publicKey('authorizedVoterPubkey'), publicKey('
 seq(struct([nu64('slot'), u32('confirmationCount')]), offset(u32(), -8), 'votes'), u8('rootSlotValid'), nu64('rootSlot'), nu64('epoch'), nu64('credits'), nu64('lastEpochCredits'), nu64(), // epochCredits.length
 seq(struct([nu64('epoch'), nu64('credits'), nu64('prevCredits')]), offset(u32(), -8), 'epochCredits')]);
 
+// @ts-ignore
+
+var InitMintParams =
+/** @class */
+function () {
+  function InitMintParams(mint, rent, decimals, mintAuthority, option, freezeAuthority) {
+    this.mint = mint;
+    this.rent = rent;
+    this.decimals = decimals;
+    this.mintAuthority = mintAuthority;
+    this.option = option;
+    this.freezeAuthority = freezeAuthority;
+    console.log('todo: ', mint, rent, decimals, mintAuthority, option, freezeAuthority);
+  }
+
+  return InitMintParams;
+}();
+
+var InitAccountParmas =
+/** @class */
+function () {
+  function InitAccountParmas(account, mint, owner, rent) {
+    this.account = account;
+    this.mint = mint;
+    this.owner = owner;
+    this.rent = rent;
+    console.log('todo: ', account, mint, owner, rent);
+  }
+
+  return InitAccountParmas;
+}();
+
+var TransferParams =
+/** @class */
+function () {
+  function TransferParams(source, destination, amount) {
+    this.source = source;
+    this.destination = destination;
+    this.amount = amount;
+    console.log("todo");
+  }
+
+  return TransferParams;
+}();
+
+var ApproveParams =
+/** @class */
+function () {
+  function ApproveParams(account, delegate, amount) {
+    this.account = account;
+    this.delegate = delegate;
+    this.amount = amount;
+    console.log("todo");
+  }
+
+  return ApproveParams;
+}();
+
+var RevokeParams =
+/** @class */
+function () {
+  function RevokeParams(account, owner) {
+    this.account = account;
+    this.owner = owner;
+    console.log("todo");
+  }
+
+  return RevokeParams;
+}();
+
+var SetAuthorityParams =
+/** @class */
+function () {
+  function SetAuthorityParams(account, currentAuthority, authorityType, option, newAuthority) {
+    this.account = account;
+    this.currentAuthority = currentAuthority;
+    this.authorityType = authorityType;
+    this.option = option;
+    this.newAuthority = newAuthority;
+    console.log('todo');
+  }
+
+  return SetAuthorityParams;
+}();
+
+var MintToParams =
+/** @class */
+function () {
+  function MintToParams(mint, dest, authority, amount) {
+    this.mint = mint;
+    this.dest = dest;
+    this.authority = authority;
+    this.amount = amount;
+    console.log("todo");
+  }
+
+  return MintToParams;
+}();
+
+var BurnParams =
+/** @class */
+function () {
+  function BurnParams(account, mint, owner, amount) {
+    this.account = account;
+    this.mint = mint;
+    this.owner = owner;
+    this.amount = amount;
+    console.log("todo");
+  }
+
+  return BurnParams;
+}();
+
+var CloseAccountParams =
+/** @class */
+function () {
+  function CloseAccountParams(account, dest, owner) {
+    this.account = account;
+    this.dest = dest;
+    this.owner = owner;
+    console.log("todo");
+  }
+
+  return CloseAccountParams;
+}();
+
+var FreezeAccountParams =
+/** @class */
+function () {
+  function FreezeAccountParams(account, dest, authority) {
+    this.account = account;
+    this.dest = dest;
+    this.authority = authority;
+    console.log("todo");
+  }
+
+  return FreezeAccountParams;
+}();
+
+var ThawAccountParams =
+/** @class */
+function () {
+  function ThawAccountParams(account, dest, authority) {
+    this.account = account;
+    this.dest = dest;
+    this.authority = authority;
+    console.log("todo");
+  }
+
+  return ThawAccountParams;
+}();
+
+var TransferCheckedParams =
+/** @class */
+function () {
+  function TransferCheckedParams(source, mint, destination, owner, amount, decimals) {
+    this.source = source;
+    this.mint = mint;
+    this.destination = destination;
+    this.owner = owner;
+    this.amount = amount;
+    this.decimals = decimals;
+    console.log("todo");
+  }
+
+  return TransferCheckedParams;
+}();
+
+var ApproveCheckedParams =
+/** @class */
+function () {
+  function ApproveCheckedParams(account, mint, delegate, owner, amount, decimals) {
+    this.account = account;
+    this.mint = mint;
+    this.delegate = delegate;
+    this.owner = owner;
+    this.amount = amount;
+    this.decimals = decimals;
+    console.log("todo");
+  }
+
+  return ApproveCheckedParams;
+}();
+
+var MintToCheckedParams =
+/** @class */
+function () {
+  function MintToCheckedParams(mint, dest, authority, amount, decimals) {
+    this.mint = mint;
+    this.dest = dest;
+    this.authority = authority;
+    this.amount = amount;
+    this.decimals = decimals;
+    console.log("todo");
+  }
+
+  return MintToCheckedParams;
+}();
+
+var BurnCheckedParams =
+/** @class */
+function () {
+  function BurnCheckedParams(account, mint, owner, amount, decimals) {
+    this.account = account;
+    this.mint = mint;
+    this.owner = owner;
+    this.amount = amount;
+    this.decimals = decimals;
+    console.log("todo");
+  }
+
+  return BurnCheckedParams;
+}();
+
+var TokenInstruction =
+/** @class */
+function () {
+  function TokenInstruction() {}
+
+  TokenInstruction.deocdeTokenInstructionType = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('cmd')]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var cmd = data.cmd;
+
+    switch (cmd) {
+      case 0:
+        return 'InitMint';
+
+      case 1:
+        return 'InitAccount';
+
+      case 3:
+        return 'Transfer';
+
+      case 4:
+        return 'Approve';
+
+      case 5:
+        return 'Revoke';
+
+      case 6:
+        return 'SetAuthority';
+
+      case 7:
+        return 'MintTo';
+
+      case 8:
+        return 'Burn';
+
+      case 9:
+        return 'CloseAccount';
+
+      case 10:
+        return 'FreezeAccount';
+
+      case 11:
+        return 'ThawAccount';
+
+      case 12:
+        return 'TransferChecked';
+
+      case 13:
+        return 'ApproveChecked';
+
+      case 14:
+        return 'MintToChecked';
+
+      case 15:
+        return 'BurnChecked';
+    }
+
+    return '';
+  };
+
+  TokenInstruction.decodeInitMint = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), Layout_1.u8('decimals'), publicKey$1('mintAuthority'), Layout_1.u8('option'), publicKey$1('freezeAuthority')]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var decimals = data.decimals,
+        mintAuthority = data.mintAuthority,
+        option = data.option,
+        freezeAuthority = data.freezeAuthority;
+    return new InitMintParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, decimals, new PublicKey(mintAuthority), option, new PublicKey(freezeAuthority));
+  };
+
+  TokenInstruction.decodeInitAccount = function (instruction) {
+    return new InitAccountParmas(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey, instruction.keys[3].pubkey);
+  };
+
+  TokenInstruction.decodeTransfer = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), uint64('amount')]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var amount = data.amount;
+    return new TransferParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, amount);
+  };
+
+  TokenInstruction.decodeApprove = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), uint64('amount')]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var amount = data.amount;
+    return new ApproveParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, amount);
+  };
+
+  TokenInstruction.decodeRevoke = function (instruction) {
+    return new RevokeParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey);
+  };
+
+  TokenInstruction.decodeSetAuthority = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), Layout_1.u8('authorityType'), Layout_1.u8('option'), publicKey$1('newAuthority')]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var authorityType = data.authorityType,
+        option = data.option,
+        newAuthority = data.newAuthority;
+    return new SetAuthorityParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, authorityType, option, newAuthority);
+  };
+
+  TokenInstruction.decodeMintTo = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), uint64('amount')]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var amount = data.amount;
+    return new MintToParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey, amount);
+  };
+
+  TokenInstruction.decodeBurn = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), uint64('amount')]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var amount = data.amount;
+    return new BurnParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey, amount);
+  };
+
+  TokenInstruction.decodeCloseAccount = function (instruction) {
+    return new CloseAccountParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey);
+  };
+
+  TokenInstruction.decodeFreezeAccount = function (instruction) {
+    return new FreezeAccountParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey);
+  };
+
+  TokenInstruction.decodeThawAccount = function (instruction) {
+    return new ThawAccountParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey);
+  };
+
+  TokenInstruction.decodeTransferChecked = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), uint64('amount'), Layout_1.u8('decimals'),,]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var amount = data.amount,
+        decimals = data.decimals;
+    return new TransferCheckedParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey, instruction.keys[3].pubkey, amount, decimals);
+  };
+
+  TokenInstruction.decodeApproveChecked = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), uint64('amount'), Layout_1.u8('decimals'),,]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var amount = data.amount,
+        decimals = data.decimals;
+    return new ApproveCheckedParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey, instruction.keys[3].pubkey, amount, decimals);
+  };
+
+  TokenInstruction.decodeMintToChecked = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), uint64('amount'), Layout_1.u8('decimals'),,]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var amount = data.amount,
+        decimals = data.decimals;
+    return new MintToCheckedParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey, amount, decimals);
+  };
+
+  TokenInstruction.decodeBurnChecked = function (instruction) {
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), uint64('amount'), Layout_1.u8('decimals'),,]);
+    var data;
+
+    try {
+      data = layout.decode(instruction.data);
+    } catch (err) {
+      throw new Error('invalid instruction; ' + err);
+    }
+
+    var amount = data.amount,
+        decimals = data.decimals;
+    return new BurnCheckedParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, instruction.keys[2].pubkey, amount, decimals);
+  };
+
+  return TokenInstruction;
+}();
+
+var TokenProgram =
+/** @class */
+function () {
+  function TokenProgram() {
+    this.programID = 'TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA';
+  }
+
+  TokenProgram.prototype.parseInstruction = function (instruction) {
+    var msg = new Message$1();
+    var it = TokenInstruction.deocdeTokenInstructionType(instruction);
+    msg.program = this.programID;
+    msg.type = 'instruction';
+    msg.inputs = new Map();
+
+    switch (it) {
+      case 'InitMint':
+        {
+          msg.name = 'InitMint';
+          var param = TokenInstruction.decodeInitMint(instruction);
+          msg.inputs.set('mint', param.mint.toBase58());
+          msg.inputs.set('rent', param.rent.toBase58());
+          msg.inputs.set('decimals', param.decimals.toString());
+          msg.inputs.set('mintAuthority', param.mintAuthority.toBase58());
+          msg.inputs.set('option', param.option.toString());
+          msg.inputs.set('freezeAuthority', param.freezeAuthority.toBase58());
+          break;
+        }
+
+      case 'InitAccount':
+        {
+          msg.name = 'InitAccount';
+          var param = TokenInstruction.decodeInitAccount(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('mint', param.mint.toBase58());
+          msg.inputs.set('owner', param.owner.toBase58());
+          msg.inputs.set('rent', param.rent.toBase58());
+          break;
+        }
+
+      case 'Transfer':
+        {
+          msg.name = 'Transfer';
+          var param = TokenInstruction.decodeTransfer(instruction);
+          msg.inputs.set('source', param.source.toBase58());
+          msg.inputs.set('destination', param.destination.toBase58());
+          msg.inputs.set('amount', param.amount.toString());
+          break;
+        }
+
+      case 'Approve':
+        {
+          msg.name = 'Approve';
+          var param = TokenInstruction.decodeApprove(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('delegate', param.delegate.toBase58());
+          msg.inputs.set('amount', param.amount.toString());
+          break;
+        }
+
+      case 'Revoke':
+        {
+          msg.name = 'Revoke';
+          var param = TokenInstruction.decodeRevoke(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('owner', param.owner.toBase58());
+          break;
+        }
+
+      case 'SetAuthority':
+        {
+          msg.name = 'SetAuthority';
+          var param = TokenInstruction.decodeSetAuthority(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('currentAuthority', param.currentAuthority.toBase58());
+          msg.inputs.set('authorityType', param.authorityType.toString());
+          msg.inputs.set('option', param.option.toString());
+          msg.inputs.set('newAuthority', param.newAuthority.toBase58());
+          break;
+        }
+
+      case 'MintTo':
+        {
+          msg.name = 'MintTo';
+          var param = TokenInstruction.decodeMintTo(instruction);
+          msg.inputs.set('mint', param.mint.toBase58());
+          msg.inputs.set('dest', param.dest.toBase58());
+          msg.inputs.set('authority', param.authority.toBase58());
+          msg.inputs.set('amount', param.amount.toString());
+          break;
+        }
+
+      case 'Burn':
+        {
+          msg.name = 'Burn';
+          var param = TokenInstruction.decodeBurn(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('mint', param.mint.toBase58());
+          msg.inputs.set('owner', param.owner.toBase58());
+          msg.inputs.set('amount', param.amount.toString());
+          break;
+        }
+
+      case 'CloseAccount':
+        {
+          msg.name = 'CloseAccount';
+          var param = TokenInstruction.decodeCloseAccount(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('dest', param.dest.toBase58());
+          msg.inputs.set('owner', param.owner.toBase58());
+          break;
+        }
+
+      case 'FreezeAccount':
+        {
+          msg.name = 'FreezeAccount';
+          var param = TokenInstruction.decodeFreezeAccount(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('dest', param.dest.toBase58());
+          msg.inputs.set('authority', param.authority.toBase58());
+          break;
+        }
+
+      case 'ThawAccount':
+        {
+          msg.name = 'ThawAccount';
+          var param = TokenInstruction.decodeThawAccount(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('dest', param.dest.toBase58());
+          msg.inputs.set('authority', param.authority.toBase58());
+          break;
+        }
+
+      case 'TransferChecked':
+        {
+          msg.name = 'TransferChecked';
+          var param = TokenInstruction.decodeTransferChecked(instruction);
+          msg.inputs.set('source', param.source.toBase58());
+          msg.inputs.set('mint', param.mint.toBase58());
+          msg.inputs.set('destination', param.destination.toBase58());
+          msg.inputs.set('owner', param.owner.toBase58());
+          msg.inputs.set('amount', param.amount.toString());
+          msg.inputs.set('decimals', param.decimals.toString());
+          break;
+        }
+
+      case 'ApproveChecked':
+        {
+          msg.name = 'ApproveChecked';
+          var param = TokenInstruction.decodeApproveChecked(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('mint', param.mint.toBase58());
+          msg.inputs.set('delegate', param.delegate.toBase58());
+          msg.inputs.set('owner', param.owner.toBase58());
+          msg.inputs.set('amount', param.amount.toString());
+          msg.inputs.set('decimals', param.decimals.toString());
+          break;
+        }
+
+      case 'MintToChecked':
+        {
+          msg.name = 'MintToChecked';
+          var param = TokenInstruction.decodeMintToChecked(instruction);
+          msg.inputs.set('mint', param.mint.toBase58());
+          msg.inputs.set('dest', param.dest.toBase58());
+          msg.inputs.set('authority', param.authority.toBase58());
+          msg.inputs.set('amount', param.amount.toString());
+          msg.inputs.set('decimals', param.decimals.toString());
+          break;
+        }
+
+      case 'BurnChecked':
+        {
+          msg.name = 'BurnChecked';
+          var param = TokenInstruction.decodeBurnChecked(instruction);
+          msg.inputs.set('account', param.account.toBase58());
+          msg.inputs.set('mint', param.mint.toBase58());
+          msg.inputs.set('owner', param.owner.toBase58());
+          msg.inputs.set('amount', param.amount.toString());
+          msg.inputs.set('decimals', param.decimals.toString());
+          break;
+        }
+
+      default:
+        {
+          msg.name = "unknown";
+          break;
+        }
+    }
+
+    return msg;
+  };
+
+  return TokenProgram;
+}();
+var plugin$2 = new TokenProgram();
+
 var SystemProgram =
 /** @class */
 function () {
@@ -29276,141 +31665,142 @@ function () {
     var msg = new Message$1();
     var it = SystemInstruction.decodeInstructionType(instruction);
     msg.program = this.programID;
-    msg.type = "instruction";
+    msg.type = 'instruction';
+    msg.inputs = new Map();
 
     switch (it) {
       case 'AdvanceNonceAccount':
         {
-          msg.name = "AdvanceNonceAccount";
+          msg.name = 'AdvanceNonceAccount';
           var param = SystemInstruction.decodeNonceAdvance(instruction);
-          msg.inputs.set("authorizedPubkey", param.authorizedPubkey.toBase58());
-          msg.inputs.set("noncePubkey", param.noncePubkey.toBase58());
+          msg.inputs.set('authorizedPubkey', param.authorizedPubkey.toBase58());
+          msg.inputs.set('noncePubkey', param.noncePubkey.toBase58());
           break;
         }
 
       case 'Allocate':
         {
-          msg.name = "Allocate";
+          msg.name = 'Allocate';
           var param = SystemInstruction.decodeAllocate(instruction);
-          msg.inputs.set("accountPubkey", param.accountPubkey.toBase58());
-          msg.inputs.set("space", param.space.toString());
+          msg.inputs.set('accountPubkey', param.accountPubkey.toBase58());
+          msg.inputs.set('space', param.space.toString());
           break;
         }
 
       case 'AllocateWithSeed':
         {
-          msg.name = "AllocateWithSeed";
+          msg.name = 'AllocateWithSeed';
           var param = SystemInstruction.decodeAllocateWithSeed(instruction);
-          msg.inputs.set("accountPubkey", param.accountPubkey.toBase58());
-          msg.inputs.set("basePubkey", param.basePubkey.toBase58());
-          msg.inputs.set("seed", param.seed);
-          msg.inputs.set("space", param.space.toString());
-          msg.inputs.set("programId", param.programId.toString());
+          msg.inputs.set('accountPubkey', param.accountPubkey.toBase58());
+          msg.inputs.set('basePubkey', param.basePubkey.toBase58());
+          msg.inputs.set('seed', param.seed);
+          msg.inputs.set('space', param.space.toString());
+          msg.inputs.set('programId', param.programId.toString());
           break;
         }
 
       case 'Assign':
         {
-          msg.name = "Assign";
+          msg.name = 'Assign';
           var param = SystemInstruction.decodeAssign(instruction);
-          msg.inputs.set("accountPubkey", param.accountPubkey.toBase58());
-          msg.inputs.set("programId", param.programId.toBase58());
+          msg.inputs.set('accountPubkey', param.accountPubkey.toBase58());
+          msg.inputs.set('programId', param.programId.toBase58());
           break;
         }
 
       case 'AssignWithSeed':
         {
-          msg.name = "AssignWithSeed";
+          msg.name = 'AssignWithSeed';
           var param = SystemInstruction.decodeAssignWithSeed(instruction);
-          msg.inputs.set("accountPubkey", param.accountPubkey.toBase58());
-          msg.inputs.set("basePubkey", param.basePubkey.toBase58());
-          msg.inputs.set("seed", param.seed);
-          msg.inputs.set("programId", param.programId.toBase58());
+          msg.inputs.set('accountPubkey', param.accountPubkey.toBase58());
+          msg.inputs.set('basePubkey', param.basePubkey.toBase58());
+          msg.inputs.set('seed', param.seed);
+          msg.inputs.set('programId', param.programId.toBase58());
           break;
         }
 
       case 'AuthorizeNonceAccount':
         {
-          msg.name = "AuthorizeNonceAccount";
+          msg.name = 'AuthorizeNonceAccount';
           var param = SystemInstruction.decodeNonceAuthorize(instruction);
-          msg.inputs.set("noncePubkey", param.noncePubkey.toBase58());
-          msg.inputs.set("authorizedPubkey", param.authorizedPubkey.toBase58());
-          msg.inputs.set("newAuthorizedPubkey", param.newAuthorizedPubkey.toBase58());
+          msg.inputs.set('noncePubkey', param.noncePubkey.toBase58());
+          msg.inputs.set('authorizedPubkey', param.authorizedPubkey.toBase58());
+          msg.inputs.set('newAuthorizedPubkey', param.newAuthorizedPubkey.toBase58());
           break;
         }
 
       case 'Create':
         {
-          msg.name = "Create";
+          msg.name = 'Create';
           var param = SystemInstruction.decodeCreateAccount(instruction);
-          msg.inputs.set("fromPubkey", param.fromPubkey.toBase58());
-          msg.inputs.set("newAccountPubkey", param.newAccountPubkey.toBase58());
-          msg.inputs.set("lamports", param.lamports.toString());
-          msg.inputs.set("space", param.space.toString());
-          msg.inputs.set("programId", param.programId.toBase58());
+          msg.inputs.set('fromPubkey', param.fromPubkey.toBase58());
+          msg.inputs.set('newAccountPubkey', param.newAccountPubkey.toBase58());
+          msg.inputs.set('lamports', param.lamports.toString());
+          msg.inputs.set('space', param.space.toString());
+          msg.inputs.set('programId', param.programId.toBase58());
           break;
         }
 
       case 'CreateWithSeed':
         {
-          msg.name = "CreateWithSeed";
+          msg.name = 'CreateWithSeed';
           var param = SystemInstruction.decodeCreateWithSeed(instruction);
-          msg.inputs.set("fromPubkey", param.fromPubkey.toBase58());
-          msg.inputs.set("newAccountPubkey", param.newAccountPubkey.toBase58());
-          msg.inputs.set("basePubkey", param.basePubkey.toBase58());
-          msg.inputs.set("seed", param.seed);
-          msg.inputs.set("lamports", param.lamports.toString());
-          msg.inputs.set("space", param.space.toString());
-          msg.inputs.set("programId", param.programId.toBase58());
+          msg.inputs.set('fromPubkey', param.fromPubkey.toBase58());
+          msg.inputs.set('newAccountPubkey', param.newAccountPubkey.toBase58());
+          msg.inputs.set('basePubkey', param.basePubkey.toBase58());
+          msg.inputs.set('seed', param.seed);
+          msg.inputs.set('lamports', param.lamports.toString());
+          msg.inputs.set('space', param.space.toString());
+          msg.inputs.set('programId', param.programId.toBase58());
           break;
         }
 
       case 'InitializeNonceAccount':
         {
-          msg.name = "InitializeNonceAccount";
+          msg.name = 'InitializeNonceAccount';
           var param = SystemInstruction.decodeNonceInitialize(instruction);
-          msg.inputs.set("noncePubkey", param.noncePubkey.toBase58());
-          msg.inputs.set("authorizedPubkey", param.authorizedPubkey.toBase58());
+          msg.inputs.set('noncePubkey', param.noncePubkey.toBase58());
+          msg.inputs.set('authorizedPubkey', param.authorizedPubkey.toBase58());
           break;
         }
 
       case 'Transfer':
         {
-          msg.name = "Transfer";
+          msg.name = 'Transfer';
           var param = SystemInstruction.decodeTransfer(instruction);
-          msg.inputs.set("fromPubkey", param.fromPubkey.toBase58());
-          msg.inputs.set("toPubkey", param.toPubkey.toBase58());
-          msg.inputs.set("lamports", param.lamports.toString());
+          msg.inputs.set('fromPubkey', param.fromPubkey.toBase58());
+          msg.inputs.set('toPubkey', param.toPubkey.toBase58());
+          msg.inputs.set('lamports', param.lamports.toString());
           break;
         }
 
       case 'TransferWithSeed':
         {
-          msg.name = "TransferWithSeed";
+          msg.name = 'TransferWithSeed';
           var param = SystemInstruction.decodeTransferWithSeed(instruction);
-          msg.inputs.set("fromPubkey", param.fromPubkey.toBase58());
-          msg.inputs.set("basePubkey", param.basePubkey.toBase58());
-          msg.inputs.set("toPubkey", param.toPubkey.toBase58());
-          msg.inputs.set("lamports", param.lamports.toString());
-          msg.inputs.set("seed", param.seed);
-          msg.inputs.set("programId", param.programId.toBase58());
+          msg.inputs.set('fromPubkey', param.fromPubkey.toBase58());
+          msg.inputs.set('basePubkey', param.basePubkey.toBase58());
+          msg.inputs.set('toPubkey', param.toPubkey.toBase58());
+          msg.inputs.set('lamports', param.lamports.toString());
+          msg.inputs.set('seed', param.seed);
+          msg.inputs.set('programId', param.programId.toBase58());
           break;
         }
 
       case 'WithdrawNonceAccount':
         {
-          msg.name = "WithdrawNonceAccount";
+          msg.name = 'WithdrawNonceAccount';
           var param = SystemInstruction.decodeNonceWithdraw(instruction);
-          msg.inputs.set("noncePubkey", param.noncePubkey.toBase58());
-          msg.inputs.set("authorizedPubkey", param.authorizedPubkey.toBase58());
-          msg.inputs.set("toPubkey", param.toPubkey.toBase58());
-          msg.inputs.set("lamports", param.lamports.toString());
+          msg.inputs.set('noncePubkey', param.noncePubkey.toBase58());
+          msg.inputs.set('authorizedPubkey', param.authorizedPubkey.toBase58());
+          msg.inputs.set('toPubkey', param.toPubkey.toBase58());
+          msg.inputs.set('lamports', param.lamports.toString());
           break;
         }
 
       default:
         {
-          msg.name = "UNKNOWN";
+          msg.name = 'UNKNOWN';
           break;
         }
     }
@@ -29443,7 +31833,9 @@ var configPlugins = [plugin$2, plugin$1, plugin];
 var IParserManager =
 /** @class */
 function () {
-  function IParserManager() {}
+  function IParserManager() {
+    this.plugins = new Map();
+  }
 
   IParserManager.instance = function () {
     if (!IParserManager._instance) {
@@ -29455,17 +31847,19 @@ function () {
 
   IParserManager.prototype.loadPlugins = function () {
     for (var _i = 0, configPlugins_1 = configPlugins; _i < configPlugins_1.length; _i++) {
-      var p = configPlugins_1[_i];
+      var p = configPlugins_1[_i]; //console.log("IPaser load plugin for ", p.programID)
+
       this.plugins.set(p.programID, p);
     }
   };
 
   IParserManager.prototype.parseInstruction = function (programID, instruction) {
     if (!this.plugins.has(programID)) {
-      throw "no such program's instruction paster";
+      throw Error("no such program's instruction paster");
     }
 
     var plugin = this.plugins.get(programID);
+    console.log('plugin:', plugin);
     return plugin.parseInstruction(instruction);
   };
 
