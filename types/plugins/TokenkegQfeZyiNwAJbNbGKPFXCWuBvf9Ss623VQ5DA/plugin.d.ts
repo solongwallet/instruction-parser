@@ -1,4 +1,4 @@
-import { IParserPlugin, Message } from 'src/iparserPlugin';
+import { IParserPlugin, Message } from '@src/iparserPlugin';
 import { TransactionInstruction } from '@solana/web3.js';
 export declare class TokenProgram implements IParserPlugin {
     programID: string;

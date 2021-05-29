@@ -1,4 +1,4 @@
-import * as BufferLayout from 'buffer-layout';
+import BufferLayout from 'buffer-layout';
 import { TransactionInstruction, PublicKey } from '@solana/web3.js';
 export declare class TokenInstructionLayout {
     name: string;

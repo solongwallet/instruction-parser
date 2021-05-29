@@ -1,18 +1,22 @@
-import * as BufferLayout from 'buffer-layout';
+import BufferLayout from 'buffer-layout';
 import * as Layout from './layout';
 import { TransactionInstruction, PublicKey } from '@solana/web3.js';
 
-export class TokenInstructionLayout {
+export interface TokenInstructionLayout {
   name: string;
   index: number;
   layout: BufferLayout.struct;
 }
 
+type TodoObject = {
+  [index: string]: any;
+};
+
 export function deocdeTokenInstructionType(
   instruction: TransactionInstruction
 ): string {
-  let layout = BufferLayout.struct([BufferLayout.u8('cmd')]);
-  let data: Object;
+  const layout = BufferLayout.struct([BufferLayout.u8('cmd')]);
+  let data: TodoObject;
   try {
     data = layout.decode(instruction.data);
   } catch (err) {
@@ -36,20 +40,30 @@ export class InitMintParams {
     mintAuthority: PublicKey,
     option: number,
     freezeAuthority: PublicKey
-  ) {}
+  ) {
+    console.log(
+      'todo: ',
+      mint,
+      rent,
+      decimals,
+      mintAuthority,
+      option,
+      freezeAuthority
+    );
+  }
 }
 
 export function decodeInitMint(
   instruction: TransactionInstruction
 ): InitMintParams {
-  let layout = BufferLayout.struct([
+  const layout = BufferLayout.struct([
     BufferLayout.u8('instruction'),
     BufferLayout.u8('decimals'),
     Layout.publicKey('mintAuthority'),
     BufferLayout.u8('option'),
     Layout.publicKey('freezeAuthority')
   ]);
-  let data: Object;
+  let data: TodoObject;
   try {
     data = layout.decode(instruction.data);
   } catch (err) {
@@ -72,7 +86,9 @@ export class InitAccountParmas {
     mint: PublicKey,
     owner: PublicKey,
     rent: PublicKey
-  ) {}
+  ) {
+    console.log('todo: ', account, mint, owner, rent);
+  }
 }
 
 export function decodeInitAccount(

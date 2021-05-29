@@ -21,7 +21,20 @@
         "noUnusedLocals": true,
         // "outDir": "./types",
         "declarationDir": "./types",
-        "baseUrl": "./"
+        "baseUrl": "./",
+        "paths": {
+            "@src/*": [
+                "src/*"
+            ],
+            "@itypes": [
+                "src/@types"
+            ]
+        },
+        "plugins": [
+            {
+                "transform": "ts-transform-paths"
+            }
+        ]
     },
     "include": ["src"],
     "exclude": [

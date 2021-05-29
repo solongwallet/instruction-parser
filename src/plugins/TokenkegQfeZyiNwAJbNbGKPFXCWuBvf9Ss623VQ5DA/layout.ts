@@ -1,25 +1,29 @@
 // @flow
 
-import * as BufferLayout from 'buffer-layout';
+import BufferLayout from 'buffer-layout';
+
+type TodoObject = {
+  [index: string]: any;
+};
 
 /**
  * Layout for a public key
  */
-export const publicKey = (property: string = 'publicKey'): Object => {
+export const publicKey = (property = 'publicKey'): TodoObject => {
   return BufferLayout.blob(32, property);
 };
 
 /**
  * Layout for a 64bit unsigned value
  */
-export const uint64 = (property: string = 'uint64'): Object => {
+export const uint64 = (property = 'uint64'): TodoObject => {
   return BufferLayout.blob(8, property);
 };
 
 /**
  * Layout for a Rust String type
  */
-export const rustString = (property: string = 'string') => {
+export const rustString = (property = 'string') => {
   const rsl = BufferLayout.struct(
     [
       BufferLayout.u32('length'),
@@ -57,7 +61,7 @@ export const rustString = (property: string = 'string') => {
 /**
  * Layout for an Authorized object
  */
-export const authorized = (property: string = 'authorized') => {
+export const authorized = (property = 'authorized') => {
   return BufferLayout.struct(
     [publicKey('staker'), publicKey('withdrawer')],
     property
@@ -67,7 +71,7 @@ export const authorized = (property: string = 'authorized') => {
 /**
  * Layout for a Lockup object
  */
-export const lockup = (property: string = 'lockup') => {
+export const lockup = (property = 'lockup') => {
   return BufferLayout.struct(
     [
       BufferLayout.ns64('unixTimestamp'),

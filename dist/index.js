@@ -28411,10 +28411,6 @@ jsonRpcResultAndContext(array(nullable(SignatureStatusResponse)));
  */
 
 jsonRpcResult(number());
-/**
- * @internal
- */
-
 const ConfirmedTransactionResult = type({
   signatures: array(string()),
   message: type({
@@ -28431,13 +28427,6 @@ const ConfirmedTransactionResult = type({
     })),
     recentBlockhash: string()
   })
-});
-const TransactionFromConfirmed = coerce(instance(Transaction), ConfirmedTransactionResult, result => {
-  const {
-    message,
-    signatures
-  } = result;
-  return Transaction.populate(new Message(message), signatures);
 });
 const ParsedInstructionResult = type({
   parsed: unknown(),
@@ -28534,7 +28523,7 @@ jsonRpcResult(nullable(type({
   previousBlockhash: string(),
   parentSlot: number(),
   transactions: array(type({
-    transaction: TransactionFromConfirmed,
+    transaction: ConfirmedTransactionResult,
     meta: nullable(ConfirmedTransactionMetaResult)
   })),
   rewards: optional(array(type({
@@ -28562,9 +28551,9 @@ jsonRpcResult(nullable(type({
 
 jsonRpcResult(nullable(type({
   slot: number(),
-  transaction: TransactionFromConfirmed,
   meta: ConfirmedTransactionMetaResult,
-  blockTime: optional(nullable(number()))
+  blockTime: optional(nullable(number())),
+  transaction: ConfirmedTransactionResult
 })));
 /**
  * Expected JSON RPC response for the "getConfirmedTransaction" message
