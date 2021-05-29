@@ -2,6 +2,7 @@ import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import replace from '@rollup/plugin-replace';
+import json from '@rollup/plugin-json'
 import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
 
@@ -38,6 +39,7 @@ export default [
     //             extensions
     //         }),
     //         commonjs(),
+    //         json(),
     //         typescript({ useTsconfigDeclarationDir: true }),
     //         babel({
     //             extensions,
@@ -55,15 +57,21 @@ export default [
     // ES
     {
         input: 'src/index.ts',
-        output: { file: `es/${fileName}.js`, format: 'es', indent: false },
+        output: { file: `es/${fileName}.js`, format: 'es', indent: false, 
+            // globals: {
+            //     "buffer": "buffer" // 指明 global.buffer 即是外部依赖 buffer
+            // }
+        },
         external: makeExternalPredicate([
             ...Object.keys(pkg.dependencies || {}),
             ...Object.keys(pkg.peerDependencies || {})
         ]),
+        
         plugins: [
             nodeResolve({
                 extensions
             }),
+            json(),
             commonjs(),
             typescript({ useTsconfigDeclarationDir: true }),
             babel({
@@ -89,8 +97,10 @@ export default [
     //         }),
     //         replace({
     //             'process.env.NODE_ENV': JSON.stringify('production')
+    //             'preventAssignment': true
     //         }),
     //         commonjs(),
+    //         json(),
     //         typescript({ tsconfigOverride: noDeclarationFiles }),
     //         babel({
     //             extensions,
@@ -121,13 +131,15 @@ export default [
                 extensions
             }),
             commonjs(),
+            json(),
             typescript({ tsconfigOverride: noDeclarationFiles }),
             babel({
                 extensions,
                 exclude: 'node_modules/**'
             }),
             replace({
-                'process.env.NODE_ENV': JSON.stringify('development')
+                'process.env.NODE_ENV': JSON.stringify('development'),
+                'preventAssignment': true
             })
         ]
     },
@@ -143,16 +155,20 @@ export default [
         },
         plugins: [
             nodeResolve({
-                extensions
+                extensions,
+                // preferBuiltins: true, 
+                // mainFields: ['browser']
             }),
             commonjs(),
+            json(),
             typescript({ tsconfigOverride: noDeclarationFiles }),
             babel({
                 extensions,
                 exclude: 'node_modules/**'
             }),
             replace({
-                'process.env.NODE_ENV': JSON.stringify('production')
+                'process.env.NODE_ENV': JSON.stringify('production'),
+                'preventAssignment': true
             }),
             terser({
                 compress: {
