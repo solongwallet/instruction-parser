@@ -1,15 +1,15 @@
 (function (global, factory) {
-typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('assert'), require('crypto'), require('buffer'), require('@babel/runtime/helpers/defineProperty'), require('crypto-hash'), require('text-encoding-utf-8'), require('url'), require('stream'), require('http'), require('https'), require('zlib'), require('@babel/runtime/helpers/interopRequireDefault'), require('@babel/runtime/helpers/classCallCheck'), require('@babel/runtime/helpers/inherits'), require('@babel/runtime/helpers/possibleConstructorReturn'), require('@babel/runtime/helpers/getPrototypeOf'), require('events'), require('net'), require('tls'), require('fs'), require('path'), require('os'), require('@babel/runtime/regenerator'), require('@babel/runtime/helpers/asyncToGenerator'), require('@babel/runtime/helpers/typeof'), require('@babel/runtime/helpers/createClass'), require('@babel/runtime/helpers/interopRequireWildcard'), require('@babel/runtime/helpers/toConsumableArray'), require('jayson/lib/client/browser'), require('util')) :
-typeof define === 'function' && define.amd ? define(['exports', 'assert', 'crypto', 'buffer', '@babel/runtime/helpers/defineProperty', 'crypto-hash', 'text-encoding-utf-8', 'url', 'stream', 'http', 'https', 'zlib', '@babel/runtime/helpers/interopRequireDefault', '@babel/runtime/helpers/classCallCheck', '@babel/runtime/helpers/inherits', '@babel/runtime/helpers/possibleConstructorReturn', '@babel/runtime/helpers/getPrototypeOf', 'events', 'net', 'tls', 'fs', 'path', 'os', '@babel/runtime/regenerator', '@babel/runtime/helpers/asyncToGenerator', '@babel/runtime/helpers/typeof', '@babel/runtime/helpers/createClass', '@babel/runtime/helpers/interopRequireWildcard', '@babel/runtime/helpers/toConsumableArray', 'jayson/lib/client/browser', 'util'], factory) :
-(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.AssertEngine = {}, global.invariant, global.crypto$1, global.buffer, global._defineProperty, global.cryptoHash, global.textEncodingUtf8, global.Url, global.Stream, global.http, global.https, global.zlib, global.interopRequireDefault, global.classCallCheck, global.inherits$1, global.possibleConstructorReturn, global.getPrototypeOf, global.events, global.net, global.tls, global.fs, global.path, global.os, global.regenerator, global.asyncToGenerator, global._typeof, global.createClass, global.interopRequireWildcard, global.toConsumableArray, null, global.util));
-}(this, (function (exports, invariant, crypto$1, buffer, _defineProperty, cryptoHash, textEncodingUtf8, Url, Stream, http, https, zlib, interopRequireDefault, classCallCheck, inherits$1, possibleConstructorReturn, getPrototypeOf, events, net, tls, fs, path, os, regenerator, asyncToGenerator, _typeof, createClass, interopRequireWildcard, toConsumableArray, RpcClient, util) { 'use strict';
+typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('assert'), require('crypto'), require('buffer'), require('@babel/runtime/helpers/defineProperty'), require('crypto-hash'), require('text-encoding-utf-8'), require('url'), require('stream'), require('http'), require('https'), require('zlib'), require('@babel/runtime/helpers/interopRequireDefault'), require('@babel/runtime/helpers/classCallCheck'), require('@babel/runtime/helpers/inherits'), require('@babel/runtime/helpers/possibleConstructorReturn'), require('@babel/runtime/helpers/getPrototypeOf'), require('events'), require('net'), require('tls'), require('fs'), require('path'), require('os'), require('@babel/runtime/regenerator'), require('@babel/runtime/helpers/asyncToGenerator'), require('@babel/runtime/helpers/typeof'), require('@babel/runtime/helpers/createClass'), require('@babel/runtime/helpers/interopRequireWildcard'), require('@babel/runtime/helpers/toConsumableArray'), require('jayson/lib/client/browser'), require('util'), require('@babel/runtime/helpers/slicedToArray')) :
+typeof define === 'function' && define.amd ? define(['exports', 'assert', 'crypto', 'buffer', '@babel/runtime/helpers/defineProperty', 'crypto-hash', 'text-encoding-utf-8', 'url', 'stream', 'http', 'https', 'zlib', '@babel/runtime/helpers/interopRequireDefault', '@babel/runtime/helpers/classCallCheck', '@babel/runtime/helpers/inherits', '@babel/runtime/helpers/possibleConstructorReturn', '@babel/runtime/helpers/getPrototypeOf', 'events', 'net', 'tls', 'fs', 'path', 'os', '@babel/runtime/regenerator', '@babel/runtime/helpers/asyncToGenerator', '@babel/runtime/helpers/typeof', '@babel/runtime/helpers/createClass', '@babel/runtime/helpers/interopRequireWildcard', '@babel/runtime/helpers/toConsumableArray', 'jayson/lib/client/browser', 'util', '@babel/runtime/helpers/slicedToArray'], factory) :
+(global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.AssertEngine = {}, global.assert$c, global.crypto$1, global.buffer, global._defineProperty$1, global.cryptoHash, global.textEncodingUtf8, global.Url, global.Stream, global.http, global.https, global.zlib, global.interopRequireDefault, global._classCallCheck, global.inherits$1, global.possibleConstructorReturn, global.getPrototypeOf, global.events, global.net, global.tls, global.fs, global.path, global.os, global._regeneratorRuntime, global._asyncToGenerator, global._typeof, global._createClass, global.interopRequireWildcard, global._toConsumableArray, global.RpcClient, global.util, global._slicedToArray));
+}(this, (function (exports, assert$c, crypto$1, buffer, _defineProperty$1, cryptoHash, textEncodingUtf8, Url, Stream, http, https, zlib, interopRequireDefault, _classCallCheck, inherits$1, possibleConstructorReturn, getPrototypeOf, events, net, tls, fs, path, os, _regeneratorRuntime, _asyncToGenerator, _typeof, _createClass, interopRequireWildcard, _toConsumableArray, RpcClient, util, _slicedToArray) { 'use strict';
 
 function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
 
-var invariant__default = /*#__PURE__*/_interopDefaultLegacy(invariant);
+var assert__default = /*#__PURE__*/_interopDefaultLegacy(assert$c);
 var crypto__default = /*#__PURE__*/_interopDefaultLegacy(crypto$1);
 var buffer__default = /*#__PURE__*/_interopDefaultLegacy(buffer);
-var _defineProperty__default = /*#__PURE__*/_interopDefaultLegacy(_defineProperty);
+var _defineProperty__default = /*#__PURE__*/_interopDefaultLegacy(_defineProperty$1);
 var textEncodingUtf8__default = /*#__PURE__*/_interopDefaultLegacy(textEncodingUtf8);
 var Url__default = /*#__PURE__*/_interopDefaultLegacy(Url);
 var Stream__default = /*#__PURE__*/_interopDefaultLegacy(Stream);
@@ -17,7 +17,7 @@ var http__default = /*#__PURE__*/_interopDefaultLegacy(http);
 var https__default = /*#__PURE__*/_interopDefaultLegacy(https);
 var zlib__default = /*#__PURE__*/_interopDefaultLegacy(zlib);
 var interopRequireDefault__default = /*#__PURE__*/_interopDefaultLegacy(interopRequireDefault);
-var classCallCheck__default = /*#__PURE__*/_interopDefaultLegacy(classCallCheck);
+var _classCallCheck__default = /*#__PURE__*/_interopDefaultLegacy(_classCallCheck);
 var inherits__default = /*#__PURE__*/_interopDefaultLegacy(inherits$1);
 var possibleConstructorReturn__default = /*#__PURE__*/_interopDefaultLegacy(possibleConstructorReturn);
 var getPrototypeOf__default = /*#__PURE__*/_interopDefaultLegacy(getPrototypeOf);
@@ -27,15 +27,17 @@ var tls__default = /*#__PURE__*/_interopDefaultLegacy(tls);
 var fs__default = /*#__PURE__*/_interopDefaultLegacy(fs);
 var path__default = /*#__PURE__*/_interopDefaultLegacy(path);
 var os__default = /*#__PURE__*/_interopDefaultLegacy(os);
-var regenerator__default = /*#__PURE__*/_interopDefaultLegacy(regenerator);
-var asyncToGenerator__default = /*#__PURE__*/_interopDefaultLegacy(asyncToGenerator);
+var _regeneratorRuntime__default = /*#__PURE__*/_interopDefaultLegacy(_regeneratorRuntime);
+var _asyncToGenerator__default = /*#__PURE__*/_interopDefaultLegacy(_asyncToGenerator);
 var _typeof__default = /*#__PURE__*/_interopDefaultLegacy(_typeof);
-var createClass__default = /*#__PURE__*/_interopDefaultLegacy(createClass);
+var _createClass__default = /*#__PURE__*/_interopDefaultLegacy(_createClass);
 var interopRequireWildcard__default = /*#__PURE__*/_interopDefaultLegacy(interopRequireWildcard);
-var toConsumableArray__default = /*#__PURE__*/_interopDefaultLegacy(toConsumableArray);
+var _toConsumableArray__default = /*#__PURE__*/_interopDefaultLegacy(_toConsumableArray);
+var RpcClient__default = /*#__PURE__*/_interopDefaultLegacy(RpcClient);
 var util__default = /*#__PURE__*/_interopDefaultLegacy(util);
+var _slicedToArray__default = /*#__PURE__*/_interopDefaultLegacy(_slicedToArray);
 
-var Message$1 =
+var Message$2 =
 /** @class */
 function () {
   function Message() {}
@@ -1174,7 +1176,7 @@ class Structure extends Layout {
         /* By construction the field must be fixed-length (because
          * unnamed variable-length fields are disallowed when
          * encoding).  But check it anyway. */
-        invariant__default['default'](0 < span);
+        assert__default['default'](0 < span);
       } else {
         const fv = src[fd.property];
         if (undefined !== fv) {
@@ -2603,7 +2605,7 @@ var f64 = (property => new Double(property));
 var f64be = (property => new DoubleBE(property));
 
 /** Factory for {@link Structure} values. */
-var struct = ((fields, property, decodePrefixes) => new Structure(fields, property, decodePrefixes));
+var struct$1 = ((fields, property, decodePrefixes) => new Structure(fields, property, decodePrefixes));
 
 /** Factory for {@link BitStructure} values. */
 var bits = ((word, msb, property) => new BitStructure(word, msb, property));
@@ -2689,7 +2691,7 @@ var Layout_1 = {
 	f32be: f32be,
 	f64: f64,
 	f64be: f64be,
-	struct: struct,
+	struct: struct$1,
 	bits: bits,
 	seq: seq,
 	union: union$1,
@@ -2705,7 +2707,7 @@ var Layout_1 = {
  * Layout for a public key
  */
 
-var publicKey$1 = function (property) {
+var publicKey$2 = function (property) {
   if (property === void 0) {
     property = 'publicKey';
   }
@@ -2744,7 +2746,7 @@ function commonjsRequire () {
 	throw new Error('Dynamic requires are not currently supported by @rollup/plugin-commonjs');
 }
 
-var naclFast = createCommonjsModule(function (module) {
+var naclFast$1 = createCommonjsModule(function (module) {
 (function(nacl) {
 
 // Ported in 2014 by Dmitry Chestnykh and Devi Mandiri.
@@ -8683,7 +8685,7 @@ var ALPHABET = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
 
 var bs58 = src(ALPHABET);
 
-var lib$1 = createCommonjsModule(function (module, exports) {
+var lib$2 = createCommonjsModule(function (module, exports) {
 var __createBinding = (commonjsGlobal && commonjsGlobal.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -9664,6 +9666,66 @@ function extractContentType(body) {
 	}
 }
 
+/**
+ * The Fetch Standard treats this as if "total bytes" is a property on the body.
+ * For us, we have to explicitly get it with a function.
+ *
+ * ref: https://fetch.spec.whatwg.org/#concept-body-total-bytes
+ *
+ * @param   Body    instance   Instance of Body
+ * @return  Number?            Number of bytes, or null if not possible
+ */
+function getTotalBytes(instance) {
+	const body = instance.body;
+
+
+	if (body === null) {
+		// body is null
+		return 0;
+	} else if (isBlob(body)) {
+		return body.size;
+	} else if (Buffer.isBuffer(body)) {
+		// body is buffer
+		return body.length;
+	} else if (body && typeof body.getLengthSync === 'function') {
+		// detect form data input from form-data module
+		if (body._lengthRetrievers && body._lengthRetrievers.length == 0 || // 1.x
+		body.hasKnownLength && body.hasKnownLength()) {
+			// 2.x
+			return body.getLengthSync();
+		}
+		return null;
+	} else {
+		// body is stream
+		return null;
+	}
+}
+
+/**
+ * Write a Body to a Node.js WritableStream (e.g. http.Request) object.
+ *
+ * @param   Body    instance   Instance of Body
+ * @return  Void
+ */
+function writeToStream(dest, instance) {
+	const body = instance.body;
+
+
+	if (body === null) {
+		// body is null
+		dest.end();
+	} else if (isBlob(body)) {
+		body.stream().pipe(dest);
+	} else if (Buffer.isBuffer(body)) {
+		// body is buffer
+		dest.write(body);
+		dest.end();
+	} else {
+		// body is stream
+		body.pipe(dest);
+	}
+}
+
 // expose Promise
 Body.Promise = global.Promise;
 
@@ -9995,6 +10057,56 @@ Object.defineProperty(HeadersIteratorPrototype, Symbol.toStringTag, {
 	configurable: true
 });
 
+/**
+ * Export the Headers object in a form that Node.js can consume.
+ *
+ * @param   Headers  headers
+ * @return  Object
+ */
+function exportNodeCompatibleHeaders(headers) {
+	const obj = Object.assign({ __proto__: null }, headers[MAP]);
+
+	// http.request() only supports string as Host header. This hack makes
+	// specifying custom Host header possible.
+	const hostHeaderKey = find(headers[MAP], 'Host');
+	if (hostHeaderKey !== undefined) {
+		obj[hostHeaderKey] = obj[hostHeaderKey][0];
+	}
+
+	return obj;
+}
+
+/**
+ * Create a Headers object from an object of headers, ignoring those that do
+ * not conform to HTTP grammar productions.
+ *
+ * @param   Object  obj  Object of headers
+ * @return  Headers
+ */
+function createHeadersLenient(obj) {
+	const headers = new Headers();
+	for (const name of Object.keys(obj)) {
+		if (invalidTokenRegex.test(name)) {
+			continue;
+		}
+		if (Array.isArray(obj[name])) {
+			for (const val of obj[name]) {
+				if (invalidHeaderCharRegex.test(val)) {
+					continue;
+				}
+				if (headers[MAP][name] === undefined) {
+					headers[MAP][name] = [val];
+				} else {
+					headers[MAP][name].push(val);
+				}
+			}
+		} else if (!invalidHeaderCharRegex.test(obj[name])) {
+			headers[MAP][name] = [obj[name]];
+		}
+	}
+	return headers;
+}
+
 const INTERNALS$1 = Symbol('Response internals');
 
 // fix an issue where "STATUS_CODES" aren't a named export for node <10
@@ -10102,7 +10214,7 @@ const INTERNALS$2 = Symbol('Request internals');
 const parse_url = Url__default['default'].parse;
 const format_url = Url__default['default'].format;
 
-'destroy' in Stream__default['default'].Readable.prototype;
+const streamDestructionSupported = 'destroy' in Stream__default['default'].Readable.prototype;
 
 /**
  * Check if a value is an instance of Request.
@@ -10242,6 +10354,78 @@ Object.defineProperties(Request.prototype, {
 });
 
 /**
+ * Convert a Request to Node.js http request options.
+ *
+ * @param   Request  A Request instance
+ * @return  Object   The options object to be passed to http.request
+ */
+function getNodeRequestOptions(request) {
+	const parsedURL = request[INTERNALS$2].parsedURL;
+	const headers = new Headers(request[INTERNALS$2].headers);
+
+	// fetch step 1.3
+	if (!headers.has('Accept')) {
+		headers.set('Accept', '*/*');
+	}
+
+	// Basic fetch
+	if (!parsedURL.protocol || !parsedURL.hostname) {
+		throw new TypeError('Only absolute URLs are supported');
+	}
+
+	if (!/^https?:$/.test(parsedURL.protocol)) {
+		throw new TypeError('Only HTTP(S) protocols are supported');
+	}
+
+	if (request.signal && request.body instanceof Stream__default['default'].Readable && !streamDestructionSupported) {
+		throw new Error('Cancellation of streamed requests with AbortSignal is not supported in node < 8');
+	}
+
+	// HTTP-network-or-cache fetch steps 2.4-2.7
+	let contentLengthValue = null;
+	if (request.body == null && /^(POST|PUT)$/i.test(request.method)) {
+		contentLengthValue = '0';
+	}
+	if (request.body != null) {
+		const totalBytes = getTotalBytes(request);
+		if (typeof totalBytes === 'number') {
+			contentLengthValue = String(totalBytes);
+		}
+	}
+	if (contentLengthValue) {
+		headers.set('Content-Length', contentLengthValue);
+	}
+
+	// HTTP-network-or-cache fetch step 2.11
+	if (!headers.has('User-Agent')) {
+		headers.set('User-Agent', 'node-fetch/1.0 (+https://github.com/bitinn/node-fetch)');
+	}
+
+	// HTTP-network-or-cache fetch step 2.15
+	if (request.compress && !headers.has('Accept-Encoding')) {
+		headers.set('Accept-Encoding', 'gzip,deflate');
+	}
+
+	let agent = request.agent;
+	if (typeof agent === 'function') {
+		agent = agent(parsedURL);
+	}
+
+	if (!headers.has('Connection') && !agent) {
+		headers.set('Connection', 'close');
+	}
+
+	// HTTP-network fetch step 4.2
+	// chunked encoding is handled by Node.js
+
+	return Object.assign({}, parsedURL, {
+		method: request.method,
+		headers: exportNodeCompatibleHeaders(headers),
+		agent
+	});
+}
+
+/**
  * abort-error.js
  *
  * AbortError interface for cancelled requests
@@ -10268,8 +10452,261 @@ AbortError.prototype.constructor = AbortError;
 AbortError.prototype.name = 'AbortError';
 
 // fix an issue where "PassThrough", "resolve" aren't a named export for node <10
-Stream__default['default'].PassThrough;
-Url__default['default'].resolve;
+const PassThrough$1 = Stream__default['default'].PassThrough;
+const resolve_url = Url__default['default'].resolve;
+
+/**
+ * Fetch function
+ *
+ * @param   Mixed    url   Absolute url or Request instance
+ * @param   Object   opts  Fetch options
+ * @return  Promise
+ */
+function fetch(url, opts) {
+
+	// allow custom promise
+	if (!fetch.Promise) {
+		throw new Error('native promise missing, set fetch.Promise to your favorite alternative');
+	}
+
+	Body.Promise = fetch.Promise;
+
+	// wrap http.request into fetch
+	return new fetch.Promise(function (resolve, reject) {
+		// build request object
+		const request = new Request(url, opts);
+		const options = getNodeRequestOptions(request);
+
+		const send = (options.protocol === 'https:' ? https__default['default'] : http__default['default']).request;
+		const signal = request.signal;
+
+		let response = null;
+
+		const abort = function abort() {
+			let error = new AbortError('The user aborted a request.');
+			reject(error);
+			if (request.body && request.body instanceof Stream__default['default'].Readable) {
+				request.body.destroy(error);
+			}
+			if (!response || !response.body) return;
+			response.body.emit('error', error);
+		};
+
+		if (signal && signal.aborted) {
+			abort();
+			return;
+		}
+
+		const abortAndFinalize = function abortAndFinalize() {
+			abort();
+			finalize();
+		};
+
+		// send request
+		const req = send(options);
+		let reqTimeout;
+
+		if (signal) {
+			signal.addEventListener('abort', abortAndFinalize);
+		}
+
+		function finalize() {
+			req.abort();
+			if (signal) signal.removeEventListener('abort', abortAndFinalize);
+			clearTimeout(reqTimeout);
+		}
+
+		if (request.timeout) {
+			req.once('socket', function (socket) {
+				reqTimeout = setTimeout(function () {
+					reject(new FetchError(`network timeout at: ${request.url}`, 'request-timeout'));
+					finalize();
+				}, request.timeout);
+			});
+		}
+
+		req.on('error', function (err) {
+			reject(new FetchError(`request to ${request.url} failed, reason: ${err.message}`, 'system', err));
+			finalize();
+		});
+
+		req.on('response', function (res) {
+			clearTimeout(reqTimeout);
+
+			const headers = createHeadersLenient(res.headers);
+
+			// HTTP fetch step 5
+			if (fetch.isRedirect(res.statusCode)) {
+				// HTTP fetch step 5.2
+				const location = headers.get('Location');
+
+				// HTTP fetch step 5.3
+				const locationURL = location === null ? null : resolve_url(request.url, location);
+
+				// HTTP fetch step 5.5
+				switch (request.redirect) {
+					case 'error':
+						reject(new FetchError(`uri requested responds with a redirect, redirect mode is set to error: ${request.url}`, 'no-redirect'));
+						finalize();
+						return;
+					case 'manual':
+						// node-fetch-specific step: make manual redirect a bit easier to use by setting the Location header value to the resolved URL.
+						if (locationURL !== null) {
+							// handle corrupted header
+							try {
+								headers.set('Location', locationURL);
+							} catch (err) {
+								// istanbul ignore next: nodejs server prevent invalid response headers, we can't test this through normal request
+								reject(err);
+							}
+						}
+						break;
+					case 'follow':
+						// HTTP-redirect fetch step 2
+						if (locationURL === null) {
+							break;
+						}
+
+						// HTTP-redirect fetch step 5
+						if (request.counter >= request.follow) {
+							reject(new FetchError(`maximum redirect reached at: ${request.url}`, 'max-redirect'));
+							finalize();
+							return;
+						}
+
+						// HTTP-redirect fetch step 6 (counter increment)
+						// Create a new Request object.
+						const requestOpts = {
+							headers: new Headers(request.headers),
+							follow: request.follow,
+							counter: request.counter + 1,
+							agent: request.agent,
+							compress: request.compress,
+							method: request.method,
+							body: request.body,
+							signal: request.signal,
+							timeout: request.timeout,
+							size: request.size
+						};
+
+						// HTTP-redirect fetch step 9
+						if (res.statusCode !== 303 && request.body && getTotalBytes(request) === null) {
+							reject(new FetchError('Cannot follow redirect with body being a readable stream', 'unsupported-redirect'));
+							finalize();
+							return;
+						}
+
+						// HTTP-redirect fetch step 11
+						if (res.statusCode === 303 || (res.statusCode === 301 || res.statusCode === 302) && request.method === 'POST') {
+							requestOpts.method = 'GET';
+							requestOpts.body = undefined;
+							requestOpts.headers.delete('content-length');
+						}
+
+						// HTTP-redirect fetch step 15
+						resolve(fetch(new Request(locationURL, requestOpts)));
+						finalize();
+						return;
+				}
+			}
+
+			// prepare response
+			res.once('end', function () {
+				if (signal) signal.removeEventListener('abort', abortAndFinalize);
+			});
+			let body = res.pipe(new PassThrough$1());
+
+			const response_options = {
+				url: request.url,
+				status: res.statusCode,
+				statusText: res.statusMessage,
+				headers: headers,
+				size: request.size,
+				timeout: request.timeout,
+				counter: request.counter
+			};
+
+			// HTTP-network fetch step 12.1.1.3
+			const codings = headers.get('Content-Encoding');
+
+			// HTTP-network fetch step 12.1.1.4: handle content codings
+
+			// in following scenarios we ignore compression support
+			// 1. compression support is disabled
+			// 2. HEAD request
+			// 3. no Content-Encoding header
+			// 4. no content response (204)
+			// 5. content not modified response (304)
+			if (!request.compress || request.method === 'HEAD' || codings === null || res.statusCode === 204 || res.statusCode === 304) {
+				response = new Response(body, response_options);
+				resolve(response);
+				return;
+			}
+
+			// For Node v6+
+			// Be less strict when decoding compressed responses, since sometimes
+			// servers send slightly invalid responses that are still accepted
+			// by common browsers.
+			// Always using Z_SYNC_FLUSH is what cURL does.
+			const zlibOptions = {
+				flush: zlib__default['default'].Z_SYNC_FLUSH,
+				finishFlush: zlib__default['default'].Z_SYNC_FLUSH
+			};
+
+			// for gzip
+			if (codings == 'gzip' || codings == 'x-gzip') {
+				body = body.pipe(zlib__default['default'].createGunzip(zlibOptions));
+				response = new Response(body, response_options);
+				resolve(response);
+				return;
+			}
+
+			// for deflate
+			if (codings == 'deflate' || codings == 'x-deflate') {
+				// handle the infamous raw deflate response from old servers
+				// a hack for old IIS and Apache servers
+				const raw = res.pipe(new PassThrough$1());
+				raw.once('data', function (chunk) {
+					// see http://stackoverflow.com/questions/37519828
+					if ((chunk[0] & 0x0F) === 0x08) {
+						body = body.pipe(zlib__default['default'].createInflate());
+					} else {
+						body = body.pipe(zlib__default['default'].createInflateRaw());
+					}
+					response = new Response(body, response_options);
+					resolve(response);
+				});
+				return;
+			}
+
+			// for br
+			if (codings == 'br' && typeof zlib__default['default'].createBrotliDecompress === 'function') {
+				body = body.pipe(zlib__default['default'].createBrotliDecompress());
+				response = new Response(body, response_options);
+				resolve(response);
+				return;
+			}
+
+			// otherwise, use response as-is
+			response = new Response(body, response_options);
+			resolve(response);
+		});
+
+		writeToStream(req, request);
+	});
+}
+/**
+ * Redirect code matching
+ *
+ * @param   Number   code  Status code
+ * @return  Boolean
+ */
+fetch.isRedirect = function (code) {
+	return code === 301 || code === 302 || code === 303 || code === 307 || code === 308;
+};
+
+// expose Promise
+fetch.Promise = global.Promise;
 
 /**
  * A `StructFailure` represents a single specific failure in validation.
@@ -10283,7 +10720,7 @@ Url__default['default'].resolve;
  * the `error.failures` property is a generator function that can be run to
  * continue validation and receive all the failures in the data.
  */
-class StructError extends TypeError {
+class StructError$1 extends TypeError {
   constructor(failure, failures) {
     let cached;
     const {
@@ -10617,7 +11054,7 @@ function validate$1(value, struct, options = {}) {
   const tuple = shiftIterator(tuples);
 
   if (tuple[0]) {
-    const error = new StructError(tuple[0], function* () {
+    const error = new StructError$1(tuple[0], function* () {
       for (const t of tuples) {
         if (t[0]) {
           yield t[0];
@@ -12136,14 +12573,14 @@ class Receiver extends Writable {
 
     if ((buf[0] & 0x30) !== 0x00) {
       this._loop = false;
-      return error(RangeError, 'RSV2 and RSV3 must be clear', true, 1002);
+      return error$1(RangeError, 'RSV2 and RSV3 must be clear', true, 1002);
     }
 
     const compressed = (buf[0] & 0x40) === 0x40;
 
     if (compressed && !this._extensions[permessageDeflate.extensionName]) {
       this._loop = false;
-      return error(RangeError, 'RSV1 must be clear', true, 1002);
+      return error$1(RangeError, 'RSV1 must be clear', true, 1002);
     }
 
     this._fin = (buf[0] & 0x80) === 0x80;
@@ -12153,36 +12590,36 @@ class Receiver extends Writable {
     if (this._opcode === 0x00) {
       if (compressed) {
         this._loop = false;
-        return error(RangeError, 'RSV1 must be clear', true, 1002);
+        return error$1(RangeError, 'RSV1 must be clear', true, 1002);
       }
 
       if (!this._fragmented) {
         this._loop = false;
-        return error(RangeError, 'invalid opcode 0', true, 1002);
+        return error$1(RangeError, 'invalid opcode 0', true, 1002);
       }
 
       this._opcode = this._fragmented;
     } else if (this._opcode === 0x01 || this._opcode === 0x02) {
       if (this._fragmented) {
         this._loop = false;
-        return error(RangeError, `invalid opcode ${this._opcode}`, true, 1002);
+        return error$1(RangeError, `invalid opcode ${this._opcode}`, true, 1002);
       }
 
       this._compressed = compressed;
     } else if (this._opcode > 0x07 && this._opcode < 0x0b) {
       if (!this._fin) {
         this._loop = false;
-        return error(RangeError, 'FIN must be set', true, 1002);
+        return error$1(RangeError, 'FIN must be set', true, 1002);
       }
 
       if (compressed) {
         this._loop = false;
-        return error(RangeError, 'RSV1 must be clear', true, 1002);
+        return error$1(RangeError, 'RSV1 must be clear', true, 1002);
       }
 
       if (this._payloadLength > 0x7d) {
         this._loop = false;
-        return error(
+        return error$1(
           RangeError,
           `invalid payload length ${this._payloadLength}`,
           true,
@@ -12191,7 +12628,7 @@ class Receiver extends Writable {
       }
     } else {
       this._loop = false;
-      return error(RangeError, `invalid opcode ${this._opcode}`, true, 1002);
+      return error$1(RangeError, `invalid opcode ${this._opcode}`, true, 1002);
     }
 
     if (!this._fin && !this._fragmented) this._fragmented = this._opcode;
@@ -12200,11 +12637,11 @@ class Receiver extends Writable {
     if (this._isServer) {
       if (!this._masked) {
         this._loop = false;
-        return error(RangeError, 'MASK must be set', true, 1002);
+        return error$1(RangeError, 'MASK must be set', true, 1002);
       }
     } else if (this._masked) {
       this._loop = false;
-      return error(RangeError, 'MASK must be clear', true, 1002);
+      return error$1(RangeError, 'MASK must be clear', true, 1002);
     }
 
     if (this._payloadLength === 126) this._state = GET_PAYLOAD_LENGTH_16;
@@ -12249,7 +12686,7 @@ class Receiver extends Writable {
     //
     if (num > Math.pow(2, 53 - 32) - 1) {
       this._loop = false;
-      return error(
+      return error$1(
         RangeError,
         'Unsupported WebSocket frame: payload length > 2^53 - 1',
         false,
@@ -12272,7 +12709,7 @@ class Receiver extends Writable {
       this._totalPayloadLength += this._payloadLength;
       if (this._totalPayloadLength > this._maxPayload && this._maxPayload > 0) {
         this._loop = false;
-        return error(RangeError, 'Max payload size exceeded', false, 1009);
+        return error$1(RangeError, 'Max payload size exceeded', false, 1009);
       }
     }
 
@@ -12352,7 +12789,7 @@ class Receiver extends Writable {
         this._messageLength += buf.length;
         if (this._messageLength > this._maxPayload && this._maxPayload > 0) {
           return cb(
-            error(RangeError, 'Max payload size exceeded', false, 1009)
+            error$1(RangeError, 'Max payload size exceeded', false, 1009)
           );
         }
 
@@ -12399,7 +12836,7 @@ class Receiver extends Writable {
 
         if (!isValidUTF8(buf)) {
           this._loop = false;
-          return error(Error, 'invalid UTF-8 sequence', true, 1007);
+          return error$1(Error, 'invalid UTF-8 sequence', true, 1007);
         }
 
         this.emit('message', buf.toString());
@@ -12424,18 +12861,18 @@ class Receiver extends Writable {
         this.emit('conclude', 1005, '');
         this.end();
       } else if (data.length === 1) {
-        return error(RangeError, 'invalid payload length 1', true, 1002);
+        return error$1(RangeError, 'invalid payload length 1', true, 1002);
       } else {
         const code = data.readUInt16BE(0);
 
         if (!isValidStatusCode$1(code)) {
-          return error(RangeError, `invalid status code ${code}`, true, 1002);
+          return error$1(RangeError, `invalid status code ${code}`, true, 1002);
         }
 
         const buf = data.slice(2);
 
         if (!isValidUTF8(buf)) {
-          return error(Error, 'invalid UTF-8 sequence', true, 1007);
+          return error$1(Error, 'invalid UTF-8 sequence', true, 1007);
         }
 
         this.emit('conclude', code, buf.toString());
@@ -12464,12 +12901,12 @@ var receiver = Receiver;
  * @return {(Error|RangeError)} The error
  * @private
  */
-function error(ErrorCtor, message, prefix, statusCode) {
+function error$1(ErrorCtor, message, prefix, statusCode) {
   const err = new ErrorCtor(
     prefix ? `Invalid WebSocket frame: ${message}` : message
   );
 
-  Error.captureStackTrace(err, error);
+  Error.captureStackTrace(err, error$1);
   err[kStatusCode$1] = statusCode;
   return err;
 }
@@ -12479,7 +12916,7 @@ const { randomFillSync } = crypto__default['default'];
 
 const { EMPTY_BUFFER: EMPTY_BUFFER$1 } = constants;
 const { isValidStatusCode } = validation;
-const { mask: applyMask, toBuffer: toBuffer$2 } = bufferUtil;
+const { mask: applyMask, toBuffer: toBuffer$3 } = bufferUtil;
 
 const mask = Buffer.alloc(4);
 
@@ -12636,16 +13073,16 @@ class Sender {
    * @public
    */
   ping(data, mask, cb) {
-    const buf = toBuffer$2(data);
+    const buf = toBuffer$3(data);
 
     if (buf.length > 125) {
       throw new RangeError('The data size must not be greater than 125 bytes');
     }
 
     if (this._deflating) {
-      this.enqueue([this.doPing, buf, mask, toBuffer$2.readOnly, cb]);
+      this.enqueue([this.doPing, buf, mask, toBuffer$3.readOnly, cb]);
     } else {
-      this.doPing(buf, mask, toBuffer$2.readOnly, cb);
+      this.doPing(buf, mask, toBuffer$3.readOnly, cb);
     }
   }
 
@@ -12680,16 +13117,16 @@ class Sender {
    * @public
    */
   pong(data, mask, cb) {
-    const buf = toBuffer$2(data);
+    const buf = toBuffer$3(data);
 
     if (buf.length > 125) {
       throw new RangeError('The data size must not be greater than 125 bytes');
     }
 
     if (this._deflating) {
-      this.enqueue([this.doPong, buf, mask, toBuffer$2.readOnly, cb]);
+      this.enqueue([this.doPong, buf, mask, toBuffer$3.readOnly, cb]);
     } else {
-      this.doPong(buf, mask, toBuffer$2.readOnly, cb);
+      this.doPong(buf, mask, toBuffer$3.readOnly, cb);
     }
   }
 
@@ -12732,7 +13169,7 @@ class Sender {
    * @public
    */
   send(data, options, cb) {
-    const buf = toBuffer$2(data);
+    const buf = toBuffer$3(data);
     const perMessageDeflate = this._extensions[permessageDeflate.extensionName];
     let opcode = options.binary ? 2 : 1;
     let rsv1 = options.compress;
@@ -12756,7 +13193,7 @@ class Sender {
         rsv1,
         opcode,
         mask: options.mask,
-        readOnly: toBuffer$2.readOnly
+        readOnly: toBuffer$3.readOnly
       };
 
       if (this._deflating) {
@@ -12771,7 +13208,7 @@ class Sender {
           rsv1: false,
           opcode,
           mask: options.mask,
-          readOnly: toBuffer$2.readOnly
+          readOnly: toBuffer$3.readOnly
         }),
         cb
       );
@@ -13299,7 +13736,7 @@ const {
 } = constants;
 const { addEventListener, removeEventListener } = eventTarget;
 const { format: format$1, parse: parse$2 } = extension;
-const { toBuffer: toBuffer$1 } = bufferUtil;
+const { toBuffer: toBuffer$2 } = bufferUtil;
 
 const readyStates = ['CONNECTING', 'OPEN', 'CLOSING', 'CLOSED'];
 const protocolVersions = [8, 13];
@@ -14025,7 +14462,7 @@ function abortHandshake$1(websocket, stream, message) {
  */
 function sendAfterClose(websocket, data, cb) {
   if (data) {
-    const length = toBuffer$1(data).length;
+    const length = toBuffer$2(data).length;
 
     //
     // The `_bufferedAmount` property is used only when the peer is a client and
@@ -15384,15 +15821,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var _regenerator = interopRequireDefault__default['default'](regenerator__default['default']);
+var _regenerator = interopRequireDefault__default['default'](_regeneratorRuntime__default['default']);
 
-var _asyncToGenerator2 = interopRequireDefault__default['default'](asyncToGenerator__default['default']);
+var _asyncToGenerator2 = interopRequireDefault__default['default'](_asyncToGenerator__default['default']);
 
 var _typeof2 = interopRequireDefault__default['default'](_typeof__default['default']);
 
-var _classCallCheck2 = interopRequireDefault__default['default'](classCallCheck__default['default']);
+var _classCallCheck2 = interopRequireDefault__default['default'](_classCallCheck__default['default']);
 
-var _createClass2 = interopRequireDefault__default['default'](createClass__default['default']);
+var _createClass2 = interopRequireDefault__default['default'](_createClass__default['default']);
 
 var _inherits2 = interopRequireDefault__default['default'](inherits__default['default']);
 
@@ -16168,17 +16605,17 @@ exports["default"] = void 0;
 
 var _typeof2 = interopRequireDefault__default['default'](_typeof__default['default']);
 
-var _regenerator = interopRequireDefault__default['default'](regenerator__default['default']);
+var _regenerator = interopRequireDefault__default['default'](_regeneratorRuntime__default['default']);
 
-var _asyncToGenerator2 = interopRequireDefault__default['default'](asyncToGenerator__default['default']);
+var _asyncToGenerator2 = interopRequireDefault__default['default'](_asyncToGenerator__default['default']);
 
 var _defineProperty2 = interopRequireDefault__default['default'](_defineProperty__default['default']);
 
-var _toConsumableArray2 = interopRequireDefault__default['default'](toConsumableArray__default['default']);
+var _toConsumableArray2 = interopRequireDefault__default['default'](_toConsumableArray__default['default']);
 
-var _classCallCheck2 = interopRequireDefault__default['default'](classCallCheck__default['default']);
+var _classCallCheck2 = interopRequireDefault__default['default'](_classCallCheck__default['default']);
 
-var _createClass2 = interopRequireDefault__default['default'](createClass__default['default']);
+var _createClass2 = interopRequireDefault__default['default'](_createClass__default['default']);
 
 var _inherits2 = interopRequireDefault__default['default'](inherits__default['default']);
 
@@ -17222,7 +17659,7 @@ var Server = /*#__PURE__*/function (_EventEmitter) {
 exports["default"] = Server;
 });
 
-createCommonjsModule(function (module, exports) {
+var dist = createCommonjsModule(function (module, exports) {
 
 
 
@@ -17237,7 +17674,7 @@ Object.defineProperty(exports, "Server", {
 });
 exports.Client = void 0;
 
-var _classCallCheck2 = interopRequireDefault__default['default'](classCallCheck__default['default']);
+var _classCallCheck2 = interopRequireDefault__default['default'](_classCallCheck__default['default']);
 
 var _inherits2 = interopRequireDefault__default['default'](inherits__default['default']);
 
@@ -17354,7 +17791,7 @@ function toTypeString (value) {
   return Object.prototype.toString.call(value).slice(8, -1)
 }
 
-var lib = (secp256k1) => {
+var lib$1 = (secp256k1) => {
   return {
     contextRandomize (seed) {
       assert$a(
@@ -17643,7 +18080,7 @@ var lib = (secp256k1) => {
 };
 
 const addon = nodeGypBuild(__dirname);
-var bindings = lib(new addon.Secp256k1());
+var bindings$1 = lib$1(new addon.Secp256k1());
 
 var name = "elliptic";
 var version = "6.5.4";
@@ -26506,13 +26943,13 @@ EDDSA.prototype.isPoint = function isPoint(val) {
   return val instanceof this.pointClass;
 };
 
-var require$$0 = getCjsExportFromNamespace(_package$1);
+var require$$0$1 = getCjsExportFromNamespace(_package$1);
 
 var elliptic_1 = createCommonjsModule(function (module, exports) {
 
 var elliptic = exports;
 
-elliptic.version = require$$0.version;
+elliptic.version = require$$0$1.version;
 elliptic.utils = utils_1;
 elliptic.rand = brorand;
 elliptic.curve = curve_1;
@@ -26926,11 +27363,11 @@ var elliptic$1 = {
   }
 };
 
-var elliptic = lib(elliptic$1);
+var elliptic = lib$1(elliptic$1);
 
 var secp256k1 = createCommonjsModule(function (module) {
 try {
-  module.exports = bindings;
+  module.exports = bindings$1;
 } catch (err) {
   module.exports = elliptic;
 }
@@ -27588,7 +28025,7 @@ var sha3 = createCommonjsModule(function (module) {
 })();
 });
 
-const toBuffer = arr => {
+const toBuffer$1 = arr => {
   if (arr instanceof buffer.Buffer) {
     return arr;
   } else if (arr instanceof Uint8Array) {
@@ -27604,11 +28041,11 @@ class Struct {
   }
 
   encode() {
-    return buffer.Buffer.from(lib$1.serialize(SOLANA_SCHEMA, this));
+    return buffer.Buffer.from(lib$2.serialize(SOLANA_SCHEMA, this));
   }
 
   static decode(data) {
-    return lib$1.deserialize(SOLANA_SCHEMA, this, data);
+    return lib$2.deserialize(SOLANA_SCHEMA, this, data);
   }
 
 } // Class representing a Rust-compatible enum, since enums are only strings or
@@ -27618,7 +28055,7 @@ const SOLANA_SCHEMA = new Map();
  * Maximum length of derived pubkey seed
  */
 
-const MAX_SEED_LENGTH = 32;
+const MAX_SEED_LENGTH$1 = 32;
 
 function isPublicKeyData(value) {
   return value._bn !== undefined;
@@ -27628,7 +28065,7 @@ function isPublicKeyData(value) {
  */
 
 
-class PublicKey extends Struct {
+class PublicKey$1 extends Struct {
   /** @internal */
 
   /**
@@ -27718,7 +28155,7 @@ class PublicKey extends Struct {
   static async createWithSeed(fromPublicKey, seed, programId) {
     const buffer$1 = buffer.Buffer.concat([fromPublicKey.toBuffer(), buffer.Buffer.from(seed), programId.toBuffer()]);
     const hash = await cryptoHash.sha256(new Uint8Array(buffer$1));
-    return new PublicKey(buffer.Buffer.from(hash, 'hex'));
+    return new PublicKey$1(buffer.Buffer.from(hash, 'hex'));
   }
   /**
    * Derive a program address from seeds and a program ID.
@@ -27728,21 +28165,21 @@ class PublicKey extends Struct {
   static async createProgramAddress(seeds, programId) {
     let buffer$1 = buffer.Buffer.alloc(0);
     seeds.forEach(function (seed) {
-      if (seed.length > MAX_SEED_LENGTH) {
+      if (seed.length > MAX_SEED_LENGTH$1) {
         throw new TypeError("Max seed length exceeded");
       }
 
-      buffer$1 = buffer.Buffer.concat([buffer$1, toBuffer(seed)]);
+      buffer$1 = buffer.Buffer.concat([buffer$1, toBuffer$1(seed)]);
     });
     buffer$1 = buffer.Buffer.concat([buffer$1, programId.toBuffer(), buffer.Buffer.from('ProgramDerivedAddress')]);
     let hash = await cryptoHash.sha256(new Uint8Array(buffer$1));
     let publicKeyBytes = new bn$1(hash, 16).toArray(undefined, 32);
 
-    if (is_on_curve(publicKeyBytes)) {
+    if (is_on_curve$1(publicKeyBytes)) {
       throw new Error("Invalid seeds, address must fall off the curve");
     }
 
-    return new PublicKey(publicKeyBytes);
+    return new PublicKey$1(publicKeyBytes);
   }
   /**
    * Find a valid program address
@@ -27781,82 +28218,82 @@ class PublicKey extends Struct {
 
 
   static isOnCurve(pubkey) {
-    return is_on_curve(pubkey) == 1;
+    return is_on_curve$1(pubkey) == 1;
   }
 
 }
 
-_defineProperty__default['default'](PublicKey, "default", new PublicKey('11111111111111111111111111111111'));
+_defineProperty__default['default'](PublicKey$1, "default", new PublicKey$1('11111111111111111111111111111111'));
 
-SOLANA_SCHEMA.set(PublicKey, {
+SOLANA_SCHEMA.set(PublicKey$1, {
   kind: 'struct',
   fields: [['_bn', 'u256']]
 }); // @ts-ignore
 
-let naclLowLevel = naclFast.lowlevel; // Check that a pubkey is on the curve.
+let naclLowLevel$1 = naclFast$1.lowlevel; // Check that a pubkey is on the curve.
 // This function and its dependents were sourced from:
 // https://github.com/dchest/tweetnacl-js/blob/f1ec050ceae0861f34280e62498b1d3ed9c350c6/nacl.js#L792
 
-function is_on_curve(p) {
-  var r = [naclLowLevel.gf(), naclLowLevel.gf(), naclLowLevel.gf(), naclLowLevel.gf()];
-  var t = naclLowLevel.gf(),
-      chk = naclLowLevel.gf(),
-      num = naclLowLevel.gf(),
-      den = naclLowLevel.gf(),
-      den2 = naclLowLevel.gf(),
-      den4 = naclLowLevel.gf(),
-      den6 = naclLowLevel.gf();
-  naclLowLevel.set25519(r[2], gf1);
-  naclLowLevel.unpack25519(r[1], p);
-  naclLowLevel.S(num, r[1]);
-  naclLowLevel.M(den, num, naclLowLevel.D);
-  naclLowLevel.Z(num, num, r[2]);
-  naclLowLevel.A(den, r[2], den);
-  naclLowLevel.S(den2, den);
-  naclLowLevel.S(den4, den2);
-  naclLowLevel.M(den6, den4, den2);
-  naclLowLevel.M(t, den6, num);
-  naclLowLevel.M(t, t, den);
-  naclLowLevel.pow2523(t, t);
-  naclLowLevel.M(t, t, num);
-  naclLowLevel.M(t, t, den);
-  naclLowLevel.M(t, t, den);
-  naclLowLevel.M(r[0], t, den);
-  naclLowLevel.S(chk, r[0]);
-  naclLowLevel.M(chk, chk, den);
-  if (neq25519(chk, num)) naclLowLevel.M(r[0], r[0], I);
-  naclLowLevel.S(chk, r[0]);
-  naclLowLevel.M(chk, chk, den);
-  if (neq25519(chk, num)) return 0;
+function is_on_curve$1(p) {
+  var r = [naclLowLevel$1.gf(), naclLowLevel$1.gf(), naclLowLevel$1.gf(), naclLowLevel$1.gf()];
+  var t = naclLowLevel$1.gf(),
+      chk = naclLowLevel$1.gf(),
+      num = naclLowLevel$1.gf(),
+      den = naclLowLevel$1.gf(),
+      den2 = naclLowLevel$1.gf(),
+      den4 = naclLowLevel$1.gf(),
+      den6 = naclLowLevel$1.gf();
+  naclLowLevel$1.set25519(r[2], gf1$1);
+  naclLowLevel$1.unpack25519(r[1], p);
+  naclLowLevel$1.S(num, r[1]);
+  naclLowLevel$1.M(den, num, naclLowLevel$1.D);
+  naclLowLevel$1.Z(num, num, r[2]);
+  naclLowLevel$1.A(den, r[2], den);
+  naclLowLevel$1.S(den2, den);
+  naclLowLevel$1.S(den4, den2);
+  naclLowLevel$1.M(den6, den4, den2);
+  naclLowLevel$1.M(t, den6, num);
+  naclLowLevel$1.M(t, t, den);
+  naclLowLevel$1.pow2523(t, t);
+  naclLowLevel$1.M(t, t, num);
+  naclLowLevel$1.M(t, t, den);
+  naclLowLevel$1.M(t, t, den);
+  naclLowLevel$1.M(r[0], t, den);
+  naclLowLevel$1.S(chk, r[0]);
+  naclLowLevel$1.M(chk, chk, den);
+  if (neq25519$1(chk, num)) naclLowLevel$1.M(r[0], r[0], I$1);
+  naclLowLevel$1.S(chk, r[0]);
+  naclLowLevel$1.M(chk, chk, den);
+  if (neq25519$1(chk, num)) return 0;
   return 1;
 }
 
-let gf1 = naclLowLevel.gf([1]);
-let I = naclLowLevel.gf([0xa0b0, 0x4a0e, 0x1b27, 0xc4ee, 0xe478, 0xad2f, 0x1806, 0x2f43, 0xd7a7, 0x3dfb, 0x0099, 0x2b4d, 0xdf0b, 0x4fc1, 0x2480, 0x2b83]);
+let gf1$1 = naclLowLevel$1.gf([1]);
+let I$1 = naclLowLevel$1.gf([0xa0b0, 0x4a0e, 0x1b27, 0xc4ee, 0xe478, 0xad2f, 0x1806, 0x2f43, 0xd7a7, 0x3dfb, 0x0099, 0x2b4d, 0xdf0b, 0x4fc1, 0x2480, 0x2b83]);
 
-function neq25519(a, b) {
+function neq25519$1(a, b) {
   var c = new Uint8Array(32),
       d = new Uint8Array(32);
-  naclLowLevel.pack25519(c, a);
-  naclLowLevel.pack25519(d, b);
-  return naclLowLevel.crypto_verify_32(c, 0, d, 0);
+  naclLowLevel$1.pack25519(c, a);
+  naclLowLevel$1.pack25519(d, b);
+  return naclLowLevel$1.crypto_verify_32(c, 0, d, 0);
 }
 
-new PublicKey('BPFLoader1111111111111111111111111111111111');
+new PublicKey$1('BPFLoader1111111111111111111111111111111111');
 
 /**
  * Layout for a public key
  */
 
-const publicKey = (property = 'publicKey') => {
+const publicKey$1 = (property = 'publicKey') => {
   return blob(32, property);
 };
 /**
  * Layout for a Rust String type
  */
 
-const rustString = (property = 'string') => {
-  const rsl = struct([u32('length'), u32('lengthPadding'), blob(offset(u32(), -8), 'chars')], property);
+const rustString$1 = (property = 'string') => {
+  const rsl = struct$1([u32('length'), u32('lengthPadding'), blob(offset(u32(), -8), 'chars')], property);
 
   const _decode = rsl.decode.bind(rsl);
 
@@ -27885,17 +28322,17 @@ const rustString = (property = 'string') => {
  * Layout for an Authorized object
  */
 
-const authorized = (property = 'authorized') => {
-  return struct([publicKey('staker'), publicKey('withdrawer')], property);
+const authorized$1 = (property = 'authorized') => {
+  return struct$1([publicKey$1('staker'), publicKey$1('withdrawer')], property);
 };
 /**
  * Layout for a Lockup object
  */
 
-const lockup = (property = 'lockup') => {
-  return struct([ns64('unixTimestamp'), ns64('epoch'), publicKey('custodian')], property);
+const lockup$1 = (property = 'lockup') => {
+  return struct$1([ns64('unixTimestamp'), ns64('epoch'), publicKey$1('custodian')], property);
 };
-function getAlloc(type, fields) {
+function getAlloc$1(type, fields) {
   let alloc = 0;
   type.layout.fields.forEach(item => {
     if (item.span >= 0) {
@@ -27907,7 +28344,7 @@ function getAlloc(type, fields) {
   return alloc;
 }
 
-function decodeLength(bytes) {
+function decodeLength$1(bytes) {
   let len = 0;
   let size = 0;
 
@@ -27923,7 +28360,7 @@ function decodeLength(bytes) {
 
   return len;
 }
-function encodeLength(bytes, len) {
+function encodeLength$1(bytes, len) {
   let rem_len = len;
 
   for (;;) {
@@ -27944,15 +28381,15 @@ function encodeLength(bytes, len) {
  * The message header, identifying signed and read-only account
  */
 
-const PUBKEY_LENGTH = 32;
+const PUBKEY_LENGTH$1 = 32;
 /**
  * List of instructions to be processed atomically
  */
 
-class Message {
+class Message$1 {
   constructor(args) {
     this.header = args.header;
-    this.accountKeys = args.accountKeys.map(account => new PublicKey(account));
+    this.accountKeys = args.accountKeys.map(account => new PublicKey$1(account));
     this.recentBlockhash = args.recentBlockhash;
     this.instructions = args.instructions;
   }
@@ -27964,7 +28401,7 @@ class Message {
   serialize() {
     const numKeys = this.accountKeys.length;
     let keyCount = [];
-    encodeLength(keyCount, numKeys);
+    encodeLength$1(keyCount, numKeys);
     const instructions = this.instructions.map(instruction => {
       const {
         accounts,
@@ -27972,9 +28409,9 @@ class Message {
       } = instruction;
       const data = bs58.decode(instruction.data);
       let keyIndicesCount = [];
-      encodeLength(keyIndicesCount, accounts.length);
+      encodeLength$1(keyIndicesCount, accounts.length);
       let dataCount = [];
-      encodeLength(dataCount, data.length);
+      encodeLength$1(dataCount, data.length);
       return {
         programIdIndex,
         keyIndicesCount: buffer.Buffer.from(keyIndicesCount),
@@ -27984,23 +28421,23 @@ class Message {
       };
     });
     let instructionCount = [];
-    encodeLength(instructionCount, instructions.length);
-    let instructionBuffer = buffer.Buffer.alloc(PACKET_DATA_SIZE);
+    encodeLength$1(instructionCount, instructions.length);
+    let instructionBuffer = buffer.Buffer.alloc(PACKET_DATA_SIZE$1);
     buffer.Buffer.from(instructionCount).copy(instructionBuffer);
     let instructionBufferLength = instructionCount.length;
     instructions.forEach(instruction => {
-      const instructionLayout = struct([u8('programIdIndex'), blob(instruction.keyIndicesCount.length, 'keyIndicesCount'), seq(u8('keyIndex'), instruction.keyIndices.length, 'keyIndices'), blob(instruction.dataLength.length, 'dataLength'), seq(u8('userdatum'), instruction.data.length, 'data')]);
+      const instructionLayout = struct$1([u8('programIdIndex'), blob(instruction.keyIndicesCount.length, 'keyIndicesCount'), seq(u8('keyIndex'), instruction.keyIndices.length, 'keyIndices'), blob(instruction.dataLength.length, 'dataLength'), seq(u8('userdatum'), instruction.data.length, 'data')]);
       const length = instructionLayout.encode(instruction, instructionBuffer, instructionBufferLength);
       instructionBufferLength += length;
     });
     instructionBuffer = instructionBuffer.slice(0, instructionBufferLength);
-    const signDataLayout = struct([blob(1, 'numRequiredSignatures'), blob(1, 'numReadonlySignedAccounts'), blob(1, 'numReadonlyUnsignedAccounts'), blob(keyCount.length, 'keyCount'), seq(publicKey('key'), numKeys, 'keys'), publicKey('recentBlockhash')]);
+    const signDataLayout = struct$1([blob(1, 'numRequiredSignatures'), blob(1, 'numReadonlySignedAccounts'), blob(1, 'numReadonlyUnsignedAccounts'), blob(keyCount.length, 'keyCount'), seq(publicKey$1('key'), numKeys, 'keys'), publicKey$1('recentBlockhash')]);
     const transaction = {
       numRequiredSignatures: buffer.Buffer.from([this.header.numRequiredSignatures]),
       numReadonlySignedAccounts: buffer.Buffer.from([this.header.numReadonlySignedAccounts]),
       numReadonlyUnsignedAccounts: buffer.Buffer.from([this.header.numReadonlyUnsignedAccounts]),
       keyCount: buffer.Buffer.from(keyCount),
-      keys: this.accountKeys.map(key => toBuffer(key.toBytes())),
+      keys: this.accountKeys.map(key => toBuffer$1(key.toBytes())),
       recentBlockhash: bs58.decode(this.recentBlockhash)
     };
     let signData = buffer.Buffer.alloc(2048);
@@ -28019,26 +28456,26 @@ class Message {
     const numRequiredSignatures = byteArray.shift();
     const numReadonlySignedAccounts = byteArray.shift();
     const numReadonlyUnsignedAccounts = byteArray.shift();
-    const accountCount = decodeLength(byteArray);
+    const accountCount = decodeLength$1(byteArray);
     let accountKeys = [];
 
     for (let i = 0; i < accountCount; i++) {
-      const account = byteArray.slice(0, PUBKEY_LENGTH);
-      byteArray = byteArray.slice(PUBKEY_LENGTH);
+      const account = byteArray.slice(0, PUBKEY_LENGTH$1);
+      byteArray = byteArray.slice(PUBKEY_LENGTH$1);
       accountKeys.push(bs58.encode(buffer.Buffer.from(account)));
     }
 
-    const recentBlockhash = byteArray.slice(0, PUBKEY_LENGTH);
-    byteArray = byteArray.slice(PUBKEY_LENGTH);
-    const instructionCount = decodeLength(byteArray);
+    const recentBlockhash = byteArray.slice(0, PUBKEY_LENGTH$1);
+    byteArray = byteArray.slice(PUBKEY_LENGTH$1);
+    const instructionCount = decodeLength$1(byteArray);
     let instructions = [];
 
     for (let i = 0; i < instructionCount; i++) {
       const programIdIndex = byteArray.shift();
-      const accountCount = decodeLength(byteArray);
+      const accountCount = decodeLength$1(byteArray);
       const accounts = byteArray.slice(0, accountCount);
       byteArray = byteArray.slice(accountCount);
-      const dataLength = decodeLength(byteArray);
+      const dataLength = decodeLength$1(byteArray);
       const dataSlice = byteArray.slice(0, dataLength);
       const data = bs58.encode(buffer.Buffer.from(dataSlice));
       byteArray = byteArray.slice(dataLength);
@@ -28059,7 +28496,7 @@ class Message {
       accountKeys,
       instructions
     };
-    return new Message(messageArgs);
+    return new Message$1(messageArgs);
   }
 
 }
@@ -28069,7 +28506,7 @@ class Message {
  *
  * Signatures are 64 bytes in length
  */
-const DEFAULT_SIGNATURE = buffer.Buffer.alloc(64).fill(0);
+const DEFAULT_SIGNATURE$1 = buffer.Buffer.alloc(64).fill(0);
 /**
  * Maximum over-the-wire size of a Transaction
  *
@@ -28078,8 +28515,8 @@ const DEFAULT_SIGNATURE = buffer.Buffer.alloc(64).fill(0);
  * 8 bytes is the size of the fragment header
  */
 
-const PACKET_DATA_SIZE = 1280 - 40 - 8;
-const SIGNATURE_LENGTH = 64;
+const PACKET_DATA_SIZE$1 = 1280 - 40 - 8;
+const SIGNATURE_LENGTH$1 = 64;
 /**
  * Account metadata used to define instructions
  */
@@ -28087,7 +28524,7 @@ const SIGNATURE_LENGTH = 64;
 /**
  * Transaction Instruction class
  */
-class TransactionInstruction {
+class TransactionInstruction$1 {
   /**
    * Public keys to include in this transaction
    * Boolean represents whether this pubkey needs to sign the transaction
@@ -28119,7 +28556,7 @@ class TransactionInstruction {
 /**
  * Transaction class
  */
-class Transaction {
+class Transaction$1 {
   /**
    * Signatures for the transaction.  Typically created by invoking the
    * `sign()` method
@@ -28166,7 +28603,7 @@ class Transaction {
       } else if ('data' in item && 'programId' in item && 'keys' in item) {
         this.instructions.push(item);
       } else {
-        this.instructions.push(new TransactionInstruction(item));
+        this.instructions.push(new TransactionInstruction$1(item));
       }
     });
     return this;
@@ -28231,7 +28668,7 @@ class Transaction {
 
     programIds.forEach(programId => {
       accountMetas.push({
-        pubkey: new PublicKey(programId),
+        pubkey: new PublicKey$1(programId),
         isSigner: false,
         isWritable: false
       });
@@ -28329,10 +28766,10 @@ class Transaction {
       };
     });
     instructions.forEach(instruction => {
-      invariant__default['default'](instruction.programIdIndex >= 0);
-      instruction.accounts.forEach(keyIndex => invariant__default['default'](keyIndex >= 0));
+      assert__default['default'](instruction.programIdIndex >= 0);
+      instruction.accounts.forEach(keyIndex => assert__default['default'](keyIndex >= 0));
     });
-    return new Message({
+    return new Message$1({
       header: {
         numRequiredSignatures,
         numReadonlySignedAccounts,
@@ -28493,9 +28930,9 @@ class Transaction {
   _partialSign(message, ...signers) {
     const signData = message.serialize();
     signers.forEach(signer => {
-      const signature = naclFast.sign.detached(signData, signer.secretKey);
+      const signature = naclFast$1.sign.detached(signData, signer.secretKey);
 
-      this._addSignature(signer.publicKey, toBuffer(signature));
+      this._addSignature(signer.publicKey, toBuffer$1(signature));
     });
   }
   /**
@@ -28517,7 +28954,7 @@ class Transaction {
 
 
   _addSignature(pubkey, signature) {
-    invariant__default['default'](signature.length === 64);
+    assert__default['default'](signature.length === 64);
     const index = this.signatures.findIndex(sigpair => pubkey.equals(sigpair.publicKey));
 
     if (index < 0) {
@@ -28549,7 +28986,7 @@ class Transaction {
           return false;
         }
       } else {
-        if (!naclFast.sign.detached.verify(signData, signature, publicKey.toBuffer())) {
+        if (!naclFast$1.sign.detached.verify(signData, signature, publicKey.toBuffer())) {
           return false;
         }
       }
@@ -28588,21 +29025,21 @@ class Transaction {
       signatures
     } = this;
     const signatureCount = [];
-    encodeLength(signatureCount, signatures.length);
+    encodeLength$1(signatureCount, signatures.length);
     const transactionLength = signatureCount.length + signatures.length * 64 + signData.length;
     const wireTransaction = buffer.Buffer.alloc(transactionLength);
-    invariant__default['default'](signatures.length < 256);
+    assert__default['default'](signatures.length < 256);
     buffer.Buffer.from(signatureCount).copy(wireTransaction, 0);
     signatures.forEach(({
       signature
     }, index) => {
       if (signature !== null) {
-        invariant__default['default'](signature.length === 64, "signature has invalid length");
+        assert__default['default'](signature.length === 64, "signature has invalid length");
         buffer.Buffer.from(signature).copy(wireTransaction, signatureCount.length + index * 64);
       }
     });
     signData.copy(wireTransaction, signatureCount.length + signatures.length * 64);
-    invariant__default['default'](wireTransaction.length <= PACKET_DATA_SIZE, "Transaction too large: ".concat(wireTransaction.length, " > ").concat(PACKET_DATA_SIZE));
+    assert__default['default'](wireTransaction.length <= PACKET_DATA_SIZE$1, "Transaction too large: ".concat(wireTransaction.length, " > ").concat(PACKET_DATA_SIZE$1));
     return wireTransaction;
   }
   /**
@@ -28612,7 +29049,7 @@ class Transaction {
 
 
   get keys() {
-    invariant__default['default'](this.instructions.length === 1);
+    assert__default['default'](this.instructions.length === 1);
     return this.instructions[0].keys.map(keyObj => keyObj.pubkey);
   }
   /**
@@ -28622,7 +29059,7 @@ class Transaction {
 
 
   get programId() {
-    invariant__default['default'](this.instructions.length === 1);
+    assert__default['default'](this.instructions.length === 1);
     return this.instructions[0].programId;
   }
   /**
@@ -28632,7 +29069,7 @@ class Transaction {
 
 
   get data() {
-    invariant__default['default'](this.instructions.length === 1);
+    assert__default['default'](this.instructions.length === 1);
     return this.instructions[0].data;
   }
   /**
@@ -28643,16 +29080,16 @@ class Transaction {
   static from(buffer$1) {
     // Slice up wire data
     let byteArray = [...buffer$1];
-    const signatureCount = decodeLength(byteArray);
+    const signatureCount = decodeLength$1(byteArray);
     let signatures = [];
 
     for (let i = 0; i < signatureCount; i++) {
-      const signature = byteArray.slice(0, SIGNATURE_LENGTH);
-      byteArray = byteArray.slice(SIGNATURE_LENGTH);
+      const signature = byteArray.slice(0, SIGNATURE_LENGTH$1);
+      byteArray = byteArray.slice(SIGNATURE_LENGTH$1);
       signatures.push(bs58.encode(buffer.Buffer.from(signature)));
     }
 
-    return Transaction.populate(Message.from(byteArray), signatures);
+    return Transaction$1.populate(Message$1.from(byteArray), signatures);
   }
   /**
    * Populate Transaction object from message and signatures
@@ -28660,7 +29097,7 @@ class Transaction {
 
 
   static populate(message, signatures) {
-    const transaction = new Transaction();
+    const transaction = new Transaction$1();
     transaction.recentBlockhash = message.recentBlockhash;
 
     if (message.header.numRequiredSignatures > 0) {
@@ -28669,7 +29106,7 @@ class Transaction {
 
     signatures.forEach((signature, index) => {
       const sigPubkeyPair = {
-        signature: signature == bs58.encode(DEFAULT_SIGNATURE) ? null : bs58.decode(signature),
+        signature: signature == bs58.encode(DEFAULT_SIGNATURE$1) ? null : bs58.decode(signature),
         publicKey: message.accountKeys[index]
       };
       transaction.signatures.push(sigPubkeyPair);
@@ -28683,7 +29120,7 @@ class Transaction {
           isWritable: message.isAccountWritable(account)
         };
       });
-      transaction.instructions.push(new TransactionInstruction({
+      transaction.instructions.push(new TransactionInstruction$1({
         keys,
         programId: message.accountKeys[instruction.programIdIndex],
         data: bs58.decode(instruction.data)
@@ -28694,12 +29131,12 @@ class Transaction {
 
 }
 
-const SYSVAR_CLOCK_PUBKEY = new PublicKey('SysvarC1ock11111111111111111111111111111111');
-const SYSVAR_RECENT_BLOCKHASHES_PUBKEY = new PublicKey('SysvarRecentB1ockHashes11111111111111111111');
-const SYSVAR_RENT_PUBKEY = new PublicKey('SysvarRent111111111111111111111111111111111');
-new PublicKey('SysvarRewards111111111111111111111111111111');
-const SYSVAR_STAKE_HISTORY_PUBKEY = new PublicKey('SysvarStakeHistory1111111111111111111111111');
-new PublicKey('Sysvar1nstructions1111111111111111111111111');
+const SYSVAR_CLOCK_PUBKEY$1 = new PublicKey$1('SysvarC1ock11111111111111111111111111111111');
+const SYSVAR_RECENT_BLOCKHASHES_PUBKEY$1 = new PublicKey$1('SysvarRecentB1ockHashes11111111111111111111');
+const SYSVAR_RENT_PUBKEY$1 = new PublicKey$1('SysvarRent111111111111111111111111111111111');
+new PublicKey$1('SysvarRewards111111111111111111111111111111');
+const SYSVAR_STAKE_HISTORY_PUBKEY$1 = new PublicKey$1('SysvarStakeHistory1111111111111111111111111');
+new PublicKey$1('Sysvar1nstructions1111111111111111111111111');
 
 /**
  * Sign, send and confirm a transaction.
@@ -28712,7 +29149,7 @@ new PublicKey('Sysvar1nstructions1111111111111111111111111');
  * @param {ConfirmOptions} [options]
  * @returns {Promise<TransactionSignature>}
  */
-async function sendAndConfirmTransaction(connection, transaction, signers, options) {
+async function sendAndConfirmTransaction$1(connection, transaction, signers, options) {
   const sendOptions = options && {
     skipPreflight: options.skipPreflight,
     preflightCommitment: options.preflightCommitment || options.commitment
@@ -28728,7 +29165,7 @@ async function sendAndConfirmTransaction(connection, transaction, signers, optio
 }
 
 // zzz
-function sleep(ms) {
+function sleep$1(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
@@ -28740,8 +29177,8 @@ function sleep(ms) {
  * Populate a buffer of instruction data using an InstructionType
  * @internal
  */
-function encodeData(type, fields) {
-  const allocLength = type.layout.span >= 0 ? type.layout.span : getAlloc(type, fields);
+function encodeData$1(type, fields) {
+  const allocLength = type.layout.span >= 0 ? type.layout.span : getAlloc$1(type, fields);
   const data = buffer.Buffer.alloc(allocLength);
   const layoutFields = Object.assign({
     instruction: type.index
@@ -28754,7 +29191,7 @@ function encodeData(type, fields) {
  * @internal
  */
 
-function decodeData(type, buffer) {
+function decodeData$1(type, buffer) {
   let data;
 
   try {
@@ -28777,7 +29214,7 @@ function decodeData(type, buffer) {
  * @internal
  */
 
-const FeeCalculatorLayout = nu64('lamportsPerSignature');
+const FeeCalculatorLayout$1 = nu64('lamportsPerSignature');
 /**
  * Calculator for transaction fees.
  */
@@ -28788,8 +29225,8 @@ const FeeCalculatorLayout = nu64('lamportsPerSignature');
  * @internal
  */
 
-const NonceAccountLayout = struct([u32('version'), u32('state'), publicKey('authorizedPubkey'), publicKey('nonce'), struct([FeeCalculatorLayout], 'feeCalculator')]);
-const NONCE_ACCOUNT_LENGTH = NonceAccountLayout.span;
+const NonceAccountLayout$1 = struct$1([u32('version'), u32('state'), publicKey$1('authorizedPubkey'), publicKey$1('nonce'), struct$1([FeeCalculatorLayout$1], 'feeCalculator')]);
+const NONCE_ACCOUNT_LENGTH$1 = NonceAccountLayout$1.span;
 
 /**
  * Create account system transaction params
@@ -28798,7 +29235,7 @@ const NONCE_ACCOUNT_LENGTH = NonceAccountLayout.span;
 /**
  * System Instruction class
  */
-class SystemInstruction {
+class SystemInstruction$1 {
   /**
    * @internal
    */
@@ -28814,7 +29251,7 @@ class SystemInstruction {
     const typeIndex = instructionTypeLayout.decode(instruction.data);
     let type;
 
-    for (const [ixType, layout] of Object.entries(SYSTEM_INSTRUCTION_LAYOUTS)) {
+    for (const [ixType, layout] of Object.entries(SYSTEM_INSTRUCTION_LAYOUTS$1)) {
       if (layout.index == typeIndex) {
         type = ixType;
         break;
@@ -28839,13 +29276,13 @@ class SystemInstruction {
       lamports,
       space,
       programId
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.Create, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.Create, instruction.data);
     return {
       fromPubkey: instruction.keys[0].pubkey,
       newAccountPubkey: instruction.keys[1].pubkey,
       lamports,
       space,
-      programId: new PublicKey(programId)
+      programId: new PublicKey$1(programId)
     };
   }
   /**
@@ -28858,7 +29295,7 @@ class SystemInstruction {
     this.checkKeyLength(instruction.keys, 2);
     const {
       lamports
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.Transfer, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.Transfer, instruction.data);
     return {
       fromPubkey: instruction.keys[0].pubkey,
       toPubkey: instruction.keys[1].pubkey,
@@ -28877,14 +29314,14 @@ class SystemInstruction {
       lamports,
       seed,
       programId
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.TransferWithSeed, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.TransferWithSeed, instruction.data);
     return {
       fromPubkey: instruction.keys[0].pubkey,
       basePubkey: instruction.keys[1].pubkey,
       toPubkey: instruction.keys[2].pubkey,
       lamports,
       seed,
-      programId: new PublicKey(programId)
+      programId: new PublicKey$1(programId)
     };
   }
   /**
@@ -28897,7 +29334,7 @@ class SystemInstruction {
     this.checkKeyLength(instruction.keys, 1);
     const {
       space
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.Allocate, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.Allocate, instruction.data);
     return {
       accountPubkey: instruction.keys[0].pubkey,
       space
@@ -28916,13 +29353,13 @@ class SystemInstruction {
       seed,
       space,
       programId
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.AllocateWithSeed, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.AllocateWithSeed, instruction.data);
     return {
       accountPubkey: instruction.keys[0].pubkey,
-      basePubkey: new PublicKey(base),
+      basePubkey: new PublicKey$1(base),
       seed,
       space,
-      programId: new PublicKey(programId)
+      programId: new PublicKey$1(programId)
     };
   }
   /**
@@ -28935,10 +29372,10 @@ class SystemInstruction {
     this.checkKeyLength(instruction.keys, 1);
     const {
       programId
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.Assign, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.Assign, instruction.data);
     return {
       accountPubkey: instruction.keys[0].pubkey,
-      programId: new PublicKey(programId)
+      programId: new PublicKey$1(programId)
     };
   }
   /**
@@ -28953,12 +29390,12 @@ class SystemInstruction {
       base,
       seed,
       programId
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.AssignWithSeed, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.AssignWithSeed, instruction.data);
     return {
       accountPubkey: instruction.keys[0].pubkey,
-      basePubkey: new PublicKey(base),
+      basePubkey: new PublicKey$1(base),
       seed,
-      programId: new PublicKey(programId)
+      programId: new PublicKey$1(programId)
     };
   }
   /**
@@ -28975,15 +29412,15 @@ class SystemInstruction {
       lamports,
       space,
       programId
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.CreateWithSeed, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.CreateWithSeed, instruction.data);
     return {
       fromPubkey: instruction.keys[0].pubkey,
       newAccountPubkey: instruction.keys[1].pubkey,
-      basePubkey: new PublicKey(base),
+      basePubkey: new PublicKey$1(base),
       seed,
       lamports,
       space,
-      programId: new PublicKey(programId)
+      programId: new PublicKey$1(programId)
     };
   }
   /**
@@ -28996,10 +29433,10 @@ class SystemInstruction {
     this.checkKeyLength(instruction.keys, 3);
     const {
       authorized
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.InitializeNonceAccount, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.InitializeNonceAccount, instruction.data);
     return {
       noncePubkey: instruction.keys[0].pubkey,
-      authorizedPubkey: new PublicKey(authorized)
+      authorizedPubkey: new PublicKey$1(authorized)
     };
   }
   /**
@@ -29010,7 +29447,7 @@ class SystemInstruction {
   static decodeNonceAdvance(instruction) {
     this.checkProgramId(instruction.programId);
     this.checkKeyLength(instruction.keys, 3);
-    decodeData(SYSTEM_INSTRUCTION_LAYOUTS.AdvanceNonceAccount, instruction.data);
+    decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.AdvanceNonceAccount, instruction.data);
     return {
       noncePubkey: instruction.keys[0].pubkey,
       authorizedPubkey: instruction.keys[2].pubkey
@@ -29026,7 +29463,7 @@ class SystemInstruction {
     this.checkKeyLength(instruction.keys, 5);
     const {
       lamports
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.WithdrawNonceAccount, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.WithdrawNonceAccount, instruction.data);
     return {
       noncePubkey: instruction.keys[0].pubkey,
       toPubkey: instruction.keys[1].pubkey,
@@ -29044,11 +29481,11 @@ class SystemInstruction {
     this.checkKeyLength(instruction.keys, 2);
     const {
       authorized
-    } = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.AuthorizeNonceAccount, instruction.data);
+    } = decodeData$1(SYSTEM_INSTRUCTION_LAYOUTS$1.AuthorizeNonceAccount, instruction.data);
     return {
       noncePubkey: instruction.keys[0].pubkey,
       authorizedPubkey: instruction.keys[1].pubkey,
-      newAuthorizedPubkey: new PublicKey(authorized)
+      newAuthorizedPubkey: new PublicKey$1(authorized)
     };
   }
   /**
@@ -29057,7 +29494,7 @@ class SystemInstruction {
 
 
   static checkProgramId(programId) {
-    if (!programId.equals(SystemProgram$1.programId)) {
+    if (!programId.equals(SystemProgram$2.programId)) {
       throw new Error('invalid instruction; programId is not SystemProgram');
     }
   }
@@ -29081,61 +29518,61 @@ class SystemInstruction {
  * An enumeration of valid system InstructionType's
  * @internal
  */
-const SYSTEM_INSTRUCTION_LAYOUTS = Object.freeze({
+const SYSTEM_INSTRUCTION_LAYOUTS$1 = Object.freeze({
   Create: {
     index: 0,
-    layout: struct([u32('instruction'), ns64('lamports'), ns64('space'), publicKey('programId')])
+    layout: struct$1([u32('instruction'), ns64('lamports'), ns64('space'), publicKey$1('programId')])
   },
   Assign: {
     index: 1,
-    layout: struct([u32('instruction'), publicKey('programId')])
+    layout: struct$1([u32('instruction'), publicKey$1('programId')])
   },
   Transfer: {
     index: 2,
-    layout: struct([u32('instruction'), ns64('lamports')])
+    layout: struct$1([u32('instruction'), ns64('lamports')])
   },
   CreateWithSeed: {
     index: 3,
-    layout: struct([u32('instruction'), publicKey('base'), rustString('seed'), ns64('lamports'), ns64('space'), publicKey('programId')])
+    layout: struct$1([u32('instruction'), publicKey$1('base'), rustString$1('seed'), ns64('lamports'), ns64('space'), publicKey$1('programId')])
   },
   AdvanceNonceAccount: {
     index: 4,
-    layout: struct([u32('instruction')])
+    layout: struct$1([u32('instruction')])
   },
   WithdrawNonceAccount: {
     index: 5,
-    layout: struct([u32('instruction'), ns64('lamports')])
+    layout: struct$1([u32('instruction'), ns64('lamports')])
   },
   InitializeNonceAccount: {
     index: 6,
-    layout: struct([u32('instruction'), publicKey('authorized')])
+    layout: struct$1([u32('instruction'), publicKey$1('authorized')])
   },
   AuthorizeNonceAccount: {
     index: 7,
-    layout: struct([u32('instruction'), publicKey('authorized')])
+    layout: struct$1([u32('instruction'), publicKey$1('authorized')])
   },
   Allocate: {
     index: 8,
-    layout: struct([u32('instruction'), ns64('space')])
+    layout: struct$1([u32('instruction'), ns64('space')])
   },
   AllocateWithSeed: {
     index: 9,
-    layout: struct([u32('instruction'), publicKey('base'), rustString('seed'), ns64('space'), publicKey('programId')])
+    layout: struct$1([u32('instruction'), publicKey$1('base'), rustString$1('seed'), ns64('space'), publicKey$1('programId')])
   },
   AssignWithSeed: {
     index: 10,
-    layout: struct([u32('instruction'), publicKey('base'), rustString('seed'), publicKey('programId')])
+    layout: struct$1([u32('instruction'), publicKey$1('base'), rustString$1('seed'), publicKey$1('programId')])
   },
   TransferWithSeed: {
     index: 11,
-    layout: struct([u32('instruction'), ns64('lamports'), rustString('seed'), publicKey('programId')])
+    layout: struct$1([u32('instruction'), ns64('lamports'), rustString$1('seed'), publicKey$1('programId')])
   }
 });
 /**
  * Factory class for transactions to interact with the System program
  */
 
-class SystemProgram$1 {
+class SystemProgram$2 {
   /**
    * @internal
    */
@@ -29149,13 +29586,13 @@ class SystemProgram$1 {
    * Generate a transaction instruction that creates a new account
    */
   static createAccount(params) {
-    const type = SYSTEM_INSTRUCTION_LAYOUTS.Create;
-    const data = encodeData(type, {
+    const type = SYSTEM_INSTRUCTION_LAYOUTS$1.Create;
+    const data = encodeData$1(type, {
       lamports: params.lamports,
       space: params.space,
-      programId: toBuffer(params.programId.toBuffer())
+      programId: toBuffer$1(params.programId.toBuffer())
     });
-    return new TransactionInstruction({
+    return new TransactionInstruction$1({
       keys: [{
         pubkey: params.fromPubkey,
         isSigner: true,
@@ -29179,11 +29616,11 @@ class SystemProgram$1 {
     let keys;
 
     if ('basePubkey' in params) {
-      const type = SYSTEM_INSTRUCTION_LAYOUTS.TransferWithSeed;
-      data = encodeData(type, {
+      const type = SYSTEM_INSTRUCTION_LAYOUTS$1.TransferWithSeed;
+      data = encodeData$1(type, {
         lamports: params.lamports,
         seed: params.seed,
-        programId: toBuffer(params.programId.toBuffer())
+        programId: toBuffer$1(params.programId.toBuffer())
       });
       keys = [{
         pubkey: params.fromPubkey,
@@ -29199,8 +29636,8 @@ class SystemProgram$1 {
         isWritable: true
       }];
     } else {
-      const type = SYSTEM_INSTRUCTION_LAYOUTS.Transfer;
-      data = encodeData(type, {
+      const type = SYSTEM_INSTRUCTION_LAYOUTS$1.Transfer;
+      data = encodeData$1(type, {
         lamports: params.lamports
       });
       keys = [{
@@ -29214,7 +29651,7 @@ class SystemProgram$1 {
       }];
     }
 
-    return new TransactionInstruction({
+    return new TransactionInstruction$1({
       keys,
       programId: this.programId,
       data
@@ -29230,11 +29667,11 @@ class SystemProgram$1 {
     let keys;
 
     if ('basePubkey' in params) {
-      const type = SYSTEM_INSTRUCTION_LAYOUTS.AssignWithSeed;
-      data = encodeData(type, {
-        base: toBuffer(params.basePubkey.toBuffer()),
+      const type = SYSTEM_INSTRUCTION_LAYOUTS$1.AssignWithSeed;
+      data = encodeData$1(type, {
+        base: toBuffer$1(params.basePubkey.toBuffer()),
         seed: params.seed,
-        programId: toBuffer(params.programId.toBuffer())
+        programId: toBuffer$1(params.programId.toBuffer())
       });
       keys = [{
         pubkey: params.accountPubkey,
@@ -29246,9 +29683,9 @@ class SystemProgram$1 {
         isWritable: false
       }];
     } else {
-      const type = SYSTEM_INSTRUCTION_LAYOUTS.Assign;
-      data = encodeData(type, {
-        programId: toBuffer(params.programId.toBuffer())
+      const type = SYSTEM_INSTRUCTION_LAYOUTS$1.Assign;
+      data = encodeData$1(type, {
+        programId: toBuffer$1(params.programId.toBuffer())
       });
       keys = [{
         pubkey: params.accountPubkey,
@@ -29257,7 +29694,7 @@ class SystemProgram$1 {
       }];
     }
 
-    return new TransactionInstruction({
+    return new TransactionInstruction$1({
       keys,
       programId: this.programId,
       data
@@ -29270,13 +29707,13 @@ class SystemProgram$1 {
 
 
   static createAccountWithSeed(params) {
-    const type = SYSTEM_INSTRUCTION_LAYOUTS.CreateWithSeed;
-    const data = encodeData(type, {
-      base: toBuffer(params.basePubkey.toBuffer()),
+    const type = SYSTEM_INSTRUCTION_LAYOUTS$1.CreateWithSeed;
+    const data = encodeData$1(type, {
+      base: toBuffer$1(params.basePubkey.toBuffer()),
       seed: params.seed,
       lamports: params.lamports,
       space: params.space,
-      programId: toBuffer(params.programId.toBuffer())
+      programId: toBuffer$1(params.programId.toBuffer())
     });
     let keys = [{
       pubkey: params.fromPubkey,
@@ -29296,7 +29733,7 @@ class SystemProgram$1 {
       });
     }
 
-    return new TransactionInstruction({
+    return new TransactionInstruction$1({
       keys,
       programId: this.programId,
       data
@@ -29308,24 +29745,24 @@ class SystemProgram$1 {
 
 
   static createNonceAccount(params) {
-    const transaction = new Transaction();
+    const transaction = new Transaction$1();
 
     if ('basePubkey' in params && 'seed' in params) {
-      transaction.add(SystemProgram$1.createAccountWithSeed({
+      transaction.add(SystemProgram$2.createAccountWithSeed({
         fromPubkey: params.fromPubkey,
         newAccountPubkey: params.noncePubkey,
         basePubkey: params.basePubkey,
         seed: params.seed,
         lamports: params.lamports,
-        space: NONCE_ACCOUNT_LENGTH,
+        space: NONCE_ACCOUNT_LENGTH$1,
         programId: this.programId
       }));
     } else {
-      transaction.add(SystemProgram$1.createAccount({
+      transaction.add(SystemProgram$2.createAccount({
         fromPubkey: params.fromPubkey,
         newAccountPubkey: params.noncePubkey,
         lamports: params.lamports,
-        space: NONCE_ACCOUNT_LENGTH,
+        space: NONCE_ACCOUNT_LENGTH$1,
         programId: this.programId
       }));
     }
@@ -29343,9 +29780,9 @@ class SystemProgram$1 {
 
 
   static nonceInitialize(params) {
-    const type = SYSTEM_INSTRUCTION_LAYOUTS.InitializeNonceAccount;
-    const data = encodeData(type, {
-      authorized: toBuffer(params.authorizedPubkey.toBuffer())
+    const type = SYSTEM_INSTRUCTION_LAYOUTS$1.InitializeNonceAccount;
+    const data = encodeData$1(type, {
+      authorized: toBuffer$1(params.authorizedPubkey.toBuffer())
     });
     const instructionData = {
       keys: [{
@@ -29353,18 +29790,18 @@ class SystemProgram$1 {
         isSigner: false,
         isWritable: true
       }, {
-        pubkey: SYSVAR_RECENT_BLOCKHASHES_PUBKEY,
+        pubkey: SYSVAR_RECENT_BLOCKHASHES_PUBKEY$1,
         isSigner: false,
         isWritable: false
       }, {
-        pubkey: SYSVAR_RENT_PUBKEY,
+        pubkey: SYSVAR_RENT_PUBKEY$1,
         isSigner: false,
         isWritable: false
       }],
       programId: this.programId,
       data
     };
-    return new TransactionInstruction(instructionData);
+    return new TransactionInstruction$1(instructionData);
   }
   /**
    * Generate an instruction to advance the nonce in a Nonce account
@@ -29372,15 +29809,15 @@ class SystemProgram$1 {
 
 
   static nonceAdvance(params) {
-    const type = SYSTEM_INSTRUCTION_LAYOUTS.AdvanceNonceAccount;
-    const data = encodeData(type);
+    const type = SYSTEM_INSTRUCTION_LAYOUTS$1.AdvanceNonceAccount;
+    const data = encodeData$1(type);
     const instructionData = {
       keys: [{
         pubkey: params.noncePubkey,
         isSigner: false,
         isWritable: true
       }, {
-        pubkey: SYSVAR_RECENT_BLOCKHASHES_PUBKEY,
+        pubkey: SYSVAR_RECENT_BLOCKHASHES_PUBKEY$1,
         isSigner: false,
         isWritable: false
       }, {
@@ -29391,7 +29828,7 @@ class SystemProgram$1 {
       programId: this.programId,
       data
     };
-    return new TransactionInstruction(instructionData);
+    return new TransactionInstruction$1(instructionData);
   }
   /**
    * Generate a transaction instruction that withdraws lamports from a Nonce account
@@ -29399,11 +29836,11 @@ class SystemProgram$1 {
 
 
   static nonceWithdraw(params) {
-    const type = SYSTEM_INSTRUCTION_LAYOUTS.WithdrawNonceAccount;
-    const data = encodeData(type, {
+    const type = SYSTEM_INSTRUCTION_LAYOUTS$1.WithdrawNonceAccount;
+    const data = encodeData$1(type, {
       lamports: params.lamports
     });
-    return new TransactionInstruction({
+    return new TransactionInstruction$1({
       keys: [{
         pubkey: params.noncePubkey,
         isSigner: false,
@@ -29413,11 +29850,11 @@ class SystemProgram$1 {
         isSigner: false,
         isWritable: true
       }, {
-        pubkey: SYSVAR_RECENT_BLOCKHASHES_PUBKEY,
+        pubkey: SYSVAR_RECENT_BLOCKHASHES_PUBKEY$1,
         isSigner: false,
         isWritable: false
       }, {
-        pubkey: SYSVAR_RENT_PUBKEY,
+        pubkey: SYSVAR_RENT_PUBKEY$1,
         isSigner: false,
         isWritable: false
       }, {
@@ -29436,11 +29873,11 @@ class SystemProgram$1 {
 
 
   static nonceAuthorize(params) {
-    const type = SYSTEM_INSTRUCTION_LAYOUTS.AuthorizeNonceAccount;
-    const data = encodeData(type, {
-      authorized: toBuffer(params.newAuthorizedPubkey.toBuffer())
+    const type = SYSTEM_INSTRUCTION_LAYOUTS$1.AuthorizeNonceAccount;
+    const data = encodeData$1(type, {
+      authorized: toBuffer$1(params.newAuthorizedPubkey.toBuffer())
     });
-    return new TransactionInstruction({
+    return new TransactionInstruction$1({
       keys: [{
         pubkey: params.noncePubkey,
         isSigner: false,
@@ -29464,12 +29901,12 @@ class SystemProgram$1 {
     let keys;
 
     if ('basePubkey' in params) {
-      const type = SYSTEM_INSTRUCTION_LAYOUTS.AllocateWithSeed;
-      data = encodeData(type, {
-        base: toBuffer(params.basePubkey.toBuffer()),
+      const type = SYSTEM_INSTRUCTION_LAYOUTS$1.AllocateWithSeed;
+      data = encodeData$1(type, {
+        base: toBuffer$1(params.basePubkey.toBuffer()),
         seed: params.seed,
         space: params.space,
-        programId: toBuffer(params.programId.toBuffer())
+        programId: toBuffer$1(params.programId.toBuffer())
       });
       keys = [{
         pubkey: params.accountPubkey,
@@ -29481,8 +29918,8 @@ class SystemProgram$1 {
         isWritable: false
       }];
     } else {
-      const type = SYSTEM_INSTRUCTION_LAYOUTS.Allocate;
-      data = encodeData(type, {
+      const type = SYSTEM_INSTRUCTION_LAYOUTS$1.Allocate;
+      data = encodeData$1(type, {
         space: params.space
       });
       keys = [{
@@ -29492,7 +29929,7 @@ class SystemProgram$1 {
       }];
     }
 
-    return new TransactionInstruction({
+    return new TransactionInstruction$1({
       keys,
       programId: this.programId,
       data
@@ -29501,19 +29938,19 @@ class SystemProgram$1 {
 
 }
 
-_defineProperty__default['default'](SystemProgram$1, "programId", new PublicKey('11111111111111111111111111111111'));
+_defineProperty__default['default'](SystemProgram$2, "programId", new PublicKey$1('11111111111111111111111111111111'));
 
 // rest of the Transaction fields
 //
 // TODO: replace 300 with a proper constant for the size of the other
 // Transaction fields
 
-const CHUNK_SIZE = PACKET_DATA_SIZE - 300;
+const CHUNK_SIZE = PACKET_DATA_SIZE$1 - 300;
 /**
  * Program loader interface
  */
 
-class Loader {
+class Loader$1 {
   /**
    * @internal
    */
@@ -29531,7 +29968,7 @@ class Loader {
    */
   static getMinNumSignatures(dataLength) {
     return 2 * ( // Every transaction requires two signatures (payer + program)
-    Math.ceil(dataLength / Loader.chunkSize) + 1 + // Add one for Create transaction
+    Math.ceil(dataLength / Loader$1.chunkSize) + 1 + // Add one for Create transaction
     1) // Add one for Finalize transaction
     ;
   }
@@ -29561,31 +29998,31 @@ class Loader {
         }
 
         if (programInfo.data.length !== data.length) {
-          transaction = transaction || new Transaction();
-          transaction.add(SystemProgram$1.allocate({
+          transaction = transaction || new Transaction$1();
+          transaction.add(SystemProgram$2.allocate({
             accountPubkey: program.publicKey,
             space: data.length
           }));
         }
 
         if (!programInfo.owner.equals(programId)) {
-          transaction = transaction || new Transaction();
-          transaction.add(SystemProgram$1.assign({
+          transaction = transaction || new Transaction$1();
+          transaction.add(SystemProgram$2.assign({
             accountPubkey: program.publicKey,
             programId
           }));
         }
 
         if (programInfo.lamports < balanceNeeded) {
-          transaction = transaction || new Transaction();
-          transaction.add(SystemProgram$1.transfer({
+          transaction = transaction || new Transaction$1();
+          transaction.add(SystemProgram$2.transfer({
             fromPubkey: payer.publicKey,
             toPubkey: program.publicKey,
             lamports: balanceNeeded - programInfo.lamports
           }));
         }
       } else {
-        transaction = new Transaction().add(SystemProgram$1.createAccount({
+        transaction = new Transaction$1().add(SystemProgram$2.createAccount({
           fromPubkey: payer.publicKey,
           newAccountPubkey: program.publicKey,
           lamports: balanceNeeded > 0 ? balanceNeeded : 1,
@@ -29597,13 +30034,13 @@ class Loader {
 
 
       if (transaction !== null) {
-        await sendAndConfirmTransaction(connection, transaction, [payer, program], {
+        await sendAndConfirmTransaction$1(connection, transaction, [payer, program], {
           commitment: 'confirmed'
         });
       }
     }
-    const dataLayout = struct([u32('instruction'), u32('offset'), u32('bytesLength'), u32('bytesLengthPadding'), seq(u8('byte'), offset(u32(), -8), 'bytes')]);
-    const chunkSize = Loader.chunkSize;
+    const dataLayout = struct$1([u32('instruction'), u32('offset'), u32('bytesLength'), u32('bytesLengthPadding'), seq(u8('byte'), offset(u32(), -8), 'bytes')]);
+    const chunkSize = Loader$1.chunkSize;
     let offset$1 = 0;
     let array = data;
     let transactions = [];
@@ -29617,7 +30054,7 @@ class Loader {
         offset: offset$1,
         bytes
       }, data);
-      const transaction = new Transaction().add({
+      const transaction = new Transaction$1().add({
         keys: [{
           pubkey: program.publicKey,
           isSigner: true,
@@ -29626,13 +30063,13 @@ class Loader {
         programId,
         data
       });
-      transactions.push(sendAndConfirmTransaction(connection, transaction, [payer, program], {
+      transactions.push(sendAndConfirmTransaction$1(connection, transaction, [payer, program], {
         commitment: 'confirmed'
       })); // Delay between sends in an attempt to reduce rate limit errors
 
       if (connection._rpcEndpoint.includes('solana.com')) {
         const REQUESTS_PER_SECOND = 4;
-        await sleep(1000 / REQUESTS_PER_SECOND);
+        await sleep$1(1000 / REQUESTS_PER_SECOND);
       }
 
       offset$1 += chunkSize;
@@ -29642,26 +30079,26 @@ class Loader {
     await Promise.all(transactions); // Finalize the account loaded with program data for execution
 
     {
-      const dataLayout = struct([u32('instruction')]);
+      const dataLayout = struct$1([u32('instruction')]);
       const data = buffer.Buffer.alloc(dataLayout.span);
       dataLayout.encode({
         instruction: 1 // Finalize instruction
 
       }, data);
-      const transaction = new Transaction().add({
+      const transaction = new Transaction$1().add({
         keys: [{
           pubkey: program.publicKey,
           isSigner: true,
           isWritable: true
         }, {
-          pubkey: SYSVAR_RENT_PUBKEY,
+          pubkey: SYSVAR_RENT_PUBKEY$1,
           isSigner: false,
           isWritable: false
         }],
         programId,
         data
       });
-      await sendAndConfirmTransaction(connection, transaction, [payer, program], {
+      await sendAndConfirmTransaction$1(connection, transaction, [payer, program], {
         commitment: 'confirmed'
       });
     } // success
@@ -29671,11 +30108,11 @@ class Loader {
 
 }
 
-_defineProperty__default['default'](Loader, "chunkSize", CHUNK_SIZE);
+_defineProperty__default['default'](Loader$1, "chunkSize", CHUNK_SIZE);
 
-new PublicKey('BPFLoader2111111111111111111111111111111111');
+new PublicKey$1('BPFLoader2111111111111111111111111111111111');
 
-const PublicKeyFromString = coerce(instance(PublicKey), string(), value => new PublicKey(value));
+const PublicKeyFromString = coerce(instance(PublicKey$1), string(), value => new PublicKey$1(value));
 const RawAccountDataResult = tuple([string(), literal('base64')]);
 const BufferFromRawAccountData = coerce(instance(buffer.Buffer), RawAccountDataResult, value => buffer.Buffer.from(value[0], 'base64'));
 
@@ -29703,7 +30140,7 @@ const UnknownRpcResult = createRpcResult(unknown());
  * @internal
  */
 
-function jsonRpcResult(schema) {
+function jsonRpcResult$1(schema) {
   return coerce(createRpcResult(schema), UnknownRpcResult, value => {
     if ('error' in value) {
       return value;
@@ -29719,8 +30156,8 @@ function jsonRpcResult(schema) {
  */
 
 
-function jsonRpcResultAndContext(value) {
-  return jsonRpcResult(type({
+function jsonRpcResultAndContext$1(value) {
+  return jsonRpcResult$1(type({
     context: type({
       slot: number()
     }),
@@ -29732,7 +30169,7 @@ function jsonRpcResultAndContext(value) {
  */
 
 
-function notificationResultAndContext(value) {
+function notificationResultAndContext$1(value) {
   return type({
     context: type({
       slot: number()
@@ -29750,7 +30187,7 @@ function notificationResultAndContext(value) {
  */
 
 
-const GetInflationGovernorResult = type({
+const GetInflationGovernorResult$1 = type({
   foundation: number(),
   foundationTerm: number(),
   initial: number(),
@@ -29764,7 +30201,7 @@ const GetInflationGovernorResult = type({
 /**
  * Expected JSON RPC response for the "getInflationReward" message
  */
-jsonRpcResult(array(nullable(type({
+jsonRpcResult$1(array(nullable(type({
   epoch: number(),
   effectiveSlot: number(),
   amount: number(),
@@ -29774,7 +30211,7 @@ jsonRpcResult(array(nullable(type({
  * Information about the current epoch
  */
 
-const GetEpochInfoResult = type({
+const GetEpochInfoResult$1 = type({
   epoch: number(),
   slotIndex: number(),
   slotsInEpoch: number(),
@@ -29787,7 +30224,7 @@ const GetEpochInfoResult = type({
  * (see https://docs.solana.com/terminology#epoch)
  */
 
-const GetEpochScheduleResult = type({
+const GetEpochScheduleResult$1 = type({
   slotsPerEpoch: number(),
   leaderScheduleSlotOffset: number(),
   warmup: boolean(),
@@ -29799,18 +30236,18 @@ const GetEpochScheduleResult = type({
  * (see https://docs.solana.com/terminology#leader-schedule)
  */
 
-const GetLeaderScheduleResult = record(string(), array(number()));
+const GetLeaderScheduleResult$1 = record(string(), array(number()));
 /**
  * Transaction error or null
  */
 
-const TransactionErrorResult = nullable(union([type({}), string()]));
+const TransactionErrorResult$1 = nullable(union([type({}), string()]));
 /**
  * Signature status for a transaction
  */
 
-const SignatureStatusResult = type({
-  err: TransactionErrorResult
+const SignatureStatusResult$1 = type({
+  err: TransactionErrorResult$1
 });
 /**
  * Transaction signature received notification
@@ -29825,7 +30262,7 @@ type({
   'solana-core': string(),
   'feature-set': optional(number())
 });
-jsonRpcResultAndContext(type({
+jsonRpcResultAndContext$1(type({
   err: nullable(union([type({}), string()])),
   logs: nullable(array(string()))
 }));
@@ -29834,27 +30271,27 @@ jsonRpcResultAndContext(type({
  */
 
 
-jsonRpcResult(GetInflationGovernorResult);
+jsonRpcResult$1(GetInflationGovernorResult$1);
 /**
  * Expected JSON RPC response for the "getEpochInfo" message
  */
 
-jsonRpcResult(GetEpochInfoResult);
+jsonRpcResult$1(GetEpochInfoResult$1);
 /**
  * Expected JSON RPC response for the "getEpochSchedule" message
  */
 
-jsonRpcResult(GetEpochScheduleResult);
+jsonRpcResult$1(GetEpochScheduleResult$1);
 /**
  * Expected JSON RPC response for the "getLeaderSchedule" message
  */
 
-jsonRpcResult(GetLeaderScheduleResult);
+jsonRpcResult$1(GetLeaderScheduleResult$1);
 /**
  * Expected JSON RPC response for the "minimumLedgerSlot" and "getFirstAvailableBlock" messages
  */
 
-jsonRpcResult(number());
+jsonRpcResult$1(number());
 /**
  * Supply
  */
@@ -29862,7 +30299,7 @@ jsonRpcResult(number());
 /**
  * Expected JSON RPC response for the "getSupply" message
  */
-jsonRpcResultAndContext(type({
+jsonRpcResultAndContext$1(type({
   total: number(),
   circulating: number(),
   nonCirculating: number(),
@@ -29876,7 +30313,7 @@ jsonRpcResultAndContext(type({
 /**
  * Expected JSON RPC structure for token amounts
  */
-const TokenAmountResult = type({
+const TokenAmountResult$1 = type({
   amount: string(),
   uiAmount: nullable(number()),
   decimals: number(),
@@ -29889,7 +30326,7 @@ const TokenAmountResult = type({
 /**
  * Expected JSON RPC response for the "getTokenLargestAccounts" message
  */
-jsonRpcResultAndContext(array(type({
+jsonRpcResultAndContext$1(array(type({
   address: PublicKeyFromString,
   amount: string(),
   uiAmount: nullable(number()),
@@ -29900,7 +30337,7 @@ jsonRpcResultAndContext(array(type({
  * Expected JSON RPC response for the "getTokenAccountsByOwner" message
  */
 
-jsonRpcResultAndContext(array(type({
+jsonRpcResultAndContext$1(array(type({
   pubkey: PublicKeyFromString,
   account: type({
     executable: boolean(),
@@ -29919,7 +30356,7 @@ const ParsedAccountDataResult = type({
  * Expected JSON RPC response for the "getTokenAccountsByOwner" message with parsed data
  */
 
-jsonRpcResultAndContext(array(type({
+jsonRpcResultAndContext$1(array(type({
   pubkey: PublicKeyFromString,
   account: type({
     executable: boolean(),
@@ -29936,7 +30373,7 @@ jsonRpcResultAndContext(array(type({
 /**
  * Expected JSON RPC response for the "getLargestAccounts" message
  */
-jsonRpcResultAndContext(array(type({
+jsonRpcResultAndContext$1(array(type({
   lamports: number(),
   address: PublicKeyFromString
 })));
@@ -29944,7 +30381,7 @@ jsonRpcResultAndContext(array(type({
  * @internal
  */
 
-const AccountInfoResult = type({
+const AccountInfoResult$1 = type({
   executable: boolean(),
   owner: PublicKeyFromString,
   lamports: number(),
@@ -29957,7 +30394,7 @@ const AccountInfoResult = type({
 
 type({
   pubkey: PublicKeyFromString,
-  account: AccountInfoResult
+  account: AccountInfoResult$1
 });
 const ParsedOrRawAccountData = coerce(union([instance(buffer.Buffer), ParsedAccountDataResult]), union([RawAccountDataResult, ParsedAccountDataResult]), value => {
   if (Array.isArray(value)) {
@@ -29970,7 +30407,7 @@ const ParsedOrRawAccountData = coerce(union([instance(buffer.Buffer), ParsedAcco
  * @internal
  */
 
-const ParsedAccountInfoResult = type({
+const ParsedAccountInfoResult$1 = type({
   executable: boolean(),
   owner: PublicKeyFromString,
   lamports: number(),
@@ -29979,7 +30416,7 @@ const ParsedAccountInfoResult = type({
 });
 type({
   pubkey: PublicKeyFromString,
-  account: ParsedAccountInfoResult
+  account: ParsedAccountInfoResult$1
 });
 /**
  * @internal
@@ -29994,10 +30431,10 @@ type({
  * Expected JSON RPC response for the "getConfirmedSignaturesForAddress2" message
  */
 
-jsonRpcResult(array(type({
+jsonRpcResult$1(array(type({
   signature: string(),
   slot: number(),
-  err: TransactionErrorResult,
+  err: TransactionErrorResult$1,
   memo: nullable(string()),
   blockTime: optional(nullable(number()))
 })));
@@ -30007,15 +30444,15 @@ jsonRpcResult(array(type({
 
 type({
   subscription: number(),
-  result: notificationResultAndContext(AccountInfoResult)
+  result: notificationResultAndContext$1(AccountInfoResult$1)
 });
 /**
  * @internal
  */
 
-const ProgramAccountInfoResult = type({
+const ProgramAccountInfoResult$1 = type({
   pubkey: PublicKeyFromString,
-  account: AccountInfoResult
+  account: AccountInfoResult$1
 });
 /***
  * Expected JSON RPC response for the "programNotification" message
@@ -30023,13 +30460,13 @@ const ProgramAccountInfoResult = type({
 
 type({
   subscription: number(),
-  result: notificationResultAndContext(ProgramAccountInfoResult)
+  result: notificationResultAndContext$1(ProgramAccountInfoResult$1)
 });
 /**
  * @internal
  */
 
-const SlotInfoResult = type({
+const SlotInfoResult$1 = type({
   parent: number(),
   slot: number(),
   root: number()
@@ -30040,7 +30477,7 @@ const SlotInfoResult = type({
 
 type({
   subscription: number(),
-  result: SlotInfoResult
+  result: SlotInfoResult$1
 });
 /**
  * Slot updates which can be used for tracking the live progress of a cluster.
@@ -30099,7 +30536,7 @@ type({
 
 type({
   subscription: number(),
-  result: notificationResultAndContext(union([SignatureStatusResult, SignatureReceivedResult]))
+  result: notificationResultAndContext$1(union([SignatureStatusResult$1, SignatureReceivedResult]))
 });
 /**
  * Expected JSON RPC response for the "rootNotification" message
@@ -30130,7 +30567,7 @@ const VoteAccountInfoResult = type({
  * Expected JSON RPC response for the "getVoteAccounts" message
  */
 
-jsonRpcResult(type({
+jsonRpcResult$1(type({
   current: array(VoteAccountInfoResult),
   delinquent: array(VoteAccountInfoResult)
 }));
@@ -30138,20 +30575,20 @@ const ConfirmationStatus = union([literal('processed'), literal('confirmed'), li
 const SignatureStatusResponse = type({
   slot: number(),
   confirmations: nullable(number()),
-  err: TransactionErrorResult,
+  err: TransactionErrorResult$1,
   confirmationStatus: optional(ConfirmationStatus)
 });
 /**
  * Expected JSON RPC response for the "getSignatureStatuses" message
  */
 
-jsonRpcResultAndContext(array(nullable(SignatureStatusResponse)));
+jsonRpcResultAndContext$1(array(nullable(SignatureStatusResponse)));
 /**
  * Expected JSON RPC response for the "getMinimumBalanceForRentExemption" message
  */
 
-jsonRpcResult(number());
-const ConfirmedTransactionResult = type({
+jsonRpcResult$1(number());
+const ConfirmedTransactionResult$1 = type({
   signatures: array(string()),
   message: type({
     accountKeys: array(string()),
@@ -30199,7 +30636,7 @@ const ParsedOrRawInstruction = coerce(InstructionResult, UnknownInstructionResul
  * @internal
  */
 
-const ParsedConfirmedTransactionResult = type({
+const ParsedConfirmedTransactionResult$1 = type({
   signatures: array(string()),
   message: type({
     accountKeys: array(type({
@@ -30214,14 +30651,14 @@ const ParsedConfirmedTransactionResult = type({
 const TokenBalanceResult = type({
   accountIndex: number(),
   mint: string(),
-  uiTokenAmount: TokenAmountResult
+  uiTokenAmount: TokenAmountResult$1
 });
 /**
  * @internal
  */
 
-const ConfirmedTransactionMetaResult = type({
-  err: TransactionErrorResult,
+const ConfirmedTransactionMetaResult$1 = type({
+  err: TransactionErrorResult$1,
   fee: number(),
   innerInstructions: optional(nullable(array(type({
     index: number(),
@@ -30241,8 +30678,8 @@ const ConfirmedTransactionMetaResult = type({
  * @internal
  */
 
-const ParsedConfirmedTransactionMetaResult = type({
-  err: TransactionErrorResult,
+const ParsedConfirmedTransactionMetaResult$1 = type({
+  err: TransactionErrorResult$1,
   fee: number(),
   innerInstructions: optional(nullable(array(type({
     index: number(),
@@ -30258,13 +30695,13 @@ const ParsedConfirmedTransactionMetaResult = type({
  * Expected JSON RPC response for the "getConfirmedBlock" message
  */
 
-jsonRpcResult(nullable(type({
+jsonRpcResult$1(nullable(type({
   blockhash: string(),
   previousBlockhash: string(),
   parentSlot: number(),
   transactions: array(type({
-    transaction: ConfirmedTransactionResult,
-    meta: nullable(ConfirmedTransactionMetaResult)
+    transaction: ConfirmedTransactionResult$1,
+    meta: nullable(ConfirmedTransactionMetaResult$1)
   })),
   rewards: optional(array(type({
     pubkey: string(),
@@ -30278,7 +30715,7 @@ jsonRpcResult(nullable(type({
  * Expected JSON RPC response for the "getConfirmedBlockSignatures" message
  */
 
-jsonRpcResult(nullable(type({
+jsonRpcResult$1(nullable(type({
   blockhash: string(),
   previousBlockhash: string(),
   parentSlot: number(),
@@ -30289,27 +30726,27 @@ jsonRpcResult(nullable(type({
  * Expected JSON RPC response for the "getConfirmedTransaction" message
  */
 
-jsonRpcResult(nullable(type({
+jsonRpcResult$1(nullable(type({
   slot: number(),
-  meta: ConfirmedTransactionMetaResult,
+  meta: ConfirmedTransactionMetaResult$1,
   blockTime: optional(nullable(number())),
-  transaction: ConfirmedTransactionResult
+  transaction: ConfirmedTransactionResult$1
 })));
 /**
  * Expected JSON RPC response for the "getConfirmedTransaction" message
  */
 
-jsonRpcResult(nullable(type({
+jsonRpcResult$1(nullable(type({
   slot: number(),
-  transaction: ParsedConfirmedTransactionResult,
-  meta: nullable(ParsedConfirmedTransactionMetaResult),
+  transaction: ParsedConfirmedTransactionResult$1,
+  meta: nullable(ParsedConfirmedTransactionMetaResult$1),
   blockTime: optional(nullable(number()))
 })));
 /**
  * Expected JSON RPC response for the "getRecentBlockhash" message
  */
 
-jsonRpcResultAndContext(type({
+jsonRpcResultAndContext$1(type({
   blockhash: string(),
   feeCalculator: type({
     lamportsPerSignature: number()
@@ -30325,12 +30762,12 @@ const PerfSampleResult = type({
  * Expected JSON RPC response for "getRecentPerformanceSamples" message
  */
 
-jsonRpcResult(array(PerfSampleResult));
+jsonRpcResult$1(array(PerfSampleResult));
 /**
  * Expected JSON RPC response for the "getFeeCalculatorForBlockhash" message
  */
 
-jsonRpcResultAndContext(nullable(type({
+jsonRpcResultAndContext$1(nullable(type({
   feeCalculator: type({
     lamportsPerSignature: number()
   })
@@ -30339,12 +30776,12 @@ jsonRpcResultAndContext(nullable(type({
  * Expected JSON RPC response for the "requestAirdrop" message
  */
 
-jsonRpcResult(string());
+jsonRpcResult$1(string());
 /**
  * Expected JSON RPC response for the "sendTransaction" message
  */
 
-jsonRpcResult(string());
+jsonRpcResult$1(string());
 /**
  * Information about the latest slot being processed by a node
  */
@@ -30353,7 +30790,7 @@ jsonRpcResult(string());
  * @internal
  */
 const LogsResult = type({
-  err: TransactionErrorResult,
+  err: TransactionErrorResult$1,
   logs: array(string()),
   signature: string()
 });
@@ -30365,7 +30802,7 @@ const LogsResult = type({
  * Expected JSON RPC response for the "logsNotification" message.
  */
 type({
-  result: notificationResultAndContext(LogsResult),
+  result: notificationResultAndContext$1(LogsResult),
   subscription: number()
 });
 
@@ -30374,12 +30811,12 @@ type({
  * of stake warmup and cooldown as well as the slashing penalty.
  */
 
-const STAKE_CONFIG_ID = new PublicKey('StakeConfig11111111111111111111111111111111');
+const STAKE_CONFIG_ID$1 = new PublicKey$1('StakeConfig11111111111111111111111111111111');
 /**
  * Stake account lockup info
  */
 
-class Lockup {
+class Lockup$1 {
   /** Unix timestamp of lockup expiration */
 
   /** Epoch of lockup expiration */
@@ -30404,7 +30841,7 @@ class Lockup {
  * Create stake account transaction params
  */
 
-_defineProperty__default['default'](Lockup, "default", new Lockup(0, 0, PublicKey.default));
+_defineProperty__default['default'](Lockup$1, "default", new Lockup$1(0, 0, PublicKey$1.default));
 /**
  * An enumeration of valid StakeInstructionType's
  */
@@ -30413,34 +30850,34 @@ _defineProperty__default['default'](Lockup, "default", new Lockup(0, 0, PublicKe
  * An enumeration of valid stake InstructionType's
  * @internal
  */
-const STAKE_INSTRUCTION_LAYOUTS = Object.freeze({
+const STAKE_INSTRUCTION_LAYOUTS$1 = Object.freeze({
   Initialize: {
     index: 0,
-    layout: struct([u32('instruction'), authorized(), lockup()])
+    layout: struct$1([u32('instruction'), authorized$1(), lockup$1()])
   },
   Authorize: {
     index: 1,
-    layout: struct([u32('instruction'), publicKey('newAuthorized'), u32('stakeAuthorizationType')])
+    layout: struct$1([u32('instruction'), publicKey$1('newAuthorized'), u32('stakeAuthorizationType')])
   },
   Delegate: {
     index: 2,
-    layout: struct([u32('instruction')])
+    layout: struct$1([u32('instruction')])
   },
   Split: {
     index: 3,
-    layout: struct([u32('instruction'), ns64('lamports')])
+    layout: struct$1([u32('instruction'), ns64('lamports')])
   },
   Withdraw: {
     index: 4,
-    layout: struct([u32('instruction'), ns64('lamports')])
+    layout: struct$1([u32('instruction'), ns64('lamports')])
   },
   Deactivate: {
     index: 5,
-    layout: struct([u32('instruction')])
+    layout: struct$1([u32('instruction')])
   },
   AuthorizeWithSeed: {
     index: 8,
-    layout: struct([u32('instruction'), publicKey('newAuthorized'), u32('stakeAuthorizationType'), rustString('authoritySeed'), publicKey('authorityOwner')])
+    layout: struct$1([u32('instruction'), publicKey$1('newAuthorized'), u32('stakeAuthorizationType'), rustString$1('authoritySeed'), publicKey$1('authorityOwner')])
   }
 });
 /**
@@ -30462,7 +30899,7 @@ Object.freeze({
  * Factory class for transactions to interact with the Stake program
  */
 
-class StakeProgram {
+class StakeProgram$1 {
   /**
    * @internal
    */
@@ -30481,17 +30918,17 @@ class StakeProgram {
       authorized,
       lockup: maybeLockup
     } = params;
-    const lockup = maybeLockup || Lockup.default;
-    const type = STAKE_INSTRUCTION_LAYOUTS.Initialize;
-    const data = encodeData(type, {
+    const lockup = maybeLockup || Lockup$1.default;
+    const type = STAKE_INSTRUCTION_LAYOUTS$1.Initialize;
+    const data = encodeData$1(type, {
       authorized: {
-        staker: toBuffer(authorized.staker.toBuffer()),
-        withdrawer: toBuffer(authorized.withdrawer.toBuffer())
+        staker: toBuffer$1(authorized.staker.toBuffer()),
+        withdrawer: toBuffer$1(authorized.withdrawer.toBuffer())
       },
       lockup: {
         unixTimestamp: lockup.unixTimestamp,
         epoch: lockup.epoch,
-        custodian: toBuffer(lockup.custodian.toBuffer())
+        custodian: toBuffer$1(lockup.custodian.toBuffer())
       }
     });
     const instructionData = {
@@ -30500,14 +30937,14 @@ class StakeProgram {
         isSigner: false,
         isWritable: true
       }, {
-        pubkey: SYSVAR_RENT_PUBKEY,
+        pubkey: SYSVAR_RENT_PUBKEY$1,
         isSigner: false,
         isWritable: false
       }],
       programId: this.programId,
       data
     };
-    return new TransactionInstruction(instructionData);
+    return new TransactionInstruction$1(instructionData);
   }
   /**
    * Generate a Transaction that creates a new Stake account at
@@ -30516,8 +30953,8 @@ class StakeProgram {
 
 
   static createAccountWithSeed(params) {
-    const transaction = new Transaction();
-    transaction.add(SystemProgram$1.createAccountWithSeed({
+    const transaction = new Transaction$1();
+    transaction.add(SystemProgram$2.createAccountWithSeed({
       fromPubkey: params.fromPubkey,
       newAccountPubkey: params.stakePubkey,
       basePubkey: params.basePubkey,
@@ -30543,8 +30980,8 @@ class StakeProgram {
 
 
   static createAccount(params) {
-    const transaction = new Transaction();
-    transaction.add(SystemProgram$1.createAccount({
+    const transaction = new Transaction$1();
+    transaction.add(SystemProgram$2.createAccount({
       fromPubkey: params.fromPubkey,
       newAccountPubkey: params.stakePubkey,
       lamports: params.lamports,
@@ -30575,9 +31012,9 @@ class StakeProgram {
       authorizedPubkey,
       votePubkey
     } = params;
-    const type = STAKE_INSTRUCTION_LAYOUTS.Delegate;
-    const data = encodeData(type);
-    return new Transaction().add({
+    const type = STAKE_INSTRUCTION_LAYOUTS$1.Delegate;
+    const data = encodeData$1(type);
+    return new Transaction$1().add({
       keys: [{
         pubkey: stakePubkey,
         isSigner: false,
@@ -30587,15 +31024,15 @@ class StakeProgram {
         isSigner: false,
         isWritable: false
       }, {
-        pubkey: SYSVAR_CLOCK_PUBKEY,
+        pubkey: SYSVAR_CLOCK_PUBKEY$1,
         isSigner: false,
         isWritable: false
       }, {
-        pubkey: SYSVAR_STAKE_HISTORY_PUBKEY,
+        pubkey: SYSVAR_STAKE_HISTORY_PUBKEY$1,
         isSigner: false,
         isWritable: false
       }, {
-        pubkey: STAKE_CONFIG_ID,
+        pubkey: STAKE_CONFIG_ID$1,
         isSigner: false,
         isWritable: false
       }, {
@@ -30621,9 +31058,9 @@ class StakeProgram {
       stakeAuthorizationType,
       custodianPubkey
     } = params;
-    const type = STAKE_INSTRUCTION_LAYOUTS.Authorize;
-    const data = encodeData(type, {
-      newAuthorized: toBuffer(newAuthorizedPubkey.toBuffer()),
+    const type = STAKE_INSTRUCTION_LAYOUTS$1.Authorize;
+    const data = encodeData$1(type, {
+      newAuthorized: toBuffer$1(newAuthorizedPubkey.toBuffer()),
       stakeAuthorizationType: stakeAuthorizationType.index
     });
     const keys = [{
@@ -30631,7 +31068,7 @@ class StakeProgram {
       isSigner: false,
       isWritable: true
     }, {
-      pubkey: SYSVAR_CLOCK_PUBKEY,
+      pubkey: SYSVAR_CLOCK_PUBKEY$1,
       isSigner: false,
       isWritable: true
     }, {
@@ -30648,7 +31085,7 @@ class StakeProgram {
       });
     }
 
-    return new Transaction().add({
+    return new Transaction$1().add({
       keys,
       programId: this.programId,
       data
@@ -30670,12 +31107,12 @@ class StakeProgram {
       stakeAuthorizationType,
       custodianPubkey
     } = params;
-    const type = STAKE_INSTRUCTION_LAYOUTS.AuthorizeWithSeed;
-    const data = encodeData(type, {
-      newAuthorized: toBuffer(newAuthorizedPubkey.toBuffer()),
+    const type = STAKE_INSTRUCTION_LAYOUTS$1.AuthorizeWithSeed;
+    const data = encodeData$1(type, {
+      newAuthorized: toBuffer$1(newAuthorizedPubkey.toBuffer()),
       stakeAuthorizationType: stakeAuthorizationType.index,
       authoritySeed: authoritySeed,
-      authorityOwner: toBuffer(authorityOwner.toBuffer())
+      authorityOwner: toBuffer$1(authorityOwner.toBuffer())
     });
     const keys = [{
       pubkey: stakePubkey,
@@ -30686,7 +31123,7 @@ class StakeProgram {
       isSigner: true,
       isWritable: false
     }, {
-      pubkey: SYSVAR_CLOCK_PUBKEY,
+      pubkey: SYSVAR_CLOCK_PUBKEY$1,
       isSigner: false,
       isWritable: false
     }];
@@ -30699,7 +31136,7 @@ class StakeProgram {
       });
     }
 
-    return new Transaction().add({
+    return new Transaction$1().add({
       keys,
       programId: this.programId,
       data
@@ -30717,16 +31154,16 @@ class StakeProgram {
       splitStakePubkey,
       lamports
     } = params;
-    const transaction = new Transaction();
-    transaction.add(SystemProgram$1.createAccount({
+    const transaction = new Transaction$1();
+    transaction.add(SystemProgram$2.createAccount({
       fromPubkey: authorizedPubkey,
       newAccountPubkey: splitStakePubkey,
       lamports: 0,
       space: this.space,
       programId: this.programId
     }));
-    const type = STAKE_INSTRUCTION_LAYOUTS.Split;
-    const data = encodeData(type, {
+    const type = STAKE_INSTRUCTION_LAYOUTS$1.Split;
+    const data = encodeData$1(type, {
       lamports
     });
     return transaction.add({
@@ -30760,8 +31197,8 @@ class StakeProgram {
       lamports,
       custodianPubkey
     } = params;
-    const type = STAKE_INSTRUCTION_LAYOUTS.Withdraw;
-    const data = encodeData(type, {
+    const type = STAKE_INSTRUCTION_LAYOUTS$1.Withdraw;
+    const data = encodeData$1(type, {
       lamports
     });
     const keys = [{
@@ -30773,11 +31210,11 @@ class StakeProgram {
       isSigner: false,
       isWritable: true
     }, {
-      pubkey: SYSVAR_CLOCK_PUBKEY,
+      pubkey: SYSVAR_CLOCK_PUBKEY$1,
       isSigner: false,
       isWritable: false
     }, {
-      pubkey: SYSVAR_STAKE_HISTORY_PUBKEY,
+      pubkey: SYSVAR_STAKE_HISTORY_PUBKEY$1,
       isSigner: false,
       isWritable: false
     }, {
@@ -30794,7 +31231,7 @@ class StakeProgram {
       });
     }
 
-    return new Transaction().add({
+    return new Transaction$1().add({
       keys,
       programId: this.programId,
       data
@@ -30810,15 +31247,15 @@ class StakeProgram {
       stakePubkey,
       authorizedPubkey
     } = params;
-    const type = STAKE_INSTRUCTION_LAYOUTS.Deactivate;
-    const data = encodeData(type);
-    return new Transaction().add({
+    const type = STAKE_INSTRUCTION_LAYOUTS$1.Deactivate;
+    const data = encodeData$1(type);
+    return new Transaction$1().add({
       keys: [{
         pubkey: stakePubkey,
         isSigner: false,
         isWritable: true
       }, {
-        pubkey: SYSVAR_CLOCK_PUBKEY,
+        pubkey: SYSVAR_CLOCK_PUBKEY$1,
         isSigner: false,
         isWritable: false
       }, {
@@ -30833,24 +31270,24 @@ class StakeProgram {
 
 }
 
-_defineProperty__default['default'](StakeProgram, "programId", new PublicKey('Stake11111111111111111111111111111111111111'));
+_defineProperty__default['default'](StakeProgram$1, "programId", new PublicKey$1('Stake11111111111111111111111111111111111111'));
 
-_defineProperty__default['default'](StakeProgram, "space", 200);
+_defineProperty__default['default'](StakeProgram$1, "space", 200);
 
 const {
-  publicKeyCreate,
-  ecdsaSign
+  publicKeyCreate: publicKeyCreate$1,
+  ecdsaSign: ecdsaSign$1
 } = secp256k1;
-const PRIVATE_KEY_BYTES = 32;
+const PRIVATE_KEY_BYTES$1 = 32;
 const ETHEREUM_ADDRESS_BYTES = 20;
-const PUBLIC_KEY_BYTES = 64;
-const SIGNATURE_OFFSETS_SERIALIZED_SIZE = 11;
+const PUBLIC_KEY_BYTES$1 = 64;
+const SIGNATURE_OFFSETS_SERIALIZED_SIZE$1 = 11;
 /**
  * Params for creating an secp256k1 instruction using a public key
  */
 
-const SECP256K1_INSTRUCTION_LAYOUT = struct([u8('numSignatures'), u16('signatureOffset'), u8('signatureInstructionIndex'), u16('ethAddressOffset'), u8('ethAddressInstructionIndex'), u16('messageDataOffset'), u16('messageDataSize'), u8('messageInstructionIndex'), blob(20, 'ethAddress'), blob(64, 'signature'), u8('recoveryId')]);
-class Secp256k1Program {
+const SECP256K1_INSTRUCTION_LAYOUT$1 = struct$1([u8('numSignatures'), u16('signatureOffset'), u8('signatureInstructionIndex'), u16('ethAddressOffset'), u8('ethAddressInstructionIndex'), u16('messageDataOffset'), u16('messageDataSize'), u8('messageInstructionIndex'), blob(20, 'ethAddress'), blob(64, 'signature'), u8('recoveryId')]);
+class Secp256k1Program$1 {
   /**
    * @internal
    */
@@ -30865,10 +31302,10 @@ class Secp256k1Program {
    * @param {Buffer} publicKey a 64 byte secp256k1 public key buffer
    */
   static publicKeyToEthAddress(publicKey) {
-    invariant__default['default'](publicKey.length === PUBLIC_KEY_BYTES, "Public key must be ".concat(PUBLIC_KEY_BYTES, " bytes but received ").concat(publicKey.length, " bytes"));
+    assert__default['default'](publicKey.length === PUBLIC_KEY_BYTES$1, "Public key must be ".concat(PUBLIC_KEY_BYTES$1, " bytes but received ").concat(publicKey.length, " bytes"));
 
     try {
-      return buffer.Buffer.from(sha3.keccak_256.update(toBuffer(publicKey)).digest()).slice(-ETHEREUM_ADDRESS_BYTES);
+      return buffer.Buffer.from(sha3.keccak_256.update(toBuffer$1(publicKey)).digest()).slice(-ETHEREUM_ADDRESS_BYTES);
     } catch (error) {
       throw new Error("Error constructing Ethereum address: ".concat(error));
     }
@@ -30886,8 +31323,8 @@ class Secp256k1Program {
       signature,
       recoveryId
     } = params;
-    return Secp256k1Program.createInstructionWithEthAddress({
-      ethAddress: Secp256k1Program.publicKeyToEthAddress(publicKey),
+    return Secp256k1Program$1.createInstructionWithEthAddress({
+      ethAddress: Secp256k1Program$1.publicKeyToEthAddress(publicKey),
       message,
       signature,
       recoveryId
@@ -30918,14 +31355,14 @@ class Secp256k1Program {
       ethAddress = rawAddress;
     }
 
-    invariant__default['default'](ethAddress.length === ETHEREUM_ADDRESS_BYTES, "Address must be ".concat(ETHEREUM_ADDRESS_BYTES, " bytes but received ").concat(ethAddress.length, " bytes"));
-    const dataStart = 1 + SIGNATURE_OFFSETS_SERIALIZED_SIZE;
+    assert__default['default'](ethAddress.length === ETHEREUM_ADDRESS_BYTES, "Address must be ".concat(ETHEREUM_ADDRESS_BYTES, " bytes but received ").concat(ethAddress.length, " bytes"));
+    const dataStart = 1 + SIGNATURE_OFFSETS_SERIALIZED_SIZE$1;
     const ethAddressOffset = dataStart;
     const signatureOffset = dataStart + ethAddress.length;
     const messageDataOffset = signatureOffset + signature.length + 1;
     const numSignatures = 1;
-    const instructionData = buffer.Buffer.alloc(SECP256K1_INSTRUCTION_LAYOUT.span + message.length);
-    SECP256K1_INSTRUCTION_LAYOUT.encode({
+    const instructionData = buffer.Buffer.alloc(SECP256K1_INSTRUCTION_LAYOUT$1.span + message.length);
+    SECP256K1_INSTRUCTION_LAYOUT$1.encode({
       numSignatures,
       signatureOffset,
       signatureInstructionIndex: 0,
@@ -30934,14 +31371,14 @@ class Secp256k1Program {
       messageDataOffset,
       messageDataSize: message.length,
       messageInstructionIndex: 0,
-      signature: toBuffer(signature),
-      ethAddress: toBuffer(ethAddress),
+      signature: toBuffer$1(signature),
+      ethAddress: toBuffer$1(ethAddress),
       recoveryId
     }, instructionData);
-    instructionData.fill(toBuffer(message), SECP256K1_INSTRUCTION_LAYOUT.span);
-    return new TransactionInstruction({
+    instructionData.fill(toBuffer$1(message), SECP256K1_INSTRUCTION_LAYOUT$1.span);
+    return new TransactionInstruction$1({
       keys: [],
-      programId: Secp256k1Program.programId,
+      programId: Secp256k1Program$1.programId,
       data: instructionData
     });
   }
@@ -30956,17 +31393,17 @@ class Secp256k1Program {
       privateKey: pkey,
       message
     } = params;
-    invariant__default['default'](pkey.length === PRIVATE_KEY_BYTES, "Private key must be ".concat(PRIVATE_KEY_BYTES, " bytes but received ").concat(pkey.length, " bytes"));
+    assert__default['default'](pkey.length === PRIVATE_KEY_BYTES$1, "Private key must be ".concat(PRIVATE_KEY_BYTES$1, " bytes but received ").concat(pkey.length, " bytes"));
 
     try {
-      const privateKey = toBuffer(pkey);
-      const publicKey = publicKeyCreate(privateKey, false).slice(1); // throw away leading byte
+      const privateKey = toBuffer$1(pkey);
+      const publicKey = publicKeyCreate$1(privateKey, false).slice(1); // throw away leading byte
 
-      const messageHash = buffer.Buffer.from(sha3.keccak_256.update(toBuffer(message)).digest());
+      const messageHash = buffer.Buffer.from(sha3.keccak_256.update(toBuffer$1(message)).digest());
       const {
         signature,
         recid: recoveryId
-      } = ecdsaSign(messageHash, privateKey);
+      } = ecdsaSign$1(messageHash, privateKey);
       return this.createInstructionWithPublicKey({
         publicKey,
         message,
@@ -30980,9 +31417,9 @@ class Secp256k1Program {
 
 }
 
-_defineProperty__default['default'](Secp256k1Program, "programId", new PublicKey('KeccakSecp256k11111111111111111111111111111'));
+_defineProperty__default['default'](Secp256k1Program$1, "programId", new PublicKey$1('KeccakSecp256k11111111111111111111111111111'));
 
-new PublicKey('Va1idator1nfo111111111111111111111111111111');
+new PublicKey$1('Va1idator1nfo111111111111111111111111111111');
 /**
  * @internal
  */
@@ -30994,16 +31431,16 @@ type({
   keybaseUsername: optional(string())
 });
 
-new PublicKey('Vote111111111111111111111111111111111111111');
+new PublicKey$1('Vote111111111111111111111111111111111111111');
 
 /**
  * See https://github.com/solana-labs/solana/blob/8a12ed029cfa38d4a45400916c2463fb82bbec8c/programs/vote_api/src/vote_state.rs#L68-L88
  *
  * @internal
  */
-struct([publicKey('nodePubkey'), publicKey('authorizedVoterPubkey'), publicKey('authorizedWithdrawerPubkey'), u8('commission'), nu64(), // votes.length
-seq(struct([nu64('slot'), u32('confirmationCount')]), offset(u32(), -8), 'votes'), u8('rootSlotValid'), nu64('rootSlot'), nu64('epoch'), nu64('credits'), nu64('lastEpochCredits'), nu64(), // epochCredits.length
-seq(struct([nu64('epoch'), nu64('credits'), nu64('prevCredits')]), offset(u32(), -8), 'epochCredits')]);
+struct$1([publicKey$1('nodePubkey'), publicKey$1('authorizedVoterPubkey'), publicKey$1('authorizedWithdrawerPubkey'), u8('commission'), nu64(), // votes.length
+seq(struct$1([nu64('slot'), u32('confirmationCount')]), offset(u32(), -8), 'votes'), u8('rootSlotValid'), nu64('rootSlot'), nu64('epoch'), nu64('credits'), nu64('lastEpochCredits'), nu64(), // epochCredits.length
+seq(struct$1([nu64('epoch'), nu64('credits'), nu64('prevCredits')]), offset(u32(), -8), 'epochCredits')]);
 
 // @ts-ignore
 
@@ -31044,7 +31481,7 @@ function () {
     this.source = source;
     this.destination = destination;
     this.amount = amount;
-    console.log("todo");
+    console.log('todo');
   }
 
   return TransferParams;
@@ -31057,7 +31494,7 @@ function () {
     this.account = account;
     this.delegate = delegate;
     this.amount = amount;
-    console.log("todo");
+    console.log('todo');
   }
 
   return ApproveParams;
@@ -31069,7 +31506,7 @@ function () {
   function RevokeParams(account, owner) {
     this.account = account;
     this.owner = owner;
-    console.log("todo");
+    console.log('todo');
   }
 
   return RevokeParams;
@@ -31098,7 +31535,7 @@ function () {
     this.dest = dest;
     this.authority = authority;
     this.amount = amount;
-    console.log("todo");
+    console.log('todo');
   }
 
   return MintToParams;
@@ -31112,7 +31549,7 @@ function () {
     this.mint = mint;
     this.owner = owner;
     this.amount = amount;
-    console.log("todo");
+    console.log('todo');
   }
 
   return BurnParams;
@@ -31125,7 +31562,7 @@ function () {
     this.account = account;
     this.dest = dest;
     this.owner = owner;
-    console.log("todo");
+    console.log('todo');
   }
 
   return CloseAccountParams;
@@ -31138,7 +31575,7 @@ function () {
     this.account = account;
     this.dest = dest;
     this.authority = authority;
-    console.log("todo");
+    console.log('todo');
   }
 
   return FreezeAccountParams;
@@ -31151,7 +31588,7 @@ function () {
     this.account = account;
     this.dest = dest;
     this.authority = authority;
-    console.log("todo");
+    console.log('todo');
   }
 
   return ThawAccountParams;
@@ -31167,7 +31604,7 @@ function () {
     this.owner = owner;
     this.amount = amount;
     this.decimals = decimals;
-    console.log("todo");
+    console.log('todo');
   }
 
   return TransferCheckedParams;
@@ -31183,7 +31620,7 @@ function () {
     this.owner = owner;
     this.amount = amount;
     this.decimals = decimals;
-    console.log("todo");
+    console.log('todo');
   }
 
   return ApproveCheckedParams;
@@ -31198,7 +31635,7 @@ function () {
     this.authority = authority;
     this.amount = amount;
     this.decimals = decimals;
-    console.log("todo");
+    console.log('todo');
   }
 
   return MintToCheckedParams;
@@ -31213,7 +31650,7 @@ function () {
     this.owner = owner;
     this.amount = amount;
     this.decimals = decimals;
-    console.log("todo");
+    console.log('todo');
   }
 
   return BurnCheckedParams;
@@ -31287,7 +31724,7 @@ function () {
   };
 
   TokenInstruction.decodeInitMint = function (instruction) {
-    var layout = Layout_1.struct([Layout_1.u8('instruction'), Layout_1.u8('decimals'), publicKey$1('mintAuthority'), Layout_1.u8('option'), publicKey$1('freezeAuthority')]);
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), Layout_1.u8('decimals'), publicKey$2('mintAuthority'), Layout_1.u8('option'), publicKey$2('freezeAuthority')]);
     var data;
 
     try {
@@ -31300,7 +31737,7 @@ function () {
         mintAuthority = data.mintAuthority,
         option = data.option,
         freezeAuthority = data.freezeAuthority;
-    return new InitMintParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, decimals, new PublicKey(mintAuthority), option, new PublicKey(freezeAuthority));
+    return new InitMintParams(instruction.keys[0].pubkey, instruction.keys[1].pubkey, decimals, new PublicKey$1(mintAuthority), option, new PublicKey$1(freezeAuthority));
   };
 
   TokenInstruction.decodeInitAccount = function (instruction) {
@@ -31340,7 +31777,7 @@ function () {
   };
 
   TokenInstruction.decodeSetAuthority = function (instruction) {
-    var layout = Layout_1.struct([Layout_1.u8('instruction'), Layout_1.u8('authorityType'), Layout_1.u8('option'), publicKey$1('newAuthority')]);
+    var layout = Layout_1.struct([Layout_1.u8('instruction'), Layout_1.u8('authorityType'), Layout_1.u8('option'), publicKey$2('newAuthority')]);
     var data;
 
     try {
@@ -31466,7 +31903,7 @@ function () {
   }
 
   TokenProgram.prototype.parseInstruction = function (instruction) {
-    var msg = new Message$1();
+    var msg = new Message$2();
     var it = TokenInstruction.deocdeTokenInstructionType(instruction);
     msg.program = this.programID;
     msg.type = 'instruction';
@@ -31642,7 +32079,7 @@ function () {
 
       default:
         {
-          msg.name = "unknown";
+          msg.name = 'unknown';
           break;
         }
     }
@@ -31652,7 +32089,16374 @@ function () {
 
   return TokenProgram;
 }();
-var plugin$2 = new TokenProgram();
+var plugin$3 = new TokenProgram();
+
+var naclFast = createCommonjsModule(function (module) {
+(function(nacl) {
+
+// Ported in 2014 by Dmitry Chestnykh and Devi Mandiri.
+// Public domain.
+//
+// Implementation derived from TweetNaCl version 20140427.
+// See for details: http://tweetnacl.cr.yp.to/
+
+var gf = function(init) {
+  var i, r = new Float64Array(16);
+  if (init) for (i = 0; i < init.length; i++) r[i] = init[i];
+  return r;
+};
+
+//  Pluggable, initialized in high-level API below.
+var randombytes = function(/* x, n */) { throw new Error('no PRNG'); };
+
+var _0 = new Uint8Array(16);
+var _9 = new Uint8Array(32); _9[0] = 9;
+
+var gf0 = gf(),
+    gf1 = gf([1]),
+    _121665 = gf([0xdb41, 1]),
+    D = gf([0x78a3, 0x1359, 0x4dca, 0x75eb, 0xd8ab, 0x4141, 0x0a4d, 0x0070, 0xe898, 0x7779, 0x4079, 0x8cc7, 0xfe73, 0x2b6f, 0x6cee, 0x5203]),
+    D2 = gf([0xf159, 0x26b2, 0x9b94, 0xebd6, 0xb156, 0x8283, 0x149a, 0x00e0, 0xd130, 0xeef3, 0x80f2, 0x198e, 0xfce7, 0x56df, 0xd9dc, 0x2406]),
+    X = gf([0xd51a, 0x8f25, 0x2d60, 0xc956, 0xa7b2, 0x9525, 0xc760, 0x692c, 0xdc5c, 0xfdd6, 0xe231, 0xc0a4, 0x53fe, 0xcd6e, 0x36d3, 0x2169]),
+    Y = gf([0x6658, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666, 0x6666]),
+    I = gf([0xa0b0, 0x4a0e, 0x1b27, 0xc4ee, 0xe478, 0xad2f, 0x1806, 0x2f43, 0xd7a7, 0x3dfb, 0x0099, 0x2b4d, 0xdf0b, 0x4fc1, 0x2480, 0x2b83]);
+
+function ts64(x, i, h, l) {
+  x[i]   = (h >> 24) & 0xff;
+  x[i+1] = (h >> 16) & 0xff;
+  x[i+2] = (h >>  8) & 0xff;
+  x[i+3] = h & 0xff;
+  x[i+4] = (l >> 24)  & 0xff;
+  x[i+5] = (l >> 16)  & 0xff;
+  x[i+6] = (l >>  8)  & 0xff;
+  x[i+7] = l & 0xff;
+}
+
+function vn(x, xi, y, yi, n) {
+  var i,d = 0;
+  for (i = 0; i < n; i++) d |= x[xi+i]^y[yi+i];
+  return (1 & ((d - 1) >>> 8)) - 1;
+}
+
+function crypto_verify_16(x, xi, y, yi) {
+  return vn(x,xi,y,yi,16);
+}
+
+function crypto_verify_32(x, xi, y, yi) {
+  return vn(x,xi,y,yi,32);
+}
+
+function core_salsa20(o, p, k, c) {
+  var j0  = c[ 0] & 0xff | (c[ 1] & 0xff)<<8 | (c[ 2] & 0xff)<<16 | (c[ 3] & 0xff)<<24,
+      j1  = k[ 0] & 0xff | (k[ 1] & 0xff)<<8 | (k[ 2] & 0xff)<<16 | (k[ 3] & 0xff)<<24,
+      j2  = k[ 4] & 0xff | (k[ 5] & 0xff)<<8 | (k[ 6] & 0xff)<<16 | (k[ 7] & 0xff)<<24,
+      j3  = k[ 8] & 0xff | (k[ 9] & 0xff)<<8 | (k[10] & 0xff)<<16 | (k[11] & 0xff)<<24,
+      j4  = k[12] & 0xff | (k[13] & 0xff)<<8 | (k[14] & 0xff)<<16 | (k[15] & 0xff)<<24,
+      j5  = c[ 4] & 0xff | (c[ 5] & 0xff)<<8 | (c[ 6] & 0xff)<<16 | (c[ 7] & 0xff)<<24,
+      j6  = p[ 0] & 0xff | (p[ 1] & 0xff)<<8 | (p[ 2] & 0xff)<<16 | (p[ 3] & 0xff)<<24,
+      j7  = p[ 4] & 0xff | (p[ 5] & 0xff)<<8 | (p[ 6] & 0xff)<<16 | (p[ 7] & 0xff)<<24,
+      j8  = p[ 8] & 0xff | (p[ 9] & 0xff)<<8 | (p[10] & 0xff)<<16 | (p[11] & 0xff)<<24,
+      j9  = p[12] & 0xff | (p[13] & 0xff)<<8 | (p[14] & 0xff)<<16 | (p[15] & 0xff)<<24,
+      j10 = c[ 8] & 0xff | (c[ 9] & 0xff)<<8 | (c[10] & 0xff)<<16 | (c[11] & 0xff)<<24,
+      j11 = k[16] & 0xff | (k[17] & 0xff)<<8 | (k[18] & 0xff)<<16 | (k[19] & 0xff)<<24,
+      j12 = k[20] & 0xff | (k[21] & 0xff)<<8 | (k[22] & 0xff)<<16 | (k[23] & 0xff)<<24,
+      j13 = k[24] & 0xff | (k[25] & 0xff)<<8 | (k[26] & 0xff)<<16 | (k[27] & 0xff)<<24,
+      j14 = k[28] & 0xff | (k[29] & 0xff)<<8 | (k[30] & 0xff)<<16 | (k[31] & 0xff)<<24,
+      j15 = c[12] & 0xff | (c[13] & 0xff)<<8 | (c[14] & 0xff)<<16 | (c[15] & 0xff)<<24;
+
+  var x0 = j0, x1 = j1, x2 = j2, x3 = j3, x4 = j4, x5 = j5, x6 = j6, x7 = j7,
+      x8 = j8, x9 = j9, x10 = j10, x11 = j11, x12 = j12, x13 = j13, x14 = j14,
+      x15 = j15, u;
+
+  for (var i = 0; i < 20; i += 2) {
+    u = x0 + x12 | 0;
+    x4 ^= u<<7 | u>>>(32-7);
+    u = x4 + x0 | 0;
+    x8 ^= u<<9 | u>>>(32-9);
+    u = x8 + x4 | 0;
+    x12 ^= u<<13 | u>>>(32-13);
+    u = x12 + x8 | 0;
+    x0 ^= u<<18 | u>>>(32-18);
+
+    u = x5 + x1 | 0;
+    x9 ^= u<<7 | u>>>(32-7);
+    u = x9 + x5 | 0;
+    x13 ^= u<<9 | u>>>(32-9);
+    u = x13 + x9 | 0;
+    x1 ^= u<<13 | u>>>(32-13);
+    u = x1 + x13 | 0;
+    x5 ^= u<<18 | u>>>(32-18);
+
+    u = x10 + x6 | 0;
+    x14 ^= u<<7 | u>>>(32-7);
+    u = x14 + x10 | 0;
+    x2 ^= u<<9 | u>>>(32-9);
+    u = x2 + x14 | 0;
+    x6 ^= u<<13 | u>>>(32-13);
+    u = x6 + x2 | 0;
+    x10 ^= u<<18 | u>>>(32-18);
+
+    u = x15 + x11 | 0;
+    x3 ^= u<<7 | u>>>(32-7);
+    u = x3 + x15 | 0;
+    x7 ^= u<<9 | u>>>(32-9);
+    u = x7 + x3 | 0;
+    x11 ^= u<<13 | u>>>(32-13);
+    u = x11 + x7 | 0;
+    x15 ^= u<<18 | u>>>(32-18);
+
+    u = x0 + x3 | 0;
+    x1 ^= u<<7 | u>>>(32-7);
+    u = x1 + x0 | 0;
+    x2 ^= u<<9 | u>>>(32-9);
+    u = x2 + x1 | 0;
+    x3 ^= u<<13 | u>>>(32-13);
+    u = x3 + x2 | 0;
+    x0 ^= u<<18 | u>>>(32-18);
+
+    u = x5 + x4 | 0;
+    x6 ^= u<<7 | u>>>(32-7);
+    u = x6 + x5 | 0;
+    x7 ^= u<<9 | u>>>(32-9);
+    u = x7 + x6 | 0;
+    x4 ^= u<<13 | u>>>(32-13);
+    u = x4 + x7 | 0;
+    x5 ^= u<<18 | u>>>(32-18);
+
+    u = x10 + x9 | 0;
+    x11 ^= u<<7 | u>>>(32-7);
+    u = x11 + x10 | 0;
+    x8 ^= u<<9 | u>>>(32-9);
+    u = x8 + x11 | 0;
+    x9 ^= u<<13 | u>>>(32-13);
+    u = x9 + x8 | 0;
+    x10 ^= u<<18 | u>>>(32-18);
+
+    u = x15 + x14 | 0;
+    x12 ^= u<<7 | u>>>(32-7);
+    u = x12 + x15 | 0;
+    x13 ^= u<<9 | u>>>(32-9);
+    u = x13 + x12 | 0;
+    x14 ^= u<<13 | u>>>(32-13);
+    u = x14 + x13 | 0;
+    x15 ^= u<<18 | u>>>(32-18);
+  }
+   x0 =  x0 +  j0 | 0;
+   x1 =  x1 +  j1 | 0;
+   x2 =  x2 +  j2 | 0;
+   x3 =  x3 +  j3 | 0;
+   x4 =  x4 +  j4 | 0;
+   x5 =  x5 +  j5 | 0;
+   x6 =  x6 +  j6 | 0;
+   x7 =  x7 +  j7 | 0;
+   x8 =  x8 +  j8 | 0;
+   x9 =  x9 +  j9 | 0;
+  x10 = x10 + j10 | 0;
+  x11 = x11 + j11 | 0;
+  x12 = x12 + j12 | 0;
+  x13 = x13 + j13 | 0;
+  x14 = x14 + j14 | 0;
+  x15 = x15 + j15 | 0;
+
+  o[ 0] = x0 >>>  0 & 0xff;
+  o[ 1] = x0 >>>  8 & 0xff;
+  o[ 2] = x0 >>> 16 & 0xff;
+  o[ 3] = x0 >>> 24 & 0xff;
+
+  o[ 4] = x1 >>>  0 & 0xff;
+  o[ 5] = x1 >>>  8 & 0xff;
+  o[ 6] = x1 >>> 16 & 0xff;
+  o[ 7] = x1 >>> 24 & 0xff;
+
+  o[ 8] = x2 >>>  0 & 0xff;
+  o[ 9] = x2 >>>  8 & 0xff;
+  o[10] = x2 >>> 16 & 0xff;
+  o[11] = x2 >>> 24 & 0xff;
+
+  o[12] = x3 >>>  0 & 0xff;
+  o[13] = x3 >>>  8 & 0xff;
+  o[14] = x3 >>> 16 & 0xff;
+  o[15] = x3 >>> 24 & 0xff;
+
+  o[16] = x4 >>>  0 & 0xff;
+  o[17] = x4 >>>  8 & 0xff;
+  o[18] = x4 >>> 16 & 0xff;
+  o[19] = x4 >>> 24 & 0xff;
+
+  o[20] = x5 >>>  0 & 0xff;
+  o[21] = x5 >>>  8 & 0xff;
+  o[22] = x5 >>> 16 & 0xff;
+  o[23] = x5 >>> 24 & 0xff;
+
+  o[24] = x6 >>>  0 & 0xff;
+  o[25] = x6 >>>  8 & 0xff;
+  o[26] = x6 >>> 16 & 0xff;
+  o[27] = x6 >>> 24 & 0xff;
+
+  o[28] = x7 >>>  0 & 0xff;
+  o[29] = x7 >>>  8 & 0xff;
+  o[30] = x7 >>> 16 & 0xff;
+  o[31] = x7 >>> 24 & 0xff;
+
+  o[32] = x8 >>>  0 & 0xff;
+  o[33] = x8 >>>  8 & 0xff;
+  o[34] = x8 >>> 16 & 0xff;
+  o[35] = x8 >>> 24 & 0xff;
+
+  o[36] = x9 >>>  0 & 0xff;
+  o[37] = x9 >>>  8 & 0xff;
+  o[38] = x9 >>> 16 & 0xff;
+  o[39] = x9 >>> 24 & 0xff;
+
+  o[40] = x10 >>>  0 & 0xff;
+  o[41] = x10 >>>  8 & 0xff;
+  o[42] = x10 >>> 16 & 0xff;
+  o[43] = x10 >>> 24 & 0xff;
+
+  o[44] = x11 >>>  0 & 0xff;
+  o[45] = x11 >>>  8 & 0xff;
+  o[46] = x11 >>> 16 & 0xff;
+  o[47] = x11 >>> 24 & 0xff;
+
+  o[48] = x12 >>>  0 & 0xff;
+  o[49] = x12 >>>  8 & 0xff;
+  o[50] = x12 >>> 16 & 0xff;
+  o[51] = x12 >>> 24 & 0xff;
+
+  o[52] = x13 >>>  0 & 0xff;
+  o[53] = x13 >>>  8 & 0xff;
+  o[54] = x13 >>> 16 & 0xff;
+  o[55] = x13 >>> 24 & 0xff;
+
+  o[56] = x14 >>>  0 & 0xff;
+  o[57] = x14 >>>  8 & 0xff;
+  o[58] = x14 >>> 16 & 0xff;
+  o[59] = x14 >>> 24 & 0xff;
+
+  o[60] = x15 >>>  0 & 0xff;
+  o[61] = x15 >>>  8 & 0xff;
+  o[62] = x15 >>> 16 & 0xff;
+  o[63] = x15 >>> 24 & 0xff;
+}
+
+function core_hsalsa20(o,p,k,c) {
+  var j0  = c[ 0] & 0xff | (c[ 1] & 0xff)<<8 | (c[ 2] & 0xff)<<16 | (c[ 3] & 0xff)<<24,
+      j1  = k[ 0] & 0xff | (k[ 1] & 0xff)<<8 | (k[ 2] & 0xff)<<16 | (k[ 3] & 0xff)<<24,
+      j2  = k[ 4] & 0xff | (k[ 5] & 0xff)<<8 | (k[ 6] & 0xff)<<16 | (k[ 7] & 0xff)<<24,
+      j3  = k[ 8] & 0xff | (k[ 9] & 0xff)<<8 | (k[10] & 0xff)<<16 | (k[11] & 0xff)<<24,
+      j4  = k[12] & 0xff | (k[13] & 0xff)<<8 | (k[14] & 0xff)<<16 | (k[15] & 0xff)<<24,
+      j5  = c[ 4] & 0xff | (c[ 5] & 0xff)<<8 | (c[ 6] & 0xff)<<16 | (c[ 7] & 0xff)<<24,
+      j6  = p[ 0] & 0xff | (p[ 1] & 0xff)<<8 | (p[ 2] & 0xff)<<16 | (p[ 3] & 0xff)<<24,
+      j7  = p[ 4] & 0xff | (p[ 5] & 0xff)<<8 | (p[ 6] & 0xff)<<16 | (p[ 7] & 0xff)<<24,
+      j8  = p[ 8] & 0xff | (p[ 9] & 0xff)<<8 | (p[10] & 0xff)<<16 | (p[11] & 0xff)<<24,
+      j9  = p[12] & 0xff | (p[13] & 0xff)<<8 | (p[14] & 0xff)<<16 | (p[15] & 0xff)<<24,
+      j10 = c[ 8] & 0xff | (c[ 9] & 0xff)<<8 | (c[10] & 0xff)<<16 | (c[11] & 0xff)<<24,
+      j11 = k[16] & 0xff | (k[17] & 0xff)<<8 | (k[18] & 0xff)<<16 | (k[19] & 0xff)<<24,
+      j12 = k[20] & 0xff | (k[21] & 0xff)<<8 | (k[22] & 0xff)<<16 | (k[23] & 0xff)<<24,
+      j13 = k[24] & 0xff | (k[25] & 0xff)<<8 | (k[26] & 0xff)<<16 | (k[27] & 0xff)<<24,
+      j14 = k[28] & 0xff | (k[29] & 0xff)<<8 | (k[30] & 0xff)<<16 | (k[31] & 0xff)<<24,
+      j15 = c[12] & 0xff | (c[13] & 0xff)<<8 | (c[14] & 0xff)<<16 | (c[15] & 0xff)<<24;
+
+  var x0 = j0, x1 = j1, x2 = j2, x3 = j3, x4 = j4, x5 = j5, x6 = j6, x7 = j7,
+      x8 = j8, x9 = j9, x10 = j10, x11 = j11, x12 = j12, x13 = j13, x14 = j14,
+      x15 = j15, u;
+
+  for (var i = 0; i < 20; i += 2) {
+    u = x0 + x12 | 0;
+    x4 ^= u<<7 | u>>>(32-7);
+    u = x4 + x0 | 0;
+    x8 ^= u<<9 | u>>>(32-9);
+    u = x8 + x4 | 0;
+    x12 ^= u<<13 | u>>>(32-13);
+    u = x12 + x8 | 0;
+    x0 ^= u<<18 | u>>>(32-18);
+
+    u = x5 + x1 | 0;
+    x9 ^= u<<7 | u>>>(32-7);
+    u = x9 + x5 | 0;
+    x13 ^= u<<9 | u>>>(32-9);
+    u = x13 + x9 | 0;
+    x1 ^= u<<13 | u>>>(32-13);
+    u = x1 + x13 | 0;
+    x5 ^= u<<18 | u>>>(32-18);
+
+    u = x10 + x6 | 0;
+    x14 ^= u<<7 | u>>>(32-7);
+    u = x14 + x10 | 0;
+    x2 ^= u<<9 | u>>>(32-9);
+    u = x2 + x14 | 0;
+    x6 ^= u<<13 | u>>>(32-13);
+    u = x6 + x2 | 0;
+    x10 ^= u<<18 | u>>>(32-18);
+
+    u = x15 + x11 | 0;
+    x3 ^= u<<7 | u>>>(32-7);
+    u = x3 + x15 | 0;
+    x7 ^= u<<9 | u>>>(32-9);
+    u = x7 + x3 | 0;
+    x11 ^= u<<13 | u>>>(32-13);
+    u = x11 + x7 | 0;
+    x15 ^= u<<18 | u>>>(32-18);
+
+    u = x0 + x3 | 0;
+    x1 ^= u<<7 | u>>>(32-7);
+    u = x1 + x0 | 0;
+    x2 ^= u<<9 | u>>>(32-9);
+    u = x2 + x1 | 0;
+    x3 ^= u<<13 | u>>>(32-13);
+    u = x3 + x2 | 0;
+    x0 ^= u<<18 | u>>>(32-18);
+
+    u = x5 + x4 | 0;
+    x6 ^= u<<7 | u>>>(32-7);
+    u = x6 + x5 | 0;
+    x7 ^= u<<9 | u>>>(32-9);
+    u = x7 + x6 | 0;
+    x4 ^= u<<13 | u>>>(32-13);
+    u = x4 + x7 | 0;
+    x5 ^= u<<18 | u>>>(32-18);
+
+    u = x10 + x9 | 0;
+    x11 ^= u<<7 | u>>>(32-7);
+    u = x11 + x10 | 0;
+    x8 ^= u<<9 | u>>>(32-9);
+    u = x8 + x11 | 0;
+    x9 ^= u<<13 | u>>>(32-13);
+    u = x9 + x8 | 0;
+    x10 ^= u<<18 | u>>>(32-18);
+
+    u = x15 + x14 | 0;
+    x12 ^= u<<7 | u>>>(32-7);
+    u = x12 + x15 | 0;
+    x13 ^= u<<9 | u>>>(32-9);
+    u = x13 + x12 | 0;
+    x14 ^= u<<13 | u>>>(32-13);
+    u = x14 + x13 | 0;
+    x15 ^= u<<18 | u>>>(32-18);
+  }
+
+  o[ 0] = x0 >>>  0 & 0xff;
+  o[ 1] = x0 >>>  8 & 0xff;
+  o[ 2] = x0 >>> 16 & 0xff;
+  o[ 3] = x0 >>> 24 & 0xff;
+
+  o[ 4] = x5 >>>  0 & 0xff;
+  o[ 5] = x5 >>>  8 & 0xff;
+  o[ 6] = x5 >>> 16 & 0xff;
+  o[ 7] = x5 >>> 24 & 0xff;
+
+  o[ 8] = x10 >>>  0 & 0xff;
+  o[ 9] = x10 >>>  8 & 0xff;
+  o[10] = x10 >>> 16 & 0xff;
+  o[11] = x10 >>> 24 & 0xff;
+
+  o[12] = x15 >>>  0 & 0xff;
+  o[13] = x15 >>>  8 & 0xff;
+  o[14] = x15 >>> 16 & 0xff;
+  o[15] = x15 >>> 24 & 0xff;
+
+  o[16] = x6 >>>  0 & 0xff;
+  o[17] = x6 >>>  8 & 0xff;
+  o[18] = x6 >>> 16 & 0xff;
+  o[19] = x6 >>> 24 & 0xff;
+
+  o[20] = x7 >>>  0 & 0xff;
+  o[21] = x7 >>>  8 & 0xff;
+  o[22] = x7 >>> 16 & 0xff;
+  o[23] = x7 >>> 24 & 0xff;
+
+  o[24] = x8 >>>  0 & 0xff;
+  o[25] = x8 >>>  8 & 0xff;
+  o[26] = x8 >>> 16 & 0xff;
+  o[27] = x8 >>> 24 & 0xff;
+
+  o[28] = x9 >>>  0 & 0xff;
+  o[29] = x9 >>>  8 & 0xff;
+  o[30] = x9 >>> 16 & 0xff;
+  o[31] = x9 >>> 24 & 0xff;
+}
+
+function crypto_core_salsa20(out,inp,k,c) {
+  core_salsa20(out,inp,k,c);
+}
+
+function crypto_core_hsalsa20(out,inp,k,c) {
+  core_hsalsa20(out,inp,k,c);
+}
+
+var sigma = new Uint8Array([101, 120, 112, 97, 110, 100, 32, 51, 50, 45, 98, 121, 116, 101, 32, 107]);
+            // "expand 32-byte k"
+
+function crypto_stream_salsa20_xor(c,cpos,m,mpos,b,n,k) {
+  var z = new Uint8Array(16), x = new Uint8Array(64);
+  var u, i;
+  for (i = 0; i < 16; i++) z[i] = 0;
+  for (i = 0; i < 8; i++) z[i] = n[i];
+  while (b >= 64) {
+    crypto_core_salsa20(x,z,k,sigma);
+    for (i = 0; i < 64; i++) c[cpos+i] = m[mpos+i] ^ x[i];
+    u = 1;
+    for (i = 8; i < 16; i++) {
+      u = u + (z[i] & 0xff) | 0;
+      z[i] = u & 0xff;
+      u >>>= 8;
+    }
+    b -= 64;
+    cpos += 64;
+    mpos += 64;
+  }
+  if (b > 0) {
+    crypto_core_salsa20(x,z,k,sigma);
+    for (i = 0; i < b; i++) c[cpos+i] = m[mpos+i] ^ x[i];
+  }
+  return 0;
+}
+
+function crypto_stream_salsa20(c,cpos,b,n,k) {
+  var z = new Uint8Array(16), x = new Uint8Array(64);
+  var u, i;
+  for (i = 0; i < 16; i++) z[i] = 0;
+  for (i = 0; i < 8; i++) z[i] = n[i];
+  while (b >= 64) {
+    crypto_core_salsa20(x,z,k,sigma);
+    for (i = 0; i < 64; i++) c[cpos+i] = x[i];
+    u = 1;
+    for (i = 8; i < 16; i++) {
+      u = u + (z[i] & 0xff) | 0;
+      z[i] = u & 0xff;
+      u >>>= 8;
+    }
+    b -= 64;
+    cpos += 64;
+  }
+  if (b > 0) {
+    crypto_core_salsa20(x,z,k,sigma);
+    for (i = 0; i < b; i++) c[cpos+i] = x[i];
+  }
+  return 0;
+}
+
+function crypto_stream(c,cpos,d,n,k) {
+  var s = new Uint8Array(32);
+  crypto_core_hsalsa20(s,n,k,sigma);
+  var sn = new Uint8Array(8);
+  for (var i = 0; i < 8; i++) sn[i] = n[i+16];
+  return crypto_stream_salsa20(c,cpos,d,sn,s);
+}
+
+function crypto_stream_xor(c,cpos,m,mpos,d,n,k) {
+  var s = new Uint8Array(32);
+  crypto_core_hsalsa20(s,n,k,sigma);
+  var sn = new Uint8Array(8);
+  for (var i = 0; i < 8; i++) sn[i] = n[i+16];
+  return crypto_stream_salsa20_xor(c,cpos,m,mpos,d,sn,s);
+}
+
+/*
+* Port of Andrew Moon's Poly1305-donna-16. Public domain.
+* https://github.com/floodyberry/poly1305-donna
+*/
+
+var poly1305 = function(key) {
+  this.buffer = new Uint8Array(16);
+  this.r = new Uint16Array(10);
+  this.h = new Uint16Array(10);
+  this.pad = new Uint16Array(8);
+  this.leftover = 0;
+  this.fin = 0;
+
+  var t0, t1, t2, t3, t4, t5, t6, t7;
+
+  t0 = key[ 0] & 0xff | (key[ 1] & 0xff) << 8; this.r[0] = ( t0                     ) & 0x1fff;
+  t1 = key[ 2] & 0xff | (key[ 3] & 0xff) << 8; this.r[1] = ((t0 >>> 13) | (t1 <<  3)) & 0x1fff;
+  t2 = key[ 4] & 0xff | (key[ 5] & 0xff) << 8; this.r[2] = ((t1 >>> 10) | (t2 <<  6)) & 0x1f03;
+  t3 = key[ 6] & 0xff | (key[ 7] & 0xff) << 8; this.r[3] = ((t2 >>>  7) | (t3 <<  9)) & 0x1fff;
+  t4 = key[ 8] & 0xff | (key[ 9] & 0xff) << 8; this.r[4] = ((t3 >>>  4) | (t4 << 12)) & 0x00ff;
+  this.r[5] = ((t4 >>>  1)) & 0x1ffe;
+  t5 = key[10] & 0xff | (key[11] & 0xff) << 8; this.r[6] = ((t4 >>> 14) | (t5 <<  2)) & 0x1fff;
+  t6 = key[12] & 0xff | (key[13] & 0xff) << 8; this.r[7] = ((t5 >>> 11) | (t6 <<  5)) & 0x1f81;
+  t7 = key[14] & 0xff | (key[15] & 0xff) << 8; this.r[8] = ((t6 >>>  8) | (t7 <<  8)) & 0x1fff;
+  this.r[9] = ((t7 >>>  5)) & 0x007f;
+
+  this.pad[0] = key[16] & 0xff | (key[17] & 0xff) << 8;
+  this.pad[1] = key[18] & 0xff | (key[19] & 0xff) << 8;
+  this.pad[2] = key[20] & 0xff | (key[21] & 0xff) << 8;
+  this.pad[3] = key[22] & 0xff | (key[23] & 0xff) << 8;
+  this.pad[4] = key[24] & 0xff | (key[25] & 0xff) << 8;
+  this.pad[5] = key[26] & 0xff | (key[27] & 0xff) << 8;
+  this.pad[6] = key[28] & 0xff | (key[29] & 0xff) << 8;
+  this.pad[7] = key[30] & 0xff | (key[31] & 0xff) << 8;
+};
+
+poly1305.prototype.blocks = function(m, mpos, bytes) {
+  var hibit = this.fin ? 0 : (1 << 11);
+  var t0, t1, t2, t3, t4, t5, t6, t7, c;
+  var d0, d1, d2, d3, d4, d5, d6, d7, d8, d9;
+
+  var h0 = this.h[0],
+      h1 = this.h[1],
+      h2 = this.h[2],
+      h3 = this.h[3],
+      h4 = this.h[4],
+      h5 = this.h[5],
+      h6 = this.h[6],
+      h7 = this.h[7],
+      h8 = this.h[8],
+      h9 = this.h[9];
+
+  var r0 = this.r[0],
+      r1 = this.r[1],
+      r2 = this.r[2],
+      r3 = this.r[3],
+      r4 = this.r[4],
+      r5 = this.r[5],
+      r6 = this.r[6],
+      r7 = this.r[7],
+      r8 = this.r[8],
+      r9 = this.r[9];
+
+  while (bytes >= 16) {
+    t0 = m[mpos+ 0] & 0xff | (m[mpos+ 1] & 0xff) << 8; h0 += ( t0                     ) & 0x1fff;
+    t1 = m[mpos+ 2] & 0xff | (m[mpos+ 3] & 0xff) << 8; h1 += ((t0 >>> 13) | (t1 <<  3)) & 0x1fff;
+    t2 = m[mpos+ 4] & 0xff | (m[mpos+ 5] & 0xff) << 8; h2 += ((t1 >>> 10) | (t2 <<  6)) & 0x1fff;
+    t3 = m[mpos+ 6] & 0xff | (m[mpos+ 7] & 0xff) << 8; h3 += ((t2 >>>  7) | (t3 <<  9)) & 0x1fff;
+    t4 = m[mpos+ 8] & 0xff | (m[mpos+ 9] & 0xff) << 8; h4 += ((t3 >>>  4) | (t4 << 12)) & 0x1fff;
+    h5 += ((t4 >>>  1)) & 0x1fff;
+    t5 = m[mpos+10] & 0xff | (m[mpos+11] & 0xff) << 8; h6 += ((t4 >>> 14) | (t5 <<  2)) & 0x1fff;
+    t6 = m[mpos+12] & 0xff | (m[mpos+13] & 0xff) << 8; h7 += ((t5 >>> 11) | (t6 <<  5)) & 0x1fff;
+    t7 = m[mpos+14] & 0xff | (m[mpos+15] & 0xff) << 8; h8 += ((t6 >>>  8) | (t7 <<  8)) & 0x1fff;
+    h9 += ((t7 >>> 5)) | hibit;
+
+    c = 0;
+
+    d0 = c;
+    d0 += h0 * r0;
+    d0 += h1 * (5 * r9);
+    d0 += h2 * (5 * r8);
+    d0 += h3 * (5 * r7);
+    d0 += h4 * (5 * r6);
+    c = (d0 >>> 13); d0 &= 0x1fff;
+    d0 += h5 * (5 * r5);
+    d0 += h6 * (5 * r4);
+    d0 += h7 * (5 * r3);
+    d0 += h8 * (5 * r2);
+    d0 += h9 * (5 * r1);
+    c += (d0 >>> 13); d0 &= 0x1fff;
+
+    d1 = c;
+    d1 += h0 * r1;
+    d1 += h1 * r0;
+    d1 += h2 * (5 * r9);
+    d1 += h3 * (5 * r8);
+    d1 += h4 * (5 * r7);
+    c = (d1 >>> 13); d1 &= 0x1fff;
+    d1 += h5 * (5 * r6);
+    d1 += h6 * (5 * r5);
+    d1 += h7 * (5 * r4);
+    d1 += h8 * (5 * r3);
+    d1 += h9 * (5 * r2);
+    c += (d1 >>> 13); d1 &= 0x1fff;
+
+    d2 = c;
+    d2 += h0 * r2;
+    d2 += h1 * r1;
+    d2 += h2 * r0;
+    d2 += h3 * (5 * r9);
+    d2 += h4 * (5 * r8);
+    c = (d2 >>> 13); d2 &= 0x1fff;
+    d2 += h5 * (5 * r7);
+    d2 += h6 * (5 * r6);
+    d2 += h7 * (5 * r5);
+    d2 += h8 * (5 * r4);
+    d2 += h9 * (5 * r3);
+    c += (d2 >>> 13); d2 &= 0x1fff;
+
+    d3 = c;
+    d3 += h0 * r3;
+    d3 += h1 * r2;
+    d3 += h2 * r1;
+    d3 += h3 * r0;
+    d3 += h4 * (5 * r9);
+    c = (d3 >>> 13); d3 &= 0x1fff;
+    d3 += h5 * (5 * r8);
+    d3 += h6 * (5 * r7);
+    d3 += h7 * (5 * r6);
+    d3 += h8 * (5 * r5);
+    d3 += h9 * (5 * r4);
+    c += (d3 >>> 13); d3 &= 0x1fff;
+
+    d4 = c;
+    d4 += h0 * r4;
+    d4 += h1 * r3;
+    d4 += h2 * r2;
+    d4 += h3 * r1;
+    d4 += h4 * r0;
+    c = (d4 >>> 13); d4 &= 0x1fff;
+    d4 += h5 * (5 * r9);
+    d4 += h6 * (5 * r8);
+    d4 += h7 * (5 * r7);
+    d4 += h8 * (5 * r6);
+    d4 += h9 * (5 * r5);
+    c += (d4 >>> 13); d4 &= 0x1fff;
+
+    d5 = c;
+    d5 += h0 * r5;
+    d5 += h1 * r4;
+    d5 += h2 * r3;
+    d5 += h3 * r2;
+    d5 += h4 * r1;
+    c = (d5 >>> 13); d5 &= 0x1fff;
+    d5 += h5 * r0;
+    d5 += h6 * (5 * r9);
+    d5 += h7 * (5 * r8);
+    d5 += h8 * (5 * r7);
+    d5 += h9 * (5 * r6);
+    c += (d5 >>> 13); d5 &= 0x1fff;
+
+    d6 = c;
+    d6 += h0 * r6;
+    d6 += h1 * r5;
+    d6 += h2 * r4;
+    d6 += h3 * r3;
+    d6 += h4 * r2;
+    c = (d6 >>> 13); d6 &= 0x1fff;
+    d6 += h5 * r1;
+    d6 += h6 * r0;
+    d6 += h7 * (5 * r9);
+    d6 += h8 * (5 * r8);
+    d6 += h9 * (5 * r7);
+    c += (d6 >>> 13); d6 &= 0x1fff;
+
+    d7 = c;
+    d7 += h0 * r7;
+    d7 += h1 * r6;
+    d7 += h2 * r5;
+    d7 += h3 * r4;
+    d7 += h4 * r3;
+    c = (d7 >>> 13); d7 &= 0x1fff;
+    d7 += h5 * r2;
+    d7 += h6 * r1;
+    d7 += h7 * r0;
+    d7 += h8 * (5 * r9);
+    d7 += h9 * (5 * r8);
+    c += (d7 >>> 13); d7 &= 0x1fff;
+
+    d8 = c;
+    d8 += h0 * r8;
+    d8 += h1 * r7;
+    d8 += h2 * r6;
+    d8 += h3 * r5;
+    d8 += h4 * r4;
+    c = (d8 >>> 13); d8 &= 0x1fff;
+    d8 += h5 * r3;
+    d8 += h6 * r2;
+    d8 += h7 * r1;
+    d8 += h8 * r0;
+    d8 += h9 * (5 * r9);
+    c += (d8 >>> 13); d8 &= 0x1fff;
+
+    d9 = c;
+    d9 += h0 * r9;
+    d9 += h1 * r8;
+    d9 += h2 * r7;
+    d9 += h3 * r6;
+    d9 += h4 * r5;
+    c = (d9 >>> 13); d9 &= 0x1fff;
+    d9 += h5 * r4;
+    d9 += h6 * r3;
+    d9 += h7 * r2;
+    d9 += h8 * r1;
+    d9 += h9 * r0;
+    c += (d9 >>> 13); d9 &= 0x1fff;
+
+    c = (((c << 2) + c)) | 0;
+    c = (c + d0) | 0;
+    d0 = c & 0x1fff;
+    c = (c >>> 13);
+    d1 += c;
+
+    h0 = d0;
+    h1 = d1;
+    h2 = d2;
+    h3 = d3;
+    h4 = d4;
+    h5 = d5;
+    h6 = d6;
+    h7 = d7;
+    h8 = d8;
+    h9 = d9;
+
+    mpos += 16;
+    bytes -= 16;
+  }
+  this.h[0] = h0;
+  this.h[1] = h1;
+  this.h[2] = h2;
+  this.h[3] = h3;
+  this.h[4] = h4;
+  this.h[5] = h5;
+  this.h[6] = h6;
+  this.h[7] = h7;
+  this.h[8] = h8;
+  this.h[9] = h9;
+};
+
+poly1305.prototype.finish = function(mac, macpos) {
+  var g = new Uint16Array(10);
+  var c, mask, f, i;
+
+  if (this.leftover) {
+    i = this.leftover;
+    this.buffer[i++] = 1;
+    for (; i < 16; i++) this.buffer[i] = 0;
+    this.fin = 1;
+    this.blocks(this.buffer, 0, 16);
+  }
+
+  c = this.h[1] >>> 13;
+  this.h[1] &= 0x1fff;
+  for (i = 2; i < 10; i++) {
+    this.h[i] += c;
+    c = this.h[i] >>> 13;
+    this.h[i] &= 0x1fff;
+  }
+  this.h[0] += (c * 5);
+  c = this.h[0] >>> 13;
+  this.h[0] &= 0x1fff;
+  this.h[1] += c;
+  c = this.h[1] >>> 13;
+  this.h[1] &= 0x1fff;
+  this.h[2] += c;
+
+  g[0] = this.h[0] + 5;
+  c = g[0] >>> 13;
+  g[0] &= 0x1fff;
+  for (i = 1; i < 10; i++) {
+    g[i] = this.h[i] + c;
+    c = g[i] >>> 13;
+    g[i] &= 0x1fff;
+  }
+  g[9] -= (1 << 13);
+
+  mask = (c ^ 1) - 1;
+  for (i = 0; i < 10; i++) g[i] &= mask;
+  mask = ~mask;
+  for (i = 0; i < 10; i++) this.h[i] = (this.h[i] & mask) | g[i];
+
+  this.h[0] = ((this.h[0]       ) | (this.h[1] << 13)                    ) & 0xffff;
+  this.h[1] = ((this.h[1] >>>  3) | (this.h[2] << 10)                    ) & 0xffff;
+  this.h[2] = ((this.h[2] >>>  6) | (this.h[3] <<  7)                    ) & 0xffff;
+  this.h[3] = ((this.h[3] >>>  9) | (this.h[4] <<  4)                    ) & 0xffff;
+  this.h[4] = ((this.h[4] >>> 12) | (this.h[5] <<  1) | (this.h[6] << 14)) & 0xffff;
+  this.h[5] = ((this.h[6] >>>  2) | (this.h[7] << 11)                    ) & 0xffff;
+  this.h[6] = ((this.h[7] >>>  5) | (this.h[8] <<  8)                    ) & 0xffff;
+  this.h[7] = ((this.h[8] >>>  8) | (this.h[9] <<  5)                    ) & 0xffff;
+
+  f = this.h[0] + this.pad[0];
+  this.h[0] = f & 0xffff;
+  for (i = 1; i < 8; i++) {
+    f = (((this.h[i] + this.pad[i]) | 0) + (f >>> 16)) | 0;
+    this.h[i] = f & 0xffff;
+  }
+
+  mac[macpos+ 0] = (this.h[0] >>> 0) & 0xff;
+  mac[macpos+ 1] = (this.h[0] >>> 8) & 0xff;
+  mac[macpos+ 2] = (this.h[1] >>> 0) & 0xff;
+  mac[macpos+ 3] = (this.h[1] >>> 8) & 0xff;
+  mac[macpos+ 4] = (this.h[2] >>> 0) & 0xff;
+  mac[macpos+ 5] = (this.h[2] >>> 8) & 0xff;
+  mac[macpos+ 6] = (this.h[3] >>> 0) & 0xff;
+  mac[macpos+ 7] = (this.h[3] >>> 8) & 0xff;
+  mac[macpos+ 8] = (this.h[4] >>> 0) & 0xff;
+  mac[macpos+ 9] = (this.h[4] >>> 8) & 0xff;
+  mac[macpos+10] = (this.h[5] >>> 0) & 0xff;
+  mac[macpos+11] = (this.h[5] >>> 8) & 0xff;
+  mac[macpos+12] = (this.h[6] >>> 0) & 0xff;
+  mac[macpos+13] = (this.h[6] >>> 8) & 0xff;
+  mac[macpos+14] = (this.h[7] >>> 0) & 0xff;
+  mac[macpos+15] = (this.h[7] >>> 8) & 0xff;
+};
+
+poly1305.prototype.update = function(m, mpos, bytes) {
+  var i, want;
+
+  if (this.leftover) {
+    want = (16 - this.leftover);
+    if (want > bytes)
+      want = bytes;
+    for (i = 0; i < want; i++)
+      this.buffer[this.leftover + i] = m[mpos+i];
+    bytes -= want;
+    mpos += want;
+    this.leftover += want;
+    if (this.leftover < 16)
+      return;
+    this.blocks(this.buffer, 0, 16);
+    this.leftover = 0;
+  }
+
+  if (bytes >= 16) {
+    want = bytes - (bytes % 16);
+    this.blocks(m, mpos, want);
+    mpos += want;
+    bytes -= want;
+  }
+
+  if (bytes) {
+    for (i = 0; i < bytes; i++)
+      this.buffer[this.leftover + i] = m[mpos+i];
+    this.leftover += bytes;
+  }
+};
+
+function crypto_onetimeauth(out, outpos, m, mpos, n, k) {
+  var s = new poly1305(k);
+  s.update(m, mpos, n);
+  s.finish(out, outpos);
+  return 0;
+}
+
+function crypto_onetimeauth_verify(h, hpos, m, mpos, n, k) {
+  var x = new Uint8Array(16);
+  crypto_onetimeauth(x,0,m,mpos,n,k);
+  return crypto_verify_16(h,hpos,x,0);
+}
+
+function crypto_secretbox(c,m,d,n,k) {
+  var i;
+  if (d < 32) return -1;
+  crypto_stream_xor(c,0,m,0,d,n,k);
+  crypto_onetimeauth(c, 16, c, 32, d - 32, c);
+  for (i = 0; i < 16; i++) c[i] = 0;
+  return 0;
+}
+
+function crypto_secretbox_open(m,c,d,n,k) {
+  var i;
+  var x = new Uint8Array(32);
+  if (d < 32) return -1;
+  crypto_stream(x,0,32,n,k);
+  if (crypto_onetimeauth_verify(c, 16,c, 32,d - 32,x) !== 0) return -1;
+  crypto_stream_xor(m,0,c,0,d,n,k);
+  for (i = 0; i < 32; i++) m[i] = 0;
+  return 0;
+}
+
+function set25519(r, a) {
+  var i;
+  for (i = 0; i < 16; i++) r[i] = a[i]|0;
+}
+
+function car25519(o) {
+  var i, v, c = 1;
+  for (i = 0; i < 16; i++) {
+    v = o[i] + c + 65535;
+    c = Math.floor(v / 65536);
+    o[i] = v - c * 65536;
+  }
+  o[0] += c-1 + 37 * (c-1);
+}
+
+function sel25519(p, q, b) {
+  var t, c = ~(b-1);
+  for (var i = 0; i < 16; i++) {
+    t = c & (p[i] ^ q[i]);
+    p[i] ^= t;
+    q[i] ^= t;
+  }
+}
+
+function pack25519(o, n) {
+  var i, j, b;
+  var m = gf(), t = gf();
+  for (i = 0; i < 16; i++) t[i] = n[i];
+  car25519(t);
+  car25519(t);
+  car25519(t);
+  for (j = 0; j < 2; j++) {
+    m[0] = t[0] - 0xffed;
+    for (i = 1; i < 15; i++) {
+      m[i] = t[i] - 0xffff - ((m[i-1]>>16) & 1);
+      m[i-1] &= 0xffff;
+    }
+    m[15] = t[15] - 0x7fff - ((m[14]>>16) & 1);
+    b = (m[15]>>16) & 1;
+    m[14] &= 0xffff;
+    sel25519(t, m, 1-b);
+  }
+  for (i = 0; i < 16; i++) {
+    o[2*i] = t[i] & 0xff;
+    o[2*i+1] = t[i]>>8;
+  }
+}
+
+function neq25519(a, b) {
+  var c = new Uint8Array(32), d = new Uint8Array(32);
+  pack25519(c, a);
+  pack25519(d, b);
+  return crypto_verify_32(c, 0, d, 0);
+}
+
+function par25519(a) {
+  var d = new Uint8Array(32);
+  pack25519(d, a);
+  return d[0] & 1;
+}
+
+function unpack25519(o, n) {
+  var i;
+  for (i = 0; i < 16; i++) o[i] = n[2*i] + (n[2*i+1] << 8);
+  o[15] &= 0x7fff;
+}
+
+function A(o, a, b) {
+  for (var i = 0; i < 16; i++) o[i] = a[i] + b[i];
+}
+
+function Z(o, a, b) {
+  for (var i = 0; i < 16; i++) o[i] = a[i] - b[i];
+}
+
+function M(o, a, b) {
+  var v, c,
+     t0 = 0,  t1 = 0,  t2 = 0,  t3 = 0,  t4 = 0,  t5 = 0,  t6 = 0,  t7 = 0,
+     t8 = 0,  t9 = 0, t10 = 0, t11 = 0, t12 = 0, t13 = 0, t14 = 0, t15 = 0,
+    t16 = 0, t17 = 0, t18 = 0, t19 = 0, t20 = 0, t21 = 0, t22 = 0, t23 = 0,
+    t24 = 0, t25 = 0, t26 = 0, t27 = 0, t28 = 0, t29 = 0, t30 = 0,
+    b0 = b[0],
+    b1 = b[1],
+    b2 = b[2],
+    b3 = b[3],
+    b4 = b[4],
+    b5 = b[5],
+    b6 = b[6],
+    b7 = b[7],
+    b8 = b[8],
+    b9 = b[9],
+    b10 = b[10],
+    b11 = b[11],
+    b12 = b[12],
+    b13 = b[13],
+    b14 = b[14],
+    b15 = b[15];
+
+  v = a[0];
+  t0 += v * b0;
+  t1 += v * b1;
+  t2 += v * b2;
+  t3 += v * b3;
+  t4 += v * b4;
+  t5 += v * b5;
+  t6 += v * b6;
+  t7 += v * b7;
+  t8 += v * b8;
+  t9 += v * b9;
+  t10 += v * b10;
+  t11 += v * b11;
+  t12 += v * b12;
+  t13 += v * b13;
+  t14 += v * b14;
+  t15 += v * b15;
+  v = a[1];
+  t1 += v * b0;
+  t2 += v * b1;
+  t3 += v * b2;
+  t4 += v * b3;
+  t5 += v * b4;
+  t6 += v * b5;
+  t7 += v * b6;
+  t8 += v * b7;
+  t9 += v * b8;
+  t10 += v * b9;
+  t11 += v * b10;
+  t12 += v * b11;
+  t13 += v * b12;
+  t14 += v * b13;
+  t15 += v * b14;
+  t16 += v * b15;
+  v = a[2];
+  t2 += v * b0;
+  t3 += v * b1;
+  t4 += v * b2;
+  t5 += v * b3;
+  t6 += v * b4;
+  t7 += v * b5;
+  t8 += v * b6;
+  t9 += v * b7;
+  t10 += v * b8;
+  t11 += v * b9;
+  t12 += v * b10;
+  t13 += v * b11;
+  t14 += v * b12;
+  t15 += v * b13;
+  t16 += v * b14;
+  t17 += v * b15;
+  v = a[3];
+  t3 += v * b0;
+  t4 += v * b1;
+  t5 += v * b2;
+  t6 += v * b3;
+  t7 += v * b4;
+  t8 += v * b5;
+  t9 += v * b6;
+  t10 += v * b7;
+  t11 += v * b8;
+  t12 += v * b9;
+  t13 += v * b10;
+  t14 += v * b11;
+  t15 += v * b12;
+  t16 += v * b13;
+  t17 += v * b14;
+  t18 += v * b15;
+  v = a[4];
+  t4 += v * b0;
+  t5 += v * b1;
+  t6 += v * b2;
+  t7 += v * b3;
+  t8 += v * b4;
+  t9 += v * b5;
+  t10 += v * b6;
+  t11 += v * b7;
+  t12 += v * b8;
+  t13 += v * b9;
+  t14 += v * b10;
+  t15 += v * b11;
+  t16 += v * b12;
+  t17 += v * b13;
+  t18 += v * b14;
+  t19 += v * b15;
+  v = a[5];
+  t5 += v * b0;
+  t6 += v * b1;
+  t7 += v * b2;
+  t8 += v * b3;
+  t9 += v * b4;
+  t10 += v * b5;
+  t11 += v * b6;
+  t12 += v * b7;
+  t13 += v * b8;
+  t14 += v * b9;
+  t15 += v * b10;
+  t16 += v * b11;
+  t17 += v * b12;
+  t18 += v * b13;
+  t19 += v * b14;
+  t20 += v * b15;
+  v = a[6];
+  t6 += v * b0;
+  t7 += v * b1;
+  t8 += v * b2;
+  t9 += v * b3;
+  t10 += v * b4;
+  t11 += v * b5;
+  t12 += v * b6;
+  t13 += v * b7;
+  t14 += v * b8;
+  t15 += v * b9;
+  t16 += v * b10;
+  t17 += v * b11;
+  t18 += v * b12;
+  t19 += v * b13;
+  t20 += v * b14;
+  t21 += v * b15;
+  v = a[7];
+  t7 += v * b0;
+  t8 += v * b1;
+  t9 += v * b2;
+  t10 += v * b3;
+  t11 += v * b4;
+  t12 += v * b5;
+  t13 += v * b6;
+  t14 += v * b7;
+  t15 += v * b8;
+  t16 += v * b9;
+  t17 += v * b10;
+  t18 += v * b11;
+  t19 += v * b12;
+  t20 += v * b13;
+  t21 += v * b14;
+  t22 += v * b15;
+  v = a[8];
+  t8 += v * b0;
+  t9 += v * b1;
+  t10 += v * b2;
+  t11 += v * b3;
+  t12 += v * b4;
+  t13 += v * b5;
+  t14 += v * b6;
+  t15 += v * b7;
+  t16 += v * b8;
+  t17 += v * b9;
+  t18 += v * b10;
+  t19 += v * b11;
+  t20 += v * b12;
+  t21 += v * b13;
+  t22 += v * b14;
+  t23 += v * b15;
+  v = a[9];
+  t9 += v * b0;
+  t10 += v * b1;
+  t11 += v * b2;
+  t12 += v * b3;
+  t13 += v * b4;
+  t14 += v * b5;
+  t15 += v * b6;
+  t16 += v * b7;
+  t17 += v * b8;
+  t18 += v * b9;
+  t19 += v * b10;
+  t20 += v * b11;
+  t21 += v * b12;
+  t22 += v * b13;
+  t23 += v * b14;
+  t24 += v * b15;
+  v = a[10];
+  t10 += v * b0;
+  t11 += v * b1;
+  t12 += v * b2;
+  t13 += v * b3;
+  t14 += v * b4;
+  t15 += v * b5;
+  t16 += v * b6;
+  t17 += v * b7;
+  t18 += v * b8;
+  t19 += v * b9;
+  t20 += v * b10;
+  t21 += v * b11;
+  t22 += v * b12;
+  t23 += v * b13;
+  t24 += v * b14;
+  t25 += v * b15;
+  v = a[11];
+  t11 += v * b0;
+  t12 += v * b1;
+  t13 += v * b2;
+  t14 += v * b3;
+  t15 += v * b4;
+  t16 += v * b5;
+  t17 += v * b6;
+  t18 += v * b7;
+  t19 += v * b8;
+  t20 += v * b9;
+  t21 += v * b10;
+  t22 += v * b11;
+  t23 += v * b12;
+  t24 += v * b13;
+  t25 += v * b14;
+  t26 += v * b15;
+  v = a[12];
+  t12 += v * b0;
+  t13 += v * b1;
+  t14 += v * b2;
+  t15 += v * b3;
+  t16 += v * b4;
+  t17 += v * b5;
+  t18 += v * b6;
+  t19 += v * b7;
+  t20 += v * b8;
+  t21 += v * b9;
+  t22 += v * b10;
+  t23 += v * b11;
+  t24 += v * b12;
+  t25 += v * b13;
+  t26 += v * b14;
+  t27 += v * b15;
+  v = a[13];
+  t13 += v * b0;
+  t14 += v * b1;
+  t15 += v * b2;
+  t16 += v * b3;
+  t17 += v * b4;
+  t18 += v * b5;
+  t19 += v * b6;
+  t20 += v * b7;
+  t21 += v * b8;
+  t22 += v * b9;
+  t23 += v * b10;
+  t24 += v * b11;
+  t25 += v * b12;
+  t26 += v * b13;
+  t27 += v * b14;
+  t28 += v * b15;
+  v = a[14];
+  t14 += v * b0;
+  t15 += v * b1;
+  t16 += v * b2;
+  t17 += v * b3;
+  t18 += v * b4;
+  t19 += v * b5;
+  t20 += v * b6;
+  t21 += v * b7;
+  t22 += v * b8;
+  t23 += v * b9;
+  t24 += v * b10;
+  t25 += v * b11;
+  t26 += v * b12;
+  t27 += v * b13;
+  t28 += v * b14;
+  t29 += v * b15;
+  v = a[15];
+  t15 += v * b0;
+  t16 += v * b1;
+  t17 += v * b2;
+  t18 += v * b3;
+  t19 += v * b4;
+  t20 += v * b5;
+  t21 += v * b6;
+  t22 += v * b7;
+  t23 += v * b8;
+  t24 += v * b9;
+  t25 += v * b10;
+  t26 += v * b11;
+  t27 += v * b12;
+  t28 += v * b13;
+  t29 += v * b14;
+  t30 += v * b15;
+
+  t0  += 38 * t16;
+  t1  += 38 * t17;
+  t2  += 38 * t18;
+  t3  += 38 * t19;
+  t4  += 38 * t20;
+  t5  += 38 * t21;
+  t6  += 38 * t22;
+  t7  += 38 * t23;
+  t8  += 38 * t24;
+  t9  += 38 * t25;
+  t10 += 38 * t26;
+  t11 += 38 * t27;
+  t12 += 38 * t28;
+  t13 += 38 * t29;
+  t14 += 38 * t30;
+  // t15 left as is
+
+  // first car
+  c = 1;
+  v =  t0 + c + 65535; c = Math.floor(v / 65536);  t0 = v - c * 65536;
+  v =  t1 + c + 65535; c = Math.floor(v / 65536);  t1 = v - c * 65536;
+  v =  t2 + c + 65535; c = Math.floor(v / 65536);  t2 = v - c * 65536;
+  v =  t3 + c + 65535; c = Math.floor(v / 65536);  t3 = v - c * 65536;
+  v =  t4 + c + 65535; c = Math.floor(v / 65536);  t4 = v - c * 65536;
+  v =  t5 + c + 65535; c = Math.floor(v / 65536);  t5 = v - c * 65536;
+  v =  t6 + c + 65535; c = Math.floor(v / 65536);  t6 = v - c * 65536;
+  v =  t7 + c + 65535; c = Math.floor(v / 65536);  t7 = v - c * 65536;
+  v =  t8 + c + 65535; c = Math.floor(v / 65536);  t8 = v - c * 65536;
+  v =  t9 + c + 65535; c = Math.floor(v / 65536);  t9 = v - c * 65536;
+  v = t10 + c + 65535; c = Math.floor(v / 65536); t10 = v - c * 65536;
+  v = t11 + c + 65535; c = Math.floor(v / 65536); t11 = v - c * 65536;
+  v = t12 + c + 65535; c = Math.floor(v / 65536); t12 = v - c * 65536;
+  v = t13 + c + 65535; c = Math.floor(v / 65536); t13 = v - c * 65536;
+  v = t14 + c + 65535; c = Math.floor(v / 65536); t14 = v - c * 65536;
+  v = t15 + c + 65535; c = Math.floor(v / 65536); t15 = v - c * 65536;
+  t0 += c-1 + 37 * (c-1);
+
+  // second car
+  c = 1;
+  v =  t0 + c + 65535; c = Math.floor(v / 65536);  t0 = v - c * 65536;
+  v =  t1 + c + 65535; c = Math.floor(v / 65536);  t1 = v - c * 65536;
+  v =  t2 + c + 65535; c = Math.floor(v / 65536);  t2 = v - c * 65536;
+  v =  t3 + c + 65535; c = Math.floor(v / 65536);  t3 = v - c * 65536;
+  v =  t4 + c + 65535; c = Math.floor(v / 65536);  t4 = v - c * 65536;
+  v =  t5 + c + 65535; c = Math.floor(v / 65536);  t5 = v - c * 65536;
+  v =  t6 + c + 65535; c = Math.floor(v / 65536);  t6 = v - c * 65536;
+  v =  t7 + c + 65535; c = Math.floor(v / 65536);  t7 = v - c * 65536;
+  v =  t8 + c + 65535; c = Math.floor(v / 65536);  t8 = v - c * 65536;
+  v =  t9 + c + 65535; c = Math.floor(v / 65536);  t9 = v - c * 65536;
+  v = t10 + c + 65535; c = Math.floor(v / 65536); t10 = v - c * 65536;
+  v = t11 + c + 65535; c = Math.floor(v / 65536); t11 = v - c * 65536;
+  v = t12 + c + 65535; c = Math.floor(v / 65536); t12 = v - c * 65536;
+  v = t13 + c + 65535; c = Math.floor(v / 65536); t13 = v - c * 65536;
+  v = t14 + c + 65535; c = Math.floor(v / 65536); t14 = v - c * 65536;
+  v = t15 + c + 65535; c = Math.floor(v / 65536); t15 = v - c * 65536;
+  t0 += c-1 + 37 * (c-1);
+
+  o[ 0] = t0;
+  o[ 1] = t1;
+  o[ 2] = t2;
+  o[ 3] = t3;
+  o[ 4] = t4;
+  o[ 5] = t5;
+  o[ 6] = t6;
+  o[ 7] = t7;
+  o[ 8] = t8;
+  o[ 9] = t9;
+  o[10] = t10;
+  o[11] = t11;
+  o[12] = t12;
+  o[13] = t13;
+  o[14] = t14;
+  o[15] = t15;
+}
+
+function S(o, a) {
+  M(o, a, a);
+}
+
+function inv25519(o, i) {
+  var c = gf();
+  var a;
+  for (a = 0; a < 16; a++) c[a] = i[a];
+  for (a = 253; a >= 0; a--) {
+    S(c, c);
+    if(a !== 2 && a !== 4) M(c, c, i);
+  }
+  for (a = 0; a < 16; a++) o[a] = c[a];
+}
+
+function pow2523(o, i) {
+  var c = gf();
+  var a;
+  for (a = 0; a < 16; a++) c[a] = i[a];
+  for (a = 250; a >= 0; a--) {
+      S(c, c);
+      if(a !== 1) M(c, c, i);
+  }
+  for (a = 0; a < 16; a++) o[a] = c[a];
+}
+
+function crypto_scalarmult(q, n, p) {
+  var z = new Uint8Array(32);
+  var x = new Float64Array(80), r, i;
+  var a = gf(), b = gf(), c = gf(),
+      d = gf(), e = gf(), f = gf();
+  for (i = 0; i < 31; i++) z[i] = n[i];
+  z[31]=(n[31]&127)|64;
+  z[0]&=248;
+  unpack25519(x,p);
+  for (i = 0; i < 16; i++) {
+    b[i]=x[i];
+    d[i]=a[i]=c[i]=0;
+  }
+  a[0]=d[0]=1;
+  for (i=254; i>=0; --i) {
+    r=(z[i>>>3]>>>(i&7))&1;
+    sel25519(a,b,r);
+    sel25519(c,d,r);
+    A(e,a,c);
+    Z(a,a,c);
+    A(c,b,d);
+    Z(b,b,d);
+    S(d,e);
+    S(f,a);
+    M(a,c,a);
+    M(c,b,e);
+    A(e,a,c);
+    Z(a,a,c);
+    S(b,a);
+    Z(c,d,f);
+    M(a,c,_121665);
+    A(a,a,d);
+    M(c,c,a);
+    M(a,d,f);
+    M(d,b,x);
+    S(b,e);
+    sel25519(a,b,r);
+    sel25519(c,d,r);
+  }
+  for (i = 0; i < 16; i++) {
+    x[i+16]=a[i];
+    x[i+32]=c[i];
+    x[i+48]=b[i];
+    x[i+64]=d[i];
+  }
+  var x32 = x.subarray(32);
+  var x16 = x.subarray(16);
+  inv25519(x32,x32);
+  M(x16,x16,x32);
+  pack25519(q,x16);
+  return 0;
+}
+
+function crypto_scalarmult_base(q, n) {
+  return crypto_scalarmult(q, n, _9);
+}
+
+function crypto_box_keypair(y, x) {
+  randombytes(x, 32);
+  return crypto_scalarmult_base(y, x);
+}
+
+function crypto_box_beforenm(k, y, x) {
+  var s = new Uint8Array(32);
+  crypto_scalarmult(s, x, y);
+  return crypto_core_hsalsa20(k, _0, s, sigma);
+}
+
+var crypto_box_afternm = crypto_secretbox;
+var crypto_box_open_afternm = crypto_secretbox_open;
+
+function crypto_box(c, m, d, n, y, x) {
+  var k = new Uint8Array(32);
+  crypto_box_beforenm(k, y, x);
+  return crypto_box_afternm(c, m, d, n, k);
+}
+
+function crypto_box_open(m, c, d, n, y, x) {
+  var k = new Uint8Array(32);
+  crypto_box_beforenm(k, y, x);
+  return crypto_box_open_afternm(m, c, d, n, k);
+}
+
+var K = [
+  0x428a2f98, 0xd728ae22, 0x71374491, 0x23ef65cd,
+  0xb5c0fbcf, 0xec4d3b2f, 0xe9b5dba5, 0x8189dbbc,
+  0x3956c25b, 0xf348b538, 0x59f111f1, 0xb605d019,
+  0x923f82a4, 0xaf194f9b, 0xab1c5ed5, 0xda6d8118,
+  0xd807aa98, 0xa3030242, 0x12835b01, 0x45706fbe,
+  0x243185be, 0x4ee4b28c, 0x550c7dc3, 0xd5ffb4e2,
+  0x72be5d74, 0xf27b896f, 0x80deb1fe, 0x3b1696b1,
+  0x9bdc06a7, 0x25c71235, 0xc19bf174, 0xcf692694,
+  0xe49b69c1, 0x9ef14ad2, 0xefbe4786, 0x384f25e3,
+  0x0fc19dc6, 0x8b8cd5b5, 0x240ca1cc, 0x77ac9c65,
+  0x2de92c6f, 0x592b0275, 0x4a7484aa, 0x6ea6e483,
+  0x5cb0a9dc, 0xbd41fbd4, 0x76f988da, 0x831153b5,
+  0x983e5152, 0xee66dfab, 0xa831c66d, 0x2db43210,
+  0xb00327c8, 0x98fb213f, 0xbf597fc7, 0xbeef0ee4,
+  0xc6e00bf3, 0x3da88fc2, 0xd5a79147, 0x930aa725,
+  0x06ca6351, 0xe003826f, 0x14292967, 0x0a0e6e70,
+  0x27b70a85, 0x46d22ffc, 0x2e1b2138, 0x5c26c926,
+  0x4d2c6dfc, 0x5ac42aed, 0x53380d13, 0x9d95b3df,
+  0x650a7354, 0x8baf63de, 0x766a0abb, 0x3c77b2a8,
+  0x81c2c92e, 0x47edaee6, 0x92722c85, 0x1482353b,
+  0xa2bfe8a1, 0x4cf10364, 0xa81a664b, 0xbc423001,
+  0xc24b8b70, 0xd0f89791, 0xc76c51a3, 0x0654be30,
+  0xd192e819, 0xd6ef5218, 0xd6990624, 0x5565a910,
+  0xf40e3585, 0x5771202a, 0x106aa070, 0x32bbd1b8,
+  0x19a4c116, 0xb8d2d0c8, 0x1e376c08, 0x5141ab53,
+  0x2748774c, 0xdf8eeb99, 0x34b0bcb5, 0xe19b48a8,
+  0x391c0cb3, 0xc5c95a63, 0x4ed8aa4a, 0xe3418acb,
+  0x5b9cca4f, 0x7763e373, 0x682e6ff3, 0xd6b2b8a3,
+  0x748f82ee, 0x5defb2fc, 0x78a5636f, 0x43172f60,
+  0x84c87814, 0xa1f0ab72, 0x8cc70208, 0x1a6439ec,
+  0x90befffa, 0x23631e28, 0xa4506ceb, 0xde82bde9,
+  0xbef9a3f7, 0xb2c67915, 0xc67178f2, 0xe372532b,
+  0xca273ece, 0xea26619c, 0xd186b8c7, 0x21c0c207,
+  0xeada7dd6, 0xcde0eb1e, 0xf57d4f7f, 0xee6ed178,
+  0x06f067aa, 0x72176fba, 0x0a637dc5, 0xa2c898a6,
+  0x113f9804, 0xbef90dae, 0x1b710b35, 0x131c471b,
+  0x28db77f5, 0x23047d84, 0x32caab7b, 0x40c72493,
+  0x3c9ebe0a, 0x15c9bebc, 0x431d67c4, 0x9c100d4c,
+  0x4cc5d4be, 0xcb3e42b6, 0x597f299c, 0xfc657e2a,
+  0x5fcb6fab, 0x3ad6faec, 0x6c44198c, 0x4a475817
+];
+
+function crypto_hashblocks_hl(hh, hl, m, n) {
+  var wh = new Int32Array(16), wl = new Int32Array(16),
+      bh0, bh1, bh2, bh3, bh4, bh5, bh6, bh7,
+      bl0, bl1, bl2, bl3, bl4, bl5, bl6, bl7,
+      th, tl, i, j, h, l, a, b, c, d;
+
+  var ah0 = hh[0],
+      ah1 = hh[1],
+      ah2 = hh[2],
+      ah3 = hh[3],
+      ah4 = hh[4],
+      ah5 = hh[5],
+      ah6 = hh[6],
+      ah7 = hh[7],
+
+      al0 = hl[0],
+      al1 = hl[1],
+      al2 = hl[2],
+      al3 = hl[3],
+      al4 = hl[4],
+      al5 = hl[5],
+      al6 = hl[6],
+      al7 = hl[7];
+
+  var pos = 0;
+  while (n >= 128) {
+    for (i = 0; i < 16; i++) {
+      j = 8 * i + pos;
+      wh[i] = (m[j+0] << 24) | (m[j+1] << 16) | (m[j+2] << 8) | m[j+3];
+      wl[i] = (m[j+4] << 24) | (m[j+5] << 16) | (m[j+6] << 8) | m[j+7];
+    }
+    for (i = 0; i < 80; i++) {
+      bh0 = ah0;
+      bh1 = ah1;
+      bh2 = ah2;
+      bh3 = ah3;
+      bh4 = ah4;
+      bh5 = ah5;
+      bh6 = ah6;
+      bh7 = ah7;
+
+      bl0 = al0;
+      bl1 = al1;
+      bl2 = al2;
+      bl3 = al3;
+      bl4 = al4;
+      bl5 = al5;
+      bl6 = al6;
+      bl7 = al7;
+
+      // add
+      h = ah7;
+      l = al7;
+
+      a = l & 0xffff; b = l >>> 16;
+      c = h & 0xffff; d = h >>> 16;
+
+      // Sigma1
+      h = ((ah4 >>> 14) | (al4 << (32-14))) ^ ((ah4 >>> 18) | (al4 << (32-18))) ^ ((al4 >>> (41-32)) | (ah4 << (32-(41-32))));
+      l = ((al4 >>> 14) | (ah4 << (32-14))) ^ ((al4 >>> 18) | (ah4 << (32-18))) ^ ((ah4 >>> (41-32)) | (al4 << (32-(41-32))));
+
+      a += l & 0xffff; b += l >>> 16;
+      c += h & 0xffff; d += h >>> 16;
+
+      // Ch
+      h = (ah4 & ah5) ^ (~ah4 & ah6);
+      l = (al4 & al5) ^ (~al4 & al6);
+
+      a += l & 0xffff; b += l >>> 16;
+      c += h & 0xffff; d += h >>> 16;
+
+      // K
+      h = K[i*2];
+      l = K[i*2+1];
+
+      a += l & 0xffff; b += l >>> 16;
+      c += h & 0xffff; d += h >>> 16;
+
+      // w
+      h = wh[i%16];
+      l = wl[i%16];
+
+      a += l & 0xffff; b += l >>> 16;
+      c += h & 0xffff; d += h >>> 16;
+
+      b += a >>> 16;
+      c += b >>> 16;
+      d += c >>> 16;
+
+      th = c & 0xffff | d << 16;
+      tl = a & 0xffff | b << 16;
+
+      // add
+      h = th;
+      l = tl;
+
+      a = l & 0xffff; b = l >>> 16;
+      c = h & 0xffff; d = h >>> 16;
+
+      // Sigma0
+      h = ((ah0 >>> 28) | (al0 << (32-28))) ^ ((al0 >>> (34-32)) | (ah0 << (32-(34-32)))) ^ ((al0 >>> (39-32)) | (ah0 << (32-(39-32))));
+      l = ((al0 >>> 28) | (ah0 << (32-28))) ^ ((ah0 >>> (34-32)) | (al0 << (32-(34-32)))) ^ ((ah0 >>> (39-32)) | (al0 << (32-(39-32))));
+
+      a += l & 0xffff; b += l >>> 16;
+      c += h & 0xffff; d += h >>> 16;
+
+      // Maj
+      h = (ah0 & ah1) ^ (ah0 & ah2) ^ (ah1 & ah2);
+      l = (al0 & al1) ^ (al0 & al2) ^ (al1 & al2);
+
+      a += l & 0xffff; b += l >>> 16;
+      c += h & 0xffff; d += h >>> 16;
+
+      b += a >>> 16;
+      c += b >>> 16;
+      d += c >>> 16;
+
+      bh7 = (c & 0xffff) | (d << 16);
+      bl7 = (a & 0xffff) | (b << 16);
+
+      // add
+      h = bh3;
+      l = bl3;
+
+      a = l & 0xffff; b = l >>> 16;
+      c = h & 0xffff; d = h >>> 16;
+
+      h = th;
+      l = tl;
+
+      a += l & 0xffff; b += l >>> 16;
+      c += h & 0xffff; d += h >>> 16;
+
+      b += a >>> 16;
+      c += b >>> 16;
+      d += c >>> 16;
+
+      bh3 = (c & 0xffff) | (d << 16);
+      bl3 = (a & 0xffff) | (b << 16);
+
+      ah1 = bh0;
+      ah2 = bh1;
+      ah3 = bh2;
+      ah4 = bh3;
+      ah5 = bh4;
+      ah6 = bh5;
+      ah7 = bh6;
+      ah0 = bh7;
+
+      al1 = bl0;
+      al2 = bl1;
+      al3 = bl2;
+      al4 = bl3;
+      al5 = bl4;
+      al6 = bl5;
+      al7 = bl6;
+      al0 = bl7;
+
+      if (i%16 === 15) {
+        for (j = 0; j < 16; j++) {
+          // add
+          h = wh[j];
+          l = wl[j];
+
+          a = l & 0xffff; b = l >>> 16;
+          c = h & 0xffff; d = h >>> 16;
+
+          h = wh[(j+9)%16];
+          l = wl[(j+9)%16];
+
+          a += l & 0xffff; b += l >>> 16;
+          c += h & 0xffff; d += h >>> 16;
+
+          // sigma0
+          th = wh[(j+1)%16];
+          tl = wl[(j+1)%16];
+          h = ((th >>> 1) | (tl << (32-1))) ^ ((th >>> 8) | (tl << (32-8))) ^ (th >>> 7);
+          l = ((tl >>> 1) | (th << (32-1))) ^ ((tl >>> 8) | (th << (32-8))) ^ ((tl >>> 7) | (th << (32-7)));
+
+          a += l & 0xffff; b += l >>> 16;
+          c += h & 0xffff; d += h >>> 16;
+
+          // sigma1
+          th = wh[(j+14)%16];
+          tl = wl[(j+14)%16];
+          h = ((th >>> 19) | (tl << (32-19))) ^ ((tl >>> (61-32)) | (th << (32-(61-32)))) ^ (th >>> 6);
+          l = ((tl >>> 19) | (th << (32-19))) ^ ((th >>> (61-32)) | (tl << (32-(61-32)))) ^ ((tl >>> 6) | (th << (32-6)));
+
+          a += l & 0xffff; b += l >>> 16;
+          c += h & 0xffff; d += h >>> 16;
+
+          b += a >>> 16;
+          c += b >>> 16;
+          d += c >>> 16;
+
+          wh[j] = (c & 0xffff) | (d << 16);
+          wl[j] = (a & 0xffff) | (b << 16);
+        }
+      }
+    }
+
+    // add
+    h = ah0;
+    l = al0;
+
+    a = l & 0xffff; b = l >>> 16;
+    c = h & 0xffff; d = h >>> 16;
+
+    h = hh[0];
+    l = hl[0];
+
+    a += l & 0xffff; b += l >>> 16;
+    c += h & 0xffff; d += h >>> 16;
+
+    b += a >>> 16;
+    c += b >>> 16;
+    d += c >>> 16;
+
+    hh[0] = ah0 = (c & 0xffff) | (d << 16);
+    hl[0] = al0 = (a & 0xffff) | (b << 16);
+
+    h = ah1;
+    l = al1;
+
+    a = l & 0xffff; b = l >>> 16;
+    c = h & 0xffff; d = h >>> 16;
+
+    h = hh[1];
+    l = hl[1];
+
+    a += l & 0xffff; b += l >>> 16;
+    c += h & 0xffff; d += h >>> 16;
+
+    b += a >>> 16;
+    c += b >>> 16;
+    d += c >>> 16;
+
+    hh[1] = ah1 = (c & 0xffff) | (d << 16);
+    hl[1] = al1 = (a & 0xffff) | (b << 16);
+
+    h = ah2;
+    l = al2;
+
+    a = l & 0xffff; b = l >>> 16;
+    c = h & 0xffff; d = h >>> 16;
+
+    h = hh[2];
+    l = hl[2];
+
+    a += l & 0xffff; b += l >>> 16;
+    c += h & 0xffff; d += h >>> 16;
+
+    b += a >>> 16;
+    c += b >>> 16;
+    d += c >>> 16;
+
+    hh[2] = ah2 = (c & 0xffff) | (d << 16);
+    hl[2] = al2 = (a & 0xffff) | (b << 16);
+
+    h = ah3;
+    l = al3;
+
+    a = l & 0xffff; b = l >>> 16;
+    c = h & 0xffff; d = h >>> 16;
+
+    h = hh[3];
+    l = hl[3];
+
+    a += l & 0xffff; b += l >>> 16;
+    c += h & 0xffff; d += h >>> 16;
+
+    b += a >>> 16;
+    c += b >>> 16;
+    d += c >>> 16;
+
+    hh[3] = ah3 = (c & 0xffff) | (d << 16);
+    hl[3] = al3 = (a & 0xffff) | (b << 16);
+
+    h = ah4;
+    l = al4;
+
+    a = l & 0xffff; b = l >>> 16;
+    c = h & 0xffff; d = h >>> 16;
+
+    h = hh[4];
+    l = hl[4];
+
+    a += l & 0xffff; b += l >>> 16;
+    c += h & 0xffff; d += h >>> 16;
+
+    b += a >>> 16;
+    c += b >>> 16;
+    d += c >>> 16;
+
+    hh[4] = ah4 = (c & 0xffff) | (d << 16);
+    hl[4] = al4 = (a & 0xffff) | (b << 16);
+
+    h = ah5;
+    l = al5;
+
+    a = l & 0xffff; b = l >>> 16;
+    c = h & 0xffff; d = h >>> 16;
+
+    h = hh[5];
+    l = hl[5];
+
+    a += l & 0xffff; b += l >>> 16;
+    c += h & 0xffff; d += h >>> 16;
+
+    b += a >>> 16;
+    c += b >>> 16;
+    d += c >>> 16;
+
+    hh[5] = ah5 = (c & 0xffff) | (d << 16);
+    hl[5] = al5 = (a & 0xffff) | (b << 16);
+
+    h = ah6;
+    l = al6;
+
+    a = l & 0xffff; b = l >>> 16;
+    c = h & 0xffff; d = h >>> 16;
+
+    h = hh[6];
+    l = hl[6];
+
+    a += l & 0xffff; b += l >>> 16;
+    c += h & 0xffff; d += h >>> 16;
+
+    b += a >>> 16;
+    c += b >>> 16;
+    d += c >>> 16;
+
+    hh[6] = ah6 = (c & 0xffff) | (d << 16);
+    hl[6] = al6 = (a & 0xffff) | (b << 16);
+
+    h = ah7;
+    l = al7;
+
+    a = l & 0xffff; b = l >>> 16;
+    c = h & 0xffff; d = h >>> 16;
+
+    h = hh[7];
+    l = hl[7];
+
+    a += l & 0xffff; b += l >>> 16;
+    c += h & 0xffff; d += h >>> 16;
+
+    b += a >>> 16;
+    c += b >>> 16;
+    d += c >>> 16;
+
+    hh[7] = ah7 = (c & 0xffff) | (d << 16);
+    hl[7] = al7 = (a & 0xffff) | (b << 16);
+
+    pos += 128;
+    n -= 128;
+  }
+
+  return n;
+}
+
+function crypto_hash(out, m, n) {
+  var hh = new Int32Array(8),
+      hl = new Int32Array(8),
+      x = new Uint8Array(256),
+      i, b = n;
+
+  hh[0] = 0x6a09e667;
+  hh[1] = 0xbb67ae85;
+  hh[2] = 0x3c6ef372;
+  hh[3] = 0xa54ff53a;
+  hh[4] = 0x510e527f;
+  hh[5] = 0x9b05688c;
+  hh[6] = 0x1f83d9ab;
+  hh[7] = 0x5be0cd19;
+
+  hl[0] = 0xf3bcc908;
+  hl[1] = 0x84caa73b;
+  hl[2] = 0xfe94f82b;
+  hl[3] = 0x5f1d36f1;
+  hl[4] = 0xade682d1;
+  hl[5] = 0x2b3e6c1f;
+  hl[6] = 0xfb41bd6b;
+  hl[7] = 0x137e2179;
+
+  crypto_hashblocks_hl(hh, hl, m, n);
+  n %= 128;
+
+  for (i = 0; i < n; i++) x[i] = m[b-n+i];
+  x[n] = 128;
+
+  n = 256-128*(n<112?1:0);
+  x[n-9] = 0;
+  ts64(x, n-8,  (b / 0x20000000) | 0, b << 3);
+  crypto_hashblocks_hl(hh, hl, x, n);
+
+  for (i = 0; i < 8; i++) ts64(out, 8*i, hh[i], hl[i]);
+
+  return 0;
+}
+
+function add(p, q) {
+  var a = gf(), b = gf(), c = gf(),
+      d = gf(), e = gf(), f = gf(),
+      g = gf(), h = gf(), t = gf();
+
+  Z(a, p[1], p[0]);
+  Z(t, q[1], q[0]);
+  M(a, a, t);
+  A(b, p[0], p[1]);
+  A(t, q[0], q[1]);
+  M(b, b, t);
+  M(c, p[3], q[3]);
+  M(c, c, D2);
+  M(d, p[2], q[2]);
+  A(d, d, d);
+  Z(e, b, a);
+  Z(f, d, c);
+  A(g, d, c);
+  A(h, b, a);
+
+  M(p[0], e, f);
+  M(p[1], h, g);
+  M(p[2], g, f);
+  M(p[3], e, h);
+}
+
+function cswap(p, q, b) {
+  var i;
+  for (i = 0; i < 4; i++) {
+    sel25519(p[i], q[i], b);
+  }
+}
+
+function pack(r, p) {
+  var tx = gf(), ty = gf(), zi = gf();
+  inv25519(zi, p[2]);
+  M(tx, p[0], zi);
+  M(ty, p[1], zi);
+  pack25519(r, ty);
+  r[31] ^= par25519(tx) << 7;
+}
+
+function scalarmult(p, q, s) {
+  var b, i;
+  set25519(p[0], gf0);
+  set25519(p[1], gf1);
+  set25519(p[2], gf1);
+  set25519(p[3], gf0);
+  for (i = 255; i >= 0; --i) {
+    b = (s[(i/8)|0] >> (i&7)) & 1;
+    cswap(p, q, b);
+    add(q, p);
+    add(p, p);
+    cswap(p, q, b);
+  }
+}
+
+function scalarbase(p, s) {
+  var q = [gf(), gf(), gf(), gf()];
+  set25519(q[0], X);
+  set25519(q[1], Y);
+  set25519(q[2], gf1);
+  M(q[3], X, Y);
+  scalarmult(p, q, s);
+}
+
+function crypto_sign_keypair(pk, sk, seeded) {
+  var d = new Uint8Array(64);
+  var p = [gf(), gf(), gf(), gf()];
+  var i;
+
+  if (!seeded) randombytes(sk, 32);
+  crypto_hash(d, sk, 32);
+  d[0] &= 248;
+  d[31] &= 127;
+  d[31] |= 64;
+
+  scalarbase(p, d);
+  pack(pk, p);
+
+  for (i = 0; i < 32; i++) sk[i+32] = pk[i];
+  return 0;
+}
+
+var L = new Float64Array([0xed, 0xd3, 0xf5, 0x5c, 0x1a, 0x63, 0x12, 0x58, 0xd6, 0x9c, 0xf7, 0xa2, 0xde, 0xf9, 0xde, 0x14, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0x10]);
+
+function modL(r, x) {
+  var carry, i, j, k;
+  for (i = 63; i >= 32; --i) {
+    carry = 0;
+    for (j = i - 32, k = i - 12; j < k; ++j) {
+      x[j] += carry - 16 * x[i] * L[j - (i - 32)];
+      carry = Math.floor((x[j] + 128) / 256);
+      x[j] -= carry * 256;
+    }
+    x[j] += carry;
+    x[i] = 0;
+  }
+  carry = 0;
+  for (j = 0; j < 32; j++) {
+    x[j] += carry - (x[31] >> 4) * L[j];
+    carry = x[j] >> 8;
+    x[j] &= 255;
+  }
+  for (j = 0; j < 32; j++) x[j] -= carry * L[j];
+  for (i = 0; i < 32; i++) {
+    x[i+1] += x[i] >> 8;
+    r[i] = x[i] & 255;
+  }
+}
+
+function reduce(r) {
+  var x = new Float64Array(64), i;
+  for (i = 0; i < 64; i++) x[i] = r[i];
+  for (i = 0; i < 64; i++) r[i] = 0;
+  modL(r, x);
+}
+
+// Note: difference from C - smlen returned, not passed as argument.
+function crypto_sign(sm, m, n, sk) {
+  var d = new Uint8Array(64), h = new Uint8Array(64), r = new Uint8Array(64);
+  var i, j, x = new Float64Array(64);
+  var p = [gf(), gf(), gf(), gf()];
+
+  crypto_hash(d, sk, 32);
+  d[0] &= 248;
+  d[31] &= 127;
+  d[31] |= 64;
+
+  var smlen = n + 64;
+  for (i = 0; i < n; i++) sm[64 + i] = m[i];
+  for (i = 0; i < 32; i++) sm[32 + i] = d[32 + i];
+
+  crypto_hash(r, sm.subarray(32), n+32);
+  reduce(r);
+  scalarbase(p, r);
+  pack(sm, p);
+
+  for (i = 32; i < 64; i++) sm[i] = sk[i];
+  crypto_hash(h, sm, n + 64);
+  reduce(h);
+
+  for (i = 0; i < 64; i++) x[i] = 0;
+  for (i = 0; i < 32; i++) x[i] = r[i];
+  for (i = 0; i < 32; i++) {
+    for (j = 0; j < 32; j++) {
+      x[i+j] += h[i] * d[j];
+    }
+  }
+
+  modL(sm.subarray(32), x);
+  return smlen;
+}
+
+function unpackneg(r, p) {
+  var t = gf(), chk = gf(), num = gf(),
+      den = gf(), den2 = gf(), den4 = gf(),
+      den6 = gf();
+
+  set25519(r[2], gf1);
+  unpack25519(r[1], p);
+  S(num, r[1]);
+  M(den, num, D);
+  Z(num, num, r[2]);
+  A(den, r[2], den);
+
+  S(den2, den);
+  S(den4, den2);
+  M(den6, den4, den2);
+  M(t, den6, num);
+  M(t, t, den);
+
+  pow2523(t, t);
+  M(t, t, num);
+  M(t, t, den);
+  M(t, t, den);
+  M(r[0], t, den);
+
+  S(chk, r[0]);
+  M(chk, chk, den);
+  if (neq25519(chk, num)) M(r[0], r[0], I);
+
+  S(chk, r[0]);
+  M(chk, chk, den);
+  if (neq25519(chk, num)) return -1;
+
+  if (par25519(r[0]) === (p[31]>>7)) Z(r[0], gf0, r[0]);
+
+  M(r[3], r[0], r[1]);
+  return 0;
+}
+
+function crypto_sign_open(m, sm, n, pk) {
+  var i;
+  var t = new Uint8Array(32), h = new Uint8Array(64);
+  var p = [gf(), gf(), gf(), gf()],
+      q = [gf(), gf(), gf(), gf()];
+
+  if (n < 64) return -1;
+
+  if (unpackneg(q, pk)) return -1;
+
+  for (i = 0; i < n; i++) m[i] = sm[i];
+  for (i = 0; i < 32; i++) m[i+32] = pk[i];
+  crypto_hash(h, m, n);
+  reduce(h);
+  scalarmult(p, q, h);
+
+  scalarbase(q, sm.subarray(32));
+  add(p, q);
+  pack(t, p);
+
+  n -= 64;
+  if (crypto_verify_32(sm, 0, t, 0)) {
+    for (i = 0; i < n; i++) m[i] = 0;
+    return -1;
+  }
+
+  for (i = 0; i < n; i++) m[i] = sm[i + 64];
+  return n;
+}
+
+var crypto_secretbox_KEYBYTES = 32,
+    crypto_secretbox_NONCEBYTES = 24,
+    crypto_secretbox_ZEROBYTES = 32,
+    crypto_secretbox_BOXZEROBYTES = 16,
+    crypto_scalarmult_BYTES = 32,
+    crypto_scalarmult_SCALARBYTES = 32,
+    crypto_box_PUBLICKEYBYTES = 32,
+    crypto_box_SECRETKEYBYTES = 32,
+    crypto_box_BEFORENMBYTES = 32,
+    crypto_box_NONCEBYTES = crypto_secretbox_NONCEBYTES,
+    crypto_box_ZEROBYTES = crypto_secretbox_ZEROBYTES,
+    crypto_box_BOXZEROBYTES = crypto_secretbox_BOXZEROBYTES,
+    crypto_sign_BYTES = 64,
+    crypto_sign_PUBLICKEYBYTES = 32,
+    crypto_sign_SECRETKEYBYTES = 64,
+    crypto_sign_SEEDBYTES = 32,
+    crypto_hash_BYTES = 64;
+
+nacl.lowlevel = {
+  crypto_core_hsalsa20: crypto_core_hsalsa20,
+  crypto_stream_xor: crypto_stream_xor,
+  crypto_stream: crypto_stream,
+  crypto_stream_salsa20_xor: crypto_stream_salsa20_xor,
+  crypto_stream_salsa20: crypto_stream_salsa20,
+  crypto_onetimeauth: crypto_onetimeauth,
+  crypto_onetimeauth_verify: crypto_onetimeauth_verify,
+  crypto_verify_16: crypto_verify_16,
+  crypto_verify_32: crypto_verify_32,
+  crypto_secretbox: crypto_secretbox,
+  crypto_secretbox_open: crypto_secretbox_open,
+  crypto_scalarmult: crypto_scalarmult,
+  crypto_scalarmult_base: crypto_scalarmult_base,
+  crypto_box_beforenm: crypto_box_beforenm,
+  crypto_box_afternm: crypto_box_afternm,
+  crypto_box: crypto_box,
+  crypto_box_open: crypto_box_open,
+  crypto_box_keypair: crypto_box_keypair,
+  crypto_hash: crypto_hash,
+  crypto_sign: crypto_sign,
+  crypto_sign_keypair: crypto_sign_keypair,
+  crypto_sign_open: crypto_sign_open,
+
+  crypto_secretbox_KEYBYTES: crypto_secretbox_KEYBYTES,
+  crypto_secretbox_NONCEBYTES: crypto_secretbox_NONCEBYTES,
+  crypto_secretbox_ZEROBYTES: crypto_secretbox_ZEROBYTES,
+  crypto_secretbox_BOXZEROBYTES: crypto_secretbox_BOXZEROBYTES,
+  crypto_scalarmult_BYTES: crypto_scalarmult_BYTES,
+  crypto_scalarmult_SCALARBYTES: crypto_scalarmult_SCALARBYTES,
+  crypto_box_PUBLICKEYBYTES: crypto_box_PUBLICKEYBYTES,
+  crypto_box_SECRETKEYBYTES: crypto_box_SECRETKEYBYTES,
+  crypto_box_BEFORENMBYTES: crypto_box_BEFORENMBYTES,
+  crypto_box_NONCEBYTES: crypto_box_NONCEBYTES,
+  crypto_box_ZEROBYTES: crypto_box_ZEROBYTES,
+  crypto_box_BOXZEROBYTES: crypto_box_BOXZEROBYTES,
+  crypto_sign_BYTES: crypto_sign_BYTES,
+  crypto_sign_PUBLICKEYBYTES: crypto_sign_PUBLICKEYBYTES,
+  crypto_sign_SECRETKEYBYTES: crypto_sign_SECRETKEYBYTES,
+  crypto_sign_SEEDBYTES: crypto_sign_SEEDBYTES,
+  crypto_hash_BYTES: crypto_hash_BYTES,
+
+  gf: gf,
+  D: D,
+  L: L,
+  pack25519: pack25519,
+  unpack25519: unpack25519,
+  M: M,
+  A: A,
+  S: S,
+  Z: Z,
+  pow2523: pow2523,
+  add: add,
+  set25519: set25519,
+  modL: modL,
+  scalarmult: scalarmult,
+  scalarbase: scalarbase,
+};
+
+/* High-level API */
+
+function checkLengths(k, n) {
+  if (k.length !== crypto_secretbox_KEYBYTES) throw new Error('bad key size');
+  if (n.length !== crypto_secretbox_NONCEBYTES) throw new Error('bad nonce size');
+}
+
+function checkBoxLengths(pk, sk) {
+  if (pk.length !== crypto_box_PUBLICKEYBYTES) throw new Error('bad public key size');
+  if (sk.length !== crypto_box_SECRETKEYBYTES) throw new Error('bad secret key size');
+}
+
+function checkArrayTypes() {
+  for (var i = 0; i < arguments.length; i++) {
+    if (!(arguments[i] instanceof Uint8Array))
+      throw new TypeError('unexpected type, use Uint8Array');
+  }
+}
+
+function cleanup(arr) {
+  for (var i = 0; i < arr.length; i++) arr[i] = 0;
+}
+
+nacl.randomBytes = function(n) {
+  var b = new Uint8Array(n);
+  randombytes(b, n);
+  return b;
+};
+
+nacl.secretbox = function(msg, nonce, key) {
+  checkArrayTypes(msg, nonce, key);
+  checkLengths(key, nonce);
+  var m = new Uint8Array(crypto_secretbox_ZEROBYTES + msg.length);
+  var c = new Uint8Array(m.length);
+  for (var i = 0; i < msg.length; i++) m[i+crypto_secretbox_ZEROBYTES] = msg[i];
+  crypto_secretbox(c, m, m.length, nonce, key);
+  return c.subarray(crypto_secretbox_BOXZEROBYTES);
+};
+
+nacl.secretbox.open = function(box, nonce, key) {
+  checkArrayTypes(box, nonce, key);
+  checkLengths(key, nonce);
+  var c = new Uint8Array(crypto_secretbox_BOXZEROBYTES + box.length);
+  var m = new Uint8Array(c.length);
+  for (var i = 0; i < box.length; i++) c[i+crypto_secretbox_BOXZEROBYTES] = box[i];
+  if (c.length < 32) return null;
+  if (crypto_secretbox_open(m, c, c.length, nonce, key) !== 0) return null;
+  return m.subarray(crypto_secretbox_ZEROBYTES);
+};
+
+nacl.secretbox.keyLength = crypto_secretbox_KEYBYTES;
+nacl.secretbox.nonceLength = crypto_secretbox_NONCEBYTES;
+nacl.secretbox.overheadLength = crypto_secretbox_BOXZEROBYTES;
+
+nacl.scalarMult = function(n, p) {
+  checkArrayTypes(n, p);
+  if (n.length !== crypto_scalarmult_SCALARBYTES) throw new Error('bad n size');
+  if (p.length !== crypto_scalarmult_BYTES) throw new Error('bad p size');
+  var q = new Uint8Array(crypto_scalarmult_BYTES);
+  crypto_scalarmult(q, n, p);
+  return q;
+};
+
+nacl.scalarMult.base = function(n) {
+  checkArrayTypes(n);
+  if (n.length !== crypto_scalarmult_SCALARBYTES) throw new Error('bad n size');
+  var q = new Uint8Array(crypto_scalarmult_BYTES);
+  crypto_scalarmult_base(q, n);
+  return q;
+};
+
+nacl.scalarMult.scalarLength = crypto_scalarmult_SCALARBYTES;
+nacl.scalarMult.groupElementLength = crypto_scalarmult_BYTES;
+
+nacl.box = function(msg, nonce, publicKey, secretKey) {
+  var k = nacl.box.before(publicKey, secretKey);
+  return nacl.secretbox(msg, nonce, k);
+};
+
+nacl.box.before = function(publicKey, secretKey) {
+  checkArrayTypes(publicKey, secretKey);
+  checkBoxLengths(publicKey, secretKey);
+  var k = new Uint8Array(crypto_box_BEFORENMBYTES);
+  crypto_box_beforenm(k, publicKey, secretKey);
+  return k;
+};
+
+nacl.box.after = nacl.secretbox;
+
+nacl.box.open = function(msg, nonce, publicKey, secretKey) {
+  var k = nacl.box.before(publicKey, secretKey);
+  return nacl.secretbox.open(msg, nonce, k);
+};
+
+nacl.box.open.after = nacl.secretbox.open;
+
+nacl.box.keyPair = function() {
+  var pk = new Uint8Array(crypto_box_PUBLICKEYBYTES);
+  var sk = new Uint8Array(crypto_box_SECRETKEYBYTES);
+  crypto_box_keypair(pk, sk);
+  return {publicKey: pk, secretKey: sk};
+};
+
+nacl.box.keyPair.fromSecretKey = function(secretKey) {
+  checkArrayTypes(secretKey);
+  if (secretKey.length !== crypto_box_SECRETKEYBYTES)
+    throw new Error('bad secret key size');
+  var pk = new Uint8Array(crypto_box_PUBLICKEYBYTES);
+  crypto_scalarmult_base(pk, secretKey);
+  return {publicKey: pk, secretKey: new Uint8Array(secretKey)};
+};
+
+nacl.box.publicKeyLength = crypto_box_PUBLICKEYBYTES;
+nacl.box.secretKeyLength = crypto_box_SECRETKEYBYTES;
+nacl.box.sharedKeyLength = crypto_box_BEFORENMBYTES;
+nacl.box.nonceLength = crypto_box_NONCEBYTES;
+nacl.box.overheadLength = nacl.secretbox.overheadLength;
+
+nacl.sign = function(msg, secretKey) {
+  checkArrayTypes(msg, secretKey);
+  if (secretKey.length !== crypto_sign_SECRETKEYBYTES)
+    throw new Error('bad secret key size');
+  var signedMsg = new Uint8Array(crypto_sign_BYTES+msg.length);
+  crypto_sign(signedMsg, msg, msg.length, secretKey);
+  return signedMsg;
+};
+
+nacl.sign.open = function(signedMsg, publicKey) {
+  checkArrayTypes(signedMsg, publicKey);
+  if (publicKey.length !== crypto_sign_PUBLICKEYBYTES)
+    throw new Error('bad public key size');
+  var tmp = new Uint8Array(signedMsg.length);
+  var mlen = crypto_sign_open(tmp, signedMsg, signedMsg.length, publicKey);
+  if (mlen < 0) return null;
+  var m = new Uint8Array(mlen);
+  for (var i = 0; i < m.length; i++) m[i] = tmp[i];
+  return m;
+};
+
+nacl.sign.detached = function(msg, secretKey) {
+  var signedMsg = nacl.sign(msg, secretKey);
+  var sig = new Uint8Array(crypto_sign_BYTES);
+  for (var i = 0; i < sig.length; i++) sig[i] = signedMsg[i];
+  return sig;
+};
+
+nacl.sign.detached.verify = function(msg, sig, publicKey) {
+  checkArrayTypes(msg, sig, publicKey);
+  if (sig.length !== crypto_sign_BYTES)
+    throw new Error('bad signature size');
+  if (publicKey.length !== crypto_sign_PUBLICKEYBYTES)
+    throw new Error('bad public key size');
+  var sm = new Uint8Array(crypto_sign_BYTES + msg.length);
+  var m = new Uint8Array(crypto_sign_BYTES + msg.length);
+  var i;
+  for (i = 0; i < crypto_sign_BYTES; i++) sm[i] = sig[i];
+  for (i = 0; i < msg.length; i++) sm[i+crypto_sign_BYTES] = msg[i];
+  return (crypto_sign_open(m, sm, sm.length, publicKey) >= 0);
+};
+
+nacl.sign.keyPair = function() {
+  var pk = new Uint8Array(crypto_sign_PUBLICKEYBYTES);
+  var sk = new Uint8Array(crypto_sign_SECRETKEYBYTES);
+  crypto_sign_keypair(pk, sk);
+  return {publicKey: pk, secretKey: sk};
+};
+
+nacl.sign.keyPair.fromSecretKey = function(secretKey) {
+  checkArrayTypes(secretKey);
+  if (secretKey.length !== crypto_sign_SECRETKEYBYTES)
+    throw new Error('bad secret key size');
+  var pk = new Uint8Array(crypto_sign_PUBLICKEYBYTES);
+  for (var i = 0; i < pk.length; i++) pk[i] = secretKey[32+i];
+  return {publicKey: pk, secretKey: new Uint8Array(secretKey)};
+};
+
+nacl.sign.keyPair.fromSeed = function(seed) {
+  checkArrayTypes(seed);
+  if (seed.length !== crypto_sign_SEEDBYTES)
+    throw new Error('bad seed size');
+  var pk = new Uint8Array(crypto_sign_PUBLICKEYBYTES);
+  var sk = new Uint8Array(crypto_sign_SECRETKEYBYTES);
+  for (var i = 0; i < 32; i++) sk[i] = seed[i];
+  crypto_sign_keypair(pk, sk, true);
+  return {publicKey: pk, secretKey: sk};
+};
+
+nacl.sign.publicKeyLength = crypto_sign_PUBLICKEYBYTES;
+nacl.sign.secretKeyLength = crypto_sign_SECRETKEYBYTES;
+nacl.sign.seedLength = crypto_sign_SEEDBYTES;
+nacl.sign.signatureLength = crypto_sign_BYTES;
+
+nacl.hash = function(msg) {
+  checkArrayTypes(msg);
+  var h = new Uint8Array(crypto_hash_BYTES);
+  crypto_hash(h, msg, msg.length);
+  return h;
+};
+
+nacl.hash.hashLength = crypto_hash_BYTES;
+
+nacl.verify = function(x, y) {
+  checkArrayTypes(x, y);
+  // Zero length arguments are considered not equal.
+  if (x.length === 0 || y.length === 0) return false;
+  if (x.length !== y.length) return false;
+  return (vn(x, 0, y, 0, x.length) === 0) ? true : false;
+};
+
+nacl.setPRNG = function(fn) {
+  randombytes = fn;
+};
+
+(function() {
+  // Initialize PRNG if environment provides CSPRNG.
+  // If not, methods calling randombytes will throw.
+  var crypto = typeof self !== 'undefined' ? (self.crypto || self.msCrypto) : null;
+  if (crypto && crypto.getRandomValues) {
+    // Browsers.
+    var QUOTA = 65536;
+    nacl.setPRNG(function(x, n) {
+      var i, v = new Uint8Array(n);
+      for (i = 0; i < n; i += QUOTA) {
+        crypto.getRandomValues(v.subarray(i, i + Math.min(n - i, QUOTA)));
+      }
+      for (i = 0; i < n; i++) x[i] = v[i];
+      cleanup(v);
+    });
+  } else if (typeof commonjsRequire !== 'undefined') {
+    // Node.js.
+    crypto = crypto__default['default'];
+    if (crypto && crypto.randomBytes) {
+      nacl.setPRNG(function(x, n) {
+        var i, v = crypto.randomBytes(n);
+        for (i = 0; i < n; i++) x[i] = v[i];
+        cleanup(v);
+      });
+    }
+  }
+})();
+
+})(module.exports ? module.exports : (self.nacl = self.nacl || {}));
+});
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function ownKeys$2(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    if (enumerableOnly) symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    });
+    keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    if (i % 2) {
+      ownKeys$2(Object(source), true).forEach(function (key) {
+        _defineProperty(target, key, source[key]);
+      });
+    } else if (Object.getOwnPropertyDescriptors) {
+      Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+    } else {
+      ownKeys$2(Object(source)).forEach(function (key) {
+        Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+      });
+    }
+  }
+
+  return target;
+}
+
+function _inheritsLoose(subClass, superClass) {
+  subClass.prototype = Object.create(superClass.prototype);
+  subClass.prototype.constructor = subClass;
+  subClass.__proto__ = superClass;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function _construct(Parent, args, Class) {
+  if (_isNativeReflectConstruct()) {
+    _construct = Reflect.construct;
+  } else {
+    _construct = function _construct(Parent, args, Class) {
+      var a = [null];
+      a.push.apply(a, args);
+      var Constructor = Function.bind.apply(Parent, a);
+      var instance = new Constructor();
+      if (Class) _setPrototypeOf(instance, Class.prototype);
+      return instance;
+    };
+  }
+
+  return _construct.apply(null, arguments);
+}
+
+function _isNativeFunction(fn) {
+  return Function.toString.call(fn).indexOf("[native code]") !== -1;
+}
+
+function _wrapNativeSuper(Class) {
+  var _cache = typeof Map === "function" ? new Map() : undefined;
+
+  _wrapNativeSuper = function _wrapNativeSuper(Class) {
+    if (Class === null || !_isNativeFunction(Class)) return Class;
+
+    if (typeof Class !== "function") {
+      throw new TypeError("Super expression must either be null or a function");
+    }
+
+    if (typeof _cache !== "undefined") {
+      if (_cache.has(Class)) return _cache.get(Class);
+
+      _cache.set(Class, Wrapper);
+    }
+
+    function Wrapper() {
+      return _construct(Class, arguments, _getPrototypeOf(this).constructor);
+    }
+
+    Wrapper.prototype = Object.create(Class.prototype, {
+      constructor: {
+        value: Wrapper,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+    return _setPrototypeOf(Wrapper, Class);
+  };
+
+  return _wrapNativeSuper(Class);
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _unsupportedIterableToArray$2(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray$2(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$2(o, minLen);
+}
+
+function _arrayLikeToArray$2(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+  return arr2;
+}
+
+function _createForOfIteratorHelperLoose(o, allowArrayLike) {
+  var it;
+
+  if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
+    if (Array.isArray(o) || (it = _unsupportedIterableToArray$2(o)) || allowArrayLike && o && typeof o.length === "number") {
+      if (it) o = it;
+      var i = 0;
+      return function () {
+        if (i >= o.length) return {
+          done: true
+        };
+        return {
+          done: false,
+          value: o[i++]
+        };
+      };
+    }
+
+    throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+  }
+
+  it = o[Symbol.iterator]();
+  return it.next.bind(it);
+}
+
+var toString = Object.prototype.toString;
+
+var kindOf = function kindOf(val) {
+  if (val === void 0) return 'undefined';
+  if (val === null) return 'null';
+
+  var type = typeof val;
+  if (type === 'boolean') return 'boolean';
+  if (type === 'string') return 'string';
+  if (type === 'number') return 'number';
+  if (type === 'symbol') return 'symbol';
+  if (type === 'function') {
+    return isGeneratorFn(val) ? 'generatorfunction' : 'function';
+  }
+
+  if (isArray(val)) return 'array';
+  if (isBuffer(val)) return 'buffer';
+  if (isArguments(val)) return 'arguments';
+  if (isDate(val)) return 'date';
+  if (isError(val)) return 'error';
+  if (isRegexp(val)) return 'regexp';
+
+  switch (ctorName(val)) {
+    case 'Symbol': return 'symbol';
+    case 'Promise': return 'promise';
+
+    // Set, Map, WeakSet, WeakMap
+    case 'WeakMap': return 'weakmap';
+    case 'WeakSet': return 'weakset';
+    case 'Map': return 'map';
+    case 'Set': return 'set';
+
+    // 8-bit typed arrays
+    case 'Int8Array': return 'int8array';
+    case 'Uint8Array': return 'uint8array';
+    case 'Uint8ClampedArray': return 'uint8clampedarray';
+
+    // 16-bit typed arrays
+    case 'Int16Array': return 'int16array';
+    case 'Uint16Array': return 'uint16array';
+
+    // 32-bit typed arrays
+    case 'Int32Array': return 'int32array';
+    case 'Uint32Array': return 'uint32array';
+    case 'Float32Array': return 'float32array';
+    case 'Float64Array': return 'float64array';
+  }
+
+  if (isGeneratorObj(val)) {
+    return 'generator';
+  }
+
+  // Non-plain objects
+  type = toString.call(val);
+  switch (type) {
+    case '[object Object]': return 'object';
+    // iterators
+    case '[object Map Iterator]': return 'mapiterator';
+    case '[object Set Iterator]': return 'setiterator';
+    case '[object String Iterator]': return 'stringiterator';
+    case '[object Array Iterator]': return 'arrayiterator';
+  }
+
+  // other
+  return type.slice(8, -1).toLowerCase().replace(/\s/g, '');
+};
+
+function ctorName(val) {
+  return typeof val.constructor === 'function' ? val.constructor.name : null;
+}
+
+function isArray(val) {
+  if (Array.isArray) return Array.isArray(val);
+  return val instanceof Array;
+}
+
+function isError(val) {
+  return val instanceof Error || (typeof val.message === 'string' && val.constructor && typeof val.constructor.stackTraceLimit === 'number');
+}
+
+function isDate(val) {
+  if (val instanceof Date) return true;
+  return typeof val.toDateString === 'function'
+    && typeof val.getDate === 'function'
+    && typeof val.setDate === 'function';
+}
+
+function isRegexp(val) {
+  if (val instanceof RegExp) return true;
+  return typeof val.flags === 'string'
+    && typeof val.ignoreCase === 'boolean'
+    && typeof val.multiline === 'boolean'
+    && typeof val.global === 'boolean';
+}
+
+function isGeneratorFn(name, val) {
+  return ctorName(name) === 'GeneratorFunction';
+}
+
+function isGeneratorObj(val) {
+  return typeof val.throw === 'function'
+    && typeof val.return === 'function'
+    && typeof val.next === 'function';
+}
+
+function isArguments(val) {
+  try {
+    if (typeof val.length === 'number' && typeof val.callee === 'function') {
+      return true;
+    }
+  } catch (err) {
+    if (err.message.indexOf('callee') !== -1) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * If you need to support Safari 5-7 (8-10 yr-old browser),
+ * take a look at https://github.com/feross/is-buffer
+ */
+
+function isBuffer(val) {
+  if (val.constructor && typeof val.constructor.isBuffer === 'function') {
+    return val.constructor.isBuffer(val);
+  }
+  return false;
+}
+
+/**
+ * Superstruct ships by default with an unopinionated set of scalar types that
+ * express all of the data types that are built-in to JavaScript.
+ */
+
+var Types = {
+  /**
+   * Matches any value other than `undefined`.
+   *
+   * ```js
+   * 'anything'
+   * true
+   * ```
+   */
+  any: function any(value) {
+    return value !== undefined;
+  },
+
+  /**
+   * Matches an `arguments` object.
+   *
+   * ```js
+   * arguments
+   * ```
+   */
+  arguments: function _arguments(value) {
+    return kindOf(value) === 'arguments';
+  },
+
+  /**
+   * Matches an `Array`.
+   *
+   * ```js
+   * [1, 2, 3]
+   * ```
+   */
+  array: function array(value) {
+    return kindOf(value) === 'array';
+  },
+
+  /**
+   * Matches a boolean.
+   *
+   * ```js
+   * true
+   * false
+   * ```
+   */
+  boolean: function boolean(value) {
+    return kindOf(value) === 'boolean';
+  },
+
+  /**
+   * Matches a Node.js `Buffer`.
+   *
+   * ```js
+   * Buffer.from('string')
+   * ```
+   */
+  buffer: function buffer(value) {
+    return kindOf(value) === 'buffer';
+  },
+
+  /**
+   * Matches a **valid** `Date` object.
+   *
+   * ```js
+   * new Date()
+   * ```
+   *
+   * Note: Invalid `Date` objects that equal `NaN` are not matched.
+   */
+  date: function date(value) {
+    return kindOf(value) === 'date' && !isNaN(value);
+  },
+
+  /**
+   * Matches an error object.
+   *
+   * ```js
+   * new Error()
+   * ```
+   */
+  error: function error(value) {
+    return kindOf(value) === 'error';
+  },
+
+  /**
+   * Matches a `Float32Array` object.
+   */
+  float32array: function float32array(value) {
+    return kindOf(value) === 'float32array';
+  },
+
+  /**
+   * Matches a `Float64Array` object.
+   */
+  float64array: function float64array(value) {
+    return kindOf(value) === 'float64array';
+  },
+
+  /**
+   * Matches a function.
+   *
+   * ```js
+   * () => {}
+   * function () {}
+   * ```
+   */
+  function: function _function(value) {
+    return kindOf(value) === 'function';
+  },
+
+  /**
+   * Matches a generator function.
+   *
+   * ```js
+   * function* () {}
+   * ```
+   */
+  generatorfunction: function generatorfunction(value) {
+    return kindOf(value) === 'generatorfunction';
+  },
+
+  /**
+   * Matches a `Int16Array` object.
+   */
+  int16array: function int16array(value) {
+    return kindOf(value) === 'int16array';
+  },
+
+  /**
+   * Matches a `Int32Array` object.
+   */
+  int32array: function int32array(value) {
+    return kindOf(value) === 'int32array';
+  },
+
+  /**
+   * Matches a `Int8Array` object.
+   */
+  int8array: function int8array(value) {
+    return kindOf(value) === 'int8array';
+  },
+
+  /**
+   * Matches a `Map` object.
+   *
+   * ```js
+   * new Map()
+   * ```
+   */
+  map: function map(value) {
+    return kindOf(value) === 'map';
+  },
+
+  /**
+   * Matches the `null` literal value.
+   *
+   * ```js
+   * null
+   * ```
+   */
+  null: function _null(value) {
+    return kindOf(value) === 'null';
+  },
+
+  /**
+   * Matches a number.
+   *
+   * ```js
+   * 42
+   * ```
+   */
+  number: function number(value) {
+    return kindOf(value) === 'number';
+  },
+
+  /**
+   * Matches a plain object.
+   *
+   * ```js
+   * { key: 'value' }
+   * { something: true }
+   * ```
+   */
+  object: function object(value) {
+    return kindOf(value) === 'object';
+  },
+
+  /**
+   * Matches a `Promise` object.
+   *
+   * ```js
+   * Promise.resolve()
+   * ```
+   */
+  promise: function promise(value) {
+    return kindOf(value) === 'promise';
+  },
+
+  /**
+   * Matches a regular expression object.
+   *
+   * ```js
+   * /a-z/g
+   * ```
+   */
+  regexp: function regexp(value) {
+    return kindOf(value) === 'regexp';
+  },
+
+  /**
+   * Matches a `Set` object.
+   *
+   * ```js
+   * new Set()
+   * ```
+   */
+  set: function set(value) {
+    return kindOf(value) === 'set';
+  },
+
+  /**
+   * Matches a string.
+   *
+   * ```js
+   * 'text'
+   * ```
+   */
+  string: function string(value) {
+    return kindOf(value) === 'string';
+  },
+
+  /**
+   * Matches a `Symbol`.
+   *
+   * ```js
+   * Symbol()
+   * ```
+   */
+  symbol: function symbol(value) {
+    return kindOf(value) === 'symbol';
+  },
+
+  /**
+   * Matches a `Uint16Array` object.
+   */
+  uint16array: function uint16array(value) {
+    return kindOf(value) === 'uint16array';
+  },
+
+  /**
+   * Matches a `Uint32Array` object.
+   */
+  uint32array: function uint32array(value) {
+    return kindOf(value) === 'uint32array';
+  },
+
+  /**
+   * Matches a `Uint8Array` object.
+   */
+  uint8array: function uint8array(value) {
+    return kindOf(value) === 'uint8array';
+  },
+
+  /**
+   * Matches a `Uint8ClampedArray` object.
+   */
+  uint8clampedarray: function uint8clampedarray(value) {
+    return kindOf(value) === 'uint8clampedarray';
+  },
+
+  /**
+   * Matches the `undefined` literal value.
+   *
+   * ```js
+   * undefined
+   * ```
+   */
+  undefined: function undefined$1(value) {
+    return kindOf(value) === 'undefined';
+  },
+
+  /**
+   * Matches a `WeakMap` object.
+   *
+   * ```js
+   * new WeakMap()
+   * ```
+   */
+  weakmap: function weakmap(value) {
+    return kindOf(value) === 'weakmap';
+  },
+
+  /**
+   * Matches a `WeakSet` object.
+   *
+   * ```js
+   * new WeakSet()
+   * ```
+   */
+  weakset: function weakset(value) {
+    return kindOf(value) === 'weakset';
+  }
+};
+var prefix = 'Invariant failed';
+function invariant(condition, message) {
+  if (condition) {
+    return;
+  }
+
+  {
+    throw new Error(prefix + ": " + (message || ''));
+  }
+}
+
+/**
+ * `StructError` objects are thrown (or returned) by Superstruct when its
+ * validation fails. The error represents the first error encountered during
+ * validation. But they also have an `error.failures` property that holds
+ * information for all of the failures encountered.
+ */
+
+var StructError = /*#__PURE__*/function (_TypeError) {
+  _inheritsLoose(StructError, _TypeError);
+
+  function StructError(failures) {
+    var _this;
+
+    invariant(failures.length > 0, "StructError requires being passed a failure, but received: " + failures);
+    var first = failures[0];
+
+    var path = first.path,
+        value = first.value,
+        type = first.type,
+        branch = first.branch,
+        rest = _objectWithoutPropertiesLoose(first, ["path", "value", "type", "branch"]);
+
+    var message = "Expected a value of type `" + type + "`" + (path.length ? " for `" + path.join('.') + "`" : '') + " but received `" + JSON.stringify(value) + "`.";
+    _this = _TypeError.call(this, message) || this;
+    _this.type = type;
+    _this.value = value;
+    Object.assign(_assertThisInitialized(_this), rest);
+    _this.path = path;
+    _this.branch = branch;
+    _this.failures = failures;
+    _this.stack = new Error().stack;
+    _this.__proto__ = StructError.prototype;
+    return _this;
+  }
+
+  return StructError;
+}( /*#__PURE__*/_wrapNativeSuper(TypeError));
+
+/**
+ * A symbol to set on `Struct` objects to test them against later.
+ */
+var STRUCT = Symbol('STRUCT');
+/**
+ * Check if a value is a `Struct` object.
+ */
+
+var isStruct = function isStruct(value) {
+  return typeof value === 'function' && value[STRUCT];
+};
+/**
+ * This abstract `Struct` factory creates a generic struct that validates values
+ * against a `Validator` function.
+ */
+
+var createStruct = function createStruct(props) {
+  var struct = props.struct;
+  var Error = struct.Error;
+
+  var Struct = function Struct(value) {
+    return Struct.assert(value);
+  }; // Set a hidden symbol property so that we can check it later to see if an
+  // object is a struct object.
+
+
+  Object.defineProperty(Struct, STRUCT, {
+    value: true
+  });
+  Struct.kind = props.kind;
+  Struct.type = props.type;
+
+  Struct.default = function () {
+    return typeof props.defaults === 'function' ? props.defaults() : props.defaults;
+  };
+
+  Struct.test = function (value) {
+    var _Struct$check = Struct.check(value, [value], []),
+        failures = _Struct$check[0];
+
+    return !failures;
+  };
+
+  Struct.assert = function (value) {
+    var _Struct$check2 = Struct.check(value, [value], []),
+        failures = _Struct$check2[0],
+        result = _Struct$check2[1];
+
+    if (failures) {
+      throw new Error(failures);
+    } else {
+      return result;
+    }
+  };
+
+  Struct.validate = function (value) {
+    var _Struct$check3 = Struct.check(value, [value], []),
+        failures = _Struct$check3[0],
+        result = _Struct$check3[1];
+
+    if (failures) {
+      return [new Error(failures)];
+    } else {
+      return [undefined, result];
+    }
+  };
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    var failures = [Struct.fail({
+      value: value,
+      branch: branch,
+      path: path
+    })];
+    return [failures];
+  };
+
+  Struct.fail = function (obj) {
+    return _objectSpread2(_objectSpread2({}, obj), {}, {
+      type: 'type' in obj ? obj.type : Struct.type
+    });
+  };
+
+  return Struct;
+};
+
+var createArray = function createArray(schema, defaults, struct) {
+  invariant(Array.isArray(schema) && schema.length === 1, "Array structs must be defined as an array with one element, but you passed: " + schema);
+  var Element = struct(schema[0], undefined);
+  var Struct = createStruct({
+    kind: 'array',
+    type: Element.type + "[]",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    if (!Array.isArray(value)) {
+      return [[Struct.fail({
+        value: value,
+        branch: branch,
+        path: path
+      })]];
+    }
+
+    var result = [];
+    var failures = [];
+
+    for (var i = 0; i < value.length; i++) {
+      var v = value[i];
+
+      var _Element$check = Element.check(v, branch.concat(v), path.concat(i)),
+          efs = _Element$check[0],
+          er = _Element$check[1];
+
+      if (efs) {
+        failures.push.apply(failures, efs);
+        continue;
+      }
+
+      result[i] = er;
+    }
+
+    return failures.length ? [failures] : [undefined, result];
+  };
+
+  return Struct;
+};
+
+var createDynamic = function createDynamic(schema, defaults, struct) {
+  invariant(typeof schema === 'function', "Dynamic structs must be defined as a function, but you passed: " + schema);
+  var Dynamic = createStruct({
+    kind: 'dynamic',
+    type: "dynamic<\u2026>",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Dynamic.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Dynamic.default();
+    }
+
+    var Struct = schema(value, branch, path);
+    return Struct.check(value, branch, path);
+  };
+
+  return Dynamic;
+};
+
+var createEnum = function createEnum(schema, defaults, struct) {
+  invariant(Array.isArray(schema), "Enum structs must be defined as an array, but you passed: " + schema);
+
+  var validator = function validator(value) {
+    return schema.includes(value);
+  };
+
+  var Struct = struct(validator, defaults);
+  Struct.kind = 'enum';
+  Struct.type = schema.map(function (s) {
+    return typeof s === 'string' ? "\"" + s + "\"" : "" + s;
+  }).join(' | ');
+  return Struct;
+};
+
+var createFunction = function createFunction(schema, defaults, struct) {
+  var Struct = createStruct({
+    kind: 'function',
+    type: "function<\u2026>",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    var result = schema(value, branch, path);
+
+    if (result === true) {
+      return [undefined, value];
+    }
+
+    var failures = [];
+
+    if (result === false) {
+      failures.push(Struct.fail({
+        value: value,
+        branch: branch,
+        path: path
+      }));
+    } else if (Array.isArray(result) && result.length > 0) {
+      for (var _iterator = _createForOfIteratorHelperLoose(result), _step; !(_step = _iterator()).done;) {
+        var r = _step.value;
+        failures.push(Struct.fail(_objectSpread2({
+          value: value,
+          branch: branch,
+          path: path
+        }, r)));
+      }
+    } else if (typeof result === 'object') {
+      failures.push(Struct.fail(_objectSpread2({
+        value: value,
+        branch: branch,
+        path: path
+      }, result)));
+    } else {
+      invariant(false, "Validator functions must return a boolean, a failure object, or an array of failure objects, but you passed: " + result);
+    }
+
+    return [failures];
+  };
+
+  return Struct;
+};
+
+var createInstance = function createInstance(schema, defaults, struct) {
+  invariant(typeof schema === 'function', "Instance structs must be defined as a function, but you passed: " + schema);
+
+  var validator = function validator(value) {
+    return value instanceof schema;
+  };
+
+  var Struct = struct(validator, defaults);
+  Struct.kind = 'instance';
+  Struct.type = "instance<" + schema.name + ">";
+  return Struct;
+};
+
+var createInterface = function createInterface(schema, defaults, struct) {
+  invariant(typeof schema === 'object', "Interface structs must be defined as an object, but you passed: " + schema);
+  var Props = {};
+
+  for (var key in schema) {
+    Props[key] = struct(schema[key]);
+  }
+
+  var Struct = createStruct({
+    kind: 'interface',
+    type: "interface<{" + Object.keys(schema).join() + "}>",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    if (typeof value !== 'object' && typeof value !== 'function') {
+      return [[Struct.fail({
+        value: value,
+        branch: branch,
+        path: path
+      })]];
+    }
+
+    var failures = [];
+
+    for (var k in Props) {
+      var Prop = Props[k];
+      var v = value[k];
+
+      var _Prop$check = Prop.check(v, branch.concat(v), path.concat(k)),
+          pfs = _Prop$check[0];
+
+      if (pfs) {
+        failures.push.apply(failures, pfs);
+      }
+    }
+
+    return failures.length ? [failures] : [undefined, value];
+  };
+
+  return Struct;
+};
+
+var createIntersection = function createIntersection(schema, defaults, struct) {
+  invariant(Array.isArray(schema) && schema.length !== 0, "Intersection structs must be defined as a non-empty array, but you passed: " + schema);
+  var Structs = schema.map(function (sch) {
+    return struct(sch);
+  });
+  var type = Structs.map(function (s) {
+    return s.type;
+  }).join(' & ');
+  var Struct = createStruct({
+    kind: 'intersection',
+    type: type,
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    var result = value;
+
+    for (var _iterator = _createForOfIteratorHelperLoose(Structs), _step; !(_step = _iterator()).done;) {
+      var _struct = _step.value;
+
+      var _struct$check = _struct.check(value, branch, path),
+          fs = _struct$check[0],
+          v = _struct$check[1];
+
+      if (fs) {
+        return [[Struct.fail({
+          value: value,
+          branch: branch,
+          path: path
+        })]];
+      } else {
+        result = v;
+      }
+    }
+
+    return [undefined, result];
+  };
+
+  return Struct;
+};
+
+var createLazy = function createLazy(schema, defaults, struct) {
+  invariant(typeof schema === 'function', "Lazy structs must be defined as a function, but you passed: " + schema);
+  var Lazy = createStruct({
+    kind: 'lazy',
+    type: "lazy<\u2026>",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Lazy.check = function () {
+    Object.assign(Lazy, schema());
+    return Lazy.check.apply(Lazy, arguments);
+  };
+
+  return Lazy;
+};
+
+var createSize = function createSize(schema, defaults, struct) {
+  invariant(Array.isArray(schema) && schema.length === 2 && schema.every(function (n) {
+    return typeof n === 'number';
+  }), "Size structs must be defined as an array with two number elements, but you passed: " + schema);
+  var min = schema[0],
+      max = schema[1];
+
+  var validator = function validator(value) {
+    return value != null && typeof value.length === 'number' && value.length >= min && value.length <= max;
+  };
+
+  var Struct = struct(validator, defaults);
+  Struct.kind = 'size';
+  Struct.type = "size<" + min + "," + max + ">";
+  return Struct;
+};
+
+var createLiteral = function createLiteral(schema, defaults, struct) {
+  var validator = function validator(value) {
+    return value === schema;
+  };
+
+  var Struct = struct(validator, defaults);
+  Struct.kind = 'literal';
+  Struct.type = typeof schema === 'string' ? "\"" + schema + "\"" : "" + schema;
+  return Struct;
+};
+
+var createObject = function createObject(schema, defaults, struct) {
+  invariant(typeof schema === 'object', "Object structs must be defined as an object, but you passed: " + schema);
+  var Props = {};
+
+  for (var key in schema) {
+    Props[key] = struct(schema[key]);
+  }
+
+  var Struct = createStruct({
+    kind: 'object',
+    type: "{" + Object.keys(schema).join() + "}",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    var d = Struct.default();
+
+    if (value === undefined) {
+      value = d;
+    }
+
+    if (kindOf(value) !== 'object') {
+      return [[Struct.fail({
+        value: value,
+        branch: branch,
+        path: path
+      })]];
+    }
+
+    var result = {};
+    var failures = [];
+    var keys = new Set(Object.keys(Props).concat(Object.keys(value)));
+
+    for (var _iterator = _createForOfIteratorHelperLoose(keys), _step; !(_step = _iterator()).done;) {
+      var k = _step.value;
+      var v = value[k];
+      var p = path.concat(k);
+      var b = branch.concat(v);
+      var Prop = Props[k];
+
+      if (v === undefined && d != null && k in d) {
+        v = typeof d[k] === 'function' ? d[k](value, branch, path) : d[k];
+      }
+
+      if (!(k in Props)) {
+        failures.push(Struct.fail({
+          type: undefined,
+          value: v,
+          path: p,
+          branch: value
+        }));
+        continue;
+      }
+
+      var _Prop$check = Prop.check(v, b, p),
+          pfs = _Prop$check[0],
+          pr = _Prop$check[1];
+
+      if (pfs) {
+        failures.push.apply(failures, pfs);
+      } else if (pr !== undefined && k in Props) {
+        result[k] = pr;
+      }
+    }
+
+    return failures.length ? [failures] : [undefined, result];
+  };
+
+  return Struct;
+};
+
+var createPartial = function createPartial(schema, defaults, struct) {
+  invariant(typeof schema === 'object', "Partial structs must be defined as an object, but you passed: " + schema);
+  var Props = {};
+
+  for (var key in schema) {
+    Props[key] = struct.union([schema[key], 'undefined']);
+  }
+
+  var Struct = createStruct({
+    kind: 'object',
+    type: "{" + Object.keys(schema).join() + "}",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    var d = Struct.default();
+
+    if (value === undefined) {
+      value = d;
+    }
+
+    if (kindOf(value) !== 'object') {
+      return [[Struct.fail({
+        value: value,
+        branch: branch,
+        path: path
+      })]];
+    }
+
+    var result = {};
+    var failures = [];
+
+    for (var _iterator = _createForOfIteratorHelperLoose(value), _step; !(_step = _iterator()).done;) {
+      var k = _step.value;
+      var v = value[k];
+      var p = path.concat(k);
+      var b = branch.concat(v);
+      var Prop = Props[k];
+
+      if (v === undefined && d != null && k in d) {
+        v = typeof d[k] === 'function' ? d[k](value, branch, path) : d[k];
+      }
+
+      if (!(k in Props)) {
+        failures.push(Struct.fail({
+          type: undefined,
+          value: v,
+          path: p,
+          branch: value
+        }));
+        continue;
+      }
+
+      var _Prop$check = Prop.check(v, b, p),
+          pfs = _Prop$check[0],
+          pr = _Prop$check[1];
+
+      if (pfs) {
+        failures.push.apply(failures, pfs);
+      } else if (pr !== undefined && k in Props) {
+        result[k] = pr;
+      }
+    }
+
+    return failures.length ? [failures] : [undefined, result];
+  };
+
+  return Struct;
+};
+
+var createPick = function createPick(schema, defaults, struct) {
+  invariant(typeof schema === 'object', "Pick structs must be defined as an object, but you passed: " + schema);
+  var Props = {};
+
+  for (var key in schema) {
+    Props[key] = struct(schema[key]);
+  }
+
+  var Struct = createStruct({
+    kind: 'pick',
+    type: "pick<{" + Object.keys(schema).join() + "}>",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    var d = Struct.default();
+
+    if (value === undefined) {
+      value = d;
+    }
+
+    if (kindOf(value) !== 'object') {
+      return [[Struct.fail({
+        value: value,
+        branch: branch,
+        path: path
+      })]];
+    }
+
+    var result = {};
+    var failures = [];
+
+    for (var k in Props) {
+      var v = value[k];
+      var p = path.concat(k);
+      var b = branch.concat(v);
+      var Prop = Props[k];
+
+      if (v === undefined && d != null && k in d) {
+        v = typeof d[k] === 'function' ? d[k](value, branch, path) : d[k];
+      }
+
+      var _Prop$check = Prop.check(v, b, p),
+          pfs = _Prop$check[0],
+          pr = _Prop$check[1];
+
+      if (pfs) {
+        failures.push.apply(failures, pfs);
+      } else if (pr !== undefined && k in Props) {
+        result[k] = pr;
+      }
+    }
+
+    return failures.length ? [failures] : [undefined, result];
+  };
+
+  return Struct;
+};
+
+var createRecord = function createRecord(schema, defaults, struct) {
+  invariant(Array.isArray(schema) && schema.length === 2, "Record structs must be defined as an array with two elements, but you passed: " + schema);
+  var Key = struct(schema[0]);
+  var Value = struct(schema[1]);
+  var Struct = createStruct({
+    kind: 'record',
+    type: "record<" + Key.type + "," + Value.type + ">",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    // Record structs have a special default handling behavior, where the defaults
+    // are for the entries themselves, not for the entire value. So we can't use
+    // JavaScript's built-in default handling here.
+    var defs = Struct.default();
+    value = defs ? _objectSpread2(_objectSpread2({}, defs), value) : value;
+
+    if (kindOf(value) !== 'object') {
+      return [[Struct.fail({
+        value: value,
+        branch: branch,
+        path: path
+      })]];
+    }
+
+    var result = {};
+    var failures = [];
+
+    for (var k in value) {
+      var v = value[k];
+      var p = path.concat(k);
+      var b = branch.concat(v);
+
+      var _Key$check = Key.check(k, b, p),
+          kfs = _Key$check[0],
+          kr = _Key$check[1];
+
+      if (kfs) {
+        failures.push.apply(failures, kfs);
+      } else {
+        var _Value$check = Value.check(v, b, p),
+            vfs = _Value$check[0],
+            vr = _Value$check[1];
+
+        if (vfs) {
+          failures.push.apply(failures, vfs);
+        } else {
+          result[kr] = vr;
+        }
+      }
+    }
+
+    return failures.length ? [failures] : [undefined, result];
+  };
+
+  return Struct;
+};
+
+var createScalar = function createScalar(schema, defaults, struct) {
+  invariant(typeof schema === 'string', "Scalar structs must be defined as a string, but you passed: " + schema);
+  var Types = struct.Types;
+  invariant(schema in Types, "No struct validator function found for type \"" + schema + "\".");
+  var Struct = struct(Types[schema], defaults);
+  Struct.kind = 'scalar';
+  Struct.type = schema;
+  return Struct;
+};
+
+var createShorthand = function createShorthand(schema, defaults, struct) {
+  if (isStruct(schema)) {
+    return schema;
+  }
+
+  if (Array.isArray(schema)) {
+    if (schema.length === 1) {
+      var _schema = schema,
+          first = _schema[0];
+      return struct.array([first], defaults);
+    } else if (schema.length > 1) {
+      return struct.tuple(schema, defaults);
+    }
+  }
+
+  if (typeof schema === 'function') {
+    return struct.function(schema, defaults);
+  }
+
+  if (typeof schema === 'object') {
+    return struct.object(schema, defaults);
+  }
+
+  if (typeof schema === 'string') {
+    var optional = false;
+    var Struct;
+
+    if (schema.endsWith('?')) {
+      optional = true;
+      schema = schema.slice(0, -1);
+    }
+
+    if (schema.includes('|')) {
+      var scalars = schema.split(/\s*\|\s*/g);
+      Struct = struct.union(scalars, defaults);
+    } else if (schema.includes('&')) {
+      var _scalars = schema.split(/\s*&\s*/g);
+
+      Struct = struct.intersection(_scalars, defaults);
+    } else {
+      Struct = struct.scalar(schema, defaults);
+    }
+
+    if (optional) {
+      Struct = struct.union([Struct, 'undefined'], undefined);
+    }
+
+    return Struct;
+  }
+
+  throw new Error("A schema definition must be an object, array, string or function, but you passed: " + schema);
+};
+
+var createTuple = function createTuple(schema, defaults, struct) {
+  invariant(Array.isArray(schema), "Tuple structs must be defined as an array, but you passed: " + schema);
+  var Elements = schema.map(function (s) {
+    return struct(s);
+  });
+  var Struct = createStruct({
+    kind: 'tuple',
+    type: "[" + Elements.map(function (S) {
+      return S.type;
+    }).join() + "]",
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    if (!Array.isArray(value)) {
+      return [[Struct.fail({
+        value: value,
+        branch: branch,
+        path: path
+      })]];
+    }
+
+    var result = [];
+    var failures = [];
+    var length = Math.max(value.length, Elements.length);
+
+    for (var i = 0; i < length; i++) {
+      var Element = Elements[i];
+      var v = value[i];
+      var p = path.concat(i);
+      var b = branch.concat(v);
+
+      if (!Element) {
+        failures.push(Struct.fail({
+          type: undefined,
+          value: v,
+          path: p,
+          branch: b
+        }));
+      } else {
+        var _Element$check = Element.check(v, b, p),
+            efs = _Element$check[0],
+            er = _Element$check[1];
+
+        if (efs) {
+          failures.push.apply(failures, efs);
+        } else {
+          result[i] = er;
+        }
+      }
+    }
+
+    return failures.length ? [failures] : [undefined, result];
+  };
+
+  return Struct;
+};
+
+var createUnion = function createUnion(schema, defaults, struct) {
+  invariant(Array.isArray(schema) && schema.length !== 0, "Union structs must be defined as a non-empty array, but you passed: " + schema);
+  var Structs = schema.map(function (sch) {
+    return struct(sch);
+  });
+  var type = Structs.map(function (s) {
+    return s.type;
+  }).join(' | ');
+  var Struct = createStruct({
+    kind: 'union',
+    type: type,
+    defaults: defaults,
+    struct: struct
+  });
+
+  Struct.check = function (value, branch, path) {
+    if (value === void 0) {
+      value = Struct.default();
+    }
+
+    for (var _iterator = _createForOfIteratorHelperLoose(Structs), _step; !(_step = _iterator()).done;) {
+      var _struct = _step.value;
+
+      var _struct$check = _struct.check(value, branch, path),
+          fs = _struct$check[0],
+          v = _struct$check[1];
+
+      if (!fs) {
+        return [undefined, v];
+      }
+    }
+
+    return [[Struct.fail({
+      value: value,
+      branch: branch,
+      path: path
+    })]];
+  };
+
+  return Struct;
+};
+
+/**
+ * Create a struct singleton with settings that include your own domain-specific
+ * data `types`, and an optional custom `Error` class.
+ */
+
+var superstruct = function superstruct(settings) {
+  if (settings === void 0) {
+    settings = {};
+  }
+
+  var struct = function struct(schema, defaults) {
+    return createShorthand(schema, defaults, struct);
+  };
+
+  struct.array = function (schema, defaults) {
+    return createArray(schema, defaults, struct);
+  };
+
+  struct.dynamic = function (schema, defaults) {
+    return createDynamic(schema, defaults, struct);
+  };
+
+  struct.enum = function (schema, defaults) {
+    return createEnum(schema, defaults, struct);
+  };
+
+  struct.function = function (schema, defaults) {
+    return createFunction(schema, defaults, struct);
+  };
+
+  struct.instance = function (schema, defaults) {
+    return createInstance(schema, defaults, struct);
+  };
+
+  struct.interface = function (schema, defaults) {
+    return createInterface(schema, defaults, struct);
+  };
+
+  struct.intersection = function (schema, defaults) {
+    return createIntersection(schema, defaults, struct);
+  };
+
+  struct.lazy = function (schema, defaults) {
+    return createLazy(schema, defaults, struct);
+  };
+
+  struct.literal = function (schema, defaults) {
+    return createLiteral(schema, defaults, struct);
+  };
+
+  struct.object = function (schema, defaults) {
+    return createObject(schema, defaults, struct);
+  };
+
+  struct.optional = function (schema, defaults) {
+    return createUnion([schema, 'undefined'], defaults, struct);
+  };
+
+  struct.partial = function (schema, defaults) {
+    return createPartial(schema, defaults, struct);
+  };
+
+  struct.pick = function (schema, defaults) {
+    return createPick(schema, defaults, struct);
+  };
+
+  struct.record = function (schema, defaults) {
+    return createRecord(schema, defaults, struct);
+  };
+
+  struct.scalar = function (schema, defaults) {
+    return createScalar(schema, defaults, struct);
+  };
+
+  struct.size = function (schema, defaults) {
+    return createSize(schema, defaults, struct);
+  };
+
+  struct.tuple = function (schema, defaults) {
+    return createTuple(schema, defaults, struct);
+  };
+
+  struct.union = function (schema, defaults) {
+    return createUnion(schema, defaults, struct);
+  };
+
+  struct.Error = settings.error || StructError;
+  struct.Types = _objectSpread2(_objectSpread2({}, Types), settings.types);
+  return struct;
+};
+
+/**
+ * The singleton instance of Superstruct that is exported by default, configured
+ * with types for all of the JavaScript built-in data types.
+ *
+ * You can use it if you don't need any custom types. However, if you do want to
+ * define custom types, use the [[superstruct]] factory to configure your own
+ * [[Superstruct]] instance.
+ */
+
+var struct = superstruct();
+
+const { Transform: Transform$1 } = Stream__default['default'];
+
+var keccak$2 = (KeccakState) => class Keccak extends Transform$1 {
+  constructor (rate, capacity, delimitedSuffix, hashBitLength, options) {
+    super(options);
+
+    this._rate = rate;
+    this._capacity = capacity;
+    this._delimitedSuffix = delimitedSuffix;
+    this._hashBitLength = hashBitLength;
+    this._options = options;
+
+    this._state = new KeccakState();
+    this._state.initialize(rate, capacity);
+    this._finalized = false;
+  }
+
+  _transform (chunk, encoding, callback) {
+    let error = null;
+    try {
+      this.update(chunk, encoding);
+    } catch (err) {
+      error = err;
+    }
+
+    callback(error);
+  }
+
+  _flush (callback) {
+    let error = null;
+    try {
+      this.push(this.digest());
+    } catch (err) {
+      error = err;
+    }
+
+    callback(error);
+  }
+
+  update (data, encoding) {
+    if (!Buffer.isBuffer(data) && typeof data !== 'string') throw new TypeError('Data must be a string or a buffer')
+    if (this._finalized) throw new Error('Digest already called')
+    if (!Buffer.isBuffer(data)) data = Buffer.from(data, encoding);
+
+    this._state.absorb(data);
+
+    return this
+  }
+
+  digest (encoding) {
+    if (this._finalized) throw new Error('Digest already called')
+    this._finalized = true;
+
+    if (this._delimitedSuffix) this._state.absorbLastFewBits(this._delimitedSuffix);
+    let digest = this._state.squeeze(this._hashBitLength / 8);
+    if (encoding !== undefined) digest = digest.toString(encoding);
+
+    this._resetState();
+
+    return digest
+  }
+
+  // remove result from memory
+  _resetState () {
+    this._state.initialize(this._rate, this._capacity);
+    return this
+  }
+
+  // because sometimes we need hash right now and little later
+  _clone () {
+    const clone = new Keccak(this._rate, this._capacity, this._delimitedSuffix, this._hashBitLength, this._options);
+    this._state.copy(clone._state);
+    clone._finalized = this._finalized;
+
+    return clone
+  }
+};
+
+const { Transform } = Stream__default['default'];
+
+var shake = (KeccakState) => class Shake extends Transform {
+  constructor (rate, capacity, delimitedSuffix, options) {
+    super(options);
+
+    this._rate = rate;
+    this._capacity = capacity;
+    this._delimitedSuffix = delimitedSuffix;
+    this._options = options;
+
+    this._state = new KeccakState();
+    this._state.initialize(rate, capacity);
+    this._finalized = false;
+  }
+
+  _transform (chunk, encoding, callback) {
+    let error = null;
+    try {
+      this.update(chunk, encoding);
+    } catch (err) {
+      error = err;
+    }
+
+    callback(error);
+  }
+
+  _flush () {}
+
+  _read (size) {
+    this.push(this.squeeze(size));
+  }
+
+  update (data, encoding) {
+    if (!Buffer.isBuffer(data) && typeof data !== 'string') throw new TypeError('Data must be a string or a buffer')
+    if (this._finalized) throw new Error('Squeeze already called')
+    if (!Buffer.isBuffer(data)) data = Buffer.from(data, encoding);
+
+    this._state.absorb(data);
+
+    return this
+  }
+
+  squeeze (dataByteLength, encoding) {
+    if (!this._finalized) {
+      this._finalized = true;
+      this._state.absorbLastFewBits(this._delimitedSuffix);
+    }
+
+    let data = this._state.squeeze(dataByteLength);
+    if (encoding !== undefined) data = data.toString(encoding);
+
+    return data
+  }
+
+  _resetState () {
+    this._state.initialize(this._rate, this._capacity);
+    return this
+  }
+
+  _clone () {
+    const clone = new Shake(this._rate, this._capacity, this._delimitedSuffix, this._options);
+    this._state.copy(clone._state);
+    clone._finalized = this._finalized;
+
+    return clone
+  }
+};
+
+var api = function (KeccakState) {
+  const Keccak = keccak$2(KeccakState);
+  const Shake = shake(KeccakState);
+
+  return function (algorithm, options) {
+    const hash = typeof algorithm === 'string' ? algorithm.toLowerCase() : algorithm;
+    switch (hash) {
+      case 'keccak224': return new Keccak(1152, 448, null, 224, options)
+      case 'keccak256': return new Keccak(1088, 512, null, 256, options)
+      case 'keccak384': return new Keccak(832, 768, null, 384, options)
+      case 'keccak512': return new Keccak(576, 1024, null, 512, options)
+
+      case 'sha3-224': return new Keccak(1152, 448, 0x06, 224, options)
+      case 'sha3-256': return new Keccak(1088, 512, 0x06, 256, options)
+      case 'sha3-384': return new Keccak(832, 768, 0x06, 384, options)
+      case 'sha3-512': return new Keccak(576, 1024, 0x06, 512, options)
+
+      case 'shake128': return new Shake(1344, 256, 0x1f, options)
+      case 'shake256': return new Shake(1088, 512, 0x1f, options)
+
+      default: throw new Error('Invald algorithm: ' + algorithm)
+    }
+  }
+};
+
+var bindings = api(nodeGypBuild(__dirname));
+
+const P1600_ROUND_CONSTANTS = [1, 0, 32898, 0, 32906, 2147483648, 2147516416, 2147483648, 32907, 0, 2147483649, 0, 2147516545, 2147483648, 32777, 2147483648, 138, 0, 136, 0, 2147516425, 0, 2147483658, 0, 2147516555, 0, 139, 2147483648, 32905, 2147483648, 32771, 2147483648, 32770, 2147483648, 128, 2147483648, 32778, 0, 2147483658, 2147483648, 2147516545, 2147483648, 32896, 2147483648, 2147483649, 0, 2147516424, 2147483648];
+
+var p1600 = function (s) {
+  for (let round = 0; round < 24; ++round) {
+    // theta
+    const lo0 = s[0] ^ s[10] ^ s[20] ^ s[30] ^ s[40];
+    const hi0 = s[1] ^ s[11] ^ s[21] ^ s[31] ^ s[41];
+    const lo1 = s[2] ^ s[12] ^ s[22] ^ s[32] ^ s[42];
+    const hi1 = s[3] ^ s[13] ^ s[23] ^ s[33] ^ s[43];
+    const lo2 = s[4] ^ s[14] ^ s[24] ^ s[34] ^ s[44];
+    const hi2 = s[5] ^ s[15] ^ s[25] ^ s[35] ^ s[45];
+    const lo3 = s[6] ^ s[16] ^ s[26] ^ s[36] ^ s[46];
+    const hi3 = s[7] ^ s[17] ^ s[27] ^ s[37] ^ s[47];
+    const lo4 = s[8] ^ s[18] ^ s[28] ^ s[38] ^ s[48];
+    const hi4 = s[9] ^ s[19] ^ s[29] ^ s[39] ^ s[49];
+
+    let lo = lo4 ^ (lo1 << 1 | hi1 >>> 31);
+    let hi = hi4 ^ (hi1 << 1 | lo1 >>> 31);
+    const t1slo0 = s[0] ^ lo;
+    const t1shi0 = s[1] ^ hi;
+    const t1slo5 = s[10] ^ lo;
+    const t1shi5 = s[11] ^ hi;
+    const t1slo10 = s[20] ^ lo;
+    const t1shi10 = s[21] ^ hi;
+    const t1slo15 = s[30] ^ lo;
+    const t1shi15 = s[31] ^ hi;
+    const t1slo20 = s[40] ^ lo;
+    const t1shi20 = s[41] ^ hi;
+    lo = lo0 ^ (lo2 << 1 | hi2 >>> 31);
+    hi = hi0 ^ (hi2 << 1 | lo2 >>> 31);
+    const t1slo1 = s[2] ^ lo;
+    const t1shi1 = s[3] ^ hi;
+    const t1slo6 = s[12] ^ lo;
+    const t1shi6 = s[13] ^ hi;
+    const t1slo11 = s[22] ^ lo;
+    const t1shi11 = s[23] ^ hi;
+    const t1slo16 = s[32] ^ lo;
+    const t1shi16 = s[33] ^ hi;
+    const t1slo21 = s[42] ^ lo;
+    const t1shi21 = s[43] ^ hi;
+    lo = lo1 ^ (lo3 << 1 | hi3 >>> 31);
+    hi = hi1 ^ (hi3 << 1 | lo3 >>> 31);
+    const t1slo2 = s[4] ^ lo;
+    const t1shi2 = s[5] ^ hi;
+    const t1slo7 = s[14] ^ lo;
+    const t1shi7 = s[15] ^ hi;
+    const t1slo12 = s[24] ^ lo;
+    const t1shi12 = s[25] ^ hi;
+    const t1slo17 = s[34] ^ lo;
+    const t1shi17 = s[35] ^ hi;
+    const t1slo22 = s[44] ^ lo;
+    const t1shi22 = s[45] ^ hi;
+    lo = lo2 ^ (lo4 << 1 | hi4 >>> 31);
+    hi = hi2 ^ (hi4 << 1 | lo4 >>> 31);
+    const t1slo3 = s[6] ^ lo;
+    const t1shi3 = s[7] ^ hi;
+    const t1slo8 = s[16] ^ lo;
+    const t1shi8 = s[17] ^ hi;
+    const t1slo13 = s[26] ^ lo;
+    const t1shi13 = s[27] ^ hi;
+    const t1slo18 = s[36] ^ lo;
+    const t1shi18 = s[37] ^ hi;
+    const t1slo23 = s[46] ^ lo;
+    const t1shi23 = s[47] ^ hi;
+    lo = lo3 ^ (lo0 << 1 | hi0 >>> 31);
+    hi = hi3 ^ (hi0 << 1 | lo0 >>> 31);
+    const t1slo4 = s[8] ^ lo;
+    const t1shi4 = s[9] ^ hi;
+    const t1slo9 = s[18] ^ lo;
+    const t1shi9 = s[19] ^ hi;
+    const t1slo14 = s[28] ^ lo;
+    const t1shi14 = s[29] ^ hi;
+    const t1slo19 = s[38] ^ lo;
+    const t1shi19 = s[39] ^ hi;
+    const t1slo24 = s[48] ^ lo;
+    const t1shi24 = s[49] ^ hi;
+
+    // rho & pi
+    const t2slo0 = t1slo0;
+    const t2shi0 = t1shi0;
+    const t2slo16 = (t1shi5 << 4 | t1slo5 >>> 28);
+    const t2shi16 = (t1slo5 << 4 | t1shi5 >>> 28);
+    const t2slo7 = (t1slo10 << 3 | t1shi10 >>> 29);
+    const t2shi7 = (t1shi10 << 3 | t1slo10 >>> 29);
+    const t2slo23 = (t1shi15 << 9 | t1slo15 >>> 23);
+    const t2shi23 = (t1slo15 << 9 | t1shi15 >>> 23);
+    const t2slo14 = (t1slo20 << 18 | t1shi20 >>> 14);
+    const t2shi14 = (t1shi20 << 18 | t1slo20 >>> 14);
+    const t2slo10 = (t1slo1 << 1 | t1shi1 >>> 31);
+    const t2shi10 = (t1shi1 << 1 | t1slo1 >>> 31);
+    const t2slo1 = (t1shi6 << 12 | t1slo6 >>> 20);
+    const t2shi1 = (t1slo6 << 12 | t1shi6 >>> 20);
+    const t2slo17 = (t1slo11 << 10 | t1shi11 >>> 22);
+    const t2shi17 = (t1shi11 << 10 | t1slo11 >>> 22);
+    const t2slo8 = (t1shi16 << 13 | t1slo16 >>> 19);
+    const t2shi8 = (t1slo16 << 13 | t1shi16 >>> 19);
+    const t2slo24 = (t1slo21 << 2 | t1shi21 >>> 30);
+    const t2shi24 = (t1shi21 << 2 | t1slo21 >>> 30);
+    const t2slo20 = (t1shi2 << 30 | t1slo2 >>> 2);
+    const t2shi20 = (t1slo2 << 30 | t1shi2 >>> 2);
+    const t2slo11 = (t1slo7 << 6 | t1shi7 >>> 26);
+    const t2shi11 = (t1shi7 << 6 | t1slo7 >>> 26);
+    const t2slo2 = (t1shi12 << 11 | t1slo12 >>> 21);
+    const t2shi2 = (t1slo12 << 11 | t1shi12 >>> 21);
+    const t2slo18 = (t1slo17 << 15 | t1shi17 >>> 17);
+    const t2shi18 = (t1shi17 << 15 | t1slo17 >>> 17);
+    const t2slo9 = (t1shi22 << 29 | t1slo22 >>> 3);
+    const t2shi9 = (t1slo22 << 29 | t1shi22 >>> 3);
+    const t2slo5 = (t1slo3 << 28 | t1shi3 >>> 4);
+    const t2shi5 = (t1shi3 << 28 | t1slo3 >>> 4);
+    const t2slo21 = (t1shi8 << 23 | t1slo8 >>> 9);
+    const t2shi21 = (t1slo8 << 23 | t1shi8 >>> 9);
+    const t2slo12 = (t1slo13 << 25 | t1shi13 >>> 7);
+    const t2shi12 = (t1shi13 << 25 | t1slo13 >>> 7);
+    const t2slo3 = (t1slo18 << 21 | t1shi18 >>> 11);
+    const t2shi3 = (t1shi18 << 21 | t1slo18 >>> 11);
+    const t2slo19 = (t1shi23 << 24 | t1slo23 >>> 8);
+    const t2shi19 = (t1slo23 << 24 | t1shi23 >>> 8);
+    const t2slo15 = (t1slo4 << 27 | t1shi4 >>> 5);
+    const t2shi15 = (t1shi4 << 27 | t1slo4 >>> 5);
+    const t2slo6 = (t1slo9 << 20 | t1shi9 >>> 12);
+    const t2shi6 = (t1shi9 << 20 | t1slo9 >>> 12);
+    const t2slo22 = (t1shi14 << 7 | t1slo14 >>> 25);
+    const t2shi22 = (t1slo14 << 7 | t1shi14 >>> 25);
+    const t2slo13 = (t1slo19 << 8 | t1shi19 >>> 24);
+    const t2shi13 = (t1shi19 << 8 | t1slo19 >>> 24);
+    const t2slo4 = (t1slo24 << 14 | t1shi24 >>> 18);
+    const t2shi4 = (t1shi24 << 14 | t1slo24 >>> 18);
+
+    // chi
+    s[0] = t2slo0 ^ (~t2slo1 & t2slo2);
+    s[1] = t2shi0 ^ (~t2shi1 & t2shi2);
+    s[10] = t2slo5 ^ (~t2slo6 & t2slo7);
+    s[11] = t2shi5 ^ (~t2shi6 & t2shi7);
+    s[20] = t2slo10 ^ (~t2slo11 & t2slo12);
+    s[21] = t2shi10 ^ (~t2shi11 & t2shi12);
+    s[30] = t2slo15 ^ (~t2slo16 & t2slo17);
+    s[31] = t2shi15 ^ (~t2shi16 & t2shi17);
+    s[40] = t2slo20 ^ (~t2slo21 & t2slo22);
+    s[41] = t2shi20 ^ (~t2shi21 & t2shi22);
+    s[2] = t2slo1 ^ (~t2slo2 & t2slo3);
+    s[3] = t2shi1 ^ (~t2shi2 & t2shi3);
+    s[12] = t2slo6 ^ (~t2slo7 & t2slo8);
+    s[13] = t2shi6 ^ (~t2shi7 & t2shi8);
+    s[22] = t2slo11 ^ (~t2slo12 & t2slo13);
+    s[23] = t2shi11 ^ (~t2shi12 & t2shi13);
+    s[32] = t2slo16 ^ (~t2slo17 & t2slo18);
+    s[33] = t2shi16 ^ (~t2shi17 & t2shi18);
+    s[42] = t2slo21 ^ (~t2slo22 & t2slo23);
+    s[43] = t2shi21 ^ (~t2shi22 & t2shi23);
+    s[4] = t2slo2 ^ (~t2slo3 & t2slo4);
+    s[5] = t2shi2 ^ (~t2shi3 & t2shi4);
+    s[14] = t2slo7 ^ (~t2slo8 & t2slo9);
+    s[15] = t2shi7 ^ (~t2shi8 & t2shi9);
+    s[24] = t2slo12 ^ (~t2slo13 & t2slo14);
+    s[25] = t2shi12 ^ (~t2shi13 & t2shi14);
+    s[34] = t2slo17 ^ (~t2slo18 & t2slo19);
+    s[35] = t2shi17 ^ (~t2shi18 & t2shi19);
+    s[44] = t2slo22 ^ (~t2slo23 & t2slo24);
+    s[45] = t2shi22 ^ (~t2shi23 & t2shi24);
+    s[6] = t2slo3 ^ (~t2slo4 & t2slo0);
+    s[7] = t2shi3 ^ (~t2shi4 & t2shi0);
+    s[16] = t2slo8 ^ (~t2slo9 & t2slo5);
+    s[17] = t2shi8 ^ (~t2shi9 & t2shi5);
+    s[26] = t2slo13 ^ (~t2slo14 & t2slo10);
+    s[27] = t2shi13 ^ (~t2shi14 & t2shi10);
+    s[36] = t2slo18 ^ (~t2slo19 & t2slo15);
+    s[37] = t2shi18 ^ (~t2shi19 & t2shi15);
+    s[46] = t2slo23 ^ (~t2slo24 & t2slo20);
+    s[47] = t2shi23 ^ (~t2shi24 & t2shi20);
+    s[8] = t2slo4 ^ (~t2slo0 & t2slo1);
+    s[9] = t2shi4 ^ (~t2shi0 & t2shi1);
+    s[18] = t2slo9 ^ (~t2slo5 & t2slo6);
+    s[19] = t2shi9 ^ (~t2shi5 & t2shi6);
+    s[28] = t2slo14 ^ (~t2slo10 & t2slo11);
+    s[29] = t2shi14 ^ (~t2shi10 & t2shi11);
+    s[38] = t2slo19 ^ (~t2slo15 & t2slo16);
+    s[39] = t2shi19 ^ (~t2shi15 & t2shi16);
+    s[48] = t2slo24 ^ (~t2slo20 & t2slo21);
+    s[49] = t2shi24 ^ (~t2shi20 & t2shi21);
+
+    // iota
+    s[0] ^= P1600_ROUND_CONSTANTS[round * 2];
+    s[1] ^= P1600_ROUND_CONSTANTS[round * 2 + 1];
+  }
+};
+
+var keccakStateUnroll = {
+	p1600: p1600
+};
+
+function Keccak () {
+  // much faster than `new Array(50)`
+  this.state = [
+    0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0
+  ];
+
+  this.blockSize = null;
+  this.count = 0;
+  this.squeezing = false;
+}
+
+Keccak.prototype.initialize = function (rate, capacity) {
+  for (let i = 0; i < 50; ++i) this.state[i] = 0;
+  this.blockSize = rate / 8;
+  this.count = 0;
+  this.squeezing = false;
+};
+
+Keccak.prototype.absorb = function (data) {
+  for (let i = 0; i < data.length; ++i) {
+    this.state[~~(this.count / 4)] ^= data[i] << (8 * (this.count % 4));
+    this.count += 1;
+    if (this.count === this.blockSize) {
+      keccakStateUnroll.p1600(this.state);
+      this.count = 0;
+    }
+  }
+};
+
+Keccak.prototype.absorbLastFewBits = function (bits) {
+  this.state[~~(this.count / 4)] ^= bits << (8 * (this.count % 4));
+  if ((bits & 0x80) !== 0 && this.count === (this.blockSize - 1)) keccakStateUnroll.p1600(this.state);
+  this.state[~~((this.blockSize - 1) / 4)] ^= 0x80 << (8 * ((this.blockSize - 1) % 4));
+  keccakStateUnroll.p1600(this.state);
+  this.count = 0;
+  this.squeezing = true;
+};
+
+Keccak.prototype.squeeze = function (length) {
+  if (!this.squeezing) this.absorbLastFewBits(0x01);
+
+  const output = Buffer.alloc(length);
+  for (let i = 0; i < length; ++i) {
+    output[i] = (this.state[~~(this.count / 4)] >>> (8 * (this.count % 4))) & 0xff;
+    this.count += 1;
+    if (this.count === this.blockSize) {
+      keccakStateUnroll.p1600(this.state);
+      this.count = 0;
+    }
+  }
+
+  return output
+};
+
+Keccak.prototype.copy = function (dest) {
+  for (let i = 0; i < 50; ++i) dest.state[i] = this.state[i];
+  dest.blockSize = this.blockSize;
+  dest.count = this.count;
+  dest.squeezing = this.squeezing;
+};
+
+var keccak$1 = Keccak;
+
+var js = api(keccak$1);
+
+var keccak = createCommonjsModule(function (module) {
+try {
+  module.exports = bindings;
+} catch (err) {
+  module.exports = js;
+}
+});
+
+var toBuffer = function toBuffer(arr) {
+  if (arr instanceof Buffer) {
+    return arr;
+  } else if (arr instanceof Uint8Array) {
+    return Buffer.from(arr.buffer, arr.byteOffset, arr.byteLength);
+  } else {
+    return Buffer.from(arr);
+  }
+};
+
+var naclLowLevel = naclFast.lowlevel;
+// This type exists to workaround an esdoc parse error
+
+/**
+ * Maximum length of derived pubkey seed
+ */
+var MAX_SEED_LENGTH = 32;
+/**
+ * A public key
+ */
+
+var PublicKey = /*#__PURE__*/function () {
+  /**
+   * Create a new PublicKey object
+   */
+  function PublicKey(value) {
+    _classCallCheck__default['default'](this, PublicKey);
+
+    _defineProperty__default['default'](this, "_bn", void 0);
+
+    if (typeof value === 'string') {
+      // assume base 58 encoding by default
+      var decoded = bs58.decode(value);
+
+      if (decoded.length != 32) {
+        throw new Error("Invalid public key input");
+      }
+
+      this._bn = new bn$1(decoded);
+    } else {
+      this._bn = new bn$1(value);
+    }
+
+    if (this._bn.byteLength() > 32) {
+      throw new Error("Invalid public key input");
+    }
+  }
+  /**
+   * Checks if two publicKeys are equal
+   */
+
+
+  _createClass__default['default'](PublicKey, [{
+    key: "equals",
+    value: function equals(publicKey) {
+      return this._bn.eq(publicKey._bn);
+    }
+    /**
+     * Return the base-58 representation of the public key
+     */
+
+  }, {
+    key: "toBase58",
+    value: function toBase58() {
+      return bs58.encode(this.toBuffer());
+    }
+    /**
+     * Return the Buffer representation of the public key
+     */
+
+  }, {
+    key: "toBuffer",
+    value: function toBuffer() {
+      var b = this._bn.toArrayLike(Buffer);
+
+      if (b.length === 32) {
+        return b;
+      }
+
+      var zeroPad = Buffer.alloc(32);
+      b.copy(zeroPad, 32 - b.length);
+      return zeroPad;
+    }
+    /**
+     * Returns a string representation of the public key
+     */
+
+  }, {
+    key: "toString",
+    value: function toString() {
+      return this.toBase58();
+    }
+    /**
+     * Derive a public key from another key, a seed, and a program ID.
+     */
+
+  }], [{
+    key: "createWithSeed",
+    value: function () {
+      var _createWithSeed = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee(fromPublicKey, seed, programId) {
+        var buffer, hash;
+        return _regeneratorRuntime__default['default'].wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                buffer = Buffer.concat([fromPublicKey.toBuffer(), Buffer.from(seed), programId.toBuffer()]);
+                _context.next = 3;
+                return cryptoHash.sha256(new Uint8Array(buffer));
+
+              case 3:
+                hash = _context.sent;
+                return _context.abrupt("return", new PublicKey(Buffer.from(hash, 'hex')));
+
+              case 5:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      function createWithSeed(_x, _x2, _x3) {
+        return _createWithSeed.apply(this, arguments);
+      }
+
+      return createWithSeed;
+    }()
+    /**
+     * Derive a program address from seeds and a program ID.
+     */
+
+  }, {
+    key: "createProgramAddress",
+    value: function () {
+      var _createProgramAddress = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee2(seeds, programId) {
+        var buffer, hash, publicKeyBytes;
+        return _regeneratorRuntime__default['default'].wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                buffer = Buffer.alloc(0);
+                seeds.forEach(function (seed) {
+                  if (seed.length > MAX_SEED_LENGTH) {
+                    throw new Error("Max seed length exceeded");
+                  }
+
+                  buffer = Buffer.concat([buffer, Buffer.from(seed)]);
+                });
+                buffer = Buffer.concat([buffer, programId.toBuffer(), Buffer.from('ProgramDerivedAddress')]);
+                _context2.next = 5;
+                return cryptoHash.sha256(new Uint8Array(buffer));
+
+              case 5:
+                hash = _context2.sent;
+                publicKeyBytes = new bn$1(hash, 16).toArray(null, 32);
+
+                if (!is_on_curve(publicKeyBytes)) {
+                  _context2.next = 9;
+                  break;
+                }
+
+                throw new Error("Invalid seeds, address must fall off the curve");
+
+              case 9:
+                return _context2.abrupt("return", new PublicKey(publicKeyBytes));
+
+              case 10:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2);
+      }));
+
+      function createProgramAddress(_x4, _x5) {
+        return _createProgramAddress.apply(this, arguments);
+      }
+
+      return createProgramAddress;
+    }()
+    /**
+     * Find a valid program address
+     *
+     * Valid program addresses must fall off the ed25519 curve.  This function
+     * iterates a nonce until it finds one that when combined with the seeds
+     * results in a valid program address.
+     */
+
+  }, {
+    key: "findProgramAddress",
+    value: function () {
+      var _findProgramAddress = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee3(seeds, programId) {
+        var nonce, address, seedsWithNonce;
+        return _regeneratorRuntime__default['default'].wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                nonce = 255;
+
+              case 1:
+                if (!(nonce != 0)) {
+                  _context3.next = 16;
+                  break;
+                }
+
+                _context3.prev = 2;
+                seedsWithNonce = seeds.concat(Buffer.from([nonce]));
+                _context3.next = 6;
+                return this.createProgramAddress(seedsWithNonce, programId);
+
+              case 6:
+                address = _context3.sent;
+                _context3.next = 13;
+                break;
+
+              case 9:
+                _context3.prev = 9;
+                _context3.t0 = _context3["catch"](2);
+                nonce--;
+                return _context3.abrupt("continue", 1);
+
+              case 13:
+                return _context3.abrupt("return", [address, nonce]);
+
+              case 16:
+                throw new Error("Unable to find a viable program address nonce");
+
+              case 17:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3, this, [[2, 9]]);
+      }));
+
+      function findProgramAddress(_x6, _x7) {
+        return _findProgramAddress.apply(this, arguments);
+      }
+
+      return findProgramAddress;
+    }()
+  }]);
+
+  return PublicKey;
+}(); // Check that a pubkey is on the curve.
+// This function and its dependents were sourced from:
+// https://github.com/dchest/tweetnacl-js/blob/f1ec050ceae0861f34280e62498b1d3ed9c350c6/nacl.js#L792
+
+function is_on_curve(p) {
+  var r = [naclLowLevel.gf(), naclLowLevel.gf(), naclLowLevel.gf(), naclLowLevel.gf()];
+  var t = naclLowLevel.gf(),
+      chk = naclLowLevel.gf(),
+      num = naclLowLevel.gf(),
+      den = naclLowLevel.gf(),
+      den2 = naclLowLevel.gf(),
+      den4 = naclLowLevel.gf(),
+      den6 = naclLowLevel.gf();
+  naclLowLevel.set25519(r[2], gf1);
+  naclLowLevel.unpack25519(r[1], p);
+  naclLowLevel.S(num, r[1]);
+  naclLowLevel.M(den, num, naclLowLevel.D);
+  naclLowLevel.Z(num, num, r[2]);
+  naclLowLevel.A(den, r[2], den);
+  naclLowLevel.S(den2, den);
+  naclLowLevel.S(den4, den2);
+  naclLowLevel.M(den6, den4, den2);
+  naclLowLevel.M(t, den6, num);
+  naclLowLevel.M(t, t, den);
+  naclLowLevel.pow2523(t, t);
+  naclLowLevel.M(t, t, num);
+  naclLowLevel.M(t, t, den);
+  naclLowLevel.M(t, t, den);
+  naclLowLevel.M(r[0], t, den);
+  naclLowLevel.S(chk, r[0]);
+  naclLowLevel.M(chk, chk, den);
+  if (neq25519(chk, num)) naclLowLevel.M(r[0], r[0], I);
+  naclLowLevel.S(chk, r[0]);
+  naclLowLevel.M(chk, chk, den);
+  if (neq25519(chk, num)) return 0;
+  return 1;
+}
+
+var gf1 = naclLowLevel.gf([1]);
+var I = naclLowLevel.gf([0xa0b0, 0x4a0e, 0x1b27, 0xc4ee, 0xe478, 0xad2f, 0x1806, 0x2f43, 0xd7a7, 0x3dfb, 0x0099, 0x2b4d, 0xdf0b, 0x4fc1, 0x2480, 0x2b83]);
+
+function neq25519(a, b) {
+  var c = new Uint8Array(32),
+      d = new Uint8Array(32);
+  naclLowLevel.pack25519(c, a);
+  naclLowLevel.pack25519(d, b);
+  return naclLowLevel.crypto_verify_32(c, 0, d, 0);
+}
+
+/**
+ * An account key pair (public and secret keys).
+ */
+
+var Account = /*#__PURE__*/function () {
+  /**
+   * Create a new Account object
+   *
+   * If the secretKey parameter is not provided a new key pair is randomly
+   * created for the account
+   *
+   * @param secretKey Secret key for the account
+   */
+  function Account(secretKey) {
+    _classCallCheck__default['default'](this, Account);
+
+    _defineProperty__default['default'](this, "_keypair", void 0);
+
+    if (secretKey) {
+      this._keypair = naclFast.sign.keyPair.fromSecretKey(toBuffer(secretKey));
+    } else {
+      this._keypair = naclFast.sign.keyPair();
+    }
+  }
+  /**
+   * The public key for this account
+   */
+
+
+  _createClass__default['default'](Account, [{
+    key: "publicKey",
+    get: function get() {
+      return new PublicKey(this._keypair.publicKey);
+    }
+    /**
+     * The **unencrypted** secret key for this account
+     */
+
+  }, {
+    key: "secretKey",
+    get: function get() {
+      return this._keypair.secretKey;
+    }
+  }]);
+
+  return Account;
+}();
+
+var BPF_LOADER_DEPRECATED_PROGRAM_ID = new PublicKey('BPFLoader1111111111111111111111111111111111');
+
+/**
+ * Layout for a public key
+ */
+
+var publicKey = function publicKey() {
+  var property = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'publicKey';
+  return blob(32, property);
+};
+/**
+ * Layout for a Rust String type
+ */
+
+var rustString = function rustString() {
+  var property = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'string';
+  var rsl = struct$1([u32('length'), u32('lengthPadding'), blob(offset(u32(), -8), 'chars')], property);
+
+  var _decode = rsl.decode.bind(rsl);
+
+  var _encode = rsl.encode.bind(rsl);
+
+  rsl.decode = function (buffer, offset) {
+    var data = _decode(buffer, offset);
+
+    return data.chars.toString('utf8');
+  };
+
+  rsl.encode = function (str, buffer, offset) {
+    var data = {
+      chars: Buffer.from(str, 'utf8')
+    };
+    return _encode(data, buffer, offset);
+  };
+
+  rsl.alloc = function (str) {
+    return u32().span + u32().span + Buffer.from(str, 'utf8').length;
+  };
+
+  return rsl;
+};
+/**
+ * Layout for an Authorized object
+ */
+
+var authorized = function authorized() {
+  var property = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'authorized';
+  return struct$1([publicKey('staker'), publicKey('withdrawer')], property);
+};
+/**
+ * Layout for a Lockup object
+ */
+
+var lockup = function lockup() {
+  var property = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 'lockup';
+  return struct$1([ns64('unixTimestamp'), ns64('epoch'), publicKey('custodian')], property);
+};
+function getAlloc(type, fields) {
+  var alloc = 0;
+  type.layout.fields.forEach(function (item) {
+    if (item.span >= 0) {
+      alloc += item.span;
+    } else if (typeof item.alloc === 'function') {
+      alloc += item.alloc(fields[item.property]);
+    }
+  });
+  return alloc;
+}
+
+function decodeLength(bytes) {
+  var len = 0;
+  var size = 0;
+
+  for (;;) {
+    var elem = bytes.shift();
+    len |= (elem & 0x7f) << size * 7;
+    size += 1;
+
+    if ((elem & 0x80) === 0) {
+      break;
+    }
+  }
+
+  return len;
+}
+function encodeLength(bytes, len) {
+  var rem_len = len;
+
+  for (;;) {
+    var elem = rem_len & 0x7f;
+    rem_len >>= 7;
+
+    if (rem_len == 0) {
+      bytes.push(elem);
+      break;
+    } else {
+      elem |= 0x80;
+      bytes.push(elem);
+    }
+  }
+}
+
+/**
+ * The message header, identifying signed and read-only account
+ *
+ * @typedef {Object} MessageHeader
+ * @property {number} numRequiredSignatures The number of signatures required for this message to be considered valid. The
+ * signatures must match the first `numRequiredSignatures` of `accountKeys`.
+ * @property {number} numReadonlySignedAccounts: The last `numReadonlySignedAccounts` of the signed keys are read-only accounts
+ * @property {number} numReadonlyUnsignedAccounts The last `numReadonlySignedAccounts` of the unsigned keys are read-only accounts
+ */
+
+var PUBKEY_LENGTH = 32;
+/**
+ * List of instructions to be processed atomically
+ */
+
+var Message = /*#__PURE__*/function () {
+  function Message(args) {
+    _classCallCheck__default['default'](this, Message);
+
+    _defineProperty__default['default'](this, "header", void 0);
+
+    _defineProperty__default['default'](this, "accountKeys", void 0);
+
+    _defineProperty__default['default'](this, "recentBlockhash", void 0);
+
+    _defineProperty__default['default'](this, "instructions", void 0);
+
+    this.header = args.header;
+    this.accountKeys = args.accountKeys.map(function (account) {
+      return new PublicKey(account);
+    });
+    this.recentBlockhash = args.recentBlockhash;
+    this.instructions = args.instructions;
+  }
+
+  _createClass__default['default'](Message, [{
+    key: "isAccountWritable",
+    value: function isAccountWritable(index) {
+      return index < this.header.numRequiredSignatures - this.header.numReadonlySignedAccounts || index >= this.header.numRequiredSignatures && index < this.accountKeys.length - this.header.numReadonlyUnsignedAccounts;
+    }
+  }, {
+    key: "serialize",
+    value: function serialize() {
+      var numKeys = this.accountKeys.length;
+      var keyCount = [];
+      encodeLength(keyCount, numKeys);
+      var instructions = this.instructions.map(function (instruction) {
+        var accounts = instruction.accounts,
+            programIdIndex = instruction.programIdIndex;
+        var data = bs58.decode(instruction.data);
+        var keyIndicesCount = [];
+        encodeLength(keyIndicesCount, accounts.length);
+        var dataCount = [];
+        encodeLength(dataCount, data.length);
+        return {
+          programIdIndex: programIdIndex,
+          keyIndicesCount: Buffer.from(keyIndicesCount),
+          keyIndices: Buffer.from(accounts),
+          dataLength: Buffer.from(dataCount),
+          data: data
+        };
+      });
+      var instructionCount = [];
+      encodeLength(instructionCount, instructions.length);
+      var instructionBuffer = Buffer.alloc(PACKET_DATA_SIZE);
+      Buffer.from(instructionCount).copy(instructionBuffer);
+      var instructionBufferLength = instructionCount.length;
+      instructions.forEach(function (instruction) {
+        var instructionLayout = struct$1([u8('programIdIndex'), blob(instruction.keyIndicesCount.length, 'keyIndicesCount'), seq(u8('keyIndex'), instruction.keyIndices.length, 'keyIndices'), blob(instruction.dataLength.length, 'dataLength'), seq(u8('userdatum'), instruction.data.length, 'data')]);
+        var length = instructionLayout.encode(instruction, instructionBuffer, instructionBufferLength);
+        instructionBufferLength += length;
+      });
+      instructionBuffer = instructionBuffer.slice(0, instructionBufferLength);
+      var signDataLayout = struct$1([blob(1, 'numRequiredSignatures'), blob(1, 'numReadonlySignedAccounts'), blob(1, 'numReadonlyUnsignedAccounts'), blob(keyCount.length, 'keyCount'), seq(publicKey('key'), numKeys, 'keys'), publicKey('recentBlockhash')]);
+      var transaction = {
+        numRequiredSignatures: Buffer.from([this.header.numRequiredSignatures]),
+        numReadonlySignedAccounts: Buffer.from([this.header.numReadonlySignedAccounts]),
+        numReadonlyUnsignedAccounts: Buffer.from([this.header.numReadonlyUnsignedAccounts]),
+        keyCount: Buffer.from(keyCount),
+        keys: this.accountKeys.map(function (key) {
+          return key.toBuffer();
+        }),
+        recentBlockhash: bs58.decode(this.recentBlockhash)
+      };
+      var signData = Buffer.alloc(2048);
+      var length = signDataLayout.encode(transaction, signData);
+      instructionBuffer.copy(signData, length);
+      return signData.slice(0, length + instructionBuffer.length);
+    }
+    /**
+     * Decode a compiled message into a Message object.
+     */
+
+  }], [{
+    key: "from",
+    value: function from(buffer) {
+      // Slice up wire data
+      var byteArray = _toConsumableArray__default['default'](buffer);
+
+      var numRequiredSignatures = byteArray.shift();
+      var numReadonlySignedAccounts = byteArray.shift();
+      var numReadonlyUnsignedAccounts = byteArray.shift();
+      var accountCount = decodeLength(byteArray);
+      var accountKeys = [];
+
+      for (var i = 0; i < accountCount; i++) {
+        var account = byteArray.slice(0, PUBKEY_LENGTH);
+        byteArray = byteArray.slice(PUBKEY_LENGTH);
+        accountKeys.push(bs58.encode(Buffer.from(account)));
+      }
+
+      var recentBlockhash = byteArray.slice(0, PUBKEY_LENGTH);
+      byteArray = byteArray.slice(PUBKEY_LENGTH);
+      var instructionCount = decodeLength(byteArray);
+      var instructions = [];
+
+      for (var _i = 0; _i < instructionCount; _i++) {
+        var instruction = {};
+        instruction.programIdIndex = byteArray.shift();
+
+        var _accountCount = decodeLength(byteArray);
+
+        instruction.accounts = byteArray.slice(0, _accountCount);
+        byteArray = byteArray.slice(_accountCount);
+        var dataLength = decodeLength(byteArray);
+        var data = byteArray.slice(0, dataLength);
+        instruction.data = bs58.encode(Buffer.from(data));
+        byteArray = byteArray.slice(dataLength);
+        instructions.push(instruction);
+      }
+
+      var messageArgs = {
+        header: {
+          numRequiredSignatures: numRequiredSignatures,
+          numReadonlySignedAccounts: numReadonlySignedAccounts,
+          numReadonlyUnsignedAccounts: numReadonlyUnsignedAccounts
+        },
+        recentBlockhash: bs58.encode(Buffer.from(recentBlockhash)),
+        accountKeys: accountKeys,
+        instructions: instructions
+      };
+      return new Message(messageArgs);
+    }
+  }]);
+
+  return Message;
+}();
+
+function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty__default['default'](target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+/**
+ * Default (empty) signature
+ *
+ * Signatures are 64 bytes in length
+ */
+var DEFAULT_SIGNATURE = Buffer.alloc(64).fill(0);
+/**
+ * Maximum over-the-wire size of a Transaction
+ *
+ * 1280 is IPv6 minimum MTU
+ * 40 bytes is the size of the IPv6 header
+ * 8 bytes is the size of the fragment header
+ */
+
+var PACKET_DATA_SIZE = 1280 - 40 - 8;
+var SIGNATURE_LENGTH = 64;
+/**
+ * Account metadata used to define instructions
+ *
+ * @typedef {Object} AccountMeta
+ * @property {PublicKey} pubkey An account's public key
+ * @property {boolean} isSigner True if an instruction requires a transaction signature matching `pubkey`
+ * @property {boolean} isWritable True if the `pubkey` can be loaded as a read-write account.
+ */
+
+/**
+ * Transaction Instruction class
+ */
+var TransactionInstruction =
+/**
+ * Public keys to include in this transaction
+ * Boolean represents whether this pubkey needs to sign the transaction
+ */
+
+/**
+ * Program Id to execute
+ */
+
+/**
+ * Program input
+ */
+function TransactionInstruction(opts) {
+  _classCallCheck__default['default'](this, TransactionInstruction);
+
+  _defineProperty__default['default'](this, "keys", []);
+
+  _defineProperty__default['default'](this, "programId", void 0);
+
+  _defineProperty__default['default'](this, "data", Buffer.alloc(0));
+
+  opts && Object.assign(this, opts);
+};
+/**
+ * @private
+ */
+
+/**
+ * Transaction class
+ */
+var Transaction = /*#__PURE__*/function () {
+  _createClass__default['default'](Transaction, [{
+    key: "signature",
+
+    /**
+     * Signatures for the transaction.  Typically created by invoking the
+     * `sign()` method
+     */
+
+    /**
+     * The first (payer) Transaction signature
+     */
+    get: function get() {
+      if (this.signatures.length > 0) {
+        return this.signatures[0].signature;
+      }
+
+      return null;
+    }
+    /**
+     * The transaction fee payer
+     */
+
+  }]);
+
+  /**
+   * Construct an empty Transaction
+   */
+  function Transaction(opts) {
+    _classCallCheck__default['default'](this, Transaction);
+
+    _defineProperty__default['default'](this, "signatures", []);
+
+    _defineProperty__default['default'](this, "feePayer", void 0);
+
+    _defineProperty__default['default'](this, "instructions", []);
+
+    _defineProperty__default['default'](this, "recentBlockhash", void 0);
+
+    _defineProperty__default['default'](this, "nonceInfo", void 0);
+
+    opts && Object.assign(this, opts);
+  }
+  /**
+   * Add one or more instructions to this Transaction
+   */
+
+
+  _createClass__default['default'](Transaction, [{
+    key: "add",
+    value: function add() {
+      var _this = this;
+
+      for (var _len = arguments.length, items = new Array(_len), _key = 0; _key < _len; _key++) {
+        items[_key] = arguments[_key];
+      }
+
+      if (items.length === 0) {
+        throw new Error('No instructions');
+      }
+
+      items.forEach(function (item) {
+        if ('instructions' in item) {
+          _this.instructions = _this.instructions.concat(item.instructions);
+        } else if ('data' in item && 'programId' in item && 'keys' in item) {
+          _this.instructions.push(item);
+        } else {
+          _this.instructions.push(new TransactionInstruction(item));
+        }
+      });
+      return this;
+    }
+    /**
+     * Compile transaction data
+     */
+
+  }, {
+    key: "compileMessage",
+    value: function compileMessage() {
+      var nonceInfo = this.nonceInfo;
+
+      if (nonceInfo && this.instructions[0] != nonceInfo.nonceInstruction) {
+        this.recentBlockhash = nonceInfo.nonce;
+        this.instructions.unshift(nonceInfo.nonceInstruction);
+      }
+
+      var recentBlockhash = this.recentBlockhash;
+
+      if (!recentBlockhash) {
+        throw new Error('Transaction recentBlockhash required');
+      }
+
+      if (this.instructions.length < 1) {
+        throw new Error('No instructions provided');
+      }
+
+      var feePayer;
+
+      if (this.feePayer) {
+        feePayer = this.feePayer;
+      } else if (this.signatures.length > 0 && this.signatures[0].publicKey) {
+        // Use implicit fee payer
+        feePayer = this.signatures[0].publicKey;
+      } else {
+        throw new Error('Transaction fee payer required');
+      }
+
+      var programIds = [];
+      var accountMetas = [];
+      this.instructions.forEach(function (instruction) {
+        instruction.keys.forEach(function (accountMeta) {
+          accountMetas.push(_objectSpread({}, accountMeta));
+        });
+        var programId = instruction.programId.toString();
+
+        if (!programIds.includes(programId)) {
+          programIds.push(programId);
+        }
+      }); // Append programID account metas
+
+      programIds.forEach(function (programId) {
+        accountMetas.push({
+          pubkey: new PublicKey(programId),
+          isSigner: false,
+          isWritable: false
+        });
+      }); // Sort. Prioritizing first by signer, then by writable
+
+      accountMetas.sort(function (x, y) {
+        var checkSigner = x.isSigner === y.isSigner ? 0 : x.isSigner ? -1 : 1;
+        var checkWritable = x.isWritable === y.isWritable ? 0 : x.isWritable ? -1 : 1;
+        return checkSigner || checkWritable;
+      }); // Cull duplicate account metas
+
+      var uniqueMetas = [];
+      accountMetas.forEach(function (accountMeta) {
+        var pubkeyString = accountMeta.pubkey.toString();
+        var uniqueIndex = uniqueMetas.findIndex(function (x) {
+          return x.pubkey.toString() === pubkeyString;
+        });
+
+        if (uniqueIndex > -1) {
+          uniqueMetas[uniqueIndex].isWritable = uniqueMetas[uniqueIndex].isWritable || accountMeta.isWritable;
+        } else {
+          uniqueMetas.push(accountMeta);
+        }
+      }); // Move fee payer to the front
+
+      var feePayerIndex = uniqueMetas.findIndex(function (x) {
+        return x.pubkey.equals(feePayer);
+      });
+
+      if (feePayerIndex > -1) {
+        var _uniqueMetas$splice = uniqueMetas.splice(feePayerIndex, 1),
+            _uniqueMetas$splice2 = _slicedToArray__default['default'](_uniqueMetas$splice, 1),
+            payerMeta = _uniqueMetas$splice2[0];
+
+        payerMeta.isSigner = true;
+        payerMeta.isWritable = true;
+        uniqueMetas.unshift(payerMeta);
+      } else {
+        uniqueMetas.unshift({
+          pubkey: feePayer,
+          isSigner: true,
+          isWritable: true
+        });
+      } // Disallow unknown signers
+
+
+      var _iterator = _createForOfIteratorHelper(this.signatures),
+          _step;
+
+      try {
+        var _loop = function _loop() {
+          var signature = _step.value;
+          var uniqueIndex = uniqueMetas.findIndex(function (x) {
+            return x.pubkey.equals(signature.publicKey);
+          });
+
+          if (uniqueIndex > -1) {
+            if (!uniqueMetas[uniqueIndex].isSigner) {
+              uniqueMetas[uniqueIndex].isSigner = true;
+              console.warn('Transaction references a signature that is unnecessary, ' + 'only the fee payer and instruction signer accounts should sign a transaction. ' + 'This behavior is deprecated and will throw an error in the next major version release.');
+            }
+          } else {
+            throw new Error("unknown signer: ".concat(signature.publicKey.toString()));
+          }
+        };
+
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          _loop();
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      var numRequiredSignatures = 0;
+      var numReadonlySignedAccounts = 0;
+      var numReadonlyUnsignedAccounts = 0; // Split out signing from non-signing keys and count header values
+
+      var signedKeys = [];
+      var unsignedKeys = [];
+      uniqueMetas.forEach(function (_ref) {
+        var pubkey = _ref.pubkey,
+            isSigner = _ref.isSigner,
+            isWritable = _ref.isWritable;
+
+        if (isSigner) {
+          signedKeys.push(pubkey.toString());
+          numRequiredSignatures += 1;
+
+          if (!isWritable) {
+            numReadonlySignedAccounts += 1;
+          }
+        } else {
+          unsignedKeys.push(pubkey.toString());
+
+          if (!isWritable) {
+            numReadonlyUnsignedAccounts += 1;
+          }
+        }
+      });
+      var accountKeys = signedKeys.concat(unsignedKeys);
+      var instructions = this.instructions.map(function (instruction) {
+        var data = instruction.data,
+            programId = instruction.programId;
+        return {
+          programIdIndex: accountKeys.indexOf(programId.toString()),
+          accounts: instruction.keys.map(function (meta) {
+            return accountKeys.indexOf(meta.pubkey.toString());
+          }),
+          data: bs58.encode(data)
+        };
+      });
+      instructions.forEach(function (instruction) {
+        assert__default['default'](instruction.programIdIndex >= 0);
+        instruction.accounts.forEach(function (keyIndex) {
+          return assert__default['default'](keyIndex >= 0);
+        });
+      });
+      return new Message({
+        header: {
+          numRequiredSignatures: numRequiredSignatures,
+          numReadonlySignedAccounts: numReadonlySignedAccounts,
+          numReadonlyUnsignedAccounts: numReadonlyUnsignedAccounts
+        },
+        accountKeys: accountKeys,
+        recentBlockhash: recentBlockhash,
+        instructions: instructions
+      });
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_compile",
+    value: function _compile() {
+      var message = this.compileMessage();
+      var signedKeys = message.accountKeys.slice(0, message.header.numRequiredSignatures);
+
+      if (this.signatures.length === signedKeys.length) {
+        var valid = this.signatures.every(function (pair, index) {
+          return signedKeys[index].equals(pair.publicKey);
+        });
+        if (valid) return message;
+      }
+
+      this.signatures = signedKeys.map(function (publicKey) {
+        return {
+          signature: null,
+          publicKey: publicKey
+        };
+      });
+      return message;
+    }
+    /**
+     * Get a buffer of the Transaction data that need to be covered by signatures
+     */
+
+  }, {
+    key: "serializeMessage",
+    value: function serializeMessage() {
+      return this._compile().serialize();
+    }
+    /**
+     * Specify the public keys which will be used to sign the Transaction.
+     * The first signer will be used as the transaction fee payer account.
+     *
+     * Signatures can be added with either `partialSign` or `addSignature`
+     *
+     * @deprecated Deprecated since v0.84.0. Only the fee payer needs to be
+     * specified and it can be set in the Transaction constructor or with the
+     * `feePayer` property.
+     */
+
+  }, {
+    key: "setSigners",
+    value: function setSigners() {
+      for (var _len2 = arguments.length, signers = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        signers[_key2] = arguments[_key2];
+      }
+
+      if (signers.length === 0) {
+        throw new Error('No signers');
+      }
+
+      var seen = new Set();
+      this.signatures = signers.filter(function (publicKey) {
+        var key = publicKey.toString();
+
+        if (seen.has(key)) {
+          return false;
+        } else {
+          seen.add(key);
+          return true;
+        }
+      }).map(function (publicKey) {
+        return {
+          signature: null,
+          publicKey: publicKey
+        };
+      });
+    }
+    /**
+     * Sign the Transaction with the specified accounts. Multiple signatures may
+     * be applied to a Transaction. The first signature is considered "primary"
+     * and is used identify and confirm transactions.
+     *
+     * If the Transaction `feePayer` is not set, the first signer will be used
+     * as the transaction fee payer account.
+     *
+     * Transaction fields should not be modified after the first call to `sign`,
+     * as doing so may invalidate the signature and cause the Transaction to be
+     * rejected.
+     *
+     * The Transaction must be assigned a valid `recentBlockhash` before invoking this method
+     */
+
+  }, {
+    key: "sign",
+    value: function sign() {
+      for (var _len3 = arguments.length, signers = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+        signers[_key3] = arguments[_key3];
+      }
+
+      if (signers.length === 0) {
+        throw new Error('No signers');
+      } // Dedupe signers
+
+
+      var seen = new Set();
+      var uniqueSigners = [];
+
+      for (var _i = 0, _signers = signers; _i < _signers.length; _i++) {
+        var signer = _signers[_i];
+        var key = signer.publicKey.toString();
+
+        if (seen.has(key)) {
+          continue;
+        } else {
+          seen.add(key);
+          uniqueSigners.push(signer);
+        }
+      }
+
+      this.signatures = uniqueSigners.map(function (signer) {
+        return {
+          signature: null,
+          publicKey: signer.publicKey
+        };
+      });
+
+      var message = this._compile();
+
+      this._partialSign.apply(this, [message].concat(uniqueSigners));
+
+      this._verifySignatures(message.serialize(), true);
+    }
+    /**
+     * Partially sign a transaction with the specified accounts. All accounts must
+     * correspond to either the fee payer or a signer account in the transaction
+     * instructions.
+     *
+     * All the caveats from the `sign` method apply to `partialSign`
+     */
+
+  }, {
+    key: "partialSign",
+    value: function partialSign() {
+      for (var _len4 = arguments.length, signers = new Array(_len4), _key4 = 0; _key4 < _len4; _key4++) {
+        signers[_key4] = arguments[_key4];
+      }
+
+      if (signers.length === 0) {
+        throw new Error('No signers');
+      } // Dedupe signers
+
+
+      var seen = new Set();
+      var uniqueSigners = [];
+
+      for (var _i2 = 0, _signers2 = signers; _i2 < _signers2.length; _i2++) {
+        var signer = _signers2[_i2];
+        var key = signer.publicKey.toString();
+
+        if (seen.has(key)) {
+          continue;
+        } else {
+          seen.add(key);
+          uniqueSigners.push(signer);
+        }
+      }
+
+      var message = this._compile();
+
+      this._partialSign.apply(this, [message].concat(uniqueSigners));
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_partialSign",
+    value: function _partialSign(message) {
+      var _this2 = this;
+
+      var signData = message.serialize();
+
+      for (var _len5 = arguments.length, signers = new Array(_len5 > 1 ? _len5 - 1 : 0), _key5 = 1; _key5 < _len5; _key5++) {
+        signers[_key5 - 1] = arguments[_key5];
+      }
+
+      signers.forEach(function (signer) {
+        var signature = naclFast.sign.detached(signData, signer.secretKey);
+
+        _this2._addSignature(signer.publicKey, signature);
+      });
+    }
+    /**
+     * Add an externally created signature to a transaction. The public key
+     * must correspond to either the fee payer or a signer account in the transaction
+     * instructions.
+     */
+
+  }, {
+    key: "addSignature",
+    value: function addSignature(pubkey, signature) {
+      this._compile(); // Ensure signatures array is populated
+
+
+      this._addSignature(pubkey, signature);
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_addSignature",
+    value: function _addSignature(pubkey, signature) {
+      assert__default['default'](signature.length === 64);
+      var index = this.signatures.findIndex(function (sigpair) {
+        return pubkey.equals(sigpair.publicKey);
+      });
+
+      if (index < 0) {
+        throw new Error("unknown signer: ".concat(pubkey.toString()));
+      }
+
+      this.signatures[index].signature = Buffer.from(signature);
+    }
+    /**
+     * Verify signatures of a complete, signed Transaction
+     */
+
+  }, {
+    key: "verifySignatures",
+    value: function verifySignatures() {
+      return this._verifySignatures(this.serializeMessage(), true);
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_verifySignatures",
+    value: function _verifySignatures(signData, requireAllSignatures) {
+      var _iterator2 = _createForOfIteratorHelper(this.signatures),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var _step2$value = _step2.value,
+              signature = _step2$value.signature,
+              publicKey = _step2$value.publicKey;
+
+          if (signature === null) {
+            if (requireAllSignatures) {
+              return false;
+            }
+          } else {
+            if (!naclFast.sign.detached.verify(signData, signature, publicKey.toBuffer())) {
+              return false;
+            }
+          }
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+
+      return true;
+    }
+    /**
+     * Serialize the Transaction in the wire format.
+     */
+
+  }, {
+    key: "serialize",
+    value: function serialize(config) {
+      var _Object$assign = Object.assign({
+        requireAllSignatures: true,
+        verifySignatures: true
+      }, config),
+          requireAllSignatures = _Object$assign.requireAllSignatures,
+          verifySignatures = _Object$assign.verifySignatures;
+
+      var signData = this.serializeMessage();
+
+      if (verifySignatures && !this._verifySignatures(signData, requireAllSignatures)) {
+        throw new Error('Signature verification failed');
+      }
+
+      return this._serialize(signData);
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_serialize",
+    value: function _serialize(signData) {
+      var signatures = this.signatures;
+      var signatureCount = [];
+      encodeLength(signatureCount, signatures.length);
+      var transactionLength = signatureCount.length + signatures.length * 64 + signData.length;
+      var wireTransaction = Buffer.alloc(transactionLength);
+      assert__default['default'](signatures.length < 256);
+      Buffer.from(signatureCount).copy(wireTransaction, 0);
+      signatures.forEach(function (_ref2, index) {
+        var signature = _ref2.signature;
+
+        if (signature !== null) {
+          assert__default['default'](signature.length === 64, "signature has invalid length");
+          Buffer.from(signature).copy(wireTransaction, signatureCount.length + index * 64);
+        }
+      });
+      signData.copy(wireTransaction, signatureCount.length + signatures.length * 64);
+      assert__default['default'](wireTransaction.length <= PACKET_DATA_SIZE, "Transaction too large: ".concat(wireTransaction.length, " > ").concat(PACKET_DATA_SIZE));
+      return wireTransaction;
+    }
+    /**
+     * Deprecated method
+     * @private
+     */
+
+  }, {
+    key: "keys",
+    get: function get() {
+      assert__default['default'](this.instructions.length === 1);
+      return this.instructions[0].keys.map(function (keyObj) {
+        return keyObj.pubkey;
+      });
+    }
+    /**
+     * Deprecated method
+     * @private
+     */
+
+  }, {
+    key: "programId",
+    get: function get() {
+      assert__default['default'](this.instructions.length === 1);
+      return this.instructions[0].programId;
+    }
+    /**
+     * Deprecated method
+     * @private
+     */
+
+  }, {
+    key: "data",
+    get: function get() {
+      assert__default['default'](this.instructions.length === 1);
+      return this.instructions[0].data;
+    }
+    /**
+     * Parse a wire transaction into a Transaction object.
+     */
+
+  }], [{
+    key: "from",
+    value: function from(buffer) {
+      // Slice up wire data
+      var byteArray = _toConsumableArray__default['default'](buffer);
+
+      var signatureCount = decodeLength(byteArray);
+      var signatures = [];
+
+      for (var i = 0; i < signatureCount; i++) {
+        var signature = byteArray.slice(0, SIGNATURE_LENGTH);
+        byteArray = byteArray.slice(SIGNATURE_LENGTH);
+        signatures.push(bs58.encode(Buffer.from(signature)));
+      }
+
+      return Transaction.populate(Message.from(byteArray), signatures);
+    }
+    /**
+     * Populate Transaction object from message and signatures
+     */
+
+  }, {
+    key: "populate",
+    value: function populate(message, signatures) {
+      var transaction = new Transaction();
+      transaction.recentBlockhash = message.recentBlockhash;
+
+      if (message.header.numRequiredSignatures > 0) {
+        transaction.feePayer = message.accountKeys[0];
+      }
+
+      signatures.forEach(function (signature, index) {
+        var sigPubkeyPair = {
+          signature: signature == bs58.encode(DEFAULT_SIGNATURE) ? null : bs58.decode(signature),
+          publicKey: message.accountKeys[index]
+        };
+        transaction.signatures.push(sigPubkeyPair);
+      });
+      message.instructions.forEach(function (instruction) {
+        var keys = instruction.accounts.map(function (account) {
+          var pubkey = message.accountKeys[account];
+          return {
+            pubkey: pubkey,
+            isSigner: transaction.signatures.some(function (keyObj) {
+              return keyObj.publicKey.toString() === pubkey.toString();
+            }),
+            isWritable: message.isAccountWritable(account)
+          };
+        });
+        transaction.instructions.push(new TransactionInstruction({
+          keys: keys,
+          programId: message.accountKeys[instruction.programIdIndex],
+          data: bs58.decode(instruction.data)
+        }));
+      });
+      return transaction;
+    }
+  }]);
+
+  return Transaction;
+}();
+
+var SYSVAR_CLOCK_PUBKEY = new PublicKey('SysvarC1ock11111111111111111111111111111111');
+var SYSVAR_RECENT_BLOCKHASHES_PUBKEY = new PublicKey('SysvarRecentB1ockHashes11111111111111111111');
+var SYSVAR_RENT_PUBKEY = new PublicKey('SysvarRent111111111111111111111111111111111');
+var SYSVAR_REWARDS_PUBKEY = new PublicKey('SysvarRewards111111111111111111111111111111');
+var SYSVAR_STAKE_HISTORY_PUBKEY = new PublicKey('SysvarStakeHistory1111111111111111111111111');
+var SYSVAR_INSTRUCTIONS_PUBKEY = new PublicKey('Sysvar1nstructions1111111111111111111111111');
+
+/**
+ * https://github.com/solana-labs/solana/blob/90bedd7e067b5b8f3ddbb45da00a4e9cabb22c62/sdk/src/fee_calculator.rs#L7-L11
+ *
+ * @private
+ */
+
+var FeeCalculatorLayout = nu64('lamportsPerSignature');
+/**
+ * @typedef {Object} FeeCalculator
+ * @property {number} lamportsPerSignature lamports Cost in lamports to validate a signature
+ */
+
+/**
+ * See https://github.com/solana-labs/solana/blob/0ea2843ec9cdc517572b8e62c959f41b55cf4453/sdk/src/nonce_state.rs#L29-L32
+ *
+ * @private
+ */
+
+var NonceAccountLayout = struct$1([u32('version'), u32('state'), publicKey('authorizedPubkey'), publicKey('nonce'), struct$1([FeeCalculatorLayout], 'feeCalculator')]);
+var NONCE_ACCOUNT_LENGTH = NonceAccountLayout.span;
+/**
+ * NonceAccount class
+ */
+
+var NonceAccount = /*#__PURE__*/function () {
+  function NonceAccount() {
+    _classCallCheck__default['default'](this, NonceAccount);
+
+    _defineProperty__default['default'](this, "authorizedPubkey", void 0);
+
+    _defineProperty__default['default'](this, "nonce", void 0);
+
+    _defineProperty__default['default'](this, "feeCalculator", void 0);
+  }
+
+  _createClass__default['default'](NonceAccount, null, [{
+    key: "fromAccountData",
+
+    /**
+     * Deserialize NonceAccount from the account data.
+     *
+     * @param buffer account data
+     * @return NonceAccount
+     */
+    value: function fromAccountData(buffer) {
+      var nonceAccount = NonceAccountLayout.decode(toBuffer(buffer), 0);
+      nonceAccount.authorizedPubkey = new PublicKey(nonceAccount.authorizedPubkey);
+      nonceAccount.nonce = new PublicKey(nonceAccount.nonce).toString();
+      return nonceAccount;
+    }
+  }]);
+
+  return NonceAccount;
+}();
+
+// TODO: These constants should be removed in favor of reading them out of a
+// Syscall account
+
+/**
+ * @ignore
+ */
+var NUM_TICKS_PER_SECOND = 160;
+/**
+ * @ignore
+ */
+
+var DEFAULT_TICKS_PER_SLOT = 64;
+/**
+ * @ignore
+ */
+
+var NUM_SLOTS_PER_SECOND = NUM_TICKS_PER_SECOND / DEFAULT_TICKS_PER_SLOT;
+/**
+ * @ignore
+ */
+
+var MS_PER_SLOT = 1000 / NUM_SLOTS_PER_SECOND;
+
+// zzz
+function sleep(ms) {
+  return new Promise(function (resolve) {
+    return setTimeout(resolve, ms);
+  });
+}
+
+function promiseTimeout(promise, timeoutMs) {
+  var timeoutId;
+  var timeoutPromise = new Promise(function (resolve) {
+    timeoutId = setTimeout(function () {
+      return resolve(null);
+    }, timeoutMs);
+  });
+  return Promise.race([promise, timeoutPromise]).then(function (result) {
+    clearTimeout(timeoutId);
+    return result;
+  });
+}
+
+var DESTROY_TIMEOUT_MS = 5000;
+var AgentManager = /*#__PURE__*/function () {
+  _createClass__default['default'](AgentManager, null, [{
+    key: "_newAgent",
+    value: function _newAgent(useHttps) {
+      var options = {
+        keepAlive: true,
+        maxSockets: 25
+      };
+
+      if (useHttps) {
+        return new https__default['default'].Agent(options);
+      } else {
+        return new http__default['default'].Agent(options);
+      }
+    }
+  }]);
+
+  function AgentManager(useHttps) {
+    _classCallCheck__default['default'](this, AgentManager);
+
+    _defineProperty__default['default'](this, "_agent", void 0);
+
+    _defineProperty__default['default'](this, "_activeRequests", 0);
+
+    _defineProperty__default['default'](this, "_destroyTimeout", null);
+
+    _defineProperty__default['default'](this, "_useHttps", void 0);
+
+    this._useHttps = useHttps === true;
+    this._agent = AgentManager._newAgent(this._useHttps);
+  }
+
+  _createClass__default['default'](AgentManager, [{
+    key: "requestStart",
+    value: function requestStart() {
+      // $FlowExpectedError - Don't manage agents in the browser
+      if (process.browser) return;
+      this._activeRequests++;
+      clearTimeout(this._destroyTimeout);
+      this._destroyTimeout = null;
+      return this._agent;
+    }
+  }, {
+    key: "requestEnd",
+    value: function requestEnd() {
+      var _this = this;
+
+      // $FlowExpectedError - Don't manage agents in the browser
+      if (process.browser) return;
+      this._activeRequests--;
+
+      if (this._activeRequests === 0 && this._destroyTimeout === null) {
+        this._destroyTimeout = setTimeout(function () {
+          _this._agent.destroy();
+
+          _this._agent = AgentManager._newAgent(_this._useHttps);
+        }, DESTROY_TIMEOUT_MS);
+      }
+    }
+  }]);
+
+  return AgentManager;
+}();
+
+function _createForOfIteratorHelper$1(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray$1(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
+
+function _unsupportedIterableToArray$1(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray$1(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray$1(o, minLen); }
+
+function _arrayLikeToArray$1(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function ownKeys$1(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread$1(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys$1(Object(source), true).forEach(function (key) { _defineProperty__default['default'](target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys$1(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+var BLOCKHASH_CACHE_TIMEOUT_MS = 30 * 1000;
+
+/**
+ * @private
+ */
+function jsonRpcResultAndContext(resultDescription) {
+  return jsonRpcResult({
+    context: struct({
+      slot: 'number'
+    }),
+    value: resultDescription
+  });
+}
+/**
+ * @private
+ */
+
+
+function jsonRpcResult(resultDescription) {
+  var jsonRpcVersion = struct.literal('2.0');
+  return struct.union([struct({
+    jsonrpc: jsonRpcVersion,
+    id: 'string',
+    error: 'any'
+  }), struct({
+    jsonrpc: jsonRpcVersion,
+    id: 'string',
+    error: 'null?',
+    result: resultDescription
+  })]);
+}
+/**
+ * @private
+ */
+
+
+function notificationResultAndContext(resultDescription) {
+  return struct({
+    context: struct({
+      slot: 'number'
+    }),
+    value: resultDescription
+  });
+}
+/**
+ * The level of commitment desired when querying state
+ * <pre>
+ *   'max':    Query the most recent block which has been finalized by the cluster
+ *   'recent': Query the most recent block which has reached 1 confirmation by the connected node
+ *   'root':   Query the most recent block which has been rooted by the connected node
+ *   'single': Query the most recent block which has reached 1 confirmation by the cluster
+ *   'singleGossip': Query the most recent block which has reached 1 confirmation according to votes seen in gossip
+ * </pre>
+ *
+ * @typedef {'max' | 'recent' | 'root' | 'single' | 'singleGossip'} Commitment
+ */
+
+
+var GetInflationGovernorResult = struct({
+  foundation: 'number',
+  foundationTerm: 'number',
+  initial: 'number',
+  taper: 'number',
+  terminal: 'number'
+});
+/**
+ * Information about the current epoch
+ *
+ * @typedef {Object} EpochInfo
+ * @property {number} epoch
+ * @property {number} slotIndex
+ * @property {number} slotsInEpoch
+ * @property {number} absoluteSlot
+ * @property {number} blockHeight
+ * @property {number} transactionCount
+ */
+
+var GetEpochInfoResult = struct({
+  epoch: 'number',
+  slotIndex: 'number',
+  slotsInEpoch: 'number',
+  absoluteSlot: 'number',
+  blockHeight: 'number?',
+  transactionCount: 'number?'
+});
+/**
+ * Epoch schedule
+ * (see https://docs.solana.com/terminology#epoch)
+ *
+ * @typedef {Object} EpochSchedule
+ * @property {number} slotsPerEpoch The maximum number of slots in each epoch
+ * @property {number} leaderScheduleSlotOffset The number of slots before beginning of an epoch to calculate a leader schedule for that epoch
+ * @property {boolean} warmup Indicates whether epochs start short and grow
+ * @property {number} firstNormalEpoch The first epoch with `slotsPerEpoch` slots
+ * @property {number} firstNormalSlot The first slot of `firstNormalEpoch`
+ */
+
+var GetEpochScheduleResult = struct({
+  slotsPerEpoch: 'number',
+  leaderScheduleSlotOffset: 'number',
+  warmup: 'boolean',
+  firstNormalEpoch: 'number',
+  firstNormalSlot: 'number'
+});
+/**
+ * Leader schedule
+ * (see https://docs.solana.com/terminology#leader-schedule)
+ *
+ * @typedef {Object} LeaderSchedule
+ */
+
+var GetLeaderScheduleResult = struct.record(['string', 'any' // validating struct.array(['number']) is extremely slow
+]);
+/**
+ * Transaction error or null
+ */
+
+var TransactionErrorResult = struct.union(['null', 'object']);
+/**
+ * Signature status for a transaction
+ */
+
+var SignatureStatusResult = struct({
+  err: TransactionErrorResult
+});
+/**
+ * Version info for a node
+ *
+ * @typedef {Object} Version
+ * @property {string} solana-core Version of solana-core
+ */
+
+var Version = struct.pick({
+  'solana-core': 'string',
+  'feature-set': 'number?'
+});
+var SimulatedTransactionResponseValidator = jsonRpcResultAndContext(struct.pick({
+  err: struct.union(['null', 'object', 'string']),
+  logs: struct.union(['null', struct.array(['string'])])
+}));
+
+function createRpcRequest(url, useHttps) {
+  var agentManager = new AgentManager(useHttps);
+  var server = RpcClient__default['default']( /*#__PURE__*/function () {
+    var _ref = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee(request, callback) {
+      var agent, options, too_many_requests_retries, res, waitTime, text;
+      return _regeneratorRuntime__default['default'].wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              agent = agentManager.requestStart();
+              options = {
+                method: 'POST',
+                body: request,
+                agent: agent,
+                headers: {
+                  'Content-Type': 'application/json'
+                }
+              };
+              _context.prev = 2;
+              too_many_requests_retries = 5;
+              res = {};
+              waitTime = 500;
+
+            case 6:
+              _context.next = 8;
+              return fetch(url, options);
+
+            case 8:
+              res = _context.sent;
+
+              if (!(res.status !== 429
+              /* Too many requests */
+              )) {
+                _context.next = 11;
+                break;
+              }
+
+              return _context.abrupt("break", 20);
+
+            case 11:
+              too_many_requests_retries -= 1;
+
+              if (!(too_many_requests_retries === 0)) {
+                _context.next = 14;
+                break;
+              }
+
+              return _context.abrupt("break", 20);
+
+            case 14:
+              console.log("Server responded with ".concat(res.status, " ").concat(res.statusText, ".  Retrying after ").concat(waitTime, "ms delay..."));
+              _context.next = 17;
+              return sleep(waitTime);
+
+            case 17:
+              waitTime *= 2;
+
+            case 18:
+              _context.next = 6;
+              break;
+
+            case 20:
+              _context.next = 22;
+              return res.text();
+
+            case 22:
+              text = _context.sent;
+
+              if (res.ok) {
+                callback(null, text);
+              } else {
+                callback(new Error("".concat(res.status, " ").concat(res.statusText, ": ").concat(text)));
+              }
+
+              _context.next = 29;
+              break;
+
+            case 26:
+              _context.prev = 26;
+              _context.t0 = _context["catch"](2);
+              callback(_context.t0);
+
+            case 29:
+              _context.prev = 29;
+              agentManager.requestEnd();
+              return _context.finish(29);
+
+            case 32:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee, null, [[2, 26, 29, 32]]);
+    }));
+
+    return function (_x, _x2) {
+      return _ref.apply(this, arguments);
+    };
+  }());
+  return function (method, args) {
+    return new Promise(function (resolve, reject) {
+      server.request(method, args, function (err, response) {
+        if (err) {
+          reject(err);
+          return;
+        }
+
+        resolve(response);
+      });
+    });
+  };
+}
+/**
+ * Expected JSON RPC response for the "getInflationGovernor" message
+ */
+
+
+var GetInflationGovernorRpcResult = struct({
+  jsonrpc: struct.literal('2.0'),
+  id: 'string',
+  error: 'any?',
+  result: GetInflationGovernorResult
+});
+/**
+ * Expected JSON RPC response for the "getEpochInfo" message
+ */
+
+var GetEpochInfoRpcResult = struct({
+  jsonrpc: struct.literal('2.0'),
+  id: 'string',
+  error: 'any?',
+  result: GetEpochInfoResult
+});
+/**
+ * Expected JSON RPC response for the "getEpochSchedule" message
+ */
+
+var GetEpochScheduleRpcResult = struct({
+  jsonrpc: struct.literal('2.0'),
+  id: 'string',
+  error: 'any?',
+  result: GetEpochScheduleResult
+});
+/**
+ * Expected JSON RPC response for the "getLeaderSchedule" message
+ */
+
+var GetLeaderScheduleRpcResult = jsonRpcResult(GetLeaderScheduleResult);
+/**
+ * Expected JSON RPC response for the "getBalance" message
+ */
+
+var GetBalanceAndContextRpcResult = jsonRpcResultAndContext('number?');
+/**
+ * Expected JSON RPC response for the "getBlockTime" message
+ */
+
+var GetBlockTimeRpcResult = struct({
+  jsonrpc: struct.literal('2.0'),
+  id: 'string',
+  error: 'any?',
+  result: struct.union(['null', 'number', 'undefined'])
+});
+/**
+ * Expected JSON RPC response for the "minimumLedgerSlot" and "getFirstAvailableBlock" messages
+ */
+
+var SlotRpcResult = struct({
+  jsonrpc: struct.literal('2.0'),
+  id: 'string',
+  error: 'any?',
+  result: 'number'
+});
+/**
+ * Supply
+ *
+ * @typedef {Object} Supply
+ * @property {number} total Total supply in lamports
+ * @property {number} circulating Circulating supply in lamports
+ * @property {number} nonCirculating Non-circulating supply in lamports
+ * @property {Array<PublicKey>} nonCirculatingAccounts List of non-circulating account addresses
+ */
+
+/**
+ * Expected JSON RPC response for the "getSupply" message
+ */
+var GetSupplyRpcResult = jsonRpcResultAndContext(struct({
+  total: 'number',
+  circulating: 'number',
+  nonCirculating: 'number',
+  nonCirculatingAccounts: struct.array(['string'])
+}));
+/**
+ * Token amount object which returns a token amount in different formats
+ * for various client use cases.
+ *
+ * @typedef {Object} TokenAmount
+ * @property {string} amount Raw amount of tokens as string ignoring decimals
+ * @property {number} decimals Number of decimals configured for token's mint
+ * @property {number} uiAmount Token account as float, accounts for decimals
+ */
+
+/**
+ * Expected JSON RPC structure for token amounts
+ */
+var TokenAmountResult = struct.object({
+  amount: 'string',
+  uiAmount: 'number',
+  decimals: 'number'
+});
+/**
+ * Token address and balance.
+ *
+ * @typedef {Object} TokenAccountBalancePair
+ * @property {PublicKey} address Address of the token account
+ * @property {string} amount Raw amount of tokens as string ignoring decimals
+ * @property {number} decimals Number of decimals configured for token's mint
+ * @property {number} uiAmount Token account as float, accounts for decimals
+ */
+
+/**
+ * Expected JSON RPC response for the "getTokenLargestAccounts" message
+ */
+var GetTokenLargestAccountsResult = jsonRpcResultAndContext(struct.array([struct.pick({
+  address: 'string',
+  amount: 'string',
+  uiAmount: 'number',
+  decimals: 'number'
+})]));
+/**
+ * Expected JSON RPC response for the "getTokenAccountBalance" message
+ */
+
+var GetTokenAccountBalance = jsonRpcResultAndContext(TokenAmountResult);
+/**
+ * Expected JSON RPC response for the "getTokenSupply" message
+ */
+
+var GetTokenSupplyRpcResult = jsonRpcResultAndContext(TokenAmountResult);
+/**
+ * Expected JSON RPC response for the "getTokenAccountsByOwner" message
+ */
+
+var GetTokenAccountsByOwner = jsonRpcResultAndContext(struct.array([struct.object({
+  pubkey: 'string',
+  account: struct.object({
+    executable: 'boolean',
+    owner: 'string',
+    lamports: 'number',
+    data: ['string', struct.literal('base64')],
+    rentEpoch: 'number?'
+  })
+})]));
+/**
+ * Expected JSON RPC response for the "getTokenAccountsByOwner" message with parsed data
+ */
+
+var GetParsedTokenAccountsByOwner = jsonRpcResultAndContext(struct.array([struct.object({
+  pubkey: 'string',
+  account: struct.object({
+    executable: 'boolean',
+    owner: 'string',
+    lamports: 'number',
+    data: struct.pick({
+      program: 'string',
+      parsed: 'any',
+      space: 'number'
+    }),
+    rentEpoch: 'number?'
+  })
+})]));
+/**
+ * Pair of an account address and its balance
+ *
+ * @typedef {Object} AccountBalancePair
+ * @property {PublicKey} address
+ * @property {number} lamports
+ */
+
+/**
+ * Expected JSON RPC response for the "getLargestAccounts" message
+ */
+var GetLargestAccountsRpcResult = jsonRpcResultAndContext(struct.array([struct({
+  lamports: 'number',
+  address: 'string'
+})]));
+/**
+ * Expected JSON RPC response for the "getVersion" message
+ */
+
+var GetVersionRpcResult = struct({
+  jsonrpc: struct.literal('2.0'),
+  id: 'string',
+  error: 'any?',
+  result: Version
+});
+/**
+ * @private
+ */
+
+var AccountInfoResult = struct({
+  executable: 'boolean',
+  owner: 'string',
+  lamports: 'number',
+  data: 'any',
+  rentEpoch: 'number?'
+});
+/**
+ * @private
+ */
+
+var ParsedAccountInfoResult = struct.object({
+  executable: 'boolean',
+  owner: 'string',
+  lamports: 'number',
+  data: struct.union([['string', struct.literal('base64')], struct.pick({
+    program: 'string',
+    parsed: 'any',
+    space: 'number'
+  })]),
+  rentEpoch: 'number?'
+});
+/**
+ * @private
+ */
+
+var StakeActivationResult = struct.object({
+  state: struct.union([struct.literal('active'), struct.literal('inactive'), struct.literal('activating'), struct.literal('deactivating')]),
+  active: 'number',
+  inactive: 'number'
+});
+/**
+ * Expected JSON RPC response for the "getAccountInfo" message
+ */
+
+var GetAccountInfoAndContextRpcResult = jsonRpcResultAndContext(struct.union(['null', AccountInfoResult]));
+/**
+ * Expected JSON RPC response for the "getAccountInfo" message with jsonParsed param
+ */
+
+var GetParsedAccountInfoResult = jsonRpcResultAndContext(struct.union(['null', ParsedAccountInfoResult]));
+/**
+ * Expected JSON RPC response for the "getStakeActivation" message with jsonParsed param
+ */
+
+var GetStakeActivationResult = jsonRpcResult(StakeActivationResult);
+/**
+ * Expected JSON RPC response for the "getConfirmedSignaturesForAddress" message
+ */
+
+var GetConfirmedSignaturesForAddressRpcResult = jsonRpcResult(struct.array(['string']));
+/**
+ * Expected JSON RPC response for the "getConfirmedSignaturesForAddress2" message
+ */
+
+var GetConfirmedSignaturesForAddress2RpcResult = jsonRpcResult(struct.array([struct.pick({
+  signature: 'string',
+  slot: 'number',
+  err: TransactionErrorResult,
+  memo: struct.union(['null', 'string']),
+  blockTime: struct.union(['undefined', 'null', 'number'])
+})]));
+/***
+ * Expected JSON RPC response for the "accountNotification" message
+ */
+
+var AccountNotificationResult = struct({
+  subscription: 'number',
+  result: notificationResultAndContext(AccountInfoResult)
+});
+/**
+ * @private
+ */
+
+var ProgramAccountInfoResult = struct({
+  pubkey: 'string',
+  account: AccountInfoResult
+});
+/**
+ * @private
+ */
+
+var ParsedProgramAccountInfoResult = struct({
+  pubkey: 'string',
+  account: ParsedAccountInfoResult
+});
+/***
+ * Expected JSON RPC response for the "programNotification" message
+ */
+
+var ProgramAccountNotificationResult = struct({
+  subscription: 'number',
+  result: notificationResultAndContext(ProgramAccountInfoResult)
+});
+/**
+ * @private
+ */
+
+var SlotInfoResult = struct({
+  parent: 'number',
+  slot: 'number',
+  root: 'number'
+});
+/**
+ * Expected JSON RPC response for the "slotNotification" message
+ */
+
+var SlotNotificationResult = struct({
+  subscription: 'number',
+  result: SlotInfoResult
+});
+/**
+ * Expected JSON RPC response for the "signatureNotification" message
+ */
+
+var SignatureNotificationResult = struct({
+  subscription: 'number',
+  result: notificationResultAndContext(SignatureStatusResult)
+});
+/**
+ * Expected JSON RPC response for the "rootNotification" message
+ */
+
+var RootNotificationResult = struct({
+  subscription: 'number',
+  result: 'number'
+});
+/**
+ * Expected JSON RPC response for the "getProgramAccounts" message
+ */
+
+var GetProgramAccountsRpcResult = jsonRpcResult(struct.array([ProgramAccountInfoResult]));
+/**
+ * Expected JSON RPC response for the "getProgramAccounts" message
+ */
+
+var GetParsedProgramAccountsRpcResult = jsonRpcResult(struct.array([ParsedProgramAccountInfoResult]));
+/**
+ * Expected JSON RPC response for the "getSlot" message
+ */
+
+var GetSlot = jsonRpcResult('number');
+/**
+ * Expected JSON RPC response for the "getSlotLeader" message
+ */
+
+var GetSlotLeader = jsonRpcResult('string');
+/**
+ * Expected JSON RPC response for the "getClusterNodes" message
+ */
+
+var GetClusterNodes = jsonRpcResult(struct.array([struct.pick({
+  pubkey: 'string',
+  gossip: struct.union(['null', 'string']),
+  tpu: struct.union(['null', 'string']),
+  rpc: struct.union(['null', 'string']),
+  version: struct.union(['null', 'string'])
+})]));
+/**
+ * Expected JSON RPC response for the "getVoteAccounts" message
+ */
+
+var GetVoteAccounts = jsonRpcResult(struct({
+  current: struct.array([struct.pick({
+    votePubkey: 'string',
+    nodePubkey: 'string',
+    activatedStake: 'number',
+    epochVoteAccount: 'boolean',
+    epochCredits: struct.array([struct.tuple(['number', 'number', 'number'])]),
+    commission: 'number',
+    lastVote: 'number',
+    rootSlot: 'number?'
+  })]),
+  delinquent: struct.array([struct.pick({
+    votePubkey: 'string',
+    nodePubkey: 'string',
+    activatedStake: 'number',
+    epochVoteAccount: 'boolean',
+    epochCredits: struct.array([struct.tuple(['number', 'number', 'number'])]),
+    commission: 'number',
+    lastVote: 'number',
+    rootSlot: 'number?'
+  })])
+}));
+/**
+ * Expected JSON RPC response for the "getSignatureStatuses" message
+ */
+
+var GetSignatureStatusesRpcResult = jsonRpcResultAndContext(struct.array([struct.union(['null', struct.pick({
+  slot: 'number',
+  confirmations: struct.union(['number', 'null']),
+  err: TransactionErrorResult,
+  confirmationStatus: 'string?'
+})])]));
+/**
+ * Expected JSON RPC response for the "getTransactionCount" message
+ */
+
+var GetTransactionCountRpcResult = jsonRpcResult('number');
+/**
+ * Expected JSON RPC response for the "getTotalSupply" message
+ */
+
+var GetTotalSupplyRpcResult = jsonRpcResult('number');
+/**
+ * Expected JSON RPC response for the "getMinimumBalanceForRentExemption" message
+ */
+
+var GetMinimumBalanceForRentExemptionRpcResult = jsonRpcResult('number');
+/**
+ * @private
+ */
+
+var ConfirmedTransactionResult = struct({
+  signatures: struct.array(['string']),
+  message: struct({
+    accountKeys: struct.array(['string']),
+    header: struct({
+      numRequiredSignatures: 'number',
+      numReadonlySignedAccounts: 'number',
+      numReadonlyUnsignedAccounts: 'number'
+    }),
+    instructions: struct.array([struct({
+      accounts: struct.array(['number']),
+      data: 'string',
+      programIdIndex: 'number'
+    })]),
+    recentBlockhash: 'string'
+  })
+});
+/**
+ * @private
+ */
+
+var ParsedConfirmedTransactionResult = struct({
+  signatures: struct.array(['string']),
+  message: struct({
+    accountKeys: struct.array([struct({
+      pubkey: 'string',
+      signer: 'boolean',
+      writable: 'boolean'
+    })]),
+    instructions: struct.array([struct.union([struct({
+      accounts: struct.array(['string']),
+      data: 'string',
+      programId: 'string'
+    }), struct({
+      parsed: 'any',
+      program: 'string',
+      programId: 'string'
+    })])]),
+    recentBlockhash: 'string'
+  })
+});
+/**
+ * @private
+ */
+
+var ConfirmedTransactionMetaResult = struct.union(['null', struct.pick({
+  err: TransactionErrorResult,
+  fee: 'number',
+  innerInstructions: struct.union([struct.array([struct({
+    index: 'number',
+    instructions: struct.array([struct({
+      accounts: struct.array(['number']),
+      data: 'string',
+      programIdIndex: 'number'
+    })])
+  })]), 'null', 'undefined']),
+  preBalances: struct.array(['number']),
+  postBalances: struct.array(['number']),
+  logMessages: struct.union([struct.array(['string']), 'null', 'undefined']),
+  preTokenBalances: struct.union([struct.array([struct.pick({
+    accountIndex: 'number',
+    mint: 'string',
+    uiTokenAmount: struct.pick({
+      amount: 'string',
+      decimals: 'number',
+      uiAmount: 'number'
+    })
+  })]), 'null', 'undefined']),
+  postTokenBalances: struct.union([struct.array([struct.pick({
+    accountIndex: 'number',
+    mint: 'string',
+    uiTokenAmount: struct.pick({
+      amount: 'string',
+      decimals: 'number',
+      uiAmount: 'number'
+    })
+  })]), 'null', 'undefined'])
+})]);
+/**
+ * @private
+ */
+
+var ParsedConfirmedTransactionMetaResult = struct.union(['null', struct.pick({
+  err: TransactionErrorResult,
+  fee: 'number',
+  innerInstructions: struct.union([struct.array([struct({
+    index: 'number',
+    instructions: struct.array([struct.union([struct({
+      accounts: struct.array(['string']),
+      data: 'string',
+      programId: 'string'
+    }), struct({
+      parsed: 'any',
+      program: 'string',
+      programId: 'string'
+    })])])
+  })]), 'null', 'undefined']),
+  preBalances: struct.array(['number']),
+  postBalances: struct.array(['number']),
+  logMessages: struct.union([struct.array(['string']), 'null', 'undefined']),
+  preTokenBalances: struct.union([struct.array([struct.pick({
+    accountIndex: 'number',
+    mint: 'string',
+    uiTokenAmount: struct.pick({
+      amount: 'string',
+      decimals: 'number',
+      uiAmount: 'number'
+    })
+  })]), 'null', 'undefined']),
+  postTokenBalances: struct.union([struct.array([struct.pick({
+    accountIndex: 'number',
+    mint: 'string',
+    uiTokenAmount: struct.pick({
+      amount: 'string',
+      decimals: 'number',
+      uiAmount: 'number'
+    })
+  })]), 'null', 'undefined'])
+})]);
+/**
+ * Expected JSON RPC response for the "getConfirmedBlock" message
+ */
+
+var GetConfirmedBlockRpcResult = jsonRpcResult(struct.union(['null', struct.pick({
+  blockhash: 'string',
+  previousBlockhash: 'string',
+  parentSlot: 'number',
+  transactions: struct.array([struct({
+    transaction: ConfirmedTransactionResult,
+    meta: ConfirmedTransactionMetaResult
+  })]),
+  rewards: struct.union(['undefined', struct.array([struct({
+    pubkey: 'string',
+    lamports: 'number',
+    postBalance: struct.union(['number', 'undefined']),
+    rewardType: struct.union(['string', 'undefined'])
+  })])])
+})]));
+/**
+ * Expected JSON RPC response for the "getConfirmedTransaction" message
+ */
+
+var GetConfirmedTransactionRpcResult = jsonRpcResult(struct.union(['null', struct.pick({
+  slot: 'number',
+  transaction: ConfirmedTransactionResult,
+  meta: ConfirmedTransactionMetaResult,
+  blockTime: struct.union(['number', 'null', 'undefined'])
+})]));
+/**
+ * Expected JSON RPC response for the "getConfirmedTransaction" message
+ */
+
+var GetParsedConfirmedTransactionRpcResult = jsonRpcResult(struct.union(['null', struct.pick({
+  slot: 'number',
+  transaction: ParsedConfirmedTransactionResult,
+  meta: ParsedConfirmedTransactionMetaResult,
+  blockTime: struct.union(['number', 'null', 'undefined'])
+})]));
+/**
+ * Expected JSON RPC response for the "getRecentBlockhash" message
+ */
+
+var GetRecentBlockhashAndContextRpcResult = jsonRpcResultAndContext(struct({
+  blockhash: 'string',
+  feeCalculator: struct({
+    lamportsPerSignature: 'number'
+  })
+}));
+/*
+ * Expected JSON RPC response for "getRecentPerformanceSamples" message
+ */
+
+var GetRecentPerformanceSamplesRpcResult = jsonRpcResult(struct.array([struct.pick({
+  slot: 'number',
+  numTransactions: 'number',
+  numSlots: 'number',
+  samplePeriodSecs: 'number'
+})]));
+/**
+ * Expected JSON RPC response for the "getFeeCalculatorForBlockhash" message
+ */
+
+var GetFeeCalculatorRpcResult = jsonRpcResultAndContext(struct.union(['null', struct({
+  feeCalculator: struct({
+    lamportsPerSignature: 'number'
+  })
+})]));
+/**
+ * Expected JSON RPC response for the "requestAirdrop" message
+ */
+
+var RequestAirdropRpcResult = jsonRpcResult('string');
+/**
+ * Expected JSON RPC response for the "sendTransaction" message
+ */
+
+var SendTransactionRpcResult = jsonRpcResult('string');
+/**
+ * Information about the latest slot being processed by a node
+ *
+ * @typedef {Object} SlotInfo
+ * @property {number} slot Currently processing slot
+ * @property {number} parent Parent of the current slot
+ * @property {number} root The root block of the current slot's fork
+ */
+
+/**
+ * A connection to a fullnode JSON RPC endpoint
+ */
+var Connection = /*#__PURE__*/function () {
+  /**
+   * Establish a JSON RPC connection
+   *
+   * @param endpoint URL to the fullnode JSON RPC endpoint
+   * @param commitment optional default commitment level
+   */
+  function Connection(endpoint, commitment) {
+    _classCallCheck__default['default'](this, Connection);
+
+    _defineProperty__default['default'](this, "_rpcEndpoint", void 0);
+
+    _defineProperty__default['default'](this, "_rpcRequest", void 0);
+
+    _defineProperty__default['default'](this, "_rpcWebSocket", void 0);
+
+    _defineProperty__default['default'](this, "_rpcWebSocketConnected", false);
+
+    _defineProperty__default['default'](this, "_rpcWebSocketHeartbeat", null);
+
+    _defineProperty__default['default'](this, "_rpcWebSocketIdleTimeout", null);
+
+    _defineProperty__default['default'](this, "_commitment", void 0);
+
+    _defineProperty__default['default'](this, "_blockhashInfo", void 0);
+
+    _defineProperty__default['default'](this, "_disableBlockhashCaching", false);
+
+    _defineProperty__default['default'](this, "_pollingBlockhash", false);
+
+    _defineProperty__default['default'](this, "_accountChangeSubscriptions", {});
+
+    _defineProperty__default['default'](this, "_accountChangeSubscriptionCounter", 0);
+
+    _defineProperty__default['default'](this, "_programAccountChangeSubscriptions", {});
+
+    _defineProperty__default['default'](this, "_programAccountChangeSubscriptionCounter", 0);
+
+    _defineProperty__default['default'](this, "_slotSubscriptions", {});
+
+    _defineProperty__default['default'](this, "_slotSubscriptionCounter", 0);
+
+    _defineProperty__default['default'](this, "_signatureSubscriptions", {});
+
+    _defineProperty__default['default'](this, "_signatureSubscriptionCounter", 0);
+
+    _defineProperty__default['default'](this, "_rootSubscriptions", {});
+
+    _defineProperty__default['default'](this, "_rootSubscriptionCounter", 0);
+
+    this._rpcEndpoint = endpoint;
+    var url = Url.parse(endpoint);
+    var useHttps = url.protocol === 'https:';
+    this._rpcRequest = createRpcRequest(url.href, useHttps);
+    this._commitment = commitment;
+    this._blockhashInfo = {
+      recentBlockhash: null,
+      lastFetch: new Date(0),
+      transactionSignatures: [],
+      simulatedSignatures: []
+    };
+    url.protocol = useHttps ? 'wss:' : 'ws:';
+    url.host = ''; // Only shift the port by +1 as a convention for ws(s) only if given endpoint
+    // is explictly specifying the endpoint port (HTTP-based RPC), assuming
+    // we're directly trying to connect to solana-validator's ws listening port.
+    // When the endpoint omits the port, we're connecting to the protocol
+    // default ports: http(80) or https(443) and it's assumed we're behind a reverse
+    // proxy which manages WebSocket upgrade and backend port redirection.
+
+    if (url.port !== null) {
+      url.port = String(Number(url.port) + 1);
+    }
+
+    this._rpcWebSocket = new dist.Client(Url.format(url), {
+      autoconnect: false,
+      max_reconnects: Infinity
+    });
+
+    this._rpcWebSocket.on('open', this._wsOnOpen.bind(this));
+
+    this._rpcWebSocket.on('error', this._wsOnError.bind(this));
+
+    this._rpcWebSocket.on('close', this._wsOnClose.bind(this));
+
+    this._rpcWebSocket.on('accountNotification', this._wsOnAccountNotification.bind(this));
+
+    this._rpcWebSocket.on('programNotification', this._wsOnProgramAccountNotification.bind(this));
+
+    this._rpcWebSocket.on('slotNotification', this._wsOnSlotNotification.bind(this));
+
+    this._rpcWebSocket.on('signatureNotification', this._wsOnSignatureNotification.bind(this));
+
+    this._rpcWebSocket.on('rootNotification', this._wsOnRootNotification.bind(this));
+  }
+  /**
+   * The default commitment used for requests
+   */
+
+
+  _createClass__default['default'](Connection, [{
+    key: "getBalanceAndContext",
+
+    /**
+     * Fetch the balance for the specified public key, return with context
+     */
+    value: function () {
+      var _getBalanceAndContext = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee2(publicKey, commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee2$(_context2) {
+          while (1) {
+            switch (_context2.prev = _context2.next) {
+              case 0:
+                args = this._buildArgs([publicKey.toBase58()], commitment);
+                _context2.next = 3;
+                return this._rpcRequest('getBalance', args);
+
+              case 3:
+                unsafeRes = _context2.sent;
+                res = GetBalanceAndContextRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context2.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get balance for ' + publicKey.toBase58() + ': ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context2.abrupt("return", res.result);
+
+              case 9:
+              case "end":
+                return _context2.stop();
+            }
+          }
+        }, _callee2, this);
+      }));
+
+      function getBalanceAndContext(_x3, _x4) {
+        return _getBalanceAndContext.apply(this, arguments);
+      }
+
+      return getBalanceAndContext;
+    }()
+    /**
+     * Fetch the balance for the specified public key
+     */
+
+  }, {
+    key: "getBalance",
+    value: function () {
+      var _getBalance = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee3(publicKey, commitment) {
+        return _regeneratorRuntime__default['default'].wrap(function _callee3$(_context3) {
+          while (1) {
+            switch (_context3.prev = _context3.next) {
+              case 0:
+                _context3.next = 2;
+                return this.getBalanceAndContext(publicKey, commitment).then(function (x) {
+                  return x.value;
+                })["catch"](function (e) {
+                  throw new Error('failed to get balance of account ' + publicKey.toBase58() + ': ' + e);
+                });
+
+              case 2:
+                return _context3.abrupt("return", _context3.sent);
+
+              case 3:
+              case "end":
+                return _context3.stop();
+            }
+          }
+        }, _callee3, this);
+      }));
+
+      function getBalance(_x5, _x6) {
+        return _getBalance.apply(this, arguments);
+      }
+
+      return getBalance;
+    }()
+    /**
+     * Fetch the estimated production time of a block
+     */
+
+  }, {
+    key: "getBlockTime",
+    value: function () {
+      var _getBlockTime = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee4(slot) {
+        var unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee4$(_context4) {
+          while (1) {
+            switch (_context4.prev = _context4.next) {
+              case 0:
+                _context4.next = 2;
+                return this._rpcRequest('getBlockTime', [slot]);
+
+              case 2:
+                unsafeRes = _context4.sent;
+                res = GetBlockTimeRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context4.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get block time for slot ' + slot + ': ' + res.error.message);
+
+              case 6:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context4.abrupt("return", res.result);
+
+              case 8:
+              case "end":
+                return _context4.stop();
+            }
+          }
+        }, _callee4, this);
+      }));
+
+      function getBlockTime(_x7) {
+        return _getBlockTime.apply(this, arguments);
+      }
+
+      return getBlockTime;
+    }()
+    /**
+     * Fetch the lowest slot that the node has information about in its ledger.
+     * This value may increase over time if the node is configured to purge older ledger data
+     */
+
+  }, {
+    key: "getMinimumLedgerSlot",
+    value: function () {
+      var _getMinimumLedgerSlot = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee5() {
+        var unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee5$(_context5) {
+          while (1) {
+            switch (_context5.prev = _context5.next) {
+              case 0:
+                _context5.next = 2;
+                return this._rpcRequest('minimumLedgerSlot', []);
+
+              case 2:
+                unsafeRes = _context5.sent;
+                res = SlotRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context5.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get minimum ledger slot: ' + res.error.message);
+
+              case 6:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context5.abrupt("return", res.result);
+
+              case 8:
+              case "end":
+                return _context5.stop();
+            }
+          }
+        }, _callee5, this);
+      }));
+
+      function getMinimumLedgerSlot() {
+        return _getMinimumLedgerSlot.apply(this, arguments);
+      }
+
+      return getMinimumLedgerSlot;
+    }()
+    /**
+     * Fetch the slot of the lowest confirmed block that has not been purged from the ledger
+     */
+
+  }, {
+    key: "getFirstAvailableBlock",
+    value: function () {
+      var _getFirstAvailableBlock = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee6() {
+        var unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee6$(_context6) {
+          while (1) {
+            switch (_context6.prev = _context6.next) {
+              case 0:
+                _context6.next = 2;
+                return this._rpcRequest('getFirstAvailableBlock', []);
+
+              case 2:
+                unsafeRes = _context6.sent;
+                res = SlotRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context6.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get first available block: ' + res.error.message);
+
+              case 6:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context6.abrupt("return", res.result);
+
+              case 8:
+              case "end":
+                return _context6.stop();
+            }
+          }
+        }, _callee6, this);
+      }));
+
+      function getFirstAvailableBlock() {
+        return _getFirstAvailableBlock.apply(this, arguments);
+      }
+
+      return getFirstAvailableBlock;
+    }()
+    /**
+     * Fetch information about the current supply
+     */
+
+  }, {
+    key: "getSupply",
+    value: function () {
+      var _getSupply = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee7(commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee7$(_context7) {
+          while (1) {
+            switch (_context7.prev = _context7.next) {
+              case 0:
+                args = this._buildArgs([], commitment);
+                _context7.next = 3;
+                return this._rpcRequest('getSupply', args);
+
+              case 3:
+                unsafeRes = _context7.sent;
+                res = GetSupplyRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context7.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get supply: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                res.result.value.nonCirculatingAccounts = res.result.value.nonCirculatingAccounts.map(function (account) {
+                  return new PublicKey(account);
+                });
+                return _context7.abrupt("return", res.result);
+
+              case 10:
+              case "end":
+                return _context7.stop();
+            }
+          }
+        }, _callee7, this);
+      }));
+
+      function getSupply(_x8) {
+        return _getSupply.apply(this, arguments);
+      }
+
+      return getSupply;
+    }()
+    /**
+     * Fetch the current supply of a token mint
+     */
+
+  }, {
+    key: "getTokenSupply",
+    value: function () {
+      var _getTokenSupply = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee8(tokenMintAddress, commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee8$(_context8) {
+          while (1) {
+            switch (_context8.prev = _context8.next) {
+              case 0:
+                args = this._buildArgs([tokenMintAddress.toBase58()], commitment);
+                _context8.next = 3;
+                return this._rpcRequest('getTokenSupply', args);
+
+              case 3:
+                unsafeRes = _context8.sent;
+                res = GetTokenSupplyRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context8.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get token supply: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context8.abrupt("return", res.result);
+
+              case 9:
+              case "end":
+                return _context8.stop();
+            }
+          }
+        }, _callee8, this);
+      }));
+
+      function getTokenSupply(_x9, _x10) {
+        return _getTokenSupply.apply(this, arguments);
+      }
+
+      return getTokenSupply;
+    }()
+    /**
+     * Fetch the current balance of a token account
+     */
+
+  }, {
+    key: "getTokenAccountBalance",
+    value: function () {
+      var _getTokenAccountBalance = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee9(tokenAddress, commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee9$(_context9) {
+          while (1) {
+            switch (_context9.prev = _context9.next) {
+              case 0:
+                args = this._buildArgs([tokenAddress.toBase58()], commitment);
+                _context9.next = 3;
+                return this._rpcRequest('getTokenAccountBalance', args);
+
+              case 3:
+                unsafeRes = _context9.sent;
+                res = GetTokenAccountBalance(unsafeRes);
+
+                if (!res.error) {
+                  _context9.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get token account balance: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context9.abrupt("return", res.result);
+
+              case 9:
+              case "end":
+                return _context9.stop();
+            }
+          }
+        }, _callee9, this);
+      }));
+
+      function getTokenAccountBalance(_x11, _x12) {
+        return _getTokenAccountBalance.apply(this, arguments);
+      }
+
+      return getTokenAccountBalance;
+    }()
+    /**
+     * Fetch all the token accounts owned by the specified account
+     *
+     * @return {Promise<RpcResponseAndContext<Array<{pubkey: PublicKey, account: AccountInfo<Buffer>}>>>}
+     */
+
+  }, {
+    key: "getTokenAccountsByOwner",
+    value: function () {
+      var _getTokenAccountsByOwner = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee10(ownerAddress, filter, commitment) {
+        var _args, args, unsafeRes, res, result, context, value;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee10$(_context10) {
+          while (1) {
+            switch (_context10.prev = _context10.next) {
+              case 0:
+                _args = [ownerAddress.toBase58()];
+
+                if (filter.mint) {
+                  _args.push({
+                    mint: filter.mint.toBase58()
+                  });
+                } else {
+                  _args.push({
+                    programId: filter.programId.toBase58()
+                  });
+                }
+
+                args = this._buildArgs(_args, commitment, 'base64');
+                _context10.next = 5;
+                return this._rpcRequest('getTokenAccountsByOwner', args);
+
+              case 5:
+                unsafeRes = _context10.sent;
+                res = GetTokenAccountsByOwner(unsafeRes);
+
+                if (!res.error) {
+                  _context10.next = 9;
+                  break;
+                }
+
+                throw new Error('failed to get token accounts owned by account ' + ownerAddress.toBase58() + ': ' + res.error.message);
+
+              case 9:
+                result = res.result;
+                context = result.context, value = result.value;
+                assert__default['default'](typeof result !== 'undefined');
+                return _context10.abrupt("return", {
+                  context: context,
+                  value: value.map(function (result) {
+                    assert__default['default'](result.account.data[1] === 'base64');
+                    return {
+                      pubkey: new PublicKey(result.pubkey),
+                      account: {
+                        executable: result.account.executable,
+                        owner: new PublicKey(result.account.owner),
+                        lamports: result.account.lamports,
+                        data: Buffer.from(result.account.data[0], 'base64')
+                      }
+                    };
+                  })
+                });
+
+              case 13:
+              case "end":
+                return _context10.stop();
+            }
+          }
+        }, _callee10, this);
+      }));
+
+      function getTokenAccountsByOwner(_x13, _x14, _x15) {
+        return _getTokenAccountsByOwner.apply(this, arguments);
+      }
+
+      return getTokenAccountsByOwner;
+    }()
+    /**
+     * Fetch parsed token accounts owned by the specified account
+     *
+     * @return {Promise<RpcResponseAndContext<Array<{pubkey: PublicKey, account: AccountInfo<ParsedAccountData>}>>>}
+     */
+
+  }, {
+    key: "getParsedTokenAccountsByOwner",
+    value: function () {
+      var _getParsedTokenAccountsByOwner = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee11(ownerAddress, filter, commitment) {
+        var _args, args, unsafeRes, res, result, context, value;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee11$(_context11) {
+          while (1) {
+            switch (_context11.prev = _context11.next) {
+              case 0:
+                _args = [ownerAddress.toBase58()];
+
+                if (filter.mint) {
+                  _args.push({
+                    mint: filter.mint.toBase58()
+                  });
+                } else {
+                  _args.push({
+                    programId: filter.programId.toBase58()
+                  });
+                }
+
+                args = this._buildArgs(_args, commitment, 'jsonParsed');
+                _context11.next = 5;
+                return this._rpcRequest('getTokenAccountsByOwner', args);
+
+              case 5:
+                unsafeRes = _context11.sent;
+                res = GetParsedTokenAccountsByOwner(unsafeRes);
+
+                if (!res.error) {
+                  _context11.next = 9;
+                  break;
+                }
+
+                throw new Error('failed to get token accounts owned by account ' + ownerAddress.toBase58() + ': ' + res.error.message);
+
+              case 9:
+                result = res.result;
+                context = result.context, value = result.value;
+                assert__default['default'](typeof result !== 'undefined');
+                return _context11.abrupt("return", {
+                  context: context,
+                  value: value.map(function (result) {
+                    return {
+                      pubkey: new PublicKey(result.pubkey),
+                      account: {
+                        executable: result.account.executable,
+                        owner: new PublicKey(result.account.owner),
+                        lamports: result.account.lamports,
+                        data: result.account.data
+                      }
+                    };
+                  })
+                });
+
+              case 13:
+              case "end":
+                return _context11.stop();
+            }
+          }
+        }, _callee11, this);
+      }));
+
+      function getParsedTokenAccountsByOwner(_x16, _x17, _x18) {
+        return _getParsedTokenAccountsByOwner.apply(this, arguments);
+      }
+
+      return getParsedTokenAccountsByOwner;
+    }()
+    /**
+     * Fetch the 20 largest accounts with their current balances
+     */
+
+  }, {
+    key: "getLargestAccounts",
+    value: function () {
+      var _getLargestAccounts = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee12(config) {
+        var arg, args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee12$(_context12) {
+          while (1) {
+            switch (_context12.prev = _context12.next) {
+              case 0:
+                arg = _objectSpread$1(_objectSpread$1({}, config), {}, {
+                  commitment: config && config.commitment || this.commitment
+                });
+                args = arg.filter || arg.commitment ? [arg] : [];
+                _context12.next = 4;
+                return this._rpcRequest('getLargestAccounts', args);
+
+              case 4:
+                unsafeRes = _context12.sent;
+                res = GetLargestAccountsRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context12.next = 8;
+                  break;
+                }
+
+                throw new Error('failed to get largest accounts: ' + res.error.message);
+
+              case 8:
+                assert__default['default'](typeof res.result !== 'undefined');
+                res.result.value = res.result.value.map(function (_ref2) {
+                  var address = _ref2.address,
+                      lamports = _ref2.lamports;
+                  return {
+                    address: new PublicKey(address),
+                    lamports: lamports
+                  };
+                });
+                return _context12.abrupt("return", res.result);
+
+              case 11:
+              case "end":
+                return _context12.stop();
+            }
+          }
+        }, _callee12, this);
+      }));
+
+      function getLargestAccounts(_x19) {
+        return _getLargestAccounts.apply(this, arguments);
+      }
+
+      return getLargestAccounts;
+    }()
+    /**
+     * Fetch the 20 largest token accounts with their current balances
+     * for a given mint.
+     */
+
+  }, {
+    key: "getTokenLargestAccounts",
+    value: function () {
+      var _getTokenLargestAccounts = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee13(mintAddress, commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee13$(_context13) {
+          while (1) {
+            switch (_context13.prev = _context13.next) {
+              case 0:
+                args = this._buildArgs([mintAddress.toBase58()], commitment);
+                _context13.next = 3;
+                return this._rpcRequest('getTokenLargestAccounts', args);
+
+              case 3:
+                unsafeRes = _context13.sent;
+                res = GetTokenLargestAccountsResult(unsafeRes);
+
+                if (!res.error) {
+                  _context13.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get token largest accounts: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                res.result.value = res.result.value.map(function (pair) {
+                  return _objectSpread$1(_objectSpread$1({}, pair), {}, {
+                    address: new PublicKey(pair.address)
+                  });
+                });
+                return _context13.abrupt("return", res.result);
+
+              case 10:
+              case "end":
+                return _context13.stop();
+            }
+          }
+        }, _callee13, this);
+      }));
+
+      function getTokenLargestAccounts(_x20, _x21) {
+        return _getTokenLargestAccounts.apply(this, arguments);
+      }
+
+      return getTokenLargestAccounts;
+    }()
+    /**
+     * Fetch all the account info for the specified public key, return with context
+     */
+
+  }, {
+    key: "getAccountInfoAndContext",
+    value: function () {
+      var _getAccountInfoAndContext = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee14(publicKey, commitment) {
+        var args, unsafeRes, res, value, _res$result$value, executable, owner, lamports, data;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee14$(_context14) {
+          while (1) {
+            switch (_context14.prev = _context14.next) {
+              case 0:
+                args = this._buildArgs([publicKey.toBase58()], commitment, 'base64');
+                _context14.next = 3;
+                return this._rpcRequest('getAccountInfo', args);
+
+              case 3:
+                unsafeRes = _context14.sent;
+                res = GetAccountInfoAndContextRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context14.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get info about account ' + publicKey.toBase58() + ': ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                value = null;
+
+                if (res.result.value) {
+                  _res$result$value = res.result.value, executable = _res$result$value.executable, owner = _res$result$value.owner, lamports = _res$result$value.lamports, data = _res$result$value.data;
+                  assert__default['default'](data[1] === 'base64');
+                  value = {
+                    executable: executable,
+                    owner: new PublicKey(owner),
+                    lamports: lamports,
+                    data: Buffer.from(data[0], 'base64')
+                  };
+                }
+
+                return _context14.abrupt("return", {
+                  context: {
+                    slot: res.result.context.slot
+                  },
+                  value: value
+                });
+
+              case 11:
+              case "end":
+                return _context14.stop();
+            }
+          }
+        }, _callee14, this);
+      }));
+
+      function getAccountInfoAndContext(_x22, _x23) {
+        return _getAccountInfoAndContext.apply(this, arguments);
+      }
+
+      return getAccountInfoAndContext;
+    }()
+    /**
+     * Fetch parsed account info for the specified public key
+     */
+
+  }, {
+    key: "getParsedAccountInfo",
+    value: function () {
+      var _getParsedAccountInfo = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee15(publicKey, commitment) {
+        var args, unsafeRes, res, value, _res$result$value2, executable, owner, lamports, resultData, data;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee15$(_context15) {
+          while (1) {
+            switch (_context15.prev = _context15.next) {
+              case 0:
+                args = this._buildArgs([publicKey.toBase58()], commitment, 'jsonParsed');
+                _context15.next = 3;
+                return this._rpcRequest('getAccountInfo', args);
+
+              case 3:
+                unsafeRes = _context15.sent;
+                res = GetParsedAccountInfoResult(unsafeRes);
+
+                if (!res.error) {
+                  _context15.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get info about account ' + publicKey.toBase58() + ': ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                value = null;
+
+                if (res.result.value) {
+                  _res$result$value2 = res.result.value, executable = _res$result$value2.executable, owner = _res$result$value2.owner, lamports = _res$result$value2.lamports, resultData = _res$result$value2.data;
+                  data = resultData;
+
+                  if (!data.program) {
+                    assert__default['default'](data[1] === 'base64');
+                    data = Buffer.from(data[0], 'base64');
+                  }
+
+                  value = {
+                    executable: executable,
+                    owner: new PublicKey(owner),
+                    lamports: lamports,
+                    data: data
+                  };
+                }
+
+                return _context15.abrupt("return", {
+                  context: {
+                    slot: res.result.context.slot
+                  },
+                  value: value
+                });
+
+              case 11:
+              case "end":
+                return _context15.stop();
+            }
+          }
+        }, _callee15, this);
+      }));
+
+      function getParsedAccountInfo(_x24, _x25) {
+        return _getParsedAccountInfo.apply(this, arguments);
+      }
+
+      return getParsedAccountInfo;
+    }()
+    /**
+     * Fetch all the account info for the specified public key
+     */
+
+  }, {
+    key: "getAccountInfo",
+    value: function () {
+      var _getAccountInfo = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee16(publicKey, commitment) {
+        return _regeneratorRuntime__default['default'].wrap(function _callee16$(_context16) {
+          while (1) {
+            switch (_context16.prev = _context16.next) {
+              case 0:
+                _context16.next = 2;
+                return this.getAccountInfoAndContext(publicKey, commitment).then(function (x) {
+                  return x.value;
+                })["catch"](function (e) {
+                  throw new Error('failed to get info about account ' + publicKey.toBase58() + ': ' + e);
+                });
+
+              case 2:
+                return _context16.abrupt("return", _context16.sent);
+
+              case 3:
+              case "end":
+                return _context16.stop();
+            }
+          }
+        }, _callee16, this);
+      }));
+
+      function getAccountInfo(_x26, _x27) {
+        return _getAccountInfo.apply(this, arguments);
+      }
+
+      return getAccountInfo;
+    }()
+    /**
+     * Returns epoch activation information for a stake account that has been delegated
+     */
+
+  }, {
+    key: "getStakeActivation",
+    value: function () {
+      var _getStakeActivation = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee17(publicKey, commitment, epoch) {
+        var args, unsafeRes, res, _res$result, state, active, inactive;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee17$(_context17) {
+          while (1) {
+            switch (_context17.prev = _context17.next) {
+              case 0:
+                args = this._buildArgs([publicKey.toBase58()], commitment, undefined, epoch !== undefined ? {
+                  epoch: epoch
+                } : undefined);
+                _context17.next = 3;
+                return this._rpcRequest('getStakeActivation', args);
+
+              case 3:
+                unsafeRes = _context17.sent;
+                res = GetStakeActivationResult(unsafeRes);
+
+                if (!res.error) {
+                  _context17.next = 7;
+                  break;
+                }
+
+                throw new Error("failed to get Stake Activation ".concat(publicKey.toBase58(), ": ").concat(res.error.message));
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                _res$result = res.result, state = _res$result.state, active = _res$result.active, inactive = _res$result.inactive;
+                return _context17.abrupt("return", {
+                  state: state,
+                  active: active,
+                  inactive: inactive
+                });
+
+              case 10:
+              case "end":
+                return _context17.stop();
+            }
+          }
+        }, _callee17, this);
+      }));
+
+      function getStakeActivation(_x28, _x29, _x30) {
+        return _getStakeActivation.apply(this, arguments);
+      }
+
+      return getStakeActivation;
+    }()
+    /**
+     * Fetch all the accounts owned by the specified program id
+     *
+     * @return {Promise<Array<{pubkey: PublicKey, account: AccountInfo<Buffer>}>>}
+     */
+
+  }, {
+    key: "getProgramAccounts",
+    value: function () {
+      var _getProgramAccounts = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee18(programId, commitment) {
+        var args, unsafeRes, res, result;
+        return _regeneratorRuntime__default['default'].wrap(function _callee18$(_context18) {
+          while (1) {
+            switch (_context18.prev = _context18.next) {
+              case 0:
+                args = this._buildArgs([programId.toBase58()], commitment, 'base64');
+                _context18.next = 3;
+                return this._rpcRequest('getProgramAccounts', args);
+
+              case 3:
+                unsafeRes = _context18.sent;
+                res = GetProgramAccountsRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context18.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get accounts owned by program ' + programId.toBase58() + ': ' + res.error.message);
+
+              case 7:
+                result = res.result;
+                assert__default['default'](typeof result !== 'undefined');
+                return _context18.abrupt("return", result.map(function (result) {
+                  assert__default['default'](result.account.data[1] === 'base64');
+                  return {
+                    pubkey: new PublicKey(result.pubkey),
+                    account: {
+                      executable: result.account.executable,
+                      owner: new PublicKey(result.account.owner),
+                      lamports: result.account.lamports,
+                      data: Buffer.from(result.account.data[0], 'base64')
+                    }
+                  };
+                }));
+
+              case 10:
+              case "end":
+                return _context18.stop();
+            }
+          }
+        }, _callee18, this);
+      }));
+
+      function getProgramAccounts(_x31, _x32) {
+        return _getProgramAccounts.apply(this, arguments);
+      }
+
+      return getProgramAccounts;
+    }()
+    /**
+     * Fetch and parse all the accounts owned by the specified program id
+     *
+     * @return {Promise<Array<{pubkey: PublicKey, account: AccountInfo<Buffer | ParsedAccountData>}>>}
+     */
+
+  }, {
+    key: "getParsedProgramAccounts",
+    value: function () {
+      var _getParsedProgramAccounts = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee19(programId, commitment) {
+        var args, unsafeRes, res, result;
+        return _regeneratorRuntime__default['default'].wrap(function _callee19$(_context19) {
+          while (1) {
+            switch (_context19.prev = _context19.next) {
+              case 0:
+                args = this._buildArgs([programId.toBase58()], commitment, 'jsonParsed');
+                _context19.next = 3;
+                return this._rpcRequest('getProgramAccounts', args);
+
+              case 3:
+                unsafeRes = _context19.sent;
+                res = GetParsedProgramAccountsRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context19.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get accounts owned by program ' + programId.toBase58() + ': ' + res.error.message);
+
+              case 7:
+                result = res.result;
+                assert__default['default'](typeof result !== 'undefined');
+                return _context19.abrupt("return", result.map(function (result) {
+                  var resultData = result.account.data;
+                  var data = resultData;
+
+                  if (!data.program) {
+                    assert__default['default'](data[1] === 'base64');
+                    data = Buffer.from(data[0], 'base64');
+                  }
+
+                  return {
+                    pubkey: new PublicKey(result.pubkey),
+                    account: {
+                      executable: result.account.executable,
+                      owner: new PublicKey(result.account.owner),
+                      lamports: result.account.lamports,
+                      data: data
+                    }
+                  };
+                }));
+
+              case 10:
+              case "end":
+                return _context19.stop();
+            }
+          }
+        }, _callee19, this);
+      }));
+
+      function getParsedProgramAccounts(_x33, _x34) {
+        return _getParsedProgramAccounts.apply(this, arguments);
+      }
+
+      return getParsedProgramAccounts;
+    }()
+    /**
+     * Confirm the transaction identified by the specified signature.
+     */
+
+  }, {
+    key: "confirmTransaction",
+    value: function () {
+      var _confirmTransaction = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee20(signature, commitment) {
+        var _this = this;
+
+        var decodedSignature, start, subscriptionCommitment, subscriptionId, response, confirmPromise, timeoutMs, duration;
+        return _regeneratorRuntime__default['default'].wrap(function _callee20$(_context20) {
+          while (1) {
+            switch (_context20.prev = _context20.next) {
+              case 0:
+                _context20.prev = 0;
+                decodedSignature = bs58.decode(signature);
+                _context20.next = 7;
+                break;
+
+              case 4:
+                _context20.prev = 4;
+                _context20.t0 = _context20["catch"](0);
+                throw new Error('signature must be base58 encoded: ' + signature);
+
+              case 7:
+                assert__default['default'](decodedSignature.length === 64, 'signature has invalid length');
+                start = Date.now();
+                subscriptionCommitment = commitment || this.commitment;
+                response = null;
+                confirmPromise = new Promise(function (resolve, reject) {
+                  try {
+                    subscriptionId = _this.onSignature(signature, function (result, context) {
+                      subscriptionId = undefined;
+                      response = {
+                        context: context,
+                        value: result
+                      };
+                      resolve();
+                    }, subscriptionCommitment);
+                  } catch (err) {
+                    reject(err);
+                  }
+                });
+                timeoutMs = 60 * 1000;
+                _context20.t1 = subscriptionCommitment;
+                _context20.next = _context20.t1 === 'recent' ? 16 : _context20.t1 === 'single' ? 16 : _context20.t1 === 'singleGossip' ? 16 : _context20.t1 === 'max' ? 18 : _context20.t1 === 'root' ? 18 : 18;
+                break;
+
+              case 16:
+                timeoutMs = 30 * 1000;
+                return _context20.abrupt("break", 18);
+
+              case 18:
+                _context20.prev = 18;
+                _context20.next = 21;
+                return promiseTimeout(confirmPromise, timeoutMs);
+
+              case 21:
+                _context20.prev = 21;
+
+                if (subscriptionId) {
+                  this.removeSignatureListener(subscriptionId);
+                }
+
+                return _context20.finish(21);
+
+              case 24:
+                if (!(response === null)) {
+                  _context20.next = 27;
+                  break;
+                }
+
+                duration = (Date.now() - start) / 1000;
+                throw new Error("Transaction was not confirmed in ".concat(duration.toFixed(2), " seconds. It is unknown if it succeeded or failed. Check signature ").concat(signature, " using the Solana Explorer or CLI tools."));
+
+              case 27:
+                return _context20.abrupt("return", response);
+
+              case 28:
+              case "end":
+                return _context20.stop();
+            }
+          }
+        }, _callee20, this, [[0, 4], [18,, 21, 24]]);
+      }));
+
+      function confirmTransaction(_x35, _x36) {
+        return _confirmTransaction.apply(this, arguments);
+      }
+
+      return confirmTransaction;
+    }()
+    /**
+     * Return the list of nodes that are currently participating in the cluster
+     */
+
+  }, {
+    key: "getClusterNodes",
+    value: function () {
+      var _getClusterNodes = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee21() {
+        var unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee21$(_context21) {
+          while (1) {
+            switch (_context21.prev = _context21.next) {
+              case 0:
+                _context21.next = 2;
+                return this._rpcRequest('getClusterNodes', []);
+
+              case 2:
+                unsafeRes = _context21.sent;
+                res = GetClusterNodes(unsafeRes);
+
+                if (!res.error) {
+                  _context21.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get cluster nodes: ' + res.error.message);
+
+              case 6:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context21.abrupt("return", res.result);
+
+              case 8:
+              case "end":
+                return _context21.stop();
+            }
+          }
+        }, _callee21, this);
+      }));
+
+      function getClusterNodes() {
+        return _getClusterNodes.apply(this, arguments);
+      }
+
+      return getClusterNodes;
+    }()
+    /**
+     * Return the list of nodes that are currently participating in the cluster
+     */
+
+  }, {
+    key: "getVoteAccounts",
+    value: function () {
+      var _getVoteAccounts = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee22(commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee22$(_context22) {
+          while (1) {
+            switch (_context22.prev = _context22.next) {
+              case 0:
+                args = this._buildArgs([], commitment);
+                _context22.next = 3;
+                return this._rpcRequest('getVoteAccounts', args);
+
+              case 3:
+                unsafeRes = _context22.sent;
+                res = GetVoteAccounts(unsafeRes); //const res = unsafeRes;
+
+                if (!res.error) {
+                  _context22.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get vote accounts: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context22.abrupt("return", res.result);
+
+              case 9:
+              case "end":
+                return _context22.stop();
+            }
+          }
+        }, _callee22, this);
+      }));
+
+      function getVoteAccounts(_x37) {
+        return _getVoteAccounts.apply(this, arguments);
+      }
+
+      return getVoteAccounts;
+    }()
+    /**
+     * Fetch the current slot that the node is processing
+     */
+
+  }, {
+    key: "getSlot",
+    value: function () {
+      var _getSlot = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee23(commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee23$(_context23) {
+          while (1) {
+            switch (_context23.prev = _context23.next) {
+              case 0:
+                args = this._buildArgs([], commitment);
+                _context23.next = 3;
+                return this._rpcRequest('getSlot', args);
+
+              case 3:
+                unsafeRes = _context23.sent;
+                res = GetSlot(unsafeRes);
+
+                if (!res.error) {
+                  _context23.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get slot: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context23.abrupt("return", res.result);
+
+              case 9:
+              case "end":
+                return _context23.stop();
+            }
+          }
+        }, _callee23, this);
+      }));
+
+      function getSlot(_x38) {
+        return _getSlot.apply(this, arguments);
+      }
+
+      return getSlot;
+    }()
+    /**
+     * Fetch the current slot leader of the cluster
+     */
+
+  }, {
+    key: "getSlotLeader",
+    value: function () {
+      var _getSlotLeader = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee24(commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee24$(_context24) {
+          while (1) {
+            switch (_context24.prev = _context24.next) {
+              case 0:
+                args = this._buildArgs([], commitment);
+                _context24.next = 3;
+                return this._rpcRequest('getSlotLeader', args);
+
+              case 3:
+                unsafeRes = _context24.sent;
+                res = GetSlotLeader(unsafeRes);
+
+                if (!res.error) {
+                  _context24.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get slot leader: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context24.abrupt("return", res.result);
+
+              case 9:
+              case "end":
+                return _context24.stop();
+            }
+          }
+        }, _callee24, this);
+      }));
+
+      function getSlotLeader(_x39) {
+        return _getSlotLeader.apply(this, arguments);
+      }
+
+      return getSlotLeader;
+    }()
+    /**
+     * Fetch the current status of a signature
+     */
+
+  }, {
+    key: "getSignatureStatus",
+    value: function () {
+      var _getSignatureStatus = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee25(signature, config) {
+        var _yield$this$getSignat, context, value;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee25$(_context25) {
+          while (1) {
+            switch (_context25.prev = _context25.next) {
+              case 0:
+                _context25.next = 2;
+                return this.getSignatureStatuses([signature], config);
+
+              case 2:
+                _yield$this$getSignat = _context25.sent;
+                context = _yield$this$getSignat.context;
+                value = _yield$this$getSignat.value;
+                assert__default['default'](value.length === 1);
+                return _context25.abrupt("return", {
+                  context: context,
+                  value: value[0]
+                });
+
+              case 7:
+              case "end":
+                return _context25.stop();
+            }
+          }
+        }, _callee25, this);
+      }));
+
+      function getSignatureStatus(_x40, _x41) {
+        return _getSignatureStatus.apply(this, arguments);
+      }
+
+      return getSignatureStatus;
+    }()
+    /**
+     * Fetch the current statuses of a batch of signatures
+     */
+
+  }, {
+    key: "getSignatureStatuses",
+    value: function () {
+      var _getSignatureStatuses = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee26(signatures, config) {
+        var params, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee26$(_context26) {
+          while (1) {
+            switch (_context26.prev = _context26.next) {
+              case 0:
+                params = [signatures];
+
+                if (config) {
+                  params.push(config);
+                }
+
+                _context26.next = 4;
+                return this._rpcRequest('getSignatureStatuses', params);
+
+              case 4:
+                unsafeRes = _context26.sent;
+                res = GetSignatureStatusesRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context26.next = 8;
+                  break;
+                }
+
+                throw new Error('failed to get signature status: ' + res.error.message);
+
+              case 8:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context26.abrupt("return", res.result);
+
+              case 10:
+              case "end":
+                return _context26.stop();
+            }
+          }
+        }, _callee26, this);
+      }));
+
+      function getSignatureStatuses(_x42, _x43) {
+        return _getSignatureStatuses.apply(this, arguments);
+      }
+
+      return getSignatureStatuses;
+    }()
+    /**
+     * Fetch the current transaction count of the cluster
+     */
+
+  }, {
+    key: "getTransactionCount",
+    value: function () {
+      var _getTransactionCount = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee27(commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee27$(_context27) {
+          while (1) {
+            switch (_context27.prev = _context27.next) {
+              case 0:
+                args = this._buildArgs([], commitment);
+                _context27.next = 3;
+                return this._rpcRequest('getTransactionCount', args);
+
+              case 3:
+                unsafeRes = _context27.sent;
+                res = GetTransactionCountRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context27.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get transaction count: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context27.abrupt("return", Number(res.result));
+
+              case 9:
+              case "end":
+                return _context27.stop();
+            }
+          }
+        }, _callee27, this);
+      }));
+
+      function getTransactionCount(_x44) {
+        return _getTransactionCount.apply(this, arguments);
+      }
+
+      return getTransactionCount;
+    }()
+    /**
+     * Fetch the current total currency supply of the cluster in lamports
+     */
+
+  }, {
+    key: "getTotalSupply",
+    value: function () {
+      var _getTotalSupply = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee28(commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee28$(_context28) {
+          while (1) {
+            switch (_context28.prev = _context28.next) {
+              case 0:
+                args = this._buildArgs([], commitment);
+                _context28.next = 3;
+                return this._rpcRequest('getTotalSupply', args);
+
+              case 3:
+                unsafeRes = _context28.sent;
+                res = GetTotalSupplyRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context28.next = 7;
+                  break;
+                }
+
+                throw new Error('faied to get total supply: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context28.abrupt("return", Number(res.result));
+
+              case 9:
+              case "end":
+                return _context28.stop();
+            }
+          }
+        }, _callee28, this);
+      }));
+
+      function getTotalSupply(_x45) {
+        return _getTotalSupply.apply(this, arguments);
+      }
+
+      return getTotalSupply;
+    }()
+    /**
+     * Fetch the cluster InflationGovernor parameters
+     */
+
+  }, {
+    key: "getInflationGovernor",
+    value: function () {
+      var _getInflationGovernor = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee29(commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee29$(_context29) {
+          while (1) {
+            switch (_context29.prev = _context29.next) {
+              case 0:
+                args = this._buildArgs([], commitment);
+                _context29.next = 3;
+                return this._rpcRequest('getInflationGovernor', args);
+
+              case 3:
+                unsafeRes = _context29.sent;
+                res = GetInflationGovernorRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context29.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get inflation: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context29.abrupt("return", GetInflationGovernorResult(res.result));
+
+              case 9:
+              case "end":
+                return _context29.stop();
+            }
+          }
+        }, _callee29, this);
+      }));
+
+      function getInflationGovernor(_x46) {
+        return _getInflationGovernor.apply(this, arguments);
+      }
+
+      return getInflationGovernor;
+    }()
+    /**
+     * Fetch the Epoch Info parameters
+     */
+
+  }, {
+    key: "getEpochInfo",
+    value: function () {
+      var _getEpochInfo = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee30(commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee30$(_context30) {
+          while (1) {
+            switch (_context30.prev = _context30.next) {
+              case 0:
+                args = this._buildArgs([], commitment);
+                _context30.next = 3;
+                return this._rpcRequest('getEpochInfo', args);
+
+              case 3:
+                unsafeRes = _context30.sent;
+                res = GetEpochInfoRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context30.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get epoch info: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context30.abrupt("return", GetEpochInfoResult(res.result));
+
+              case 9:
+              case "end":
+                return _context30.stop();
+            }
+          }
+        }, _callee30, this);
+      }));
+
+      function getEpochInfo(_x47) {
+        return _getEpochInfo.apply(this, arguments);
+      }
+
+      return getEpochInfo;
+    }()
+    /**
+     * Fetch the Epoch Schedule parameters
+     */
+
+  }, {
+    key: "getEpochSchedule",
+    value: function () {
+      var _getEpochSchedule = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee31() {
+        var unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee31$(_context31) {
+          while (1) {
+            switch (_context31.prev = _context31.next) {
+              case 0:
+                _context31.next = 2;
+                return this._rpcRequest('getEpochSchedule', []);
+
+              case 2:
+                unsafeRes = _context31.sent;
+                res = GetEpochScheduleRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context31.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get epoch schedule: ' + res.error.message);
+
+              case 6:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context31.abrupt("return", GetEpochScheduleResult(res.result));
+
+              case 8:
+              case "end":
+                return _context31.stop();
+            }
+          }
+        }, _callee31, this);
+      }));
+
+      function getEpochSchedule() {
+        return _getEpochSchedule.apply(this, arguments);
+      }
+
+      return getEpochSchedule;
+    }()
+    /**
+     * Fetch the leader schedule for the current epoch
+     * @return {Promise<RpcResponseAndContext<LeaderSchedule>>}
+     */
+
+  }, {
+    key: "getLeaderSchedule",
+    value: function () {
+      var _getLeaderSchedule = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee32() {
+        var unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee32$(_context32) {
+          while (1) {
+            switch (_context32.prev = _context32.next) {
+              case 0:
+                _context32.next = 2;
+                return this._rpcRequest('getLeaderSchedule', []);
+
+              case 2:
+                unsafeRes = _context32.sent;
+                res = GetLeaderScheduleRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context32.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get leader schedule: ' + res.error.message);
+
+              case 6:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context32.abrupt("return", res.result);
+
+              case 8:
+              case "end":
+                return _context32.stop();
+            }
+          }
+        }, _callee32, this);
+      }));
+
+      function getLeaderSchedule() {
+        return _getLeaderSchedule.apply(this, arguments);
+      }
+
+      return getLeaderSchedule;
+    }()
+    /**
+     * Fetch the minimum balance needed to exempt an account of `dataLength`
+     * size from rent
+     */
+
+  }, {
+    key: "getMinimumBalanceForRentExemption",
+    value: function () {
+      var _getMinimumBalanceForRentExemption = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee33(dataLength, commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee33$(_context33) {
+          while (1) {
+            switch (_context33.prev = _context33.next) {
+              case 0:
+                args = this._buildArgs([dataLength], commitment);
+                _context33.next = 3;
+                return this._rpcRequest('getMinimumBalanceForRentExemption', args);
+
+              case 3:
+                unsafeRes = _context33.sent;
+                res = GetMinimumBalanceForRentExemptionRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context33.next = 8;
+                  break;
+                }
+
+                console.warn('Unable to fetch minimum balance for rent exemption');
+                return _context33.abrupt("return", 0);
+
+              case 8:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context33.abrupt("return", Number(res.result));
+
+              case 10:
+              case "end":
+                return _context33.stop();
+            }
+          }
+        }, _callee33, this);
+      }));
+
+      function getMinimumBalanceForRentExemption(_x48, _x49) {
+        return _getMinimumBalanceForRentExemption.apply(this, arguments);
+      }
+
+      return getMinimumBalanceForRentExemption;
+    }()
+    /**
+     * Fetch a recent blockhash from the cluster, return with context
+     * @return {Promise<RpcResponseAndContext<{blockhash: Blockhash, feeCalculator: FeeCalculator}>>}
+     */
+
+  }, {
+    key: "getRecentBlockhashAndContext",
+    value: function () {
+      var _getRecentBlockhashAndContext = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee34(commitment) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee34$(_context34) {
+          while (1) {
+            switch (_context34.prev = _context34.next) {
+              case 0:
+                args = this._buildArgs([], commitment);
+                _context34.next = 3;
+                return this._rpcRequest('getRecentBlockhash', args);
+
+              case 3:
+                unsafeRes = _context34.sent;
+                res = GetRecentBlockhashAndContextRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context34.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get recent blockhash: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context34.abrupt("return", res.result);
+
+              case 9:
+              case "end":
+                return _context34.stop();
+            }
+          }
+        }, _callee34, this);
+      }));
+
+      function getRecentBlockhashAndContext(_x50) {
+        return _getRecentBlockhashAndContext.apply(this, arguments);
+      }
+
+      return getRecentBlockhashAndContext;
+    }()
+    /**
+     * Fetch recent performance samples
+     * @return {Promise<Array<PerfSample>>}
+     */
+
+  }, {
+    key: "getRecentPerformanceSamples",
+    value: function () {
+      var _getRecentPerformanceSamples = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee35(limit) {
+        var args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee35$(_context35) {
+          while (1) {
+            switch (_context35.prev = _context35.next) {
+              case 0:
+                args = this._buildArgs(limit ? [limit] : []);
+                _context35.next = 3;
+                return this._rpcRequest('getRecentPerformanceSamples', args);
+
+              case 3:
+                unsafeRes = _context35.sent;
+                res = GetRecentPerformanceSamplesRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context35.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get recent performance samples: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context35.abrupt("return", res.result);
+
+              case 9:
+              case "end":
+                return _context35.stop();
+            }
+          }
+        }, _callee35, this);
+      }));
+
+      function getRecentPerformanceSamples(_x51) {
+        return _getRecentPerformanceSamples.apply(this, arguments);
+      }
+
+      return getRecentPerformanceSamples;
+    }()
+    /**
+     * Fetch the fee calculator for a recent blockhash from the cluster, return with context
+     */
+
+  }, {
+    key: "getFeeCalculatorForBlockhash",
+    value: function () {
+      var _getFeeCalculatorForBlockhash = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee36(blockhash, commitment) {
+        var args, unsafeRes, res, _res$result2, context, value;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee36$(_context36) {
+          while (1) {
+            switch (_context36.prev = _context36.next) {
+              case 0:
+                args = this._buildArgs([blockhash], commitment);
+                _context36.next = 3;
+                return this._rpcRequest('getFeeCalculatorForBlockhash', args);
+
+              case 3:
+                unsafeRes = _context36.sent;
+                res = GetFeeCalculatorRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context36.next = 7;
+                  break;
+                }
+
+                throw new Error('failed to get fee calculator: ' + res.error.message);
+
+              case 7:
+                assert__default['default'](typeof res.result !== 'undefined');
+                _res$result2 = res.result, context = _res$result2.context, value = _res$result2.value;
+                return _context36.abrupt("return", {
+                  context: context,
+                  value: value && value.feeCalculator
+                });
+
+              case 10:
+              case "end":
+                return _context36.stop();
+            }
+          }
+        }, _callee36, this);
+      }));
+
+      function getFeeCalculatorForBlockhash(_x52, _x53) {
+        return _getFeeCalculatorForBlockhash.apply(this, arguments);
+      }
+
+      return getFeeCalculatorForBlockhash;
+    }()
+    /**
+     * Fetch a recent blockhash from the cluster
+     * @return {Promise<{blockhash: Blockhash, feeCalculator: FeeCalculator}>}
+     */
+
+  }, {
+    key: "getRecentBlockhash",
+    value: function () {
+      var _getRecentBlockhash = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee37(commitment) {
+        return _regeneratorRuntime__default['default'].wrap(function _callee37$(_context37) {
+          while (1) {
+            switch (_context37.prev = _context37.next) {
+              case 0:
+                _context37.next = 2;
+                return this.getRecentBlockhashAndContext(commitment).then(function (x) {
+                  return x.value;
+                })["catch"](function (e) {
+                  throw new Error('failed to get recent blockhash: ' + e);
+                });
+
+              case 2:
+                return _context37.abrupt("return", _context37.sent);
+
+              case 3:
+              case "end":
+                return _context37.stop();
+            }
+          }
+        }, _callee37, this);
+      }));
+
+      function getRecentBlockhash(_x54) {
+        return _getRecentBlockhash.apply(this, arguments);
+      }
+
+      return getRecentBlockhash;
+    }()
+    /**
+     * Fetch the node version
+     */
+
+  }, {
+    key: "getVersion",
+    value: function () {
+      var _getVersion = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee38() {
+        var unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee38$(_context38) {
+          while (1) {
+            switch (_context38.prev = _context38.next) {
+              case 0:
+                _context38.next = 2;
+                return this._rpcRequest('getVersion', []);
+
+              case 2:
+                unsafeRes = _context38.sent;
+                res = GetVersionRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context38.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get version: ' + res.error.message);
+
+              case 6:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context38.abrupt("return", res.result);
+
+              case 8:
+              case "end":
+                return _context38.stop();
+            }
+          }
+        }, _callee38, this);
+      }));
+
+      function getVersion() {
+        return _getVersion.apply(this, arguments);
+      }
+
+      return getVersion;
+    }()
+    /**
+     * Fetch a list of Transactions and transaction statuses from the cluster
+     * for a confirmed block
+     */
+
+  }, {
+    key: "getConfirmedBlock",
+    value: function () {
+      var _getConfirmedBlock = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee39(slot) {
+        var unsafeRes, res, result;
+        return _regeneratorRuntime__default['default'].wrap(function _callee39$(_context39) {
+          while (1) {
+            switch (_context39.prev = _context39.next) {
+              case 0:
+                _context39.next = 2;
+                return this._rpcRequest('getConfirmedBlock', [slot]);
+
+              case 2:
+                unsafeRes = _context39.sent;
+                res = GetConfirmedBlockRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context39.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get confirmed block: ' + res.error.message);
+
+              case 6:
+                result = res.result;
+                assert__default['default'](typeof result !== 'undefined');
+
+                if (result) {
+                  _context39.next = 10;
+                  break;
+                }
+
+                throw new Error('Confirmed block ' + slot + ' not found');
+
+              case 10:
+                return _context39.abrupt("return", {
+                  blockhash: new PublicKey(result.blockhash).toString(),
+                  previousBlockhash: new PublicKey(result.previousBlockhash).toString(),
+                  parentSlot: result.parentSlot,
+                  transactions: result.transactions.map(function (result) {
+                    var _result$transaction = result.transaction,
+                        message = _result$transaction.message,
+                        signatures = _result$transaction.signatures;
+                    return {
+                      transaction: Transaction.populate(new Message(message), signatures),
+                      meta: result.meta
+                    };
+                  }),
+                  rewards: result.rewards || []
+                });
+
+              case 11:
+              case "end":
+                return _context39.stop();
+            }
+          }
+        }, _callee39, this);
+      }));
+
+      function getConfirmedBlock(_x55) {
+        return _getConfirmedBlock.apply(this, arguments);
+      }
+
+      return getConfirmedBlock;
+    }()
+    /**
+     * Fetch a transaction details for a confirmed transaction
+     */
+
+  }, {
+    key: "getConfirmedTransaction",
+    value: function () {
+      var _getConfirmedTransaction = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee40(signature) {
+        var unsafeRes, _GetConfirmedTransact, result, error, _result$transaction2, message, signatures;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee40$(_context40) {
+          while (1) {
+            switch (_context40.prev = _context40.next) {
+              case 0:
+                _context40.next = 2;
+                return this._rpcRequest('getConfirmedTransaction', [signature]);
+
+              case 2:
+                unsafeRes = _context40.sent;
+                _GetConfirmedTransact = GetConfirmedTransactionRpcResult(unsafeRes), result = _GetConfirmedTransact.result, error = _GetConfirmedTransact.error;
+
+                if (!error) {
+                  _context40.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get confirmed transaction: ' + error.message);
+
+              case 6:
+                assert__default['default'](typeof result !== 'undefined');
+
+                if (!(result === null)) {
+                  _context40.next = 9;
+                  break;
+                }
+
+                return _context40.abrupt("return", result);
+
+              case 9:
+                _result$transaction2 = result.transaction, message = _result$transaction2.message, signatures = _result$transaction2.signatures;
+                return _context40.abrupt("return", {
+                  slot: result.slot,
+                  transaction: Transaction.populate(new Message(message), signatures),
+                  meta: result.meta
+                });
+
+              case 11:
+              case "end":
+                return _context40.stop();
+            }
+          }
+        }, _callee40, this);
+      }));
+
+      function getConfirmedTransaction(_x56) {
+        return _getConfirmedTransaction.apply(this, arguments);
+      }
+
+      return getConfirmedTransaction;
+    }()
+    /**
+     * Fetch parsed transaction details for a confirmed transaction
+     */
+
+  }, {
+    key: "getParsedConfirmedTransaction",
+    value: function () {
+      var _getParsedConfirmedTransaction = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee41(signature) {
+        var unsafeRes, _GetParsedConfirmedTr, result, error, _result$transaction$m, accountKeys, instructions, recentBlockhash;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee41$(_context41) {
+          while (1) {
+            switch (_context41.prev = _context41.next) {
+              case 0:
+                _context41.next = 2;
+                return this._rpcRequest('getConfirmedTransaction', [signature, 'jsonParsed']);
+
+              case 2:
+                unsafeRes = _context41.sent;
+                _GetParsedConfirmedTr = GetParsedConfirmedTransactionRpcResult(unsafeRes), result = _GetParsedConfirmedTr.result, error = _GetParsedConfirmedTr.error;
+
+                if (!error) {
+                  _context41.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get confirmed transaction: ' + error.message);
+
+              case 6:
+                assert__default['default'](typeof result !== 'undefined');
+
+                if (!(result === null)) {
+                  _context41.next = 9;
+                  break;
+                }
+
+                return _context41.abrupt("return", result);
+
+              case 9:
+                if (result.meta.innerInstructions) {
+                  result.meta.innerInstructions.forEach(function (inner) {
+                    inner.instructions.forEach(function (ix) {
+                      ix.programId = new PublicKey(ix.programId);
+
+                      if (ix.accounts) {
+                        ix.accounts = ix.accounts.map(function (account) {
+                          return new PublicKey(account);
+                        });
+                      }
+                    });
+                  });
+                }
+
+                _result$transaction$m = result.transaction.message, accountKeys = _result$transaction$m.accountKeys, instructions = _result$transaction$m.instructions, recentBlockhash = _result$transaction$m.recentBlockhash;
+                return _context41.abrupt("return", {
+                  slot: result.slot,
+                  meta: result.meta,
+                  transaction: {
+                    signatures: result.transaction.signatures,
+                    message: {
+                      accountKeys: accountKeys.map(function (accountKey) {
+                        return {
+                          pubkey: new PublicKey(accountKey.pubkey),
+                          signer: accountKey.signer,
+                          writable: accountKey.writable
+                        };
+                      }),
+                      instructions: instructions.map(function (ix) {
+                        var mapped = {
+                          programId: new PublicKey(ix.programId)
+                        };
+
+                        if ('accounts' in ix) {
+                          mapped.accounts = ix.accounts.map(function (key) {
+                            return new PublicKey(key);
+                          });
+                        }
+
+                        return _objectSpread$1(_objectSpread$1({}, ix), mapped);
+                      }),
+                      recentBlockhash: recentBlockhash
+                    }
+                  }
+                });
+
+              case 12:
+              case "end":
+                return _context41.stop();
+            }
+          }
+        }, _callee41, this);
+      }));
+
+      function getParsedConfirmedTransaction(_x57) {
+        return _getParsedConfirmedTransaction.apply(this, arguments);
+      }
+
+      return getParsedConfirmedTransaction;
+    }()
+    /**
+     * Fetch a list of all the confirmed signatures for transactions involving an address
+     * within a specified slot range. Max range allowed is 10,000 slots.
+     *
+     * @param address queried address
+     * @param startSlot start slot, inclusive
+     * @param endSlot end slot, inclusive
+     */
+
+  }, {
+    key: "getConfirmedSignaturesForAddress",
+    value: function () {
+      var _getConfirmedSignaturesForAddress = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee42(address, startSlot, endSlot) {
+        var unsafeRes, result;
+        return _regeneratorRuntime__default['default'].wrap(function _callee42$(_context42) {
+          while (1) {
+            switch (_context42.prev = _context42.next) {
+              case 0:
+                _context42.next = 2;
+                return this._rpcRequest('getConfirmedSignaturesForAddress', [address.toBase58(), startSlot, endSlot]);
+
+              case 2:
+                unsafeRes = _context42.sent;
+                result = GetConfirmedSignaturesForAddressRpcResult(unsafeRes);
+
+                if (!result.error) {
+                  _context42.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get confirmed signatures for address: ' + result.error.message);
+
+              case 6:
+                assert__default['default'](typeof result.result !== 'undefined');
+                return _context42.abrupt("return", result.result);
+
+              case 8:
+              case "end":
+                return _context42.stop();
+            }
+          }
+        }, _callee42, this);
+      }));
+
+      function getConfirmedSignaturesForAddress(_x58, _x59, _x60) {
+        return _getConfirmedSignaturesForAddress.apply(this, arguments);
+      }
+
+      return getConfirmedSignaturesForAddress;
+    }()
+    /**
+     * Returns confirmed signatures for transactions involving an
+     * address backwards in time from the provided signature or most recent confirmed block
+     *
+     *
+     * @param address queried address
+     * @param options
+     */
+
+  }, {
+    key: "getConfirmedSignaturesForAddress2",
+    value: function () {
+      var _getConfirmedSignaturesForAddress2 = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee43(address, options) {
+        var unsafeRes, result;
+        return _regeneratorRuntime__default['default'].wrap(function _callee43$(_context43) {
+          while (1) {
+            switch (_context43.prev = _context43.next) {
+              case 0:
+                _context43.next = 2;
+                return this._rpcRequest('getConfirmedSignaturesForAddress2', [address.toBase58(), options]);
+
+              case 2:
+                unsafeRes = _context43.sent;
+                result = GetConfirmedSignaturesForAddress2RpcResult(unsafeRes);
+
+                if (!result.error) {
+                  _context43.next = 6;
+                  break;
+                }
+
+                throw new Error('failed to get confirmed signatures for address: ' + result.error.message);
+
+              case 6:
+                assert__default['default'](typeof result.result !== 'undefined');
+                return _context43.abrupt("return", result.result);
+
+              case 8:
+              case "end":
+                return _context43.stop();
+            }
+          }
+        }, _callee43, this);
+      }));
+
+      function getConfirmedSignaturesForAddress2(_x61, _x62) {
+        return _getConfirmedSignaturesForAddress2.apply(this, arguments);
+      }
+
+      return getConfirmedSignaturesForAddress2;
+    }()
+    /**
+     * Fetch the contents of a Nonce account from the cluster, return with context
+     */
+
+  }, {
+    key: "getNonceAndContext",
+    value: function () {
+      var _getNonceAndContext = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee44(nonceAccount, commitment) {
+        var _yield$this$getAccoun, context, accountInfo, value;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee44$(_context44) {
+          while (1) {
+            switch (_context44.prev = _context44.next) {
+              case 0:
+                _context44.next = 2;
+                return this.getAccountInfoAndContext(nonceAccount, commitment);
+
+              case 2:
+                _yield$this$getAccoun = _context44.sent;
+                context = _yield$this$getAccoun.context;
+                accountInfo = _yield$this$getAccoun.value;
+                value = null;
+
+                if (accountInfo !== null) {
+                  value = NonceAccount.fromAccountData(accountInfo.data);
+                }
+
+                return _context44.abrupt("return", {
+                  context: context,
+                  value: value
+                });
+
+              case 8:
+              case "end":
+                return _context44.stop();
+            }
+          }
+        }, _callee44, this);
+      }));
+
+      function getNonceAndContext(_x63, _x64) {
+        return _getNonceAndContext.apply(this, arguments);
+      }
+
+      return getNonceAndContext;
+    }()
+    /**
+     * Fetch the contents of a Nonce account from the cluster
+     */
+
+  }, {
+    key: "getNonce",
+    value: function () {
+      var _getNonce = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee45(nonceAccount, commitment) {
+        return _regeneratorRuntime__default['default'].wrap(function _callee45$(_context45) {
+          while (1) {
+            switch (_context45.prev = _context45.next) {
+              case 0:
+                _context45.next = 2;
+                return this.getNonceAndContext(nonceAccount, commitment).then(function (x) {
+                  return x.value;
+                })["catch"](function (e) {
+                  throw new Error('failed to get nonce for account ' + nonceAccount.toBase58() + ': ' + e);
+                });
+
+              case 2:
+                return _context45.abrupt("return", _context45.sent);
+
+              case 3:
+              case "end":
+                return _context45.stop();
+            }
+          }
+        }, _callee45, this);
+      }));
+
+      function getNonce(_x65, _x66) {
+        return _getNonce.apply(this, arguments);
+      }
+
+      return getNonce;
+    }()
+    /**
+     * Request an allocation of lamports to the specified account
+     */
+
+  }, {
+    key: "requestAirdrop",
+    value: function () {
+      var _requestAirdrop = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee46(to, amount) {
+        var unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee46$(_context46) {
+          while (1) {
+            switch (_context46.prev = _context46.next) {
+              case 0:
+                _context46.next = 2;
+                return this._rpcRequest('requestAirdrop', [to.toBase58(), amount]);
+
+              case 2:
+                unsafeRes = _context46.sent;
+                res = RequestAirdropRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context46.next = 6;
+                  break;
+                }
+
+                throw new Error('airdrop to ' + to.toBase58() + ' failed: ' + res.error.message);
+
+              case 6:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context46.abrupt("return", res.result);
+
+              case 8:
+              case "end":
+                return _context46.stop();
+            }
+          }
+        }, _callee46, this);
+      }));
+
+      function requestAirdrop(_x67, _x68) {
+        return _requestAirdrop.apply(this, arguments);
+      }
+
+      return requestAirdrop;
+    }()
+  }, {
+    key: "_recentBlockhash",
+    value: function () {
+      var _recentBlockhash2 = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee47(disableCache) {
+        var expired;
+        return _regeneratorRuntime__default['default'].wrap(function _callee47$(_context47) {
+          while (1) {
+            switch (_context47.prev = _context47.next) {
+              case 0:
+                if (disableCache) {
+                  _context47.next = 9;
+                  break;
+                }
+
+              case 1:
+                if (!this._pollingBlockhash) {
+                  _context47.next = 6;
+                  break;
+                }
+
+                _context47.next = 4;
+                return sleep(100);
+
+              case 4:
+                _context47.next = 1;
+                break;
+
+              case 6:
+                // Attempt to use a recent blockhash for up to 30 seconds
+                expired = Date.now() - this._blockhashInfo.lastFetch >= BLOCKHASH_CACHE_TIMEOUT_MS;
+
+                if (!(this._blockhashInfo.recentBlockhash !== null && !expired)) {
+                  _context47.next = 9;
+                  break;
+                }
+
+                return _context47.abrupt("return", this._blockhashInfo.recentBlockhash);
+
+              case 9:
+                _context47.next = 11;
+                return this._pollNewBlockhash();
+
+              case 11:
+                return _context47.abrupt("return", _context47.sent);
+
+              case 12:
+              case "end":
+                return _context47.stop();
+            }
+          }
+        }, _callee47, this);
+      }));
+
+      function _recentBlockhash(_x69) {
+        return _recentBlockhash2.apply(this, arguments);
+      }
+
+      return _recentBlockhash;
+    }()
+  }, {
+    key: "_pollNewBlockhash",
+    value: function () {
+      var _pollNewBlockhash2 = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee48() {
+        var startTime, i, _yield$this$getRecent, blockhash;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee48$(_context48) {
+          while (1) {
+            switch (_context48.prev = _context48.next) {
+              case 0:
+                this._pollingBlockhash = true;
+                _context48.prev = 1;
+                startTime = Date.now();
+                i = 0;
+
+              case 4:
+                if (!(i < 50)) {
+                  _context48.next = 17;
+                  break;
+                }
+
+                _context48.next = 7;
+                return this.getRecentBlockhash('max');
+
+              case 7:
+                _yield$this$getRecent = _context48.sent;
+                blockhash = _yield$this$getRecent.blockhash;
+
+                if (!(this._blockhashInfo.recentBlockhash != blockhash)) {
+                  _context48.next = 12;
+                  break;
+                }
+
+                this._blockhashInfo = {
+                  recentBlockhash: blockhash,
+                  lastFetch: new Date(),
+                  transactionSignatures: [],
+                  simulatedSignatures: []
+                };
+                return _context48.abrupt("return", blockhash);
+
+              case 12:
+                _context48.next = 14;
+                return sleep(MS_PER_SLOT / 2);
+
+              case 14:
+                i++;
+                _context48.next = 4;
+                break;
+
+              case 17:
+                throw new Error("Unable to obtain a new blockhash after ".concat(Date.now() - startTime, "ms"));
+
+              case 18:
+                _context48.prev = 18;
+                this._pollingBlockhash = false;
+                return _context48.finish(18);
+
+              case 21:
+              case "end":
+                return _context48.stop();
+            }
+          }
+        }, _callee48, this, [[1,, 18, 21]]);
+      }));
+
+      function _pollNewBlockhash() {
+        return _pollNewBlockhash2.apply(this, arguments);
+      }
+
+      return _pollNewBlockhash;
+    }()
+    /**
+     * Simulate a transaction
+     */
+
+  }, {
+    key: "simulateTransaction",
+    value: function () {
+      var _simulateTransaction = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee49(transaction, signers) {
+        var disableCache, signature, signData, wireTransaction, encodedTransaction, config, args, unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee49$(_context49) {
+          while (1) {
+            switch (_context49.prev = _context49.next) {
+              case 0:
+                if (!(transaction.nonceInfo && signers)) {
+                  _context49.next = 4;
+                  break;
+                }
+
+                transaction.sign.apply(transaction, _toConsumableArray__default['default'](signers));
+                _context49.next = 22;
+                break;
+
+              case 4:
+                disableCache = this._disableBlockhashCaching;
+
+              case 5:
+                _context49.next = 7;
+                return this._recentBlockhash(disableCache);
+
+              case 7:
+                transaction.recentBlockhash = _context49.sent;
+
+                if (signers) {
+                  _context49.next = 10;
+                  break;
+                }
+
+                return _context49.abrupt("break", 22);
+
+              case 10:
+                transaction.sign.apply(transaction, _toConsumableArray__default['default'](signers));
+
+                if (transaction.signature) {
+                  _context49.next = 13;
+                  break;
+                }
+
+                throw new Error('!signature');
+
+              case 13:
+                // If the signature of this transaction has not been seen before with the
+                // current recentBlockhash, all done.
+                signature = transaction.signature.toString('base64');
+
+                if (!(!this._blockhashInfo.simulatedSignatures.includes(signature) && !this._blockhashInfo.transactionSignatures.includes(signature))) {
+                  _context49.next = 19;
+                  break;
+                }
+
+                this._blockhashInfo.simulatedSignatures.push(signature);
+
+                return _context49.abrupt("break", 22);
+
+              case 19:
+                disableCache = true;
+
+              case 20:
+                _context49.next = 5;
+                break;
+
+              case 22:
+                signData = transaction.serializeMessage();
+                wireTransaction = transaction._serialize(signData);
+                encodedTransaction = wireTransaction.toString('base64');
+                config = {
+                  encoding: 'base64',
+                  commitment: this.commitment
+                };
+                args = [encodedTransaction, config];
+
+                if (signers) {
+                  config.sigVerify = true;
+                }
+
+                _context49.next = 30;
+                return this._rpcRequest('simulateTransaction', args);
+
+              case 30:
+                unsafeRes = _context49.sent;
+                res = SimulatedTransactionResponseValidator(unsafeRes);
+
+                if (!res.error) {
+                  _context49.next = 34;
+                  break;
+                }
+
+                throw new Error('failed to simulate transaction: ' + res.error.message);
+
+              case 34:
+                assert__default['default'](typeof res.result !== 'undefined');
+                assert__default['default'](res.result);
+                return _context49.abrupt("return", res.result);
+
+              case 37:
+              case "end":
+                return _context49.stop();
+            }
+          }
+        }, _callee49, this);
+      }));
+
+      function simulateTransaction(_x70, _x71) {
+        return _simulateTransaction.apply(this, arguments);
+      }
+
+      return simulateTransaction;
+    }()
+    /**
+     * Sign and send a transaction
+     */
+
+  }, {
+    key: "sendTransaction",
+    value: function () {
+      var _sendTransaction = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee50(transaction, signers, options) {
+        var disableCache, signature, wireTransaction;
+        return _regeneratorRuntime__default['default'].wrap(function _callee50$(_context50) {
+          while (1) {
+            switch (_context50.prev = _context50.next) {
+              case 0:
+                if (!transaction.nonceInfo) {
+                  _context50.next = 4;
+                  break;
+                }
+
+                transaction.sign.apply(transaction, _toConsumableArray__default['default'](signers));
+                _context50.next = 20;
+                break;
+
+              case 4:
+                disableCache = this._disableBlockhashCaching;
+
+              case 5:
+                _context50.next = 7;
+                return this._recentBlockhash(disableCache);
+
+              case 7:
+                transaction.recentBlockhash = _context50.sent;
+                transaction.sign.apply(transaction, _toConsumableArray__default['default'](signers));
+
+                if (transaction.signature) {
+                  _context50.next = 11;
+                  break;
+                }
+
+                throw new Error('!signature');
+
+              case 11:
+                // If the signature of this transaction has not been seen before with the
+                // current recentBlockhash, all done.
+                signature = transaction.signature.toString('base64');
+
+                if (this._blockhashInfo.transactionSignatures.includes(signature)) {
+                  _context50.next = 17;
+                  break;
+                }
+
+                this._blockhashInfo.transactionSignatures.push(signature);
+
+                return _context50.abrupt("break", 20);
+
+              case 17:
+                disableCache = true;
+
+              case 18:
+                _context50.next = 5;
+                break;
+
+              case 20:
+                wireTransaction = transaction.serialize();
+                _context50.next = 23;
+                return this.sendRawTransaction(wireTransaction, options);
+
+              case 23:
+                return _context50.abrupt("return", _context50.sent);
+
+              case 24:
+              case "end":
+                return _context50.stop();
+            }
+          }
+        }, _callee50, this);
+      }));
+
+      function sendTransaction(_x72, _x73, _x74) {
+        return _sendTransaction.apply(this, arguments);
+      }
+
+      return sendTransaction;
+    }()
+    /**
+     * @private
+     */
+
+  }, {
+    key: "validatorExit",
+    value: function () {
+      var _validatorExit = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee51() {
+        var unsafeRes, res;
+        return _regeneratorRuntime__default['default'].wrap(function _callee51$(_context51) {
+          while (1) {
+            switch (_context51.prev = _context51.next) {
+              case 0:
+                _context51.next = 2;
+                return this._rpcRequest('validatorExit', []);
+
+              case 2:
+                unsafeRes = _context51.sent;
+                res = jsonRpcResult('boolean')(unsafeRes);
+
+                if (!res.error) {
+                  _context51.next = 6;
+                  break;
+                }
+
+                throw new Error('validator exit failed: ' + res.error.message);
+
+              case 6:
+                assert__default['default'](typeof res.result !== 'undefined');
+                return _context51.abrupt("return", res.result);
+
+              case 8:
+              case "end":
+                return _context51.stop();
+            }
+          }
+        }, _callee51, this);
+      }));
+
+      function validatorExit() {
+        return _validatorExit.apply(this, arguments);
+      }
+
+      return validatorExit;
+    }()
+    /**
+     * Send a transaction that has already been signed and serialized into the
+     * wire format
+     */
+
+  }, {
+    key: "sendRawTransaction",
+    value: function () {
+      var _sendRawTransaction = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee52(rawTransaction, options) {
+        var encodedTransaction, result;
+        return _regeneratorRuntime__default['default'].wrap(function _callee52$(_context52) {
+          while (1) {
+            switch (_context52.prev = _context52.next) {
+              case 0:
+                encodedTransaction = toBuffer(rawTransaction).toString('base64');
+                _context52.next = 3;
+                return this.sendEncodedTransaction(encodedTransaction, options);
+
+              case 3:
+                result = _context52.sent;
+                return _context52.abrupt("return", result);
+
+              case 5:
+              case "end":
+                return _context52.stop();
+            }
+          }
+        }, _callee52, this);
+      }));
+
+      function sendRawTransaction(_x75, _x76) {
+        return _sendRawTransaction.apply(this, arguments);
+      }
+
+      return sendRawTransaction;
+    }()
+    /**
+     * Send a transaction that has already been signed, serialized into the
+     * wire format, and encoded as a base64 string
+     */
+
+  }, {
+    key: "sendEncodedTransaction",
+    value: function () {
+      var _sendEncodedTransaction = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee53(encodedTransaction, options) {
+        var config, args, skipPreflight, preflightCommitment, unsafeRes, res, logs, traceIndent, logTrace;
+        return _regeneratorRuntime__default['default'].wrap(function _callee53$(_context53) {
+          while (1) {
+            switch (_context53.prev = _context53.next) {
+              case 0:
+                config = {
+                  encoding: 'base64'
+                };
+                args = [encodedTransaction, config];
+                skipPreflight = options && options.skipPreflight;
+                preflightCommitment = options && options.preflightCommitment;
+
+                if (skipPreflight) {
+                  config.skipPreflight = skipPreflight;
+                }
+
+                if (preflightCommitment) {
+                  config.preflightCommitment = preflightCommitment;
+                }
+
+                _context53.next = 8;
+                return this._rpcRequest('sendTransaction', args);
+
+              case 8:
+                unsafeRes = _context53.sent;
+                res = SendTransactionRpcResult(unsafeRes);
+
+                if (!res.error) {
+                  _context53.next = 13;
+                  break;
+                }
+
+                if (res.error.data) {
+                  logs = res.error.data.logs;
+
+                  if (logs && Array.isArray(logs)) {
+                    traceIndent = '\n    ';
+                    logTrace = traceIndent + logs.join(traceIndent);
+                    console.error(res.error.message, logTrace);
+                  }
+                }
+
+                throw new Error('failed to send transaction: ' + res.error.message);
+
+              case 13:
+                assert__default['default'](typeof res.result !== 'undefined');
+                assert__default['default'](res.result);
+                return _context53.abrupt("return", res.result);
+
+              case 16:
+              case "end":
+                return _context53.stop();
+            }
+          }
+        }, _callee53, this);
+      }));
+
+      function sendEncodedTransaction(_x77, _x78) {
+        return _sendEncodedTransaction.apply(this, arguments);
+      }
+
+      return sendEncodedTransaction;
+    }()
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_wsOnOpen",
+    value: function _wsOnOpen() {
+      var _this2 = this;
+
+      this._rpcWebSocketConnected = true;
+      this._rpcWebSocketHeartbeat = setInterval(function () {
+        // Ping server every 5s to prevent idle timeouts
+        _this2._rpcWebSocket.notify('ping')["catch"](function () {});
+      }, 5000);
+
+      this._updateSubscriptions();
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_wsOnError",
+    value: function _wsOnError(err) {
+      console.error('ws error:', err.message);
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_wsOnClose",
+    value: function _wsOnClose(code) {
+      clearInterval(this._rpcWebSocketHeartbeat);
+      this._rpcWebSocketHeartbeat = null;
+
+      if (code === 1000) {
+        // explicit close, check if any subscriptions have been made since close
+        this._updateSubscriptions();
+
+        return;
+      } // implicit close, prepare subscriptions for auto-reconnect
+
+
+      this._resetSubscriptions();
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_subscribe",
+    value: function () {
+      var _subscribe2 = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee54(sub, rpcMethod, rpcArgs) {
+        var id;
+        return _regeneratorRuntime__default['default'].wrap(function _callee54$(_context54) {
+          while (1) {
+            switch (_context54.prev = _context54.next) {
+              case 0:
+                if (!(sub.subscriptionId == null)) {
+                  _context54.next = 13;
+                  break;
+                }
+
+                sub.subscriptionId = 'subscribing';
+                _context54.prev = 2;
+                _context54.next = 5;
+                return this._rpcWebSocket.call(rpcMethod, rpcArgs);
+
+              case 5:
+                id = _context54.sent;
+
+                if (sub.subscriptionId === 'subscribing') {
+                  // eslint-disable-next-line require-atomic-updates
+                  sub.subscriptionId = id;
+                }
+
+                _context54.next = 13;
+                break;
+
+              case 9:
+                _context54.prev = 9;
+                _context54.t0 = _context54["catch"](2);
+
+                if (sub.subscriptionId === 'subscribing') {
+                  // eslint-disable-next-line require-atomic-updates
+                  sub.subscriptionId = null;
+                }
+
+                console.error("".concat(rpcMethod, " error for argument"), rpcArgs, _context54.t0.message);
+
+              case 13:
+              case "end":
+                return _context54.stop();
+            }
+          }
+        }, _callee54, this, [[2, 9]]);
+      }));
+
+      function _subscribe(_x79, _x80, _x81) {
+        return _subscribe2.apply(this, arguments);
+      }
+
+      return _subscribe;
+    }()
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_unsubscribe",
+    value: function () {
+      var _unsubscribe2 = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee55(sub, rpcMethod) {
+        var subscriptionId, unsubscribeId;
+        return _regeneratorRuntime__default['default'].wrap(function _callee55$(_context55) {
+          while (1) {
+            switch (_context55.prev = _context55.next) {
+              case 0:
+                subscriptionId = sub.subscriptionId;
+
+                if (!(subscriptionId != null && typeof subscriptionId != 'string')) {
+                  _context55.next = 11;
+                  break;
+                }
+
+                unsubscribeId = subscriptionId;
+                _context55.prev = 3;
+                _context55.next = 6;
+                return this._rpcWebSocket.call(rpcMethod, [unsubscribeId]);
+
+              case 6:
+                _context55.next = 11;
+                break;
+
+              case 8:
+                _context55.prev = 8;
+                _context55.t0 = _context55["catch"](3);
+                console.error("".concat(rpcMethod, " error:"), _context55.t0.message);
+
+              case 11:
+              case "end":
+                return _context55.stop();
+            }
+          }
+        }, _callee55, this, [[3, 8]]);
+      }));
+
+      function _unsubscribe(_x82, _x83) {
+        return _unsubscribe2.apply(this, arguments);
+      }
+
+      return _unsubscribe;
+    }()
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_resetSubscriptions",
+    value: function _resetSubscriptions() {
+      Object.values(this._accountChangeSubscriptions).forEach(function (s) {
+        return s.subscriptionId = null;
+      });
+      Object.values(this._programAccountChangeSubscriptions).forEach(function (s) {
+        return s.subscriptionId = null;
+      });
+      Object.values(this._signatureSubscriptions).forEach(function (s) {
+        return s.subscriptionId = null;
+      });
+      Object.values(this._slotSubscriptions).forEach(function (s) {
+        return s.subscriptionId = null;
+      });
+      Object.values(this._rootSubscriptions).forEach(function (s) {
+        return s.subscriptionId = null;
+      });
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_updateSubscriptions",
+    value: function _updateSubscriptions() {
+      var _this3 = this;
+
+      var accountKeys = Object.keys(this._accountChangeSubscriptions).map(Number);
+      var programKeys = Object.keys(this._programAccountChangeSubscriptions).map(Number);
+      var slotKeys = Object.keys(this._slotSubscriptions).map(Number);
+      var signatureKeys = Object.keys(this._signatureSubscriptions).map(Number);
+      var rootKeys = Object.keys(this._rootSubscriptions).map(Number);
+
+      if (accountKeys.length === 0 && programKeys.length === 0 && slotKeys.length === 0 && signatureKeys.length === 0 && rootKeys.length === 0) {
+        if (this._rpcWebSocketConnected) {
+          this._rpcWebSocketConnected = false;
+          this._rpcWebSocketIdleTimeout = setTimeout(function () {
+            _this3._rpcWebSocketIdleTimeout = null;
+
+            _this3._rpcWebSocket.close();
+          }, 500);
+        }
+
+        return;
+      }
+
+      if (this._rpcWebSocketIdleTimeout !== null) {
+        clearTimeout(this._rpcWebSocketIdleTimeout);
+        this._rpcWebSocketIdleTimeout = null;
+        this._rpcWebSocketConnected = true;
+      }
+
+      if (!this._rpcWebSocketConnected) {
+        this._rpcWebSocket.connect();
+
+        return;
+      }
+
+      var _iterator = _createForOfIteratorHelper$1(accountKeys),
+          _step;
+
+      try {
+        for (_iterator.s(); !(_step = _iterator.n()).done;) {
+          var id = _step.value;
+          var sub = this._accountChangeSubscriptions[id];
+
+          this._subscribe(sub, 'accountSubscribe', this._buildArgs([sub.publicKey], sub.commitment, 'base64'));
+        }
+      } catch (err) {
+        _iterator.e(err);
+      } finally {
+        _iterator.f();
+      }
+
+      var _iterator2 = _createForOfIteratorHelper$1(programKeys),
+          _step2;
+
+      try {
+        for (_iterator2.s(); !(_step2 = _iterator2.n()).done;) {
+          var _id = _step2.value;
+          var _sub = this._programAccountChangeSubscriptions[_id];
+
+          this._subscribe(_sub, 'programSubscribe', this._buildArgs([_sub.programId], _sub.commitment, 'base64'));
+        }
+      } catch (err) {
+        _iterator2.e(err);
+      } finally {
+        _iterator2.f();
+      }
+
+      var _iterator3 = _createForOfIteratorHelper$1(slotKeys),
+          _step3;
+
+      try {
+        for (_iterator3.s(); !(_step3 = _iterator3.n()).done;) {
+          var _id2 = _step3.value;
+          var _sub2 = this._slotSubscriptions[_id2];
+
+          this._subscribe(_sub2, 'slotSubscribe', []);
+        }
+      } catch (err) {
+        _iterator3.e(err);
+      } finally {
+        _iterator3.f();
+      }
+
+      var _iterator4 = _createForOfIteratorHelper$1(signatureKeys),
+          _step4;
+
+      try {
+        for (_iterator4.s(); !(_step4 = _iterator4.n()).done;) {
+          var _id3 = _step4.value;
+          var _sub3 = this._signatureSubscriptions[_id3];
+
+          this._subscribe(_sub3, 'signatureSubscribe', this._buildArgs([_sub3.signature], _sub3.commitment));
+        }
+      } catch (err) {
+        _iterator4.e(err);
+      } finally {
+        _iterator4.f();
+      }
+
+      var _iterator5 = _createForOfIteratorHelper$1(rootKeys),
+          _step5;
+
+      try {
+        for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
+          var _id4 = _step5.value;
+          var _sub4 = this._rootSubscriptions[_id4];
+
+          this._subscribe(_sub4, 'rootSubscribe', []);
+        }
+      } catch (err) {
+        _iterator5.e(err);
+      } finally {
+        _iterator5.f();
+      }
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_wsOnAccountNotification",
+    value: function _wsOnAccountNotification(notification) {
+      var res = AccountNotificationResult(notification);
+
+      if (res.error) {
+        throw new Error('account notification failed: ' + res.error.message);
+      }
+
+      assert__default['default'](typeof res.result !== 'undefined');
+      var keys = Object.keys(this._accountChangeSubscriptions).map(Number);
+
+      var _iterator6 = _createForOfIteratorHelper$1(keys),
+          _step6;
+
+      try {
+        for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
+          var id = _step6.value;
+          var sub = this._accountChangeSubscriptions[id];
+
+          if (sub.subscriptionId === res.subscription) {
+            var result = res.result;
+            var value = result.value,
+                _context56 = result.context;
+            assert__default['default'](value.data[1] === 'base64');
+            sub.callback({
+              executable: value.executable,
+              owner: new PublicKey(value.owner),
+              lamports: value.lamports,
+              data: Buffer.from(value.data[0], 'base64')
+            }, _context56);
+            return true;
+          }
+        }
+      } catch (err) {
+        _iterator6.e(err);
+      } finally {
+        _iterator6.f();
+      }
+    }
+    /**
+     * Register a callback to be invoked whenever the specified account changes
+     *
+     * @param publicKey Public key of the account to monitor
+     * @param callback Function to invoke whenever the account is changed
+     * @param commitment Specify the commitment level account changes must reach before notification
+     * @return subscription id
+     */
+
+  }, {
+    key: "onAccountChange",
+    value: function onAccountChange(publicKey, callback, commitment) {
+      var id = ++this._accountChangeSubscriptionCounter;
+      this._accountChangeSubscriptions[id] = {
+        publicKey: publicKey.toBase58(),
+        callback: callback,
+        commitment: commitment,
+        subscriptionId: null
+      };
+
+      this._updateSubscriptions();
+
+      return id;
+    }
+    /**
+     * Deregister an account notification callback
+     *
+     * @param id subscription id to deregister
+     */
+
+  }, {
+    key: "removeAccountChangeListener",
+    value: function () {
+      var _removeAccountChangeListener = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee56(id) {
+        var subInfo;
+        return _regeneratorRuntime__default['default'].wrap(function _callee56$(_context57) {
+          while (1) {
+            switch (_context57.prev = _context57.next) {
+              case 0:
+                if (!this._accountChangeSubscriptions[id]) {
+                  _context57.next = 8;
+                  break;
+                }
+
+                subInfo = this._accountChangeSubscriptions[id];
+                delete this._accountChangeSubscriptions[id];
+                _context57.next = 5;
+                return this._unsubscribe(subInfo, 'accountUnsubscribe');
+
+              case 5:
+                this._updateSubscriptions();
+
+                _context57.next = 9;
+                break;
+
+              case 8:
+                throw new Error("Unknown account change id: ".concat(id));
+
+              case 9:
+              case "end":
+                return _context57.stop();
+            }
+          }
+        }, _callee56, this);
+      }));
+
+      function removeAccountChangeListener(_x84) {
+        return _removeAccountChangeListener.apply(this, arguments);
+      }
+
+      return removeAccountChangeListener;
+    }()
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_wsOnProgramAccountNotification",
+    value: function _wsOnProgramAccountNotification(notification) {
+      var res = ProgramAccountNotificationResult(notification);
+
+      if (res.error) {
+        throw new Error('program account notification failed: ' + res.error.message);
+      }
+
+      assert__default['default'](typeof res.result !== 'undefined');
+      var keys = Object.keys(this._programAccountChangeSubscriptions).map(Number);
+
+      var _iterator7 = _createForOfIteratorHelper$1(keys),
+          _step7;
+
+      try {
+        for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
+          var id = _step7.value;
+          var sub = this._programAccountChangeSubscriptions[id];
+
+          if (sub.subscriptionId === res.subscription) {
+            var result = res.result;
+            var value = result.value,
+                _context58 = result.context;
+            assert__default['default'](value.account.data[1] === 'base64');
+            sub.callback({
+              accountId: value.pubkey,
+              accountInfo: {
+                executable: value.account.executable,
+                owner: new PublicKey(value.account.owner),
+                lamports: value.account.lamports,
+                data: Buffer.from(value.account.data[0], 'base64')
+              }
+            }, _context58);
+            return true;
+          }
+        }
+      } catch (err) {
+        _iterator7.e(err);
+      } finally {
+        _iterator7.f();
+      }
+    }
+    /**
+     * Register a callback to be invoked whenever accounts owned by the
+     * specified program change
+     *
+     * @param programId Public key of the program to monitor
+     * @param callback Function to invoke whenever the account is changed
+     * @param commitment Specify the commitment level account changes must reach before notification
+     * @return subscription id
+     */
+
+  }, {
+    key: "onProgramAccountChange",
+    value: function onProgramAccountChange(programId, callback, commitment) {
+      var id = ++this._programAccountChangeSubscriptionCounter;
+      this._programAccountChangeSubscriptions[id] = {
+        programId: programId.toBase58(),
+        callback: callback,
+        commitment: commitment,
+        subscriptionId: null
+      };
+
+      this._updateSubscriptions();
+
+      return id;
+    }
+    /**
+     * Deregister an account notification callback
+     *
+     * @param id subscription id to deregister
+     */
+
+  }, {
+    key: "removeProgramAccountChangeListener",
+    value: function () {
+      var _removeProgramAccountChangeListener = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee57(id) {
+        var subInfo;
+        return _regeneratorRuntime__default['default'].wrap(function _callee57$(_context59) {
+          while (1) {
+            switch (_context59.prev = _context59.next) {
+              case 0:
+                if (!this._programAccountChangeSubscriptions[id]) {
+                  _context59.next = 8;
+                  break;
+                }
+
+                subInfo = this._programAccountChangeSubscriptions[id];
+                delete this._programAccountChangeSubscriptions[id];
+                _context59.next = 5;
+                return this._unsubscribe(subInfo, 'programUnsubscribe');
+
+              case 5:
+                this._updateSubscriptions();
+
+                _context59.next = 9;
+                break;
+
+              case 8:
+                throw new Error("Unknown program account change id: ".concat(id));
+
+              case 9:
+              case "end":
+                return _context59.stop();
+            }
+          }
+        }, _callee57, this);
+      }));
+
+      function removeProgramAccountChangeListener(_x85) {
+        return _removeProgramAccountChangeListener.apply(this, arguments);
+      }
+
+      return removeProgramAccountChangeListener;
+    }()
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_wsOnSlotNotification",
+    value: function _wsOnSlotNotification(notification) {
+      var res = SlotNotificationResult(notification);
+
+      if (res.error) {
+        throw new Error('slot notification failed: ' + res.error.message);
+      }
+
+      assert__default['default'](typeof res.result !== 'undefined');
+      var _res$result3 = res.result,
+          parent = _res$result3.parent,
+          slot = _res$result3.slot,
+          root = _res$result3.root;
+      var keys = Object.keys(this._slotSubscriptions).map(Number);
+
+      var _iterator8 = _createForOfIteratorHelper$1(keys),
+          _step8;
+
+      try {
+        for (_iterator8.s(); !(_step8 = _iterator8.n()).done;) {
+          var id = _step8.value;
+          var sub = this._slotSubscriptions[id];
+
+          if (sub.subscriptionId === res.subscription) {
+            sub.callback({
+              parent: parent,
+              slot: slot,
+              root: root
+            });
+            return true;
+          }
+        }
+      } catch (err) {
+        _iterator8.e(err);
+      } finally {
+        _iterator8.f();
+      }
+    }
+    /**
+     * Register a callback to be invoked upon slot changes
+     *
+     * @param callback Function to invoke whenever the slot changes
+     * @return subscription id
+     */
+
+  }, {
+    key: "onSlotChange",
+    value: function onSlotChange(callback) {
+      var id = ++this._slotSubscriptionCounter;
+      this._slotSubscriptions[id] = {
+        callback: callback,
+        subscriptionId: null
+      };
+
+      this._updateSubscriptions();
+
+      return id;
+    }
+    /**
+     * Deregister a slot notification callback
+     *
+     * @param id subscription id to deregister
+     */
+
+  }, {
+    key: "removeSlotChangeListener",
+    value: function () {
+      var _removeSlotChangeListener = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee58(id) {
+        var subInfo;
+        return _regeneratorRuntime__default['default'].wrap(function _callee58$(_context60) {
+          while (1) {
+            switch (_context60.prev = _context60.next) {
+              case 0:
+                if (!this._slotSubscriptions[id]) {
+                  _context60.next = 8;
+                  break;
+                }
+
+                subInfo = this._slotSubscriptions[id];
+                delete this._slotSubscriptions[id];
+                _context60.next = 5;
+                return this._unsubscribe(subInfo, 'slotUnsubscribe');
+
+              case 5:
+                this._updateSubscriptions();
+
+                _context60.next = 9;
+                break;
+
+              case 8:
+                throw new Error("Unknown slot change id: ".concat(id));
+
+              case 9:
+              case "end":
+                return _context60.stop();
+            }
+          }
+        }, _callee58, this);
+      }));
+
+      function removeSlotChangeListener(_x86) {
+        return _removeSlotChangeListener.apply(this, arguments);
+      }
+
+      return removeSlotChangeListener;
+    }()
+  }, {
+    key: "_buildArgs",
+    value: function _buildArgs(args, override, encoding, extra) {
+      var commitment = override || this._commitment;
+
+      if (commitment || encoding || extra) {
+        var options = {};
+
+        if (encoding) {
+          options.encoding = encoding;
+        }
+
+        if (commitment) {
+          options.commitment = commitment;
+        }
+
+        if (extra) {
+          options = Object.assign(options, extra);
+        }
+
+        args.push(options);
+      }
+
+      return args;
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_wsOnSignatureNotification",
+    value: function _wsOnSignatureNotification(notification) {
+      var res = SignatureNotificationResult(notification);
+
+      if (res.error) {
+        throw new Error('signature notification failed: ' + res.error.message);
+      }
+
+      assert__default['default'](typeof res.result !== 'undefined');
+      var keys = Object.keys(this._signatureSubscriptions).map(Number);
+
+      var _iterator9 = _createForOfIteratorHelper$1(keys),
+          _step9;
+
+      try {
+        for (_iterator9.s(); !(_step9 = _iterator9.n()).done;) {
+          var id = _step9.value;
+          var sub = this._signatureSubscriptions[id];
+
+          if (sub.subscriptionId === res.subscription) {
+            // Signatures subscriptions are auto-removed by the RPC service so
+            // no need to explicitly send an unsubscribe message
+            delete this._signatureSubscriptions[id];
+
+            this._updateSubscriptions();
+
+            sub.callback(res.result.value, res.result.context);
+            return;
+          }
+        }
+      } catch (err) {
+        _iterator9.e(err);
+      } finally {
+        _iterator9.f();
+      }
+    }
+    /**
+     * Register a callback to be invoked upon signature updates
+     *
+     * @param signature Transaction signature string in base 58
+     * @param callback Function to invoke on signature notifications
+     * @param commitment Specify the commitment level signature must reach before notification
+     * @return subscription id
+     */
+
+  }, {
+    key: "onSignature",
+    value: function onSignature(signature, callback, commitment) {
+      var id = ++this._signatureSubscriptionCounter;
+      this._signatureSubscriptions[id] = {
+        signature: signature,
+        callback: callback,
+        commitment: commitment,
+        subscriptionId: null
+      };
+
+      this._updateSubscriptions();
+
+      return id;
+    }
+    /**
+     * Deregister a signature notification callback
+     *
+     * @param id subscription id to deregister
+     */
+
+  }, {
+    key: "removeSignatureListener",
+    value: function () {
+      var _removeSignatureListener = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee59(id) {
+        var subInfo;
+        return _regeneratorRuntime__default['default'].wrap(function _callee59$(_context61) {
+          while (1) {
+            switch (_context61.prev = _context61.next) {
+              case 0:
+                if (!this._signatureSubscriptions[id]) {
+                  _context61.next = 8;
+                  break;
+                }
+
+                subInfo = this._signatureSubscriptions[id];
+                delete this._signatureSubscriptions[id];
+                _context61.next = 5;
+                return this._unsubscribe(subInfo, 'signatureUnsubscribe');
+
+              case 5:
+                this._updateSubscriptions();
+
+                _context61.next = 9;
+                break;
+
+              case 8:
+                throw new Error("Unknown signature result id: ".concat(id));
+
+              case 9:
+              case "end":
+                return _context61.stop();
+            }
+          }
+        }, _callee59, this);
+      }));
+
+      function removeSignatureListener(_x87) {
+        return _removeSignatureListener.apply(this, arguments);
+      }
+
+      return removeSignatureListener;
+    }()
+    /**
+     * @private
+     */
+
+  }, {
+    key: "_wsOnRootNotification",
+    value: function _wsOnRootNotification(notification) {
+      var res = RootNotificationResult(notification);
+
+      if (res.error) {
+        throw new Error('root notification failed: ' + res.error.message);
+      }
+
+      assert__default['default'](typeof res.result !== 'undefined');
+      var root = res.result;
+      var keys = Object.keys(this._rootSubscriptions).map(Number);
+
+      var _iterator10 = _createForOfIteratorHelper$1(keys),
+          _step10;
+
+      try {
+        for (_iterator10.s(); !(_step10 = _iterator10.n()).done;) {
+          var id = _step10.value;
+          var sub = this._rootSubscriptions[id];
+
+          if (sub.subscriptionId === res.subscription) {
+            sub.callback(root);
+            return true;
+          }
+        }
+      } catch (err) {
+        _iterator10.e(err);
+      } finally {
+        _iterator10.f();
+      }
+    }
+    /**
+     * Register a callback to be invoked upon root changes
+     *
+     * @param callback Function to invoke whenever the root changes
+     * @return subscription id
+     */
+
+  }, {
+    key: "onRootChange",
+    value: function onRootChange(callback) {
+      var id = ++this._rootSubscriptionCounter;
+      this._rootSubscriptions[id] = {
+        callback: callback,
+        subscriptionId: null
+      };
+
+      this._updateSubscriptions();
+
+      return id;
+    }
+    /**
+     * Deregister a root notification callback
+     *
+     * @param id subscription id to deregister
+     */
+
+  }, {
+    key: "removeRootChangeListener",
+    value: function () {
+      var _removeRootChangeListener = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee60(id) {
+        var subInfo;
+        return _regeneratorRuntime__default['default'].wrap(function _callee60$(_context62) {
+          while (1) {
+            switch (_context62.prev = _context62.next) {
+              case 0:
+                if (!this._rootSubscriptions[id]) {
+                  _context62.next = 8;
+                  break;
+                }
+
+                subInfo = this._rootSubscriptions[id];
+                delete this._rootSubscriptions[id];
+                _context62.next = 5;
+                return this._unsubscribe(subInfo, 'rootUnsubscribe');
+
+              case 5:
+                this._updateSubscriptions();
+
+                _context62.next = 9;
+                break;
+
+              case 8:
+                throw new Error("Unknown root change id: ".concat(id));
+
+              case 9:
+              case "end":
+                return _context62.stop();
+            }
+          }
+        }, _callee60, this);
+      }));
+
+      function removeRootChangeListener(_x88) {
+        return _removeRootChangeListener.apply(this, arguments);
+      }
+
+      return removeRootChangeListener;
+    }()
+  }, {
+    key: "commitment",
+    get: function get() {
+      return this._commitment;
+    }
+  }]);
+
+  return Connection;
+}();
+
+/**
+ * Sign, send and confirm a transaction.
+ *
+ * If `commitment` option is not specified, defaults to 'max' commitment.
+ *
+ * @param {Connection} connection
+ * @param {Transaction} transaction
+ * @param {Array<Account>} signers
+ * @param {ConfirmOptions} [options]
+ * @returns {Promise<TransactionSignature>}
+ */
+function sendAndConfirmTransaction(_x, _x2, _x3, _x4) {
+  return _sendAndConfirmTransaction.apply(this, arguments);
+}
+
+function _sendAndConfirmTransaction() {
+  _sendAndConfirmTransaction = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee(connection, transaction, signers, options) {
+    var sendOptions, signature, status;
+    return _regeneratorRuntime__default['default'].wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            sendOptions = options && {
+              skipPreflight: options.skipPreflight,
+              preflightCommitment: options.preflightCommitment || options.commitment
+            };
+            _context.next = 3;
+            return connection.sendTransaction(transaction, signers, sendOptions);
+
+          case 3:
+            signature = _context.sent;
+            _context.next = 6;
+            return connection.confirmTransaction(signature, options && options.commitment);
+
+          case 6:
+            status = _context.sent.value;
+
+            if (!status.err) {
+              _context.next = 9;
+              break;
+            }
+
+            throw new Error("Transaction ".concat(signature, " failed (").concat(JSON.stringify(status), ")"));
+
+          case 9:
+            return _context.abrupt("return", signature);
+
+          case 10:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+  return _sendAndConfirmTransaction.apply(this, arguments);
+}
+
+/**
+ * @typedef {Object} InstructionType
+ * @property (index} The Instruction index (from solana upstream program)
+ * @property (BufferLayout} The BufferLayout to use to build data
+ */
+
+/**
+ * Populate a buffer of instruction data using an InstructionType
+ */
+function encodeData(type, fields) {
+  var allocLength = type.layout.span >= 0 ? type.layout.span : getAlloc(type, fields);
+  var data = Buffer.alloc(allocLength);
+  var layoutFields = Object.assign({
+    instruction: type.index
+  }, fields);
+  type.layout.encode(layoutFields, data);
+  return data;
+}
+/**
+ * Decode instruction data buffer using an InstructionType
+ */
+
+function decodeData(type, buffer) {
+  var data;
+
+  try {
+    data = type.layout.decode(buffer);
+  } catch (err) {
+    throw new Error('invalid instruction; ' + err);
+  }
+
+  if (data.instruction !== type.index) {
+    throw new Error("invalid instruction; instruction index mismatch ".concat(data.instruction, " != ").concat(type.index));
+  }
+
+  return data;
+}
+
+/**
+ * Create account system transaction params
+ * @typedef {Object} CreateAccountParams
+ * @property {PublicKey} fromPubkey
+ * @property {PublicKey} newAccountPubkey
+ * @property {number} lamports
+ * @property {number} space
+ * @property {PublicKey} programId
+ */
+
+/**
+ * System Instruction class
+ */
+var SystemInstruction = /*#__PURE__*/function () {
+  function SystemInstruction() {
+    _classCallCheck__default['default'](this, SystemInstruction);
+  }
+
+  _createClass__default['default'](SystemInstruction, null, [{
+    key: "decodeInstructionType",
+
+    /**
+     * Decode a system instruction and retrieve the instruction type.
+     */
+    value: function decodeInstructionType(instruction) {
+      this.checkProgramId(instruction.programId);
+      var instructionTypeLayout = u32('instruction');
+      var typeIndex = instructionTypeLayout.decode(instruction.data);
+      var type;
+
+      for (var _i = 0, _Object$keys = Object.keys(SYSTEM_INSTRUCTION_LAYOUTS); _i < _Object$keys.length; _i++) {
+        var t = _Object$keys[_i];
+
+        if (SYSTEM_INSTRUCTION_LAYOUTS[t].index == typeIndex) {
+          type = t;
+        }
+      }
+
+      if (!type) {
+        throw new Error('Instruction type incorrect; not a SystemInstruction');
+      }
+
+      return type;
+    }
+    /**
+     * Decode a create account system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeCreateAccount",
+    value: function decodeCreateAccount(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 2);
+
+      var _decodeData = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.Create, instruction.data),
+          lamports = _decodeData.lamports,
+          space = _decodeData.space,
+          programId = _decodeData.programId;
+
+      return {
+        fromPubkey: instruction.keys[0].pubkey,
+        newAccountPubkey: instruction.keys[1].pubkey,
+        lamports: lamports,
+        space: space,
+        programId: new PublicKey(programId)
+      };
+    }
+    /**
+     * Decode a transfer system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeTransfer",
+    value: function decodeTransfer(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 2);
+
+      var _decodeData2 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.Transfer, instruction.data),
+          lamports = _decodeData2.lamports;
+
+      return {
+        fromPubkey: instruction.keys[0].pubkey,
+        toPubkey: instruction.keys[1].pubkey,
+        lamports: lamports
+      };
+    }
+    /**
+     * Decode a transfer with seed system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeTransferWithSeed",
+    value: function decodeTransferWithSeed(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 3);
+
+      var _decodeData3 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.TransferWithSeed, instruction.data),
+          lamports = _decodeData3.lamports,
+          seed = _decodeData3.seed,
+          programId = _decodeData3.programId;
+
+      return {
+        fromPubkey: instruction.keys[0].pubkey,
+        basePubkey: instruction.keys[1].pubkey,
+        toPubkey: instruction.keys[2].pubkey,
+        lamports: lamports,
+        seed: seed,
+        programId: new PublicKey(programId)
+      };
+    }
+    /**
+     * Decode an allocate system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeAllocate",
+    value: function decodeAllocate(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 1);
+
+      var _decodeData4 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.Allocate, instruction.data),
+          space = _decodeData4.space;
+
+      return {
+        accountPubkey: instruction.keys[0].pubkey,
+        space: space
+      };
+    }
+    /**
+     * Decode an allocate with seed system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeAllocateWithSeed",
+    value: function decodeAllocateWithSeed(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 1);
+
+      var _decodeData5 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.AllocateWithSeed, instruction.data),
+          base = _decodeData5.base,
+          seed = _decodeData5.seed,
+          space = _decodeData5.space,
+          programId = _decodeData5.programId;
+
+      return {
+        accountPubkey: instruction.keys[0].pubkey,
+        basePubkey: new PublicKey(base),
+        seed: seed,
+        space: space,
+        programId: new PublicKey(programId)
+      };
+    }
+    /**
+     * Decode an assign system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeAssign",
+    value: function decodeAssign(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 1);
+
+      var _decodeData6 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.Assign, instruction.data),
+          programId = _decodeData6.programId;
+
+      return {
+        accountPubkey: instruction.keys[0].pubkey,
+        programId: new PublicKey(programId)
+      };
+    }
+    /**
+     * Decode an assign with seed system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeAssignWithSeed",
+    value: function decodeAssignWithSeed(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 1);
+
+      var _decodeData7 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.AssignWithSeed, instruction.data),
+          base = _decodeData7.base,
+          seed = _decodeData7.seed,
+          programId = _decodeData7.programId;
+
+      return {
+        accountPubkey: instruction.keys[0].pubkey,
+        basePubkey: new PublicKey(base),
+        seed: seed,
+        programId: new PublicKey(programId)
+      };
+    }
+    /**
+     * Decode a create account with seed system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeCreateWithSeed",
+    value: function decodeCreateWithSeed(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 2);
+
+      var _decodeData8 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.CreateWithSeed, instruction.data),
+          base = _decodeData8.base,
+          seed = _decodeData8.seed,
+          lamports = _decodeData8.lamports,
+          space = _decodeData8.space,
+          programId = _decodeData8.programId;
+
+      return {
+        fromPubkey: instruction.keys[0].pubkey,
+        newAccountPubkey: instruction.keys[1].pubkey,
+        basePubkey: new PublicKey(base),
+        seed: seed,
+        lamports: lamports,
+        space: space,
+        programId: new PublicKey(programId)
+      };
+    }
+    /**
+     * Decode a nonce initialize system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeNonceInitialize",
+    value: function decodeNonceInitialize(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 3);
+
+      var _decodeData9 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.InitializeNonceAccount, instruction.data),
+          authorized = _decodeData9.authorized;
+
+      return {
+        noncePubkey: instruction.keys[0].pubkey,
+        authorizedPubkey: new PublicKey(authorized)
+      };
+    }
+    /**
+     * Decode a nonce advance system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeNonceAdvance",
+    value: function decodeNonceAdvance(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 3);
+      decodeData(SYSTEM_INSTRUCTION_LAYOUTS.AdvanceNonceAccount, instruction.data);
+      return {
+        noncePubkey: instruction.keys[0].pubkey,
+        authorizedPubkey: instruction.keys[2].pubkey
+      };
+    }
+    /**
+     * Decode a nonce withdraw system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeNonceWithdraw",
+    value: function decodeNonceWithdraw(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 5);
+
+      var _decodeData10 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.WithdrawNonceAccount, instruction.data),
+          lamports = _decodeData10.lamports;
+
+      return {
+        noncePubkey: instruction.keys[0].pubkey,
+        toPubkey: instruction.keys[1].pubkey,
+        authorizedPubkey: instruction.keys[4].pubkey,
+        lamports: lamports
+      };
+    }
+    /**
+     * Decode a nonce authorize system instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeNonceAuthorize",
+    value: function decodeNonceAuthorize(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 2);
+
+      var _decodeData11 = decodeData(SYSTEM_INSTRUCTION_LAYOUTS.AuthorizeNonceAccount, instruction.data),
+          authorized = _decodeData11.authorized;
+
+      return {
+        noncePubkey: instruction.keys[0].pubkey,
+        authorizedPubkey: instruction.keys[1].pubkey,
+        newAuthorizedPubkey: new PublicKey(authorized)
+      };
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "checkProgramId",
+    value: function checkProgramId(programId) {
+      if (!programId.equals(SystemProgram$1.programId)) {
+        throw new Error('invalid instruction; programId is not SystemProgram');
+      }
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "checkKeyLength",
+    value: function checkKeyLength(keys, expectedLength) {
+      if (keys.length < expectedLength) {
+        throw new Error("invalid instruction; found ".concat(keys.length, " keys, expected at least ").concat(expectedLength));
+      }
+    }
+  }]);
+
+  return SystemInstruction;
+}();
+/**
+ * An enumeration of valid SystemInstructionType's
+ * @typedef {'Create' | 'Assign' | 'Transfer' | 'CreateWithSeed'
+ | 'AdvanceNonceAccount' | 'WithdrawNonceAccount' | 'InitializeNonceAccount'
+ | 'AuthorizeNonceAccount'} SystemInstructionType
+ */
+
+/**
+ * An enumeration of valid system InstructionType's
+ */
+var SYSTEM_INSTRUCTION_LAYOUTS = Object.freeze({
+  Create: {
+    index: 0,
+    layout: struct$1([u32('instruction'), ns64('lamports'), ns64('space'), publicKey('programId')])
+  },
+  Assign: {
+    index: 1,
+    layout: struct$1([u32('instruction'), publicKey('programId')])
+  },
+  Transfer: {
+    index: 2,
+    layout: struct$1([u32('instruction'), ns64('lamports')])
+  },
+  CreateWithSeed: {
+    index: 3,
+    layout: struct$1([u32('instruction'), publicKey('base'), rustString('seed'), ns64('lamports'), ns64('space'), publicKey('programId')])
+  },
+  AdvanceNonceAccount: {
+    index: 4,
+    layout: struct$1([u32('instruction')])
+  },
+  WithdrawNonceAccount: {
+    index: 5,
+    layout: struct$1([u32('instruction'), ns64('lamports')])
+  },
+  InitializeNonceAccount: {
+    index: 6,
+    layout: struct$1([u32('instruction'), publicKey('authorized')])
+  },
+  AuthorizeNonceAccount: {
+    index: 7,
+    layout: struct$1([u32('instruction'), publicKey('authorized')])
+  },
+  Allocate: {
+    index: 8,
+    layout: struct$1([u32('instruction'), ns64('space')])
+  },
+  AllocateWithSeed: {
+    index: 9,
+    layout: struct$1([u32('instruction'), publicKey('base'), rustString('seed'), ns64('space'), publicKey('programId')])
+  },
+  AssignWithSeed: {
+    index: 10,
+    layout: struct$1([u32('instruction'), publicKey('base'), rustString('seed'), publicKey('programId')])
+  },
+  TransferWithSeed: {
+    index: 11,
+    layout: struct$1([u32('instruction'), ns64('lamports'), rustString('seed'), publicKey('programId')])
+  }
+});
+/**
+ * Factory class for transactions to interact with the System program
+ */
+
+var SystemProgram$1 = /*#__PURE__*/function () {
+  function SystemProgram() {
+    _classCallCheck__default['default'](this, SystemProgram);
+  }
+
+  _createClass__default['default'](SystemProgram, null, [{
+    key: "createAccount",
+
+    /**
+     * Generate a transaction instruction that creates a new account
+     */
+    value: function createAccount(params) {
+      var type = SYSTEM_INSTRUCTION_LAYOUTS.Create;
+      var data = encodeData(type, {
+        lamports: params.lamports,
+        space: params.space,
+        programId: params.programId.toBuffer()
+      });
+      return new TransactionInstruction({
+        keys: [{
+          pubkey: params.fromPubkey,
+          isSigner: true,
+          isWritable: true
+        }, {
+          pubkey: params.newAccountPubkey,
+          isSigner: true,
+          isWritable: true
+        }],
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a transaction instruction that transfers lamports from one account to another
+     */
+
+  }, {
+    key: "transfer",
+    value: function transfer(params) {
+      var data;
+      var keys;
+
+      if (params.basePubkey) {
+        var type = SYSTEM_INSTRUCTION_LAYOUTS.TransferWithSeed;
+        data = encodeData(type, {
+          lamports: params.lamports,
+          seed: params.seed,
+          programId: params.programId.toBuffer()
+        });
+        keys = [{
+          pubkey: params.fromPubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: params.basePubkey,
+          isSigner: true,
+          isWritable: false
+        }, {
+          pubkey: params.toPubkey,
+          isSigner: false,
+          isWritable: true
+        }];
+      } else {
+        var _type = SYSTEM_INSTRUCTION_LAYOUTS.Transfer;
+        data = encodeData(_type, {
+          lamports: params.lamports
+        });
+        keys = [{
+          pubkey: params.fromPubkey,
+          isSigner: true,
+          isWritable: true
+        }, {
+          pubkey: params.toPubkey,
+          isSigner: false,
+          isWritable: true
+        }];
+      }
+
+      return new TransactionInstruction({
+        keys: keys,
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a transaction instruction that assigns an account to a program
+     */
+
+  }, {
+    key: "assign",
+    value: function assign(params) {
+      var data;
+      var keys;
+
+      if (params.basePubkey) {
+        var type = SYSTEM_INSTRUCTION_LAYOUTS.AssignWithSeed;
+        data = encodeData(type, {
+          base: params.basePubkey.toBuffer(),
+          seed: params.seed,
+          programId: params.programId.toBuffer()
+        });
+        keys = [{
+          pubkey: params.accountPubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: params.basePubkey,
+          isSigner: true,
+          isWritable: false
+        }];
+      } else {
+        var _type2 = SYSTEM_INSTRUCTION_LAYOUTS.Assign;
+        data = encodeData(_type2, {
+          programId: params.programId.toBuffer()
+        });
+        keys = [{
+          pubkey: params.accountPubkey,
+          isSigner: true,
+          isWritable: true
+        }];
+      }
+
+      return new TransactionInstruction({
+        keys: keys,
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a transaction instruction that creates a new account at
+     *   an address generated with `from`, a seed, and programId
+     */
+
+  }, {
+    key: "createAccountWithSeed",
+    value: function createAccountWithSeed(params) {
+      var type = SYSTEM_INSTRUCTION_LAYOUTS.CreateWithSeed;
+      var data = encodeData(type, {
+        base: params.basePubkey.toBuffer(),
+        seed: params.seed,
+        lamports: params.lamports,
+        space: params.space,
+        programId: params.programId.toBuffer()
+      });
+      return new TransactionInstruction({
+        keys: [{
+          pubkey: params.fromPubkey,
+          isSigner: true,
+          isWritable: true
+        }, {
+          pubkey: params.newAccountPubkey,
+          isSigner: false,
+          isWritable: true
+        }],
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a transaction that creates a new Nonce account
+     */
+
+  }, {
+    key: "createNonceAccount",
+    value: function createNonceAccount(params) {
+      var transaction = new Transaction();
+
+      if (params.basePubkey && params.seed) {
+        transaction.add(SystemProgram.createAccountWithSeed({
+          fromPubkey: params.fromPubkey,
+          newAccountPubkey: params.noncePubkey,
+          basePubkey: params.basePubkey,
+          seed: params.seed,
+          lamports: params.lamports,
+          space: NONCE_ACCOUNT_LENGTH,
+          programId: this.programId
+        }));
+      } else {
+        transaction.add(SystemProgram.createAccount({
+          fromPubkey: params.fromPubkey,
+          newAccountPubkey: params.noncePubkey,
+          lamports: params.lamports,
+          space: NONCE_ACCOUNT_LENGTH,
+          programId: this.programId
+        }));
+      }
+
+      var initParams = {
+        noncePubkey: params.noncePubkey,
+        authorizedPubkey: params.authorizedPubkey
+      };
+      transaction.add(this.nonceInitialize(initParams));
+      return transaction;
+    }
+    /**
+     * Generate an instruction to initialize a Nonce account
+     */
+
+  }, {
+    key: "nonceInitialize",
+    value: function nonceInitialize(params) {
+      var type = SYSTEM_INSTRUCTION_LAYOUTS.InitializeNonceAccount;
+      var data = encodeData(type, {
+        authorized: params.authorizedPubkey.toBuffer()
+      });
+      var instructionData = {
+        keys: [{
+          pubkey: params.noncePubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: SYSVAR_RECENT_BLOCKHASHES_PUBKEY,
+          isSigner: false,
+          isWritable: false
+        }, {
+          pubkey: SYSVAR_RENT_PUBKEY,
+          isSigner: false,
+          isWritable: false
+        }],
+        programId: this.programId,
+        data: data
+      };
+      return new TransactionInstruction(instructionData);
+    }
+    /**
+     * Generate an instruction to advance the nonce in a Nonce account
+     */
+
+  }, {
+    key: "nonceAdvance",
+    value: function nonceAdvance(params) {
+      var type = SYSTEM_INSTRUCTION_LAYOUTS.AdvanceNonceAccount;
+      var data = encodeData(type);
+      var instructionData = {
+        keys: [{
+          pubkey: params.noncePubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: SYSVAR_RECENT_BLOCKHASHES_PUBKEY,
+          isSigner: false,
+          isWritable: false
+        }, {
+          pubkey: params.authorizedPubkey,
+          isSigner: true,
+          isWritable: false
+        }],
+        programId: this.programId,
+        data: data
+      };
+      return new TransactionInstruction(instructionData);
+    }
+    /**
+     * Generate a transaction instruction that withdraws lamports from a Nonce account
+     */
+
+  }, {
+    key: "nonceWithdraw",
+    value: function nonceWithdraw(params) {
+      var type = SYSTEM_INSTRUCTION_LAYOUTS.WithdrawNonceAccount;
+      var data = encodeData(type, {
+        lamports: params.lamports
+      });
+      return new TransactionInstruction({
+        keys: [{
+          pubkey: params.noncePubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: params.toPubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: SYSVAR_RECENT_BLOCKHASHES_PUBKEY,
+          isSigner: false,
+          isWritable: false
+        }, {
+          pubkey: SYSVAR_RENT_PUBKEY,
+          isSigner: false,
+          isWritable: false
+        }, {
+          pubkey: params.authorizedPubkey,
+          isSigner: true,
+          isWritable: false
+        }],
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a transaction instruction that authorizes a new PublicKey as the authority
+     * on a Nonce account.
+     */
+
+  }, {
+    key: "nonceAuthorize",
+    value: function nonceAuthorize(params) {
+      var type = SYSTEM_INSTRUCTION_LAYOUTS.AuthorizeNonceAccount;
+      var data = encodeData(type, {
+        authorized: params.newAuthorizedPubkey.toBuffer()
+      });
+      return new TransactionInstruction({
+        keys: [{
+          pubkey: params.noncePubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: params.authorizedPubkey,
+          isSigner: true,
+          isWritable: false
+        }],
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a transaction instruction that allocates space in an account without funding
+     */
+
+  }, {
+    key: "allocate",
+    value: function allocate(params) {
+      var data;
+      var keys;
+
+      if (params.basePubkey) {
+        var type = SYSTEM_INSTRUCTION_LAYOUTS.AllocateWithSeed;
+        data = encodeData(type, {
+          base: params.basePubkey.toBuffer(),
+          seed: params.seed,
+          space: params.space,
+          programId: params.programId.toBuffer()
+        });
+        keys = [{
+          pubkey: params.accountPubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: params.basePubkey,
+          isSigner: true,
+          isWritable: false
+        }];
+      } else {
+        var _type3 = SYSTEM_INSTRUCTION_LAYOUTS.Allocate;
+        data = encodeData(_type3, {
+          space: params.space
+        });
+        keys = [{
+          pubkey: params.accountPubkey,
+          isSigner: true,
+          isWritable: true
+        }];
+      }
+
+      return new TransactionInstruction({
+        keys: keys,
+        programId: this.programId,
+        data: data
+      });
+    }
+  }, {
+    key: "programId",
+
+    /**
+     * Public key that identifies the System program
+     */
+    get: function get() {
+      return new PublicKey('11111111111111111111111111111111');
+    }
+  }]);
+
+  return SystemProgram;
+}();
+
+/**
+ * Program loader interface
+ */
+
+var Loader = /*#__PURE__*/function () {
+  function Loader() {
+    _classCallCheck__default['default'](this, Loader);
+  }
+
+  _createClass__default['default'](Loader, null, [{
+    key: "getMinNumSignatures",
+
+    /**
+     * Minimum number of signatures required to load a program not including
+     * retries
+     *
+     * Can be used to calculate transaction fees
+     */
+    value: function getMinNumSignatures(dataLength) {
+      return 2 * ( // Every transaction requires two signatures (payer + program)
+      Math.ceil(dataLength / Loader.chunkSize) + 1 + // Add one for Create transaction
+      1) // Add one for Finalize transaction
+      ;
+    }
+    /**
+     * Loads a generic program
+     *
+     * @param connection The connection to use
+     * @param payer System account that pays to load the program
+     * @param program Account to load the program into
+     * @param programId Public key that identifies the loader
+     * @param data Program octets
+     * @return true if program was loaded successfully, false if program was already loaded
+     */
+
+  }, {
+    key: "load",
+    value: function () {
+      var _load = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee(connection, payer, program, programId, data) {
+        var balanceNeeded, programInfo, transaction, dataLayout, chunkSize, offset$1, array, transactions, bytes, _data, _transaction, REQUESTS_PER_SECOND, _dataLayout, _data2, _transaction2;
+
+        return _regeneratorRuntime__default['default'].wrap(function _callee$(_context) {
+          while (1) {
+            switch (_context.prev = _context.next) {
+              case 0:
+                _context.next = 2;
+                return connection.getMinimumBalanceForRentExemption(data.length);
+
+              case 2:
+                balanceNeeded = _context.sent;
+                _context.next = 5;
+                return connection.getAccountInfo(program.publicKey, 'singleGossip');
+
+              case 5:
+                programInfo = _context.sent;
+                transaction = null;
+
+                if (!(programInfo !== null)) {
+                  _context.next = 16;
+                  break;
+                }
+
+                if (!programInfo.executable) {
+                  _context.next = 11;
+                  break;
+                }
+
+                console.error('Program load failed, account is already executable');
+                return _context.abrupt("return", false);
+
+              case 11:
+                if (programInfo.data.length !== data.length) {
+                  transaction = transaction || new Transaction();
+                  transaction.add(SystemProgram$1.allocate({
+                    accountPubkey: program.publicKey,
+                    space: data.length
+                  }));
+                }
+
+                if (!programInfo.owner.equals(programId)) {
+                  transaction = transaction || new Transaction();
+                  transaction.add(SystemProgram$1.assign({
+                    accountPubkey: program.publicKey,
+                    programId: programId
+                  }));
+                }
+
+                if (programInfo.lamports < balanceNeeded) {
+                  transaction = transaction || new Transaction();
+                  transaction.add(SystemProgram$1.transfer({
+                    fromPubkey: payer.publicKey,
+                    toPubkey: program.publicKey,
+                    lamports: balanceNeeded - programInfo.lamports
+                  }));
+                }
+
+                _context.next = 17;
+                break;
+
+              case 16:
+                transaction = new Transaction().add(SystemProgram$1.createAccount({
+                  fromPubkey: payer.publicKey,
+                  newAccountPubkey: program.publicKey,
+                  lamports: balanceNeeded > 0 ? balanceNeeded : 1,
+                  space: data.length,
+                  programId: programId
+                }));
+
+              case 17:
+                if (!(transaction !== null)) {
+                  _context.next = 20;
+                  break;
+                }
+
+                _context.next = 20;
+                return sendAndConfirmTransaction(connection, transaction, [payer, program], {
+                  commitment: 'singleGossip'
+                });
+
+              case 20:
+                dataLayout = struct$1([u32('instruction'), u32('offset'), u32('bytesLength'), u32('bytesLengthPadding'), seq(u8('byte'), offset(u32(), -8), 'bytes')]);
+                chunkSize = Loader.chunkSize;
+                offset$1 = 0;
+                array = data;
+                transactions = [];
+
+              case 25:
+                if (!(array.length > 0)) {
+                  _context.next = 39;
+                  break;
+                }
+
+                bytes = array.slice(0, chunkSize);
+                _data = Buffer.alloc(chunkSize + 16);
+                dataLayout.encode({
+                  instruction: 0,
+                  // Load instruction
+                  offset: offset$1,
+                  bytes: bytes
+                }, _data);
+                _transaction = new Transaction().add({
+                  keys: [{
+                    pubkey: program.publicKey,
+                    isSigner: true,
+                    isWritable: true
+                  }],
+                  programId: programId,
+                  data: _data
+                });
+                transactions.push(sendAndConfirmTransaction(connection, _transaction, [payer, program], {
+                  commitment: 'singleGossip'
+                })); // Delay between sends in an attempt to reduce rate limit errors
+
+                if (!connection._rpcEndpoint.includes('solana.com')) {
+                  _context.next = 35;
+                  break;
+                }
+
+                REQUESTS_PER_SECOND = 4;
+                _context.next = 35;
+                return sleep(1000 / REQUESTS_PER_SECOND);
+
+              case 35:
+                offset$1 += chunkSize;
+                array = array.slice(chunkSize);
+                _context.next = 25;
+                break;
+
+              case 39:
+                _context.next = 41;
+                return Promise.all(transactions);
+
+              case 41:
+                _dataLayout = struct$1([u32('instruction')]);
+                _data2 = Buffer.alloc(_dataLayout.span);
+
+                _dataLayout.encode({
+                  instruction: 1 // Finalize instruction
+
+                }, _data2);
+
+                _transaction2 = new Transaction().add({
+                  keys: [{
+                    pubkey: program.publicKey,
+                    isSigner: true,
+                    isWritable: true
+                  }, {
+                    pubkey: SYSVAR_RENT_PUBKEY,
+                    isSigner: false,
+                    isWritable: false
+                  }],
+                  programId: programId,
+                  data: _data2
+                });
+                _context.next = 47;
+                return sendAndConfirmTransaction(connection, _transaction2, [payer, program], {
+                  commitment: 'singleGossip'
+                });
+
+              case 47:
+                return _context.abrupt("return", true);
+
+              case 48:
+              case "end":
+                return _context.stop();
+            }
+          }
+        }, _callee);
+      }));
+
+      function load(_x, _x2, _x3, _x4, _x5) {
+        return _load.apply(this, arguments);
+      }
+
+      return load;
+    }()
+  }, {
+    key: "chunkSize",
+
+    /**
+     * Amount of program data placed in each load Transaction
+     */
+    get: function get() {
+      // Keep program chunks under PACKET_DATA_SIZE, leaving enough room for the
+      // rest of the Transaction fields
+      //
+      // TODO: replace 300 with a proper constant for the size of the other
+      // Transaction fields
+      return PACKET_DATA_SIZE - 300;
+    }
+  }]);
+
+  return Loader;
+}();
+
+var BPF_LOADER_PROGRAM_ID = new PublicKey('BPFLoader2111111111111111111111111111111111');
+/**
+ * Factory class for transactions to interact with a program loader
+ */
+
+var BpfLoader = /*#__PURE__*/function () {
+  function BpfLoader() {
+    _classCallCheck__default['default'](this, BpfLoader);
+  }
+
+  _createClass__default['default'](BpfLoader, null, [{
+    key: "getMinNumSignatures",
+
+    /**
+     * Minimum number of signatures required to load a program not including
+     * retries
+     *
+     * Can be used to calculate transaction fees
+     */
+    value: function getMinNumSignatures(dataLength) {
+      return Loader.getMinNumSignatures(dataLength);
+    }
+    /**
+     * Load a BPF program
+     *
+     * @param connection The connection to use
+     * @param payer Account that will pay program loading fees
+     * @param program Account to load the program into
+     * @param elf The entire ELF containing the BPF program
+     * @param loaderProgramId The program id of the BPF loader to use
+     * @return true if program was loaded successfully, false if program was already loaded
+     */
+
+  }, {
+    key: "load",
+    value: function load(connection, payer, program, elf, loaderProgramId) {
+      return Loader.load(connection, payer, program, loaderProgramId, elf);
+    }
+  }]);
+
+  return BpfLoader;
+}();
+
+var STAKE_CONFIG_ID = new PublicKey('StakeConfig11111111111111111111111111111111');
+var Authorized =
+/**
+ * Create a new Authorized object
+ */
+function Authorized(staker, withdrawer) {
+  _classCallCheck__default['default'](this, Authorized);
+
+  _defineProperty__default['default'](this, "staker", void 0);
+
+  _defineProperty__default['default'](this, "withdrawer", void 0);
+
+  this.staker = staker;
+  this.withdrawer = withdrawer;
+};
+var Lockup =
+/**
+ * Create a new Lockup object
+ */
+function Lockup(unixTimestamp, epoch, custodian) {
+  _classCallCheck__default['default'](this, Lockup);
+
+  _defineProperty__default['default'](this, "unixTimestamp", void 0);
+
+  _defineProperty__default['default'](this, "epoch", void 0);
+
+  _defineProperty__default['default'](this, "custodian", void 0);
+
+  this.unixTimestamp = unixTimestamp;
+  this.epoch = epoch;
+  this.custodian = custodian;
+};
+/**
+ * Create stake account transaction params
+ * @typedef {Object} CreateStakeAccountParams
+ * @property {PublicKey} fromPubkey
+ * @property {PublicKey} stakePubkey
+ * @property {Authorized} authorized
+ * @property {Lockup} lockup
+ * @property {number} lamports
+ */
+
+/**
+ * Stake Instruction class
+ */
+var StakeInstruction = /*#__PURE__*/function () {
+  function StakeInstruction() {
+    _classCallCheck__default['default'](this, StakeInstruction);
+  }
+
+  _createClass__default['default'](StakeInstruction, null, [{
+    key: "decodeInstructionType",
+
+    /**
+     * Decode a stake instruction and retrieve the instruction type.
+     */
+    value: function decodeInstructionType(instruction) {
+      this.checkProgramId(instruction.programId);
+      var instructionTypeLayout = u32('instruction');
+      var typeIndex = instructionTypeLayout.decode(instruction.data);
+      var type;
+
+      for (var _i = 0, _Object$keys = Object.keys(STAKE_INSTRUCTION_LAYOUTS); _i < _Object$keys.length; _i++) {
+        var t = _Object$keys[_i];
+
+        if (STAKE_INSTRUCTION_LAYOUTS[t].index == typeIndex) {
+          type = t;
+        }
+      }
+
+      if (!type) {
+        throw new Error('Instruction type incorrect; not a StakeInstruction');
+      }
+
+      return type;
+    }
+    /**
+     * Decode a initialize stake instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeInitialize",
+    value: function decodeInitialize(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 2);
+
+      var _decodeData = decodeData(STAKE_INSTRUCTION_LAYOUTS.Initialize, instruction.data),
+          authorized = _decodeData.authorized,
+          lockup = _decodeData.lockup;
+
+      return {
+        stakePubkey: instruction.keys[0].pubkey,
+        authorized: new Authorized(new PublicKey(authorized.staker), new PublicKey(authorized.withdrawer)),
+        lockup: new Lockup(lockup.unixTimestamp, lockup.epoch, new PublicKey(lockup.custodian))
+      };
+    }
+    /**
+     * Decode a delegate stake instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeDelegate",
+    value: function decodeDelegate(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 6);
+      decodeData(STAKE_INSTRUCTION_LAYOUTS.Delegate, instruction.data);
+      return {
+        stakePubkey: instruction.keys[0].pubkey,
+        votePubkey: instruction.keys[1].pubkey,
+        authorizedPubkey: instruction.keys[5].pubkey
+      };
+    }
+    /**
+     * Decode an authorize stake instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeAuthorize",
+    value: function decodeAuthorize(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 3);
+
+      var _decodeData2 = decodeData(STAKE_INSTRUCTION_LAYOUTS.Authorize, instruction.data),
+          newAuthorized = _decodeData2.newAuthorized,
+          stakeAuthorizationType = _decodeData2.stakeAuthorizationType;
+
+      var o = {
+        stakePubkey: instruction.keys[0].pubkey,
+        authorizedPubkey: instruction.keys[2].pubkey,
+        newAuthorizedPubkey: new PublicKey(newAuthorized),
+        stakeAuthorizationType: {
+          index: stakeAuthorizationType
+        }
+      };
+
+      if (instruction.keys.length > 3) {
+        o.custodianPubkey = instruction.keys[3].pubkey;
+      }
+
+      return o;
+    }
+    /**
+     * Decode an authorize-with-seed stake instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeAuthorizeWithSeed",
+    value: function decodeAuthorizeWithSeed(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 2);
+
+      var _decodeData3 = decodeData(STAKE_INSTRUCTION_LAYOUTS.AuthorizeWithSeed, instruction.data),
+          newAuthorized = _decodeData3.newAuthorized,
+          stakeAuthorizationType = _decodeData3.stakeAuthorizationType,
+          authoritySeed = _decodeData3.authoritySeed,
+          authorityOwner = _decodeData3.authorityOwner;
+
+      var o = {
+        stakePubkey: instruction.keys[0].pubkey,
+        authorityBase: instruction.keys[1].pubkey,
+        authoritySeed: authoritySeed,
+        authorityOwner: new PublicKey(authorityOwner),
+        newAuthorizedPubkey: new PublicKey(newAuthorized),
+        stakeAuthorizationType: {
+          index: stakeAuthorizationType
+        }
+      };
+
+      if (instruction.keys.length > 3) {
+        o.custodianPubkey = instruction.keys[3].pubkey;
+      }
+
+      return o;
+    }
+    /**
+     * Decode a split stake instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeSplit",
+    value: function decodeSplit(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 3);
+
+      var _decodeData4 = decodeData(STAKE_INSTRUCTION_LAYOUTS.Split, instruction.data),
+          lamports = _decodeData4.lamports;
+
+      return {
+        stakePubkey: instruction.keys[0].pubkey,
+        splitStakePubkey: instruction.keys[1].pubkey,
+        authorizedPubkey: instruction.keys[2].pubkey,
+        lamports: lamports
+      };
+    }
+    /**
+     * Decode a withdraw stake instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeWithdraw",
+    value: function decodeWithdraw(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 5);
+
+      var _decodeData5 = decodeData(STAKE_INSTRUCTION_LAYOUTS.Withdraw, instruction.data),
+          lamports = _decodeData5.lamports;
+
+      var o = {
+        stakePubkey: instruction.keys[0].pubkey,
+        toPubkey: instruction.keys[1].pubkey,
+        authorizedPubkey: instruction.keys[4].pubkey,
+        lamports: lamports
+      };
+
+      if (instruction.keys.length > 5) {
+        o.custodianPubkey = instruction.keys[5].pubkey;
+      }
+
+      return o;
+    }
+    /**
+     * Decode a deactivate stake instruction and retrieve the instruction params.
+     */
+
+  }, {
+    key: "decodeDeactivate",
+    value: function decodeDeactivate(instruction) {
+      this.checkProgramId(instruction.programId);
+      this.checkKeyLength(instruction.keys, 3);
+      decodeData(STAKE_INSTRUCTION_LAYOUTS.Deactivate, instruction.data);
+      return {
+        stakePubkey: instruction.keys[0].pubkey,
+        authorizedPubkey: instruction.keys[2].pubkey
+      };
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "checkProgramId",
+    value: function checkProgramId(programId) {
+      if (!programId.equals(StakeProgram.programId)) {
+        throw new Error('invalid instruction; programId is not StakeProgram');
+      }
+    }
+    /**
+     * @private
+     */
+
+  }, {
+    key: "checkKeyLength",
+    value: function checkKeyLength(keys, expectedLength) {
+      if (keys.length < expectedLength) {
+        throw new Error("invalid instruction; found ".concat(keys.length, " keys, expected at least ").concat(expectedLength));
+      }
+    }
+  }]);
+
+  return StakeInstruction;
+}();
+/**
+ * An enumeration of valid StakeInstructionType's
+ * @typedef { 'Initialize' | 'Authorize' | 'AuthorizeWithSeed' | 'Delegate' | 'Split' | 'Withdraw'
+ | 'Deactivate' } StakeInstructionType
+ */
+
+/**
+ * An enumeration of valid stake InstructionType's
+ */
+var STAKE_INSTRUCTION_LAYOUTS = Object.freeze({
+  Initialize: {
+    index: 0,
+    layout: struct$1([u32('instruction'), authorized(), lockup()])
+  },
+  Authorize: {
+    index: 1,
+    layout: struct$1([u32('instruction'), publicKey('newAuthorized'), u32('stakeAuthorizationType')])
+  },
+  Delegate: {
+    index: 2,
+    layout: struct$1([u32('instruction')])
+  },
+  Split: {
+    index: 3,
+    layout: struct$1([u32('instruction'), ns64('lamports')])
+  },
+  Withdraw: {
+    index: 4,
+    layout: struct$1([u32('instruction'), ns64('lamports')])
+  },
+  Deactivate: {
+    index: 5,
+    layout: struct$1([u32('instruction')])
+  },
+  AuthorizeWithSeed: {
+    index: 8,
+    layout: struct$1([u32('instruction'), publicKey('newAuthorized'), u32('stakeAuthorizationType'), rustString('authoritySeed'), publicKey('authorityOwner')])
+  }
+});
+/**
+ * @typedef {Object} StakeAuthorizationType
+ * @property (index} The Stake Authorization index (from solana-stake-program)
+ */
+
+/**
+ * An enumeration of valid StakeAuthorizationLayout's
+ */
+var StakeAuthorizationLayout = Object.freeze({
+  Staker: {
+    index: 0
+  },
+  Withdrawer: {
+    index: 1
+  }
+});
+/**
+ * Factory class for transactions to interact with the Stake program
+ */
+
+var StakeProgram = /*#__PURE__*/function () {
+  function StakeProgram() {
+    _classCallCheck__default['default'](this, StakeProgram);
+  }
+
+  _createClass__default['default'](StakeProgram, null, [{
+    key: "initialize",
+
+    /**
+     * Generate an Initialize instruction to add to a Stake Create transaction
+     */
+    value: function initialize(params) {
+      var stakePubkey = params.stakePubkey,
+          authorized = params.authorized,
+          lockup = params.lockup;
+      var type = STAKE_INSTRUCTION_LAYOUTS.Initialize;
+      var data = encodeData(type, {
+        authorized: {
+          staker: authorized.staker.toBuffer(),
+          withdrawer: authorized.withdrawer.toBuffer()
+        },
+        lockup: {
+          unixTimestamp: lockup.unixTimestamp,
+          epoch: lockup.epoch,
+          custodian: lockup.custodian.toBuffer()
+        }
+      });
+      var instructionData = {
+        keys: [{
+          pubkey: stakePubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: SYSVAR_RENT_PUBKEY,
+          isSigner: false,
+          isWritable: false
+        }],
+        programId: this.programId,
+        data: data
+      };
+      return new TransactionInstruction(instructionData);
+    }
+    /**
+     * Generate a Transaction that creates a new Stake account at
+     *   an address generated with `from`, a seed, and the Stake programId
+     */
+
+  }, {
+    key: "createAccountWithSeed",
+    value: function createAccountWithSeed(params) {
+      var transaction = new Transaction();
+      transaction.add(SystemProgram$1.createAccountWithSeed({
+        fromPubkey: params.fromPubkey,
+        newAccountPubkey: params.stakePubkey,
+        basePubkey: params.basePubkey,
+        seed: params.seed,
+        lamports: params.lamports,
+        space: this.space,
+        programId: this.programId
+      }));
+      var stakePubkey = params.stakePubkey,
+          authorized = params.authorized,
+          lockup = params.lockup;
+      return transaction.add(this.initialize({
+        stakePubkey: stakePubkey,
+        authorized: authorized,
+        lockup: lockup
+      }));
+    }
+    /**
+     * Generate a Transaction that creates a new Stake account
+     */
+
+  }, {
+    key: "createAccount",
+    value: function createAccount(params) {
+      var transaction = new Transaction();
+      transaction.add(SystemProgram$1.createAccount({
+        fromPubkey: params.fromPubkey,
+        newAccountPubkey: params.stakePubkey,
+        lamports: params.lamports,
+        space: this.space,
+        programId: this.programId
+      }));
+      var stakePubkey = params.stakePubkey,
+          authorized = params.authorized,
+          lockup = params.lockup;
+      return transaction.add(this.initialize({
+        stakePubkey: stakePubkey,
+        authorized: authorized,
+        lockup: lockup
+      }));
+    }
+    /**
+     * Generate a Transaction that delegates Stake tokens to a validator
+     * Vote PublicKey. This transaction can also be used to redelegate Stake
+     * to a new validator Vote PublicKey.
+     */
+
+  }, {
+    key: "delegate",
+    value: function delegate(params) {
+      var stakePubkey = params.stakePubkey,
+          authorizedPubkey = params.authorizedPubkey,
+          votePubkey = params.votePubkey;
+      var type = STAKE_INSTRUCTION_LAYOUTS.Delegate;
+      var data = encodeData(type);
+      return new Transaction().add({
+        keys: [{
+          pubkey: stakePubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: votePubkey,
+          isSigner: false,
+          isWritable: false
+        }, {
+          pubkey: SYSVAR_CLOCK_PUBKEY,
+          isSigner: false,
+          isWritable: false
+        }, {
+          pubkey: SYSVAR_STAKE_HISTORY_PUBKEY,
+          isSigner: false,
+          isWritable: false
+        }, {
+          pubkey: STAKE_CONFIG_ID,
+          isSigner: false,
+          isWritable: false
+        }, {
+          pubkey: authorizedPubkey,
+          isSigner: true,
+          isWritable: false
+        }],
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a Transaction that authorizes a new PublicKey as Staker
+     * or Withdrawer on the Stake account.
+     */
+
+  }, {
+    key: "authorize",
+    value: function authorize(params) {
+      var stakePubkey = params.stakePubkey,
+          authorizedPubkey = params.authorizedPubkey,
+          newAuthorizedPubkey = params.newAuthorizedPubkey,
+          stakeAuthorizationType = params.stakeAuthorizationType,
+          custodianPubkey = params.custodianPubkey;
+      var type = STAKE_INSTRUCTION_LAYOUTS.Authorize;
+      var data = encodeData(type, {
+        newAuthorized: newAuthorizedPubkey.toBuffer(),
+        stakeAuthorizationType: stakeAuthorizationType.index
+      });
+      var keys = [{
+        pubkey: stakePubkey,
+        isSigner: false,
+        isWritable: true
+      }, {
+        pubkey: SYSVAR_CLOCK_PUBKEY,
+        isSigner: false,
+        isWritable: true
+      }, {
+        pubkey: authorizedPubkey,
+        isSigner: true,
+        isWritable: false
+      }];
+
+      if (custodianPubkey) {
+        keys.push({
+          pubkey: custodianPubkey,
+          isSigner: false,
+          isWritable: false
+        });
+      }
+
+      return new Transaction().add({
+        keys: keys,
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a Transaction that authorizes a new PublicKey as Staker
+     * or Withdrawer on the Stake account.
+     */
+
+  }, {
+    key: "authorizeWithSeed",
+    value: function authorizeWithSeed(params) {
+      var stakePubkey = params.stakePubkey,
+          authorityBase = params.authorityBase,
+          authoritySeed = params.authoritySeed,
+          authorityOwner = params.authorityOwner,
+          newAuthorizedPubkey = params.newAuthorizedPubkey,
+          stakeAuthorizationType = params.stakeAuthorizationType,
+          custodianPubkey = params.custodianPubkey;
+      var type = STAKE_INSTRUCTION_LAYOUTS.AuthorizeWithSeed;
+      var data = encodeData(type, {
+        newAuthorized: newAuthorizedPubkey.toBuffer(),
+        stakeAuthorizationType: stakeAuthorizationType.index,
+        authoritySeed: authoritySeed,
+        authorityOwner: authorityOwner.toBuffer()
+      });
+      var keys = [{
+        pubkey: stakePubkey,
+        isSigner: false,
+        isWritable: true
+      }, {
+        pubkey: authorityBase,
+        isSigner: true,
+        isWritable: false
+      }, {
+        pubkey: SYSVAR_CLOCK_PUBKEY,
+        isSigner: false,
+        isWritable: false
+      }];
+
+      if (custodianPubkey) {
+        keys.push({
+          pubkey: custodianPubkey,
+          isSigner: false,
+          isWritable: false
+        });
+      }
+
+      return new Transaction().add({
+        keys: keys,
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a Transaction that splits Stake tokens into another stake account
+     */
+
+  }, {
+    key: "split",
+    value: function split(params) {
+      var stakePubkey = params.stakePubkey,
+          authorizedPubkey = params.authorizedPubkey,
+          splitStakePubkey = params.splitStakePubkey,
+          lamports = params.lamports;
+      var transaction = new Transaction();
+      transaction.add(SystemProgram$1.createAccount({
+        fromPubkey: authorizedPubkey,
+        newAccountPubkey: splitStakePubkey,
+        lamports: 0,
+        space: this.space,
+        programId: this.programId
+      }));
+      var type = STAKE_INSTRUCTION_LAYOUTS.Split;
+      var data = encodeData(type, {
+        lamports: lamports
+      });
+      return transaction.add({
+        keys: [{
+          pubkey: stakePubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: splitStakePubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: authorizedPubkey,
+          isSigner: true,
+          isWritable: false
+        }],
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a Transaction that withdraws deactivated Stake tokens.
+     */
+
+  }, {
+    key: "withdraw",
+    value: function withdraw(params) {
+      var stakePubkey = params.stakePubkey,
+          authorizedPubkey = params.authorizedPubkey,
+          toPubkey = params.toPubkey,
+          lamports = params.lamports,
+          custodianPubkey = params.custodianPubkey;
+      var type = STAKE_INSTRUCTION_LAYOUTS.Withdraw;
+      var data = encodeData(type, {
+        lamports: lamports
+      });
+      var keys = [{
+        pubkey: stakePubkey,
+        isSigner: false,
+        isWritable: true
+      }, {
+        pubkey: toPubkey,
+        isSigner: false,
+        isWritable: true
+      }, {
+        pubkey: SYSVAR_CLOCK_PUBKEY,
+        isSigner: false,
+        isWritable: false
+      }, {
+        pubkey: SYSVAR_STAKE_HISTORY_PUBKEY,
+        isSigner: false,
+        isWritable: false
+      }, {
+        pubkey: authorizedPubkey,
+        isSigner: true,
+        isWritable: false
+      }];
+
+      if (custodianPubkey) {
+        keys.push({
+          pubkey: custodianPubkey,
+          isSigner: false,
+          isWritable: false
+        });
+      }
+
+      return new Transaction().add({
+        keys: keys,
+        programId: this.programId,
+        data: data
+      });
+    }
+    /**
+     * Generate a Transaction that deactivates Stake tokens.
+     */
+
+  }, {
+    key: "deactivate",
+    value: function deactivate(params) {
+      var stakePubkey = params.stakePubkey,
+          authorizedPubkey = params.authorizedPubkey;
+      var type = STAKE_INSTRUCTION_LAYOUTS.Deactivate;
+      var data = encodeData(type);
+      return new Transaction().add({
+        keys: [{
+          pubkey: stakePubkey,
+          isSigner: false,
+          isWritable: true
+        }, {
+          pubkey: SYSVAR_CLOCK_PUBKEY,
+          isSigner: false,
+          isWritable: false
+        }, {
+          pubkey: authorizedPubkey,
+          isSigner: true,
+          isWritable: false
+        }],
+        programId: this.programId,
+        data: data
+      });
+    }
+  }, {
+    key: "programId",
+
+    /**
+     * Public key that identifies the Stake program
+     */
+    get: function get() {
+      return new PublicKey('Stake11111111111111111111111111111111111111');
+    }
+    /**
+     * Max space of a Stake account
+     *
+     * This is generated from the solana-stake-program StakeState struct as
+     * `std::mem::size_of::<StakeState>()`:
+     * https://docs.rs/solana-stake-program/1.4.4/solana_stake_program/stake_state/enum.StakeState.html
+     */
+
+  }, {
+    key: "space",
+    get: function get() {
+      return 200;
+    }
+  }]);
+
+  return StakeProgram;
+}();
+
+var publicKeyCreate = secp256k1.publicKeyCreate,
+    ecdsaSign = secp256k1.ecdsaSign;
+var PRIVATE_KEY_BYTES = 32;
+var PUBLIC_KEY_BYTES = 65;
+var HASHED_PUBKEY_SERIALIZED_SIZE = 20;
+var SIGNATURE_OFFSETS_SERIALIZED_SIZE = 11;
+/**
+ * Create a Secp256k1 instruction using a public key params
+ * @typedef {Object} CreateSecp256k1InstructionWithPublicKeyParams
+ * @property {Buffer | Uint8Array | Array<number>} publicKey
+ * @property {Buffer | Uint8Array | Array<number>} message
+ * @property {Buffer | Uint8Array | Array<number>} signature
+ * @property {number} recoveryId
+ */
+
+var SECP256K1_INSTRUCTION_LAYOUT = struct$1([u8('numSignatures'), u16('signatureOffset'), u8('signatureInstructionIndex'), u16('ethAddressOffset'), u8('ethAddressInstructionIndex'), u16('messageDataOffset'), u16('messageDataSize'), u8('messageInstructionIndex'), blob(20, 'ethPublicKey'), blob(64, 'signature'), u8('recoveryId')]);
+var Secp256k1Program = /*#__PURE__*/function () {
+  function Secp256k1Program() {
+    _classCallCheck__default['default'](this, Secp256k1Program);
+  }
+
+  _createClass__default['default'](Secp256k1Program, null, [{
+    key: "createInstructionWithPublicKey",
+
+    /**
+     * Create a secp256k1 instruction with public key
+     */
+    value: function createInstructionWithPublicKey(params) {
+      var publicKey = params.publicKey,
+          message = params.message,
+          signature = params.signature,
+          recoveryId = params.recoveryId;
+      assert__default['default'](publicKey.length === PUBLIC_KEY_BYTES, "Public key must be ".concat(PUBLIC_KEY_BYTES, " bytes"));
+      var ethPublicKey;
+
+      try {
+        ethPublicKey = constructEthPubkey(publicKey);
+      } catch (error) {
+        throw new Error("Error constructing ethereum public key: ".concat(error));
+      }
+
+      var dataStart = 1 + SIGNATURE_OFFSETS_SERIALIZED_SIZE;
+      var ethAddressOffset = dataStart;
+      var signatureOffset = dataStart + ethPublicKey.length;
+      var messageDataOffset = signatureOffset + signature.length + 1;
+      var numSignatures = 1;
+      var instructionData = Buffer.alloc(SECP256K1_INSTRUCTION_LAYOUT.span + message.length);
+      SECP256K1_INSTRUCTION_LAYOUT.encode({
+        numSignatures: numSignatures,
+        signatureOffset: signatureOffset,
+        signatureInstructionIndex: 0,
+        ethAddressOffset: ethAddressOffset,
+        ethAddressInstructionIndex: 0,
+        messageDataOffset: messageDataOffset,
+        messageDataSize: message.length,
+        messageInstructionIndex: 0,
+        signature: toBuffer(signature),
+        ethPublicKey: ethPublicKey,
+        recoveryId: recoveryId
+      }, instructionData);
+      instructionData.fill(toBuffer(message), SECP256K1_INSTRUCTION_LAYOUT.span);
+      return new TransactionInstruction({
+        keys: [],
+        programId: Secp256k1Program.programId,
+        data: instructionData
+      });
+    }
+    /**
+     * Create a secp256k1 instruction with private key
+     */
+
+  }, {
+    key: "createInstructionWithPrivateKey",
+    value: function createInstructionWithPrivateKey(params) {
+      var privateKey = params.privateKey,
+          message = params.message;
+      assert__default['default'](privateKey.length === PRIVATE_KEY_BYTES, "Private key must be ".concat(PRIVATE_KEY_BYTES, " bytes"));
+
+      try {
+        var publicKey = publicKeyCreate(privateKey, false);
+        var messageHash = keccak('keccak256').update(toBuffer(message)).digest();
+
+        var _ecdsaSign = ecdsaSign(messageHash, privateKey),
+            signature = _ecdsaSign.signature,
+            recoveryId = _ecdsaSign.recid;
+
+        return this.createInstructionWithPublicKey({
+          publicKey: publicKey,
+          message: message,
+          signature: signature,
+          recoveryId: recoveryId
+        });
+      } catch (error) {
+        throw new Error("Error creating instruction; ".concat(error));
+      }
+    }
+  }, {
+    key: "programId",
+
+    /**
+     * Public key that identifies the Secp256k program
+     */
+    get: function get() {
+      return new PublicKey('KeccakSecp256k11111111111111111111111111111');
+    }
+  }]);
+
+  return Secp256k1Program;
+}();
+function constructEthPubkey(publicKey) {
+  return keccak('keccak256').update(toBuffer(publicKey.slice(1))) // throw away leading byte
+  .digest().slice(-HASHED_PUBKEY_SERIALIZED_SIZE);
+}
+
+var VALIDATOR_INFO_KEY = new PublicKey('Va1idator1nfo111111111111111111111111111111');
+/**
+ * @private
+ */
+
+var InfoString = struct({
+  name: 'string',
+  website: 'string?',
+  details: 'string?',
+  keybaseUsername: 'string?'
+});
+/**
+ * ValidatorInfo class
+ */
+
+var ValidatorInfo = /*#__PURE__*/function () {
+  /**
+   * validator public key
+   */
+
+  /**
+   * validator information
+   */
+
+  /**
+   * Construct a valid ValidatorInfo
+   *
+   * @param key validator public key
+   * @param info validator information
+   */
+  function ValidatorInfo(key, info) {
+    _classCallCheck__default['default'](this, ValidatorInfo);
+
+    _defineProperty__default['default'](this, "key", void 0);
+
+    _defineProperty__default['default'](this, "info", void 0);
+
+    this.key = key;
+    this.info = info;
+  }
+  /**
+   * Deserialize ValidatorInfo from the config account data. Exactly two config
+   * keys are required in the data.
+   *
+   * @param buffer config account data
+   * @return null if info was not found
+   */
+
+
+  _createClass__default['default'](ValidatorInfo, null, [{
+    key: "fromConfigData",
+    value: function fromConfigData(buffer) {
+      var PUBKEY_LENGTH = 32;
+
+      var byteArray = _toConsumableArray__default['default'](buffer);
+
+      var configKeyCount = decodeLength(byteArray);
+      if (configKeyCount !== 2) return null;
+      var configKeys = [];
+
+      for (var i = 0; i < 2; i++) {
+        var publicKey = new PublicKey(byteArray.slice(0, PUBKEY_LENGTH));
+        byteArray = byteArray.slice(PUBKEY_LENGTH);
+        var isSigner = byteArray.slice(0, 1)[0] === 1;
+        byteArray = byteArray.slice(1);
+        configKeys.push({
+          publicKey: publicKey,
+          isSigner: isSigner
+        });
+      }
+
+      if (configKeys[0].publicKey.equals(VALIDATOR_INFO_KEY)) {
+        if (configKeys[1].isSigner) {
+          var rawInfo = rustString().decode(Buffer.from(byteArray));
+          var info = InfoString(JSON.parse(rawInfo));
+          return new ValidatorInfo(configKeys[1].publicKey, info);
+        }
+      }
+
+      return null;
+    }
+  }]);
+
+  return ValidatorInfo;
+}();
+
+var VOTE_PROGRAM_ID = new PublicKey('Vote111111111111111111111111111111111111111');
+
+/**
+ * See https://github.com/solana-labs/solana/blob/8a12ed029cfa38d4a45400916c2463fb82bbec8c/programs/vote_api/src/vote_state.rs#L68-L88
+ *
+ * @private
+ */
+var VoteAccountLayout = struct$1([publicKey('nodePubkey'), publicKey('authorizedVoterPubkey'), publicKey('authorizedWithdrawerPubkey'), u8('commission'), nu64(), // votes.length
+seq(struct$1([nu64('slot'), u32('confirmationCount')]), offset(u32(), -8), 'votes'), u8('rootSlotValid'), nu64('rootSlot'), nu64('epoch'), nu64('credits'), nu64('lastEpochCredits'), nu64(), // epochCredits.length
+seq(struct$1([nu64('epoch'), nu64('credits'), nu64('prevCredits')]), offset(u32(), -8), 'epochCredits')]);
+/**
+ * VoteAccount class
+ */
+
+var VoteAccount = /*#__PURE__*/function () {
+  function VoteAccount() {
+    _classCallCheck__default['default'](this, VoteAccount);
+
+    _defineProperty__default['default'](this, "nodePubkey", void 0);
+
+    _defineProperty__default['default'](this, "authorizedVoterPubkey", void 0);
+
+    _defineProperty__default['default'](this, "authorizedWithdrawerPubkey", void 0);
+
+    _defineProperty__default['default'](this, "commission", void 0);
+
+    _defineProperty__default['default'](this, "votes", void 0);
+
+    _defineProperty__default['default'](this, "rootSlot", void 0);
+
+    _defineProperty__default['default'](this, "epoch", void 0);
+
+    _defineProperty__default['default'](this, "credits", void 0);
+
+    _defineProperty__default['default'](this, "lastEpochCredits", void 0);
+
+    _defineProperty__default['default'](this, "epochCredits", void 0);
+  }
+
+  _createClass__default['default'](VoteAccount, null, [{
+    key: "fromAccountData",
+
+    /**
+     * Deserialize VoteAccount from the account data.
+     *
+     * @param buffer account data
+     * @return VoteAccount
+     */
+    value: function fromAccountData(buffer) {
+      var va = VoteAccountLayout.decode(toBuffer(buffer), 0);
+      va.nodePubkey = new PublicKey(va.nodePubkey);
+      va.authorizedVoterPubkey = new PublicKey(va.authorizedVoterPubkey);
+      va.authorizedWithdrawerPubkey = new PublicKey(va.authorizedWithdrawerPubkey);
+
+      if (!va.rootSlotValid) {
+        va.rootSlot = null;
+      }
+
+      return va;
+    }
+  }]);
+
+  return VoteAccount;
+}();
+
+/**
+ * Send and confirm a raw transaction
+ *
+ * If `commitment` option is not specified, defaults to 'max' commitment.
+ *
+ * @param {Connection} connection
+ * @param {Buffer} rawTransaction
+ * @param {ConfirmOptions} [options]
+ * @returns {Promise<TransactionSignature>}
+ */
+function sendAndConfirmRawTransaction(_x, _x2, _x3) {
+  return _sendAndConfirmRawTransaction.apply(this, arguments);
+}
+
+function _sendAndConfirmRawTransaction() {
+  _sendAndConfirmRawTransaction = _asyncToGenerator__default['default']( /*#__PURE__*/_regeneratorRuntime__default['default'].mark(function _callee(connection, rawTransaction, options) {
+    var sendOptions, signature, status;
+    return _regeneratorRuntime__default['default'].wrap(function _callee$(_context) {
+      while (1) {
+        switch (_context.prev = _context.next) {
+          case 0:
+            sendOptions = options && {
+              skipPreflight: options.skipPreflight,
+              preflightCommitment: options.preflightCommitment || options.commitment
+            };
+            _context.next = 3;
+            return connection.sendRawTransaction(rawTransaction, sendOptions);
+
+          case 3:
+            signature = _context.sent;
+            _context.next = 6;
+            return connection.confirmTransaction(signature, options && options.commitment);
+
+          case 6:
+            status = _context.sent.value;
+
+            if (!status.err) {
+              _context.next = 9;
+              break;
+            }
+
+            throw new Error("Raw transaction ".concat(signature, " failed (").concat(JSON.stringify(status), ")"));
+
+          case 9:
+            return _context.abrupt("return", signature);
+
+          case 10:
+          case "end":
+            return _context.stop();
+        }
+      }
+    }, _callee);
+  }));
+  return _sendAndConfirmRawTransaction.apply(this, arguments);
+}
+
+/**
+ * @private
+ */
+var endpoint = {
+  http: {
+    devnet: 'http://devnet.solana.com',
+    testnet: 'http://testnet.solana.com',
+    'mainnet-beta': 'http://api.mainnet-beta.solana.com'
+  },
+  https: {
+    devnet: 'https://devnet.solana.com',
+    testnet: 'https://testnet.solana.com',
+    'mainnet-beta': 'https://api.mainnet-beta.solana.com'
+  }
+};
+
+/**
+ * Retrieves the RPC API URL for the specified cluster
+ */
+function clusterApiUrl(cluster, tls) {
+  var key = tls === false ? 'http' : 'https';
+
+  if (!cluster) {
+    return endpoint[key]['devnet'];
+  }
+
+  var url = endpoint[key][cluster];
+
+  if (!url) {
+    throw new Error("Unknown ".concat(key, " cluster: ").concat(cluster));
+  }
+
+  return url;
+}
+
+/**
+ * There are 1-billion lamports in one SOL
+ */
+
+var LAMPORTS_PER_SOL = 1000000000;
+
+var index_esm = /*#__PURE__*/Object.freeze({
+__proto__: null,
+Account: Account,
+Authorized: Authorized,
+BPF_LOADER_DEPRECATED_PROGRAM_ID: BPF_LOADER_DEPRECATED_PROGRAM_ID,
+BPF_LOADER_PROGRAM_ID: BPF_LOADER_PROGRAM_ID,
+BpfLoader: BpfLoader,
+Connection: Connection,
+LAMPORTS_PER_SOL: LAMPORTS_PER_SOL,
+Loader: Loader,
+Lockup: Lockup,
+MAX_SEED_LENGTH: MAX_SEED_LENGTH,
+Message: Message,
+NONCE_ACCOUNT_LENGTH: NONCE_ACCOUNT_LENGTH,
+NonceAccount: NonceAccount,
+PublicKey: PublicKey,
+STAKE_CONFIG_ID: STAKE_CONFIG_ID,
+STAKE_INSTRUCTION_LAYOUTS: STAKE_INSTRUCTION_LAYOUTS,
+SYSTEM_INSTRUCTION_LAYOUTS: SYSTEM_INSTRUCTION_LAYOUTS,
+SYSVAR_CLOCK_PUBKEY: SYSVAR_CLOCK_PUBKEY,
+SYSVAR_INSTRUCTIONS_PUBKEY: SYSVAR_INSTRUCTIONS_PUBKEY,
+SYSVAR_RENT_PUBKEY: SYSVAR_RENT_PUBKEY,
+SYSVAR_REWARDS_PUBKEY: SYSVAR_REWARDS_PUBKEY,
+SYSVAR_STAKE_HISTORY_PUBKEY: SYSVAR_STAKE_HISTORY_PUBKEY,
+Secp256k1Program: Secp256k1Program,
+StakeAuthorizationLayout: StakeAuthorizationLayout,
+StakeInstruction: StakeInstruction,
+StakeProgram: StakeProgram,
+SystemInstruction: SystemInstruction,
+SystemProgram: SystemProgram$1,
+Transaction: Transaction,
+TransactionInstruction: TransactionInstruction,
+VALIDATOR_INFO_KEY: VALIDATOR_INFO_KEY,
+VOTE_PROGRAM_ID: VOTE_PROGRAM_ID,
+ValidatorInfo: ValidatorInfo,
+VoteAccount: VoteAccount,
+clusterApiUrl: clusterApiUrl,
+sendAndConfirmRawTransaction: sendAndConfirmRawTransaction,
+sendAndConfirmTransaction: sendAndConfirmTransaction
+});
+
+var layout = createCommonjsModule(function (module, exports) {
+// @ts-nocheck
+var __importDefault = (commonjsGlobal && commonjsGlobal.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.setLayoutEncoder = exports.setLayoutDecoder = exports.accountFlagsLayout = exports.selfTradeBehaviorLayout = exports.orderTypeLayout = exports.sideLayout = exports.VersionedLayout = exports.WideBits = exports.u128 = exports.u64 = exports.publicKeyLayout = exports.zeros = void 0;
+
+
+const bn_js_1 = __importDefault(bn$1);
+class Zeros extends Layout_1.Blob {
+    decode(b, offset) {
+        const slice = super.decode(b, offset);
+        if (!slice.every((v) => v === 0)) {
+            throw new Error('nonzero padding bytes');
+        }
+        return slice;
+    }
+}
+function zeros(length) {
+    return new Zeros(length);
+}
+exports.zeros = zeros;
+class PublicKeyLayout extends Layout_1.Blob {
+    constructor(property) {
+        super(32, property);
+    }
+    decode(b, offset) {
+        return new index_esm.PublicKey(super.decode(b, offset));
+    }
+    encode(src, b, offset) {
+        return super.encode(src.toBuffer(), b, offset);
+    }
+}
+function publicKeyLayout(property) {
+    return new PublicKeyLayout(property);
+}
+exports.publicKeyLayout = publicKeyLayout;
+class BNLayout extends Layout_1.Blob {
+    decode(b, offset) {
+        return new bn_js_1.default(super.decode(b, offset), 10, 'le');
+    }
+    encode(src, b, offset) {
+        return super.encode(src.toArrayLike(Buffer, 'le', this.span), b, offset);
+    }
+}
+function u64(property) {
+    return new BNLayout(8, property);
+}
+exports.u64 = u64;
+function u128(property) {
+    return new BNLayout(16, property);
+}
+exports.u128 = u128;
+class WideBits extends Layout_1.Layout {
+    constructor(property) {
+        super(8, property);
+        this._lower = Layout_1.bits(Layout_1.u32(), false);
+        this._upper = Layout_1.bits(Layout_1.u32(), false);
+    }
+    addBoolean(property) {
+        if (this._lower.fields.length < 32) {
+            this._lower.addBoolean(property);
+        }
+        else {
+            this._upper.addBoolean(property);
+        }
+    }
+    decode(b, offset = 0) {
+        const lowerDecoded = this._lower.decode(b, offset);
+        const upperDecoded = this._upper.decode(b, offset + this._lower.span);
+        return { ...lowerDecoded, ...upperDecoded };
+    }
+    encode(src, b, offset = 0) {
+        return (this._lower.encode(src, b, offset) +
+            this._upper.encode(src, b, offset + this._lower.span));
+    }
+}
+exports.WideBits = WideBits;
+class VersionedLayout extends Layout_1.Layout {
+    constructor(version, inner, property) {
+        super(inner.span > 0 ? inner.span + 1 : inner.span, property);
+        this.version = version;
+        this.inner = inner;
+    }
+    decode(b, offset = 0) {
+        // if (b.readUInt8(offset) !== this._version) {
+        //   throw new Error('invalid version');
+        // }
+        return this.inner.decode(b, offset + 1);
+    }
+    encode(src, b, offset = 0) {
+        b.writeUInt8(this.version, offset);
+        return 1 + this.inner.encode(src, b, offset + 1);
+    }
+    getSpan(b, offset = 0) {
+        return 1 + this.inner.getSpan(b, offset + 1);
+    }
+}
+exports.VersionedLayout = VersionedLayout;
+class EnumLayout extends Layout_1.UInt {
+    constructor(values, span, property) {
+        super(span, property);
+        this.values = values;
+    }
+    encode(src, b, offset) {
+        if (this.values[src] !== undefined) {
+            return super.encode(this.values[src], b, offset);
+        }
+        throw new Error('Invalid ' + this.property);
+    }
+    decode(b, offset) {
+        const decodedValue = super.decode(b, offset);
+        const entry = Object.entries(this.values).find(([, value]) => value === decodedValue);
+        if (entry) {
+            return entry[0];
+        }
+        throw new Error('Invalid ' + this.property);
+    }
+}
+function sideLayout(property) {
+    return new EnumLayout({ buy: 0, sell: 1 }, 4, property);
+}
+exports.sideLayout = sideLayout;
+function orderTypeLayout(property) {
+    return new EnumLayout({ limit: 0, ioc: 1, postOnly: 2 }, 4, property);
+}
+exports.orderTypeLayout = orderTypeLayout;
+function selfTradeBehaviorLayout(property) {
+    return new EnumLayout({ decrementTake: 0, cancelProvide: 1, abortTransaction: 2 }, 4, property);
+}
+exports.selfTradeBehaviorLayout = selfTradeBehaviorLayout;
+const ACCOUNT_FLAGS_LAYOUT = new WideBits();
+ACCOUNT_FLAGS_LAYOUT.addBoolean('initialized');
+ACCOUNT_FLAGS_LAYOUT.addBoolean('market');
+ACCOUNT_FLAGS_LAYOUT.addBoolean('openOrders');
+ACCOUNT_FLAGS_LAYOUT.addBoolean('requestQueue');
+ACCOUNT_FLAGS_LAYOUT.addBoolean('eventQueue');
+ACCOUNT_FLAGS_LAYOUT.addBoolean('bids');
+ACCOUNT_FLAGS_LAYOUT.addBoolean('asks');
+function accountFlagsLayout(property = 'accountFlags') {
+    return ACCOUNT_FLAGS_LAYOUT.replicate(property);
+}
+exports.accountFlagsLayout = accountFlagsLayout;
+function setLayoutDecoder(layout, decoder) {
+    const originalDecode = layout.decode;
+    layout.decode = function decode(b, offset = 0) {
+        return decoder(originalDecode.call(this, b, offset));
+    };
+}
+exports.setLayoutDecoder = setLayoutDecoder;
+function setLayoutEncoder(layout, encoder) {
+    const originalEncode = layout.encode;
+    layout.encode = function encode(src, b, offset) {
+        return originalEncode.call(this, encoder(src), b, offset);
+    };
+    return layout;
+}
+exports.setLayoutEncoder = setLayoutEncoder;
+
+});
+
+var slab = createCommonjsModule(function (module, exports) {
+var __importDefault = (commonjsGlobal && commonjsGlobal.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Slab = exports.SLAB_LAYOUT = void 0;
+const bn_js_1 = __importDefault(bn$1);
+
+
+const SLAB_HEADER_LAYOUT = Layout_1.struct([
+    // Number of modified slab nodes
+    Layout_1.u32('bumpIndex'),
+    layout.zeros(4),
+    // Linked list of unused nodes
+    Layout_1.u32('freeListLen'),
+    layout.zeros(4),
+    Layout_1.u32('freeListHead'),
+    Layout_1.u32('root'),
+    Layout_1.u32('leafCount'),
+    layout.zeros(4),
+], 'header');
+const SLAB_NODE_LAYOUT = Layout_1.union(Layout_1.u32('tag'), Layout_1.blob(68), 'node');
+SLAB_NODE_LAYOUT.addVariant(0, Layout_1.struct([]), 'uninitialized');
+SLAB_NODE_LAYOUT.addVariant(1, Layout_1.struct([
+    // Only the first prefixLen high-order bits of key are meaningful
+    Layout_1.u32('prefixLen'),
+    layout.u128('key'),
+    Layout_1.seq(Layout_1.u32(), 2, 'children'),
+]), 'innerNode');
+SLAB_NODE_LAYOUT.addVariant(2, Layout_1.struct([
+    Layout_1.u8('ownerSlot'),
+    Layout_1.u8('feeTier'),
+    Layout_1.blob(2),
+    layout.u128('key'),
+    layout.publicKeyLayout('owner'),
+    layout.u64('quantity'),
+    layout.u64('clientOrderId'),
+]), 'leafNode');
+SLAB_NODE_LAYOUT.addVariant(3, Layout_1.struct([Layout_1.u32('next')]), 'freeNode');
+SLAB_NODE_LAYOUT.addVariant(4, Layout_1.struct([]), 'lastFreeNode');
+exports.SLAB_LAYOUT = Layout_1.struct([
+    SLAB_HEADER_LAYOUT,
+    Layout_1.seq(SLAB_NODE_LAYOUT, Layout_1.offset(SLAB_HEADER_LAYOUT.layoutFor('bumpIndex'), SLAB_HEADER_LAYOUT.offsetOf('bumpIndex') - SLAB_HEADER_LAYOUT.span), 'nodes'),
+]);
+class Slab {
+    constructor(header, nodes) {
+        this.header = header;
+        this.nodes = nodes;
+    }
+    static decode(buffer) {
+        return exports.SLAB_LAYOUT.decode(buffer);
+    }
+    get(searchKey) {
+        if (this.header.leafCount === 0) {
+            return null;
+        }
+        if (!(searchKey instanceof bn_js_1.default)) {
+            searchKey = new bn_js_1.default(searchKey);
+        }
+        let index = this.header.root;
+        while (true) {
+            const { leafNode, innerNode } = this.nodes[index];
+            if (leafNode) {
+                if (leafNode.key.eq(searchKey)) {
+                    return leafNode;
+                }
+                return null;
+            }
+            else if (innerNode) {
+                if (!innerNode.key
+                    .xor(searchKey)
+                    .iushrn(128 - innerNode.prefixLen)
+                    .isZero()) {
+                    return null;
+                }
+                index =
+                    innerNode.children[searchKey.testn(128 - innerNode.prefixLen - 1) ? 1 : 0];
+            }
+            else {
+                throw new Error('Invalid slab');
+            }
+        }
+    }
+    [Symbol.iterator]() {
+        return this.items(false);
+    }
+    *items(descending = false) {
+        if (this.header.leafCount === 0) {
+            return;
+        }
+        const stack = [this.header.root];
+        while (stack.length > 0) {
+            const index = stack.pop();
+            const { leafNode, innerNode } = this.nodes[index];
+            if (leafNode) {
+                yield leafNode;
+            }
+            else if (innerNode) {
+                if (descending) {
+                    stack.push(innerNode.children[0], innerNode.children[1]);
+                }
+                else {
+                    stack.push(innerNode.children[1], innerNode.children[0]);
+                }
+            }
+        }
+    }
+}
+exports.Slab = Slab;
+layout.setLayoutDecoder(exports.SLAB_LAYOUT, ({ header, nodes }) => new Slab(header, nodes));
+
+});
+
+var tokenInstructions = createCommonjsModule(function (module, exports) {
+var __createBinding = (commonjsGlobal && commonjsGlobal.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (commonjsGlobal && commonjsGlobal.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (commonjsGlobal && commonjsGlobal.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.closeAccount = exports.mintTo = exports.setAuthority = exports.revoke = exports.approve = exports.transfer = exports.initializeAccount = exports.initializeMint = exports.decodeTokenInstructionData = exports.SRM_DECIMALS = exports.SRM_MINT = exports.MSRM_DECIMALS = exports.MSRM_MINT = exports.WRAPPED_SOL_MINT = exports.TOKEN_PROGRAM_ID = exports.CLOSE_ACCOUNT_OWNER_INDEX = exports.CLOSE_ACCOUNT_DESTINATION_INDEX = exports.CLOSE_ACCOUNT_SOURCE_INDEX = exports.TRANSFER_OWNER_INDEX = exports.TRANSFER_DESTINATION_INDEX = exports.TRANSFER_SOURCE_INDEX = exports.INITIALIZE_ACCOUNT_OWNER_INDEX = exports.INITIALIZE_ACCOUNT_MINT_INDEX = exports.INITIALIZE_ACCOUNT_ACCOUNT_INDEX = void 0;
+const BufferLayout = __importStar(Layout_1);
+
+
+// NOTE: Update these if the position of arguments for the initializeAccount instruction changes
+exports.INITIALIZE_ACCOUNT_ACCOUNT_INDEX = 0;
+exports.INITIALIZE_ACCOUNT_MINT_INDEX = 1;
+exports.INITIALIZE_ACCOUNT_OWNER_INDEX = 2;
+// NOTE: Update these if the position of arguments for the transfer instruction changes
+exports.TRANSFER_SOURCE_INDEX = 0;
+exports.TRANSFER_DESTINATION_INDEX = 1;
+exports.TRANSFER_OWNER_INDEX = 2;
+// NOTE: Update these if the position of arguments for the closeAccount instruction changes
+exports.CLOSE_ACCOUNT_SOURCE_INDEX = 0;
+exports.CLOSE_ACCOUNT_DESTINATION_INDEX = 1;
+exports.CLOSE_ACCOUNT_OWNER_INDEX = 2;
+exports.TOKEN_PROGRAM_ID = new index_esm.PublicKey('TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA');
+exports.WRAPPED_SOL_MINT = new index_esm.PublicKey('So11111111111111111111111111111111111111112');
+exports.MSRM_MINT = new index_esm.PublicKey('MSRMcoVyrFxnSgo5uXwone5SKcGhT1KEJMFEkMEWf9L');
+exports.MSRM_DECIMALS = 0;
+exports.SRM_MINT = new index_esm.PublicKey('SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt');
+exports.SRM_DECIMALS = 6;
+const LAYOUT = BufferLayout.union(BufferLayout.u8('instruction'));
+LAYOUT.addVariant(0, BufferLayout.struct([
+    BufferLayout.u8('decimals'),
+    layout.publicKeyLayout('mintAuthority'),
+    BufferLayout.u8('freezeAuthorityOption'),
+    layout.publicKeyLayout('freezeAuthority'),
+]), 'initializeMint');
+LAYOUT.addVariant(1, BufferLayout.struct([]), 'initializeAccount');
+LAYOUT.addVariant(3, BufferLayout.struct([BufferLayout.nu64('amount')]), 'transfer');
+LAYOUT.addVariant(4, BufferLayout.struct([BufferLayout.nu64('amount')]), 'approve');
+LAYOUT.addVariant(5, BufferLayout.struct([]), 'revoke');
+LAYOUT.addVariant(6, BufferLayout.struct([
+    BufferLayout.u8('authorityType'),
+    BufferLayout.u8('newAuthorityOption'),
+    layout.publicKeyLayout('newAuthority'),
+]), 'setAuthority');
+LAYOUT.addVariant(7, BufferLayout.struct([BufferLayout.nu64('amount')]), 'mintTo');
+LAYOUT.addVariant(8, BufferLayout.struct([BufferLayout.nu64('amount')]), 'burn');
+LAYOUT.addVariant(9, BufferLayout.struct([]), 'closeAccount');
+const instructionMaxSpan = Math.max(...Object.values(LAYOUT.registry).map((r) => r.span));
+function encodeTokenInstructionData(instruction) {
+    const b = Buffer.alloc(instructionMaxSpan);
+    const span = LAYOUT.encode(instruction, b);
+    return b.slice(0, span);
+}
+function decodeTokenInstructionData(instruction) {
+    return LAYOUT.decode(instruction);
+}
+exports.decodeTokenInstructionData = decodeTokenInstructionData;
+function initializeMint({ mint, decimals, mintAuthority, freezeAuthority = null, }) {
+    const keys = [
+        { pubkey: mint, isSigner: false, isWritable: true },
+        { pubkey: index_esm.SYSVAR_RENT_PUBKEY, isSigner: false, isWritable: false },
+    ];
+    return new index_esm.TransactionInstruction({
+        keys,
+        data: encodeTokenInstructionData({
+            initializeMint: {
+                decimals,
+                mintAuthority,
+                freezeAuthorityOption: !!freezeAuthority,
+                freezeAuthority: freezeAuthority || new index_esm.PublicKey(0),
+            },
+        }),
+        programId: exports.TOKEN_PROGRAM_ID,
+    });
+}
+exports.initializeMint = initializeMint;
+function initializeAccount({ account, mint, owner }) {
+    const keys = [
+        { pubkey: account, isSigner: false, isWritable: true },
+        { pubkey: mint, isSigner: false, isWritable: false },
+        { pubkey: owner, isSigner: false, isWritable: false },
+        { pubkey: index_esm.SYSVAR_RENT_PUBKEY, isSigner: false, isWritable: false },
+    ];
+    return new index_esm.TransactionInstruction({
+        keys,
+        data: encodeTokenInstructionData({
+            initializeAccount: {},
+        }),
+        programId: exports.TOKEN_PROGRAM_ID,
+    });
+}
+exports.initializeAccount = initializeAccount;
+function transfer({ source, destination, amount, owner }) {
+    const keys = [
+        { pubkey: source, isSigner: false, isWritable: true },
+        { pubkey: destination, isSigner: false, isWritable: true },
+        { pubkey: owner, isSigner: true, isWritable: false },
+    ];
+    return new index_esm.TransactionInstruction({
+        keys,
+        data: encodeTokenInstructionData({
+            transfer: { amount },
+        }),
+        programId: exports.TOKEN_PROGRAM_ID,
+    });
+}
+exports.transfer = transfer;
+function approve({ source, delegate, amount, owner }) {
+    const keys = [
+        { pubkey: source, isSigner: false, isWritable: true },
+        { pubkey: delegate, isSigner: false, isWritable: false },
+        { pubkey: owner, isSigner: true, isWritable: false },
+    ];
+    return new index_esm.TransactionInstruction({
+        keys,
+        data: encodeTokenInstructionData({
+            approve: { amount },
+        }),
+        programId: exports.TOKEN_PROGRAM_ID,
+    });
+}
+exports.approve = approve;
+function revoke({ source, owner }) {
+    const keys = [
+        { pubkey: source, isSigner: false, isWritable: true },
+        { pubkey: owner, isSigner: true, isWritable: false },
+    ];
+    return new index_esm.TransactionInstruction({
+        keys,
+        data: encodeTokenInstructionData({
+            revoke: {},
+        }),
+        programId: exports.TOKEN_PROGRAM_ID,
+    });
+}
+exports.revoke = revoke;
+function setAuthority({ target, currentAuthority, newAuthority, authorityType, }) {
+    const keys = [
+        { pubkey: target, isSigner: false, isWritable: true },
+        { pubkey: currentAuthority, isSigner: true, isWritable: false },
+    ];
+    return new index_esm.TransactionInstruction({
+        keys,
+        data: encodeTokenInstructionData({
+            setAuthority: {
+                authorityType,
+                newAuthorityOption: !!newAuthority,
+                newAuthority,
+            },
+        }),
+        programId: exports.TOKEN_PROGRAM_ID,
+    });
+}
+exports.setAuthority = setAuthority;
+function mintTo({ mint, destination, amount, mintAuthority }) {
+    const keys = [
+        { pubkey: mint, isSigner: false, isWritable: true },
+        { pubkey: destination, isSigner: false, isWritable: true },
+        { pubkey: mintAuthority, isSigner: true, isWritable: false },
+    ];
+    return new index_esm.TransactionInstruction({
+        keys,
+        data: encodeTokenInstructionData({
+            mintTo: { amount },
+        }),
+        programId: exports.TOKEN_PROGRAM_ID,
+    });
+}
+exports.mintTo = mintTo;
+function closeAccount({ source, destination, owner }) {
+    const keys = [
+        { pubkey: source, isSigner: false, isWritable: true },
+        { pubkey: destination, isSigner: false, isWritable: true },
+        { pubkey: owner, isSigner: true, isWritable: false },
+    ];
+    return new index_esm.TransactionInstruction({
+        keys,
+        data: encodeTokenInstructionData({
+            closeAccount: {},
+        }),
+        programId: exports.TOKEN_PROGRAM_ID,
+    });
+}
+exports.closeAccount = closeAccount;
+
+});
+
+var instructions = createCommonjsModule(function (module, exports) {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.DexInstructions = exports.decodeInstruction = exports.encodeInstruction = exports.INSTRUCTION_LAYOUT = exports.NEW_ORDER_V3_OWNER_INDEX = exports.NEW_ORDER_V3_OPEN_ORDERS_INDEX = exports.NEW_ORDER_OWNER_INDEX = exports.NEW_ORDER_OPEN_ORDERS_INDEX = exports.SETTLE_FUNDS_QUOTE_WALLET_INDEX = exports.SETTLE_FUNDS_BASE_WALLET_INDEX = void 0;
+
+
+
+
+// NOTE: Update these if the position of arguments for the settleFunds instruction changes
+exports.SETTLE_FUNDS_BASE_WALLET_INDEX = 5;
+exports.SETTLE_FUNDS_QUOTE_WALLET_INDEX = 6;
+// NOTE: Update these if the position of arguments for the newOrder instruction changes
+exports.NEW_ORDER_OPEN_ORDERS_INDEX = 1;
+exports.NEW_ORDER_OWNER_INDEX = 4;
+// NOTE: Update these if the position of arguments for the newOrder instruction changes
+exports.NEW_ORDER_V3_OPEN_ORDERS_INDEX = 1;
+exports.NEW_ORDER_V3_OWNER_INDEX = 7;
+exports.INSTRUCTION_LAYOUT = new layout.VersionedLayout(0, Layout_1.union(Layout_1.u32('instruction')));
+exports.INSTRUCTION_LAYOUT.inner.addVariant(0, Layout_1.struct([
+    layout.u64('baseLotSize'),
+    layout.u64('quoteLotSize'),
+    Layout_1.u16('feeRateBps'),
+    layout.u64('vaultSignerNonce'),
+    layout.u64('quoteDustThreshold'),
+]), 'initializeMarket');
+exports.INSTRUCTION_LAYOUT.inner.addVariant(1, Layout_1.struct([
+    layout.sideLayout('side'),
+    layout.u64('limitPrice'),
+    layout.u64('maxQuantity'),
+    layout.orderTypeLayout('orderType'),
+    layout.u64('clientId'),
+]), 'newOrder');
+exports.INSTRUCTION_LAYOUT.inner.addVariant(2, Layout_1.struct([Layout_1.u16('limit')]), 'matchOrders');
+exports.INSTRUCTION_LAYOUT.inner.addVariant(3, Layout_1.struct([Layout_1.u16('limit')]), 'consumeEvents');
+exports.INSTRUCTION_LAYOUT.inner.addVariant(4, Layout_1.struct([
+    layout.sideLayout('side'),
+    layout.u128('orderId'),
+    layout.publicKeyLayout('openOrders'),
+    Layout_1.u8('openOrdersSlot'),
+]), 'cancelOrder');
+exports.INSTRUCTION_LAYOUT.inner.addVariant(5, Layout_1.struct([]), 'settleFunds');
+exports.INSTRUCTION_LAYOUT.inner.addVariant(6, Layout_1.struct([layout.u64('clientId')]), 'cancelOrderByClientId');
+exports.INSTRUCTION_LAYOUT.inner.addVariant(10, Layout_1.struct([
+    layout.sideLayout('side'),
+    layout.u64('limitPrice'),
+    layout.u64('maxBaseQuantity'),
+    layout.u64('maxQuoteQuantity'),
+    layout.selfTradeBehaviorLayout('selfTradeBehavior'),
+    layout.orderTypeLayout('orderType'),
+    layout.u64('clientId'),
+    Layout_1.u16('limit'),
+]), 'newOrderV3');
+exports.INSTRUCTION_LAYOUT.inner.addVariant(11, Layout_1.struct([layout.sideLayout('side'), layout.u128('orderId')]), 'cancelOrderV2');
+exports.INSTRUCTION_LAYOUT.inner.addVariant(12, Layout_1.struct([layout.u64('clientId')]), 'cancelOrderByClientIdV2');
+function encodeInstruction(instruction) {
+    const b = Buffer.alloc(100);
+    return b.slice(0, exports.INSTRUCTION_LAYOUT.encode(instruction, b));
+}
+exports.encodeInstruction = encodeInstruction;
+function decodeInstruction(message) {
+    return exports.INSTRUCTION_LAYOUT.decode(message);
+}
+exports.decodeInstruction = decodeInstruction;
+class DexInstructions {
+    static initializeMarket({ market, requestQueue, eventQueue, bids, asks, baseVault, quoteVault, baseMint, quoteMint, baseLotSize, quoteLotSize, feeRateBps, vaultSignerNonce, quoteDustThreshold, programId, }) {
+        let rentSysvar = new index_esm.PublicKey('SysvarRent111111111111111111111111111111111');
+        return new index_esm.TransactionInstruction({
+            keys: [
+                { pubkey: market, isSigner: false, isWritable: true },
+                { pubkey: requestQueue, isSigner: false, isWritable: true },
+                { pubkey: eventQueue, isSigner: false, isWritable: true },
+                { pubkey: bids, isSigner: false, isWritable: true },
+                { pubkey: asks, isSigner: false, isWritable: true },
+                { pubkey: baseVault, isSigner: false, isWritable: true },
+                { pubkey: quoteVault, isSigner: false, isWritable: true },
+                { pubkey: baseMint, isSigner: false, isWritable: false },
+                { pubkey: quoteMint, isSigner: false, isWritable: false },
+                { pubkey: rentSysvar, isSigner: false, isWritable: false },
+            ],
+            programId,
+            data: encodeInstruction({
+                initializeMarket: {
+                    baseLotSize,
+                    quoteLotSize,
+                    feeRateBps,
+                    vaultSignerNonce,
+                    quoteDustThreshold,
+                },
+            }),
+        });
+    }
+    static newOrder({ market, openOrders, payer, owner, requestQueue, baseVault, quoteVault, side, limitPrice, maxQuantity, orderType, clientId, programId, feeDiscountPubkey = null, }) {
+        const keys = [
+            { pubkey: market, isSigner: false, isWritable: true },
+            { pubkey: openOrders, isSigner: false, isWritable: true },
+            { pubkey: requestQueue, isSigner: false, isWritable: true },
+            { pubkey: payer, isSigner: false, isWritable: true },
+            { pubkey: owner, isSigner: true, isWritable: false },
+            { pubkey: baseVault, isSigner: false, isWritable: true },
+            { pubkey: quoteVault, isSigner: false, isWritable: true },
+            { pubkey: tokenInstructions.TOKEN_PROGRAM_ID, isSigner: false, isWritable: false },
+            { pubkey: index_esm.SYSVAR_RENT_PUBKEY, isSigner: false, isWritable: false },
+        ];
+        if (feeDiscountPubkey) {
+            keys.push({
+                pubkey: feeDiscountPubkey,
+                isSigner: false,
+                isWritable: false,
+            });
+        }
+        return new index_esm.TransactionInstruction({
+            keys,
+            programId,
+            data: encodeInstruction({
+                newOrder: clientId
+                    ? { side, limitPrice, maxQuantity, orderType, clientId }
+                    : { side, limitPrice, maxQuantity, orderType },
+            }),
+        });
+    }
+    static newOrderV3({ market, openOrders, payer, owner, requestQueue, eventQueue, bids, asks, baseVault, quoteVault, side, limitPrice, maxBaseQuantity, maxQuoteQuantity, orderType, clientId, programId, selfTradeBehavior, feeDiscountPubkey = null, }) {
+        const keys = [
+            { pubkey: market, isSigner: false, isWritable: true },
+            { pubkey: openOrders, isSigner: false, isWritable: true },
+            { pubkey: requestQueue, isSigner: false, isWritable: true },
+            { pubkey: eventQueue, isSigner: false, isWritable: true },
+            { pubkey: bids, isSigner: false, isWritable: true },
+            { pubkey: asks, isSigner: false, isWritable: true },
+            { pubkey: payer, isSigner: false, isWritable: true },
+            { pubkey: owner, isSigner: true, isWritable: false },
+            { pubkey: baseVault, isSigner: false, isWritable: true },
+            { pubkey: quoteVault, isSigner: false, isWritable: true },
+            { pubkey: tokenInstructions.TOKEN_PROGRAM_ID, isSigner: false, isWritable: false },
+            { pubkey: index_esm.SYSVAR_RENT_PUBKEY, isSigner: false, isWritable: false },
+        ];
+        if (feeDiscountPubkey) {
+            keys.push({
+                pubkey: feeDiscountPubkey,
+                isSigner: false,
+                isWritable: false,
+            });
+        }
+        return new index_esm.TransactionInstruction({
+            keys,
+            programId,
+            data: encodeInstruction({
+                newOrderV3: {
+                    side,
+                    limitPrice,
+                    maxBaseQuantity,
+                    maxQuoteQuantity,
+                    selfTradeBehavior,
+                    orderType,
+                    clientId,
+                    limit: 65535,
+                },
+            }),
+        });
+    }
+    static matchOrders({ market, requestQueue, eventQueue, bids, asks, baseVault, quoteVault, limit, programId, }) {
+        return new index_esm.TransactionInstruction({
+            keys: [
+                { pubkey: market, isSigner: false, isWritable: true },
+                { pubkey: requestQueue, isSigner: false, isWritable: true },
+                { pubkey: eventQueue, isSigner: false, isWritable: true },
+                { pubkey: bids, isSigner: false, isWritable: true },
+                { pubkey: asks, isSigner: false, isWritable: true },
+                { pubkey: baseVault, isSigner: false, isWritable: true },
+                { pubkey: quoteVault, isSigner: false, isWritable: true },
+            ],
+            programId,
+            data: encodeInstruction({ matchOrders: { limit } }),
+        });
+    }
+    static consumeEvents({ market, eventQueue, openOrdersAccounts, limit, programId, }) {
+        return new index_esm.TransactionInstruction({
+            keys: [
+                ...openOrdersAccounts.map((account) => ({
+                    pubkey: account,
+                    isSigner: false,
+                    isWritable: true,
+                })),
+                { pubkey: market, isSigner: false, isWritable: true },
+                { pubkey: eventQueue, isSigner: false, isWritable: true },
+            ],
+            programId,
+            data: encodeInstruction({ consumeEvents: { limit } }),
+        });
+    }
+    static cancelOrder({ market, openOrders, owner, requestQueue, side, orderId, openOrdersSlot, programId, }) {
+        return new index_esm.TransactionInstruction({
+            keys: [
+                { pubkey: market, isSigner: false, isWritable: false },
+                { pubkey: openOrders, isSigner: false, isWritable: true },
+                { pubkey: requestQueue, isSigner: false, isWritable: true },
+                { pubkey: owner, isSigner: true, isWritable: false },
+            ],
+            programId,
+            data: encodeInstruction({
+                cancelOrder: { side, orderId, openOrders, openOrdersSlot },
+            }),
+        });
+    }
+    static cancelOrderV2({ market, bids, asks, eventQueue, openOrders, owner, side, orderId, openOrdersSlot, programId, }) {
+        return new index_esm.TransactionInstruction({
+            keys: [
+                { pubkey: market, isSigner: false, isWritable: false },
+                { pubkey: bids, isSigner: false, isWritable: true },
+                { pubkey: asks, isSigner: false, isWritable: true },
+                { pubkey: openOrders, isSigner: false, isWritable: true },
+                { pubkey: owner, isSigner: true, isWritable: false },
+                { pubkey: eventQueue, isSigner: false, isWritable: true },
+            ],
+            programId,
+            data: encodeInstruction({
+                cancelOrderV2: { side, orderId },
+            }),
+        });
+    }
+    static cancelOrderByClientId({ market, openOrders, owner, requestQueue, clientId, programId, }) {
+        return new index_esm.TransactionInstruction({
+            keys: [
+                { pubkey: market, isSigner: false, isWritable: false },
+                { pubkey: openOrders, isSigner: false, isWritable: true },
+                { pubkey: requestQueue, isSigner: false, isWritable: true },
+                { pubkey: owner, isSigner: true, isWritable: false },
+            ],
+            programId,
+            data: encodeInstruction({
+                cancelOrderByClientId: { clientId },
+            }),
+        });
+    }
+    static cancelOrderByClientIdV2({ market, openOrders, owner, bids, asks, eventQueue, clientId, programId, }) {
+        return new index_esm.TransactionInstruction({
+            keys: [
+                { pubkey: market, isSigner: false, isWritable: false },
+                { pubkey: bids, isSigner: false, isWritable: true },
+                { pubkey: asks, isSigner: false, isWritable: true },
+                { pubkey: openOrders, isSigner: false, isWritable: true },
+                { pubkey: owner, isSigner: true, isWritable: false },
+                { pubkey: eventQueue, isSigner: false, isWritable: true },
+            ],
+            programId,
+            data: encodeInstruction({
+                cancelOrderByClientIdV2: { clientId },
+            }),
+        });
+    }
+    static settleFunds({ market, openOrders, owner, baseVault, quoteVault, baseWallet, quoteWallet, vaultSigner, programId, referrerQuoteWallet = null, }) {
+        const keys = [
+            { pubkey: market, isSigner: false, isWritable: true },
+            { pubkey: openOrders, isSigner: false, isWritable: true },
+            { pubkey: owner, isSigner: true, isWritable: false },
+            { pubkey: baseVault, isSigner: false, isWritable: true },
+            { pubkey: quoteVault, isSigner: false, isWritable: true },
+            { pubkey: baseWallet, isSigner: false, isWritable: true },
+            { pubkey: quoteWallet, isSigner: false, isWritable: true },
+            { pubkey: vaultSigner, isSigner: false, isWritable: false },
+            { pubkey: tokenInstructions.TOKEN_PROGRAM_ID, isSigner: false, isWritable: false },
+        ];
+        if (referrerQuoteWallet) {
+            keys.push({
+                pubkey: referrerQuoteWallet,
+                isSigner: false,
+                isWritable: true,
+            });
+        }
+        return new index_esm.TransactionInstruction({
+            keys,
+            programId,
+            data: encodeInstruction({
+                settleFunds: {},
+            }),
+        });
+    }
+}
+exports.DexInstructions = DexInstructions;
+
+});
+
+var queue = createCommonjsModule(function (module, exports) {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.EVENT_QUEUE_LAYOUT = exports.REQUEST_QUEUE_LAYOUT = exports.decodeEventQueue = exports.decodeRequestQueue = void 0;
+
+
+const REQUEST_QUEUE_HEADER = Layout_1.struct([
+    Layout_1.blob(5),
+    layout.accountFlagsLayout('accountFlags'),
+    Layout_1.u32('head'),
+    layout.zeros(4),
+    Layout_1.u32('count'),
+    layout.zeros(4),
+    Layout_1.u32('nextSeqNum'),
+    layout.zeros(4),
+]);
+const REQUEST_FLAGS = Layout_1.bits(Layout_1.u8(), false, 'requestFlags');
+REQUEST_FLAGS.addBoolean('newOrder');
+REQUEST_FLAGS.addBoolean('cancelOrder');
+REQUEST_FLAGS.addBoolean('bid');
+REQUEST_FLAGS.addBoolean('postOnly');
+REQUEST_FLAGS.addBoolean('ioc');
+const REQUEST = Layout_1.struct([
+    REQUEST_FLAGS,
+    Layout_1.u8('openOrdersSlot'),
+    Layout_1.u8('feeTier'),
+    Layout_1.blob(5),
+    layout.u64('maxBaseSizeOrCancelId'),
+    layout.u64('nativeQuoteQuantityLocked'),
+    layout.u128('orderId'),
+    layout.publicKeyLayout('openOrders'),
+    layout.u64('clientOrderId'),
+]);
+const EVENT_QUEUE_HEADER = Layout_1.struct([
+    Layout_1.blob(5),
+    layout.accountFlagsLayout('accountFlags'),
+    Layout_1.u32('head'),
+    layout.zeros(4),
+    Layout_1.u32('count'),
+    layout.zeros(4),
+    Layout_1.u32('seqNum'),
+    layout.zeros(4),
+]);
+const EVENT_FLAGS = Layout_1.bits(Layout_1.u8(), false, 'eventFlags');
+EVENT_FLAGS.addBoolean('fill');
+EVENT_FLAGS.addBoolean('out');
+EVENT_FLAGS.addBoolean('bid');
+EVENT_FLAGS.addBoolean('maker');
+const EVENT = Layout_1.struct([
+    EVENT_FLAGS,
+    Layout_1.u8('openOrdersSlot'),
+    Layout_1.u8('feeTier'),
+    Layout_1.blob(5),
+    layout.u64('nativeQuantityReleased'),
+    layout.u64('nativeQuantityPaid'),
+    layout.u64('nativeFeeOrRebate'),
+    layout.u128('orderId'),
+    layout.publicKeyLayout('openOrders'),
+    layout.u64('clientOrderId'),
+]);
+function decodeQueue(headerLayout, nodeLayout, buffer, history) {
+    const header = headerLayout.decode(buffer);
+    const allocLen = Math.floor((buffer.length - headerLayout.span) / nodeLayout.span);
+    const nodes = [];
+    if (history) {
+        for (let i = 0; i < Math.min(history, allocLen); ++i) {
+            const nodeIndex = (header.head + header.count + allocLen - 1 - i) % allocLen;
+            nodes.push(nodeLayout.decode(buffer, headerLayout.span + nodeIndex * nodeLayout.span));
+        }
+    }
+    else {
+        for (let i = 0; i < header.count; ++i) {
+            const nodeIndex = (header.head + i) % allocLen;
+            nodes.push(nodeLayout.decode(buffer, headerLayout.span + nodeIndex * nodeLayout.span));
+        }
+    }
+    return { header, nodes };
+}
+function decodeRequestQueue(buffer, history) {
+    const { header, nodes } = decodeQueue(REQUEST_QUEUE_HEADER, REQUEST, buffer, history);
+    if (!header.accountFlags.initialized || !header.accountFlags.requestQueue) {
+        throw new Error('Invalid requests queue');
+    }
+    return nodes;
+}
+exports.decodeRequestQueue = decodeRequestQueue;
+function decodeEventQueue(buffer, history) {
+    const { header, nodes } = decodeQueue(EVENT_QUEUE_HEADER, EVENT, buffer, history);
+    if (!header.accountFlags.initialized || !header.accountFlags.eventQueue) {
+        throw new Error('Invalid events queue');
+    }
+    return nodes;
+}
+exports.decodeEventQueue = decodeEventQueue;
+exports.REQUEST_QUEUE_LAYOUT = {
+    HEADER: REQUEST_QUEUE_HEADER,
+    NODE: REQUEST,
+};
+exports.EVENT_QUEUE_LAYOUT = {
+    HEADER: EVENT_QUEUE_HEADER,
+    NODE: EVENT,
+};
+
+});
+
+var markets = [
+	{
+		address: "B37pZmwrwXHjpgvd9hHDAx1yeDsNevTnbbrN9W12BoGK",
+		deprecated: true,
+		name: "ALEPH/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "CAgAeMD7quTdnr6RPa7JySQpjf3irAmefYNdTb6anemq",
+		deprecated: true,
+		name: "BTC/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "ASKiV944nKg1W9vsf7hf3fTsjawK6DwLwrnB2LH9n61c",
+		deprecated: true,
+		name: "ETH/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "Cdp72gDcYMCLLk3aDkPxjeiirKoFqK38ECm8Ywvk94Wi",
+		deprecated: true,
+		name: "SOL/WUSDC",
+		programId: "BJ3jrUzddfuSrZHXSCxMUUQsjKEyLmuuyZebkcaFp2fg"
+	},
+	{
+		address: "68J6nkWToik6oM9rTatKSR5ibVSykAtzftBUEAvpRsys",
+		deprecated: true,
+		name: "SRM/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "8Jzed8Fafu1RU1CQDWdiETSrqAJy1ukZ5JL6Pma3p3a2",
+		deprecated: true,
+		name: "SRM/SOL",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "9wDmxsfwaDb2ysmZpBLzxKzoWrF1zHzBN7PV5EmJe19R",
+		deprecated: true,
+		name: "SUSHI/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "GbQSffne1NcJbS4jsewZEpRGYVR4RNnuVUN8Ht6vAGb6",
+		deprecated: true,
+		name: "SXP/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "7kgkDyW7dmyMeP8KFXzbcUZz1R2WHsovDZ7n3ihZuNDS",
+		deprecated: true,
+		name: "MSRM/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "FZqrBXz7ADGsmDf1TM9YgysPUfvtG8rJiNUrqDpHc9Au",
+		deprecated: true,
+		name: "FTT/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "FJg9FUtbN3fg3YFbMCFiZKjGh5Bn4gtzxZmtxFzmz9kT",
+		deprecated: true,
+		name: "YFI/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "7GZ59DMgJ7D6dfoJTpszPayTRyua9jwcaGJXaRMMF1my",
+		deprecated: true,
+		name: "LINK/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "uPNcBgFhrLW3FtvyYYbBUi53BBEQf9e4NPgwxaLu5Hn",
+		deprecated: true,
+		name: "HGET/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "3puWJFZyCso14EdxhywjD7xqyTarpsULx483mzvqxQRW",
+		deprecated: true,
+		name: "CREAM/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "8Ae7Uhigx8k4fKdJG7irdPCVDZLvWsJfeTH2t5fr3TVD",
+		deprecated: true,
+		name: "UBXT/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "Hze5AUX4Qp1cTujiJ4CsAMRGn4g6ZpgXsmptFn3xxhWg",
+		deprecated: true,
+		name: "HNT/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "FJq4HX3bUSgF3yQZ8ADALtJYfAyr9fz36SNG18hc3dgF",
+		deprecated: true,
+		name: "FRONT/WUSDC",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "BZMuoQ2i2noNUXMdrRDivc7MwjGspNJTCfZkdHMwK18T",
+		deprecated: true,
+		name: "ALEPH/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "5LgJphS6D5zXwUVPU7eCryDBkyta3AidrJ5vjNU6BcGW",
+		deprecated: true,
+		name: "BTC/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "DmEDKZPXXkWgaYiKgWws2ZXWWKCh41eryDPRVD4zKnD9",
+		deprecated: true,
+		name: "ETH/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "EBFTQNg2QjyxV7WDDenoLbfLLXLcbSz6w1YrdTCGPWT5",
+		deprecated: true,
+		name: "SOL/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "8YmQZRXGizZXYPCDmxgjwB8X8XN4PZG7MMwNg76iAmPZ",
+		deprecated: true,
+		name: "SRM/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "9vFuX2BizwinWjkZLQTmThDcNMFEcY3wVXYuqnRQtcD",
+		deprecated: true,
+		name: "SUSHI/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "C5NReXAeQhfjiDCGPFj1UUmDxDqF8v2CUVKoYuQqb4eW",
+		deprecated: true,
+		name: "SXP/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "58H7ZRmiyWtsrz2sQGz1qQCMW6n7447xhNNehUSQGPj5",
+		deprecated: true,
+		name: "MSRM/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "ES8skmkEeyH1BYFThd2FtyaFKhkqtwH7XWp8mXptv3vg",
+		deprecated: true,
+		name: "FTT/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "Gw78CYLLFbgmmn4rps9KoPAnNtBQ2S1foL2Mn6Z5ZHYB",
+		deprecated: true,
+		name: "YFI/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "WjfsTPyrvUUrhGJ9hVQFubMnKDcnQS8VxSXU7L2gLcA",
+		deprecated: true,
+		name: "LINK/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "2ZmB255T4FVUugpeXTFxD6Yz5GE47yTByYvqSTDUbk3G",
+		deprecated: true,
+		name: "HGET/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "FGJtCDXoHLHjagP5Ht6xcUFt2rW3z8MJPe87rFKP2ZW6",
+		deprecated: true,
+		name: "CREAM/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "7K6MPog6LskZmyaYwqtLvRUuedoiE68nirbQ9tK3LasE",
+		deprecated: true,
+		name: "UBXT/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "9RyozJe3bkAFfH3jmoiKHjkWCoLTxn7aBQSi6YfaV6ab",
+		deprecated: true,
+		name: "HNT/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "AGtBbGuJZiv3Ko3dfT4v6g4kCqnNc9DXfoGLe5HpjmWx",
+		deprecated: true,
+		name: "FRONT/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "AA1HSrsMcRNzjaQfRMTNarHR9B7e4U79LJ2319UtiqPF",
+		deprecated: true,
+		name: "AKRO/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "AUAobJdffexcoJBMeyLorpShu3ZtG9VvPEPjoeTN4u5Z",
+		deprecated: true,
+		name: "HXRO/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "GpdYLFbKHeSeDGqsnQ4jnP7D1294iBpQcsN1VPwhoaFS",
+		deprecated: true,
+		name: "UNI/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "sxS9EdTx1UPe4j2c6Au9f1GKZXrFj5pTgNKgjGGtGdY",
+		deprecated: true,
+		name: "KEEP/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "CfnnU38ACScF6pcurxSB3FLXeZmfFYunVKExeUyosu5P",
+		deprecated: true,
+		name: "MATH/WUSDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "7NR5GDouQYkkfppVkNhpa4HfJ2LwqUQymE3b4CYQiYHa",
+		deprecated: true,
+		name: "ALEPH/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "CVfYa8RGXnuDBeGmniCcdkBwoLqVxh92xB1JqgRQx3F",
+		deprecated: true,
+		name: "BTC/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "H5uzEytiByuXt964KampmuNCurNDwkVVypkym75J2DQW",
+		deprecated: true,
+		name: "ETH/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "7xMDbYTCqQEcK2aM9LbetGtNFJpzKdfXzLL5juaLh4GJ",
+		deprecated: true,
+		name: "SOL/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "CDdR97S8y96v3To93aKvi3nCnjUrbuVSuumw8FLvbVeg",
+		deprecated: true,
+		name: "SRM/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "7LVJtqSrF6RudMaz5rKGTmR3F3V5TKoDcN6bnk68biYZ",
+		deprecated: true,
+		name: "SUSHI/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "13vjJ8pxDMmzen26bQ5UrouX8dkXYPW1p3VLVDjxXrKR",
+		deprecated: true,
+		name: "SXP/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "AwvPwwSprfDZ86beBJDNH5vocFvuw4ZbVQ6upJDbSCXZ",
+		deprecated: true,
+		name: "MSRM/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "FfDb3QZUdMW2R2aqJQgzeieys4ETb3rPrFFfPSemzq7R",
+		deprecated: true,
+		name: "FTT/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "4QL5AQvXdMSCVZmnKXiuMMU83Kq3LCwVfU8CyznqZELG",
+		deprecated: true,
+		name: "YFI/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "7JCG9TsCx3AErSV3pvhxiW4AbkKRcJ6ZAveRmJwrgQ16",
+		deprecated: true,
+		name: "LINK/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "3otQFkeQ7GNUKT3i2p3aGTQKS2SAw6NLYPE5qxh3PoqZ",
+		deprecated: true,
+		name: "HGET/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "2M8EBxFbLANnCoHydypL1jupnRHG782RofnvkatuKyLL",
+		deprecated: true,
+		name: "CREAM/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "3UqXdFtNBZsFrFtRGAWGvy9R8H6GJR2hAyGRdYT9BgG3",
+		deprecated: true,
+		name: "UBXT/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "9jiasgdYGGh34fAbBQSwkKe1dYSapXbjy2sLsYpetqFp",
+		deprecated: true,
+		name: "HNT/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "7oKqJhnz9b8af8Mw47dieTiuxeaHnRYYGBiqCrRpzTRD",
+		deprecated: true,
+		name: "FRONT/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "F1rxD8Ns5w4WzVcTRdaJ96LG7YKaA5a25BBmM32yFP4b",
+		deprecated: true,
+		name: "AKRO/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "6ToedDwjRCvrcKX7fnHSTA9uABQe1dcLK6YgS5B9M3wo",
+		deprecated: true,
+		name: "HXRO/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "FURvCsDUiuUaxZ13pZqQbbfktFGWmQVTHz7tL992LQVZ",
+		deprecated: true,
+		name: "UNI/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "EcfDRMrEJ3yW4SgrRyyxTPoKqAZDNSBV8EerigT7BNSS",
+		deprecated: true,
+		name: "KEEP/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "2bPsJ6bZ9KDLfJ8QgSN1Eb4mRsbAiaGyHN6cJkoVLpwd",
+		deprecated: true,
+		name: "MATH/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "B1GypajMh7S8zJVp6M1xMfu6zGsMgvYrt3cSn9wG7Dd6",
+		deprecated: true,
+		name: "TOMO/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "rPTGvVrNFYzBeTEcYnHiaWGNnkSXsWNNjUgk771LkwJ",
+		deprecated: true,
+		name: "LUA/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "FrDavxi4QawYnQY259PVfYUjUvuyPNfqSXbLBqMnbfWJ",
+		deprecated: true,
+		name: "FIDA/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "CVn1nJ5Utuseyy2qqwrpYoJz9Y7jjYonVL4UYvcCepDH",
+		deprecated: true,
+		name: "KIN/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "BqjGW7ousAizgs8VrHo5SR1LxTksAQPtb8cKZZiNvX5D",
+		deprecated: true,
+		name: "MAPS/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "GcoKtAmTy5QyuijXSmJKBtFdt99e6Buza18Js7j9AJ6e",
+		deprecated: false,
+		name: "ALEPH/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "A8YFbxQYFVqKZaoYJLLUVcQiWP7G2MeEgW5wsAQgMvFw",
+		deprecated: false,
+		name: "BTC/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "4tSvZvnbyzHXLMTiFonMyxZoHmFqau1XArcRCVHLZ5gX",
+		deprecated: false,
+		name: "ETH/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "ByRys5tuUWDgL73G8JBAEfkdFf8JWBzPBDHsBVQ5vbQA",
+		deprecated: false,
+		name: "SRM/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "A1Q9iJDVVS8Wsswr9ajeZugmj64bQVCYLZQLra2TMBMo",
+		deprecated: false,
+		name: "SUSHI/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "4LUro5jaPaTurXK737QAxgJywdhABnFAMQkXX4ZyqqaZ",
+		deprecated: false,
+		name: "SXP/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "4VKLSYdvrQ5ngQrt1d2VS8o4ewvb2MMUZLiejbnGPV33",
+		deprecated: false,
+		name: "MSRM/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "2Pbh1CvRVku1TgewMfycemghf6sU9EyuFDcNXqvRmSxc",
+		deprecated: false,
+		name: "FTT/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "7qcCo8jqepnjjvB5swP4Afsr3keVBs6gNpBTNubd1Kr2",
+		deprecated: false,
+		name: "YFI/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "3hwH1txjJVS8qv588tWrjHfRxdqNjBykM1kMcit484up",
+		deprecated: false,
+		name: "LINK/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "88vztw7RTN6yJQchVvxrs6oXUDryvpv9iJaFa1EEmg87",
+		deprecated: false,
+		name: "HGET/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "7nZP6feE94eAz9jmfakNJWPwEKaeezuKKC5D1vrnqyo2",
+		deprecated: false,
+		name: "CREAM/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "2wr3Ab29KNwGhtzr5HaPCyfU1qGJzTUAN4amCLZWaD1H",
+		deprecated: false,
+		name: "UBXT/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "CnUV42ZykoKUnMDdyefv5kP6nDSJf7jFd7WXAecC6LYr",
+		deprecated: false,
+		name: "HNT/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "9Zx1CvxSVdroKMMWf2z8RwrnrLiQZ9VkQ7Ex3syQqdSH",
+		deprecated: false,
+		name: "FRONT/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "5CZXTTgVZKSzgSA3AFMN5a2f3hmwmmJ6hU8BHTEJ3PX8",
+		deprecated: false,
+		name: "AKRO/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "6Pn1cSiRos3qhBf54uBP9ZQg8x3JTardm1dL3n4p29tA",
+		deprecated: false,
+		name: "HXRO/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "6JYHjaQBx6AtKSSsizDMwozAEDEZ5KBsSUzH7kRjGJon",
+		deprecated: false,
+		name: "UNI/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "J7cPYBrXVy8Qeki2crZkZavcojf2sMRyQU7nx438Mf8t",
+		deprecated: false,
+		name: "MATH/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "8BdpjpSD5n3nk8DQLqPUyTZvVqFu6kcff5bzUX5dqDpy",
+		deprecated: false,
+		name: "TOMO/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "4xyWjQ74Eifq17vbue5Ut9xfFNfuVB116tZLEpiZuAn8",
+		deprecated: false,
+		name: "LUA/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "jyei9Fpj2GtHLDDGgcuhDacxYLLiSyxU4TY7KxB2xai",
+		deprecated: false,
+		name: "SRM/SOL",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "9wFFyRfZBsuAha4YcuxcXLKwMxJR43S7fPfQLusDBzvT",
+		deprecated: false,
+		name: "SOL/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "E14BKBhDWD4EuTkWj1ooZezesGxMW8LPCps4W5PuzZJo",
+		deprecated: false,
+		name: "FIDA/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "Bn6NPyr6UzrFAwC4WmvPvDr2Vm8XSUnFykM2aQroedgn",
+		deprecated: false,
+		name: "KIN/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "3A8XQRWXC7BjLpgLDDBhQJLT5yPCzS16cGYRKHkKxvYo",
+		deprecated: false,
+		name: "MAPS/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "3rgacody9SvM88QR83GHaNdEEx4Fe2V2ed5GJp2oeKDr",
+		deprecated: false,
+		name: "KEEP/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "EmCzMQfXMgNHcnRoFwAdPe1i2SuiSzMj1mx6wu3KN2uA",
+		deprecated: true,
+		name: "ALEPH/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "8AcVjMG2LTbpkjNoyq8RwysokqZunkjy3d5JDzxC6BJa",
+		deprecated: true,
+		name: "BTC/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "HfCZdJ1wfsWKfYP2qyWdXTT5PWAGWFctzFjLH48U1Hsd",
+		deprecated: true,
+		name: "ETH/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "8mDuvJJSgoodovMRYArtVVYBbixWYdGzR47GPrRT65YJ",
+		deprecated: true,
+		name: "SOL/WUSDT",
+		programId: "BJ3jrUzddfuSrZHXSCxMUUQsjKEyLmuuyZebkcaFp2fg"
+	},
+	{
+		address: "HARFLhSq8nECZk4DVFKvzqXMNMA9a3hjvridGMFizeLa",
+		deprecated: true,
+		name: "SRM/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "DzFjazak6EKHnaB2w6qSsArnj28CV1TKd2Smcj9fqtHW",
+		deprecated: true,
+		name: "SUSHI/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "GuvWMATdEV6DExWnXncPYEzn4ePWYkvGdC8pu8gsn7m7",
+		deprecated: true,
+		name: "SXP/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "H4snTKK9adiU15gP22ErfZYtro3aqR9BTMXiH3AwiUTQ",
+		deprecated: true,
+		name: "MSRM/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "DHDdghmkBhEpReno3tbzBPtsxCt6P3KrMzZvxavTktJt",
+		deprecated: true,
+		name: "FTT/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "5zu5bTZZvqESAAgFsr12CUMxdQvMrvU9CgvC1GW8vJdf",
+		deprecated: true,
+		name: "YFI/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "F5xschQBMpu1gD2q1babYEAVJHR1buj1YazLiXyQNqSW",
+		deprecated: true,
+		name: "LINK/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "BAbc9baz4hV1hnYjWSJ6cZDRjfvziWbYGQu9UFkcdUmx",
+		deprecated: true,
+		name: "HGET/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "EBxJWA2nLV57ZntbjizxH527ZjPNLT5cpUHMnY5k3oq",
+		deprecated: true,
+		name: "CREAM/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "46VdEkj4MJwZinwVb3Y7DUDpVXLNb9YW7P2waKU3vCqr",
+		deprecated: true,
+		name: "UBXT/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "Hc22rHKrhbrZBaQMmhJvPTkp1yDr31PDusU8wKoqFSZV",
+		deprecated: true,
+		name: "HNT/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "HFoca5HKwiTPpw9iUY5iXWqzkXdu88dS7YrpSvt2uhyF",
+		deprecated: true,
+		name: "FRONT/WUSDT",
+		programId: "4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn"
+	},
+	{
+		address: "5xnYnWca2bFwC6cPufpdsCbDJhMjYCC59YgwoZHEfiee",
+		deprecated: true,
+		name: "ALEPH/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "EXnGBBSamqzd3uxEdRLUiYzjJkTwQyorAaFXdfteuGXe",
+		deprecated: true,
+		name: "BTC/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "5abZGhrELnUnfM9ZUnvK6XJPoBU5eShZwfFPkdhAC7o",
+		deprecated: true,
+		name: "ETH/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "7xLk17EQQ5KLDLDe44wCmupJKJjTGd8hs3eSVVhCx932",
+		deprecated: true,
+		name: "SOL/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "H3APNWA8bZW2gLMSq5sRL41JSMmEJ648AqoEdDgLcdvB",
+		deprecated: true,
+		name: "SRM/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "4uZTPc72sCDcVRfKKii67dTPm2Xe4ri3TYnGcUQrtnU9",
+		deprecated: true,
+		name: "SUSHI/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "33GHmwG9woY95JuWNi74Aa8uKvysSXxif9P1EwwkrCRz",
+		deprecated: true,
+		name: "SXP/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "FUaF58sDrgbqakHTR8RUwRLauSofRTjqyCsqThFPh6YM",
+		deprecated: true,
+		name: "MSRM/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "5NqjQVXLuLSDnsnQMfWp3rF9gbWDusWG4B1Xwtk3rZ5S",
+		deprecated: true,
+		name: "FTT/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "97NiXHUNkpYd1eb2HthSDGhaPfepuqMAV3QsZhAgb1wm",
+		deprecated: true,
+		name: "YFI/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "hBswhpNyz4m5nt4KwtCA7jYXvh7VmyZ4TuuPmpaKQb1",
+		deprecated: true,
+		name: "LINK/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "GaeUpY7CT8rjoeVGjY1t3mJJDd1bdXxYWtrGSpsVFors",
+		deprecated: true,
+		name: "HGET/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "7qq9BABQvTWKZuJ5fX2PeTKX6XVtduEs9zW9WS21fSzN",
+		deprecated: true,
+		name: "CREAM/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "DCHvVahuLTNWBGUtEzF5GrTdx5FRpxqEJiS6Ru1hrDfD",
+		deprecated: true,
+		name: "UBXT/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "DWjJ8VHdGYBxDQYdrRBVDWkHswrgjuBFEv5pBhiRoPBz",
+		deprecated: true,
+		name: "HNT/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "56eqxJYzPigm4FkigiBdsfebjMgAbKNh24E7oiKLBtye",
+		deprecated: true,
+		name: "FRONT/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "FQbCNSVH3RgosCPB4CJRstkLh5hXkvuXzAjQzT11oMYo",
+		deprecated: true,
+		name: "AKRO/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "Fs5xtGUmJTYo8Ao75M3R3m3mVX53KMUhzfXCmyRLnp2P",
+		deprecated: true,
+		name: "HXRO/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "ChKV7mxecPqFPGYJjhzowPHDiLKFWXXVujUiE3EWxFcg",
+		deprecated: true,
+		name: "UNI/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "6N3oU7ALvn2RPwdpYVzPBgQJ8njT29inBbS2tSrwx8fh",
+		deprecated: true,
+		name: "KEEP/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "5P6dJbyKySFXMYNWiEcNQu8xPRYsehYzCeVpae9Ueqrg",
+		deprecated: true,
+		name: "MATH/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "H7c8FcQPJ2E5tJmpWBPSi7xCAbk8immdtUxKFRUyE4Ro",
+		deprecated: true,
+		name: "TOMO/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "7PSeX1AEtBY9KvgegF5rUh452VemMh7oDzFtJgH7sxMG",
+		deprecated: true,
+		name: "LUA/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "AF2oQQaLtcrTnQyVs3EPTdyw57TPaK6njKYDq2Qw7LqP",
+		deprecated: true,
+		name: "SWAG/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "9TE15E5h61zJ5VmQAAHkGrAuQdFTth33aBbKdcrppZBp",
+		deprecated: true,
+		name: "FIDA/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "8HEaA1vSA5mGQoHcvRPNibnuZvnUpSjJJru9HJNH3SqM",
+		deprecated: true,
+		name: "KIN/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "8EuuEwULFM7n7zthPjC7kA64LPRzYkpAyuLFiLuVg7D4",
+		deprecated: true,
+		name: "WUSDT/USDC",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "8grUs4WZoTs4KJ8LfRNUBs6SNkMTp5BnVRzJgQ2ranDT",
+		deprecated: true,
+		name: "MAPS/WUSDT",
+		programId: "EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o"
+	},
+	{
+		address: "FoCuWt4KboucUg2PwmQ3dbkvLqYPLnAo1Rsm8p7QPyf",
+		deprecated: true,
+		name: "ALEPH/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "5r8FfnbNYcQbS1m4CYmoHYGjBtu6bxfo6UJHNRfzPiYH",
+		deprecated: true,
+		name: "BTC/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "71CtEComq2XdhGNbXBuYPmosAjMCPSedcgbNi5jDaGbR",
+		deprecated: true,
+		name: "ETH/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "EZyQ9zyqQsw3QcsLksoWyd1UFVjHZkzRx8N4ZMnZQrS2",
+		deprecated: true,
+		name: "SRM/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "6ERBjj692XHLWwWSRAUpiKenXshcwmPqhMy7RMapeoKa",
+		deprecated: true,
+		name: "SUSHI/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "CQ3kAGxPmpBbak2RSHWyMeRhyLYbH6oVZHJxgjzDLpLW",
+		deprecated: true,
+		name: "SXP/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "2Hqn46jhwaQMQ3zEnHtxrWxQZom6qwLXAgdsFJM1Srwh",
+		deprecated: true,
+		name: "MSRM/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "G5jqZNo2UVCTnJxgEhKCYvqFRs3MxsnH8Bervq3rfLoL",
+		deprecated: true,
+		name: "FTT/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "CbwtTHEpfTnCyLw4GoTbKk7WyrXkuATLfLadY2odBSsY",
+		deprecated: true,
+		name: "YFI/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "5GjhBAYx8pYeCeUQt7rt93KQZnoQFuDq9Jx4iqq97Mip",
+		deprecated: true,
+		name: "LINK/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "9jMPV9E23pTirMjC7vz5suRNkd25311G3Httg7jTib8R",
+		deprecated: true,
+		name: "CREAM/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "DsSz9KWT97T4RewRTqTNDpNFQyxMPcuYNAJw2xHAzSiZ",
+		deprecated: true,
+		name: "UBXT/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "3k1sURztjxhjYczjyioQ7y2UkMB6K5Ksi3SWvLeLx6Ex",
+		deprecated: true,
+		name: "HNT/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "B791G8UCahfmABVcR2wPAMK6LJnuqxSAqiG6wX3mmVVM",
+		deprecated: true,
+		name: "FRONT/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "95f7fxfUh8WqUTrdjorHRXm6rTfkWqr23ioGMmKMjedP",
+		deprecated: true,
+		name: "AKRO/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "H4RxtmQ4P3TYPt78G3DuHgaGzyFct6MfaeYneLB5PyeG",
+		deprecated: true,
+		name: "HXRO/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "7myaZEGZf9m72T1Mqm8GTx5MnmSFS5NCXSwRP18W4EA3",
+		deprecated: true,
+		name: "UNI/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "7cRKzNoqjF9VtzvdnP129VYP3izivk9iY3jMJBMzREVT",
+		deprecated: true,
+		name: "HGET/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "GV9fYzdwipoaagXFxe5tzDMPcmSVQati5CUvBPsEZThH",
+		deprecated: true,
+		name: "MATH/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "AaMLXcwYYi5fA41JNCB2ukAmQyKHitYx5NnpsiWWev6R",
+		deprecated: true,
+		name: "TOMO/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "5ZeNLrduGi3WkH9CPwv2Zpbkh38MH8v63aSi2aBUW23g",
+		deprecated: true,
+		name: "LUA/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "Ec1aq54XKH9o5fe169cU2sCcxxTP54eeQCe77SpizKuc",
+		deprecated: true,
+		name: "WUSDT/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "G3uhFg2rBFunHUXtCera13vyQ5KCS8Hx3d4HohLoZbT5",
+		deprecated: true,
+		name: "SOL/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "2NMTG7tFZidRpQk9Sf4dgQyJb9HxKCyXjQdiuXww3sKm",
+		deprecated: true,
+		name: "SWAG/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "7QpJAiwGmqY1SiucjfPXvgeWwCobyV6hZSgzMysZX6Ww",
+		deprecated: true,
+		name: "FIDA/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "CmLhvXARncLncE1949XBfQWeJh6Zvw3FE5A3Z5ecPYQH",
+		deprecated: true,
+		name: "KIN/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "FhP3X2ptdi7L1RtWK9Vfow5dyzD92gfXiA57e8eqxvka",
+		deprecated: true,
+		name: "MAPS/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "DE7xJE2EkaV81wLabDMuhBzUwFhhwfURLdz1aXBBQZQ1",
+		deprecated: true,
+		name: "KEEP/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "5nLJ22h1DUfeCfwbFxPYK8zbfbri7nA9bXoDcR8AcJjs",
+		deprecated: false,
+		name: "MSRM/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "7dLVkUfBVfCGkFhSXDCq1ukM9usathSgS716t643iFGF",
+		deprecated: false,
+		name: "ETH/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "8afKwzHR3wJE7W7Y5hvQkngXh6iTepSZuutRMMy96MjR",
+		deprecated: false,
+		name: "SXP/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "cgani53cMZgYfRMgSrNekJTMaLmccRfspsfTbXWRg7u",
+		deprecated: false,
+		name: "CEL/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "Gyp1UGRgbrb6z8t7fpssxEKQgEmcJ4pVnWW3ds2p6ZPY",
+		deprecated: false,
+		name: "ALEPH/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "4ztJEvQyryoYagj2uieep3dyPwG2pyEwb2dKXTwmXe82",
+		deprecated: false,
+		name: "CREAM/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "HEGnaVL5i48ubPBqWAhodnZo8VsSLzEM3Gfc451DnFj9",
+		deprecated: false,
+		name: "KEEP/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "8FpuMGLtMZ7Wt9ZvyTGuTVwTwwzLYfS5NZWcHxbP1Wuh",
+		deprecated: false,
+		name: "HNT/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "5GAPymgnnWieGcRrcghZdA3aanefqa4cZx1ZSE8UTyMV",
+		deprecated: false,
+		name: "MAPS/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "AADohBGxvf7bvixs2HKC3dG2RuU3xpZDwaTzYFJThM8U",
+		deprecated: false,
+		name: "TRYB/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "EbV7pPpEvheLizuYX3gUCvWM8iySbSRAhu2mQ5Vz2Mxf",
+		deprecated: false,
+		name: "FIDA/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "FcPet5fz9NLdbXwVM6kw2WTHzRAD7mT78UjwTpawd7hJ",
+		deprecated: false,
+		name: "RSR/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "AtNnsY1AyRERWJ8xCskfz38YdvruWVJQUVXgScC1iPb",
+		deprecated: false,
+		name: "SRM/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "teE55QrL4a4QSfydR9dnHF97jgCfptpuigbb53Lo95g",
+		deprecated: false,
+		name: "RAY/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "C1EuT9VokAKLiW7i2ASnZUvxDoKuKkCpDDeNxAptuNe4",
+		deprecated: false,
+		name: "BTC/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "Hr3wzG8mZXNHV7TuL6YqtgfVUesCqMxGYCEyP3otywZE",
+		deprecated: false,
+		name: "FTT/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "HLvRdctRB48F9yLnu9E24LUTRt89D48Z35yi1HcxayDf",
+		deprecated: false,
+		name: "AKRO/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "2SSnWNrc83otLpfRo792P6P3PESZpdr8cu2r8zCE6bMD",
+		deprecated: false,
+		name: "UNI/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "F1T7b6pnR8Pge3qmfNUfW6ZipRDiGpMww6TKTrRU4NiL",
+		deprecated: false,
+		name: "UBXT/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "HWHvQhFmJB3NUcu1aihKmrKegfVxBEHzwVX6yZCKEsi1",
+		deprecated: false,
+		name: "SOL/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "35tV8UsHH8FnSAi3YFRrgCu4K9tb883wKnAXpnihot5r",
+		deprecated: false,
+		name: "LUA/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "6DgQRTpJTnAYBSShngAVZZDq7j9ogRN1GfSQ3cq9tubW",
+		deprecated: false,
+		name: "SUSHI/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "2WghiBkDL2yRhHdvm8CpprrkmfguuQGJTCDfPSudKBAZ",
+		deprecated: false,
+		name: "MATH/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "ErQXxiNfJgd4fqQ58PuEw5xY35TZG84tHT6FXf5s4UxY",
+		deprecated: false,
+		name: "HGET/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "CGC4UgWwqA9PET6Tfx6o6dLv94EK2coVkPtxgNHuBtxj",
+		deprecated: false,
+		name: "FRONT/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "GnKPri4thaGipzTbp8hhSGSrHgG4F8MFiZVrbRn16iG2",
+		deprecated: false,
+		name: "TOMO/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "6bxuB5N3bt3qW8UnPNLgMMzDq5sEH8pFmYJYGgzvE11V",
+		deprecated: false,
+		name: "AAVE/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "7cknqHAuGpfVXPtFoJpFvUjJ8wkmyEfbFusmwMfNy3FE",
+		deprecated: false,
+		name: "MAPS/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "4absuMsgemvdjfkgdLQq1zKEjw3dHBoCWkzKoctndyqd",
+		deprecated: false,
+		name: "HXRO/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "4nCFQr8sahhhL4XJ7kngGFBmpkmyf3xLzemuMhn6mWTm",
+		deprecated: false,
+		name: "KIN/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "3Xg9Q4VtZhD4bVYJbTfgGWFV5zjE3U7ztSHa938zizte",
+		deprecated: false,
+		name: "YFI/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "3yEZ9ZpXSQapmKjLAGKZEzUNA1rcupJtsDp5mPBWmGZR",
+		deprecated: false,
+		name: "LINK/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "J2XSt77XWim5HwtUM8RUwQvmRXNZsbMKpp5GTKpHafvf",
+		deprecated: false,
+		name: "SWAG/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "77quYg4MGneUdjgXCunt9GgM1usmrxKY31twEy3WHwcS",
+		deprecated: false,
+		name: "USDT/USDC",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "GKLev6UHeX1KSDCyo2bzyG6wqhByEzDBkmYTxEdmYJgB",
+		deprecated: false,
+		name: "OXY/USDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		address: "HdBhZrnrxpje39ggXnTb6WuTWVvj5YKcSHwYGQCRsVj",
+		deprecated: false,
+		name: "OXY/WUSDT",
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		name: "OXY/USDC",
+		address: "GZ3WBFsqntmERPwumFEYgrX2B7J7G11MzNZAy7Hje27X",
+		deprecated: false,
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		name: "xCOPE/USDC",
+		address: "7MpMwArporUHEGW7quUpkPZp5L5cHPs9eKUfKCdaPHq2",
+		deprecated: false,
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		name: "COPE/USDC",
+		address: "6fc7v3PmjZG9Lk2XTot6BywGyYLkBQuzuFKd4FpCsPxk",
+		deprecated: false,
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		name: "MER/USDC",
+		address: "HhvDWug3ftYNx5148ZmrQxzvEmohN2pKVNiRT4TVoekF",
+		deprecated: true,
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		name: "MER/USDT",
+		address: "6HwcY27nbeb933UkEcxqJejtjWLfNQFWkGCjAVNes6g7",
+		deprecated: false,
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	},
+	{
+		name: "MER/USDC",
+		address: "G4LcexdCzzJUKZfqyVDQFzpkjhB1JoCNL8Kooxi9nJz5",
+		deprecated: false,
+		programId: "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+	}
+];
+
+var markets$1 = /*#__PURE__*/Object.freeze({
+__proto__: null,
+'default': markets
+});
+
+var tokenMints = [
+	{
+		address: "9n4nbM75f5Ui33ZbPYXn59EwSgE8CGsHtAeTH5YFeJ9E",
+		name: "BTC"
+	},
+	{
+		address: "2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk",
+		name: "ETH"
+	},
+	{
+		address: "AGFEad2et2ZJif9jaGpdMixQqvW5i81aBdvKe7PHNfz3",
+		name: "FTT"
+	},
+	{
+		address: "3JSf5tPeuscJGtaCp5giEiDhv51gQ4v3zWg8DGgyLfAB",
+		name: "YFI"
+	},
+	{
+		address: "CWE8jPTUYhdCTZYWPTe1o5DFqfdjzWKc9WKz6rSjQUdG",
+		name: "LINK"
+	},
+	{
+		address: "Ga2AXHpfAF6mv2ekZwcsJFqu7wB4NV331qNH7fW9Nst8",
+		name: "XRP"
+	},
+	{
+		address: "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB",
+		name: "USDT"
+	},
+	{
+		address: "BQcdHdAQW1hczDbBi9hiegXAR7A98Q9jx3X3iBBBDiq4",
+		name: "WUSDT"
+	},
+	{
+		address: "BXXkv6z8ykpG1yuvUDPgh732wzVHB69RnB9YgSYh3itW",
+		name: "WUSDC"
+	},
+	{
+		address: "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+		name: "USDC"
+	},
+	{
+		address: "MSRMcoVyrFxnSgo5uXwone5SKcGhT1KEJMFEkMEWf9L",
+		name: "MSRM"
+	},
+	{
+		address: "SRMuApVNdxXokk5GT7XD5cUUgXMBCoAz2LHeuAoKWRt",
+		name: "SRM"
+	},
+	{
+		address: "AR1Mtgh7zAtxuxGd2XPovXPVjcSdY3i4rQYisNadjfKy",
+		name: "SUSHI"
+	},
+	{
+		address: "SF3oTvfWzEP3DTwGSvUXRrGTvr75pdZNnBLAH9bzMuX",
+		name: "SXP"
+	},
+	{
+		address: "CsZ5LZkDS7h9TDKjrbL7VAwQZ9nsRu8vJLhRYfmGaN8K",
+		name: "ALEPH"
+	},
+	{
+		address: "BtZQfWqDGbk9Wf2rXEiWyQBdBY1etnUUn6zEphvVS7yN",
+		name: "HGET"
+	},
+	{
+		address: "5Fu5UUgbjpUvdBveb3a1JTNirL8rXtiYeSMWvKjtUNQv",
+		name: "CREAM"
+	},
+	{
+		address: "873KLxCbz7s9Kc4ZzgYRtNmhfkQrhfyWGZJBmyCbC3ei",
+		name: "UBXT"
+	},
+	{
+		address: "HqB7uswoVg4suaQiDP3wjxob1G5WdZ144zhdStwMCq7e",
+		name: "HNT"
+	},
+	{
+		address: "9S4t2NEAiJVMvPdRYKVrfJpBafPBLtvbvyS3DecojQHw",
+		name: "FRONT"
+	},
+	{
+		address: "6WNVCuxCGJzNjmMZoKyhZJwvJ5tYpsLyAtagzYASqBoF",
+		name: "AKRO"
+	},
+	{
+		address: "DJafV9qemGp7mLMEn5wrfqaFwxsbLgUsGVS16zKRk9kc",
+		name: "HXRO"
+	},
+	{
+		address: "DEhAasscXF4kEGxFgJ3bq4PpVGp5wyUxMRvn6TzGVHaw",
+		name: "UNI"
+	},
+	{
+		address: "GUohe4DJUA5FKPWo3joiPgsB7yzer7LpDmt1Vhzy3Zht",
+		name: "KEEP"
+	},
+	{
+		address: "GeDS162t9yGJuLEHPWXXGrb1zwkzinCgRwnT8vHYjKza",
+		name: "MATH"
+	},
+	{
+		address: "So11111111111111111111111111111111111111112",
+		name: "SOL"
+	},
+	{
+		address: "GXMvfY2jpQctDqZ9RoU3oWPhufKiCcFEfchvYumtX7jd",
+		name: "TOMO"
+	},
+	{
+		address: "EqWCKXfs3x47uVosDpTRgFniThL9Y8iCztJaapxbEaVX",
+		name: "LUA"
+	},
+	{
+		address: "9F9fNTT6qwjsu4X4yWYKZpsbw5qT7o6yR2i57JF2jagy",
+		name: "SWAG"
+	},
+	{
+		address: "EchesyfXePKdLtoiZSL8pBe8Myagyy8ZRqsACNCFGnvp",
+		name: "FIDA"
+	},
+	{
+		address: "kinXdEcpDQeHPEuQnqmUgtYykqKGVFq6CeVX5iAHJq6",
+		name: "KIN"
+	},
+	{
+		address: "MAPS41MDahZ9QdKXhVa4dWB9RuyfV4XqhyAZ8XcYepb",
+		name: "MAPS"
+	},
+	{
+		address: "z3dn17yLaGMKffVogeFHQ9zWVcXgqgf3PQnDsNs2g6M",
+		name: "OXY"
+	},
+	{
+		address: "4k3Dyjzvzp8eMZWUXbBCjEvwSkkk59S5iCNLY3QrkX6R",
+		name: "RAY"
+	},
+	{
+		address: "3K6rftdAaQYMPunrtNRHgnK2UAtjm2JwyT2oCiTDouYE",
+		name: "xCOPE"
+	},
+	{
+		address: "dK83wTVypEpa1pqiBbHY3MNuUnT3ADUZM4wk9VZXZEc",
+		name: "AAVE"
+	},
+	{
+		address: "DgHK9mfhMtUwwv54GChRrU54T2Em5cuszq2uMuen1ZVE",
+		name: "CEL"
+	},
+	{
+		address: "7ncCLJpP3MNww17LW8bRvx8odQQnubNtfNZBL5BgAEHW",
+		name: "RSR"
+	},
+	{
+		address: "6ry4WBDvAwAnrYJVv6MCog4J8zx6S3cPgSqnTsDZ73AR",
+		name: "TRYB"
+	},
+	{
+		address: "8HGyAAB1yoM1ttS7pXjHMa3dukTFGQggnFFH3hJZgzQh",
+		name: "COPE"
+	},
+	{
+		address: "MERt85fc5boKw3BW1eYdxonEuJNvXbiMbs6hvheau5K",
+		name: "MER"
+	}
+];
+
+var tokenMints$1 = /*#__PURE__*/Object.freeze({
+__proto__: null,
+'default': tokenMints
+});
+
+var require$$0 = getCjsExportFromNamespace(markets$1);
+
+var require$$1 = getCjsExportFromNamespace(tokenMints$1);
+
+var tokens_and_markets = createCommonjsModule(function (module, exports) {
+var __importDefault = (commonjsGlobal && commonjsGlobal.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MARKETS = exports.TOKEN_MINTS = exports.getLayoutVersion = exports.PROGRAM_LAYOUT_VERSIONS = void 0;
+
+const markets_json_1 = __importDefault(require$$0);
+const token_mints_json_1 = __importDefault(require$$1);
+exports.PROGRAM_LAYOUT_VERSIONS = {
+    '4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn': 1,
+    'BJ3jrUzddfuSrZHXSCxMUUQsjKEyLmuuyZebkcaFp2fg': 1,
+    'EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o': 2,
+    '9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin': 3,
+};
+function getLayoutVersion(programId) {
+    return exports.PROGRAM_LAYOUT_VERSIONS[programId.toString()] || 3;
+}
+exports.getLayoutVersion = getLayoutVersion;
+exports.TOKEN_MINTS = token_mints_json_1.default.map((mint) => {
+    return {
+        address: new index_esm.PublicKey(mint.address),
+        name: mint.name,
+    };
+});
+exports.MARKETS = markets_json_1.default.map((market) => {
+    return {
+        address: new index_esm.PublicKey(market.address),
+        name: market.name,
+        programId: new index_esm.PublicKey(market.programId),
+        deprecated: market.deprecated,
+    };
+});
+
+});
+
+var fees = createCommonjsModule(function (module, exports) {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getFeeTier = exports.getFeeRates = exports.supportsSrmFeeDiscounts = void 0;
+
+function supportsSrmFeeDiscounts(programId) {
+    return tokens_and_markets.getLayoutVersion(programId) > 1;
+}
+exports.supportsSrmFeeDiscounts = supportsSrmFeeDiscounts;
+function getFeeRates(feeTier) {
+    if (feeTier === 1) {
+        // SRM2
+        return { taker: 0.002, maker: -0.0003 };
+    }
+    else if (feeTier === 2) {
+        // SRM3
+        return { taker: 0.0018, maker: -0.0003 };
+    }
+    else if (feeTier === 3) {
+        // SRM4
+        return { taker: 0.0016, maker: -0.0003 };
+    }
+    else if (feeTier === 4) {
+        // SRM5
+        return { taker: 0.0014, maker: -0.0003 };
+    }
+    else if (feeTier === 5) {
+        // SRM6
+        return { taker: 0.0012, maker: -0.0003 };
+    }
+    else if (feeTier === 6) {
+        // MSRM
+        return { taker: 0.001, maker: -0.0005 };
+    }
+    // Base
+    return { taker: 0.0022, maker: -0.0003 };
+}
+exports.getFeeRates = getFeeRates;
+function getFeeTier(msrmBalance, srmBalance) {
+    if (msrmBalance >= 1) {
+        return 6;
+    }
+    else if (srmBalance >= 1000000) {
+        return 5;
+    }
+    else if (srmBalance >= 100000) {
+        return 4;
+    }
+    else if (srmBalance >= 10000) {
+        return 3;
+    }
+    else if (srmBalance >= 1000) {
+        return 2;
+    }
+    else if (srmBalance >= 100) {
+        return 1;
+    }
+    else {
+        return 0;
+    }
+}
+exports.getFeeTier = getFeeTier;
+
+});
+
+var market = createCommonjsModule(function (module, exports) {
+var __importDefault = (commonjsGlobal && commonjsGlobal.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getMintDecimals = exports.Orderbook = exports.ORDERBOOK_LAYOUT = exports.OpenOrders = exports._OPEN_ORDERS_LAYOUT_V2 = exports._OPEN_ORDERS_LAYOUT_V1 = exports.Market = exports._MARKET_STATE_LAYOUT_V2 = exports._MARKET_STAT_LAYOUT_V1 = void 0;
+
+
+
+
+const bn_js_1 = __importDefault(bn$1);
+
+
+
+
+
+
+exports._MARKET_STAT_LAYOUT_V1 = Layout_1.struct([
+    Layout_1.blob(5),
+    layout.accountFlagsLayout('accountFlags'),
+    layout.publicKeyLayout('ownAddress'),
+    layout.u64('vaultSignerNonce'),
+    layout.publicKeyLayout('baseMint'),
+    layout.publicKeyLayout('quoteMint'),
+    layout.publicKeyLayout('baseVault'),
+    layout.u64('baseDepositsTotal'),
+    layout.u64('baseFeesAccrued'),
+    layout.publicKeyLayout('quoteVault'),
+    layout.u64('quoteDepositsTotal'),
+    layout.u64('quoteFeesAccrued'),
+    layout.u64('quoteDustThreshold'),
+    layout.publicKeyLayout('requestQueue'),
+    layout.publicKeyLayout('eventQueue'),
+    layout.publicKeyLayout('bids'),
+    layout.publicKeyLayout('asks'),
+    layout.u64('baseLotSize'),
+    layout.u64('quoteLotSize'),
+    layout.u64('feeRateBps'),
+    Layout_1.blob(7),
+]);
+exports._MARKET_STATE_LAYOUT_V2 = Layout_1.struct([
+    Layout_1.blob(5),
+    layout.accountFlagsLayout('accountFlags'),
+    layout.publicKeyLayout('ownAddress'),
+    layout.u64('vaultSignerNonce'),
+    layout.publicKeyLayout('baseMint'),
+    layout.publicKeyLayout('quoteMint'),
+    layout.publicKeyLayout('baseVault'),
+    layout.u64('baseDepositsTotal'),
+    layout.u64('baseFeesAccrued'),
+    layout.publicKeyLayout('quoteVault'),
+    layout.u64('quoteDepositsTotal'),
+    layout.u64('quoteFeesAccrued'),
+    layout.u64('quoteDustThreshold'),
+    layout.publicKeyLayout('requestQueue'),
+    layout.publicKeyLayout('eventQueue'),
+    layout.publicKeyLayout('bids'),
+    layout.publicKeyLayout('asks'),
+    layout.u64('baseLotSize'),
+    layout.u64('quoteLotSize'),
+    layout.u64('feeRateBps'),
+    layout.u64('referrerRebatesAccrued'),
+    Layout_1.blob(7),
+]);
+class Market {
+    constructor(decoded, baseMintDecimals, quoteMintDecimals, options = {}, programId) {
+        const { skipPreflight = false, commitment = 'recent' } = options;
+        if (!decoded.accountFlags.initialized || !decoded.accountFlags.market) {
+            throw new Error('Invalid market state');
+        }
+        this._decoded = decoded;
+        this._baseSplTokenDecimals = baseMintDecimals;
+        this._quoteSplTokenDecimals = quoteMintDecimals;
+        this._skipPreflight = skipPreflight;
+        this._commitment = commitment;
+        this._programId = programId;
+        this._openOrdersAccountsCache = {};
+        this._feeDiscountKeysCache = {};
+    }
+    static getLayout(programId) {
+        if (tokens_and_markets.getLayoutVersion(programId) === 1) {
+            return exports._MARKET_STAT_LAYOUT_V1;
+        }
+        return exports._MARKET_STATE_LAYOUT_V2;
+    }
+    static async findAccountsByMints(connection, baseMintAddress, quoteMintAddress, programId) {
+        const filters = [
+            {
+                memcmp: {
+                    offset: this.getLayout(programId).offsetOf('baseMint'),
+                    bytes: baseMintAddress.toBase58(),
+                },
+            },
+            {
+                memcmp: {
+                    offset: Market.getLayout(programId).offsetOf('quoteMint'),
+                    bytes: quoteMintAddress.toBase58(),
+                },
+            },
+        ];
+        return getFilteredProgramAccounts(connection, programId, filters);
+    }
+    static async load(connection, address, options = {}, programId) {
+        const { owner, data } = throwIfNull(await connection.getAccountInfo(address), 'Market not found');
+        if (!owner.equals(programId)) {
+            throw new Error('Address not owned by program: ' + owner.toBase58());
+        }
+        const decoded = this.getLayout(programId).decode(data);
+        if (!decoded.accountFlags.initialized ||
+            !decoded.accountFlags.market ||
+            !decoded.ownAddress.equals(address)) {
+            throw new Error('Invalid market');
+        }
+        const [baseMintDecimals, quoteMintDecimals] = await Promise.all([
+            getMintDecimals(connection, decoded.baseMint),
+            getMintDecimals(connection, decoded.quoteMint),
+        ]);
+        return new Market(decoded, baseMintDecimals, quoteMintDecimals, options, programId);
+    }
+    get programId() {
+        return this._programId;
+    }
+    get address() {
+        return this._decoded.ownAddress;
+    }
+    get publicKey() {
+        return this.address;
+    }
+    get baseMintAddress() {
+        return this._decoded.baseMint;
+    }
+    get quoteMintAddress() {
+        return this._decoded.quoteMint;
+    }
+    get bidsAddress() {
+        return this._decoded.bids;
+    }
+    get asksAddress() {
+        return this._decoded.asks;
+    }
+    async loadBids(connection) {
+        const { data } = throwIfNull(await connection.getAccountInfo(this._decoded.bids));
+        return Orderbook.decode(this, data);
+    }
+    async loadAsks(connection) {
+        const { data } = throwIfNull(await connection.getAccountInfo(this._decoded.asks));
+        return Orderbook.decode(this, data);
+    }
+    async loadOrdersForOwner(connection, ownerAddress, cacheDurationMs = 0) {
+        const [bids, asks, openOrdersAccounts] = await Promise.all([
+            this.loadBids(connection),
+            this.loadAsks(connection),
+            this.findOpenOrdersAccountsForOwner(connection, ownerAddress, cacheDurationMs),
+        ]);
+        return this.filterForOpenOrders(bids, asks, openOrdersAccounts);
+    }
+    filterForOpenOrders(bids, asks, openOrdersAccounts) {
+        return [...bids, ...asks].filter((order) => openOrdersAccounts.some((openOrders) => order.openOrdersAddress.equals(openOrders.address)));
+    }
+    async findBaseTokenAccountsForOwner(connection, ownerAddress, includeUnwrappedSol = false) {
+        if (this.baseMintAddress.equals(tokenInstructions.WRAPPED_SOL_MINT) && includeUnwrappedSol) {
+            const [wrapped, unwrapped] = await Promise.all([
+                this.findBaseTokenAccountsForOwner(connection, ownerAddress, false),
+                connection.getAccountInfo(ownerAddress),
+            ]);
+            if (unwrapped !== null) {
+                return [{ pubkey: ownerAddress, account: unwrapped }, ...wrapped];
+            }
+            return wrapped;
+        }
+        return await this.getTokenAccountsByOwnerForMint(connection, ownerAddress, this.baseMintAddress);
+    }
+    async getTokenAccountsByOwnerForMint(connection, ownerAddress, mintAddress) {
+        return (await connection.getTokenAccountsByOwner(ownerAddress, {
+            mint: mintAddress,
+        })).value;
+    }
+    async findQuoteTokenAccountsForOwner(connection, ownerAddress, includeUnwrappedSol = false) {
+        if (this.quoteMintAddress.equals(tokenInstructions.WRAPPED_SOL_MINT) && includeUnwrappedSol) {
+            const [wrapped, unwrapped] = await Promise.all([
+                this.findQuoteTokenAccountsForOwner(connection, ownerAddress, false),
+                connection.getAccountInfo(ownerAddress),
+            ]);
+            if (unwrapped !== null) {
+                return [{ pubkey: ownerAddress, account: unwrapped }, ...wrapped];
+            }
+            return wrapped;
+        }
+        return await this.getTokenAccountsByOwnerForMint(connection, ownerAddress, this.quoteMintAddress);
+    }
+    async findOpenOrdersAccountsForOwner(connection, ownerAddress, cacheDurationMs = 0) {
+        const strOwner = ownerAddress.toBase58();
+        const now = new Date().getTime();
+        if (strOwner in this._openOrdersAccountsCache &&
+            now - this._openOrdersAccountsCache[strOwner].ts < cacheDurationMs) {
+            return this._openOrdersAccountsCache[strOwner].accounts;
+        }
+        const openOrdersAccountsForOwner = await OpenOrders.findForMarketAndOwner(connection, this.address, ownerAddress, this._programId);
+        this._openOrdersAccountsCache[strOwner] = {
+            accounts: openOrdersAccountsForOwner,
+            ts: now,
+        };
+        return openOrdersAccountsForOwner;
+    }
+    async placeOrder(connection, { owner, payer, side, price, size, orderType = 'limit', clientId, openOrdersAddressKey, openOrdersAccount, feeDiscountPubkey, }) {
+        const { transaction, signers, } = await this.makePlaceOrderTransaction(connection, {
+            owner,
+            payer,
+            side,
+            price,
+            size,
+            orderType,
+            clientId,
+            openOrdersAddressKey,
+            openOrdersAccount,
+            feeDiscountPubkey,
+        });
+        return await this._sendTransaction(connection, transaction, [
+            owner,
+            ...signers,
+        ]);
+    }
+    getSplTokenBalanceFromAccountInfo(accountInfo, decimals) {
+        return divideBnToNumber(new bn_js_1.default(accountInfo.data.slice(64, 72), 10, 'le'), new bn_js_1.default(10).pow(new bn_js_1.default(decimals)));
+    }
+    get supportsSrmFeeDiscounts() {
+        return fees.supportsSrmFeeDiscounts(this._programId);
+    }
+    get supportsReferralFees() {
+        return tokens_and_markets.getLayoutVersion(this._programId) > 1;
+    }
+    get usesRequestQueue() {
+        return tokens_and_markets.getLayoutVersion(this._programId) <= 2;
+    }
+    async findFeeDiscountKeys(connection, ownerAddress, cacheDurationMs = 0) {
+        let sortedAccounts = [];
+        const now = new Date().getTime();
+        const strOwner = ownerAddress.toBase58();
+        if (strOwner in this._feeDiscountKeysCache &&
+            now - this._feeDiscountKeysCache[strOwner].ts < cacheDurationMs) {
+            return this._feeDiscountKeysCache[strOwner].accounts;
+        }
+        if (this.supportsSrmFeeDiscounts) {
+            // Fee discounts based on (M)SRM holdings supported in newer versions
+            const msrmAccounts = (await this.getTokenAccountsByOwnerForMint(connection, ownerAddress, tokenInstructions.MSRM_MINT)).map(({ pubkey, account }) => {
+                const balance = this.getSplTokenBalanceFromAccountInfo(account, tokenInstructions.MSRM_DECIMALS);
+                return {
+                    pubkey,
+                    mint: tokenInstructions.MSRM_MINT,
+                    balance,
+                    feeTier: fees.getFeeTier(balance, 0),
+                };
+            });
+            const srmAccounts = (await this.getTokenAccountsByOwnerForMint(connection, ownerAddress, tokenInstructions.SRM_MINT)).map(({ pubkey, account }) => {
+                const balance = this.getSplTokenBalanceFromAccountInfo(account, tokenInstructions.SRM_DECIMALS);
+                return {
+                    pubkey,
+                    mint: tokenInstructions.SRM_MINT,
+                    balance,
+                    feeTier: fees.getFeeTier(0, balance),
+                };
+            });
+            sortedAccounts = msrmAccounts.concat(srmAccounts).sort((a, b) => {
+                if (a.feeTier > b.feeTier) {
+                    return -1;
+                }
+                else if (a.feeTier < b.feeTier) {
+                    return 1;
+                }
+                else {
+                    if (a.balance > b.balance) {
+                        return -1;
+                    }
+                    else if (a.balance < b.balance) {
+                        return 1;
+                    }
+                    else {
+                        return 0;
+                    }
+                }
+            });
+        }
+        this._feeDiscountKeysCache[strOwner] = {
+            accounts: sortedAccounts,
+            ts: now,
+        };
+        return sortedAccounts;
+    }
+    async findBestFeeDiscountKey(connection, ownerAddress, cacheDurationMs = 30000) {
+        const accounts = await this.findFeeDiscountKeys(connection, ownerAddress, cacheDurationMs);
+        if (accounts.length > 0) {
+            return {
+                pubkey: accounts[0].pubkey,
+                feeTier: accounts[0].feeTier,
+            };
+        }
+        return {
+            pubkey: null,
+            feeTier: 0,
+        };
+    }
+    async makePlaceOrderTransaction(connection, { owner, payer, side, price, size, orderType = 'limit', clientId, openOrdersAddressKey, openOrdersAccount, feeDiscountPubkey = undefined, selfTradeBehavior = 'decrementTake', }, cacheDurationMs = 0, feeDiscountPubkeyCacheDurationMs = 0) {
+        var _a, _b;
+        // @ts-ignore
+        const ownerAddress = (_a = owner.publicKey) !== null && _a !== void 0 ? _a : owner;
+        const openOrdersAccounts = await this.findOpenOrdersAccountsForOwner(connection, ownerAddress, cacheDurationMs);
+        const transaction = new index_esm.Transaction();
+        const signers = [];
+        // Fetch an SRM fee discount key if the market supports discounts and it is not supplied
+        let useFeeDiscountPubkey;
+        if (feeDiscountPubkey) {
+            useFeeDiscountPubkey = feeDiscountPubkey;
+        }
+        else if (feeDiscountPubkey === undefined &&
+            this.supportsSrmFeeDiscounts) {
+            useFeeDiscountPubkey = (await this.findBestFeeDiscountKey(connection, ownerAddress, feeDiscountPubkeyCacheDurationMs)).pubkey;
+        }
+        else {
+            useFeeDiscountPubkey = null;
+        }
+        let openOrdersAddress;
+        if (openOrdersAccounts.length === 0) {
+            let account;
+            if (openOrdersAccount) {
+                account = openOrdersAccount;
+            }
+            else {
+                account = new index_esm.Account();
+            }
+            transaction.add(await OpenOrders.makeCreateAccountTransaction(connection, this.address, ownerAddress, account.publicKey, this._programId));
+            openOrdersAddress = account.publicKey;
+            signers.push(account);
+            // refresh the cache of open order accounts on next fetch
+            this._openOrdersAccountsCache[ownerAddress.toBase58()].ts = 0;
+        }
+        else if (openOrdersAccount) {
+            openOrdersAddress = openOrdersAccount.publicKey;
+        }
+        else if (openOrdersAddressKey) {
+            openOrdersAddress = openOrdersAddressKey;
+        }
+        else {
+            openOrdersAddress = openOrdersAccounts[0].address;
+        }
+        let wrappedSolAccount = null;
+        if (payer.equals(ownerAddress)) {
+            if ((side === 'buy' && this.quoteMintAddress.equals(tokenInstructions.WRAPPED_SOL_MINT)) ||
+                (side === 'sell' && this.baseMintAddress.equals(tokenInstructions.WRAPPED_SOL_MINT))) {
+                wrappedSolAccount = new index_esm.Account();
+                let lamports;
+                if (side === 'buy') {
+                    lamports = Math.round(price * size * 1.01 * index_esm.LAMPORTS_PER_SOL);
+                    if (openOrdersAccounts.length > 0) {
+                        lamports -= openOrdersAccounts[0].quoteTokenFree.toNumber();
+                    }
+                }
+                else {
+                    lamports = Math.round(size * index_esm.LAMPORTS_PER_SOL);
+                    if (openOrdersAccounts.length > 0) {
+                        lamports -= openOrdersAccounts[0].baseTokenFree.toNumber();
+                    }
+                }
+                lamports = Math.max(lamports, 0) + 1e7;
+                transaction.add(index_esm.SystemProgram.createAccount({
+                    fromPubkey: ownerAddress,
+                    newAccountPubkey: wrappedSolAccount.publicKey,
+                    lamports,
+                    space: 165,
+                    programId: tokenInstructions.TOKEN_PROGRAM_ID,
+                }));
+                transaction.add(tokenInstructions.initializeAccount({
+                    account: wrappedSolAccount.publicKey,
+                    mint: tokenInstructions.WRAPPED_SOL_MINT,
+                    owner: ownerAddress,
+                }));
+                signers.push(wrappedSolAccount);
+            }
+            else {
+                throw new Error('Invalid payer account');
+            }
+        }
+        const placeOrderInstruction = this.makePlaceOrderInstruction(connection, {
+            owner,
+            payer: (_b = wrappedSolAccount === null || wrappedSolAccount === void 0 ? void 0 : wrappedSolAccount.publicKey) !== null && _b !== void 0 ? _b : payer,
+            side,
+            price,
+            size,
+            orderType,
+            clientId,
+            openOrdersAddressKey: openOrdersAddress,
+            feeDiscountPubkey: useFeeDiscountPubkey,
+            selfTradeBehavior,
+        });
+        transaction.add(placeOrderInstruction);
+        if (wrappedSolAccount) {
+            transaction.add(tokenInstructions.closeAccount({
+                source: wrappedSolAccount.publicKey,
+                destination: ownerAddress,
+                owner: ownerAddress,
+            }));
+        }
+        return { transaction, signers, payer: owner };
+    }
+    makePlaceOrderInstruction(connection, { owner, payer, side, price, size, orderType = 'limit', clientId, openOrdersAddressKey, openOrdersAccount, feeDiscountPubkey = null, selfTradeBehavior = 'decrementTake', }) {
+        var _a;
+        // @ts-ignore
+        const ownerAddress = (_a = owner.publicKey) !== null && _a !== void 0 ? _a : owner;
+        if (this.baseSizeNumberToLots(size).lte(new bn_js_1.default(0))) {
+            throw new Error('size too small');
+        }
+        if (this.priceNumberToLots(price).lte(new bn_js_1.default(0))) {
+            throw new Error('invalid price');
+        }
+        if (!this.supportsSrmFeeDiscounts) {
+            feeDiscountPubkey = null;
+        }
+        if (this.usesRequestQueue) {
+            return instructions.DexInstructions.newOrder({
+                market: this.address,
+                requestQueue: this._decoded.requestQueue,
+                baseVault: this._decoded.baseVault,
+                quoteVault: this._decoded.quoteVault,
+                openOrders: openOrdersAccount
+                    ? openOrdersAccount.publicKey
+                    : openOrdersAddressKey,
+                owner: ownerAddress,
+                payer,
+                side,
+                limitPrice: this.priceNumberToLots(price),
+                maxQuantity: this.baseSizeNumberToLots(size),
+                orderType,
+                clientId,
+                programId: this._programId,
+                feeDiscountPubkey,
+            });
+        }
+        else {
+            return instructions.DexInstructions.newOrderV3({
+                market: this.address,
+                bids: this._decoded.bids,
+                asks: this._decoded.asks,
+                requestQueue: this._decoded.requestQueue,
+                eventQueue: this._decoded.eventQueue,
+                baseVault: this._decoded.baseVault,
+                quoteVault: this._decoded.quoteVault,
+                openOrders: openOrdersAccount
+                    ? openOrdersAccount.publicKey
+                    : openOrdersAddressKey,
+                owner: ownerAddress,
+                payer,
+                side,
+                limitPrice: this.priceNumberToLots(price),
+                maxBaseQuantity: this.baseSizeNumberToLots(size),
+                maxQuoteQuantity: new bn_js_1.default(this._decoded.quoteLotSize.toNumber()).mul(this.baseSizeNumberToLots(size).mul(this.priceNumberToLots(price))),
+                orderType,
+                clientId,
+                programId: this._programId,
+                selfTradeBehavior,
+                feeDiscountPubkey,
+            });
+        }
+    }
+    async _sendTransaction(connection, transaction, signers) {
+        const signature = await connection.sendTransaction(transaction, signers, {
+            skipPreflight: this._skipPreflight,
+        });
+        const { value } = await connection.confirmTransaction(signature, this._commitment);
+        if (value === null || value === void 0 ? void 0 : value.err) {
+            throw new Error(JSON.stringify(value.err));
+        }
+        return signature;
+    }
+    async cancelOrderByClientId(connection, owner, openOrders, clientId) {
+        const transaction = await this.makeCancelOrderByClientIdTransaction(connection, owner.publicKey, openOrders, clientId);
+        return await this._sendTransaction(connection, transaction, [owner]);
+    }
+    async makeCancelOrderByClientIdTransaction(connection, owner, openOrders, clientId) {
+        const transaction = new index_esm.Transaction();
+        if (this.usesRequestQueue) {
+            transaction.add(instructions.DexInstructions.cancelOrderByClientId({
+                market: this.address,
+                owner,
+                openOrders,
+                requestQueue: this._decoded.requestQueue,
+                clientId,
+                programId: this._programId,
+            }));
+        }
+        else {
+            transaction.add(instructions.DexInstructions.cancelOrderByClientIdV2({
+                market: this.address,
+                openOrders,
+                owner,
+                bids: this._decoded.bids,
+                asks: this._decoded.asks,
+                eventQueue: this._decoded.eventQueue,
+                clientId,
+                programId: this._programId,
+            }));
+        }
+        return transaction;
+    }
+    async cancelOrder(connection, owner, order) {
+        const transaction = await this.makeCancelOrderTransaction(connection, owner.publicKey, order);
+        return await this._sendTransaction(connection, transaction, [owner]);
+    }
+    async makeCancelOrderTransaction(connection, owner, order) {
+        const transaction = new index_esm.Transaction();
+        transaction.add(this.makeCancelOrderInstruction(connection, owner, order));
+        return transaction;
+    }
+    makeCancelOrderInstruction(connection, owner, order) {
+        if (this.usesRequestQueue) {
+            return instructions.DexInstructions.cancelOrder({
+                market: this.address,
+                owner,
+                openOrders: order.openOrdersAddress,
+                requestQueue: this._decoded.requestQueue,
+                side: order.side,
+                orderId: order.orderId,
+                openOrdersSlot: order.openOrdersSlot,
+                programId: this._programId,
+            });
+        }
+        else {
+            return instructions.DexInstructions.cancelOrderV2({
+                market: this.address,
+                owner,
+                openOrders: order.openOrdersAddress,
+                bids: this._decoded.bids,
+                asks: this._decoded.asks,
+                eventQueue: this._decoded.eventQueue,
+                side: order.side,
+                orderId: order.orderId,
+                openOrdersSlot: order.openOrdersSlot,
+                programId: this._programId,
+            });
+        }
+    }
+    async settleFunds(connection, owner, openOrders, baseWallet, quoteWallet, referrerQuoteWallet = null) {
+        if (!openOrders.owner.equals(owner.publicKey)) {
+            throw new Error('Invalid open orders account');
+        }
+        if (referrerQuoteWallet && !this.supportsReferralFees) {
+            throw new Error('This program ID does not support referrerQuoteWallet');
+        }
+        const { transaction, signers } = await this.makeSettleFundsTransaction(connection, openOrders, baseWallet, quoteWallet, referrerQuoteWallet);
+        return await this._sendTransaction(connection, transaction, [
+            owner,
+            ...signers,
+        ]);
+    }
+    async makeSettleFundsTransaction(connection, openOrders, baseWallet, quoteWallet, referrerQuoteWallet = null) {
+        // @ts-ignore
+        const vaultSigner = await index_esm.PublicKey.createProgramAddress([
+            this.address.toBuffer(),
+            this._decoded.vaultSignerNonce.toArrayLike(buffer__default['default'].Buffer, 'le', 8),
+        ], this._programId);
+        const transaction = new index_esm.Transaction();
+        const signers = [];
+        let wrappedSolAccount = null;
+        if ((this.baseMintAddress.equals(tokenInstructions.WRAPPED_SOL_MINT) &&
+            baseWallet.equals(openOrders.owner)) ||
+            (this.quoteMintAddress.equals(tokenInstructions.WRAPPED_SOL_MINT) &&
+                quoteWallet.equals(openOrders.owner))) {
+            wrappedSolAccount = new index_esm.Account();
+            transaction.add(index_esm.SystemProgram.createAccount({
+                fromPubkey: openOrders.owner,
+                newAccountPubkey: wrappedSolAccount.publicKey,
+                lamports: await connection.getMinimumBalanceForRentExemption(165),
+                space: 165,
+                programId: tokenInstructions.TOKEN_PROGRAM_ID,
+            }));
+            transaction.add(tokenInstructions.initializeAccount({
+                account: wrappedSolAccount.publicKey,
+                mint: tokenInstructions.WRAPPED_SOL_MINT,
+                owner: openOrders.owner,
+            }));
+            signers.push(wrappedSolAccount);
+        }
+        transaction.add(instructions.DexInstructions.settleFunds({
+            market: this.address,
+            openOrders: openOrders.address,
+            owner: openOrders.owner,
+            baseVault: this._decoded.baseVault,
+            quoteVault: this._decoded.quoteVault,
+            baseWallet: baseWallet.equals(openOrders.owner) && wrappedSolAccount
+                ? wrappedSolAccount.publicKey
+                : baseWallet,
+            quoteWallet: quoteWallet.equals(openOrders.owner) && wrappedSolAccount
+                ? wrappedSolAccount.publicKey
+                : quoteWallet,
+            vaultSigner,
+            programId: this._programId,
+            referrerQuoteWallet,
+        }));
+        if (wrappedSolAccount) {
+            transaction.add(tokenInstructions.closeAccount({
+                source: wrappedSolAccount.publicKey,
+                destination: openOrders.owner,
+                owner: openOrders.owner,
+            }));
+        }
+        return { transaction, signers, payer: openOrders.owner };
+    }
+    async matchOrders(connection, feePayer, limit) {
+        const tx = this.makeMatchOrdersTransaction(limit);
+        return await this._sendTransaction(connection, tx, [feePayer]);
+    }
+    makeMatchOrdersTransaction(limit) {
+        const tx = new index_esm.Transaction();
+        tx.add(instructions.DexInstructions.matchOrders({
+            market: this.address,
+            requestQueue: this._decoded.requestQueue,
+            eventQueue: this._decoded.eventQueue,
+            bids: this._decoded.bids,
+            asks: this._decoded.asks,
+            baseVault: this._decoded.baseVault,
+            quoteVault: this._decoded.quoteVault,
+            limit,
+            programId: this._programId,
+        }));
+        return tx;
+    }
+    async loadRequestQueue(connection) {
+        const { data } = throwIfNull(await connection.getAccountInfo(this._decoded.requestQueue));
+        return queue.decodeRequestQueue(data);
+    }
+    async loadEventQueue(connection) {
+        const { data } = throwIfNull(await connection.getAccountInfo(this._decoded.eventQueue));
+        return queue.decodeEventQueue(data);
+    }
+    async loadFills(connection, limit = 100) {
+        // TODO: once there's a separate source of fills use that instead
+        const { data } = throwIfNull(await connection.getAccountInfo(this._decoded.eventQueue));
+        const events = queue.decodeEventQueue(data, limit);
+        return events
+            .filter((event) => event.eventFlags.fill && event.nativeQuantityPaid.gtn(0))
+            .map(this.parseFillEvent.bind(this));
+    }
+    parseFillEvent(event) {
+        let size, price, side, priceBeforeFees;
+        if (event.eventFlags.bid) {
+            side = 'buy';
+            priceBeforeFees = event.eventFlags.maker
+                ? event.nativeQuantityPaid.add(event.nativeFeeOrRebate)
+                : event.nativeQuantityPaid.sub(event.nativeFeeOrRebate);
+            price = divideBnToNumber(priceBeforeFees.mul(this._baseSplTokenMultiplier), this._quoteSplTokenMultiplier.mul(event.nativeQuantityReleased));
+            size = divideBnToNumber(event.nativeQuantityReleased, this._baseSplTokenMultiplier);
+        }
+        else {
+            side = 'sell';
+            priceBeforeFees = event.eventFlags.maker
+                ? event.nativeQuantityReleased.sub(event.nativeFeeOrRebate)
+                : event.nativeQuantityReleased.add(event.nativeFeeOrRebate);
+            price = divideBnToNumber(priceBeforeFees.mul(this._baseSplTokenMultiplier), this._quoteSplTokenMultiplier.mul(event.nativeQuantityPaid));
+            size = divideBnToNumber(event.nativeQuantityPaid, this._baseSplTokenMultiplier);
+        }
+        return {
+            ...event,
+            side,
+            price,
+            feeCost: this.quoteSplSizeToNumber(event.nativeFeeOrRebate) *
+                (event.eventFlags.maker ? -1 : 1),
+            size,
+        };
+    }
+    get _baseSplTokenMultiplier() {
+        return new bn_js_1.default(10).pow(new bn_js_1.default(this._baseSplTokenDecimals));
+    }
+    get _quoteSplTokenMultiplier() {
+        return new bn_js_1.default(10).pow(new bn_js_1.default(this._quoteSplTokenDecimals));
+    }
+    priceLotsToNumber(price) {
+        return divideBnToNumber(price.mul(this._decoded.quoteLotSize).mul(this._baseSplTokenMultiplier), this._decoded.baseLotSize.mul(this._quoteSplTokenMultiplier));
+    }
+    priceNumberToLots(price) {
+        return new bn_js_1.default(Math.round((price *
+            Math.pow(10, this._quoteSplTokenDecimals) *
+            this._decoded.baseLotSize.toNumber()) /
+            (Math.pow(10, this._baseSplTokenDecimals) *
+                this._decoded.quoteLotSize.toNumber())));
+    }
+    baseSplSizeToNumber(size) {
+        return divideBnToNumber(size, this._baseSplTokenMultiplier);
+    }
+    quoteSplSizeToNumber(size) {
+        return divideBnToNumber(size, this._quoteSplTokenMultiplier);
+    }
+    baseSizeLotsToNumber(size) {
+        return divideBnToNumber(size.mul(this._decoded.baseLotSize), this._baseSplTokenMultiplier);
+    }
+    baseSizeNumberToLots(size) {
+        const native = new bn_js_1.default(Math.round(size * Math.pow(10, this._baseSplTokenDecimals)));
+        // rounds down to the nearest lot size
+        return native.div(this._decoded.baseLotSize);
+    }
+    quoteSizeLotsToNumber(size) {
+        return divideBnToNumber(size.mul(this._decoded.quoteLotSize), this._quoteSplTokenMultiplier);
+    }
+    quoteSizeNumberToLots(size) {
+        const native = new bn_js_1.default(Math.round(size * Math.pow(10, this._quoteSplTokenDecimals)));
+        // rounds down to the nearest lot size
+        return native.div(this._decoded.quoteLotSize);
+    }
+    get minOrderSize() {
+        return this.baseSizeLotsToNumber(new bn_js_1.default(1));
+    }
+    get tickSize() {
+        return this.priceLotsToNumber(new bn_js_1.default(1));
+    }
+}
+exports.Market = Market;
+exports._OPEN_ORDERS_LAYOUT_V1 = Layout_1.struct([
+    Layout_1.blob(5),
+    layout.accountFlagsLayout('accountFlags'),
+    layout.publicKeyLayout('market'),
+    layout.publicKeyLayout('owner'),
+    // These are in spl-token (i.e. not lot) units
+    layout.u64('baseTokenFree'),
+    layout.u64('baseTokenTotal'),
+    layout.u64('quoteTokenFree'),
+    layout.u64('quoteTokenTotal'),
+    layout.u128('freeSlotBits'),
+    layout.u128('isBidBits'),
+    Layout_1.seq(layout.u128(), 128, 'orders'),
+    Layout_1.seq(layout.u64(), 128, 'clientIds'),
+    Layout_1.blob(7),
+]);
+exports._OPEN_ORDERS_LAYOUT_V2 = Layout_1.struct([
+    Layout_1.blob(5),
+    layout.accountFlagsLayout('accountFlags'),
+    layout.publicKeyLayout('market'),
+    layout.publicKeyLayout('owner'),
+    // These are in spl-token (i.e. not lot) units
+    layout.u64('baseTokenFree'),
+    layout.u64('baseTokenTotal'),
+    layout.u64('quoteTokenFree'),
+    layout.u64('quoteTokenTotal'),
+    layout.u128('freeSlotBits'),
+    layout.u128('isBidBits'),
+    Layout_1.seq(layout.u128(), 128, 'orders'),
+    Layout_1.seq(layout.u64(), 128, 'clientIds'),
+    layout.u64('referrerRebatesAccrued'),
+    Layout_1.blob(7),
+]);
+class OpenOrders {
+    constructor(address, decoded, programId) {
+        this.address = address;
+        this._programId = programId;
+        Object.assign(this, decoded);
+    }
+    static getLayout(programId) {
+        if (tokens_and_markets.getLayoutVersion(programId) === 1) {
+            return exports._OPEN_ORDERS_LAYOUT_V1;
+        }
+        return exports._OPEN_ORDERS_LAYOUT_V2;
+    }
+    static async findForOwner(connection, ownerAddress, programId) {
+        const filters = [
+            {
+                memcmp: {
+                    offset: this.getLayout(programId).offsetOf('owner'),
+                    bytes: ownerAddress.toBase58(),
+                },
+            },
+            {
+                dataSize: this.getLayout(programId).span,
+            },
+        ];
+        const accounts = await getFilteredProgramAccounts(connection, programId, filters);
+        return accounts.map(({ publicKey, accountInfo }) => OpenOrders.fromAccountInfo(publicKey, accountInfo, programId));
+    }
+    static async findForMarketAndOwner(connection, marketAddress, ownerAddress, programId) {
+        const filters = [
+            {
+                memcmp: {
+                    offset: this.getLayout(programId).offsetOf('market'),
+                    bytes: marketAddress.toBase58(),
+                },
+            },
+            {
+                memcmp: {
+                    offset: this.getLayout(programId).offsetOf('owner'),
+                    bytes: ownerAddress.toBase58(),
+                },
+            },
+            {
+                dataSize: this.getLayout(programId).span,
+            },
+        ];
+        const accounts = await getFilteredProgramAccounts(connection, programId, filters);
+        return accounts.map(({ publicKey, accountInfo }) => OpenOrders.fromAccountInfo(publicKey, accountInfo, programId));
+    }
+    static async load(connection, address, programId) {
+        const accountInfo = await connection.getAccountInfo(address);
+        if (accountInfo === null) {
+            throw new Error('Open orders account not found');
+        }
+        return OpenOrders.fromAccountInfo(address, accountInfo, programId);
+    }
+    static fromAccountInfo(address, accountInfo, programId) {
+        const { owner, data } = accountInfo;
+        if (!owner.equals(programId)) {
+            throw new Error('Address not owned by program');
+        }
+        const decoded = this.getLayout(programId).decode(data);
+        if (!decoded.accountFlags.initialized || !decoded.accountFlags.openOrders) {
+            throw new Error('Invalid open orders account');
+        }
+        return new OpenOrders(address, decoded, programId);
+    }
+    static async makeCreateAccountTransaction(connection, marketAddress, ownerAddress, newAccountAddress, programId) {
+        return index_esm.SystemProgram.createAccount({
+            fromPubkey: ownerAddress,
+            newAccountPubkey: newAccountAddress,
+            lamports: await connection.getMinimumBalanceForRentExemption(this.getLayout(programId).span),
+            space: this.getLayout(programId).span,
+            programId,
+        });
+    }
+    get publicKey() {
+        return this.address;
+    }
+}
+exports.OpenOrders = OpenOrders;
+exports.ORDERBOOK_LAYOUT = Layout_1.struct([
+    Layout_1.blob(5),
+    layout.accountFlagsLayout('accountFlags'),
+    slab.SLAB_LAYOUT.replicate('slab'),
+    Layout_1.blob(7),
+]);
+class Orderbook {
+    constructor(market, accountFlags, slab) {
+        if (!accountFlags.initialized || !(accountFlags.bids ^ accountFlags.asks)) {
+            throw new Error('Invalid orderbook');
+        }
+        this.market = market;
+        this.isBids = accountFlags.bids;
+        this.slab = slab;
+    }
+    static get LAYOUT() {
+        return exports.ORDERBOOK_LAYOUT;
+    }
+    static decode(market, buffer) {
+        const { accountFlags, slab } = exports.ORDERBOOK_LAYOUT.decode(buffer);
+        return new Orderbook(market, accountFlags, slab);
+    }
+    getL2(depth) {
+        const descending = this.isBids;
+        const levels = []; // (price, size)
+        for (const { key, quantity } of this.slab.items(descending)) {
+            const price = getPriceFromKey(key);
+            if (levels.length > 0 && levels[levels.length - 1][0].eq(price)) {
+                levels[levels.length - 1][1].iadd(quantity);
+            }
+            else if (levels.length === depth) {
+                break;
+            }
+            else {
+                levels.push([price, quantity]);
+            }
+        }
+        return levels.map(([priceLots, sizeLots]) => [
+            this.market.priceLotsToNumber(priceLots),
+            this.market.baseSizeLotsToNumber(sizeLots),
+            priceLots,
+            sizeLots,
+        ]);
+    }
+    [Symbol.iterator]() {
+        return this.items(false);
+    }
+    *items(descending = false) {
+        for (const { key, ownerSlot, owner, quantity, feeTier, clientOrderId, } of this.slab.items(descending)) {
+            const price = getPriceFromKey(key);
+            yield {
+                orderId: key,
+                clientId: clientOrderId,
+                openOrdersAddress: owner,
+                openOrdersSlot: ownerSlot,
+                feeTier,
+                price: this.market.priceLotsToNumber(price),
+                priceLots: price,
+                size: this.market.baseSizeLotsToNumber(quantity),
+                sizeLots: quantity,
+                side: (this.isBids ? 'buy' : 'sell'),
+            };
+        }
+    }
+}
+exports.Orderbook = Orderbook;
+function getPriceFromKey(key) {
+    return key.ushrn(64);
+}
+function divideBnToNumber(numerator, denominator) {
+    const quotient = numerator.div(denominator).toNumber();
+    const rem = numerator.umod(denominator);
+    const gcd = rem.gcd(denominator);
+    return quotient + rem.div(gcd).toNumber() / denominator.div(gcd).toNumber();
+}
+const MINT_LAYOUT = Layout_1.struct([Layout_1.blob(44), Layout_1.u8('decimals'), Layout_1.blob(37)]);
+async function getMintDecimals(connection, mint) {
+    if (mint.equals(tokenInstructions.WRAPPED_SOL_MINT)) {
+        return 9;
+    }
+    const { data } = throwIfNull(await connection.getAccountInfo(mint), 'mint not found');
+    const { decimals } = MINT_LAYOUT.decode(data);
+    return decimals;
+}
+exports.getMintDecimals = getMintDecimals;
+async function getFilteredProgramAccounts(connection, programId, filters) {
+    // @ts-ignore
+    const resp = await connection._rpcRequest('getProgramAccounts', [
+        programId.toBase58(),
+        {
+            commitment: connection.commitment,
+            filters,
+            encoding: 'base64',
+        },
+    ]);
+    if (resp.error) {
+        throw new Error(resp.error.message);
+    }
+    return resp.result.map(({ pubkey, account: { data, executable, owner, lamports } }) => ({
+        publicKey: new index_esm.PublicKey(pubkey),
+        accountInfo: {
+            data: buffer__default['default'].Buffer.from(data[0], 'base64'),
+            executable,
+            owner: new index_esm.PublicKey(owner),
+            lamports,
+        },
+    }));
+}
+function throwIfNull(value, message = 'account not found') {
+    if (value === null) {
+        throw new Error(message);
+    }
+    return value;
+}
+
+});
+
+var error = createCommonjsModule(function (module, exports) {
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.parseInstructionErrorResponse = exports.KNOWN_PROGRAMS = exports.DexError = void 0;
+
+
+
+var DexError;
+(function (DexError) {
+    DexError[DexError["InvalidMarketFlags"] = 0] = "InvalidMarketFlags";
+    DexError[DexError["InvalidAskFlags"] = 1] = "InvalidAskFlags";
+    DexError[DexError["InvalidBidFlags"] = 2] = "InvalidBidFlags";
+    DexError[DexError["InvalidQueueLength"] = 3] = "InvalidQueueLength";
+    DexError[DexError["OwnerAccountNotProvided"] = 4] = "OwnerAccountNotProvided";
+    DexError[DexError["ConsumeEventsQueueFailure"] = 5] = "ConsumeEventsQueueFailure";
+    DexError[DexError["WrongCoinVault"] = 6] = "WrongCoinVault";
+    DexError[DexError["WrongPcVault"] = 7] = "WrongPcVault";
+    DexError[DexError["WrongCoinMint"] = 8] = "WrongCoinMint";
+    DexError[DexError["WrongPcMint"] = 9] = "WrongPcMint";
+    DexError[DexError["CoinVaultProgramId"] = 10] = "CoinVaultProgramId";
+    DexError[DexError["PcVaultProgramId"] = 11] = "PcVaultProgramId";
+    DexError[DexError["CoinMintProgramId"] = 12] = "CoinMintProgramId";
+    DexError[DexError["PcMintProgramId"] = 13] = "PcMintProgramId";
+    DexError[DexError["WrongCoinMintSize"] = 14] = "WrongCoinMintSize";
+    DexError[DexError["WrongPcMintSize"] = 15] = "WrongPcMintSize";
+    DexError[DexError["WrongCoinVaultSize"] = 16] = "WrongCoinVaultSize";
+    DexError[DexError["WrongPcVaultSize"] = 17] = "WrongPcVaultSize";
+    DexError[DexError["UninitializedVault"] = 18] = "UninitializedVault";
+    DexError[DexError["UninitializedMint"] = 19] = "UninitializedMint";
+    DexError[DexError["CoinMintUninitialized"] = 20] = "CoinMintUninitialized";
+    DexError[DexError["PcMintUninitialized"] = 21] = "PcMintUninitialized";
+    DexError[DexError["WrongMint"] = 22] = "WrongMint";
+    DexError[DexError["WrongVaultOwner"] = 23] = "WrongVaultOwner";
+    DexError[DexError["VaultHasDelegate"] = 24] = "VaultHasDelegate";
+    DexError[DexError["AlreadyInitialized"] = 25] = "AlreadyInitialized";
+    DexError[DexError["WrongAccountDataAlignment"] = 26] = "WrongAccountDataAlignment";
+    DexError[DexError["WrongAccountDataPaddingLength"] = 27] = "WrongAccountDataPaddingLength";
+    DexError[DexError["WrongAccountHeadPadding"] = 28] = "WrongAccountHeadPadding";
+    DexError[DexError["WrongAccountTailPadding"] = 29] = "WrongAccountTailPadding";
+    DexError[DexError["RequestQueueEmpty"] = 30] = "RequestQueueEmpty";
+    DexError[DexError["EventQueueTooSmall"] = 31] = "EventQueueTooSmall";
+    DexError[DexError["SlabTooSmall"] = 32] = "SlabTooSmall";
+    DexError[DexError["BadVaultSignerNonce"] = 33] = "BadVaultSignerNonce";
+    DexError[DexError["InsufficientFunds"] = 34] = "InsufficientFunds";
+    DexError[DexError["SplAccountProgramId"] = 35] = "SplAccountProgramId";
+    DexError[DexError["SplAccountLen"] = 36] = "SplAccountLen";
+    DexError[DexError["WrongFeeDiscountAccountOwner"] = 37] = "WrongFeeDiscountAccountOwner";
+    DexError[DexError["WrongFeeDiscountMint"] = 38] = "WrongFeeDiscountMint";
+    DexError[DexError["CoinPayerProgramId"] = 39] = "CoinPayerProgramId";
+    DexError[DexError["PcPayerProgramId"] = 40] = "PcPayerProgramId";
+    DexError[DexError["ClientIdNotFound"] = 41] = "ClientIdNotFound";
+    DexError[DexError["TooManyOpenOrders"] = 42] = "TooManyOpenOrders";
+    DexError[DexError["FakeErrorSoWeDontChangeNumbers"] = 43] = "FakeErrorSoWeDontChangeNumbers";
+    DexError[DexError["BorrowError"] = 44] = "BorrowError";
+    DexError[DexError["WrongOrdersAccount"] = 45] = "WrongOrdersAccount";
+    DexError[DexError["WrongBidsAccount"] = 46] = "WrongBidsAccount";
+    DexError[DexError["WrongAsksAccount"] = 47] = "WrongAsksAccount";
+    DexError[DexError["WrongRequestQueueAccount"] = 48] = "WrongRequestQueueAccount";
+    DexError[DexError["WrongEventQueueAccount"] = 49] = "WrongEventQueueAccount";
+    DexError[DexError["RequestQueueFull"] = 50] = "RequestQueueFull";
+    DexError[DexError["EventQueueFull"] = 51] = "EventQueueFull";
+    DexError[DexError["MarketIsDisabled"] = 52] = "MarketIsDisabled";
+    DexError[DexError["WrongSigner"] = 53] = "WrongSigner";
+    DexError[DexError["TransferFailed"] = 54] = "TransferFailed";
+    DexError[DexError["ClientOrderIdIsZero"] = 55] = "ClientOrderIdIsZero";
+    DexError[DexError["WrongRentSysvarAccount"] = 56] = "WrongRentSysvarAccount";
+    DexError[DexError["RentNotProvided"] = 57] = "RentNotProvided";
+    DexError[DexError["OrdersNotRentExempt"] = 58] = "OrdersNotRentExempt";
+    DexError[DexError["OrderNotFound"] = 59] = "OrderNotFound";
+    DexError[DexError["OrderNotYours"] = 60] = "OrderNotYours";
+    DexError[DexError["WouldSelfTrade"] = 61] = "WouldSelfTrade";
+    DexError[DexError["Unknown"] = 1000] = "Unknown";
+})(DexError = exports.DexError || (exports.DexError = {}));
+exports.KNOWN_PROGRAMS = {
+    [tokenInstructions.TOKEN_PROGRAM_ID.toString()]: 'Token program',
+    [index_esm.SystemProgram.programId.toString()]: 'System program'
+};
+function parseInstructionErrorResponse(transaction, errorResponse) {
+    const [failedInstructionIndex, customError] = errorResponse;
+    const failedInstruction = transaction.instructions[failedInstructionIndex];
+    let parsedError;
+    if (failedInstruction.programId.toString() in tokens_and_markets.PROGRAM_LAYOUT_VERSIONS) {
+        parsedError = DexError[customError['Custom']];
+    }
+    else if (failedInstruction.programId.toString() in exports.KNOWN_PROGRAMS) {
+        const program = exports.KNOWN_PROGRAMS[failedInstruction.programId.toString()];
+        parsedError = `${program} error ${customError['Custom']}`;
+    }
+    else {
+        parsedError = `Unknown program ${failedInstruction.programId.toString()} custom error: ${customError['Custom']}`;
+    }
+    return {
+        failedInstructionIndex,
+        error: parsedError,
+        failedProgram: failedInstruction.programId.toString()
+    };
+}
+exports.parseInstructionErrorResponse = parseInstructionErrorResponse;
+
+});
+
+var lib = createCommonjsModule(function (module, exports) {
+var __createBinding = (commonjsGlobal && commonjsGlobal.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (commonjsGlobal && commonjsGlobal.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (commonjsGlobal && commonjsGlobal.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
+var __exportStar = (commonjsGlobal && commonjsGlobal.__exportStar) || function(m, exports) {
+    for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.TokenInstructions = exports.EVENT_QUEUE_LAYOUT = exports.REQUEST_QUEUE_LAYOUT = exports.decodeRequestQueue = exports.decodeEventQueue = exports.getLayoutVersion = exports.MARKETS = exports.TOKEN_MINTS = exports.supportsSrmFeeDiscounts = exports.getFeeRates = exports.getFeeTier = exports.NEW_ORDER_V3_OWNER_INDEX = exports.NEW_ORDER_V3_OPEN_ORDERS_INDEX = exports.NEW_ORDER_OWNER_INDEX = exports.NEW_ORDER_OPEN_ORDERS_INDEX = exports.SETTLE_FUNDS_QUOTE_WALLET_INDEX = exports.SETTLE_FUNDS_BASE_WALLET_INDEX = exports.decodeInstruction = exports.DexInstructions = exports.OpenOrders = exports.Orderbook = exports.Market = void 0;
+
+Object.defineProperty(exports, "Market", { enumerable: true, get: function () { return market.Market; } });
+Object.defineProperty(exports, "Orderbook", { enumerable: true, get: function () { return market.Orderbook; } });
+Object.defineProperty(exports, "OpenOrders", { enumerable: true, get: function () { return market.OpenOrders; } });
+
+Object.defineProperty(exports, "DexInstructions", { enumerable: true, get: function () { return instructions.DexInstructions; } });
+Object.defineProperty(exports, "decodeInstruction", { enumerable: true, get: function () { return instructions.decodeInstruction; } });
+Object.defineProperty(exports, "SETTLE_FUNDS_BASE_WALLET_INDEX", { enumerable: true, get: function () { return instructions.SETTLE_FUNDS_BASE_WALLET_INDEX; } });
+Object.defineProperty(exports, "SETTLE_FUNDS_QUOTE_WALLET_INDEX", { enumerable: true, get: function () { return instructions.SETTLE_FUNDS_QUOTE_WALLET_INDEX; } });
+Object.defineProperty(exports, "NEW_ORDER_OPEN_ORDERS_INDEX", { enumerable: true, get: function () { return instructions.NEW_ORDER_OPEN_ORDERS_INDEX; } });
+Object.defineProperty(exports, "NEW_ORDER_OWNER_INDEX", { enumerable: true, get: function () { return instructions.NEW_ORDER_OWNER_INDEX; } });
+Object.defineProperty(exports, "NEW_ORDER_V3_OPEN_ORDERS_INDEX", { enumerable: true, get: function () { return instructions.NEW_ORDER_V3_OPEN_ORDERS_INDEX; } });
+Object.defineProperty(exports, "NEW_ORDER_V3_OWNER_INDEX", { enumerable: true, get: function () { return instructions.NEW_ORDER_V3_OWNER_INDEX; } });
+
+Object.defineProperty(exports, "getFeeTier", { enumerable: true, get: function () { return fees.getFeeTier; } });
+Object.defineProperty(exports, "getFeeRates", { enumerable: true, get: function () { return fees.getFeeRates; } });
+Object.defineProperty(exports, "supportsSrmFeeDiscounts", { enumerable: true, get: function () { return fees.supportsSrmFeeDiscounts; } });
+
+Object.defineProperty(exports, "TOKEN_MINTS", { enumerable: true, get: function () { return tokens_and_markets.TOKEN_MINTS; } });
+Object.defineProperty(exports, "MARKETS", { enumerable: true, get: function () { return tokens_and_markets.MARKETS; } });
+Object.defineProperty(exports, "getLayoutVersion", { enumerable: true, get: function () { return tokens_and_markets.getLayoutVersion; } });
+
+Object.defineProperty(exports, "decodeEventQueue", { enumerable: true, get: function () { return queue.decodeEventQueue; } });
+Object.defineProperty(exports, "decodeRequestQueue", { enumerable: true, get: function () { return queue.decodeRequestQueue; } });
+Object.defineProperty(exports, "REQUEST_QUEUE_LAYOUT", { enumerable: true, get: function () { return queue.REQUEST_QUEUE_LAYOUT; } });
+Object.defineProperty(exports, "EVENT_QUEUE_LAYOUT", { enumerable: true, get: function () { return queue.EVENT_QUEUE_LAYOUT; } });
+exports.TokenInstructions = __importStar(tokenInstructions);
+__exportStar(error, exports);
+
+});
+
+var SerumV1Old =
+/** @class */
+function () {
+  function SerumV1Old() {
+    this.programID = '4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn';
+  }
+
+  SerumV1Old.prototype.parseInstruction = function (instruction) {
+    var msg = new Message$2();
+    var it = lib.decodeInstruction(instruction.data);
+    console.log("it:", it);
+    msg.program = this.programID;
+    msg.type = 'instruction';
+    msg.inputs = new Map(); // switch (it) {
+    // }
+
+    return msg;
+  };
+
+  return SerumV1Old;
+}();
+var plugin$2 = new SerumV1Old();
 
 var SystemProgram =
 /** @class */
@@ -31662,8 +48466,8 @@ function () {
   }
 
   SystemProgram.prototype.parseInstruction = function (instruction) {
-    var msg = new Message$1();
-    var it = SystemInstruction.decodeInstructionType(instruction);
+    var msg = new Message$2();
+    var it = SystemInstruction$1.decodeInstructionType(instruction);
     msg.program = this.programID;
     msg.type = 'instruction';
     msg.inputs = new Map();
@@ -31672,7 +48476,7 @@ function () {
       case 'AdvanceNonceAccount':
         {
           msg.name = 'AdvanceNonceAccount';
-          var param = SystemInstruction.decodeNonceAdvance(instruction);
+          var param = SystemInstruction$1.decodeNonceAdvance(instruction);
           msg.inputs.set('authorizedPubkey', param.authorizedPubkey.toBase58());
           msg.inputs.set('noncePubkey', param.noncePubkey.toBase58());
           break;
@@ -31681,7 +48485,7 @@ function () {
       case 'Allocate':
         {
           msg.name = 'Allocate';
-          var param = SystemInstruction.decodeAllocate(instruction);
+          var param = SystemInstruction$1.decodeAllocate(instruction);
           msg.inputs.set('accountPubkey', param.accountPubkey.toBase58());
           msg.inputs.set('space', param.space.toString());
           break;
@@ -31690,7 +48494,7 @@ function () {
       case 'AllocateWithSeed':
         {
           msg.name = 'AllocateWithSeed';
-          var param = SystemInstruction.decodeAllocateWithSeed(instruction);
+          var param = SystemInstruction$1.decodeAllocateWithSeed(instruction);
           msg.inputs.set('accountPubkey', param.accountPubkey.toBase58());
           msg.inputs.set('basePubkey', param.basePubkey.toBase58());
           msg.inputs.set('seed', param.seed);
@@ -31702,7 +48506,7 @@ function () {
       case 'Assign':
         {
           msg.name = 'Assign';
-          var param = SystemInstruction.decodeAssign(instruction);
+          var param = SystemInstruction$1.decodeAssign(instruction);
           msg.inputs.set('accountPubkey', param.accountPubkey.toBase58());
           msg.inputs.set('programId', param.programId.toBase58());
           break;
@@ -31711,7 +48515,7 @@ function () {
       case 'AssignWithSeed':
         {
           msg.name = 'AssignWithSeed';
-          var param = SystemInstruction.decodeAssignWithSeed(instruction);
+          var param = SystemInstruction$1.decodeAssignWithSeed(instruction);
           msg.inputs.set('accountPubkey', param.accountPubkey.toBase58());
           msg.inputs.set('basePubkey', param.basePubkey.toBase58());
           msg.inputs.set('seed', param.seed);
@@ -31722,7 +48526,7 @@ function () {
       case 'AuthorizeNonceAccount':
         {
           msg.name = 'AuthorizeNonceAccount';
-          var param = SystemInstruction.decodeNonceAuthorize(instruction);
+          var param = SystemInstruction$1.decodeNonceAuthorize(instruction);
           msg.inputs.set('noncePubkey', param.noncePubkey.toBase58());
           msg.inputs.set('authorizedPubkey', param.authorizedPubkey.toBase58());
           msg.inputs.set('newAuthorizedPubkey', param.newAuthorizedPubkey.toBase58());
@@ -31732,7 +48536,7 @@ function () {
       case 'Create':
         {
           msg.name = 'Create';
-          var param = SystemInstruction.decodeCreateAccount(instruction);
+          var param = SystemInstruction$1.decodeCreateAccount(instruction);
           msg.inputs.set('fromPubkey', param.fromPubkey.toBase58());
           msg.inputs.set('newAccountPubkey', param.newAccountPubkey.toBase58());
           msg.inputs.set('lamports', param.lamports.toString());
@@ -31744,7 +48548,7 @@ function () {
       case 'CreateWithSeed':
         {
           msg.name = 'CreateWithSeed';
-          var param = SystemInstruction.decodeCreateWithSeed(instruction);
+          var param = SystemInstruction$1.decodeCreateWithSeed(instruction);
           msg.inputs.set('fromPubkey', param.fromPubkey.toBase58());
           msg.inputs.set('newAccountPubkey', param.newAccountPubkey.toBase58());
           msg.inputs.set('basePubkey', param.basePubkey.toBase58());
@@ -31758,7 +48562,7 @@ function () {
       case 'InitializeNonceAccount':
         {
           msg.name = 'InitializeNonceAccount';
-          var param = SystemInstruction.decodeNonceInitialize(instruction);
+          var param = SystemInstruction$1.decodeNonceInitialize(instruction);
           msg.inputs.set('noncePubkey', param.noncePubkey.toBase58());
           msg.inputs.set('authorizedPubkey', param.authorizedPubkey.toBase58());
           break;
@@ -31767,7 +48571,7 @@ function () {
       case 'Transfer':
         {
           msg.name = 'Transfer';
-          var param = SystemInstruction.decodeTransfer(instruction);
+          var param = SystemInstruction$1.decodeTransfer(instruction);
           msg.inputs.set('fromPubkey', param.fromPubkey.toBase58());
           msg.inputs.set('toPubkey', param.toPubkey.toBase58());
           msg.inputs.set('lamports', param.lamports.toString());
@@ -31777,7 +48581,7 @@ function () {
       case 'TransferWithSeed':
         {
           msg.name = 'TransferWithSeed';
-          var param = SystemInstruction.decodeTransferWithSeed(instruction);
+          var param = SystemInstruction$1.decodeTransferWithSeed(instruction);
           msg.inputs.set('fromPubkey', param.fromPubkey.toBase58());
           msg.inputs.set('basePubkey', param.basePubkey.toBase58());
           msg.inputs.set('toPubkey', param.toPubkey.toBase58());
@@ -31790,7 +48594,7 @@ function () {
       case 'WithdrawNonceAccount':
         {
           msg.name = 'WithdrawNonceAccount';
-          var param = SystemInstruction.decodeNonceWithdraw(instruction);
+          var param = SystemInstruction$1.decodeNonceWithdraw(instruction);
           msg.inputs.set('noncePubkey', param.noncePubkey.toBase58());
           msg.inputs.set('authorizedPubkey', param.authorizedPubkey.toBase58());
           msg.inputs.set('toPubkey', param.toPubkey.toBase58());
@@ -31828,7 +48632,7 @@ function () {
 var plugin = new ATokenAProgram();
 
 // generated by  compile script
-var configPlugins = [plugin$2, plugin$1, plugin];
+var configPlugins = [plugin$3, plugin$2, plugin$1, plugin];
 
 var IParserManager =
 /** @class */
@@ -31867,7 +48671,7 @@ function () {
 }();
 
 exports.IParserManager = IParserManager;
-exports.Message = Message$1;
+exports.Message = Message$2;
 
 Object.defineProperty(exports, '__esModule', { value: true });
 

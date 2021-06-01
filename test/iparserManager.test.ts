@@ -1,6 +1,8 @@
 import { Account, PublicKey,SystemProgram } from "@solana/web3.js";
 import { Token } from "@solana/spl-token";
 import { IParserManager } from "../src/iparserManager";
+import {DexInstructions} from "@project-serum/serum"
+import BN from 'bn.js'
 
 describe('IParserManager Class', () => {
     it(`instance`, () => {
@@ -12,7 +14,7 @@ describe('IParserManager Class', () => {
         const ipm = IParserManager.instance();
         ipm.loadPlugins();
         // @ts-ignore
-        expect(ipm.plugins.size).toBe(3);
+        expect(ipm.plugins.size).toBe(4);
     })
 
     it(`parseInstruction method not implemented`, () => {
@@ -49,6 +51,34 @@ describe('IParserManager Class', () => {
             programId: programID, 
         });
         const msg = ipm.parseInstruction("11111111111111111111111111111111", trxi);
+        console.log(msg);
+        // expect(msg).toBeInstanceOf();
+    })
+    it(`parseInstruction method implemented`, () => {
+        const ipm = IParserManager.instance();
+        ipm.loadPlugins(); // load 3 plugins
+        const programID = new PublicKey("4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn");
+        //const account = new Account();
+
+        // test parseInstruction implemented.
+        const trxi = DexInstructions.initializeMarket({
+            market:programID,
+            requestQueue:programID,
+            eventQueue:programID,
+            bids:programID,
+            asks:programID,
+            baseVault:programID,
+            quoteVault:programID,
+            baseMint:programID,
+            quoteMint:programID,
+            baseLotSize: new BN(10),
+            quoteLotSize: new BN(100000),
+            feeRateBps: 5,
+            vaultSignerNonce: new BN(1),
+            quoteDustThreshold: new BN(10),
+            programId: programID,
+        });
+        const msg = ipm.parseInstruction("4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn", trxi);
         console.log(msg);
         // expect(msg).toBeInstanceOf();
     })

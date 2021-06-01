@@ -3,7 +3,6 @@ import BufferLayout from 'buffer-layout';
 import * as Layout from './layout';
 import { TransactionInstruction, PublicKey } from '@solana/web3.js';
 
-
 type TodoObject = {
   [index: string]: any;
 };
@@ -44,9 +43,9 @@ export class TransferParams {
   constructor(
     public source: PublicKey,
     public destination: PublicKey,
-    public amount: number,
+    public amount: number
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
@@ -54,18 +53,15 @@ export class ApproveParams {
   constructor(
     public account: PublicKey,
     public delegate: PublicKey,
-    public amount: number,
+    public amount: number
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
 export class RevokeParams {
-  constructor(
-    public account:PublicKey,
-    public owner: PublicKey,
-  ) {
-    console.log("todo")
+  constructor(public account: PublicKey, public owner: PublicKey) {
+    console.log('todo');
   }
 }
 
@@ -75,31 +71,31 @@ export class SetAuthorityParams {
     public currentAuthority: PublicKey,
     public authorityType: number,
     public option: number,
-    public newAuthority: PublicKey,
+    public newAuthority: PublicKey
   ) {
-    console.log('todo')
+    console.log('todo');
   }
 }
 
 export class MintToParams {
   constructor(
-   public mint: PublicKey,
-   public dest: PublicKey, 
-   public authority: PublicKey,
-   public amount: number,
+    public mint: PublicKey,
+    public dest: PublicKey,
+    public authority: PublicKey,
+    public amount: number
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
 export class BurnParams {
   constructor(
     public account: PublicKey,
-    public mint : PublicKey,
+    public mint: PublicKey,
     public owner: PublicKey,
-    public amount: number,
+    public amount: number
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
@@ -107,9 +103,9 @@ export class CloseAccountParams {
   constructor(
     public account: PublicKey,
     public dest: PublicKey,
-    public owner: PublicKey,
+    public owner: PublicKey
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
@@ -117,9 +113,9 @@ export class FreezeAccountParams {
   constructor(
     public account: PublicKey,
     public dest: PublicKey,
-    public authority: PublicKey,
+    public authority: PublicKey
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
@@ -127,22 +123,22 @@ export class ThawAccountParams {
   constructor(
     public account: PublicKey,
     public dest: PublicKey,
-    public authority: PublicKey, 
+    public authority: PublicKey
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
 export class TransferCheckedParams {
   constructor(
-    public source:PublicKey,
+    public source: PublicKey,
     public mint: PublicKey,
     public destination: PublicKey,
     public owner: PublicKey,
     public amount: number,
-    public decimals: number,
+    public decimals: number
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
@@ -150,12 +146,12 @@ export class ApproveCheckedParams {
   constructor(
     public account: PublicKey,
     public mint: PublicKey,
-    public delegate:PublicKey,
+    public delegate: PublicKey,
     public owner: PublicKey,
     public amount: number,
-    public decimals: number, 
+    public decimals: number
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
@@ -165,9 +161,9 @@ export class MintToCheckedParams {
     public dest: PublicKey,
     public authority: PublicKey,
     public amount: number,
-    public decimals: number,  
+    public decimals: number
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
@@ -177,9 +173,9 @@ export class BurnCheckedParams {
     public mint: PublicKey,
     public owner: PublicKey,
     public amount: number,
-    public decimals: number,  
+    public decimals: number
   ) {
-    console.log("todo")
+    console.log('todo');
   }
 }
 
@@ -266,13 +262,10 @@ export class TokenInstruction {
     );
   }
 
-
-  static decodeTransfer(
-    instruction: TransactionInstruction
-  ):TransferParams  {
+  static decodeTransfer(instruction: TransactionInstruction): TransferParams {
     const layout = BufferLayout.struct([
       BufferLayout.u8('instruction'),
-      Layout.uint64('amount'),
+      Layout.uint64('amount')
     ]);
     let data: TodoObject;
     try {
@@ -280,20 +273,19 @@ export class TokenInstruction {
     } catch (err) {
       throw new Error('invalid instruction; ' + err);
     }
-    const { amount} = data; 
+    const { amount } = data;
 
     return new TransferParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
-      amount);
+      amount
+    );
   }
 
-  static decodeApprove(
-    instruction: TransactionInstruction
-  ): ApproveParams {
+  static decodeApprove(instruction: TransactionInstruction): ApproveParams {
     const layout = BufferLayout.struct([
       BufferLayout.u8('instruction'),
-      Layout.uint64('amount'),
+      Layout.uint64('amount')
     ]);
     let data: TodoObject;
     try {
@@ -301,22 +293,20 @@ export class TokenInstruction {
     } catch (err) {
       throw new Error('invalid instruction; ' + err);
     }
-    const { amount} = data; 
+    const { amount } = data;
 
     return new ApproveParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
-      amount); 
+      amount
+    );
   }
 
-  static decodeRevoke(
-    instruction: TransactionInstruction
-  ): RevokeParams {
-
+  static decodeRevoke(instruction: TransactionInstruction): RevokeParams {
     return new RevokeParams(
       instruction.keys[0].pubkey,
-      instruction.keys[1].pubkey,
-    );  
+      instruction.keys[1].pubkey
+    );
   }
 
   static decodeSetAuthority(
@@ -326,7 +316,7 @@ export class TokenInstruction {
       BufferLayout.u8('instruction'),
       BufferLayout.u8('authorityType'),
       BufferLayout.u8('option'),
-      Layout.publicKey('newAuthority'),
+      Layout.publicKey('newAuthority')
     ]);
     let data: TodoObject;
     try {
@@ -334,22 +324,21 @@ export class TokenInstruction {
     } catch (err) {
       throw new Error('invalid instruction; ' + err);
     }
-    const {authorityType,option,newAuthority} = data; 
+    const { authorityType, option, newAuthority } = data;
 
     return new SetAuthorityParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
       authorityType,
       option,
-      newAuthority);  
+      newAuthority
+    );
   }
 
-  static decodeMintTo(
-    instruction: TransactionInstruction
-  ): MintToParams {
+  static decodeMintTo(instruction: TransactionInstruction): MintToParams {
     const layout = BufferLayout.struct([
       BufferLayout.u8('instruction'),
-      Layout.uint64('amount'),
+      Layout.uint64('amount')
     ]);
     let data: TodoObject;
     try {
@@ -357,21 +346,20 @@ export class TokenInstruction {
     } catch (err) {
       throw new Error('invalid instruction; ' + err);
     }
-    const {amount} = data; 
+    const { amount } = data;
 
     return new MintToParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
       instruction.keys[2].pubkey,
-      amount);   
+      amount
+    );
   }
 
-  static decodeBurn(
-    instruction: TransactionInstruction
-  ): BurnParams {
+  static decodeBurn(instruction: TransactionInstruction): BurnParams {
     const layout = BufferLayout.struct([
       BufferLayout.u8('instruction'),
-      Layout.uint64('amount'),
+      Layout.uint64('amount')
     ]);
     let data: TodoObject;
     try {
@@ -379,24 +367,24 @@ export class TokenInstruction {
     } catch (err) {
       throw new Error('invalid instruction; ' + err);
     }
-    const {amount} = data; 
+    const { amount } = data;
 
     return new BurnParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
       instruction.keys[2].pubkey,
-      amount);      
+      amount
+    );
   }
-
 
   static decodeCloseAccount(
     instruction: TransactionInstruction
-  ):CloseAccountParams  {
-
+  ): CloseAccountParams {
     return new CloseAccountParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
-      instruction.keys[2].pubkey);   
+      instruction.keys[2].pubkey
+    );
   }
 
   static decodeFreezeAccount(
@@ -405,16 +393,18 @@ export class TokenInstruction {
     return new FreezeAccountParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
-      instruction.keys[2].pubkey);   
-  }  
-  
+      instruction.keys[2].pubkey
+    );
+  }
+
   static decodeThawAccount(
     instruction: TransactionInstruction
-  ): ThawAccountParams  {
+  ): ThawAccountParams {
     return new ThawAccountParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
-      instruction.keys[2].pubkey);    
+      instruction.keys[2].pubkey
+    );
   }
 
   static decodeTransferChecked(
@@ -423,7 +413,8 @@ export class TokenInstruction {
     const layout = BufferLayout.struct([
       BufferLayout.u8('instruction'),
       Layout.uint64('amount'),
-      BufferLayout.u8('decimals'),,
+      BufferLayout.u8('decimals'),
+      ,
     ]);
     let data: TodoObject;
     try {
@@ -431,7 +422,7 @@ export class TokenInstruction {
     } catch (err) {
       throw new Error('invalid instruction; ' + err);
     }
-    const {amount,decimals} = data; 
+    const { amount, decimals } = data;
 
     return new TransferCheckedParams(
       instruction.keys[0].pubkey,
@@ -439,7 +430,8 @@ export class TokenInstruction {
       instruction.keys[2].pubkey,
       instruction.keys[3].pubkey,
       amount,
-      decimals);   
+      decimals
+    );
   }
 
   static decodeApproveChecked(
@@ -448,7 +440,8 @@ export class TokenInstruction {
     const layout = BufferLayout.struct([
       BufferLayout.u8('instruction'),
       Layout.uint64('amount'),
-      BufferLayout.u8('decimals'),,
+      BufferLayout.u8('decimals'),
+      ,
     ]);
     let data: TodoObject;
     try {
@@ -456,7 +449,7 @@ export class TokenInstruction {
     } catch (err) {
       throw new Error('invalid instruction; ' + err);
     }
-    const {amount,decimals} = data; 
+    const { amount, decimals } = data;
 
     return new ApproveCheckedParams(
       instruction.keys[0].pubkey,
@@ -464,7 +457,8 @@ export class TokenInstruction {
       instruction.keys[2].pubkey,
       instruction.keys[3].pubkey,
       amount,
-      decimals);    
+      decimals
+    );
   }
 
   static decodeMintToChecked(
@@ -473,7 +467,8 @@ export class TokenInstruction {
     const layout = BufferLayout.struct([
       BufferLayout.u8('instruction'),
       Layout.uint64('amount'),
-      BufferLayout.u8('decimals'),,
+      BufferLayout.u8('decimals'),
+      ,
     ]);
     let data: TodoObject;
     try {
@@ -481,14 +476,15 @@ export class TokenInstruction {
     } catch (err) {
       throw new Error('invalid instruction; ' + err);
     }
-    const {amount,decimals} = data; 
+    const { amount, decimals } = data;
 
     return new MintToCheckedParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
       instruction.keys[2].pubkey,
       amount,
-      decimals);  
+      decimals
+    );
   }
 
   static decodeBurnChecked(
@@ -497,7 +493,8 @@ export class TokenInstruction {
     const layout = BufferLayout.struct([
       BufferLayout.u8('instruction'),
       Layout.uint64('amount'),
-      BufferLayout.u8('decimals'),,
+      BufferLayout.u8('decimals'),
+      ,
     ]);
     let data: TodoObject;
     try {
@@ -505,14 +502,14 @@ export class TokenInstruction {
     } catch (err) {
       throw new Error('invalid instruction; ' + err);
     }
-    const {amount,decimals} = data; 
+    const { amount, decimals } = data;
 
     return new BurnCheckedParams(
       instruction.keys[0].pubkey,
       instruction.keys[1].pubkey,
       instruction.keys[2].pubkey,
       amount,
-      decimals);   
+      decimals
+    );
   }
-
 }

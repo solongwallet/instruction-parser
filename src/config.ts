@@ -3,12 +3,14 @@
 // do not edit it
 
 import { plugin as p_TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA }  from "./plugins/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA/plugin"
+import { plugin as p_4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn }  from "./plugins/4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn/plugin"
 import { plugin as p_11111111111111111111111111111111 }  from "./plugins/11111111111111111111111111111111/plugin"
 import { plugin as p_ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL }  from "./plugins/ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL/plugin"
 
 
 export const configPlugins = [ 
     p_TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA,
+    p_4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn,
     p_11111111111111111111111111111111,
     p_ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL,
 ]

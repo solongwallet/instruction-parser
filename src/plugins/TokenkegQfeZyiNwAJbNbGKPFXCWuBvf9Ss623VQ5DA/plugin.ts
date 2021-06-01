@@ -40,7 +40,7 @@ export class TokenProgram implements IParserPlugin {
         msg.inputs.set('amount', param.amount.toString());
         break;
       }
-      case 'Approve':{
+      case 'Approve': {
         msg.name = 'Approve';
         const param = TokenInstruction.decodeApprove(instruction);
         msg.inputs.set('account', param.account.toBase58());
@@ -104,7 +104,7 @@ export class TokenProgram implements IParserPlugin {
         const param = TokenInstruction.decodeThawAccount(instruction);
         msg.inputs.set('account', param.account.toBase58());
         msg.inputs.set('dest', param.dest.toBase58());
-        msg.inputs.set('authority', param.authority.toBase58());;
+        msg.inputs.set('authority', param.authority.toBase58());
         break;
       }
       case 'TransferChecked': {
@@ -150,10 +150,9 @@ export class TokenProgram implements IParserPlugin {
         break;
       }
       default: {
-        msg.name = "unknown";
+        msg.name = 'unknown';
         break;
       }
-        
     }
     return msg;
   }
