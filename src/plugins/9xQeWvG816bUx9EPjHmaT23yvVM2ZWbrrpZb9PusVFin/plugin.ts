@@ -3,7 +3,7 @@ import { TransactionInstruction } from '@solana/web3.js';
 import { decodeInstruction } from '@project-serum/serum';
 
 export class SerumV1Old implements IParserPlugin {
-  programID = '4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn';
+  programID = '9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin';
   parseInstruction(instruction: TransactionInstruction): Message {
     const msg = new Message();
     const it = decodeInstruction(instruction.data);

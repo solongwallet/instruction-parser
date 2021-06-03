@@ -5,12 +5,18 @@
 import { plugin as p_TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA }  from "./plugins/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA/plugin"
 import { plugin as p_4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn }  from "./plugins/4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn/plugin"
 import { plugin as p_11111111111111111111111111111111 }  from "./plugins/11111111111111111111111111111111/plugin"
+import { plugin as p_BJ3jrUzddfuSrZHXSCxMUUQsjKEyLmuuyZebkcaFp2fg }  from "./plugins/BJ3jrUzddfuSrZHXSCxMUUQsjKEyLmuuyZebkcaFp2fg/plugin"
 import { plugin as p_ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL }  from "./plugins/ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL/plugin"
+import { plugin as p_9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin }  from "./plugins/9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin/plugin"
+import { plugin as p_EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o }  from "./plugins/EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o/plugin"
 
 
 export const configPlugins = [ 
     p_TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA,
     p_4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn,
     p_11111111111111111111111111111111,
+    p_BJ3jrUzddfuSrZHXSCxMUUQsjKEyLmuuyZebkcaFp2fg,
     p_ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL,
+    p_9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin,
+    p_EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o,
 ]

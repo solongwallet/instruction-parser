@@ -1,1 +1,0 @@
-export declare const configPlugins: (import("./plugins/TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA/plugin").TokenProgram | import("./plugins/4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn/plugin").SerumV1Old | import("./plugins/11111111111111111111111111111111/plugin").SystemProgram | import("./plugins/ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL/plugin").ATokenAProgram)[];
