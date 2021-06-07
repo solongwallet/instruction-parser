@@ -25,21 +25,21 @@
 
 其中只要关注src目录就可以了：
 
-    ➜  src git:(master) ✗ tree -L 2
-    .
-    ├── config.ts
-    ├── index.ts
-    ├── iparser.ts
-    ├── iparserManager.ts
-    ├── iparserPlugin.ts
-    └── plugins
-        ├── 11111111111111111111111111111111
-        ├── 4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn
-        ├── 9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin
-        ├── ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL
-        ├── BJ3jrUzddfuSrZHXSCxMUUQsjKEyLmuuyZebkcaFp2fg
-        ├── EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o
-        └── TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
+        ➜  src git:(master) ✗ tree -L 2
+        .
+        ├── config.ts
+        ├── index.ts
+        ├── iparser.ts
+        ├── iparserManager.ts
+        ├── iparserPlugin.ts
+        └── plugins
+            ├── 11111111111111111111111111111111
+            ├── 4ckmDgGdxQoPDLUkDT3vHgSAkzA3QRdNq5ywwY4sUSJn
+            ├── 9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin
+            ├── ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL
+            ├── BJ3jrUzddfuSrZHXSCxMUUQsjKEyLmuuyZebkcaFp2fg
+            ├── EUqojwWA2rd19FZrzeBncJsm38Jm1hEhE3zsmX3bRc2o
+            └── TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA
 
 这里项目方只需要关注plugins目录就可以了。在这个目录下建立一个以自己合约地址为目录名的目录。
 然后编写一个"iparserPlugin"中定义的接口就可以了。然后向源项目提交PR请求，待IParser合入后，
