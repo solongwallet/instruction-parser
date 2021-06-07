@@ -76,3 +76,12 @@ JSON格式为：
         ]
     }
 
+## 为什么不用Anchor
+
+* 即使使用Anchor，也需要一个"合约地址-IDL"对应的关系，否则钱包也不知道该如何用哪个IDL
+* Anchor使用门槛较高，先得了解IDL、然后得DApp和合约都要使用Anchor的SDK
+* Anchor不够灵活，使用了Anchor需要DApp和合约都要使用Anchor,如果遇到Anchor支持不好的结构，还得自己实现
+* Anchor本质是序列化方式，类似ProtoBuf，不是ABI。他主要解决的问题是如何解决Instruction和Account
+的序列化和反序列化的功能，但是并不适合用户去理解，比如Rent账号、System账号，这些是不需要用户关心的，
+会导致给用户信息太多，比如Serum的NewOrder加上这些无关信息有十多个Account地址
+
