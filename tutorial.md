@@ -25,7 +25,7 @@
 
 其中只要关注src目录就可以了：
 
-➜  src git:(master) ✗ tree -L 2
+    ➜  src git:(master) ✗ tree -L 2
     .
     ├── config.ts
     ├── index.ts
